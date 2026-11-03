@@ -1,0 +1,11 @@
+{
+ "fuente": "templates/product.quick-view.json@69d5993",
+ "secciones": [
+  {
+   "id": "main",
+   "tipo": "main-product-quick-view",
+   "ajustes": {},
+   "bloques": []
+  }
+ ]
+}

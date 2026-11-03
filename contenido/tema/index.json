@@ -1,0 +1,1047 @@
+{
+ "fuente": "templates/index.json@69d5993",
+ "secciones": [
+  {
+   "id": "image_banner_YErYm8",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "desktop_image": "/media/files/Frame_597.jpg",
+    "mobile_image": "/media/files/Hero_bueno.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "start-md middle-md ta-left-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "start-xs top-xs ta-left",
+    "link": "",
+    "section_mask_overlay_color": "#403f3f",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": "#ffffff"
+   },
+   "bloques": [
+    {
+     "id": "header_card_FTwRBz",
+     "tipo": "header-card",
+     "ajustes": {
+      "heading": "La solución definitiva contra inundaciones en México",
+      "heading_size": 44,
+      "heading_mobile": "La solución definitiva contra inundaciones en México",
+      "enable_bg_title": true,
+      "heading_color": "#1c397b",
+      "heading_color_mobile": "#1c397b",
+      "description": "Evita costosas reparaciones y protege lo que más valoras",
+      "description_size": 16,
+      "description_mobile": "",
+      "description_color": "#5a5a5a",
+      "description_color_mobile": "#5a5a5a",
+      "button_link": "/products/compuerta-anti-inundaciones",
+      "button_text": "Comprar ahora"
+     }
+    }
+   ]
+  },
+  {
+   "id": "logos_FkENR4",
+   "tipo": "logos",
+   "ajustes": {},
+   "bloques": [
+    {
+     "id": "logo_3EWTLU",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/Frame_589_0d283665-9d18-47f6-9f09-a4a619fbb8fb.png",
+      "logo_text": "<p>Hemos enviado a todos los estados de México</p>"
+     }
+    },
+    {
+     "id": "logo_xPF8gi",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/SHARK_TANK_LOGO.png",
+      "logo_text": "<p>Participante en la Temporada #10</p>"
+     }
+    },
+    {
+     "id": "logo_9DtXmi",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/Frame_588_65c7986d-1a98-4a22-9b0b-2aba92f5da70.png",
+      "logo_text": "<p>Dos veces asistente campamento nacional</p>"
+     }
+    },
+    {
+     "id": "logo_mXWqAA",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/Frame_587_bfd0e892-063c-4361-8d90-8bd7c444e895.png",
+      "logo_text": "<p>4.9/5<br/>Calificación promedio</p>"
+     }
+    },
+    {
+     "id": "logo_CMkLmB",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/Frame_590_9856662f-42a4-4f17-868a-9189d862b751.png",
+      "logo_text": "<p>Ganadores de Acelera y envía</p>"
+     }
+    },
+    {
+     "id": "logo_fG7PEX",
+     "tipo": "logo",
+     "ajustes": {
+      "logo": "/media/files/Frame_591_73503f33-5a52-467b-8c00-cda9ea32c7ca.png",
+      "logo_text": "<p>Primer lugar en innovación</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_tnyNKm",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "bottom-xs",
+    "primary_image": "/media/files/IMG_1_1.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "subheading_CjjdRJ",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Protección en minutos, tranquilidad por años"
+     }
+    },
+    {
+     "id": "heading_833WMw",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "La forma más [rápida y confiable] de proteger tu hogar o negocio.",
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "description_dFC4C9",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p><em>Con nuestras Compuertas Anti-inundaciones, puedes dormir tranquilo sabiendo que tu hogar o negocio está a salvo. Instalación rápida, sin complicaciones, y totalmente reutilizables. No más sacos de arena ni soluciones temporales. Haz que cada tormenta sea solo un mal recuerdo.</em></p>"
+     }
+    },
+    {
+     "id": "button_tFjJqY",
+     "tipo": "button",
+     "ajustes": {
+      "button_main_text": "Ver producto",
+      "button_main_style": "btn-primary",
+      "button_main_link": "/products/compuerta-anti-inundaciones",
+      "button_sub_text": "",
+      "button_sub_style": "btn-outline",
+      "button_sub_link": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "spacer_gG87cM",
+   "tipo": "spacer",
+   "ajustes": {
+    "padding_top": 20,
+    "padding_bottom": 10,
+    "background_color": "#ffffff",
+    "padding_top_desktop": 10,
+    "padding_bottom_desktop": 20,
+    "background_color_desktop": "#ffffff"
+   },
+   "bloques": []
+  },
+  {
+   "id": "video_with_text_nPEwwb",
+   "tipo": "video-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "video_source": "video_external",
+    "video": "https://www.youtube.com/watch?v=BZDYqZTzlzo&t=8s",
+    "video_ratio": "16/9",
+    "video_thumbnail": "/media/files/hf_20260316_233948_de_tamano_grande_eeec7a72-8829-4579-b6eb-35339e585d5f.jpg",
+    "enable_autoplay": false,
+    "enable_video_loop": true,
+    "enable_video_mute": true,
+    "content_ordering_desktop": "fd-row-md",
+    "video_with": "8.4",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_PfkGxM",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Una historia que vale la pena ver"
+     }
+    },
+    {
+     "id": "heading_MacmPN",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Nuestro paso por [Shark Tank] 🦈",
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "description_KUR6Fc",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>Así fue presentar una solución contra inundaciones frente a expertos.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "running_content_PpeVCM",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": false,
+    "heading_size": "h6"
+   },
+   "bloques": [
+    {
+     "id": "icon_BHhGEK",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "cart",
+      "html_code": "",
+      "color_content": "#ffffff"
+     }
+    },
+    {
+     "id": "text_EPaq8Y",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Compra Segura</p>",
+      "color_text": "#ffffff",
+      "text_color_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 11%, rgba(219, 225, 235, 1) 84%)"
+     }
+    },
+    {
+     "id": "icon_Uq3yDc",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "truck",
+      "html_code": "",
+      "color_content": "#ffffff"
+     }
+    },
+    {
+     "id": "text_WapQkW",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Envíos a todo México</p>",
+      "color_text": "#ffffff",
+      "text_color_gradient": "linear-gradient(179deg, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 1) 83%)"
+     }
+    },
+    {
+     "id": "icon_GwekzE",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "check",
+      "html_code": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M16.9399 3.74281L15.5005 9.50042H9.50047L8.06107 3.74281C7.74724 2.48748 6.50279 1.69996 5.23395 1.95372C3.78993 2.24253 2.93488 3.74159 3.42136 5.13154L6.00047 12.5004L5.0544 17.5461C4.72871 19.2831 5.62495 21.0194 7.22961 21.76C9.26574 22.6998 11.6713 21.7115 12.4588 19.6117L12.5005 19.5004L12.5422 19.6117C13.3297 21.7115 15.7352 22.6998 17.7714 21.76C19.376 21.0194 20.2723 19.2831 19.9466 17.5461L19.0005 12.5004L21.5796 5.13154C22.0661 3.74159 21.211 2.24253 19.767 1.95372C18.4982 1.69996 17.2537 2.48748 16.9399 3.74281Z\" stroke=\"#004288\" stroke-width=\"1.5\"></path>\n  <path d=\"M12.5 19.5312V17\" stroke=\"#004288\" stroke-width=\"1.5\"></path>\n  <path d=\"M10.5 17H14.5\" stroke=\"#004288\" stroke-width=\"1.5\"></path>\n  <path d=\"M9.5 13V15.5\" stroke=\"#004288\" stroke-width=\"1.5\"></path>\n  <path d=\"M15.5 13V15.5\" stroke=\"#004288\" stroke-width=\"1.5\"></path>\n</svg>",
+      "color_content": "#ffffff"
+     }
+    },
+    {
+     "id": "text_eTw6pi",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Protección garantizada</p>",
+      "color_text": "",
+      "text_color_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 96%)"
+     }
+    },
+    {
+     "id": "icon_kVca4f",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "clock",
+      "html_code": "",
+      "color_content": "#ffffff"
+     }
+    },
+    {
+     "id": "text_rzCzpp",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Rápida Instalación</p>",
+      "color_text": "",
+      "text_color_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 96%)"
+     }
+    }
+   ]
+  },
+  {
+   "id": "content_collage_EBQTHq",
+   "tipo": "content-collage",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h1",
+    "description": "",
+    "content_align_desktop": "ta-center-md",
+    "desktop_row_height": 260,
+    "content_align_mobile": "ta-center",
+    "mobile_row_height": 270
+   },
+   "bloques": [
+    {
+     "id": "text_TYwqWB",
+     "tipo": "text",
+     "ajustes": {
+      "heading": "Compuertas para cada tipo de entrada",
+      "heading_size": "h1",
+      "description": "<p>Conoce nuestros dos modelos según el tamaño de tu acceso: estándar o amplio.</p>",
+      "button_label": "",
+      "button_style": "btn-primary",
+      "button_link": "",
+      "disable_link": true,
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "4",
+      "row_desktop": "1",
+      "content_position_mobile": "center-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "background_color": "",
+      "text_color": ""
+     }
+    },
+    {
+     "id": "video_Ygamdf",
+     "tipo": "video",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h3",
+      "button_label": "",
+      "button_style": "btn-link",
+      "button_link": "",
+      "disable_link": true,
+      "video_source": "video_hosted",
+      "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "video_hosted": "/media/videos/1a729650f70648fc8472e67884478410.HD-720p-1.6Mbps-47678359.mp4",
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "2",
+      "row_desktop": "2",
+      "content_position_mobile": "end-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "",
+      "block_overlay_opacity": 0,
+      "block_content_overlay_color": ""
+     }
+    },
+    {
+     "id": "image_HC8pfk",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Entradas estándar",
+      "heading_size": "h3",
+      "button_label": "Ver más",
+      "button_style": "btn-primary",
+      "button_link": "/products/compuerta-anti-inundaciones",
+      "disable_link": false,
+      "desktop_image": "/media/files/bueno_2.jpg",
+      "mobile_image": "/media/files/Frame_623.jpg",
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "2",
+      "row_desktop": "1",
+      "content_position_mobile": "center-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "#0b0b0b",
+      "block_overlay_opacity": 15,
+      "block_content_overlay_color": "#ffffff"
+     }
+    },
+    {
+     "id": "image_DN8KQc",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Entradas amplias",
+      "heading_size": "h3",
+      "button_label": "Ver más",
+      "button_style": "btn-primary",
+      "button_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+      "disable_link": false,
+      "desktop_image": "/media/files/bueno_horizontal.jpg",
+      "mobile_image": "/media/files/Frame_624.jpg",
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "2",
+      "row_desktop": "1",
+      "content_position_mobile": "end-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "#0b0b0b",
+      "block_overlay_opacity": 10,
+      "block_content_overlay_color": "#ffffff"
+     }
+    }
+   ]
+  },
+  {
+   "id": "spacer_bk9ifJ",
+   "tipo": "spacer",
+   "ajustes": {
+    "padding_top": 0,
+    "padding_bottom": 0,
+    "background_color": "#ffffff",
+    "padding_top_desktop": 40,
+    "padding_bottom_desktop": 30,
+    "background_color_desktop": "#ecf0f3"
+   },
+   "bloques": []
+  },
+  {
+   "id": "featured_product_UBD7nm",
+   "tipo": "featured-product",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "subheading": "",
+    "heading": "Lo más vendido 🔥",
+    "heading_size": "h2",
+    "description": "",
+    "product": "compuerta-anti-inundaciones",
+    "main_media_ratio": "auto",
+    "thumbnails_ratio": "1 fill",
+    "media_layout": "thumbnail_left",
+    "enable_media_sticky": true,
+    "content_align_desktop": "ta-center-md center-md",
+    "content_align_mobile": "ta-center",
+    "media_background_color": ""
+   },
+   "bloques": [
+    {
+     "id": "title_FVyw6Q",
+     "tipo": "title",
+     "ajustes": {
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "price_p8Fggx",
+     "tipo": "price",
+     "ajustes": {
+      "show_tax_and_shipping_policy": false,
+      "enable_background": false,
+      "color_background": "",
+      "color_text": "",
+      "enable_sold_out_badge": true,
+      "show_sale_badge": "text_only",
+      "enable_new_in_badge": true
+     }
+    },
+    {
+     "id": "custom_text_tjtPWR",
+     "tipo": "custom_text",
+     "ajustes": {
+      "description": "<p>✓ Sistema de sellado único y eficaz<br/>✓ Instalación rápida y sencilla <br/>✓ Úsala tantas veces como necesites.<br/>✓ Tiempo de vida útil 5-7 años</p>",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "view_detail_4CP9BE",
+     "tipo": "view_detail",
+     "ajustes": {
+      "button_style": "btn-primary"
+     }
+    }
+   ]
+  },
+  {
+   "id": "multiple_product_tabs_AkUEwh",
+   "tipo": "multiple-product-tabs",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h2",
+    "description": "",
+    "collection_list": [
+     "coleccion-para-escritorio"
+    ],
+    "items_to_show": 3,
+    "show_vendor": false,
+    "show_color_swatch": false,
+    "quick_shop_action": "none",
+    "content_align_desktop": "ta-left-md",
+    "carousel_desktop": "false",
+    "columns_per_row_desktop": "3",
+    "content_align_mobile": "ta-left",
+    "carousel_mobile": "true",
+    "columns_per_row_mobile": "2",
+    "enable_button": false
+   },
+   "bloques": []
+  },
+  {
+   "id": "icon_with_text_iBwmtc",
+   "tipo": "icon-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h2",
+    "description": "",
+    "block_align": "ta-center middle-xs",
+    "icon_size": "64px",
+    "enable_block_background": false,
+    "background_content": "#fff7ec",
+    "color_content": "#c54c44",
+    "content_align_desktop": "ta-center-md",
+    "columns_per_row": "3",
+    "content_align_mobile": "ta-center",
+    "list_style": "true",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "item_tAgq9W",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "truck",
+      "html_code": "",
+      "heading": "Envíos gratis",
+      "description": "<p>A partir de $499</p>"
+     }
+    },
+    {
+     "id": "item_7mJaUH",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "check-circle",
+      "html_code": "",
+      "heading": "Garantía de funcionamiento",
+      "description": "<p>Productos probados en rigurosas pruebas</p>"
+     }
+    },
+    {
+     "id": "item_YLNNAf",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "storefront",
+      "html_code": "",
+      "heading": "Compra Segura",
+      "description": "<p>Protegemos tus datos personales en todo momento</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "before_after_images_w8tnab",
+   "tipo": "before-after-images",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "Así se ve la diferencia",
+    "heading": "De improvisar con sacos… a una protección segura",
+    "heading_size": "h2",
+    "description": "<p>Olvídate del caos y la incomodidad. Con una Compuerta Anti Inundaciones tu entrada se mantiene limpia, segura y lista para cualquier tormenta. Sencillo. Sin desorden.</p>",
+    "desktop_image": "/media/files/Frame_486.jpg",
+    "mobile_image": "/media/files/Antes_2.jpg",
+    "label_image_before": "Antes",
+    "desktop_image_second": "/media/files/Frame_485.jpg",
+    "mobile_image_second": "/media/files/Despues_2.jpg",
+    "label_image_after": "Después",
+    "content_align_desktop": "inline",
+    "content_ordering_desktop": "fd-column-md",
+    "content_align_mobile": "ta-center",
+    "content_ordering_mobile": "fd-column"
+   },
+   "bloques": []
+  },
+  {
+   "id": "customer_reviews_nyLKUL",
+   "tipo": "customer-reviews",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h2",
+    "description": "",
+    "speed": "100",
+    "moving_direction": "animation-direction",
+    "enable_play": false,
+    "content_font": "heading",
+    "content_size": "1",
+    "enable_block_background": false,
+    "background_content": "",
+    "color_content": "",
+    "show_rating": true,
+    "color_star": "#f8cc46",
+    "content_align_desktop": "ta-center-md",
+    "content_align_mobile": "ta-center"
+   },
+   "bloques": [
+    {
+     "id": "review_UcP6Bc",
+     "tipo": "review",
+     "ajustes": {
+      "avatar": "/media/files/Testimonio_23.jpg",
+      "star": 5,
+      "author": "Fer M.",
+      "author_title": "Compra verificada",
+      "description": "<p>Gracias a esta compuerta de Diluvium ya no sufriré de más inundaciones en esta época de lluvias, magnifica idea! y muchas gracias!</p>"
+     }
+    },
+    {
+     "id": "review_yDXXq4",
+     "tipo": "review",
+     "ajustes": {
+      "avatar": "/media/files/Testimonio_3.png",
+      "star": 5,
+      "author": "José P.",
+      "author_title": "Compra verificada",
+      "description": "<p>No encontré nada mas barato ni nada que se le parezca, mucho mejor que los sacos de arena la verdad. Recomendado</p>"
+     }
+    },
+    {
+     "id": "review_b8PQXT",
+     "tipo": "review",
+     "ajustes": {
+      "avatar": "/media/files/Testimonio_10.png",
+      "star": 5,
+      "author": "Claudia C.",
+      "author_title": "Compra verificada",
+      "description": "<p>Tuve que decirle a mi vecino que me ayude pero la colocamos y si está simple como pensé, muy buena!</p>"
+     }
+    },
+    {
+     "id": "review_bBcgjM",
+     "tipo": "review",
+     "ajustes": {
+      "avatar": "/media/files/Testimonio_1.png",
+      "star": 5,
+      "author": "Miriam G.",
+      "author_title": "Compra Verificada",
+      "description": "<p>Es estresante ver que el agua nomas entra y por mas que trapee o barra no es suficiente, esto me da tranquilidad de que ya no se va a meter.</p>"
+     }
+    },
+    {
+     "id": "review_B4iTda",
+     "tipo": "review",
+     "ajustes": {
+      "avatar": "/media/files/Copia_de_Testimonio_8.jpg",
+      "star": 5,
+      "author": "Héctor G.",
+      "author_title": "Compra verificada",
+      "description": "<p>Ayudó a solucionar los problemas que teníamos desde hace años</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "info_tab_cwLXdc",
+   "tipo": "info-tab",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "subheading": "",
+    "heading": "Protege tu hogar en [3 pasos]",
+    "heading_size": "h2",
+    "description": "",
+    "image_ratio": "1",
+    "enable_autoplay": true,
+    "auto_play_time": 7,
+    "content_align": "ta-center-md",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "image_size_on_large": "6",
+    "content_align_mobile": "ta-center",
+    "content_ordering_mobile": "fd-column-reverse",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "tab_JeqkL9",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_601.jpg",
+      "heading": "Paso 1 - Mide el ancho de la entrada que necesitas proteger",
+      "description": "<p> Usa una cinta métrica para medir el ancho exacto que necesitas cubrir.</p>"
+     }
+    },
+    {
+     "id": "tab_nDPRfb",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_598.jpg",
+      "heading": "Paso 2 - Elige la compuerta ideal para tu entrada",
+      "description": "<p>Con las medidas en mano, elige la compuerta que se adapta perfectamente a tu entrada.</p>"
+     }
+    },
+    {
+     "id": "tab_zfmeJR",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_603.jpg",
+      "heading": "Paso 3 - Recibe tu compuerta en pocos días",
+      "description": "<p><a href=\"/products/compuerta-anti-inundaciones\" title=\"Compuerta Anti-Inundaciones\"><em><strong>Pide tu compuerta aqui</strong></em></a> y la enviamos directamente a tu casa en 3 a 5 días hábiles. Rápido, seguro y sin complicaciones.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_ByUWjm",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_648_2726f8ab-2e19-4e52-81b8-f81b51adee6b.jpg",
+    "mobile_image": "/media/files/tabla_comparativa_mobile_home_buena.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "media_with_text_columns_cVz6pJ",
+   "tipo": "media-with-text-columns",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "⭐️⭐️⭐️⭐️⭐️",
+    "heading": "No necesitas confiar en nosotros, [confía en ellos.]",
+    "heading_size": "h2",
+    "description": "",
+    "item_alignment": "ta-left",
+    "image_ratio": "2/3",
+    "column_heading_size": "h5",
+    "enable_item_background": false,
+    "background_content": "#ffffff",
+    "color_content": "",
+    "content_align_desktop": "ta-left-md",
+    "columns_per_row": "4",
+    "content_align_mobile": "ta-left",
+    "list_style": "true",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "video_ea3e7H",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "/media/videos/0f6dc8a163ee49a7880a0d90cfe862be.HD-720p-1.6Mbps-46333397.mp4",
+      "video_thumbnail": "/media/files/Test_1.jpg",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_KYLmRR",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "/media/videos/c011eef2f77343ed839a881cc647a8ca.HD-720p-1.6Mbps-46333407.mp4",
+      "video_thumbnail": "/media/files/Test_2.jpg",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_BUcrFp",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "video_hosted": "/media/videos/72c11467886c4b328a8807c9502702be.HD-720p-1.6Mbps-46333409.mp4",
+      "video_thumbnail": "/media/files/Test_3.jpg",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_eMHHBg",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "/media/videos/e361640d2ee54fbdb28ca721aa765879.HD-720p-1.6Mbps-46333749.mp4",
+      "video_thumbnail": "/media/files/Test_4.jpg",
+      "heading": "",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "scrolling_logos_tDJjHE",
+   "tipo": "scrolling-logos",
+   "ajustes": {
+    "reverse_direction": false,
+    "desktop_slides_per_view": 7,
+    "background_color": "#eaeef1"
+   },
+   "bloques": [
+    {
+     "id": "logo_KFPigG",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Frame_331_df691c71-9707-4263-95c4-e51b32840a0a.png"
+     }
+    },
+    {
+     "id": "logo_RJRBMD",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Frame_334_e926924a-4554-4532-8fe8-64cd67e1d4a7.png"
+     }
+    },
+    {
+     "id": "logo_Tz3Bj7",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Frame_335_3ec24775-eb5f-4d00-8a1e-a1484926c3a6.png"
+     }
+    },
+    {
+     "id": "logo_DpyMNK",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Frame_336_ffa738e6-488f-483e-adb5-8e684164dcd8.png"
+     }
+    },
+    {
+     "id": "logo_LiaDXq",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Frame_337_9324f69e-88b3-448f-bca7-3236fc133aad.png"
+     }
+    },
+    {
+     "id": "logo_3ice7J",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_1_9c399247-a8e3-4c7b-a64a-1423338ba43e.png"
+     }
+    },
+    {
+     "id": "logo_gHmrbR",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_6_428476e0-1b07-47f7-a1c1-979214237f3b.png"
+     }
+    },
+    {
+     "id": "logo_nnkXWn",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_2_e3d7fce4-40f2-45a7-b5c7-b1adf06c7324.png"
+     }
+    },
+    {
+     "id": "logo_QqNmcC",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_3_0521982a-6674-4d01-a736-3ac1bdeaa435.png"
+     }
+    },
+    {
+     "id": "logo_WKYFtb",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_4_3bd03a69-6112-44c4-8729-5e106e038718.png"
+     }
+    },
+    {
+     "id": "logo_fyCMUm",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_5_b2f49cc8-be75-4cd8-bcc3-7c5afa48f7a9.png"
+     }
+    },
+    {
+     "id": "logo_cnKiek",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_7_6ab89a33-7ccc-48b1-9374-1b97cbcaa9b0.png"
+     }
+    },
+    {
+     "id": "logo_NyPT3T",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_8_e0d43bfa-9242-42af-9819-878618d02c0f.png"
+     }
+    },
+    {
+     "id": "logo_QJGW7E",
+     "tipo": "logo",
+     "ajustes": {
+      "image": "/media/files/Marca_9_528a354b-05f3-46c3-a715-ea4beeb42704.png"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_cKYDfA",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_769_047a2d02-3372-4213-b22d-d6194656e9f0.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "image_collage_with_text_PCUiwJ",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-6",
+    "collage_alignment": "media-sticky",
+    "secondary_image": "/media/files/1c9e6520-9e08-47b8-bcf2-d05ec6d3e5b8_3.jpg",
+    "tertiary_image": "/media/files/Captura_de_pantalla_2025-04-10_a_la_s_6.18.16_p.m..png",
+    "quaternary_image": "/media/files/IMG_0694.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "8.4",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "subheading_Yjk46Q",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Descubre"
+     }
+    },
+    {
+     "id": "heading_MBLEDB",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Cómo empezó todo",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_E6QQKd",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>En Diluvium, nuestra misión es ayudar a las familias y empresas a protegerse de las inundaciones, un problema que afecta a millones de personas en México. Fundamos la empresa con un compromiso claro: ofrecer una solución eficaz, práctica y accesible para todos. </p><p>Descubre cómo nació nuestra idea.</p>"
+     }
+    },
+    {
+     "id": "button_dRgaWB",
+     "tipo": "button",
+     "ajustes": {
+      "button_main_text": "",
+      "button_main_style": "btn-primary",
+      "button_main_link": "",
+      "button_sub_text": "Conoce nuestra historia",
+      "button_sub_style": "btn-primary",
+      "button_sub_link": "/pages/nosotros"
+     }
+    }
+   ]
+  },
+  {
+   "id": "whatsapp_form_xVcimH",
+   "tipo": "whatsapp-form",
+   "ajustes": {
+    "title": "¡Hola!",
+    "subtitle": "Llena este formulario y nos pondremos en contacto contigo para cotizar la protección de tus entradas.",
+    "button_text": "Enviar",
+    "success_message": "¡Gracias por contactarnos! Te responderemos a la brevedad."
+   },
+   "bloques": []
+  },
+  {
+   "id": "blog_post_list_K3Mj4a",
+   "tipo": "blog-post-list",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "subheading": "",
+    "heading": "Tips de prevención",
+    "heading_size": "h2",
+    "description": "",
+    "blog": "blog",
+    "items_to_show": 8,
+    "show_featured_image": true,
+    "show_blog_tags": true,
+    "show_published_date": true,
+    "show_author": false,
+    "show_excerpt": true,
+    "content_align_desktop": "ta-left-md",
+    "carousel_desktop": "true",
+    "columns_per_row": "3",
+    "content_align_mobile": "ta-left",
+    "carousel_mobile": "true",
+    "show_view_all_button": true,
+    "button_text": "Ver todos",
+    "style_button": "btn-outline"
+   },
+   "bloques": []
+  },
+  {
+   "id": "17449368744f1961a6",
+   "tipo": "apps",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "enable_content_fullwidth": true,
+    "remove_padding_top": true,
+    "remove_padding_bottom": true
+   },
+   "bloques": [
+    {
+     "id": "trustoo_io_reviews_barrage_carousel_8UqaAT",
+     "tipo": "shopify://apps/trustwill-trustoo/blocks/barrage-carousel/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+     "ajustes": {}
+    }
+   ]
+  },
+  {
+   "id": "image_banner_G7rhak",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "mobile_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  }
+ ]
+}

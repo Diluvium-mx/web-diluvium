@@ -1,0 +1,11 @@
+{
+ "fuente": "templates/product.quick-add.json@69d5993",
+ "secciones": [
+  {
+   "id": "main",
+   "tipo": "main-product-quick-add",
+   "ajustes": {},
+   "bloques": []
+  }
+ ]
+}

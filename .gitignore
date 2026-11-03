@@ -1,0 +1,23 @@
+# dependencias y builds
+node_modules/
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# entorno y secretos (nunca al repo)
+.env*
+!.env.example
+
+# referencias pesadas del sitio actual (viven solo en esta Mac; se regeneran con los scripts)
+docs/sitio-actual/capturas/
+docs/sitio-actual/datos/*.html
+comparaciones/
+
+# varios
+.DS_Store
+*.log
+
+# datos del negocio (ventas reales): el repositorio es público; viven solo en esta Mac
+docs/costos-y-comparacion.md

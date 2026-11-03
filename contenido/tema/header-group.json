@@ -1,0 +1,110 @@
+{
+ "fuente": "sections/header-group.json@69d5993",
+ "secciones": [
+  {
+   "id": "running_content_WwxgYn",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-3",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": true,
+    "heading_size": "h6"
+   },
+   "bloques": [
+    {
+     "id": "text_CxYYV9",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_G449AR",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "ellipsis",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_YUFxdr",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>🛡️ <em>Sistema de sellado único en México</em></p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_VayWLw",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "ellipsis",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_PCYyBk",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>🏆 #1 <em>Sistema ganador en innovación</em></p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_LLnWXF",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "ellipsis",
+      "html_code": "",
+      "color_content": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "extra-info-header",
+   "tipo": "extra-info-header",
+   "ajustes": {
+    "phone_number": "(668) 241 9579",
+    "email": "contacto@diluvium.com.mx"
+   },
+   "bloques": []
+  },
+  {
+   "id": "header",
+   "tipo": "header",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "header_sticky": "true",
+    "menu_open_trigger": "click",
+    "logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+    "sticky_logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+    "logo_width": 200,
+    "logo_width_mobile": 140,
+    "main_menu": "main-menu",
+    "open_external_link": true,
+    "enable_menu_highlight": true,
+    "menu_highlight_names": "",
+    "menu_highlight_style": "underline",
+    "menu_highlight_color": "",
+    "show_currency_selector": false,
+    "show_language_selector": false,
+    "header_layout_desktop": "header--horizontal header--horizontal-left",
+    "header_layout_mobile": "drawer-left",
+    "sticky_header_bgc": "#ffffff",
+    "sticky_header_content": "#0a559a"
+   },
+   "bloques": []
+  }
+ ]
+}

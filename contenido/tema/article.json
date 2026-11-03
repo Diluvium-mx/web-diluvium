@@ -1,0 +1,44 @@
+{
+ "fuente": "templates/article.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-article",
+   "ajustes": {
+    "color_scheme": "scheme-5"
+   },
+   "bloques": [
+    {
+     "id": "featured_image",
+     "tipo": "featured_image",
+     "ajustes": {}
+    },
+    {
+     "id": "title",
+     "tipo": "title",
+     "ajustes": {
+      "heading_size": "h2",
+      "show_published_date": true,
+      "show_author": true
+     }
+    },
+    {
+     "id": "content",
+     "tipo": "content",
+     "ajustes": {
+      "show_blog_tags": true,
+      "font_size": 18
+     }
+    }
+   ]
+  }
+ ]
+}

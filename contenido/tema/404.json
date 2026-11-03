@@ -1,0 +1,137 @@
+{
+ "fuente": "templates/404.json@69d5993",
+ "secciones": [
+  {
+   "id": "running_content_1",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "",
+    "speed": "100",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": false,
+    "heading_size": "h3"
+   },
+   "bloques": [
+    {
+     "id": "text_1",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_1",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "subscription",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_2",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_2",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "subscription",
+      "color_content": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "main",
+   "tipo": "main-404",
+   "ajustes": {
+    "color_scheme": "schema-1",
+    "content_ordering_desktop": "fd-row-md",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading",
+     "tipo": "subheading",
+     "ajustes": {}
+    },
+    {
+     "id": "heading",
+     "tipo": "heading",
+     "ajustes": {
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description",
+     "tipo": "description",
+     "ajustes": {}
+    },
+    {
+     "id": "search",
+     "tipo": "search",
+     "ajustes": {}
+    },
+    {
+     "id": "button",
+     "tipo": "button",
+     "ajustes": {}
+    }
+   ]
+  },
+  {
+   "id": "running_content_2",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "",
+    "speed": "100",
+    "moving_direction": "animation-reverse",
+    "pause_when_hover": false,
+    "heading_size": "h3"
+   },
+   "bloques": [
+    {
+     "id": "text_1",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_1",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "subscription",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_2",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_2",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "subscription",
+      "color_content": ""
+     }
+    }
+   ]
+  }
+ ]
+}

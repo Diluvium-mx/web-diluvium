@@ -1,0 +1,13 @@
+{
+ "fuente": "templates/cart.json@69d5993",
+ "secciones": [
+  {
+   "id": "main",
+   "tipo": "main-cart",
+   "ajustes": {
+    "color_scheme": "scheme-5"
+   },
+   "bloques": []
+  }
+ ]
+}

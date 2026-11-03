@@ -1,0 +1,79 @@
+{
+ "fuente": "templates/list-collections.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": "scheme-3"
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-list-collections",
+   "ajustes": {
+    "color_scheme": "scheme-5",
+    "products_per_load": "20",
+    "products_load_method": "pagination",
+    "content_align_desktop": "ta-center-md m-auto",
+    "columns_per_row_desktop": "4",
+    "content_align_mobile": "ta-left",
+    "columns_per_row_mobile": "6"
+   },
+   "bloques": []
+  },
+  {
+   "id": "running_content",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": false,
+    "heading_size": "h2"
+   },
+   "bloques": [
+    {
+     "id": "text_1",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {}
+    },
+    {
+     "id": "text_2",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "image_2",
+     "tipo": "image",
+     "ajustes": {}
+    },
+    {
+     "id": "text_3",
+     "tipo": "text",
+     "ajustes": {
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "image_3",
+     "tipo": "image",
+     "ajustes": {}
+    }
+   ]
+  }
+ ]
+}

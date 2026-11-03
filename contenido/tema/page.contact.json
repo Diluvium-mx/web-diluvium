@@ -1,0 +1,158 @@
+{
+ "fuente": "templates/page.contact.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-page",
+   "ajustes": {
+    "color_scheme": "",
+    "show_page_title": false,
+    "show_page_content": false
+   },
+   "bloques": []
+  },
+  {
+   "id": "faqs_x9r7eY",
+   "tipo": "faqs",
+   "ajustes": {
+    "color_scheme": "",
+    "subheading": "",
+    "heading_text": "¿Tienes dudas? Aquí las respuestas y formas de contacto",
+    "heading_size": "h2",
+    "description_text": "<p><strong>Puedes llamarnos al</strong> <em>(668) 241 9579</em><br/><strong>Puedes encontrarnos en:</strong> <em>Calle Morelos #254, Los Mochis, Sinaloa, México</em><br/><strong>Puedes mandarnos un correo a</strong> <em>contacto@diluvium.com.mx</em></p>",
+    "one_item_expand": true,
+    "open_first_item": false,
+    "enable_contact_form": true,
+    "heading_contact_form": "Contáctanos",
+    "heading_size_contact_form": "h4",
+    "description_contact_form": "<p>Llena el siguiente formato con tus datos y te atenderemos lo antes posible</p>",
+    "button_label": "Enviar",
+    "color_custom_form_background": "#ecf0f3",
+    "color_custom_form_content": "#1c1c6b",
+    "heading_alignment_desktop": "ta-left-md top-md",
+    "content_ordering": "fd-row-reverse-sm",
+    "heading_alignment_mobile": "ta-left top-xs",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "faq_item_XTcGiq",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "star",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Mandan fuera de México?",
+      "description_faq_item": "<p>Regularmente no realizamos envíos fuera de México, ya que los costos de transporte internacional suelen ser muy elevados, en algunos casos incluso mayores que el valor de la propia compuerta. Sin embargo, si estás interesado, te invitamos a ponerte en contacto con nosotros vía WhatsApp para revisar tu caso específico y evaluar opciones disponibles.</p>"
+     }
+    },
+    {
+     "id": "faq_item_eXdk9Y",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "subscription",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Hacen compuertas más altas?",
+      "description_faq_item": "<p>Actualmente, no ofrecemos compuertas más altas, ya que nos encontramos en fase de pruebas con este tipo de medidas. La presión del agua aumenta considerablemente con alturas mayores, y preferimos no ofrecer soluciones que no podamos garantizar como 100% funcionales. Por el momento, el único tamaño disponible es el que hemos probado exhaustivamente para asegurar su eficacia y seguridad.</p>"
+     }
+    },
+    {
+     "id": "faq_item_VPiXDb",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "subscription",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Hacen compuertas más bajas?",
+      "description_faq_item": "<p>Estamos evaluando opciones para crear compuertas más bajas que se adapten a necesidades específicas de prevención a inundaciones de menor magnitud. Aunque no están disponibles aún, estamos comprometidos en ofrecer soluciones cada vez más completas, por lo que podrás contar con esta opción en el futuro cercano.</p>"
+     }
+    },
+    {
+     "id": "faq_item_AF8knL",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "subscription",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Realizan envíos a todo México?",
+      "description_faq_item": "<p>Sí, realizamos envíos a todo el país a través de paqueterías de confianza. Dependiendo de la ubicación, el tiempo de entrega varía entre 2 y 5 días hábiles. También ofrecemos opciones de envío express en algunas ciudades cercanas.</p>"
+     }
+    },
+    {
+     "id": "faq_item_nVAYP9",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "subscription",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Puedo pedir factura de mi compra?",
+      "description_faq_item": "<p>Sí, puedes solicitar tu factura sin problema. Para ello, necesitaríamos que nos envíes tu constancia de situación fiscal o los datos correspondientes para generar la factura. Puedes enviarnos esta información al número de WhatsApp (668) 241 9579 o al correo electrónico <a>contacto@diluvium.com.mx</a>. Ten en cuenta que la solicitud de factura solo es válida hasta 30 días después de la compra. En caso de que falte algún dato, te notificaremos para completar la información.</p>"
+     }
+    },
+    {
+     "id": "faq_item_YYR9JF",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "star",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Cómo puedo modificar o cancelar un pedido ya realizado?",
+      "description_faq_item": "<p>Si necesitas modificar o cancelar tu pedido, te recomendamos hacerlo lo antes posible, preferentemente antes de que el producto sea enviado. En caso de que ya haya sido enviado, no podremos emitir un reembolso hasta que el producto sea devuelto a nuestro inventario. Si la cancelación se realiza a tiempo, podemos proceder con el reembolso completo de tu inversión sin inconvenientes. Para cualquier modificación o cancelación, contáctanos lo antes posible al número (668) 241 9579.</p>"
+     }
+    },
+    {
+     "id": "faq_item_zbCmDK",
+     "tipo": "faq_item",
+     "ajustes": {
+      "show_icon": false,
+      "icon_source": "theme_library",
+      "theme_library_icon": "subscription",
+      "custom_code": "",
+      "icon_color": "",
+      "heading_faq_item": "¿Tienen tienda física o solo venta en línea?",
+      "description_faq_item": "<p>Actualmente, nuestra tienda es en línea, pero sí ofrecemos la opción de entrega directa en nuestras oficinas para quienes se encuentren en la ciudad. Sin embargo, la gran mayoría de los pedidos se envían a través de paquetería a diversas ciudades de todo el país. Si prefieres recoger el producto directamente, por favor, contáctanos para coordinar la entrega en nuestra oficina.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_bE8Tdj",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "mobile_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  }
+ ]
+}

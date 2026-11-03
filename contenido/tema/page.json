@@ -1,0 +1,11 @@
+{
+ "fuente": "templates/page.json@69d5993",
+ "secciones": [
+  {
+   "id": "main",
+   "tipo": "main-page",
+   "ajustes": {},
+   "bloques": []
+  }
+ ]
+}

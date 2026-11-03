@@ -1,0 +1,53 @@
+{
+ "fuente": "sections/footer-group.json@69d5993",
+ "secciones": [
+  {
+   "id": "footer",
+   "tipo": "footer",
+   "ajustes": {
+    "color_scheme": "scheme-3",
+    "enable_back_to_top": true,
+    "show_currency_selector": false,
+    "show_language_selector": false,
+    "show_payment_methods": false,
+    "menu": "footer",
+    "open_external_link": false
+   },
+   "bloques": [
+    {
+     "id": "store_information",
+     "tipo": "store_information",
+     "ajustes": {
+      "heading": "",
+      "footer_image": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+      "image_width": 200,
+      "image_width_mobile": 140,
+      "description": "<h5>Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México</h5><h5>(668) 241 9579</h5><h5>contacto@diluvium.com.mx</h5>",
+      "enable_follow_on_shop": true,
+      "show_socical_icons": true,
+      "socical_icons_style": "btn-plain"
+     }
+    },
+    {
+     "id": "single_menu_2",
+     "tipo": "single_menu",
+     "ajustes": {
+      "menu": "main-menu"
+     }
+    },
+    {
+     "id": "newsletter",
+     "tipo": "newsletter",
+     "ajustes": {
+      "newsletter_heading": "Suscríbete para ofertas y descuentos",
+      "newsletter_description": "",
+      "submit_button": "Suscribirme",
+      "enable_block_background": true,
+      "background_content": "#004288",
+      "color_content": "#ffffff"
+     }
+    }
+   ]
+  }
+ ]
+}

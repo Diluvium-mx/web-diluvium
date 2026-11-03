@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- This is the parent sitemap linking to additional sitemaps for products, collections and pages as shown below. The sitemap can not be edited manually, but is kept up to date in real time. -->
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_agentic_discovery.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_products_1.xml?from=7712012763356&amp;to=9533809983708</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_pages_1.xml?from=99212165340&amp;to=124585345244</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_collections_1.xml?from=406422126812&amp;to=455282426076</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_blogs_1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.diluvium.com.mx/sitemap_articles_1.xml</loc>
+  </sitemap>
+</sitemapindex>

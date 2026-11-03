@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* Diseño medido en la página real (docs/sitio-actual/diseno.md y docs/sitio-actual/medidas/). No es código del
+   tema Shine: son los valores que calcula el navegador, reescritos aquí. */
+
+@theme {
+  --font-texto: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-titulo: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-destacado: var(--font-bevan), ui-serif, serif;
+
+  --color-azul: #0a559a;
+  --color-azul-oscuro: #004288;
+  --color-azul-borde: #245595;
+  --color-azul-titulo: #1c397b;
+  --color-naranja: #f8a01d;
+  --color-verde: #28a625;
+  --color-gris-fondo: #ecf0f3;
+  --color-gris-texto: #5a5a5a;
+  --color-oferta-texto: #1d6b1c;
+  --color-oferta-fondo: #ecffe5;
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+}
+
+:root {
+  /* Márgenes laterales y aire de las secciones: celular / tableta (768+) / computadora (1200+) */
+  --margen: 24px;
+  --aire: 64px;
+  --hueco: 24px;
+  --ancho-pagina: 1300px;
+
+  /* Escala de títulos: 16px × 1.125ⁿ en celular, 16px × 1.2ⁿ desde 768px; interlineado 1.25 */
+  --h1: 28.8325px;
+  --h2: 25.6289px;
+  --h3: 22.7812px;
+  --h4: 20.25px;
+  --h5: 18px;
+  --h6: 17.072px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --margen: 48px;
+    --aire: 96px;
+    --hueco: 36px;
+    --h1: 39.8131px;
+    --h2: 33.1776px;
+    --h3: 27.648px;
+    --h4: 23.04px;
+    --h5: 19.2px;
+    --h6: 18px;
+  }
+}
+
+/* El tema pasa a diseño de computadora desde 1025px (medido en vivo); el menú en línea, desde 1200px. */
+@media (min-width: 1025px) {
+  :root {
+    --margen: 64px;
+    --hueco: 48px;
+  }
+}
+
+/* Esquemas de color del tema (Configuración del tema → Colores) */
+.esquema-1 { --fondo: #ffffff; --texto: #0a559a; --boton-fondo: #f8a01d; --boton-texto: #ffffff; --boton-borde: #0a559a; }
+.esquema-2 { --fondo: #ecf0f3; --texto: #004288; --boton-fondo: #f8a01d; --boton-texto: #ffffff; --boton-borde: #004288; }
+.esquema-3 { --fondo: #004288; --texto: #ffffff; --boton-fondo: #f8a01d; --boton-texto: #ededed; --boton-borde: #ffffff; }
+.esquema-4 { --fondo: #004288; --texto: #ffffff; --boton-fondo: #28a625; --boton-texto: #ffffff; --boton-borde: #ffffff; }
+.esquema-5 { --fondo: transparent; --texto: #004288; --boton-fondo: #004288; --boton-texto: #fff7ec; --boton-borde: #004288; }
+.esquema-6 { --fondo: #ffffff; --texto: #004288; --boton-fondo: #0a559a; --boton-texto: #ffffff; --boton-borde: transparent; }
+
+[class*="esquema-"] {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* Estilos base en capa para que las clases de Tailwind les ganen. */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: #0a559a;
+    font-family: var(--font-texto);
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+  }
+  h1 { font-size: var(--h1); }
+  h2 { font-size: var(--h2); }
+  h3 { font-size: var(--h3); }
+  h4 { font-size: var(--h4); }
+  h5 { font-size: var(--h5); }
+  h6 { font-size: var(--h6); }
+}
+
+/* Palabras entre [corchetes] en los títulos: color destacado */
+.resaltado { color: var(--color-naranja); }
+
+/* Texto con formato que viene del contenido (párrafos, negritas, enlaces) */
+.texto-rico p { margin: 0; }
+.texto-rico p + p { margin-top: 1em; }
+.texto-rico a { text-decoration: underline; }
+
+/* Contenedor de página: máximo 1300px de contenido más los márgenes laterales */
+.contenedor {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(var(--ancho-pagina) + 2 * var(--margen));
+  margin-inline: auto;
+  padding-inline: var(--margen);
+}
+
+/* Encabezado: [menú] [logo] [íconos] en celular y tableta; [logo] [menú] [íconos] en computadora */
+.encabezado-rejilla { grid-template-columns: 40px 1fr 74px; }
+@media (min-width: 1200px) {
+  .encabezado-rejilla { grid-template-columns: var(--logo) 1fr 82px; }
+}
+
+/* Dirección del pie: un renglón por línea con 32px entre ellas */
+.pie-direccion h5 + h5 { margin-top: 32px; }
+
+/* Franja de texto que corre */
+@keyframes correr {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+.franja-pista { animation: correr var(--duracion, 23s) linear infinite; }
+.franja:hover .franja-pista { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .franja-pista { animation: none; }
+}

@@ -1,0 +1,627 @@
+{
+ "_fuente": "https://www.diluvium.com.mx/products/<nombre>.json (2026-11-03)",
+ "productos": [
+  {
+   "id": 7712012763356,
+   "nombre": "compuerta-anti-inundaciones",
+   "titulo": "Compuerta Anti-Inundaciones",
+   "plantilla": "compuerta-estandar-2",
+   "descripcionHtml": "<h3 style=\"text-align: left;\">\n<meta charset=\"utf-8\"> <strong>Evita el paso del agua durante lluvias intensas e inundaciones, protege tu entrada en minutos, asegurando la protección de lo que más valoras. Rápida, eficiente y reutilizable.</strong>\n</h3>\n<h3 style=\"text-align: left;\">\n<meta charset=\"utf-8\"> 🕑 <strong>Rápida Instalación:</strong>\n</h3>\n<p>En tan solo <strong>10 minutos</strong> protege tu domicilio ante fuertes lluvias. No se requieren modificaciones en tu entrada.</p>\n<h3 style=\"text-align: left;\">💦 <strong>Hecha de Acero de Alta Resistencia: </strong>\n</h3>\n<p>Fabricada con acero para resistir impactos de olas y altas presiones de agua. Forrada con una funda impermeable.</p>\n<h3 style=\"text-align: left;\"><strong>✅ Sello Garantizado: </strong></h3>\n<p>La hemos sometido a muchas pruebas para garantizar que no pase nada de agua, incluso cuando hay olas y movimientos bruscos.</p>\n<ul class=\"checkmarks-list\">\n<li>Se adapta a tu entrada</li>\n<li>Soporta hasta 50cm de altura<br>\n</li>\n<li>Re-utilizable por 5-7 años</li>\n<li>Sin necesidad de modificar la entrada</li>\n</ul>\n<p style=\"text-align: center;\"><strong>Damos asesoría personalizada para cada caso en www.diluvium.com.mx</strong></p>",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Tamaño",
+     "valores": [
+      "Extra Chica (69cm a 78cm)",
+      "Chica (79cm a 90cm)",
+      "Mediana (91cm a 100cm)",
+      "Grande (101cm a 110cm)",
+      "Extra Grande (111cm a 120cm)"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 46431147524316,
+     "titulo": "Extra Chica (69cm a 78cm)",
+     "precio": 5500,
+     "precioAntes": 5999,
+     "opcion1": "Extra Chica (69cm a 78cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43039686131932,
+     "titulo": "Chica (79cm a 90cm)",
+     "precio": 5500,
+     "precioAntes": 5999,
+     "opcion1": "Chica (79cm a 90cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43039686164700,
+     "titulo": "Mediana (91cm a 100cm)",
+     "precio": 5500,
+     "precioAntes": 5999,
+     "opcion1": "Mediana (91cm a 100cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43039686197468,
+     "titulo": "Grande (101cm a 110cm)",
+     "precio": 5500,
+     "precioAntes": 5999,
+     "opcion1": "Grande (101cm a 110cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43039686263004,
+     "titulo": "Extra Grande (111cm a 120cm)",
+     "precio": 5500,
+     "precioAntes": 5999,
+     "opcion1": "Extra Grande (111cm a 120cm)",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1300,
+     "alto": 1300,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/8.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 2500,
+     "alto": 2500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/5_07b7910a-8a08-4b54-a1f6-d81b2757cd81.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1500,
+     "alto": 1500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/6.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 2500,
+     "alto": 2500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/Imagenpasosbuena.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1500,
+     "alto": 1500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/21.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 2500,
+     "alto": 2500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/3_09d648f8-73a2-461f-91b2-63b4af47c660.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1500,
+     "alto": 1500,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/6_61bbe95a-a71d-493a-9e88-6d6ad41c5b39.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1500,
+     "alto": 1500,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/9.Queincluyeelpaquete.png",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1045,
+     "alto": 1045,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/1.Compuertarecta.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "ancho": 1000,
+     "alto": 1000,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 7712425017564,
+   "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida",
+   "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+   "plantilla": "medida-especial",
+   "descripcionHtml": "<p>Esta compuerta se adapta a tu entrada, <strong>puede medir hasta 2.5m de ancho x 60cm de alto</strong>, creando un sello en todo el contorno para impedir el paso del agua.</p>\n<h3><meta charset=\"utf-8\"></h3>\n<p><meta charset=\"utf-8\">Está hecha de acero, para <strong>resistir fuertes impactos de olas y altas presiones de agua.</strong></p>\n<p>Cuando está lloviendo<span> </span><strong>se coloca en 10 minutos</strong><span> </span>y cuando pasa la lluvia se retira en 5 minutos, luego se guarda para re-utilizarse. </p>\n<p>Está forrada una funda de neopreno, el cual es un material muy resistente y<span> </span><strong>100% impermeable</strong>, es lo que hace que no pase el agua.<br></p>\n<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\">Características:</p>\n<p style=\"text-align: center;\"><img data-mce-fragment=\"1\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0647/9308/4124/files/IconosHQligeros_480x480.png?v=1686938204\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0647/9308/4124/files/IconosHQligeros_480x480.png?v=1686938204\"></p>\n<p style=\"text-align: center;\"><br></p>\n<p><span data-mce-fragment=\"1\">Esta es una versión <strong>hecha a la medida</strong> para evitar que pase agua a través de entradas más amplias, aqui ponemos los pasos para pedirla:</span></p>\n<ol>\n<li><span data-mce-fragment=\"1\">Hacer click en el botón \"hacer pedido\"</span></li>\n<li>Mandar foto de tu entrada por dentro y por fuera.</li>\n<li>Proporcionar la medida de ancho exacta (de marco a marco)</li>\n<li>La compuerta estará lista en un tiempo promedio de <strong>tres semanas</strong>, es necesario un <strong>anticipo del 50%</strong> para empezarla, el resto cuando esté lista.</li>\n<li>Le avisaremos cuando esté terminada para liquidar y mandarle su compuerta a la dirección que nos indique.</li>\n</ol>",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Title",
+     "valores": [
+      "Default Title"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 44072656470236,
+     "titulo": "Default Title",
+     "precio": 7000,
+     "precioAntes": null,
+     "opcion1": "Default Title",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1260,
+     "alto": 1260,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/6_3b8c0ccf-3412-4dc9-83dc-470da79ca652.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1260,
+     "alto": 1260,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/1.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1232,
+     "alto": 1232,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/3_e2c0623e-a5e2-442a-9126-61b08b856e29.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1484,
+     "alto": 1484,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/4_e2544b69-40cf-4121-a2c9-1757f50fda5b.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1350,
+     "alto": 1350,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/METrasera.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "ancho": 1350,
+     "alto": 1350,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 9533809983708,
+   "nombre": "mini-compuerta",
+   "titulo": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+   "plantilla": "mini-compuerta",
+   "descripcionHtml": "",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Tamaño",
+     "valores": [
+      "A (62cm a 70cm)",
+      "B (71cm a 79cm)",
+      "C (80cm a 88cm)",
+      "D (89cm a 97cm)",
+      "E (98cm a 106cm)",
+      "F (107cm a 115cm)",
+      "G (116cm a 123cm)"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 52105554002140,
+     "titulo": "A (62cm a 70cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "A (62cm a 70cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52105554034908,
+     "titulo": "B (71cm a 79cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "B (71cm a 79cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52105554067676,
+     "titulo": "C (80cm a 88cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "C (80cm a 88cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52105554100444,
+     "titulo": "D (89cm a 97cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "D (89cm a 97cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52105554133212,
+     "titulo": "E (98cm a 106cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "E (98cm a 106cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52105554165980,
+     "titulo": "F (107cm a 115cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "F (107cm a 115cm)",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 52262791741660,
+     "titulo": "G (116cm a 123cm)",
+     "precio": 3000,
+     "precioAntes": 3499,
+     "opcion1": "G (116cm a 123cm)",
+     "sku": null,
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/files/IMG1.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG2.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG3.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG4.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG5.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG6.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG8.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/files/IMG9.jpg",
+     "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 7712159727836,
+   "nombre": "tapon-inflable-anti-inundaciones",
+   "titulo": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+   "plantilla": "tapon-inflable",
+   "descripcionHtml": "<p><meta charset=\"utf-8\"><meta charset=\"utf-8\"><span>Cuando el drenaje se satura, el agua puede salir por las coladeras y causar daños en el hogar. El Tapón Inflable Anti Inundaciones se introduce en la tubería y, al inflarse, bloquea de manera segura el paso del agua.<br></span><br data-start=\"533\" data-end=\"536\"><span>Fabricado en goma de alta resistencia, se instala fácilmente en coladeras de regaderas o inodoros, sellando herméticamente el contorno interior. <br><br>Su diseño reutilizable y de rápida colocación ofrece una solución práctica para proteger tu casa durante lluvias intensas o saturaciones del drenaje.</span><br></p>",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Tamaño",
+     "valores": [
+      "2 pulgadas (5cm)",
+      "3 pulgadas (7.5cm)",
+      "4 pulgadas (10cm)"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 43040043106524,
+     "titulo": "2 pulgadas (5cm)",
+     "precio": 749,
+     "precioAntes": null,
+     "opcion1": "2 pulgadas (5cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43040043139292,
+     "titulo": "3 pulgadas (7.5cm)",
+     "precio": 799,
+     "precioAntes": null,
+     "opcion1": "3 pulgadas (7.5cm)",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43040043172060,
+     "titulo": "4 pulgadas (10cm)",
+     "precio": 849,
+     "precioAntes": null,
+     "opcion1": "4 pulgadas (10cm)",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/products/Frame237.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Frame2352.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Frametaponbueno.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Tapon1.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Tapon3.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Tapon2.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Medidastaponesinflables_ec99b8c3-0bf9-46f4-a78d-60ef08ba6d32.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "ancho": 1080,
+     "alto": 1080,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 7712431243484,
+   "nombre": "funda-de-repuesto-compuerta-anti-inundaciones",
+   "titulo": "Funda de repuesto Compuerta Anti-Inundaciones",
+   "plantilla": "",
+   "descripcionHtml": "<p>Respuesto para tu compuerta anti inundaciones, en caso de ruptura o desgaste.</p>\n<p>Esta funda es elástica para que se expanda junto con la compuerta, e impermeable para impedir el flujo de agua a través de ella.</p>\n<p>Recomendamos reponerla cada 4-5 años dependiendo del uso.</p>\n<p><strong>Este producto incluye solamente la funda, no la compuerta.</strong></p>\n<p>Varía por tamaños.</p>",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Tamaño",
+     "valores": [
+      "Extra Chica",
+      "Chica",
+      "Mediana",
+      "Grande",
+      "Extra Grande"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 46502739804380,
+     "titulo": "Extra Chica",
+     "precio": 699,
+     "precioAntes": 999,
+     "opcion1": "Extra Chica",
+     "sku": null,
+     "imagen": null
+    },
+    {
+     "id": 43040646594780,
+     "titulo": "Chica",
+     "precio": 699,
+     "precioAntes": 999,
+     "opcion1": "Chica",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43040646627548,
+     "titulo": "Mediana",
+     "precio": 699,
+     "precioAntes": 999,
+     "opcion1": "Mediana",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43040646660316,
+     "titulo": "Grande",
+     "precio": 699,
+     "precioAntes": 999,
+     "opcion1": "Grande",
+     "sku": "",
+     "imagen": null
+    },
+    {
+     "id": 43040646693084,
+     "titulo": "Extra Grande",
+     "precio": 699,
+     "precioAntes": 999,
+     "opcion1": "Extra Grande",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "ancho": 2251,
+     "alto": 2251,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Funda2.jpg",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "ancho": 2251,
+     "alto": 2251,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 7719046086876,
+   "nombre": "accesorio-tira-de-hule-de-repuesto",
+   "titulo": "Tira de hule de repuesto (accesorio)",
+   "plantilla": "",
+   "descripcionHtml": "<p>Este hule se coloca al contorno de la compuerta antes de expanderla. Es presionado para crear un sello hermético, que impide el flujo de agua. Mide 1 1/2 x 1/2 pulgadas x 2.3m de largo.</p>",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Title",
+     "valores": [
+      "Default Title"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 43060987920604,
+     "titulo": "Default Title",
+     "precio": 559,
+     "precioAntes": 599,
+     "opcion1": "Default Title",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/products/Tiradehule.png",
+     "alt": "Tira de hule de repuesto (accesorio)",
+     "ancho": 1953,
+     "alto": 1953,
+     "variantes": []
+    }
+   ]
+  },
+  {
+   "id": 7719054115036,
+   "nombre": "accesorio-plastilina-de-secado-rapido",
+   "titulo": "Plastilina de secado rápido (accesorio)",
+   "plantilla": "",
+   "descripcionHtml": "Esta plastilina se coloca en las esquinas inferiores antes de instalar la compuerta. Su función es sellar pequeñas filtraciones que pueden formarse en los extremos inferiores al colocar la compuerta. Una vez colocada esta se amolda a la esquina y se seca en un tiempo promedio de 15 minutos, sellando por completo ese espacio. No es re-usable. Alcanza para 2 instalaciones.",
+   "tipo": "",
+   "etiquetas": "",
+   "opciones": [
+    {
+     "nombre": "Title",
+     "valores": [
+      "Default Title"
+     ]
+    }
+   ],
+   "variantes": [
+    {
+     "id": 43061007941852,
+     "titulo": "Default Title",
+     "precio": 49,
+     "precioAntes": null,
+     "opcion1": "Default Title",
+     "sku": "",
+     "imagen": null
+    }
+   ],
+   "imagenes": [
+    {
+     "src": "/media/products/Accesorio3.png",
+     "alt": "Plastilina de secado rápido (accesorio)",
+     "ancho": 2683,
+     "alto": 2683,
+     "variantes": []
+    },
+    {
+     "src": "/media/products/Plastiloka.png",
+     "alt": "Plastilina de secado rápido (accesorio)",
+     "ancho": 2683,
+     "alto": 2683,
+     "variantes": []
+    }
+   ]
+  }
+ ]
+}

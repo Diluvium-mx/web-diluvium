@@ -1,0 +1,41 @@
+{
+  "fuente": "Artículos de /blogs/blog, sacados del HTML capturado por herramientas/extraer-resenas-blog.py",
+  "articulos": [
+    {
+      "titulo": "Kit de evacuación rápida - inundaciones",
+      "url": "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+      "fecha": "3 jul 2024",
+      "resumen": "En este apartado se hablará de los materiales que recomendamos que tengas en una mochila para poder agarrar y salir en caso de emergencia.",
+      "imagen": {
+        "src": "/media/articles/Mochila_2.png",
+        "alt": "Kit de evacuación rápida - inundaciones",
+        "ancho": 1307,
+        "alto": 602
+      }
+    },
+    {
+      "titulo": "¿Por qué aumentan las inundaciones en nuestras ciudades?",
+      "url": "/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+      "fecha": "16 jun 2024",
+      "resumen": "Además de las lluvias intensas, hay otros factores invisibles que están empeorando las inundaciones en nuestras ciudades: desde la acumulación de basura hasta el exceso de concreto en calles y...",
+      "imagen": {
+        "src": "/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg",
+        "alt": "¿Por qué aumentan las inundaciones en nuestras ciudades?",
+        "ancho": 1024,
+        "alto": 686
+      }
+    },
+    {
+      "titulo": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+      "url": "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+      "fecha": "11 feb 2024",
+      "resumen": "En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, los pasos a seguir y los métodos de preparación a llevar a cabo previamente a las lluvias.",
+      "imagen": {
+        "src": "/media/articles/Frame_frame.png",
+        "alt": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+        "ancho": 1360,
+        "alto": 696
+      }
+    }
+  ]
+}

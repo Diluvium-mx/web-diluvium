@@ -1,0 +1,136 @@
+{
+ "fuente": "templates/page.instalacion.json@69d5993",
+ "secciones": [
+  {
+   "id": "main",
+   "tipo": "main-page",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "show_page_title": false,
+    "show_page_content": false
+   },
+   "bloques": []
+  },
+  {
+   "id": "text_LwfBJj",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "content_position_mobile": "center-xs middle-xs ta-center"
+   },
+   "bloques": [
+    {
+     "id": "heading_CmD8qy",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Videos de [instalación]",
+      "heading_size": "headline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "video_with_text_J7t9UD",
+   "tipo": "video-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "video_source": "video_external",
+    "video": "https://www.youtube.com/watch?v=wT9-JIHW3lQ&ab_channel=Diluvium",
+    "video_ratio": "16/9",
+    "video_thumbnail": "/media/files/Portada_Youtube_1_33d4af8a-b4b8-432b-bd09-f33841acc44f.png",
+    "enable_autoplay": false,
+    "enable_video_loop": true,
+    "enable_video_mute": true,
+    "content_ordering_desktop": "fd-row-md",
+    "video_with": "8.4",
+    "content_position_mobile": "ta-center",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_iw3DBW",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Aqui puedes ver el"
+     }
+    },
+    {
+     "id": "heading_zPLk4f",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Video de instalación de la Compuerta Hecha a la Medida",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_fxJBnW",
+     "tipo": "description",
+     "ajustes": {
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "video_with_text_U3TQ8g",
+   "tipo": "video-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "video_source": "video_external",
+    "video": "https://www.youtube.com/watch?v=3qhYU72I_7U&ab_channel=Diluvium",
+    "video_ratio": "16/9",
+    "video_thumbnail": "/media/files/Banner_youtube_ME_087917eb-479e-4bc4-94d2-0a5eb61be805.png",
+    "enable_autoplay": false,
+    "enable_video_loop": true,
+    "enable_video_mute": true,
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "video_with": "8.4",
+    "content_position_mobile": "ta-center",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_QTNMFB",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Aqui puedes ver el"
+     }
+    },
+    {
+     "id": "heading_3QiNTJ",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Video de instalación Compuerta Estándar",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_AmKhTm",
+     "tipo": "description",
+     "ajustes": {
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_FVgnwR",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "mobile_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  }
+ ]
+}

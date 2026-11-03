@@ -1,0 +1,329 @@
+{
+ "fuente": "templates/page.distribuidor.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb_T7HEB7",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": "scheme-5"
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-page",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "show_page_title": false,
+    "show_page_content": false
+   },
+   "bloques": []
+  },
+  {
+   "id": "text_qAbbpe",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "heading_gpM3YF",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Conviértete en Distribuidor de Diluvium",
+      "heading_size": "headline"
+     }
+    },
+    {
+     "id": "heading_kmhWEg",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Protege hogares. Genera ingresos. [Sé parte del cambio.]",
+      "heading_size": "h3"
+     }
+    },
+    {
+     "id": "description_j4ehtH",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h5>En Diluvium, buscamos aliados comprometidos con la prevención de inundaciones en México. Si compartes nuestra visión y quieres generar ingresos vendiendo nuestras compuertas reutilizables, esta oportunidad es para ti.</h5>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "text_dtWXBD",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "heading_9Y7cUh",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Contamos con [dos modelos de distribución], pensados para diferentes perfiles de negocio:",
+      "heading_size": "headline"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_FdybQ6",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Worker_1.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "description_Wxh98j",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h1>1. Distribuidor Oficial (con inventario)</h1><p><strong>Ideal para: Tiendas físicas, ferreterías o negocios establecidos.</strong></p><p>Si cuentas con un punto de venta físico y deseas tener producto disponible para entrega inmediata, puedes convertirte en <strong>Distribuidor Oficial</strong>.</p><h3>Beneficios:</h3><ul><li>Precio preferencial <strong>por compuerta</strong>.</li><li>Mayor margen de ganancia por venta directa.</li><li>Atención y soporte personalizado.</li></ul><h3>Requisitos:</h3><ul><li>Contar con un local físico o punto de venta.</li><li>Pedido mínimo de <strong>10 compuertas por orden</strong>.</li><li>Pago anticipado del pedido.</li></ul>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_VKzF7f",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Form_1.jpg",
+    "content_ordering_desktop": "fd-row-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "description_gCVQ7x",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h3>Documentación requerida para Distribuidor oficial con local:</h3><p>Envía la siguiente información al correo:<br/>📩 <a><strong>contacto@diluvium.com.mx</strong></a><br/>📝 <strong>Asunto:</strong> Distribuidor Oficial</p><h4>Datos solicitados:</h4><ul><li>Nombre completo del responsable</li><li>Nombre del negocio o razón social</li><li>Dirección completa del punto de venta</li><li>Teléfono y correo electrónico</li><li>Copia de INE o licencia vigente</li><li>Comprobante de domicilio (no mayor a 3 meses)</li><li><strong>Constancia de situación fiscal (RFC actualizada)</strong></li><li>Fotografías del local por dentro y por fuera.</li><li>Contrato de arrendamiento o comprobante de propiedad</li><li>Link de Redes sociales o página web </li></ul><h3>Requisitos mínimos:</h3><ul><li>Pedido inicial de <strong>10 compuertas</strong></li><li>Espacio para exhibir el producto</li><li>Atención al cliente en horario regular</li><li>Disposición a capacitarse y representar la marca con profesionalismo</li></ul><p>Una vez recibida tu solicitud, te daremos respuesta en un máximo de <strong>5 días hábiles</strong> con los siguientes pasos para formalizar tu ingreso y realizar tu primer pedido.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "running_content_kEbwHQ",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": false,
+    "heading_size": "h6"
+   },
+   "bloques": [
+    {
+     "id": "text_U8KVC9",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Protege casas y negocios</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_bUDN48",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "grid-1",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_HCjECR",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Gana comisiones reales</p>",
+      "color_text": "#ffffff",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_dqxH8y",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "grid-1",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_Fkef7a",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Sé parte del cambio</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_EP6rHW",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "grid-1",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_FqahAf",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Activa tu potencial</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_amgXpg",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "grid-1",
+      "html_code": "",
+      "color_content": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_aYhpWw",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "middle-xs",
+    "primary_image": "/media/files/Distribuidor_3.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "description_WJAEKp",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h1>2. Embajador de la marca <br/>(por comisión, sin inventario)</h1><p><strong>Ideal para: Freelancers, emprendedores, ingenieros, agentes o cualquier persona con red de contactos.</strong></p><p>Si no tienes un punto de venta físico pero deseas generar ingresos promoviendo nuestras compuertas, puedes convertirte en <strong>Distribuidor Digital</strong>. No necesitas comprar inventario ni hacer inversiones iniciales.</p><h3>¿Cómo funciona?</h3><ul><li>Te generamos un <strong>código de referido personalizado</strong>.<br/>Ejemplo: Si tu nombre es Luis López, tu código podría ser LUISL200.</li><li>Tus clientes obtienen un <strong>descuento de $200 por compuerta</strong> al usar tu código.</li><li>Tú ganas comisión sobre cada venta realizada con tu código.</li></ul><h3>Beneficios:</h3><ul><li>Ingreso inmediato sin inversión inicial</li><li>Código personalizado con descuento</li><li>Comisión progresiva por desempeño</li></ul>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_kgwDCj",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Comisiones_a3b44a3c-9333-4f56-9d73-04beda8c49dd.jpg",
+    "content_ordering_desktop": "fd-row-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": []
+  },
+  {
+   "id": "image_collage_with_text_bxVQQD",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "collage_alignment": "middle-xs",
+    "primary_image": "/media/files/Requisitos_3.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "description_cXDmL3",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h3>Requisitos para activar tu código de referido:</h3><p>Para poder generar tu código y comenzar a ganar comisiones, necesitamos validar tu identidad y datos de contacto.</p><p>Por favor, envía la siguiente información al correo:<br/>📩 <a><strong>contacto@diluvium.com.mx</strong></a><br/>📝 <strong>Asunto:</strong> Distribuidor</p><h4>Documentos requeridos:</h4><ul><li>Nombre completo</li><li>Dirección completa (calle, número, colonia, ciudad, estado)</li><li>Código Postal</li><li>Teléfono</li><li>Correo electrónico</li><li>Copia de INE o licencia vigente</li><li>Comprobante de domicilio (no mayor a 3 meses)</li></ul><p>Una vez recibamos tus datos, te responderemos en un plazo máximo de <strong>48 horas hábiles</strong> para confirmar el alta y enviarte tu código personalizado.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "text_aHYfWk",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "content_position_desktop": "start-md middle-md ta-left-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "description_xA7kzT",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<h2>¿Cuál es el siguiente paso?</h2><p>✅ Elige el tipo de distribuidor que más se adapta a tu perfil.<br/>✅ Envíanos tus datos y documentos requeridos.<br/>✅ Te contactaremos lo antes posible con tu acceso y condiciones.</p>"
+     }
+    },
+    {
+     "id": "heading_kGCewA",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "text_UVRVi7",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "start-md middle-md ta-left-md",
+    "content_position_mobile": "center-xs middle-xs ta-center"
+   },
+   "bloques": [
+    {
+     "id": "heading_cqcxbd",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Construyamos un México más seguro, [juntos.]",
+      "heading_size": "h2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_FHXtCp",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  }
+ ]
+}

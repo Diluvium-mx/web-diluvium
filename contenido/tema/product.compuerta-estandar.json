@@ -1,0 +1,920 @@
+{
+ "fuente": "templates/product.compuerta-estandar.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": "scheme-1"
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-product",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "main_media_ratio": "auto",
+    "thumbnails_ratio": "1 fill",
+    "enable_media_zoom": true,
+    "media_background_color": "#ffffff",
+    "media_layout": "thumbnail_bottom",
+    "media_size": "normal",
+    "enable_media_sticky": true,
+    "enable_thumbnail_mobile": true,
+    "enable_sticky_add_to_cart": true,
+    "enable_sticky_variant_selection": true,
+    "add_to_cart_sticky_position": "right-0"
+   },
+   "bloques": [
+    {
+     "id": "title",
+     "tipo": "title",
+     "ajustes": {
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "custom_text_7GnktJ",
+     "tipo": "custom_text",
+     "ajustes": {
+      "description": "<p>Nuevo | 1000+ vendidas</p>",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "price",
+     "tipo": "price",
+     "ajustes": {
+      "show_tax_and_shipping_policy": false,
+      "enable_background": false,
+      "color_background": "#ffffff",
+      "color_text": "",
+      "enable_sold_out_badge": true,
+      "show_sale_badge": "text_only",
+      "enable_new_in_badge": true
+     }
+    },
+    {
+     "id": "custom_text_zRa4Dz",
+     "tipo": "custom_text",
+     "ajustes": {
+      "description": "<p>Hasta <strong>6 MSI </strong>pagando con TC</p>",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "custom_text_tPN4eE",
+     "tipo": "custom_text",
+     "ajustes": {
+      "description": "<p>Barrera de protección reutilizable que sella tu entrada en minutos, evitando el paso del agua durante lluvias intensas o inundaciones.</p>",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "variant",
+     "tipo": "variant",
+     "ajustes": {
+      "show_stock_number": true,
+      "variant_picker_type": "button",
+      "enable_variant_swatches": false,
+      "variant_swatches_size": "72px",
+      "enable_size_guide": true,
+      "size_guide_label": "Tamaños de compuerta",
+      "size_guide_content": "preguntas-frecuentes"
+     }
+    },
+    {
+     "id": "pumper_bundles_quantity_breaks_app_block_qb_YV3pkk",
+     "tipo": "shopify://apps/pumper-bundles-quantity-breaks/blocks/app-block-qb/0856870d-2aca-4b1e-a662-cf1797f61270",
+     "ajustes": {
+      "selected_product": "{{product}}",
+      "using_page_builder": false
+     }
+    },
+    {
+     "id": "pumper_bundles_quantity_breaks_app_block_bundle_yXBC3i",
+     "tipo": "shopify://apps/pumper-bundles-quantity-breaks/blocks/app-block-bundle/0856870d-2aca-4b1e-a662-cf1797f61270",
+     "ajustes": {
+      "selected_product": "{{ product }}",
+      "using_page_builder": false
+     }
+    },
+    {
+     "id": "popup_content_YP97NB",
+     "tipo": "popup_content",
+     "ajustes": {
+      "title": "¿Qué tamaño necesito?",
+      "static_page": "preguntas-frecuentes"
+     }
+    },
+    {
+     "id": "buy_buttons",
+     "tipo": "buy_buttons",
+     "ajustes": {
+      "show_quantity": true,
+      "show_dynamic_checkout_buttons": false,
+      "show_gift_card_recipient": false,
+      "show_payment_method": false,
+      "payment_method_title": "Aceptamos"
+     }
+    },
+    {
+     "id": "collapsible_item",
+     "tipo": "collapsible_item",
+     "ajustes": {
+      "show_icon": true,
+      "icon_source": "theme_library",
+      "theme_library_icon": "plus",
+      "custom_code": "",
+      "icon_color": "",
+      "expand_default": false,
+      "heading": "¿Qué incluye?",
+      "description": "<p>Incluimos todo lo necesario para su instalación, que es:</p><ol><li>Una compuerta de acero expandible</li><li>Su funda hecha a la medida</li><li>Una tira de hule que va al contorno, para realizar un sello hermético</li><li>Una llave para girar los tornillos inferiores</li><li>Plastilina de secado rápido, para sellar cualquier posible filtración en las esquinas</li></ol>"
+     }
+    },
+    {
+     "id": "collapsible_item_2",
+     "tipo": "collapsible_item",
+     "ajustes": {
+      "show_icon": true,
+      "icon_source": "theme_library",
+      "theme_library_icon": "discount",
+      "custom_code": "",
+      "icon_color": "",
+      "expand_default": false,
+      "heading": "Métodos de pago",
+      "description": "<p>Aceptamos tarjetas de crédito y débito, así como PayPal, para asegurar opciones de pago seguras y flexibles en nuestro sitio web.</p><p>Además, si prefieres hacer tu compra a través de WhatsApp, estamos encantados de ofrecerte la opción de transferencia bancaria o depósito.</p>"
+     }
+    },
+    {
+     "id": "collapsible_item_EgJaaf",
+     "tipo": "collapsible_item",
+     "ajustes": {
+      "show_icon": true,
+      "icon_source": "theme_library",
+      "theme_library_icon": "truck",
+      "custom_code": "",
+      "icon_color": "",
+      "expand_default": false,
+      "heading": "Envíos y Devoluciones",
+      "description": "<p>Ofrecemos un rápido tiempo de entrega de 3-5 días hábiles en cualquier parte de México, puede variar si se envía a zona extendida. La rapidez en la entrega es una de nuestras prioridades, nos esforzamos por entregarte en el menor tiempo posible.<br/><br/>Si no estás satisfecho con tu compra, ofrecemos una política de devoluciones de 1 año. Los productos devueltos deben estar en su estado original y sin daños. Por favor, contáctanos para obtener instrucciones sobre cómo proceder con una devolución.</p>"
+     }
+    },
+    {
+     "id": "collapsible_item_WPWCkm",
+     "tipo": "collapsible_item",
+     "ajustes": {
+      "show_icon": true,
+      "icon_source": "theme_library",
+      "theme_library_icon": "star-line",
+      "custom_code": "",
+      "icon_color": "",
+      "expand_default": false,
+      "heading": "Garantía",
+      "description": "<p>Ofrecemos una garantía de <strong>1 año</strong> para nuestras compuertas, cubriendo defectos de fabricación. Sin embargo, la vida útil de la compuerte puede llegar hasta los 5-7 años.</p><p>En caso de problemas de fábrica, nos comprometemos a reparar o reemplazar la compuerta, ya sea para cambio de tamaño o realizar un reembolso de la inversión. Para iniciar una reclamación, contáctanos.</p><p>Esta garantía no abarca daños por mal uso o negligencia. Tu satisfacción y la protección de tu hogar son nuestra prioridad.</p>"
+     }
+    },
+    {
+     "id": "collapsible_item_Vennc8",
+     "tipo": "collapsible_item",
+     "ajustes": {
+      "show_icon": true,
+      "icon_source": "theme_library",
+      "theme_library_icon": "drag",
+      "custom_code": "",
+      "icon_color": "",
+      "expand_default": false,
+      "heading": "Facturación",
+      "description": "<p>Para generar tu factura, es esencial que nos proporciones tus datos fiscales de forma correcta, incluyendo la constancia de situación fiscal. Puedes hacerlo de dos maneras:</p><ol><li><strong>WhatsApp:</strong> Envíanos un mensaje a través de WhatsApp con tus datos fiscales al número <a href=\"https://wa.link/0wtdpq\" title=\"https://wa.link/0wtdpq\">6682419579</a>. Nuestro equipo estará encantado de ayudarte a generar tu factura de manera rápida y sencilla.</li><li><strong>Correo Electrónico:</strong> Si prefieres, también puedes enviar tus datos fiscales a nuestro correo electrónico de facturación: <a href=\"mailto:contacto@diluvium.com.mx\">contacto@diluvium.com.mx</a>. Te responderemos con tu factura en el menor tiempo posible.</li></ol>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_wAkChb",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Group_391.jpg",
+    "mobile_image": "/media/files/Group_3912.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "custom_liquid_6amMKa",
+   "tipo": "custom-liquid",
+   "ajustes": {
+    "color_scheme": "",
+    "subheading": "",
+    "heading": "Cualidades que nos [distinguen] de las demás soluciones",
+    "heading_size": "h2",
+    "description": "",
+    "liquid_code": "",
+    "content_align_desktop": "ta-center-md",
+    "content_align_mobile": "ta-center"
+   },
+   "bloques": []
+  },
+  {
+   "id": "image_collage_with_text_2",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "collage_alignment": "middle-xs",
+    "primary_image": "/media/files/ejemplo_46.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "heading",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Se instala en tan solo 10 minutos",
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "description",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>Se expande hasta adaptarse a la entrada  sin necesidad de herramientas adicionales ni conocimientos técnicos y crear un sello hermético.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Frame_643.jpg",
+    "content_ordering_desktop": "fd-row-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "heading",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Soporta hasta 50cm de altura",
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "description",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>Fabricada con acero para resistir impactos de olas y altas presiones de agua. Forrada con una funda impermeable.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "running_content_ahTRMc",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-3",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": true,
+    "heading_size": "h4"
+   },
+   "bloques": [
+    {
+     "id": "text_A4WwNf",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Rápida Instalación</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_kF9ra3",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "cart",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_F7JMnK",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Compra Segura</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_kGaCxf",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "truck",
+      "html_code": "",
+      "color_content": ""
+     }
+    },
+    {
+     "id": "text_DVikYV",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Envíos a todo México</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "icon_ccxwaR",
+     "tipo": "icon",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "clock",
+      "html_code": "",
+      "color_content": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "before_after_images_hdNNAh",
+   "tipo": "before-after-images",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "",
+    "heading": "Olvídate de los pesados sacos de arena",
+    "heading_size": "h2",
+    "description": "<p>Una solución más ligera y re-utilizable.</p>",
+    "desktop_image": "/media/files/Antes_1.jpg",
+    "label_image_before": "Antes",
+    "desktop_image_second": "/media/files/Despues_1.jpg",
+    "label_image_after": "Después",
+    "content_align_desktop": "inline",
+    "content_ordering_desktop": "fd-column-reverse-md silde-first",
+    "content_align_mobile": "ta-center",
+    "content_ordering_mobile": "fd-column"
+   },
+   "bloques": []
+  },
+  {
+   "id": "image_banner_DQAHek",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Frame_623_7726de8e-d812-49f2-b4ab-ca95823ed5bb.jpg",
+    "mobile_image": "/media/files/Frame_627_ced1e1a8-6d09-4cef-9a1a-89f823104ea9.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "adapt_img",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "video_with_text_y9PVDk",
+   "tipo": "video-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "video_source": "video_hosted",
+    "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+    "video_hosted": "video-sin-resolver:Video comprimido 2.mp4",
+    "video_ratio": "16/9",
+    "enable_autoplay": true,
+    "enable_video_loop": true,
+    "enable_video_mute": true,
+    "content_ordering_desktop": "fd-row-md",
+    "video_with": "8.4",
+    "content_position_mobile": "ta-center",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_pGUJaM",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Ahora..."
+     }
+    },
+    {
+     "id": "heading_8pkzDz",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Descubre cómo funciona",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_ctaUNB",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>El sencillo proceso de instalación</p>"
+     }
+    },
+    {
+     "id": "button_epRkmP",
+     "tipo": "button",
+     "ajustes": {
+      "button_main_text": "",
+      "button_main_style": "btn-primary",
+      "button_main_link": "",
+      "button_sub_text": "",
+      "button_sub_style": "btn-outline",
+      "button_sub_link": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_nJNVBx",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "bottom-xs",
+    "primary_image": "/media/files/Frame_555.png",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "fd-column-reverse"
+   },
+   "bloques": [
+    {
+     "id": "subheading_3yyiiV",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": ""
+     }
+    },
+    {
+     "id": "heading_qBLUYV",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "¿Cómo elegir el tamaño correcto para mi entrada?",
+      "heading_size": "h1"
+     }
+    },
+    {
+     "id": "description_47iCUe",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p><strong>1. Identifica el marco donde se instalará la compuerta.</strong> Puede ser de madera, metal, concreto o estar delimitado por dos paredes.</p><p><strong>2. Mide el ancho del espacio en centímetros</strong> (cm) y consulta la tabla de tamaños que aparece más abajo.</p><p><strong>3. Verifica que haya espacio suficiente para el grosor de la compuerta</strong>, que es de 4 cm.</p><p><strong>4. Determina en qué lado instalarla según la apertura de tu puerta:</strong></p><ul><li>Si la puerta abre hacia <em>adentro</em>, la compuerta se instala <em>por fuera</em>.</li><li>Si la puerta abre hacia <em>afuera</em>, la compuerta se instala <em>por dentro</em>.</li></ul>"
+     }
+    },
+    {
+     "id": "button_LCmFC3",
+     "tipo": "button",
+     "ajustes": {
+      "button_main_text": "",
+      "button_main_style": "btn-primary",
+      "button_main_link": "",
+      "button_sub_text": "",
+      "button_sub_style": "btn-outline",
+      "button_sub_link": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_kg6njn",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/Captura_de_pantalla_2025-04-05_a_la_s_9.17.36_p.m..png",
+    "mobile_image": "/media/files/Frame_596_b49757f9-7446-41a7-87fc-0766f707d2b4.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "70vh",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "media_with_text_columns_hrGTF9",
+   "tipo": "media-with-text-columns",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "⭐️⭐️⭐️⭐️⭐️",
+    "heading": "No necesitas confiar en nosotros, [confía en ellos]",
+    "heading_size": "h2",
+    "description": "",
+    "item_alignment": "ta-left",
+    "image_ratio": "2/3",
+    "column_heading_size": "h4",
+    "enable_item_background": false,
+    "background_content": "",
+    "color_content": "",
+    "content_align_desktop": "ta-center-md",
+    "columns_per_row": "4",
+    "content_align_mobile": "ta-left",
+    "list_style": "true",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "video_KMxqX7",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "video-sin-resolver:AC - Shopify.mov",
+      "video_thumbnail": "/media/files/Captura_de_pantalla_2025-03-01_a_la_s_10.32.39_p.m..png",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_JdwJDc",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "video-sin-resolver:AC - Vertical ML.mov",
+      "video_thumbnail": "/media/files/Testimonio_10.png",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_rGFr6b",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "video-sin-resolver:AC - Vertical ML.mov",
+      "video_thumbnail": "/media/files/Captura_de_pantalla_2025-03-01_a_la_s_10.32.56_p.m..png",
+      "heading": "",
+      "description": ""
+     }
+    },
+    {
+     "id": "video_XdkT96",
+     "tipo": "video",
+     "ajustes": {
+      "video_source": "video_hosted",
+      "video": "",
+      "video_hosted": "video-sin-resolver:AC - Vertical ML.mov",
+      "video_thumbnail": "/media/files/Testimonio_6.png",
+      "heading": "",
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "customer_reviews_bwyPpQ",
+   "tipo": "customer-reviews",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h2",
+    "description": "",
+    "speed": "100",
+    "moving_direction": "animation-direction",
+    "enable_play": false,
+    "content_font": "heading",
+    "content_size": "1",
+    "enable_block_background": false,
+    "background_content": "",
+    "color_content": "",
+    "show_rating": true,
+    "color_star": "#f8cc46",
+    "content_align_desktop": "ta-center-md",
+    "content_align_mobile": "ta-center"
+   },
+   "bloques": [
+    {
+     "id": "review_texQwV",
+     "tipo": "review",
+     "ajustes": {
+      "star": 3,
+      "author": "A happy customer",
+      "author_title": "Who is satisfied with our store",
+      "description": "<p>Add reviews to showcase your store's happy customers</p>"
+     }
+    },
+    {
+     "id": "review_wNqaJH",
+     "tipo": "review",
+     "ajustes": {
+      "star": 3,
+      "author": "A happy customer",
+      "author_title": "Who is satisfied with our store",
+      "description": "<p>Add reviews to showcase your store's happy customers</p>"
+     }
+    },
+    {
+     "id": "review_8TwxhY",
+     "tipo": "review",
+     "ajustes": {
+      "star": 3,
+      "author": "A happy customer",
+      "author_title": "Who is satisfied with our store",
+      "description": "<p>Add reviews to showcase your store's happy customers</p>"
+     }
+    },
+    {
+     "id": "review_ejQD4N",
+     "tipo": "review",
+     "ajustes": {
+      "star": 3,
+      "author": "A happy customer",
+      "author_title": "Who is satisfied with our store",
+      "description": "<p>Add reviews to showcase your store's happy customers</p>"
+     }
+    },
+    {
+     "id": "review_LjCjRT",
+     "tipo": "review",
+     "ajustes": {
+      "star": 3,
+      "author": "A happy customer",
+      "author_title": "Who is satisfied with our store",
+      "description": "<p>Add reviews to showcase your store's happy customers</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "content_collage_wVACBT",
+   "tipo": "content-collage",
+   "ajustes": {
+    "color_scheme": "",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h1",
+    "description": "",
+    "content_align_desktop": "ta-center-md",
+    "desktop_row_height": 300,
+    "content_align_mobile": "ta-center",
+    "mobile_row_height": 240
+   },
+   "bloques": [
+    {
+     "id": "video_znFCxr",
+     "tipo": "video",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2",
+      "button_label": "",
+      "button_style": "btn-primary",
+      "button_link": "",
+      "video_source": "video_hosted",
+      "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "video_hosted": "/media/videos/7ffe973c8b3c4138ae324c643091d467.HD-720p-1.6Mbps-9366933.mp4",
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "2",
+      "row_desktop": "2",
+      "content_position_mobile": "end-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "",
+      "block_overlay_opacity": 0,
+      "block_content_overlay_color": ""
+     }
+    },
+    {
+     "id": "image_i4Gqyn",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2",
+      "button_label": "",
+      "button_style": "btn-primary",
+      "button_link": "",
+      "desktop_image": "/media/files/Testimonio_22.png",
+      "content_position_desktop": "end-md middle-md ta-center-md",
+      "column_desktop": "1",
+      "row_desktop": "1",
+      "content_position_mobile": "center-xs top-xs ta-left",
+      "column_mobile": "1",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "",
+      "block_overlay_opacity": 0,
+      "block_content_overlay_color": ""
+     }
+    },
+    {
+     "id": "image_T3UCd3",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2",
+      "button_label": "",
+      "button_style": "btn-primary",
+      "button_link": "",
+      "desktop_image": "/media/files/Hero_2.jpg",
+      "content_position_desktop": "center-md middle-md ta-center-md",
+      "column_desktop": "1",
+      "row_desktop": "1",
+      "content_position_mobile": "center-xs middle-xs ta-center",
+      "column_mobile": "1",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "",
+      "block_overlay_opacity": 0,
+      "block_content_overlay_color": ""
+     }
+    },
+    {
+     "id": "image_MzwHBT",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2",
+      "button_label": "",
+      "button_style": "btn-primary",
+      "button_link": "",
+      "desktop_image": "/media/files/tabla_madera.png",
+      "content_position_desktop": "start-md top-md ta-left-md",
+      "column_desktop": "2",
+      "row_desktop": "1",
+      "content_position_mobile": "center-xs middle-xs ta-center",
+      "column_mobile": "2",
+      "row_mobile": "1",
+      "block_mask_overlay_color": "",
+      "block_overlay_opacity": 0,
+      "block_content_overlay_color": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "icon_with_text_H4gd7q",
+   "tipo": "icon-with-text",
+   "ajustes": {
+    "color_scheme": "scheme-3",
+    "subheading": "",
+    "heading": "",
+    "heading_size": "h2",
+    "description": "",
+    "block_align": "ta-center middle-xs",
+    "icon_size": "64px",
+    "enable_block_background": false,
+    "background_content": "",
+    "color_content": "",
+    "content_align_desktop": "ta-center-md",
+    "columns_per_row": "4",
+    "content_align_mobile": "ta-center",
+    "list_style": "true",
+    "button_text": "Explore more",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "item_ytGfVe",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "truck",
+      "html_code": "",
+      "heading": "Envíos gratis",
+      "description": "<p>A partir de $499</p>"
+     }
+    },
+    {
+     "id": "item_eMQTkG",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "check",
+      "html_code": "",
+      "heading": "Garantía de funcionamiento",
+      "description": "<p>Productos probados en rigurosas pruebas</p>"
+     }
+    },
+    {
+     "id": "item_DgCDq7",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "heart",
+      "html_code": "",
+      "heading": "Compra Segura",
+      "description": "<p>Protegemos tus datos personales en todo momento</p>"
+     }
+    },
+    {
+     "id": "item_3gEbQw",
+     "tipo": "item",
+     "ajustes": {
+      "icon_source": "theme_library",
+      "options_icon": "subscription",
+      "html_code": "",
+      "heading": "Garantía de devolución",
+      "description": "<p>Hasta 1 año para que estés satisfecho(a) con la compra</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_gallery_88KMwY",
+   "tipo": "image-gallery",
+   "ajustes": {
+    "color_scheme": "",
+    "image_ratio": "1",
+    "product_image_ratio": "auto",
+    "image_background": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "info_tab_CrEwLg",
+   "tipo": "info-tab",
+   "ajustes": {
+    "color_scheme": "scheme-1",
+    "subheading": "",
+    "heading": "Protege tu hogar en [3 pasos]",
+    "heading_size": "h2",
+    "description": "",
+    "image_ratio": "1",
+    "enable_autoplay": true,
+    "auto_play_time": 7,
+    "content_align": "ta-center-md",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "image_size_on_large": "6",
+    "content_align_mobile": "ta-center",
+    "content_ordering_mobile": "fd-column-reverse",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "tab_gcz6th",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_601.jpg",
+      "heading": "Paso 1 - Mide el ancho de la entrada que necesitas proteger",
+      "description": "<p>Usa una cinta métrica para medir el ancho exacto que necesitas cubrir.</p>"
+     }
+    },
+    {
+     "id": "tab_PWkEiX",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_598.jpg",
+      "heading": "Paso 2 - Elige la compuerta ideal para tu entrada",
+      "description": "<p>Con las medidas en mano, elige la compuerta que se adapta perfectamente a tu entrada.</p>"
+     }
+    },
+    {
+     "id": "tab_4UGjFP",
+     "tipo": "tab",
+     "ajustes": {
+      "image": "/media/files/Frame_603.jpg",
+      "heading": "Paso 3 - Recibe tu compuerta en pocos días",
+      "description": "<p><a href=\"https://www.diluvium.com.mx/products/compuerta-anti-inundaciones\" title=\"Compuerta Anti-Inundaciones\"><em><strong>Pide tu compuerta aqui</strong></em></a>y la enviamos directamente a tu casa en 3 a 5 días hábiles. Rápido, seguro y sin complicaciones.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "product-recommendation",
+   "tipo": "product-recommendation",
+   "ajustes": {
+    "color_scheme": "scheme-3",
+    "heading": "También te podría interesar...",
+    "heading_size": "h3",
+    "items_to_show": 5,
+    "show_product_vendor": false,
+    "show_color_swatch": true,
+    "quick_shop_action": "none",
+    "content_align_desktop": "ta-left-md",
+    "carousel_desktop": "true",
+    "columns_per_row_desktop": "4",
+    "content_align_mobile": "ta-left",
+    "carousel_mobile": "true",
+    "columns_per_row_mobile": "2"
+   },
+   "bloques": []
+  }
+ ]
+}

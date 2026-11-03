@@ -1,0 +1,195 @@
+# Imágenes y videos que usa el tema publicado
+
+Se descargan del CDN de Shopify en la fase 1. Son de Diluvium (fotos, videos, logos).
+
+- shopify://files/videos/AC - Shopify.mov
+- shopify://files/videos/AC - Vertical ML.mov
+- shopify://files/videos/Copia de Testimonio 5.mp4
+- shopify://files/videos/Demostración 4;3.mp4
+- shopify://files/videos/Instalación de la Compuerta Anti Inundaciones a la Medida _ Protección Contra Inundaciones.mp4
+- shopify://files/videos/Nosotros.mp4
+- shopify://files/videos/Resistente video cuadrado.mp4
+- shopify://files/videos/Tapon inflable cuadrado.mp4
+- shopify://files/videos/Tapon inflable.mp4
+- shopify://files/videos/Testimonio 1 SUB.mov
+- shopify://files/videos/Testimonio 2 .mov
+- shopify://files/videos/Testimonio 4.mov
+- shopify://files/videos/Tipos de Entrada 3.mp4
+- shopify://files/videos/Video comprimido 2.mp4
+- shopify://files/videos/Video instalación bueno Shopify.mp4
+- shopify://files/videos/Video instalación.mov
+- shopify://shop_images/18f26f99-1686-418a-b568-f6f23f868bec.jpg
+- shopify://shop_images/1c9e6520-9e08-47b8-bcf2-d05ec6d3e5b8_3.jpg
+- shopify://shop_images/35c30698-2979-4e3f-bd33-bec2c7ff35e9.jpg
+- shopify://shop_images/480881100_1042952801187486_2810394445159684620_n_1.jpg
+- shopify://shop_images/7453CB00-0FC6-43F1-967E-293CC2D0D04F.jpg
+- shopify://shop_images/AdobeStock_168614269_1_2.jpg
+- shopify://shop_images/Amazon_icon-icons.com_66787.svg
+- shopify://shop_images/Amplia_Ancho.jpg
+- shopify://shop_images/Antes_1.jpg
+- shopify://shop_images/Antes_1_9c4dafb7-da22-4983-9587-95fbaa2d719e.jpg
+- shopify://shop_images/Antes_2.jpg
+- shopify://shop_images/Antes_2_f6a4f74f-3487-4557-9f8a-87fb617f77c3.jpg
+- shopify://shop_images/Banner_youtube_ME_087917eb-479e-4bc4-94d2-0a5eb61be805.png
+- shopify://shop_images/Captura_de_pantalla_2025-03-01_a_la_s_10.32.39_p.m..png
+- shopify://shop_images/Captura_de_pantalla_2025-03-01_a_la_s_10.32.56_p.m..png
+- shopify://shop_images/Captura_de_pantalla_2025-04-05_a_la_s_9.17.36_p.m..png
+- shopify://shop_images/Captura_de_pantalla_2025-04-10_a_la_s_6.18.16_p.m..png
+- shopify://shop_images/Captura_de_pantalla_2025-05-09_a_la_s_11.49.55_a.m..jpg
+- shopify://shop_images/Coladera_1.jpg
+- shopify://shop_images/Coladera_1_14fad947-a34a-445c-b2f8-861b7603b85b.jpg
+- shopify://shop_images/Comisiones_a3b44a3c-9333-4f56-9d73-04beda8c49dd.jpg
+- shopify://shop_images/Copia_de_Tamanos_mini_2.jpg
+- shopify://shop_images/Copia_de_Testimonio_8.jpg
+- shopify://shop_images/Despues.jpg
+- shopify://shop_images/Despues_1.jpg
+- shopify://shop_images/Despues_2.jpg
+- shopify://shop_images/Despues_2_ce77176d-52d1-436c-9bf6-ae4d5bc3d0aa.jpg
+- shopify://shop_images/Diseno_sin_titulo_2_a92cbbfc-7271-486c-a350-56a89f851c52.jpg
+- shopify://shop_images/Distribuidor_3.jpg
+- shopify://shop_images/Doble_buena.jpg
+- shopify://shop_images/Explicacion_img_2.jpg
+- shopify://shop_images/Form_1.jpg
+- shopify://shop_images/Frame697.jpg
+- shopify://shop_images/Frame_256.jpg
+- shopify://shop_images/Frame_331_df691c71-9707-4263-95c4-e51b32840a0a.png
+- shopify://shop_images/Frame_334_e926924a-4554-4532-8fe8-64cd67e1d4a7.png
+- shopify://shop_images/Frame_335_3ec24775-eb5f-4d00-8a1e-a1484926c3a6.png
+- shopify://shop_images/Frame_336_ffa738e6-488f-483e-adb5-8e684164dcd8.png
+- shopify://shop_images/Frame_337_9324f69e-88b3-448f-bca7-3236fc133aad.png
+- shopify://shop_images/Frame_484.jpg
+- shopify://shop_images/Frame_485.jpg
+- shopify://shop_images/Frame_486.jpg
+- shopify://shop_images/Frame_487_5577f01a-b6ba-4d27-9bbf-0c5c2c03980a.jpg
+- shopify://shop_images/Frame_488.jpg
+- shopify://shop_images/Frame_555.png
+- shopify://shop_images/Frame_587_bfd0e892-063c-4361-8d90-8bd7c444e895.png
+- shopify://shop_images/Frame_588_65c7986d-1a98-4a22-9b0b-2aba92f5da70.png
+- shopify://shop_images/Frame_589_0d283665-9d18-47f6-9f09-a4a619fbb8fb.png
+- shopify://shop_images/Frame_590_9856662f-42a4-4f17-868a-9189d862b751.png
+- shopify://shop_images/Frame_591_73503f33-5a52-467b-8c00-cda9ea32c7ca.png
+- shopify://shop_images/Frame_596_b49757f9-7446-41a7-87fc-0766f707d2b4.jpg
+- shopify://shop_images/Frame_597.jpg
+- shopify://shop_images/Frame_598.jpg
+- shopify://shop_images/Frame_601.jpg
+- shopify://shop_images/Frame_603.jpg
+- shopify://shop_images/Frame_623.jpg
+- shopify://shop_images/Frame_623_7726de8e-d812-49f2-b4ab-ca95823ed5bb.jpg
+- shopify://shop_images/Frame_623_b884a618-aa4b-428d-a123-9f064d847235.jpg
+- shopify://shop_images/Frame_624.jpg
+- shopify://shop_images/Frame_624_b7b5080c-3004-40c9-84d9-2d473dd7574f.jpg
+- shopify://shop_images/Frame_625.jpg
+- shopify://shop_images/Frame_626.jpg
+- shopify://shop_images/Frame_627.jpg
+- shopify://shop_images/Frame_627_ced1e1a8-6d09-4cef-9a1a-89f823104ea9.jpg
+- shopify://shop_images/Frame_628_a0355339-0cc2-467a-b29a-7b49e3558c0b.jpg
+- shopify://shop_images/Frame_629.jpg
+- shopify://shop_images/Frame_630.jpg
+- shopify://shop_images/Frame_643.jpg
+- shopify://shop_images/Frame_648_2726f8ab-2e19-4e52-81b8-f81b51adee6b.jpg
+- shopify://shop_images/Frame_692_8c5f6a4b-7cba-44a9-ae26-04b328dbf279.png
+- shopify://shop_images/Frame_693_4665c46e-b1de-4efc-9385-73f61b1eee63.png
+- shopify://shop_images/Frame_694.png
+- shopify://shop_images/Frame_695.png
+- shopify://shop_images/Frame_697.jpg
+- shopify://shop_images/Frame_698.jpg
+- shopify://shop_images/Frame_698_ebf7fecc-f938-4b1c-a123-c6bfd94cb3f0.jpg
+- shopify://shop_images/Frame_700.jpg
+- shopify://shop_images/Frame_718.jpg
+- shopify://shop_images/Frame_719.jpg
+- shopify://shop_images/Frame_720.jpg
+- shopify://shop_images/Frame_721.jpg
+- shopify://shop_images/Frame_723_07a10c79-f58b-485f-b911-205964fc4b3e.jpg
+- shopify://shop_images/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg
+- shopify://shop_images/Frame_727_b36198a2-e988-40bd-9fa5-e6131c682308.jpg
+- shopify://shop_images/Frame_731.jpg
+- shopify://shop_images/Frame_733_8a71d1a9-c03d-4f1f-b01d-71ff0bbb2566.jpg
+- shopify://shop_images/Frame_734.jpg
+- shopify://shop_images/Frame_735.jpg
+- shopify://shop_images/Frame_736.jpg
+- shopify://shop_images/Frame_737.jpg
+- shopify://shop_images/Frame_747.jpg
+- shopify://shop_images/Frame_748.jpg
+- shopify://shop_images/Frame_750.jpg
+- shopify://shop_images/Frame_756.jpg
+- shopify://shop_images/Frame_760.jpg
+- shopify://shop_images/Frame_769_047a2d02-3372-4213-b22d-d6194656e9f0.jpg
+- shopify://shop_images/Frame_864.jpg
+- shopify://shop_images/Frame_979_5bbab6cf-e5bf-40ce-8c41-9b753e2b9ca5.png
+- shopify://shop_images/Frame_980.png
+- shopify://shop_images/Group.svg
+- shopify://shop_images/Group2.png
+- shopify://shop_images/Group3.png
+- shopify://shop_images/Group_240.png
+- shopify://shop_images/Group_240_1.png
+- shopify://shop_images/Group_240_2.png
+- shopify://shop_images/Group_391.jpg
+- shopify://shop_images/Group_3912.jpg
+- shopify://shop_images/Group_403.svg
+- shopify://shop_images/Hero_2.jpg
+- shopify://shop_images/Hero_bueno.jpg
+- shopify://shop_images/IMG_0603.jpg
+- shopify://shop_images/IMG_0649.jpg
+- shopify://shop_images/IMG_0649_b2dc495e-91b7-4812-a907-2c87516a50f8.jpg
+- shopify://shop_images/IMG_0665.jpg
+- shopify://shop_images/IMG_0694.jpg
+- shopify://shop_images/IMG_1499.jpg
+- shopify://shop_images/IMG_1_1.jpg
+- shopify://shop_images/IMG_2103.jpg
+- shopify://shop_images/IMG_3514_2.jpg
+- shopify://shop_images/IMG_explicacion_1.jpg
+- shopify://shop_images/Icono_2.png
+- shopify://shop_images/Logo_Diluvium_horizontal_sin_fondo.png
+- shopify://shop_images/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png
+- shopify://shop_images/Marca_1_9c399247-a8e3-4c7b-a64a-1423338ba43e.png
+- shopify://shop_images/Marca_2_e3d7fce4-40f2-45a7-b5c7-b1adf06c7324.png
+- shopify://shop_images/Marca_3_0521982a-6674-4d01-a736-3ac1bdeaa435.png
+- shopify://shop_images/Marca_4_3bd03a69-6112-44c4-8729-5e106e038718.png
+- shopify://shop_images/Marca_5_b2f49cc8-be75-4cd8-bcc3-7c5afa48f7a9.png
+- shopify://shop_images/Marca_6_428476e0-1b07-47f7-a1c1-979214237f3b.png
+- shopify://shop_images/Marca_7_6ab89a33-7ccc-48b1-9374-1b97cbcaa9b0.png
+- shopify://shop_images/Marca_8_e0d43bfa-9242-42af-9819-878618d02c0f.png
+- shopify://shop_images/Marca_9_528a354b-05f3-46c3-a715-ea4beeb42704.png
+- shopify://shop_images/Oficina_mobile.jpg
+- shopify://shop_images/Paso_3.jpg
+- shopify://shop_images/Paso_4.jpg
+- shopify://shop_images/Portada_Youtube_1_33d4af8a-b4b8-432b-bd09-f33841acc44f.png
+- shopify://shop_images/Requisitos_3.jpg
+- shopify://shop_images/SHARK_TANK_LOGO.png
+- shopify://shop_images/SVG_especial.svg
+- shopify://shop_images/Tabla_comparativa_buena_mobile.jpg
+- shopify://shop_images/Tabla_comparativa_compuerta_bueno.jpg
+- shopify://shop_images/Tamanos_mini_movil.jpg
+- shopify://shop_images/Tapo_2.jpg
+- shopify://shop_images/Tapon_4.jpg
+- shopify://shop_images/Test_1.jpg
+- shopify://shop_images/Test_2.jpg
+- shopify://shop_images/Test_3.jpg
+- shopify://shop_images/Test_4.jpg
+- shopify://shop_images/Testimonio_1.png
+- shopify://shop_images/Testimonio_10.png
+- shopify://shop_images/Testimonio_11.jpg
+- shopify://shop_images/Testimonio_2.png
+- shopify://shop_images/Testimonio_22.png
+- shopify://shop_images/Testimonio_23.jpg
+- shopify://shop_images/Testimonio_3.png
+- shopify://shop_images/Testimonio_4.png
+- shopify://shop_images/Testimonio_6.png
+- shopify://shop_images/Worker_1.jpg
+- shopify://shop_images/bueno_2.jpg
+- shopify://shop_images/bueno_horizontal.jpg
+- shopify://shop_images/coladera_ultima.jpg
+- shopify://shop_images/efa26da4-9212-47bd-9505-e11b44a1a765_1.jpg
+- shopify://shop_images/ejemplo_46.jpg
+- shopify://shop_images/hf_20260316_233948_de_tamano_grande_eeec7a72-8829-4579-b6eb-35339e585d5f.jpg
+- shopify://shop_images/icono_1_eef112d5-3189-4e8d-8c44-9936daf77f20.png
+- shopify://shop_images/idS7VeI30G_1772158270429.jpg
+- shopify://shop_images/oficina.jpg
+- shopify://shop_images/paso_1.jpg
+- shopify://shop_images/paso_2.jpg
+- shopify://shop_images/puerta_buena.jpg
+- shopify://shop_images/tabla_comparativa_mobile_home_buena.jpg
+- shopify://shop_images/tabla_madera.png
+- shopify://shop_images/tamanos_mobile_bueno.jpg
+- shopify://shop_images/tapon_1.jpg
+- shopify://shop_images/tapon_3.jpg

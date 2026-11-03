@@ -1,0 +1,36 @@
+{
+  "name": "web-diluvium",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Página propia de diluvium.com.mx (réplica exacta del sitio de Shopify)",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "next dev --port 3100",
+    "build": "next build",
+    "start": "next start --port 3100",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "contenido": "python3 -I herramientas/contenido-tema.py",
+    "medios": "node herramientas/descargar-medios.mjs",
+    "capturar:referencia": "node herramientas/capturar-sitio.mjs docs/sitio-actual/capturas/2026-10-31",
+    "comparar": "node herramientas/comparar.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}

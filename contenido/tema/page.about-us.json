@@ -1,0 +1,346 @@
+{
+ "fuente": "templates/page.about-us.json@69d5993",
+ "secciones": [
+  {
+   "id": "breadcrumb_T7HEB7",
+   "tipo": "breadcrumb",
+   "ajustes": {
+    "color_scheme": "scheme-5"
+   },
+   "bloques": []
+  },
+  {
+   "id": "image_banner_bm7M9B",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "",
+    "desktop_image": "/media/files/AdobeStock_168614269_1_2.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "50vh",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "main",
+   "tipo": "main-page",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "show_page_title": false,
+    "show_page_content": false
+   },
+   "bloques": []
+  },
+  {
+   "id": "text_qAbbpe",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "heading_gpM3YF",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Nuestra Historia  - Protegiendo hogares, [un desafío a la vez]",
+      "heading_size": "h2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_FdybQ6",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/IMG_0694.jpg",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "description_Wxh98j",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>El problema era evidente: cada año, miles de hogares y negocios sufrían por<br/>inundaciones. Viviendo en México, es imposible ignorar el daño que causan las<br/>lluvias intensas: Daños materiales, pérdidas económicas y familias enteras<br/>afectadas, lo podíamos ver claramente. </p><p>Sabíamos que tenía que haber una mejor forma de prevenir tanta pérdida. </p><p>Año tras año, vemos cómo el agua invade calles, hogares y comercios, dejando<br/>pérdidas económicas y problemas difíciles de solucionar. </p><p>En nuestra búsqueda por una solución, descubrimos un sistema de protección<br/>contra inundaciones en el Reino Unido. Era una solución efectiva, pero con<br/>costo muy elevado para el mercado mexicano. Fue entonces cuando decidimos<br/>fabricar nuestra propia versión, le hicimos mejoras y la adaptamos a las<br/>necesidades del país. Así comenzó un proceso de diseño, pruebas y ajustes que<br/>tomó <strong>ocho meses</strong> hasta lograr un prototipo funcional.</p><p>Pero desarrollar el producto era solo el primer paso. Luego vino la tarea de<br/>construir una línea de producción y hacer que esta solución llegara a quienes<br/>más la necesitaban.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_banner_Py7QAJ",
+   "tipo": "image-banner",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "desktop_image": "/media/files/bueno_2.jpg",
+    "height_desktop": "adapt_img",
+    "content_position_desktop": "center-md middle-md ta-center-md",
+    "height_mobile": "70vh",
+    "content_position_mobile": "center-xs middle-xs ta-center",
+    "link": "",
+    "section_mask_overlay_color": "",
+    "section_overlay_opacity": 0,
+    "section_content_overlay_color": ""
+   },
+   "bloques": []
+  },
+  {
+   "id": "running_content_kEbwHQ",
+   "tipo": "running-content",
+   "ajustes": {
+    "color_scheme": "scheme-4",
+    "speed": "50",
+    "moving_direction": "animation-direction",
+    "pause_when_hover": false,
+    "heading_size": "h6"
+   },
+   "bloques": [
+    {
+     "id": "text_U8KVC9",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Promotion text</p>",
+      "color_text": "",
+      "text_color_gradient": ""
+     }
+    },
+    {
+     "id": "text_HCjECR",
+     "tipo": "text",
+     "ajustes": {
+      "promotion_text": "<p>Promotion text</p>",
+      "color_text": "#a1c4ff",
+      "text_color_gradient": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_VaAdgp",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Captura_de_pantalla_2025-04-10_a_la_s_6.18.16_p.m..png",
+    "content_ordering_desktop": "fd-row-reverse-md",
+    "collage_width": "6",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "heading_AUbJBh",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Los Desafíos del Camino",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_gfaC6V",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>Emprender<br/>no es fácil. Sabía que quería construir un negocio, pero no imaginaba lo<br/>complejo que sería. Nos enfrentamos a retos de diseño y producción,<br/>dificultades para explicar el producto sin imágenes ni videos de calidad,<br/>limitaciones económicas, desafíos en la contratación, temas fiscales y<br/>logísticos… La lista sigue. Pero nunca nos detuvimos. Aprendimos en el camino y<br/>seguimos adelante.</p><p>Al inicio, comenzamos dos personas con el proyecto, pero con el tiempo nos<br/>dimos cuenta de que teníamos visiones distintas. Después de dos años, tomamos<br/>caminos separados, esta decisión trajo consigo una división total de la<br/>empresa: dividimos activos, maquinaria, inventario y capital. Fue un golpe<br/>fuerte, prácticamente empezar desde cero. Tuve que moverme a otro lugar y<br/>reconstruir todo, pero nunca dudé en seguir adelante. Aprecio los aprendizajes<br/>de esa etapa y deseo lo mejor en el camino a la persona me acompañó en el<br/>inicio.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_CrFeQW",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "content_ordering_desktop": "fd-row-md",
+    "collage_width": "8.4",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_CeAbjP",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Add a tagline"
+     }
+    },
+    {
+     "id": "heading_H4af9p",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Más que un Negocio, una Misión",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_Hf9ec9",
+     "tipo": "description",
+     "ajustes": {
+      "description": "<p>Desde<br/>el principio, este proyecto significó mucho más que vender un producto. Nos<br/>motivaba la idea de ayudar a las personas a protegerse de un problema que<br/>afecta miles de hogares y negocios cada año. No estamos hablando de un problema<br/>menor: <strong>las inundaciones son el desastre natural que más pérdidas económicas<br/>genera a nivel mundial</strong>. </p><p>No<br/>pretendo resolver el problema de la noche a la mañana, pero sé que con cada<br/>compuerta que instalamos, estamos marcando una diferencia. Cada hogar protegido<br/>es una familia que duerme tranquila cuando llueve. Cada negocio que se salva de<br/>una inundación es un emprendedor que protege su inversión.</p><p>Los momentos que más nos llenan de alegría son cuando recibimos mensajes o<br/>llamadas de clientes que, después de años de buscar una solución, por fin la<br/>han encontrado. Nos cuentan que ahora pueden dormir tranquilos, que ya no viven<br/>con el miedo de perderlo todo en cada temporada de lluvias. Esos comentarios<br/>nos recuerdan por qué hacemos lo que hacemos.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "text_UVRVi7",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "",
+    "content_position_desktop": "start-md middle-md ta-left-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "heading_cqcxbd",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Welcome to our store",
+      "heading_size": "h2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "text_fBdkNw",
+   "tipo": "text",
+   "ajustes": {
+    "color_scheme": "scheme-2",
+    "content_position_desktop": "start-md middle-md ta-left-md",
+    "content_position_mobile": "start-xs middle-xs ta-left"
+   },
+   "bloques": [
+    {
+     "id": "subheading_VQqMwT",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": "Add a tagline"
+     }
+    },
+    {
+     "id": "heading_AQRNbp",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "Reconocimientos y Premios",
+      "heading_size": "h2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "image_collage_with_text_7FqB63",
+   "tipo": "image-collage-with-text",
+   "ajustes": {
+    "color_scheme": "",
+    "collage_alignment": "media-sticky",
+    "primary_image": "/media/files/Frame_487_5577f01a-b6ba-4d27-9bbf-0c5c2c03980a.jpg",
+    "secondary_image": "/media/files/1c9e6520-9e08-47b8-bcf2-d05ec6d3e5b8_3.jpg",
+    "tertiary_image": "/media/files/Testimonio_4.png",
+    "quaternary_image": "/media/files/Frame_484.jpg",
+    "content_ordering_desktop": "fd-row-md",
+    "collage_width": "8.4",
+    "content_position_mobile": "ta-left",
+    "content_ordering_mobile": "text-first-mb"
+   },
+   "bloques": [
+    {
+     "id": "subheading_3tRydL",
+     "tipo": "subheading",
+     "ajustes": {
+      "subheading": ""
+     }
+    },
+    {
+     "id": "heading_KRAMBT",
+     "tipo": "heading",
+     "ajustes": {
+      "heading": "",
+      "heading_size": "h2"
+     }
+    },
+    {
+     "id": "description_6ti38b",
+     "tipo": "description",
+     "ajustes": {
+      "description": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "media_with_text_columns_PJPAHV",
+   "tipo": "media-with-text-columns",
+   "ajustes": {
+    "color_scheme": "",
+    "subheading": "Add a tagline",
+    "heading": "Our core values",
+    "heading_size": "h2",
+    "description": "",
+    "item_alignment": "ta-left",
+    "image_ratio": "1",
+    "column_heading_size": "h4",
+    "enable_item_background": false,
+    "background_content": "",
+    "color_content": "",
+    "content_align_desktop": "ta-left-md",
+    "columns_per_row": "5",
+    "content_align_mobile": "ta-center",
+    "list_style": "true",
+    "button_text": "",
+    "style_button": "btn-primary",
+    "button_link": ""
+   },
+   "bloques": [
+    {
+     "id": "image_9tWtdD",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Featured image",
+      "description": "<p>Highlight your values, products, or services</p>"
+     }
+    },
+    {
+     "id": "image_MnkVGH",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Featured image",
+      "description": "<p>Highlight your values, products, or services</p>"
+     }
+    },
+    {
+     "id": "image_mxzbrd",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Featured image",
+      "description": "<p>Highlight your values, products, or services</p>"
+     }
+    },
+    {
+     "id": "image_i7Phkn",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Featured image",
+      "description": "<p>Highlight your values, products, or services</p>"
+     }
+    },
+    {
+     "id": "image_tHxhjU",
+     "tipo": "image",
+     "ajustes": {
+      "heading": "Featured image",
+      "description": "<p>Highlight your values, products, or services</p>"
+     }
+    }
+   ]
+  }
+ ]
+}
