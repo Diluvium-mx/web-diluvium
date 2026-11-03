@@ -83,8 +83,8 @@ export async function abrirChrome() {
       if (exceptionDetails) throw new Error(exceptionDetails.exception?.description ?? exceptionDetails.text);
       return result.value;
     };
-    // Baja poco a poco para que carguen las imágenes diferidas y regresa arriba.
-    await evaluar(`(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=600){scrollTo(0,y);await new Promise(r=>setTimeout(r,150))}scrollTo(0,0);await new Promise(r=>setTimeout(r,1500))})()`);
+    // Baja poco a poco, espera a que terminen las imágenes diferidas (hasta 8 s) y regresa arriba.
+    await evaluar(`(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=400){scrollTo(0,y);await new Promise(r=>setTimeout(r,300))}const t=Date.now();while([...document.images].some(i=>!i.complete)&&Date.now()-t<8000){await new Promise(r=>setTimeout(r,250))}scrollTo(0,0);await new Promise(r=>setTimeout(r,1500))})()`);
     return {
       evaluar,
       async capturar({ calidad = 70, alto = null } = {}) {

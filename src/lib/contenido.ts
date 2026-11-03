@@ -5,6 +5,11 @@ import ajustesTema from "@contenido/tema/ajustes.json";
 import encabezado from "@contenido/tema/header-group.json";
 import pie from "@contenido/tema/footer-group.json";
 import portada from "@contenido/tema/index.json";
+import productoGeneral from "@contenido/tema/product.json";
+import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
+import productoMedida from "@contenido/tema/product.medida-especial.json";
+import productoMini from "@contenido/tema/product.mini-compuerta.json";
+import productoTapon from "@contenido/tema/product.tapon-inflable.json";
 
 export type Ajustes = Record<string, unknown>;
 export type Bloque = { id: string; tipo: string; ajustes: Ajustes };
@@ -15,9 +20,22 @@ const PLANTILLAS = {
   portada: portada as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
+  product: productoGeneral as Plantilla,
+  "product.compuerta-estandar-2": productoCompuerta as Plantilla,
+  "product.medida-especial": productoMedida as Plantilla,
+  "product.mini-compuerta": productoMini as Plantilla,
+  "product.tapon-inflable": productoTapon as Plantilla,
 };
 
-export function plantilla(nombre: keyof typeof PLANTILLAS): Plantilla {
+export type NombrePlantilla = keyof typeof PLANTILLAS;
+
+/** Plantilla del tema que usa un producto («compuerta-estandar-2» → «product.compuerta-estandar-2»). */
+export function plantillaProducto(sufijo: string): Plantilla {
+  const nombre = (sufijo ? `product.${sufijo}` : "product") as NombrePlantilla;
+  return PLANTILLAS[nombre] ?? PLANTILLAS.product;
+}
+
+export function plantilla(nombre: NombrePlantilla): Plantilla {
   return PLANTILLAS[nombre];
 }
 

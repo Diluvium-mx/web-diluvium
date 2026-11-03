@@ -1,11 +1,16 @@
 // Antes y después con barra deslizante (sección «before-after-images», «De improvisar con sacos… a una protección
-// segura»). En computadora el texto va a la izquierda (30 %) y las fotos a la derecha; en celular y tableta, arriba.
+// segura»). En computadora el texto va a un lado (30 %) y las fotos al otro («silde-first»: fotos a la izquierda);
+// en celular y tableta, arriba. El alto de las fotos sale de la proporción de la foto de «antes».
 
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import type { Seccion } from "@/lib/contenido";
 import { esquema, texto } from "@/lib/contenido";
 import { Titulo, TextoRico } from "@/components/comunes/Texto";
 import { ComparadorImagenes } from "@/components/producto/ComparadorImagenes";
+import { medidasImagen } from "./ImagenBanner";
+import { clasesAire } from "./aire";
+import type { Producto } from "@/components/producto/catalogo";
 
 const TAMANOS = "(min-width: 1025px) 70vw, (min-width: 768px) calc(100vw - 96px), calc(100vw - 48px)";
 
@@ -38,17 +43,29 @@ function Etiqueta({ texto: t, lado }: { texto: string; lado: "izquierda" | "dere
   );
 }
 
-export function AntesDespues({ seccion }: { seccion: Seccion }) {
+export function AntesDespues({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const a = seccion.ajustes;
   const sub = texto(a, "subheading");
   const titulo = texto(a, "heading");
   const descripcion = texto(a, "description");
   const enLinea = texto(a, "content_align_desktop") === "inline";
+  const fotosPrimero = texto(a, "content_ordering_desktop").includes("silde-first");
+  const escritorio = texto(a, "desktop_image");
+  const celular = texto(a, "mobile_image");
+  const proporcion = (src: string) => {
+    if (!src) return "1 / 1";
+    const m = medidasImagen(src);
+    return `${m.ancho} / ${m.alto}`;
+  };
+  const proporciones = {
+    "--proporcion": proporcion(escritorio),
+    "--proporcion-cel": proporcion(celular || escritorio),
+  } as CSSProperties;
 
   return (
     <div className={esquema(a)} data-seccion="before-after-images">
-      <div className="contenedor py-[var(--aire)]">
-        <div className={`flex flex-col gap-[var(--hueco)] ${enLinea ? "min-[1025px]:flex-row min-[1025px]:gap-[2vw]" : ""}`}>
+      <div className={`contenedor ${clasesAire(seccion, producto)}`}>
+        <div className={`flex flex-col gap-[var(--hueco)] ${enLinea ? `${fotosPrimero ? "min-[1025px]:flex-row-reverse" : "min-[1025px]:flex-row"} min-[1025px]:gap-[2vw]` : ""}`}>
           <div
             className={`flex flex-col items-center text-center ${enLinea ? "min-[1025px]:shrink-0 min-[1025px]:basis-[calc((100%-2vw)*0.3)] min-[1025px]:items-start min-[1025px]:text-left" : ""}`}
           >
@@ -61,9 +78,9 @@ export function AntesDespues({ seccion }: { seccion: Seccion }) {
               />
             )}
           </div>
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1" style={proporciones}>
             <ComparadorImagenes
-              className="aspect-square rounded-[16px] md:rounded-[24px] min-[1025px]:rounded-[32px]"
+              className="aspect-[var(--proporcion-cel)] rounded-[16px] min-[1025px]:aspect-[var(--proporcion)] md:rounded-[24px] min-[1025px]:rounded-[32px]"
               antes={
                 <>
                   <Foto escritorio={texto(a, "desktop_image")} celular={texto(a, "mobile_image")} alt={texto(a, "label_image_before") || "Antes"} />

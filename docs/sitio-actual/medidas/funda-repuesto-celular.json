@@ -1,0 +1,7890 @@
+{
+ "url": "https://www.diluvium.com.mx/products/funda-de-repuesto-compuerta-anti-inundaciones",
+ "ancho": 390,
+ "altoPagina": 6030,
+ "secciones": [
+  {
+   "id": "shopify-section-sections--23149237928156__running_content_WwxgYn",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    0,
+    390,
+    64
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      21,
+      390,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -447,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      583,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1613,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      2643,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3672,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -439,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -139,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -102,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      -77,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      212,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      249,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      297,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      554,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      591,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      890,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      928,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      952,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1242,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1279,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1326,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1584,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1621,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1920,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1958,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1982,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2272,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2309,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2356,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2613,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2651,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2950,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2987,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3012,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3301,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3339,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3386,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3643,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3680,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3980,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4017,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4042,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4331,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4368,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4416,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4673,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__extra-info-header",
+   "tipo": "",
+   "caja": [
+    0,
+    64,
+    390,
+    57
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-small-padding extra-info-header__content ctnr",
+     "caja": [
+      0,
+      0,
+      390,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 24px",
+     "maxW": "1348px"
+    },
+    {
+     "tag": "div",
+     "cls": "extra-info-header__left",
+     "caja": [
+      24,
+      16,
+      268,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      16,
+      94,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "tel:(668) 241 9579"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      24,
+      23,
+      10,
+      10
+     ],
+     "viewBox": "0 0 61 64"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      139,
+      16,
+      153,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "mailto:contacto@diluvium.com.mx"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      323,
+      16,
+      43,
+      24
+     ],
+     "texto": "🇲🇽MXN",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__header",
+   "tipo": "Header Section",
+   "caja": [
+    0,
+    121,
+    390,
+    72
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "header",
+     "cls": "header ctnr header--horizontal header--horizontal-left heade",
+     "caja": [
+      0,
+      0,
+      390,
+      72
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "8px",
+     "cols": "40px 212px 74px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 24px",
+     "maxW": "1348px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "svg",
+     "caja": [
+      34,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      108,
+      18,
+      140,
+      37
+     ],
+     "src": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+     "alt": "Diluvium",
+     "natural": [
+      400,
+      105
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      302,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      336,
+      16,
+      40,
+      40
+     ],
+     "texto": "Carrito 0 artículos",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/cart"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      346,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__breadcrumb",
+   "tipo": "Breadcrumb",
+   "caja": [
+    0,
+    193,
+    390,
+    84
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "ul",
+     "cls": "breadcrumb__list ls-none d-flex middle-xs fw-wrap wb-break-w",
+     "caja": [
+      24,
+      16,
+      342,
+      52
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      21,
+      33,
+      16
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      61,
+      22,
+      12,
+      12
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      49,
+      310,
+      16
+     ],
+     "texto": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__main",
+   "tipo": "Main Product Section",
+   "caja": [
+    0,
+    277,
+    390,
+    1886
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "main-product ctnr p-relative section section-gap-md main-pro",
+     "caja": [
+      0,
+      0,
+      390,
+      1886
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "flex-start",
+     "pad": "0px 24px 64px",
+     "maxW": "1348px"
+    },
+    {
+     "tag": "sht-prd-slideshow",
+     "cls": "product-slideshow product__media--thumbnail_bottom d-grid p-",
+     "caja": [
+      24,
+      0,
+      342,
+      470
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px",
+     "cols": "342px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "sht-vert-carousel",
+     "cls": "sht-carousel product-thumbs-carousel--horizontal  p-relative",
+     "caja": [
+      0,
+      406,
+      390,
+      64
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px",
+     "maxW": "100%"
+    },
+    {
+     "tag": "div",
+     "cls": "product-slideshow__thumbs product__thumbnails--square fill h",
+     "caja": [
+      0,
+      406,
+      160,
+      64
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px 0px 0px 24px"
+    },
+    {
+     "tag": "div",
+     "cls": "product-slideshow__items js-product-slideshow js-carousel-it",
+     "caja": [
+      0,
+      0,
+      390,
+      390
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "main-product__info d-flex fw-wrap maw-100",
+     "caja": [
+      24,
+      494,
+      342,
+      1328
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 14.04px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px",
+     "maxW": "100%"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex middle-xs fw-wrap gap-8",
+     "caja": [
+      24,
+      652,
+      342,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "span",
+     "cls": "price__sale  d-flex middle-xs fw-wrap gap-8 ta-center center",
+     "caja": [
+      24,
+      652,
+      122,
+      56
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "8px",
+     "justify": "center",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "product__info product__block-variant mb-32 gap-24 d-flex fd-",
+     "caja": [
+      24,
+      1136,
+      342,
+      160
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "sht-variant-radios",
+     "cls": "product__variants--radios d-flex fd-column gap-24 no-js-hidd",
+     "caja": [
+      24,
+      1136,
+      342,
+      112
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "fieldset",
+     "cls": "form__fields product-option js-variant-radio-container d-fle",
+     "caja": [
+      24,
+      1136,
+      342,
+      112
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "span",
+     "cls": "d-flex flex-1",
+     "caja": [
+      24,
+      1136,
+      342,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "ul",
+     "cls": "ls-none d-flex fw-wrap gap-8",
+     "caja": [
+      24,
+      1168,
+      342,
+      80
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "span",
+     "cls": "d-flex gap-8 subtext middle-xs",
+     "caja": [
+      24,
+      1272,
+      342,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "sht-prd-frm",
+     "cls": "sht-product__form product-form d-grid gap-12",
+     "caja": [
+      24,
+      1328,
+      342,
+      98
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "342px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "gap-12 d-flex w-100 fd-column",
+     "caja": [
+      24,
+      1328,
+      342,
+      98
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "product__block-iwt__content card__content br-card-content fa",
+     "caja": [
+      24,
+      1442,
+      163,
+      156
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column",
+     "caja": [
+      24,
+      1502,
+      163,
+      80
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "button",
+     "cls": "accordion__button product__desc__accordion-button w-100 p-ze",
+     "caja": [
+      40,
+      1622,
+      310,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex top-xs m-zero flex-1 ta-left",
+     "caja": [
+      40,
+      1632,
+      258,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "button",
+     "cls": "accordion__button product__desc__accordion-button w-100 p-ze",
+     "caja": [
+      40,
+      1682,
+      310,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex top-xs m-zero flex-1 ta-left",
+     "caja": [
+      40,
+      1692,
+      258,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "button",
+     "cls": "accordion__button product__desc__accordion-button w-100 p-ze",
+     "caja": [
+      40,
+      1742,
+      310,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex top-xs m-zero flex-1 ta-left",
+     "caja": [
+      40,
+      1752,
+      258,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "flex-start",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      25,
+      407,
+      62,
+      62
+     ],
+     "src": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      390,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      97,
+      407,
+      62,
+      62
+     ],
+     "src": "/media/products/Funda2.jpg",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      390,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      352,
+      348,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      0,
+      0,
+      390,
+      390
+     ],
+     "src": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      342,
+      342
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      742,
+      348,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      390,
+      0,
+      390,
+      390
+     ],
+     "src": "/media/products/Funda2.jpg",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      342,
+      342
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      33,
+      347,
+      6,
+      20
+     ],
+     "texto": "1",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      42,
+      347,
+      7,
+      20
+     ],
+     "texto": "/",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      53,
+      347,
+      9,
+      20
+     ],
+     "texto": "2",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      348,
+      187,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "h1",
+     "caja": [
+      24,
+      494,
+      342,
+      108
+     ],
+     "texto": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "28.8325px",
+     "weight": "500",
+     "lh": "36.0406px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      24,
+      630,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      46,
+      630,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      68,
+      630,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      90,
+      630,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      112,
+      630,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      140,
+      634,
+      73,
+      14
+     ],
+     "texto": "2 Reseñas",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(88, 88, 88)",
+     "align": "start"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      24,
+      657,
+      91,
+      16
+     ],
+     "texto": "$ 999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(49, 49, 49, 0.63)",
+     "align": "center",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      684,
+      122,
+      24
+     ],
+     "texto": "$ 699.00 MXN",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(19, 148, 44)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      154,
+      685,
+      61,
+      23
+     ],
+     "texto": "Oferta",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "700",
+     "lh": "15px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "bg": "rgb(222, 140, 17)",
+     "radius": "64px"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      748,
+      342,
+      48
+     ],
+     "texto": "Respuesto para tu compuerta anti inundaciones, en caso de ruptura o desgaste.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      828,
+      342,
+      72
+     ],
+     "texto": "Esta funda es elástica para que se expanda junto con la compuerta, e impermeable para impedir el flujo de agua a través de ella.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      932,
+      342,
+      48
+     ],
+     "texto": "Recomendamos reponerla cada 4-5 años dependiendo del uso.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      24,
+      1014,
+      340,
+      44
+     ],
+     "texto": "Este producto incluye solamente la funda, no la compuerta.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      1092,
+      342,
+      24
+     ],
+     "texto": "Varía por tamaños.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      24,
+      1068,
+      61,
+      36
+     ],
+     "texto": "Ver más",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(248, 160, 29)",
+     "align": "center",
+     "deco": "underline",
+     "pad": "8px 0px"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1136,
+      59,
+      24
+     ],
+     "texto": "Tamaño",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      91,
+      1136,
+      88,
+      24
+     ],
+     "texto": "Extra Chica",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      40,
+      1176,
+      84,
+      20
+     ],
+     "texto": "Extra Chica",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      164,
+      1176,
+      42,
+      20
+     ],
+     "texto": "Chica",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      247,
+      1176,
+      64,
+      20
+     ],
+     "texto": "Mediana",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      40,
+      1220,
+      55,
+      20
+     ],
+     "texto": "Grande",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      135,
+      1220,
+      97,
+      20
+     ],
+     "texto": "Extra Grande",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      28,
+      1276,
+      16,
+      16
+     ],
+     "texto": ">",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "viewBox": "0 0 18 12"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      56,
+      1276,
+      92,
+      17
+     ],
+     "texto": "Disponibles: 15",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      35,
+      1343,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      115,
+      1343,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      24,
+      1386,
+      342,
+      40
+     ],
+     "texto": "Añadir al carrito",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "radius": "4px",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      139,
+      1398,
+      113,
+      17
+     ],
+     "texto": "Añadir al carrito",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      24,
+      1458,
+      28,
+      32
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1502,
+      163,
+      48
+     ],
+     "texto": "Envío Gratis 3-5 días",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      1558,
+      163,
+      24
+     ],
+     "texto": "En pedidos de $499+",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      40,
+      1622,
+      310,
+      40
+     ],
+     "texto": "Métodos de pago",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      40,
+      1632,
+      16,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      60,
+      1632,
+      238,
+      20
+     ],
+     "texto": "Métodos de pago",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      320,
+      1632,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      40,
+      1682,
+      310,
+      40
+     ],
+     "texto": "Envíos y Devoluciones",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      40,
+      1692,
+      16,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      60,
+      1692,
+      238,
+      20
+     ],
+     "texto": "Envíos y Devoluciones",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      320,
+      1692,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      40,
+      1742,
+      310,
+      40
+     ],
+     "texto": "Facturación",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      40,
+      1752,
+      16,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      60,
+      1752,
+      238,
+      20
+     ],
+     "texto": "Facturación",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      320,
+      1752,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__1745051659e1aff22a",
+   "tipo": "Apps Section",
+   "caja": [
+    0,
+    2762,
+    390,
+    128
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": []
+  },
+  {
+   "id": "shopify-section-template--23149245333724__running_content_ahTRMc",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    2890,
+    390,
+    64
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      21,
+      390,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -444,
+      21,
+      588,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      144,
+      21,
+      588,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      731,
+      21,
+      588,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1319,
+      21,
+      588,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1906,
+      21,
+      588,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -436,
+      21,
+      143,
+      21
+     ],
+     "texto": "Rápida Instalación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -277,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -240,
+      21,
+      121,
+      21
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -103,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -65,
+      21,
+      164,
+      21
+     ],
+     "texto": "Envíos a todo México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      114,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      152,
+      21,
+      143,
+      21
+     ],
+     "texto": "Rápida Instalación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      310,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      348,
+      21,
+      121,
+      21
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      485,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      522,
+      21,
+      164,
+      21
+     ],
+     "texto": "Envíos a todo México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      702,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      739,
+      21,
+      143,
+      21
+     ],
+     "texto": "Rápida Instalación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      935,
+      21,
+      121,
+      21
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1072,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1110,
+      21,
+      164,
+      21
+     ],
+     "texto": "Envíos a todo México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1290,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1327,
+      21,
+      143,
+      21
+     ],
+     "texto": "Rápida Instalación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1485,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1523,
+      21,
+      121,
+      21
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1660,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1697,
+      21,
+      164,
+      21
+     ],
+     "texto": "Envíos a todo México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1877,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1914,
+      21,
+      143,
+      21
+     ],
+     "texto": "Rápida Instalación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2073,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2110,
+      21,
+      121,
+      21
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2247,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2285,
+      21,
+      164,
+      21
+     ],
+     "texto": "Envíos a todo México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2465,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__icon_with_text_H4gd7q",
+   "tipo": "Icon With Text Section",
+   "caja": [
+    0,
+    2954,
+    390,
+    252
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section ctnr d-grid-md d-flex fd-column   ",
+     "caja": [
+      0,
+      0,
+      390,
+      252
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 24px 64px",
+     "maxW": "1348px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw r-gap-equal js-carousel-items carousel-xs m-zero ox-auto ",
+     "caja": [
+      -31,
+      0,
+      452,
+      188
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "14.04px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 48px"
+    },
+    {
+     "tag": "div",
+     "cls": "icon-with-text-item card__content  d-flex fd-column gap-12 h",
+     "caja": [
+      24,
+      0,
+      342,
+      188
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "icon-with-text-item card__content  d-flex fd-column gap-12 h",
+     "caja": [
+      380,
+      0,
+      342,
+      188
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-8",
+     "caja": [
+      398,
+      92,
+      305,
+      56
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "icon-with-text-item card__content  d-flex fd-column gap-12 h",
+     "caja": [
+      736,
+      0,
+      342,
+      188
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-8",
+     "caja": [
+      736,
+      92,
+      342,
+      80
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "8px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "svg",
+     "caja": [
+      163,
+      16,
+      60,
+      64
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      135,
+      92,
+      119,
+      24
+     ],
+     "texto": "Envíos gratis",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      135,
+      124,
+      119,
+      24
+     ],
+     "texto": "A partir de $499",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      519,
+      16,
+      60,
+      64
+     ],
+     "texto": ">",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "viewBox": "0 0 18 12"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      398,
+      92,
+      305,
+      24
+     ],
+     "texto": "Garantía de funcionamiento",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      398,
+      124,
+      305,
+      24
+     ],
+     "texto": "Productos probados en rigurosas pruebas",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      875,
+      16,
+      60,
+      64
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      736,
+      92,
+      342,
+      24
+     ],
+     "texto": "Compra Segura",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      736,
+      124,
+      342,
+      48
+     ],
+     "texto": "Protegemos tus datos personales en todo momento",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__multiple_product_tabs_8X7EyH",
+   "tipo": "Multiple Product Tabs Section",
+   "caja": [
+    0,
+    3206,
+    390,
+    853
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section ctnr d-flex fd-column  ",
+     "caja": [
+      0,
+      0,
+      390,
+      853
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "64px 24px",
+     "maxW": "1348px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content d-flex fd-column middle-xs ta-center middl",
+     "caja": [
+      24,
+      64,
+      342,
+      64
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content",
+     "caja": [
+      24,
+      168,
+      342,
+      621
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw r-gap-equal js-carousel-items ox-auto p-relative scrollab",
+     "caja": [
+      -31,
+      168,
+      452,
+      621
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "14.04px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "10px 48px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      24,
+      178,
+      342,
+      601
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      24,
+      520,
+      342,
+      259
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 20px"
+    },
+    {
+     "tag": "span",
+     "cls": "price__sale  d-flex middle-xs fw-wrap gap-8 ta-center center",
+     "caja": [
+      44,
+      615,
+      302,
+      56
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "8px",
+     "justify": "center",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      380,
+      178,
+      342,
+      601
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      380,
+      520,
+      342,
+      259
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 20px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      736,
+      178,
+      342,
+      601
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      736,
+      520,
+      342,
+      259
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 20px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      1092,
+      178,
+      342,
+      601
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      1092,
+      520,
+      342,
+      259
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 20px"
+    },
+    {
+     "tag": "span",
+     "cls": "price__sale  d-flex middle-xs fw-wrap gap-8 ta-center center",
+     "caja": [
+      1112,
+      635,
+      302,
+      56
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "8px",
+     "justify": "center",
+     "align": "flex-start",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      24,
+      64,
+      342,
+      64
+     ],
+     "texto": "Otras personas también vieron",
+     "font": "Archivo",
+     "size": "25.6289px",
+     "weight": "500",
+     "lh": "32.0361px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      44,
+      190,
+      91,
+      15
+     ],
+     "texto": "Rebaja hasta 8%",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "700",
+     "lh": "15px",
+     "color": "rgb(29, 107, 28)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      44,
+      198,
+      302,
+      302
+     ],
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "natural": [
+      195,
+      195
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      167,
+      536,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      81,
+      562,
+      229,
+      17
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      139,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      153,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      167,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      181,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      195,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      195,
+      591,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      212,
+      591,
+      34,
+      15
+     ],
+     "texto": "(204)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      44,
+      620,
+      103,
+      16
+     ],
+     "texto": "$ 5,999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "600",
+     "lh": "17px",
+     "color": "rgba(49, 49, 49, 0.63)",
+     "align": "center",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      44,
+      647,
+      138,
+      24
+     ],
+     "texto": "$ 5,500.00 MXN",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(19, 148, 44)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      139,
+      723,
+      111,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "12px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      400,
+      198,
+      302,
+      302
+     ],
+     "src": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "natural": [
+      195,
+      195
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      489,
+      536,
+      123,
+      16
+     ],
+     "texto": "evita-inundarte-mx",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      415,
+      562,
+      272,
+      37
+     ],
+     "texto": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      499,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      513,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      527,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      541,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      555,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      555,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      572,
+      611,
+      26,
+      15
+     ],
+     "texto": "(22)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      497,
+      635,
+      107,
+      24
+     ],
+     "texto": "$ 7,000.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      495,
+      723,
+      111,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "12px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      756,
+      198,
+      302,
+      302
+     ],
+     "src": "/media/products/Frame237.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "natural": [
+      195,
+      195
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      845,
+      536,
+      123,
+      16
+     ],
+     "texto": "evita-inundarte-mx",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      776,
+      562,
+      262,
+      57
+     ],
+     "texto": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      855,
+      631,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      869,
+      631,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      883,
+      631,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      897,
+      631,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      911,
+      631,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      928,
+      631,
+      26,
+      15
+     ],
+     "texto": "(10)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      838,
+      655,
+      139,
+      24
+     ],
+     "texto": "Desde $ 749.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      851,
+      723,
+      111,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "12px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1112,
+      190,
+      99,
+      15
+     ],
+     "texto": "Rebaja hasta 30%",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "700",
+     "lh": "15px",
+     "color": "rgb(29, 107, 28)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1112,
+      198,
+      302,
+      302
+     ],
+     "src": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      195,
+      195
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1202,
+      536,
+      123,
+      16
+     ],
+     "texto": "evita-inundarte-mx",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1128,
+      562,
+      270,
+      37
+     ],
+     "texto": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1215,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1229,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1243,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1257,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1271,
+      611,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1288,
+      611,
+      18,
+      15
+     ],
+     "texto": "(2)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      1112,
+      640,
+      93,
+      16
+     ],
+     "texto": "$ 999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "600",
+     "lh": "17px",
+     "color": "rgba(49, 49, 49, 0.63)",
+     "align": "center",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1112,
+      667,
+      122,
+      24
+     ],
+     "texto": "$ 699.00 MXN",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(19, 148, 44)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1208,
+      723,
+      111,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "12px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__174505173311ed0647",
+   "tipo": "Apps Section",
+   "caja": [
+    0,
+    4059,
+    390,
+    376
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "tt-card-list",
+     "caja": [
+      39,
+      60,
+      312,
+      220
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-carousel-row swiper-initialized swiper-horizontal swiper-",
+     "caja": [
+      39,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-swiper-container swiper-wrapper",
+     "caja": [
+      -768,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      -768,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      -692,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      -284,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      -208,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      200,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      276,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      684,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      760,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      1168,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      1244,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      1652,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      1728,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      2136,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      2212,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      2620,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      2696,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      3104,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      3180,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      3588,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      3664,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      4072,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      4148,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      4556,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      4632,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      5040,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      5116,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      5524,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      5600,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      6008,
+      84,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      6084,
+      96,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-carousel-row carousel-second-row swiper-initialized swipe",
+     "caja": [
+      -161,
+      178,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-swiper-container swiper-wrapper",
+     "caja": [
+      -968,
+      178,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      -968,
+      178,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      -892,
+      190,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      -484,
+      178,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card-head",
+     "caja": [
+      -408,
+      190,
+      364,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-card",
+     "caja": [
+      0,
+      178,
+      452,
+      78
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "12px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "div",
+     "caja": [
+      39,
+      44,
+      312,
+      16
+     ],
+     "texto": "4.9 estrellas basadas en reseñas",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "650",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      241,
+      42,
+      28,
+      20
+     ],
+     "texto": "238",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "650",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "center"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      -756,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/d54b3b42-82a9-47a8-8b58-f795aafd6ebf.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      220
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -692,
+      96,
+      68,
+      20
+     ],
+     "texto": "Marco G.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -620,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -602,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -584,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -566,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -548,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -692,
+      120,
+      364,
+      32
+     ],
+     "texto": "Ayudó a solucionar los problemas que teníamos desde hace años",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      -272,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/a8e939f6-0ca2-43ad-9362-2b644cc198a0.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      329
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -208,
+      96,
+      66,
+      20
+     ],
+     "texto": "Reyna C.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -138,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -120,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -102,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -84,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -66,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -208,
+      120,
+      364,
+      32
+     ],
+     "texto": "Todos los que tienen problemas con inundaciones deberían comprar una, es una chulada, si la recomiendo, llegó bien rápido y completita.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      212,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/e9e8e1e5-92be-4626-9149-abc91a5bbbbc.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      221
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      276,
+      96,
+      80,
+      20
+     ],
+     "texto": "Eugenio B.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      360,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      378,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      396,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      414,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      432,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      276,
+      120,
+      364,
+      32
+     ],
+     "texto": "Muy muy muy util porque no paso nadita de agua, es un invento increible!!",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      696,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/f366cdba-4e6a-445b-a864-c6275a5cbc69.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      284
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      760,
+      96,
+      73,
+      20
+     ],
+     "texto": "Alberto F.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      838,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      856,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      874,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      892,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      910,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      760,
+      120,
+      364,
+      32
+     ],
+     "texto": "Es muy facil de poner y se ve bonita, si la recomiendo",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1180,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/d4bb0d04-78f5-42de-979d-acac312f550a.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1244,
+      96,
+      70,
+      20
+     ],
+     "texto": "Irma D. V.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1319,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1337,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1355,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1373,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1391,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1244,
+      120,
+      364,
+      32
+     ],
+     "texto": "Tiene buenos materiales, espero me dure mucho tiempo porque no es barata, pero si recomiendo que la compren si se les inunda su casa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1664,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/1dd6264d-0832-4547-ad26-131a22126730.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1728,
+      96,
+      94,
+      20
+     ],
+     "texto": "Ricardo R. Z.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1826,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1844,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1862,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1880,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1898,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1728,
+      120,
+      364,
+      32
+     ],
+     "texto": "Espero que esto solucione el agua que se mete desde la cochera en la parte de atras de la casa, se ve rigida y de buenos materiales.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      2148,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/c57530d7-0a87-4bf2-b2ea-5905bdcdfb1a.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      165
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2212,
+      96,
+      73,
+      20
+     ],
+     "texto": "Miriam G.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2289,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2307,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2325,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2343,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2361,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2212,
+      120,
+      364,
+      32
+     ],
+     "texto": "Es estresante ver que el agua nomas entra y por mas que trapee o barra no es suficiente, esto me da tranquilidad de que ya no se va a meter.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      2632,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/651ac9f6-fb94-4e4e-8747-adc490daa8c5.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2696,
+      96,
+      52,
+      20
+     ],
+     "texto": "SRA D.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2752,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2770,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2788,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2806,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2824,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2696,
+      120,
+      364,
+      32
+     ],
+     "texto": "VER PARA CREER, ALGO QUE ME SORPRENDIÓ CUANDO LA PUSE, CREO QUE NO LA QUITARÉ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      3116,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/7d4ad868-8230-4658-8883-d355738a5de9.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3180,
+      96,
+      84,
+      20
+     ],
+     "texto": "Daniel A. P.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3268,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3286,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3304,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3322,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3340,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3180,
+      120,
+      364,
+      32
+     ],
+     "texto": "Si tarde como 20 minutos en ponerlo, pero ya que lo puse ahí lo dejé 3 meses, me deja dormir mas tranquilo porque cuando llueve se inunda mu",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      3600,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/b52d7972-8beb-4854-bd1b-b079f4a003bc.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      295
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3664,
+      96,
+      89,
+      20
+     ],
+     "texto": "Consuelo L.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3757,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3775,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3793,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3811,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3829,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3664,
+      120,
+      364,
+      32
+     ],
+     "texto": "Gracias a Dios desde que descubrí este sistema me ha permitido que el agua no entre a mi casa. Estoy encantada!",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      4084,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/3c0d149e-05fa-4451-89b5-5adc8a328004.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      165
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4148,
+      96,
+      58,
+      20
+     ],
+     "texto": "Clara B.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4210,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4228,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4246,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4264,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4282,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4148,
+      120,
+      364,
+      32
+     ],
+     "texto": "Una maravilla! mi esposo y yo ya nos sentimos seguros cada vez que la ponemos, masomenos desde agosto hasta diciembre la quitamos",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      4568,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/3e4b7c7f-9741-4351-b1a1-f419281bb567.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4632,
+      96,
+      50,
+      20
+     ],
+     "texto": "Luis C.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4686,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4704,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4722,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4740,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4758,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4632,
+      120,
+      364,
+      32
+     ],
+     "texto": "Llegó en perfecto estado y antes del tiempo estimado de entrega, cuenta con todo lo necesario para su instalación y se instala rápido y fáci",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      5052,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/5/25/anBmrZMz2E.jpeg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      391
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      5116,
+      96,
+      62,
+      20
+     ],
+     "texto": "Juana R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5182,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5200,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5218,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5236,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5254,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      5116,
+      120,
+      364,
+      32
+     ],
+     "texto": "El servicio fue profesional, la instalación muy facil y rápida confirme las instrucciones, la entrega acorde a lo prometido. Estoy complacid",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      5536,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/6/20/sQFkYf4Xae.jpeg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      5600,
+      96,
+      77,
+      20
+     ],
+     "texto": "Horacio R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5681,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5699,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5717,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5735,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5753,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      5600,
+      120,
+      364,
+      32
+     ],
+     "texto": "Estoy muy satisfecho con la compuerta que compre para proteger mi negocio de inundaciones. Es robusta, de alta calidad y su instalación fue ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      6020,
+      96,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/bafd1fcd-c438-48ea-84d3-de4b1899da94.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      458
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      6084,
+      96,
+      60,
+      20
+     ],
+     "texto": "Jesús R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      6148,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      6166,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      6184,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      6202,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      6220,
+      98,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      6084,
+      120,
+      364,
+      32
+     ],
+     "texto": "Me encantó porque se pone rápido",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      -956,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/0fb69f1d-dbbd-429c-9c5e-e5eb1aa5b4e5.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -892,
+      190,
+      68,
+      20
+     ],
+     "texto": "José R. P.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -820,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -802,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -784,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -766,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -748,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -892,
+      214,
+      364,
+      32
+     ],
+     "texto": "No encontré nada mas barato ni nada que se le parezca, mucho mejor que los sacos de arena la verdad. Recomendado",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      -472,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/b6152e0a-e22b-45a0-9832-fa711fc0ff9c.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -408,
+      190,
+      84,
+      20
+     ],
+     "texto": "Mariana M.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -320,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -302,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -284,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -266,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -248,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      -408,
+      214,
+      364,
+      32
+     ],
+     "texto": "Tiene alto el precio pero es una inversión, sale mas caro andar cambiando de sala, se la pasé a todos mis vecinos.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      12,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/38a311bd-0e77-43cb-b366-f25987383b9e.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      466
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      76,
+      190,
+      71,
+      20
+     ],
+     "texto": "Hector G.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      152,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      170,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      188,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      206,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      224,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      76,
+      214,
+      364,
+      32
+     ],
+     "texto": "Ayudó a solucionar los problemas que teníamos desde hace años",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      496,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/21a94c4b-6d6f-4fdd-a0c7-ec90e8e40a9d.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      560,
+      190,
+      56,
+      20
+     ],
+     "texto": "IVAN G.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      621,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      639,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      657,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      675,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      693,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      560,
+      214,
+      364,
+      32
+     ],
+     "texto": "ESTA BUENA Y LIGERA, ES UNA COMPUERTA FUNCIONAL Y SOLUCIONA EL PROBLEMA. RECOMENDADA",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      980,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/fb7ea492-a2ed-4226-88a4-03bde4ed7bc6.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1044,
+      190,
+      63,
+      20
+     ],
+     "texto": "María N.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1111,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1129,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1147,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1165,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1183,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1044,
+      214,
+      364,
+      32
+     ],
+     "texto": "Me llegó en 4 días, buena bonita y barata para lo que es, ojalá hubiera sabido antes aue existían este tipo de cosas.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1464,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/00c7de20-ae8a-4a94-96e7-691dedc457be.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1528,
+      190,
+      59,
+      20
+     ],
+     "texto": "Dr. O. R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1591,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1609,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1627,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1645,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1663,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1528,
+      214,
+      364,
+      32
+     ],
+     "texto": "Acá en Veracruz el agua sube hasta 40cm en un par de horas y el gobierno nomas no lo soluciona, compré 3 y eso me da tranquilidad.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1948,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/1d4a27e9-880e-4cc3-baf8-0e32942496bc.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2012,
+      190,
+      77,
+      20
+     ],
+     "texto": "Claudia C.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2093,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2111,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2129,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2147,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2165,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2012,
+      214,
+      364,
+      32
+     ],
+     "texto": "Tuve que decirle a mi vecino que me ayude pero la colocamos y si está simple como pensé",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      2432,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/b26a71ad-dd22-4576-b7e0-79f9436e1b3e.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      220
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2496,
+      190,
+      83,
+      20
+     ],
+     "texto": "Oscar G. R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2583,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2601,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2619,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2637,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2655,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2496,
+      214,
+      364,
+      32
+     ],
+     "texto": "Exelente producto!! Quedó perfecto en mi entrada y se siente rigido.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      2916,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/d4d2f01b-38fd-4073-b89c-6b1642caadab.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      391
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2980,
+      190,
+      79,
+      20
+     ],
+     "texto": "Fabricio R.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3064,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3082,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3100,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3118,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3136,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      2980,
+      214,
+      364,
+      32
+     ],
+     "texto": "Es un aparato firme, ya le pegamos el manguerazo y no pasó el agua, es una buena barrera contra una lluvia inesperada 👍🏼",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      3400,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/1027f77d-2c53-46af-9136-0fc38e8489eb.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      391
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3464,
+      190,
+      56,
+      20
+     ],
+     "texto": "Alicia J.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3524,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3542,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3560,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3578,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3596,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3464,
+      214,
+      364,
+      32
+     ],
+     "texto": "Excelente producto y servicio. Recomendadisimo para todos los que tengan problemas de inundaciones como yo!!!",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      3884,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/8bd4b952-58ea-4ffd-b582-b2765607241a.jpg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      391
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3948,
+      190,
+      42,
+      20
+     ],
+     "texto": "Fer Z.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3994,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4012,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4030,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4048,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4066,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      3948,
+      214,
+      364,
+      32
+     ],
+     "texto": "Excelente producto! Fácil de instalar y queda bien firme, la colocamos en minutos y me siguen preguntando los vecinos que si donde la compré",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      4368,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/5/2/T8sdFYB4Y4.jpeg?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      227
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4432,
+      190,
+      48,
+      20
+     ],
+     "texto": "Elza L.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4485,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4503,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4521,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4539,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4557,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4432,
+      214,
+      364,
+      32
+     ],
+     "texto": "Excelente atención, mi paquete llegó en el tiempo estimado, quedé muy conforme. Gracias",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "16px",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      4852,
+      190,
+      52,
+      52
+     ],
+     "radius": "33px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/6/7/day3DmXKNA.JPG?x-oss-process=style/trustoo_small",
+     "alt": "review image",
+     "natural": [
+      220,
+      293
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      4916,
+      190,
+      52,
+      20
+     ],
+     "texto": "Juan L.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "color": "rgb(48, 48, 48)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4972,
+      192,
+      16,
+      16
+     ],
+     "viewBox": "0 0 20 19"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245333724__image_banner_zxRYj8",
+   "tipo": "Image Banner Section",
+   "caja": [
+    0,
+    4435,
+    390,
+    80
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      0,
+      0,
+      390,
+      80
+     ],
+     "src": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+     "alt": "Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+     "natural": [
+      390,
+      31
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237764316__footer",
+   "tipo": "Section Footer",
+   "caja": [
+    0,
+    4515,
+    390,
+    1515
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "footer__content d-grid gap-32",
+     "caja": [
+      24,
+      168,
+      342,
+      1154
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "32px",
+     "cols": "342px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw between-xs hide-empty r-gap-32 gap-lg-zero",
+     "caja": [
+      17,
+      168,
+      356,
+      866
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "clm d-flex fd-column gap-24 wb-break-word",
+     "caja": [
+      17,
+      168,
+      356,
+      332
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 7.02px",
+     "maxW": "100%"
+    },
+    {
+     "tag": "ul",
+     "cls": "start-xs gap-8 ls-none d-flex fw-wrap hide-empty",
+     "caja": [
+      24,
+      464,
+      342,
+      36
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "border newletter-spacing pt-8 pt-md-16 br-card-content d-fle",
+     "caja": [
+      24,
+      844,
+      342,
+      190
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "8px 16px 16px"
+    },
+    {
+     "tag": "div",
+     "cls": "form__field d-flex fd-column fd-row-sm fd-column-lg gap-12",
+     "caja": [
+      41,
+      925,
+      308,
+      92
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw hide-empty r-gap-32",
+     "caja": [
+      17,
+      1066,
+      356,
+      256
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "footer__content__bottom m-auto d-flex center-xs fd-column mi",
+     "caja": [
+      24,
+      1386,
+      342,
+      49
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "32px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "button",
+     "caja": [
+      24,
+      64,
+      150,
+      40
+     ],
+     "texto": "Volver arriba",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "pad": "6px 20px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      138,
+      76,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      24,
+      168,
+      140,
+      34
+     ],
+     "src": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+     "alt": "Diluvium",
+     "natural": [
+      200,
+      49
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      270,
+      342,
+      45
+     ],
+     "texto": "Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      347,
+      342,
+      23
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      402,
+      342,
+      23
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      34,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      78,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      122,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      166,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      532,
+      342,
+      40
+     ],
+     "texto": "Main menu",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      572,
+      39,
+      48
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      620,
+      76,
+      48
+     ],
+     "texto": "Productos",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      668,
+      69,
+      48
+     ],
+     "texto": "Contacto",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      716,
+      67,
+      48
+     ],
+     "texto": "Nosotros",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      764,
+      33,
+      48
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      41,
+      853,
+      308,
+      64
+     ],
+     "texto": "Suscríbete para ofertas y descuentos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      41,
+      977,
+      308,
+      40
+     ],
+     "texto": "Suscribirme",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(237, 237, 237)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1066,
+      342,
+      40
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/search"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1074,
+      342,
+      24
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1138,
+      342,
+      40
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/terms-of-service"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1146,
+      342,
+      24
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1210,
+      342,
+      40
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/refund-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1218,
+      342,
+      24
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1282,
+      342,
+      40
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/privacy-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1290,
+      342,
+      24
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      87,
+      1418,
+      79,
+      16
+     ],
+     "texto": "© •",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      101,
+      1418,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      166,
+      1418,
+      138,
+      16
+     ],
+     "texto": "Tecnología de Shopify",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center",
+     "pad": "0px",
+     "href": "https://es.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+    }
+   ]
+  }
+ ]
+}

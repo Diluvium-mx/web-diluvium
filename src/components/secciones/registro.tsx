@@ -2,6 +2,7 @@
 
 import type { ComponentType } from "react";
 import type { Seccion } from "@/lib/contenido";
+import type { Producto } from "@/components/producto/catalogo";
 import { Espaciador } from "./Espaciador";
 import { FranjaMensajes } from "./FranjaMensajes";
 import { ImagenBanner } from "./ImagenBanner";
@@ -20,8 +21,14 @@ import { LogosDesplazables } from "./LogosDesplazables";
 import { FormularioWhatsapp } from "./FormularioWhatsapp";
 import { ListaBlog } from "./ListaBlog";
 import { Apps } from "./Apps";
+import { ProductoPrincipal } from "./ProductoPrincipal";
+import { CodigoPropio } from "./CodigoPropio";
+import { PreguntasFrecuentes } from "./PreguntasFrecuentes";
+import { MigasDePan } from "./MigasDePan";
 
-type PiezaSeccion = ComponentType<{ seccion: Seccion }>;
+// `producto` llega en las páginas de producto (el de esa página); en las demás páginas no viene.
+export type PropsSeccion = { seccion: Seccion; producto?: Producto };
+type PiezaSeccion = ComponentType<PropsSeccion>;
 
 const PIEZAS: Record<string, PiezaSeccion> = {
   "running-content": FranjaMensajes,
@@ -42,6 +49,10 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "whatsapp-form": FormularioWhatsapp,
   "blog-post-list": ListaBlog,
   "apps": Apps,
+  "main-product": ProductoPrincipal,
+  "custom-liquid": CodigoPropio,
+  faqs: PreguntasFrecuentes,
+  breadcrumb: MigasDePan,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {
@@ -55,9 +66,9 @@ function Pendiente({ seccion }: { seccion: Seccion }) {
   );
 }
 
-export function Secciones({ secciones }: { secciones: Seccion[] }) {
+export function Secciones({ secciones, producto }: { secciones: Seccion[]; producto?: Producto }) {
   return secciones.map((s) => {
     const Pieza = PIEZAS[s.tipo] ?? Pendiente;
-    return <Pieza key={s.id} seccion={s} />;
+    return <Pieza key={s.id} seccion={s} producto={producto} />;
   });
 }

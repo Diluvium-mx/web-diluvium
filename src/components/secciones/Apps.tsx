@@ -2,11 +2,14 @@
 // con las reseñas publicadas (contenido/resenas.json, sacado por herramientas/extraer-resenas-blog.py): el resumen
 // «4.9 estrellas basadas en 238 reseñas» y dos filas de tarjetas que corren solas hacia la izquierda a la misma
 // velocidad que en el sitio (una tarjeta cada 5 segundos). La segunda fila va recorrida 200px.
+// En las páginas de producto el mismo carrusel va dentro del ancho de página («enable_content_fullwidth» apagado) y
+// con el aire de la sección; las secciones «apps» sin bloques solo dejan su aire (en vivo quedan vacías).
 
 import Image from "next/image";
 import resenas from "@contenido/resenas.json";
-import type { Seccion } from "@/lib/contenido";
-import { esquema } from "@/lib/contenido";
+import { esquema, siNo } from "@/lib/contenido";
+import type { PropsSeccion } from "./registro";
+import { clasesAire } from "./aire";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 
@@ -51,33 +54,47 @@ function Tarjeta({ resena, oculta }: { resena: Resena; oculta: boolean }) {
   );
 }
 
-export function Apps({ seccion }: { seccion: Seccion }) {
+export function Apps({ seccion, producto }: PropsSeccion) {
   const { calificacion, total } = CARRUSEL.resumen;
+  const aire = clasesAire(seccion, producto);
+  // Sin bloques: en vivo la sección queda vacía y solo deja su aire (las reseñas del producto las pone la app
+  // después del producto principal, no aquí).
+  if (seccion.bloques.length === 0) {
+    return (
+      <div className={esquema(seccion.ajustes)} data-seccion="apps">
+        <div className={aire} />
+      </div>
+    );
+  }
+  // «enable_content_fullwidth» apagado: el carrusel va dentro del ancho de página (márgenes laterales).
+  const ancho = siNo(seccion.ajustes, "enable_content_fullwidth") ? "" : "contenedor";
   return (
     <div className={`apps-resenas ${esquema(seccion.ajustes)}`} data-seccion="apps">
       <style>{`
         .apps-resenas .apps-pista { animation: correr var(--duracion) linear infinite; }
         @media (prefers-reduced-motion: reduce) { .apps-resenas .apps-pista { animation: none; } }
       `}</style>
-      <div className="relative mx-auto flex max-w-[1440px] gap-[15px] bg-white px-[15px] py-8 md:px-5">
-        <div className="relative min-w-0 flex-1">
-          <p className="m-0 mt-3 text-center font-[650] leading-4 text-[#303030]">
-            {calificacion} estrellas basadas en <span>{total}</span> reseñas
-          </p>
-          <div className="relative flex flex-col justify-start gap-4 overflow-hidden py-6 md:gap-8">
-            {FILAS.map((fila, f) => (
-              <div key={f} className={`flex ${f % 2 === 1 ? "-ml-[200px]" : ""}`}>
-                <div className="flex w-max" style={{ ["--duracion" as string]: `${fila.length * SEGUNDOS_POR_TARJETA}s` }}>
-                  {[0, 1].map((copia) => (
-                    <ul key={copia} className="apps-pista m-0 flex shrink-0 list-none p-0" style={{ width: fila.length * PASO }}>
-                      {fila.map((r, i) => (
-                        <Tarjeta key={`${copia}-${i}`} resena={r} oculta={copia > 0} />
-                      ))}
-                    </ul>
-                  ))}
+      <div className={`${ancho} ${aire}`}>
+        <div className="relative mx-auto flex max-w-[1440px] gap-[15px] bg-white px-[15px] py-8 md:px-5">
+          <div className="relative min-w-0 flex-1">
+            <p className="m-0 mt-3 text-center font-[650] leading-4 text-[#303030]">
+              {calificacion} estrellas basadas en <span>{total}</span> reseñas
+            </p>
+            <div className="relative flex flex-col justify-start gap-4 overflow-hidden py-6 md:gap-8">
+              {FILAS.map((fila, f) => (
+                <div key={f} className={`flex ${f % 2 === 1 ? "-ml-[200px]" : ""}`}>
+                  <div className="flex w-max" style={{ ["--duracion" as string]: `${fila.length * SEGUNDOS_POR_TARJETA}s` }}>
+                    {[0, 1].map((copia) => (
+                      <ul key={copia} className="apps-pista m-0 flex shrink-0 list-none p-0" style={{ width: fila.length * PASO }}>
+                        {fila.map((r, i) => (
+                          <Tarjeta key={`${copia}-${i}`} resena={r} oculta={copia > 0} />
+                        ))}
+                      </ul>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

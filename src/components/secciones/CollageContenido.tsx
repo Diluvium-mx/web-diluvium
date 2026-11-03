@@ -8,6 +8,9 @@ import type { Bloque, Seccion } from "@/lib/contenido";
 import { esquema, numero, siNo, texto } from "@/lib/contenido";
 import { Titulo, TextoRico } from "@/components/comunes/Texto";
 import { BOTON_GRANDE, BOTON_PRIMARIO } from "@/components/producto/estilos";
+import { medidasImagen } from "./ImagenBanner";
+import { clasesAire } from "./aire";
+import type { Producto } from "@/components/producto/catalogo";
 
 const JUSTIFICAR: Record<string, string> = { start: "justify-start", center: "justify-center", end: "justify-end" };
 const JUSTIFICAR_MD: Record<string, string> = {
@@ -83,22 +86,27 @@ function BloqueCollage({ bloque }: { bloque: Bloque }) {
 
   if (bloque.tipo === "video") {
     const video = texto(b, "video_hosted");
+    const poster = video.replace(/^\/media\/videos\/([0-9a-f]+)\..*$/, "/media/files/$1.thumbnail.0000000000_small.jpg");
+    // Proporción del video (la de su foto de portada).
+    const m = poster !== video ? medidasImagen(poster) : { ancho: 1, alto: 1 };
     return (
       <div className={`${TARJETA} ${posicion(b)}`} style={tramo(b)}>
         {video && (
-          // El video es cuadrado y va pegado arriba; lo que sobra abajo queda recortado, como en la tienda.
-          <div className="absolute top-0 left-0 aspect-square w-full">
-            <video
-              className="absolute inset-0 size-full object-contain"
-              src={video}
-              poster={video.replace(/^\/media\/videos\/([0-9a-f]+)\..*$/, "/media/files/$1.thumbnail.0000000000_small.jpg")}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-hidden="true"
-            />
+          // El video cubre la tarjeta: tan ancho como ella (o más, si la tarjeta es más alta que el video),
+          // centrado a lo ancho y pegado arriba; lo que sobra queda recortado, como en la tienda.
+          <div className="absolute inset-0 [container-type:size]">
+          <video
+            className="absolute top-0 left-1/2 max-w-none -translate-x-1/2 object-contain"
+            style={{ width: `max(100cqw, ${m.ancho / m.alto} * 100cqh)`, aspectRatio: `${m.ancho} / ${m.alto}` }}
+            src={video}
+            poster={poster}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
           </div>
         )}
         <Capa ajustes={b} />
@@ -127,16 +135,16 @@ function BloqueCollage({ bloque }: { bloque: Bloque }) {
   );
 }
 
-export function CollageContenido({ seccion }: { seccion: Seccion }) {
+export function CollageContenido({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const a = seccion.ajustes;
-  // Alto de cada fila: el del ajuste en computadora; en celular y tableta crece con el ancho de la pantalla
-  // (medido: 270 → 80 % del ancho, o sea alto ÷ 3.375 en vw).
-  const filaCelular = `${numero(a, "mobile_row_height", 270) / 3.375}vw`;
+  // Alto de cada fila: el del ajuste en computadora; en celular y tableta, el 80 % del ancho de la pantalla
+  // (medido con 240 y 270 px en el ajuste), sin bajar del ajuste.
+  const filaCelular = `max(${numero(a, "mobile_row_height", 270)}px, 80vw)`;
   const filaEscritorio = `${numero(a, "desktop_row_height", 260)}px`;
 
   return (
-    <div className={esquema(a, "scheme-2")} data-seccion="content-collage">
-      <div className="contenedor py-[var(--aire)]">
+    <div className={esquema(a)} data-seccion="content-collage">
+      <div className={`contenedor ${clasesAire(seccion, producto)}`}>
         <div
           className="grid grid-cols-2 [grid-auto-rows:var(--fila-cel)] gap-[min(3.6vw,24px)] min-[1025px]:grid-cols-4 min-[1025px]:[grid-auto-rows:var(--fila-esc)] min-[1025px]:gap-[2vw]"
           style={{ "--fila-cel": filaCelular, "--fila-esc": filaEscritorio } as CSSProperties}

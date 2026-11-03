@@ -9,6 +9,8 @@ import { useEffect, useRef } from "react";
 import type { Seccion } from "@/lib/contenido";
 import { esquema, numero, siNo, texto } from "@/lib/contenido";
 import { TextoRico } from "@/components/comunes/Texto";
+import type { Producto } from "@/components/producto/catalogo";
+import { sinAireArriba } from "./aire";
 
 // El sitio repite las tarjetas 4 veces en cada pista para que no se vea el corte en pantallas anchas.
 const REPETICIONES = 4;
@@ -21,7 +23,7 @@ function Estrella({ color }: { color: string }) {
   );
 }
 
-export function ResenasClientes({ seccion }: { seccion: Seccion }) {
+export function ResenasClientes({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const pista = useRef<HTMLDivElement>(null);
   const velocidad = numero(seccion.ajustes, "speed", 100);
   const conEstrellas = siNo(seccion.ajustes, "show_rating");
@@ -101,7 +103,7 @@ export function ResenasClientes({ seccion }: { seccion: Seccion }) {
         .resenas-clientes .resenas-pista.reversa { animation-direction: reverse; }
         @media (prefers-reduced-motion: reduce) { .resenas-clientes .resenas-pista { animation: none; } }
       `}</style>
-      <div className="contenedor pb-[var(--aire)]">
+      <div className={`contenedor pb-[var(--aire)] ${sinAireArriba(seccion, producto) ? "" : "pt-[var(--aire)]"}`}>
         <div className="flex w-full [container-type:inline-size]">
           <div ref={pista} className="flex w-max">
             {[0, 1].map((copia) => (

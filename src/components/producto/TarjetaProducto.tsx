@@ -4,7 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Producto } from "./catalogo";
-import { enlaceProducto, resenas, resumenPrecio } from "./catalogo";
+import { enlaceProducto, proveedor, resenas, resumenPrecio } from "./catalogo";
 import { BOTON_CHICO, BOTON_PRIMARIO } from "./estilos";
 import { Estrellas } from "./Estrellas";
 import { Precio } from "./Precio";
@@ -13,11 +13,20 @@ export function TarjetaProducto({
   producto,
   sizes = "(min-width: 1025px) 374px, 50vw",
   className = "",
+  vendedor = false,
+  muestrasColor = false,
+  precioApilado = false,
 }: {
   producto: Producto;
   /** Ancho de la foto en cada vista (para que el navegador baje el tamaño justo). */
   sizes?: string;
   className?: string;
+  /** Ajuste «show_vendor» de la sección: nombre del proveedor arriba del título. */
+  vendedor?: boolean;
+  /** Ajuste «show_color_swatch»: la tira de muestras de color (vacía en Diluvium) deja 16 px abajo del precio. */
+  muestrasColor?: boolean;
+  /** En las páginas de producto el precio con rebaja va en dos renglones a la izquierda, en verde. */
+  precioApilado?: boolean;
 }) {
   const enlace = enlaceProducto(producto);
   const precio = resumenPrecio(producto);
@@ -64,13 +73,20 @@ export function TarjetaProducto({
 
       <div className="flex flex-1 flex-col justify-between gap-4 px-5 py-4 text-center min-[1025px]:py-6">
         <div>
+          {vendedor && (
+            <div className="mb-2 text-[13.6px] leading-[17px] text-[rgba(10,85,154,0.6)]">
+              <span className="sr-only">Proveedor:</span>
+              <span>{proveedor(producto)}</span>
+            </div>
+          )}
           {/* Tamaño en style: las reglas base de h1…h6 de globals.css (sin capa) les ganan a las clases. Peso 700:
               la tienda pide 600 pero solo carga Archivo 500 y 700, así que el navegador dibuja 700. */}
           <h3 className="text-[#313131]" style={{ fontSize: 16, lineHeight: "20px", fontWeight: 700 }}>
             <Link href={enlace}>{producto.titulo}</Link>
           </h3>
           {calificacion && <Estrellas promedio={calificacion.promedio} total={calificacion.total} />}
-          <Precio precio={precio.precio} antes={precio.antes} desde={precio.desde} className="justify-center" />
+          <Precio precio={precio.precio} antes={precio.antes} desde={precio.desde} apilado={precioApilado} className="justify-center" />
+          {muestrasColor && <div className="mt-4" aria-hidden="true" />}
         </div>
         <Link href={enlace} className={`${BOTON_PRIMARIO} ${BOTON_CHICO} self-center`}>
           Ver producto

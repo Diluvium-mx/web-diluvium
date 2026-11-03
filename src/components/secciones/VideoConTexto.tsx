@@ -1,11 +1,15 @@
-// Video con texto (sección «video-with-text»): bloque de texto junto a un video de YouTube. Primero se ve la portada
-// con el botón de reproducir; al darle clic se cambia por el reproductor de YouTube, que arranca solo y sin sonido
-// (como en la tienda). Se arma con <details> para no mandar JavaScript: el reproductor está dentro y, como es
-// diferido, el navegador no lo baja hasta que se abre.
+// Video con texto (sección «video-with-text»): bloque de texto junto a un video.
+// - Video de YouTube («video_external»): primero se ve la portada con el botón de reproducir; al darle clic se cambia
+//   por el reproductor de YouTube, que arranca solo y sin sonido (como en la tienda). Se arma con <details> para no
+//   mandar JavaScript: el reproductor está dentro y, como es diferido, el navegador no lo baja hasta que se abre.
+//   Si tiene «enable_autoplay», el reproductor se carga directo, sin portada (páginas de producto).
+// - Video propio («video_hosted», páginas de producto): <video> con controles que arranca solo, sin sonido y en
+//   bucle según los ajustes, sobre fondo negro y ajustado sin recortar.
 
 import Image from "next/image";
-import type { Seccion } from "@/lib/contenido";
 import { esquema, numero, siNo, texto } from "@/lib/contenido";
+import type { PropsSeccion } from "./registro";
+import { clasesAire } from "./aire";
 import { BloqueTexto, ordenDeContenido } from "./CollageImagenTexto";
 
 /** Saca el identificador del video de un enlace de YouTube (watch?v=…, youtu.be/…, /embed/…, /shorts/…). */
@@ -30,12 +34,20 @@ const BOTON_REPRODUCIR =
   "after:ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:text-white group-hover:after:bottom-0 " +
   "group-focus-visible:text-white group-focus-visible:after:bottom-0 min-[1025px]:h-11 min-[1025px]:w-11";
 
-export function VideoConTexto({ seccion }: { seccion: Seccion }) {
+/** Portada que guarda Shopify junto a cada video propio (…/media/files/<id>.thumbnail.0000000000_small.jpg). */
+function portadaDeVideo(src: string): string {
+  const id = src.split("/").pop()?.split(".")[0];
+  return id ? `/media/files/${id}.thumbnail.0000000000_small.jpg` : "";
+}
+
+export function VideoConTexto({ seccion, producto }: PropsSeccion) {
   const a = seccion.ajustes;
+  const propio = texto(a, "video_source") === "video_hosted" ? texto(a, "video_hosted") : "";
   const url = texto(a, "video");
   const id = idYoutube(url);
   const portada = texto(a, "video_thumbnail");
   const proporcion = (texto(a, "video_ratio") || "16/9").replace("/", " / ");
+  const centradoCel = texto(a, "content_position_mobile") === "ta-center";
   const anchoVideo = numero(a, "video_with", 8.4) / 12;
   const parametros = new URLSearchParams({ autoplay: "1", playsinline: "1", rel: "0" });
   if (siNo(a, "enable_video_mute") || !siNo(a, "enable_autoplay")) parametros.set("mute", "1");
@@ -47,10 +59,37 @@ export function VideoConTexto({ seccion }: { seccion: Seccion }) {
 
   return (
     <section className={esquema(a)} data-seccion="video-with-text">
-      <div className="contenedor py-[var(--aire)]">
+      <div className={`contenedor ${clasesAire(seccion, producto)}`}>
         <div className={`flex justify-center gap-[var(--hueco)] min-[1025px]:gap-[28.8px] ${ordenDeContenido(seccion)}`} style={estilo}>
-          <BloqueTexto bloques={seccion.bloques} className="min-w-0 min-[1025px]:flex-1" />
+          <BloqueTexto bloques={seccion.bloques} className="min-w-0 min-[1025px]:flex-1" centradoCel={centradoCel} />
           <div className="min-w-0 shrink-0 min-[1025px]:w-[calc((100%_-_28.8px)_*_var(--ancho-video))]">
+            {propio ? (
+              <div className="relative aspect-[var(--proporcion)] overflow-hidden rounded-2xl bg-black md:rounded-3xl min-[1025px]:rounded-[32px]">
+                <video
+                  src={propio}
+                  poster={portadaDeVideo(propio)}
+                  autoPlay={siNo(a, "enable_autoplay")}
+                  muted={siNo(a, "enable_video_mute") || siNo(a, "enable_autoplay")}
+                  loop={siNo(a, "enable_video_loop")}
+                  playsInline
+                  controls
+                  preload="none"
+                  className="block h-full w-full object-contain"
+                />
+              </div>
+            ) : id && siNo(a, "enable_autoplay") ? (
+              // YouTube con reproducción automática: el tema no muestra portada ni botón, carga el reproductor de una.
+              <div className="relative aspect-[var(--proporcion)] overflow-hidden rounded-2xl bg-black md:rounded-3xl min-[1025px]:rounded-[32px]">
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}?${parametros.toString()}`}
+                  title="Video de YouTube"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full border-0"
+                />
+              </div>
+            ) : (
             <details className="group/video relative block aspect-[var(--proporcion)] overflow-hidden rounded-2xl bg-black md:rounded-3xl min-[1025px]:rounded-[32px]">
               <summary
                 className="group absolute inset-0 block cursor-pointer list-none overflow-hidden bg-[#efefef] group-open/video:hidden [&::-webkit-details-marker]:hidden"
@@ -82,6 +121,7 @@ export function VideoConTexto({ seccion }: { seccion: Seccion }) {
                 />
               )}
             </details>
+            )}
           </div>
         </div>
       </div>

@@ -111,10 +111,10 @@ try {
       await s("Network.setUserAgentOverride", { userAgent: v.ua });
       await s("Page.navigate", { url: BASE + ruta });
       await espera(6000);
-      // Bajar poco a poco para que carguen las imágenes diferidas, y regresar arriba.
+      // Bajar poco a poco, esperar a que terminen las imágenes diferidas (hasta 8 s) y regresar arriba.
       await s("Runtime.evaluate", {
         awaitPromise: true,
-        expression: `(async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){scrollTo(0,y);await new Promise(r=>setTimeout(r,150))}scrollTo(0,0);await new Promise(r=>setTimeout(r,1500))})()`,
+        expression: `(async()=>{for(let y=0;y<document.body.scrollHeight;y+=400){scrollTo(0,y);await new Promise(r=>setTimeout(r,300))}const t=Date.now();while([...document.images].some(i=>!i.complete)&&Date.now()-t<8000){await new Promise(r=>setTimeout(r,250))}scrollTo(0,0);await new Promise(r=>setTimeout(r,1500))})()`,
       });
       const { cssContentSize } = await s("Page.getLayoutMetrics");
       const alto = Math.min(Math.ceil(cssContentSize.height), 30000);

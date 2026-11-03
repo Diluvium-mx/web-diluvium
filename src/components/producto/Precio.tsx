@@ -8,6 +8,7 @@ export function Precio({
   desde = false,
   grande = false,
   etiquetaOferta,
+  apilado = false,
   className = "",
 }: {
   precio: number;
@@ -17,10 +18,24 @@ export function Precio({
    *  pero solo carga Instrument Sans 400 y 700, así que se ve en 700. */
   grande?: boolean;
   etiquetaOferta?: string;
+  /** Rebaja en dos renglones alineados a la izquierda: anterior tachado arriba y el actual en verde de 18 px. */
+  apilado?: boolean;
   className?: string;
 }) {
   const actual = `${desde ? "Desde " : ""}${precioTexto(precio)}`;
   const peso = grande ? "text-base font-bold" : "text-sm font-bold";
+  if (apilado && antes) {
+    return (
+      <span className="flex flex-col items-start justify-center gap-2">
+        <span className="sr-only">Precio normal</span>
+        <span className="inline-block h-6">
+          <s className="text-[13.6px] leading-[17px] font-bold text-[rgba(49,49,49,0.63)]">{precioTexto(antes)}</s>
+        </span>
+        <span className="sr-only">Precio de venta</span>
+        <span className="inline-block text-lg leading-6 font-bold text-[#13942c]">{actual}</span>
+      </span>
+    );
+  }
   return (
     <div className={`flex flex-wrap items-center gap-2 ${className}`}>
       {antes ? (

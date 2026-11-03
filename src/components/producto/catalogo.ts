@@ -53,10 +53,16 @@ export function productosDeColeccion(nombre: string, cuantos?: number): Producto
 // Calificaciones de la app de reseñas (Trustoo) tal como salen en las tarjetas de la tienda en vivo (3-nov-2026).
 // «promedio» sale del ancho de la estrella parcial (82 % en la compuerta XXL).
 const RESENAS: Record<string, { promedio: number; total: number }> = {
+  "compuerta-anti-inundaciones": { promedio: 4.94, total: 204 },
   "compuerta-anti-inundaciones-hecha-a-la-medida": { promedio: 4.82, total: 22 },
   "tapon-inflable-anti-inundaciones": { promedio: 5, total: 10 },
   "funda-de-repuesto-compuerta-anti-inundaciones": { promedio: 5, total: 2 },
 };
+
+/** Proveedor que la tienda muestra en las tarjetas (ajuste «show_vendor»), tal como está capturado en Shopify. */
+export function proveedor(p: Producto): string {
+  return p.nombre === "compuerta-anti-inundaciones" ? "Diluvium" : "evita-inundarte-mx";
+}
 
 export function resenas(p: Producto) {
   return RESENAS[p.nombre];

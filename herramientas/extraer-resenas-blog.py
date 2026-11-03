@@ -122,6 +122,9 @@ def pagina_resenas(sin_fotos: bool) -> list[dict]:
             "texto": texto_completo(texto.group(1)) if texto else "",
             "fotos": [foto_resena(u, sin_fotos) for u in fotos],
         }
+        # Trustoo muestra solo la primera foto en la cuadrícula y un ícono cuando la reseña trae más.
+        if "multi-photo-wrapper" in bloque:
+            resena["variasFotos"] = True
         if producto:
             resena["producto"] = {"titulo": limpio(producto.group(2)), "url": urlparse(html.unescape(producto.group(1))).path}
         salida.append(resena)

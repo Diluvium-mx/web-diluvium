@@ -10,6 +10,8 @@ import { useState } from "react";
 import type { Bloque, Seccion } from "@/lib/contenido";
 import { esquema, texto } from "@/lib/contenido";
 import { TextoRico, Titulo } from "@/components/comunes/Texto";
+import type { Producto } from "@/components/producto/catalogo";
+import { sinAireArriba } from "./aire";
 
 function IconoReproducir({ className }: { className?: string }) {
   return (
@@ -65,8 +67,21 @@ function Video({ bloque, proporcion }: { bloque: Bloque; proporcion: string }) {
   );
 }
 
-export function MediosColumnas({ seccion }: { seccion: Seccion }) {
+// CSS propio que la sección trae en el tema («custom_css», no viene en el contenido): en la portada el espacio de
+// abajo es de 20 px.
+const ABAJO_PROPIO: Record<string, string> = { media_with_text_columns_cVz6pJ: "pb-5" };
+
+const ALINEAR_CEL: Record<string, string> = { "ta-left": "items-start text-left", "ta-center": "items-center text-center", "ta-right": "items-end text-right" };
+const ALINEAR_COMPU: Record<string, string> = {
+  "ta-left-md": "min-[1025px]:items-start min-[1025px]:text-left",
+  "ta-center-md": "min-[1025px]:items-center min-[1025px]:text-center",
+  "ta-right-md": "min-[1025px]:items-end min-[1025px]:text-right",
+};
+
+export function MediosColumnas({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const subtitulo = texto(seccion.ajustes, "subheading");
+  const abajo = ABAJO_PROPIO[seccion.id] ?? "pb-[var(--aire)]";
+  const alinear = `${ALINEAR_CEL[texto(seccion.ajustes, "content_align_mobile")] ?? ""} ${ALINEAR_COMPU[texto(seccion.ajustes, "content_align_desktop")] ?? ""}`;
   const proporcion = (texto(seccion.ajustes, "image_ratio") || "2/3").replace("/", " / ");
 
   return (
@@ -75,8 +90,8 @@ export function MediosColumnas({ seccion }: { seccion: Seccion }) {
         .medios-columnas .medios-fila { scrollbar-width: none; }
         .medios-columnas .medios-fila::-webkit-scrollbar { display: none; }
       `}</style>
-      <div className="contenedor flex flex-col gap-[var(--hueco)] pb-5 pt-[var(--aire)]">
-        <div className="flex flex-col">
+      <div className={`contenedor flex flex-col gap-[var(--hueco)] ${sinAireArriba(seccion, producto) ? "pt-0" : "pt-[var(--aire)]"} ${abajo}`}>
+        <div className={`flex flex-col ${alinear}`}>
           {subtitulo && (
             <span className="mb-3 inline-block font-titulo text-[19.2px] font-medium leading-6">{subtitulo}</span>
           )}

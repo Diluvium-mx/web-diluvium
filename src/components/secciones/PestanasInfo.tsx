@@ -11,6 +11,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { Seccion } from "@/lib/contenido";
 import { esquema, numero, siNo, texto } from "@/lib/contenido";
 import { TextoRico, Titulo } from "@/components/comunes/Texto";
+import type { Producto } from "@/components/producto/catalogo";
+import { clasesAire } from "./aire";
 
 /** Número dentro de un círculo; el círculo de encima se dibuja poco a poco mientras el paso está activo. */
 function Anillo({ numero: n, activo, corriendo, segundos, vuelta }: { numero: number; activo: boolean; corriendo: boolean; segundos: number; vuelta: number }) {
@@ -54,7 +56,7 @@ function Anillo({ numero: n, activo, corriendo, segundos, vuelta }: { numero: nu
   );
 }
 
-export function PestanasInfo({ seccion }: { seccion: Seccion }) {
+export function PestanasInfo({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const pasos = seccion.bloques;
   const automatico = siNo(seccion.ajustes, "enable_autoplay");
   const segundos = numero(seccion.ajustes, "auto_play_time", 7);
@@ -109,7 +111,7 @@ export function PestanasInfo({ seccion }: { seccion: Seccion }) {
           .pasos .pasos-progreso { animation: none !important; stroke-dashoffset: 0 !important; }
         }
       `}</style>
-      <div className="contenedor grid gap-[var(--hueco)] py-[var(--aire)]">
+      <div className={`contenedor grid gap-[var(--hueco)] ${clasesAire(seccion, producto)}`}>
         <div className="flex flex-col items-center text-center">
           <Titulo texto={texto(seccion.ajustes, "heading")} className="max-w-[1280px] break-words" />
         </div>
