@@ -1,0 +1,54 @@
+{
+ "fuente": "Sacado de docs/sitio-actual/capturas/2026-11-03 con herramientas/extraer-paginas.py",
+ "paginas": [
+  {
+   "ruta": "/pages/nosotros",
+   "titulo": "Nosotros",
+   "nombre": "nosotros",
+   "tituloVisible": "",
+   "cuerpo": ""
+  },
+  {
+   "ruta": "/pages/contact",
+   "titulo": "Contact",
+   "nombre": "contact",
+   "tituloVisible": "",
+   "cuerpo": ""
+  },
+  {
+   "ruta": "/pages/instalacion",
+   "titulo": "Instalacion",
+   "nombre": "instalacion",
+   "tituloVisible": "",
+   "cuerpo": ""
+  },
+  {
+   "ruta": "/pages/distribuidor",
+   "titulo": "Distribuidor",
+   "nombre": "distribuidor",
+   "tituloVisible": "",
+   "cuerpo": ""
+  },
+  {
+   "ruta": "/pages/preguntas-frecuentes",
+   "titulo": "Tamaños",
+   "nombre": "preguntas-frecuentes",
+   "tituloVisible": "Tamaños",
+   "cuerpo": "<h2>1. Mide la anchura de tu entrada</h2>\n<blockquote>\n<h4>Elige un marco firme donde pueda hacer presión la compuerta</h4>\n</blockquote>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto\" height=\"469\" width=\"436\" alt=\"\" src=\"/media/files/puerta_buena.jpg\"></p>\n<h2><strong>2. Encuentra tu tamaño en la siguiente tabla:</strong></h2>\n<p><img alt=\"\" src=\"/media/files/Frame_767.jpg\" width=\"511\" height=\"876\" style=\"display: block; margin-left: auto; margin-right: auto\"></p>"
+  },
+  {
+   "ruta": "/pages/reviews",
+   "titulo": "Customer Reviews",
+   "nombre": "reviews",
+   "tituloVisible": "Customer Reviews",
+   "cuerpo": ""
+  },
+  {
+   "ruta": "/pages/share-cart",
+   "titulo": "Share Cart",
+   "nombre": "share-cart",
+   "tituloVisible": "Share Cart",
+   "cuerpo": "<div id=\"globo_share_cart\"></div>"
+  }
+ ]
+}

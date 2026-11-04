@@ -17,13 +17,22 @@ function Estrella({ relleno }: { relleno: number }) {
   );
 }
 
-export function Estrellas({ promedio, total }: { promedio: number; total: number }) {
+export function Estrellas({
+  promedio,
+  total,
+  claseTotal = "font-titulo text-sm text-[#313131]",
+}: {
+  promedio: number;
+  total: number;
+  /** Letra y color del número de reseñas (en las colecciones va en la letra del texto y en azul). */
+  claseTotal?: string;
+}) {
   return (
     <div className="my-[5px] flex h-6 items-center justify-center" aria-label={`${promedio} de 5 estrellas, ${total} reseñas`} role="img">
       {[0, 1, 2, 3, 4].map((i) => (
         <Estrella key={i} relleno={Math.min(1, Math.max(0, promedio - i))} />
       ))}
-      <span className="mt-px mr-1.5 ml-[3px] font-titulo text-sm leading-[normal] text-[#313131]">({total})</span>
+      <span className={`mt-px mr-1.5 ml-[3px] leading-[normal] ${claseTotal}`}>({total})</span>
     </div>
   );
 }

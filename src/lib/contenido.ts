@@ -10,6 +10,18 @@ import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json
 import productoMedida from "@contenido/tema/product.medida-especial.json";
 import productoMini from "@contenido/tema/product.mini-compuerta.json";
 import productoTapon from "@contenido/tema/product.tapon-inflable.json";
+import paginaGeneral from "@contenido/tema/page.json";
+import paginaNosotros from "@contenido/tema/page.nosotros.json";
+import paginaContacto from "@contenido/tema/page.contact.json";
+import paginaInstalacion from "@contenido/tema/page.instalacion.json";
+import paginaDistribuidor from "@contenido/tema/page.distribuidor.json";
+import blog from "@contenido/tema/blog.json";
+import articulo from "@contenido/tema/article.json";
+import coleccion from "@contenido/tema/collection.json";
+import listaColecciones from "@contenido/tema/list-collections.json";
+import carrito from "@contenido/tema/cart.json";
+import busqueda from "@contenido/tema/search.json";
+import noEncontrada from "@contenido/tema/404.json";
 
 export type Ajustes = Record<string, unknown>;
 export type Bloque = { id: string; tipo: string; ajustes: Ajustes };
@@ -25,6 +37,18 @@ const PLANTILLAS = {
   "product.medida-especial": productoMedida as Plantilla,
   "product.mini-compuerta": productoMini as Plantilla,
   "product.tapon-inflable": productoTapon as Plantilla,
+  "page": paginaGeneral as Plantilla,
+  "page.nosotros": paginaNosotros as Plantilla,
+  "page.contact": paginaContacto as Plantilla,
+  "page.instalacion": paginaInstalacion as Plantilla,
+  "page.distribuidor": paginaDistribuidor as Plantilla,
+  "blog": blog as Plantilla,
+  "article": articulo as Plantilla,
+  "collection": coleccion as Plantilla,
+  "list-collections": listaColecciones as Plantilla,
+  "cart": carrito as Plantilla,
+  "search": busqueda as Plantilla,
+  "404": noEncontrada as Plantilla,
 };
 
 export type NombrePlantilla = keyof typeof PLANTILLAS;

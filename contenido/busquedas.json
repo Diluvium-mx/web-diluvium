@@ -1,0 +1,2650 @@
+{
+ "fuente": "Tienda en vivo: /search/suggest.json y /search (herramientas/extraer-busquedas.py)",
+ "consultas": {
+  "30cm": {
+   "rapida": {
+    "productos": [
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "accesorio": {
+   "rapida": {
+    "productos": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "agua": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "altura": {
+   "rapida": {
+    "productos": [
+     "mini-compuerta",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "anti": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "aumentan": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "bomba": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "cart": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "share-cart"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "share-cart"
+    }
+   ]
+  },
+  "casa": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "ciudades": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "coladeras": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "coleccion": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [
+     "coleccion-para-escritorio",
+     "coleccion-para-mobile"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "como": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "compuerta": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [
+     "a-compuerta"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "preguntas-frecuentes"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "contact": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "contact"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "contact"
+    }
+   ]
+  },
+  "cuando": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "customer": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "reviews"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "reviews"
+    }
+   ]
+  },
+  "distribuidor": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "distribuidor"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "distribuidor"
+    }
+   ]
+  },
+  "entre": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    }
+   ]
+  },
+  "escritorio": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [
+     "coleccion-para-escritorio"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "evacuacion": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    }
+   ]
+  },
+  "evitar": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "funda": {
+   "rapida": {
+    "productos": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "goma": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "hecha": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "home": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "colecciones": [
+     "frontpage"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "hule": {
+   "rapida": {
+    "productos": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "inflable": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "instalacion": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "instalacion"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "instalacion"
+    }
+   ]
+  },
+  "inundacion": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "inundaciones": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "kit": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    }
+   ]
+  },
+  "las": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "llueve": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "lluvia": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "los": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [
+     "los-mas-vendidos",
+     "all-products"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "mas": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "colecciones": [
+     "los-mas-vendidos"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "medida": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "mini": {
+   "rapida": {
+    "productos": [
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "mobile": {
+   "rapida": {
+    "productos": [],
+    "colecciones": [
+     "coleccion-para-mobile"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "nosotros": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "nosotros"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "nosotros"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "nuestras": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "page": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [
+     "frontpage"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "para": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [
+     "coleccion-para-escritorio",
+     "coleccion-para-mobile"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "plastilina": {
+   "rapida": {
+    "productos": [
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "por": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "productos": {
+   "rapida": {
+    "productos": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [
+     "all-products"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    }
+   ]
+  },
+  "proteccion": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "puerta": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-tira-de-hule-de-repuesto",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "que": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "rapida": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "rapido": {
+   "rapida": {
+    "productos": [
+     "accesorio-plastilina-de-secado-rapido",
+     "compuerta-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [
+     "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    ],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4"
+    }
+   ]
+  },
+  "repuesto": {
+   "rapida": {
+    "productos": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    }
+   ]
+  },
+  "reviews": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "reviews"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "reviews"
+    }
+   ]
+  },
+  "secado": {
+   "rapida": {
+    "productos": [
+     "accesorio-plastilina-de-secado-rapido",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    }
+   ]
+  },
+  "share": {
+   "rapida": {
+    "productos": [],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "share-cart"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "share-cart"
+    }
+   ]
+  },
+  "tamanos": {
+   "rapida": {
+    "productos": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": [
+     "preguntas-frecuentes"
+    ]
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "pagina",
+     "nombre": "preguntas-frecuentes"
+    }
+   ]
+  },
+  "tapar": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "tapon": {
+   "rapida": {
+    "productos": [
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "articulo",
+     "nombre": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias"
+    }
+   ]
+  },
+  "tira": {
+   "rapida": {
+    "productos": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-tira-de-hule-de-repuesto"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "accesorio-plastilina-de-secado-rapido"
+    }
+   ]
+  },
+  "todos": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "colecciones": [
+     "all-products"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    }
+   ]
+  },
+  "vendidos": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "colecciones": [
+     "los-mas-vendidos"
+    ],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  "xxl": {
+   "rapida": {
+    "productos": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "colecciones": [],
+    "articulos": [],
+    "paginas": []
+   },
+   "pagina": [
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "compuerta-anti-inundaciones"
+    },
+    {
+     "tipo": "producto",
+     "nombre": "mini-compuerta"
+    }
+   ]
+  }
+ }
+}

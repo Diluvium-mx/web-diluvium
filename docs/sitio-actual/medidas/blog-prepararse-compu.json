@@ -1,0 +1,2932 @@
+{
+ "url": "https://www.diluvium.com.mx/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+ "ancho": 1440,
+ "altoPagina": 10438,
+ "secciones": [
+  {
+   "id": "shopify-section-sections--23149237928156__running_content_WwxgYn",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    0,
+    1440,
+    68
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      23,
+      1440,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -781,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      388,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1557,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      2725,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3894,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -765,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -440,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -385,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      -360,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -40,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      15,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      63,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      350,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      404,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      729,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      783,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      808,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1129,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1183,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1232,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1518,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1573,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1898,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1952,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1977,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2297,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2352,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2401,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2687,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2741,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3066,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3121,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3145,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3466,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3520,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3569,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3855,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3910,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4235,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4289,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4314,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4635,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4689,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4738,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5024,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__extra-info-header",
+   "tipo": "",
+   "caja": [
+    0,
+    68,
+    1440,
+    57
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-small-padding extra-info-header__content ctnr",
+     "caja": [
+      6,
+      0,
+      1428,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "extra-info-header__left",
+     "caja": [
+      70,
+      16,
+      350,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      16,
+      125,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "tel:(668) 241 9579"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      70,
+      21,
+      14,
+      15
+     ],
+     "viewBox": "0 0 61 64"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      216,
+      16,
+      204,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "mailto:contacto@diluvium.com.mx"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1313,
+      16,
+      57,
+      24
+     ],
+     "texto": "🇲🇽MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__header",
+   "tipo": "Header Section",
+   "caja": [
+    0,
+    125,
+    1440,
+    85
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "header",
+     "cls": "header ctnr header--horizontal header--horizontal-left heade",
+     "caja": [
+      6,
+      0,
+      1428,
+      85
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px 32px",
+     "cols": "200px 954px 82px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "ul",
+     "cls": "main__menu d-flex c-gap-2x middle-xs fd-row fw-wrap h-100 m-",
+     "caja": [
+      302,
+      22,
+      954,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 32px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      16,
+      200,
+      53
+     ],
+     "src": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+     "alt": "Diluvium",
+     "natural": [
+      400,
+      105
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      302,
+      22,
+      47,
+      40
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      302,
+      30,
+      47,
+      24
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      381,
+      22,
+      90,
+      40
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      381,
+      30,
+      90,
+      24
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      503,
+      22,
+      80,
+      40
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      503,
+      30,
+      80,
+      24
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      615,
+      22,
+      80,
+      40
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      615,
+      30,
+      80,
+      24
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      727,
+      22,
+      40,
+      40
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      727,
+      30,
+      40,
+      24
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1298,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1336,
+      20,
+      44,
+      44
+     ],
+     "texto": "Carrito 0 artículos",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/cart"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1346,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149244580060__breadcrumb",
+   "tipo": "Breadcrumb",
+   "caja": [
+    0,
+    209,
+    1440,
+    88
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "ul",
+     "cls": "breadcrumb__list ls-none d-flex middle-xs fw-wrap wb-break-w",
+     "caja": [
+      70,
+      32,
+      1300,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      37,
+      33,
+      16
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      107,
+      38,
+      12,
+      12
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      123,
+      37,
+      28,
+      16
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      155,
+      38,
+      12,
+      12
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      171,
+      37,
+      331,
+      16
+     ],
+     "texto": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149244580060__main",
+   "tipo": "Main Article",
+   "caja": [
+    0,
+    393,
+    1440,
+    9135
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex mt-32 end-xs",
+     "caja": [
+      395,
+      9091,
+      650,
+      44
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "flex-end",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      220,
+      0,
+      1000,
+      450
+     ],
+     "src": "/media/articles/Frame_frame.png",
+     "alt": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+     "natural": [
+      720,
+      368
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h1",
+     "caja": [
+      80,
+      514,
+      1280,
+      41
+     ],
+     "texto": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      80,
+      571,
+      1272,
+      17
+     ],
+     "texto": "•",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      627,
+      571,
+      71,
+      16
+     ],
+     "texto": "11 feb 2024",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      704,
+      571,
+      101,
+      17
+     ],
+     "texto": "Por Luis Navarro",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      395,
+      684,
+      650,
+      83
+     ],
+     "texto": "SOLUCIÓN - 4 lugares principales por donde entra el agua y cómo sellarlos.",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      783,
+      650,
+      30
+     ],
+     "texto": "Cada año hay meses en donde las lluvias llegan a ser muy propensas y fuertes...",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      845,
+      650,
+      89
+     ],
+     "texto": "En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, las posibles filtraciones y los pasos a seguir para sellar e",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      966,
+      650,
+      59
+     ],
+     "texto": "Hay de lluvia hacia la casa o negocio:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      430,
+      969,
+      400,
+      22
+     ],
+     "texto": "4 principales lugares por donde se filtra el agua",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      395,
+      1121,
+      382,
+      36
+     ],
+     "texto": "1. Agua que cae del techo",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(26, 81, 159)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      1177,
+      480,
+      267
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Gotera_techo_2_480x480.jpg?v=1665705561",
+     "alt": "",
+     "natural": [
+      480,
+      267
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      1537,
+      650,
+      59
+     ],
+     "texto": "En la mayoría de ocasiones, el agua que empieza a gotear a través del techo es principalmente problema de una .",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      666,
+      1570,
+      200,
+      22
+     ],
+     "texto": "mala impermeabilizada",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      1629,
+      650,
+      59
+     ],
+     "texto": "Es recomendable impermeabilizar (dependiendo de la calidad de los materiales) y si llueve mucho en tu zona cada 4 años.",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      679,
+      1632,
+      100,
+      22
+     ],
+     "texto": "cada 7 años",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      1720,
+      650,
+      119
+     ],
+     "texto": "Identifica los lugares donde gotea y asesorate con un especialista las maneras para impermeabilizar correctamente esa sección. Como la lluvi",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      1871,
+      650,
+      59
+     ],
+     "texto": "Existen indicadores fáciles de distinguir que determinan la necesidad de dar mantenimiento inmediato al inmueble, tales como:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "li",
+     "caja": [
+      411,
+      1962,
+      634,
+      30
+     ],
+     "texto": "Pintura en mal estado",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "li",
+     "caja": [
+      411,
+      2000,
+      634,
+      30
+     ],
+     "texto": "Zonas visibles de humedad",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "li",
+     "caja": [
+      411,
+      2038,
+      634,
+      30
+     ],
+     "texto": "Grietas en los muros y acabados.",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      2099,
+      650,
+      30
+     ],
+     "texto": "En otras palabras, la solución recomendada es la siguiente:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      395,
+      2164,
+      583,
+      52
+     ],
+     "texto": "- . -",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      395,
+      2164,
+      583,
+      52
+     ],
+     "texto": "Asesorarse de expertos para reparar cada zona de goteo basado en impermeabilizante",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      395,
+      2316,
+      534,
+      77
+     ],
+     "texto": "2. Agua que entra por las entradas principales",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "700",
+     "lh": "41.472px",
+     "color": "rgb(26, 81, 159)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      2413,
+      650,
+      59
+     ],
+     "texto": "La segunda entrada más frecuente es a través de entradas convencionales que pueden ser de puerta sencilla, doble puerta o ventana corrediza.",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      2504,
+      650,
+      59
+     ],
+     "texto": "Para estos casos es necesario bloquear o desviar el acceso del agua al negocio o domicilio, para ello se tienen varios métodos:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      2599,
+      475,
+      22
+     ],
+     "texto": "2.1) Con compuertas Anti Inundaciones (Recomendado)",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      540,
+      2657,
+      360,
+      480
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/18f26f99-1686-418a-b568-f6f23f868bec_480x480.png?v=1661899262",
+     "alt": "",
+     "natural": [
+      360,
+      480
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      3169,
+      650,
+      119
+     ],
+     "texto": "Es una compuerta que se coloca en las entradas del inmueble, está hecha para bloquear el paso del agua en temporadas de lluvias, se coloca e",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      571,
+      3323,
+      297,
+      22
+     ],
+     "texto": "Si quieres más información puedes",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      647,
+      3353,
+      145,
+      22
+     ],
+     "texto": "encontrarla aqui:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      611,
+      3379,
+      219,
+      46
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Frame_241_8fb38218-1e99-474f-8e93-eac0a064f911_480x480.png?v=1665706504",
+     "alt": "",
+     "natural": [
+      477,
+      100
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      3490,
+      276,
+      22
+     ],
+     "texto": "2.2) Sistemas Anti Inundaciones",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      3549,
+      480,
+      266
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/SAI_480x480.png?v=1661901219",
+     "alt": "",
+     "natural": [
+      480,
+      266
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      3908,
+      650,
+      119
+     ],
+     "texto": "Es un sistema que no vendamos nosotros, ya que consideramos poco conveniente que no se adapte a la entrada, pero sabemos que bloquea el fluj",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      4059,
+      650,
+      119
+     ],
+     "texto": "Este sistema funciona normalmente anclando 2 rieles en forma de U en los costados y en el medio tiene un pánel, normalmente de aluminio o me",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      4275,
+      164,
+      22
+     ],
+     "texto": "2.3) Sacos de arena",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      4333,
+      480,
+      322
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Sacos_arena_480x480.png?v=1665702956",
+     "alt": "",
+     "natural": [
+      480,
+      322
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      4749,
+      650,
+      89
+     ],
+     "texto": "Otra opción muy utilizada son los sacos de arena, es ligeramente más económico aunque no obtiene los mismos resultados, pero definitivamente",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      4870,
+      650,
+      148
+     ],
+     "texto": "Los sacos de arena son el método más implementado y el más económico, pero hemos descubierto que es el menos eficiente, ya que un gran porce",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      5115,
+      186,
+      22
+     ],
+     "texto": "2.4) Tablas de madera",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      5174,
+      480,
+      342
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/tabla_madera_480x480.png?v=1665705918",
+     "alt": "",
+     "natural": [
+      480,
+      342
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      5548,
+      650,
+      119
+     ],
+     "texto": "Otro método que puede ayudar es colocando fijamente una tabla de madera con adhesivo y sellador al contorno, esto controlará la presión del ",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      5699,
+      650,
+      119
+     ],
+     "texto": "La desventaja principal de este método es que la tabla una vez colocada es difícil quitarla, por lo que normalmente dura meses en el mismo l",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      395,
+      5913,
+      480,
+      77
+     ],
+     "texto": "3. Agua que sale por tuberías o coladeras",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "700",
+     "lh": "41.472px",
+     "color": "rgb(26, 81, 159)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      6010,
+      650,
+      59
+     ],
+     "texto": "En ocasiones es tanta la lluvia que satura el drenaje público, por lo que busca salida a través de la coladera de regaderas, alcantarillado ",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      6101,
+      650,
+      30
+     ],
+     "texto": "Existen diferentes métodos para bloquearla:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      6166,
+      450,
+      22
+     ],
+     "texto": "3.1) Tapón inflable anti inundaciones (Recomendado)",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      517,
+      6225,
+      407,
+      407
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Frame_tapon_bueno_480x480.png?v=1665702735",
+     "alt": "",
+     "natural": [
+      480,
+      480
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      6725,
+      650,
+      119
+     ],
+     "texto": "Según opiniones de nuestros clientes, ha sido la manera más eficiente de bloquear rápidamente las tuberías, se trata de un tapón de goma que",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      497,
+      6941,
+      446,
+      22
+     ],
+     "texto": "Si quieres más información puedes encontrarla",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      898,
+      6941,
+      45,
+      22
+     ],
+     "texto": "aqui:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      606,
+      7000,
+      229,
+      48
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Frame_241_8fb38218-1e99-474f-8e93-eac0a064f911_480x480.png?v=1665706504",
+     "alt": "",
+     "natural": [
+      477,
+      100
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      425,
+      7144,
+      157,
+      22
+     ],
+     "texto": "3.2) Válvula Check",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      7203,
+      650,
+      59
+     ],
+     "texto": "Esta válvula se coloca en la tubería del domicilio que da hacia el drenaje, es decir, el agua sucia que sale del escusado, regadera y lavama",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      7294,
+      650,
+      119
+     ],
+     "texto": "Lo que hace esta válvula es dejar que el agua sucia salga al drenaje sin problema, y cuando hay fuertes lluvias y se satura el drenaje, la m",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      7507,
+      480,
+      183
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Valvula_check_480x480.png?v=1662048965",
+     "alt": "",
+     "natural": [
+      480,
+      183
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      7783,
+      650,
+      119
+     ],
+     "texto": "Es probable que la pueda instalar un buen plomero en tu ciudad, recomendamos en acudir con alguien que tenga algo de experiencia del tema, p",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      395,
+      7998,
+      629,
+      36
+     ],
+     "texto": "4. Agua que transmina entre las paredes",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "700",
+     "lh": "41.472px",
+     "color": "rgb(26, 81, 159)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      8053,
+      650,
+      89
+     ],
+     "texto": "Por último, mucha del agua que entra se transmina por paredes, para solucionar este problema recomendamos apoyarse con expertos para enjarra",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      8174,
+      480,
+      240
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/enjarre_480x480.png?v=1662049205",
+     "alt": "",
+     "natural": [
+      480,
+      240
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      8508,
+      650,
+      89
+     ],
+     "texto": "Un método simple pero poco utilizado, es que después de enjarrar de esta manera es menos probable que se transmine a través de las paredes.",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      395,
+      8511,
+      629,
+      52
+     ],
+     "texto": "se aplique sellador a 1 metro de altura del piso,",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "700",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      395,
+      8629,
+      650,
+      59
+     ],
+     "texto": "Esta opción varía dependiendo de la zona, así que hay que saber exactamente de dónde entra agua y enfocarse en esas áreas.",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      410,
+      8784,
+      620,
+      119
+     ],
+     "texto": "Estos son los consejos que te podemos dar basado en nuestra experiencia, esperemos te sirvan",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "700",
+     "lh": "41.472px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      395,
+      8923,
+      650,
+      30
+     ],
+     "texto": "Puedes también:",
+     "font": "Instrument Sans",
+     "size": "18px",
+     "weight": "400",
+     "lh": "29.7px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      608,
+      8952,
+      224,
+      47
+     ],
+     "radius": "32px",
+     "src": "https://cdn.shopify.com/s/files/1/0647/9308/4124/files/Frame_242_c1c14dd3-133c-427a-a72f-10d9c5aa1947_480x480.png?v=1665706507",
+     "alt": "",
+     "natural": [
+      477,
+      100
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      897,
+      9091,
+      148,
+      44
+     ],
+     "texto": "Siguiente",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "26.4px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "6px 24px",
+     "href": "/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      997,
+      9101,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237764316__footer",
+   "tipo": "Section Footer",
+   "caja": [
+    0,
+    9624,
+    1440,
+    814
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "footer__content d-grid gap-32",
+     "caja": [
+      70,
+      200,
+      1300,
+      429
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "32px",
+     "cols": "1300px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw between-xs hide-empty r-gap-32 gap-lg-zero",
+     "caja": [
+      56,
+      200,
+      1329,
+      357
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "0px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "clm d-flex fd-column gap-24 wb-break-word",
+     "caja": [
+      56,
+      200,
+      332,
+      357
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 14.4px",
+     "maxW": "25%"
+    },
+    {
+     "tag": "ul",
+     "cls": "start-xs gap-8 ls-none d-flex fw-wrap hide-empty",
+     "caja": [
+      70,
+      517,
+      303,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "border newletter-spacing pt-8 pt-md-16 br-card-content d-fle",
+     "caja": [
+      734,
+      200,
+      636,
+      182
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "8px 24px 24px"
+    },
+    {
+     "tag": "div",
+     "cls": "form__field d-flex fd-column fd-row-sm fd-column-lg gap-12",
+     "caja": [
+      759,
+      257,
+      586,
+      100
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw hide-empty r-gap-32",
+     "caja": [
+      56,
+      589,
+      1329,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "footer__content__bottom m-auto d-flex center-xs fd-column mi",
+     "caja": [
+      70,
+      693,
+      1300,
+      41
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px 48px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "button",
+     "caja": [
+      70,
+      96,
+      150,
+      40
+     ],
+     "texto": "Volver arriba",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "pad": "6px 20px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      184,
+      108,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      200,
+      200,
+      49
+     ],
+     "src": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+     "alt": "Diluvium",
+     "natural": [
+      200,
+      49
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      317,
+      303,
+      48
+     ],
+     "texto": "Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      397,
+      303,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      453,
+      303,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      80,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      128,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      176,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      224,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      402,
+      200,
+      303,
+      40
+     ],
+     "texto": "Main menu",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      240,
+      39,
+      48
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      288,
+      76,
+      48
+     ],
+     "texto": "Productos",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      336,
+      69,
+      48
+     ],
+     "texto": "Contacto",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      384,
+      67,
+      48
+     ],
+     "texto": "Nosotros",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      432,
+      33,
+      48
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      759,
+      209,
+      586,
+      40
+     ],
+     "texto": "Suscríbete para ofertas y descuentos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      759,
+      313,
+      586,
+      44
+     ],
+     "texto": "Suscribirme",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(237, 237, 237)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      589,
+      303,
+      40
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/search"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      70,
+      597,
+      303,
+      24
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      589,
+      303,
+      40
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/terms-of-service"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      402,
+      597,
+      303,
+      24
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      734,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/refund-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      734,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1067,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/privacy-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1067,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      1153,
+      705,
+      79,
+      16
+     ],
+     "texto": "© •",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1167,
+      705,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1233,
+      705,
+      138,
+      16
+     ],
+     "texto": "Tecnología de Shopify",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "https://es.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+    }
+   ]
+  }
+ ]
+}

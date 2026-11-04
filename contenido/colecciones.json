@@ -1,0 +1,499 @@
+{
+ "fuente": "docs/sitio-actual/capturas/2026-11-03 (coleccion-*.html, colecciones.html) + órdenes en vivo",
+ "lista": [
+  "a-compuerta",
+  "coleccion-para-escritorio",
+  "coleccion-para-mobile",
+  "frontpage",
+  "los-mas-vendidos",
+  "all-products"
+ ],
+ "colecciones": [
+  {
+   "nombre": "all-products",
+   "titulo": "Todos los productos",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/collections/CECI_Testimonio_7_1_1.jpg",
+   "orden": "title-ascending",
+   "precioMaximo": 7000.0,
+   "productos": [
+    "compuerta-anti-inundaciones",
+    "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "funda-de-repuesto-compuerta-anti-inundaciones",
+    "mini-compuerta",
+    "accesorio-plastilina-de-secado-rapido",
+    "tapon-inflable-anti-inundaciones",
+    "accesorio-tira-de-hule-de-repuesto"
+   ],
+   "ordenes": {
+    "manual": [
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta"
+    ],
+    "most-relevant": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "best-selling": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto"
+    ],
+    "title-descending": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones"
+    ],
+    "price-ascending": [
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "created-ascending": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta"
+    ],
+    "created-descending": [
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/collections/CECI_Testimonio_7_1_1.jpg"
+  },
+  {
+   "nombre": "all",
+   "titulo": "Productos",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "title-ascending",
+   "precioMaximo": 7000.0,
+   "productos": [
+    "compuerta-anti-inundaciones",
+    "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "funda-de-repuesto-compuerta-anti-inundaciones",
+    "mini-compuerta",
+    "accesorio-plastilina-de-secado-rapido",
+    "tapon-inflable-anti-inundaciones",
+    "accesorio-tira-de-hule-de-repuesto"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto"
+    ],
+    "most-relevant": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "best-selling": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto"
+    ],
+    "title-descending": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones"
+    ],
+    "price-ascending": [
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "mini-compuerta",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "mini-compuerta",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "created-ascending": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "mini-compuerta"
+    ],
+    "created-descending": [
+     "mini-compuerta",
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones"
+    ]
+   }
+  },
+  {
+   "nombre": "a-compuerta",
+   "titulo": "A Compuerta",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "best-selling",
+   "precioMaximo": 5500.0,
+   "productos": [
+    "compuerta-anti-inundaciones"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones"
+    ],
+    "most-relevant": [
+     "compuerta-anti-inundaciones"
+    ],
+    "best-selling": [
+     "compuerta-anti-inundaciones"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "title-descending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "price-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "created-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "created-descending": [
+     "compuerta-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/files/Frame697.jpg"
+  },
+  {
+   "nombre": "coleccion-para-escritorio",
+   "titulo": "Coleccion para escritorio",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "price-descending",
+   "precioMaximo": 7000.0,
+   "productos": [
+    "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "tapon-inflable-anti-inundaciones",
+    "funda-de-repuesto-compuerta-anti-inundaciones"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "most-relevant": [
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "best-selling": [
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "title-descending": [
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-ascending": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "created-ascending": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones"
+    ],
+    "created-descending": [
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg"
+  },
+  {
+   "nombre": "coleccion-para-mobile",
+   "titulo": "Coleccion para mobile",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "best-selling",
+   "precioMaximo": 7000.0,
+   "productos": [
+    "tapon-inflable-anti-inundaciones",
+    "compuerta-anti-inundaciones-hecha-a-la-medida"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "most-relevant": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "best-selling": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "title-descending": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-ascending": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ],
+    "created-ascending": [
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "created-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/products/Frame237.png"
+  },
+  {
+   "nombre": "frontpage",
+   "titulo": "Home page",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "best-selling",
+   "precioMaximo": 5500.0,
+   "productos": [
+    "compuerta-anti-inundaciones"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones"
+    ],
+    "most-relevant": [
+     "compuerta-anti-inundaciones"
+    ],
+    "best-selling": [
+     "compuerta-anti-inundaciones"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "title-descending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "price-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "created-ascending": [
+     "compuerta-anti-inundaciones"
+    ],
+    "created-descending": [
+     "compuerta-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/files/Frame697.jpg"
+  },
+  {
+   "nombre": "los-mas-vendidos",
+   "titulo": "Los mas vendidos",
+   "descripcionHtml": "",
+   "imagenCompartir": "/media/files/Portada_RS.jpg",
+   "orden": "manual",
+   "precioMaximo": 7000.0,
+   "productos": [
+    "compuerta-anti-inundaciones",
+    "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "tapon-inflable-anti-inundaciones",
+    "funda-de-repuesto-compuerta-anti-inundaciones",
+    "accesorio-tira-de-hule-de-repuesto",
+    "accesorio-plastilina-de-secado-rapido"
+   ],
+   "ordenes": {
+    "manual": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "most-relevant": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "best-selling": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "title-ascending": [
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto"
+    ],
+    "title-descending": [
+     "accesorio-tira-de-hule-de-repuesto",
+     "tapon-inflable-anti-inundaciones",
+     "accesorio-plastilina-de-secado-rapido",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones"
+    ],
+    "price-ascending": [
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida"
+    ],
+    "price-descending": [
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "created-ascending": [
+     "compuerta-anti-inundaciones",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "accesorio-tira-de-hule-de-repuesto",
+     "accesorio-plastilina-de-secado-rapido"
+    ],
+    "created-descending": [
+     "accesorio-plastilina-de-secado-rapido",
+     "accesorio-tira-de-hule-de-repuesto",
+     "funda-de-repuesto-compuerta-anti-inundaciones",
+     "compuerta-anti-inundaciones-hecha-a-la-medida",
+     "tapon-inflable-anti-inundaciones",
+     "compuerta-anti-inundaciones"
+    ]
+   },
+   "imagen": "/media/files/Frame697.jpg"
+  }
+ ]
+}

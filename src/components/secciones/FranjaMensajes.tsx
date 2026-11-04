@@ -1,13 +1,13 @@
 // Franja de texto que corre (sección «running-content»: encabezado y varias páginas). Velocidad en píxeles por
 // segundo, como el ajuste «speed» del tema; se pausa al pasar el mouse si «pause_when_hover» está prendido.
-// El tamaño de letra sale de «heading_size» (h4 o h6) y el aire de arriba y abajo mide un renglón. Como las demás
+// El tamaño de letra sale de «heading_size» (h2 a h6) y el aire de arriba y abajo mide un renglón. Como las demás
 // secciones, pierde el aire de arriba si la sección anterior tiene el mismo color de fondo.
 
 import type { Seccion } from "@/lib/contenido";
 import type { Producto } from "@/components/producto/catalogo";
 import { esquema, numero, siNo, texto } from "@/lib/contenido";
 import { TextoRico } from "@/components/comunes/Texto";
-import { sinAireArriba } from "./aire";
+import { esUltimaDeLaPagina, sinAireArriba } from "./aire";
 import { FranjaPista } from "./FranjaMensajesPista";
 
 // Íconos de la biblioteca del tema que usa Diluvium, dibujados aquí (no son los del tema).
@@ -33,6 +33,12 @@ const TRAZOS: Record<string, React.ReactNode> = {
     </>
   ),
   check: <path d="m4.5 12.5 4.5 4.5 10.5-10.5" />,
+  subscription: (
+    <>
+      <path d="M7 9.5v-3h10.5V13M14.5 10.5l3 3 3-3" />
+      <path d="M17 14.5v3H6.5V11M3.5 13.5l3-3 3 3" />
+    </>
+  ),
 };
 
 function Icono({ nombre }: { nombre: string }) {
@@ -64,31 +70,63 @@ function Icono({ nombre }: { nombre: string }) {
   );
 }
 
+/** Foto de la franja, del alto del renglón. Sin foto elegida, el tema muestra un cuadro gris de muestra (/collections). */
+function FotoFranja({ src }: { src: string }) {
+  if (src) {
+    // eslint-disable-next-line @next/next/no-img-element -- ícono chico dentro de la franja, sin optimizar
+    return <img src={src} alt="" className="h-[1.25em] w-auto shrink-0" />;
+  }
+  return (
+    <svg viewBox="0 0 98 70" aria-hidden="true" focusable="false" className="aspect-[98/70] w-[1.25em] shrink-0">
+      <rect width="98" height="70" fill="#e5e6e6" />
+      <path d="m25 32 24 22 24-15" fill="none" stroke="#187f80" strokeWidth="3" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 // Tamaño de letra y aire (un renglón de 1.25) según «heading_size».
 const TAMANOS: Record<string, string> = {
+  h2: "text-[length:var(--h2)] py-[calc(var(--h2)*1.25)]",
+  h3: "text-[length:var(--h3)] py-[calc(var(--h3)*1.25)]",
   h4: "text-[length:var(--h4)] py-[calc(var(--h4)*1.25)]",
   h6: "text-[length:var(--h6)] py-[calc(var(--h6)*1.25)]",
+};
+// Cuando la franja es la última sección de la página, en vivo deja además un renglón de margen arriba y abajo
+// (página 404 y /collections); el de arriba no, si la sección anterior tiene el mismo fondo.
+const MARGEN_FINAL: Record<string, { arriba: string; abajo: string }> = {
+  h2: { arriba: "mt-[calc(var(--h2)*1.25)]", abajo: "mb-[calc(var(--h2)*1.25)]" },
+  h3: { arriba: "mt-[calc(var(--h3)*1.25)]", abajo: "mb-[calc(var(--h3)*1.25)]" },
+  h4: { arriba: "mt-[calc(var(--h4)*1.25)]", abajo: "mb-[calc(var(--h4)*1.25)]" },
+  h6: { arriba: "mt-[calc(var(--h6)*1.25)]", abajo: "mb-[calc(var(--h6)*1.25)]" },
 };
 
 export function FranjaMensajes({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const a = seccion.ajustes;
   const pausa = siNo(a, "pause_when_hover") ? "franja" : "";
   const tamano = TAMANOS[texto(a, "heading_size")] ?? TAMANOS.h6;
+  const margen = MARGEN_FINAL[texto(a, "heading_size")] ?? MARGEN_FINAL.h6;
+  const pegada = sinAireArriba(seccion, producto);
+  const final = esUltimaDeLaPagina(seccion, producto) ? `${margen.abajo} ${pegada ? "" : margen.arriba}` : "";
   const arriba = sinAireArriba(seccion, producto) ? "pt-0!" : "";
+  // «animation-reverse»: corre hacia la derecha.
+  const sentido = texto(a, "moving_direction") === "animation-reverse" ? "[&_.franja-pista]:[animation-direction:reverse]" : "";
 
   return (
     <div
-      className={`${pausa} ${esquema(a, "scheme-3")} overflow-hidden leading-[1.25] ${tamano} ${arriba}`}
+      className={`${pausa} ${esquema(a)} overflow-hidden leading-[1.25] ${tamano} ${arriba} ${sentido} ${final}`}
       data-seccion="running-content"
     >
       <FranjaPista velocidad={numero(a, "speed", 50)}>
         {seccion.bloques.map((b) =>
           b.tipo === "icon" ? (
             <Icono key={b.id} nombre={texto(b.ajustes, "options_icon")} />
+          ) : b.tipo === "image" ? (
+            <FotoFranja key={b.id} src={texto(b.ajustes, "image")} />
           ) : (
             <TextoRico
               key={b.id}
-              html={texto(b.ajustes, "promotion_text")}
+              // Sin texto propio, el tema pone su texto de ejemplo (así se ve en la página 404 en vivo).
+              html={"promotion_text" in b.ajustes ? texto(b.ajustes, "promotion_text") : "<p>Promotion text</p>"}
               className="shrink-0 whitespace-nowrap text-center font-titulo font-medium [&_p]:m-0"
             />
           ),

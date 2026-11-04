@@ -10,6 +10,10 @@ Los comandos se corren desde la raíz del proyecto.
 | Videos del tema → archivo real | (a mano, ver `herramientas/videos-tema.json`) | `herramientas/videos-tema.json` |
 | Fotos y videos de la tienda | `npm run medios` | `public/media/…`, `herramientas/mapa-medios.json` |
 | Catálogo de productos (fichas públicas) | `node herramientas/catalogo.mjs` | `contenido/productos.json` |
+| Textos de páginas y políticas (del HTML capturado) | `python3 -I herramientas/extraer-paginas.py` | `contenido/paginas.json`, `contenido/politicas.json` |
+| Artículos del blog | `python3 -I herramientas/extraer-articulos.py` | `contenido/blog.json` |
+| Reseñas publicadas (Trustoo) | `python3 -I herramientas/extraer-resenas-blog.py` | `contenido/resenas.json`, `public/media/resenas/` |
+| Colecciones · respuestas del buscador | `python3 -I herramientas/extraer-colecciones.py` · `extraer-busquedas.py` | `contenido/colecciones.json` · `contenido/busquedas.json` |
 | Capturas de página completa del sitio en vivo | `node herramientas/capturar-sitio.mjs <carpeta> [paginas] [vistas]` | `docs/sitio-actual/capturas/<fecha>/` |
 | Medidas reales (letras, tamaños, colores, posiciones) | `node herramientas/medir-estilos.mjs <url> <nombre> [vistas]` | `docs/sitio-actual/medidas/<nombre>-<vista>.json` |
 | Ver en corto una sección (y su recorte) | `python3 -I herramientas/ver-seccion.py <pagina> <indices> [vistas] [carpeta]` | pantalla + recortes |

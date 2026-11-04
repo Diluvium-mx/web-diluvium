@@ -76,11 +76,13 @@ export function BloqueTexto({
           ) : null;
         }
         if (b.tipo === "description") {
+          // Vacío, el tema lo deja escondido: no se ve, pero el bloque de arriba conserva su aire de abajo.
+          if (!texto(a, "description")) return <div key={b.id} className="hidden" />;
           return (
             <TextoRico
               key={b.id}
               html={texto(a, "description")}
-              className="mb-6 max-w-[650px] [&_p+p]:mt-8! [&_p+ul]:mt-8 [&_ul]:mb-8 [&_ul]:list-inside [&_ul]:list-disc [&_ul]:pl-4 [&_li+li]:mt-2 min-[1025px]:mb-12 last:mb-0"
+              className="mb-6 max-w-[650px] [&_:is(h1,h2,h3,h4,h5,h6)]:mt-8 [&_:is(h1,h2,h3,h4,h5,h6)]:mb-4 [&_p+p]:mt-8! [&_p+ul]:mt-8 [&_ul]:mb-8 [&_ul]:list-inside [&_ul]:list-disc [&_ul]:pl-4 [&_li+li]:mt-2 min-[1025px]:mb-12 last:mb-0"
             />
           );
         }
@@ -138,18 +140,26 @@ export function CollageImagenTexto({ seccion, producto }: PropsSeccion) {
   const vwCompu = Math.round((anchoFotos * 90) / columnas.length);
   const sizes = `(min-width: 1025px) ${vwCompu}vw, ${columnas.length > 1 ? 50 : 100}vw`;
   const estilo = { "--ancho-fotos": anchoFotos } as React.CSSProperties;
+  const conTexto = seccion.bloques.length > 0;
 
   return (
     <section className={esquema(a)} data-seccion="image-collage-with-text">
       <div className={`contenedor ${clasesAire(seccion, producto)}`}>
         <div className={`flex justify-center gap-[var(--hueco)] min-[1025px]:gap-[28.8px] ${ordenDeContenido(seccion)}`} style={estilo}>
-          <BloqueTexto
-            bloques={seccion.bloques}
-            className="min-w-0 min-[1025px]:flex-1"
-            centradoCel={texto(a, "content_position_mobile") === "ta-center"}
-          />
+          {/* Sin bloques de texto, el tema no deja la columna ni su separación: las fotos van solas y centradas. */}
+          {conTexto && (
+            <BloqueTexto
+              bloques={seccion.bloques}
+              className="min-w-0 min-[1025px]:flex-1"
+              centradoCel={texto(a, "content_position_mobile") === "ta-center"}
+            />
+          )}
           {columnas.length > 0 && (
-            <div className="min-w-0 shrink-0 min-[1025px]:w-[calc((100%_-_28.8px)_*_var(--ancho-fotos))]">
+            <div
+              className={`min-w-0 shrink-0 ${
+                conTexto ? "min-[1025px]:w-[calc((100%_-_28.8px)_*_var(--ancho-fotos))]" : "min-[1025px]:w-[calc(100%_*_var(--ancho-fotos))]"
+              }`}
+            >
               <div className={`flex gap-[14.04px] md:gap-6 min-[1025px]:gap-[28.8px] ${alinear}`}>
                 {columnas.map((fotos, i) => (
                   <div

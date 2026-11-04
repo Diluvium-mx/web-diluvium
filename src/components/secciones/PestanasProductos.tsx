@@ -4,7 +4,7 @@
 
 import type { CSSProperties } from "react";
 import type { Seccion } from "@/lib/contenido";
-import { esquema, numero, texto } from "@/lib/contenido";
+import { esquema, numero, plantilla, texto } from "@/lib/contenido";
 import { Titulo } from "@/components/comunes/Texto";
 import { producto as buscarProducto, productosDeColeccion, type Producto } from "@/components/producto/catalogo";
 import { Pestanas } from "@/components/producto/Pestanas";
@@ -43,8 +43,12 @@ function productosDe(coleccion: string, cuantos: number): Producto[] {
     .slice(0, cuantos);
 }
 
+// Plantillas de páginas sueltas (/pages/…): ahí las estrellas de la tarjeta quedan más separadas del título.
+const PAGINAS = ["page", "page.nosotros", "page.contact", "page.instalacion", "page.distribuidor"] as const;
+
 export function PestanasProductos({ seccion, producto }: { seccion: Seccion; producto?: Producto }) {
   const a = seccion.ajustes;
+  const enPagina = PAGINAS.some((n) => plantilla(n).secciones.some((s) => s.id === seccion.id));
   const colecciones = Array.isArray(a.collection_list) ? a.collection_list.filter((c): c is string => typeof c === "string") : [];
   const cuantos = numero(a, "items_to_show", 4);
   const titulo = texto(a, "heading");
@@ -93,6 +97,7 @@ export function PestanasProductos({ seccion, producto }: { seccion: Seccion; pro
                     vendedor={a.show_vendor === true}
                     muestrasColor={a.show_color_swatch === true}
                     precioApilado={Boolean(producto)}
+                    estrellasSeparadas={enPagina}
                     sizes={`(min-width: 1025px) ${Math.round(1300 / columnasCompu)}px, ${porVistaCel > 1 ? "calc(50vw - 64px)" : "calc(100vw - 96px)"}`}
                   />
                 </div>

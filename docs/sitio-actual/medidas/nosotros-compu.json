@@ -1,0 +1,4901 @@
+{
+ "url": "https://www.diluvium.com.mx/pages/nosotros",
+ "ancho": 1440,
+ "altoPagina": 11144,
+ "secciones": [
+  {
+   "id": "shopify-section-sections--23149237928156__running_content_WwxgYn",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    0,
+    1440,
+    68
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      23,
+      1440,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -29,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1139,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      2308,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3477,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      4645,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -13,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      312,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      366,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      391,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      711,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      766,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      815,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1101,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1155,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1480,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1535,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1559,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1880,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1935,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1983,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2270,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2324,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2649,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2703,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2728,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3049,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3103,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3152,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3438,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3493,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3818,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3872,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3897,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4217,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4272,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4320,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4607,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4661,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4986,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      5041,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      5065,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5386,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      5440,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      5489,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5775,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__extra-info-header",
+   "tipo": "",
+   "caja": [
+    0,
+    68,
+    1440,
+    57
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-small-padding extra-info-header__content ctnr",
+     "caja": [
+      6,
+      0,
+      1428,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "extra-info-header__left",
+     "caja": [
+      70,
+      16,
+      350,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      16,
+      125,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "tel:(668) 241 9579"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      70,
+      21,
+      14,
+      15
+     ],
+     "viewBox": "0 0 61 64"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      216,
+      16,
+      204,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "mailto:contacto@diluvium.com.mx"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1313,
+      16,
+      57,
+      24
+     ],
+     "texto": "🇲🇽MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__header",
+   "tipo": "Header Section",
+   "caja": [
+    0,
+    125,
+    1440,
+    85
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "header",
+     "cls": "header ctnr header--horizontal header--horizontal-left heade",
+     "caja": [
+      6,
+      0,
+      1428,
+      85
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px 32px",
+     "cols": "200px 954px 82px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "ul",
+     "cls": "main__menu d-flex c-gap-2x middle-xs fd-row fw-wrap h-100 m-",
+     "caja": [
+      302,
+      22,
+      954,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 32px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      16,
+      200,
+      53
+     ],
+     "src": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+     "alt": "Diluvium",
+     "natural": [
+      400,
+      105
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      302,
+      22,
+      47,
+      40
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      302,
+      30,
+      47,
+      24
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      381,
+      22,
+      90,
+      40
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      381,
+      30,
+      90,
+      24
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      503,
+      22,
+      80,
+      40
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      503,
+      30,
+      80,
+      24
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      615,
+      22,
+      80,
+      40
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(248, 160, 29)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      615,
+      30,
+      80,
+      24
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(248, 160, 29)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      727,
+      22,
+      40,
+      40
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      727,
+      30,
+      40,
+      24
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1298,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1336,
+      20,
+      44,
+      44
+     ],
+     "texto": "Carrito 0 artículos",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/cart"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1346,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_banner_yM8tKV",
+   "tipo": "Image Banner Section",
+   "caja": [
+    0,
+    209,
+    1440,
+    462
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      0,
+      0,
+      1440,
+      462
+     ],
+     "src": "/media/files/Frame_698_ebf7fecc-f938-4b1c-a123-c6bfd94cb3f0.jpg",
+     "alt": "Frame_698_ebf7fecc-f938-4b1c-a123-c6bfd94cb3f0.jpg",
+     "natural": [
+      1440,
+      461
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__text_LwfBJj",
+   "tipo": "Text Section",
+   "caja": [
+    0,
+    671,
+    1440,
+    317
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column middle-x",
+     "caja": [
+      70,
+      96,
+      1300,
+      125
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "div",
+     "caja": [
+      650,
+      96,
+      140,
+      24
+     ],
+     "texto": "Nuestra Historia",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      287,
+      132,
+      866,
+      60
+     ],
+     "texto": "Protegiendo hogares,",
+     "font": "Archivo",
+     "size": "47.7757px",
+     "weight": "500",
+     "lh": "59.7197px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      762,
+      135,
+      391,
+      52
+     ],
+     "texto": "un desafío a la vez",
+     "font": "Archivo",
+     "size": "47.7757px",
+     "weight": "500",
+     "lh": "59.7197px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_collage_with_text_FdybQ6",
+   "tipo": "Image Collage With Text Section",
+   "caja": [
+    0,
+    988,
+    1440,
+    612
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs tex",
+     "caja": [
+      70,
+      0,
+      1300,
+      516
+     ],
+     "display": "flex",
+     "dir": "row-reverse",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw media-sticky",
+     "caja": [
+      56,
+      0,
+      664,
+      516
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h5",
+     "caja": [
+      734,
+      32,
+      636,
+      96
+     ],
+     "texto": "Cuando una tormenta inunda una casa, no solo se pierden objetos: se pierden años de esfuerzo, tranquilidad y recuerdos que no se reemplazan ",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      734,
+      81,
+      599,
+      45
+     ],
+     "texto": "Las pérdidas materiales son evidentes, pero el impacto emocional que sufren las familias es aún mayor.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      734,
+      160,
+      636,
+      48
+     ],
+     "texto": "Lo que más nos impresionó es que , una realidad que nos motivó buscar una solución.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      734,
+      161,
+      630,
+      45
+     ],
+     "texto": "hay familias que sufren de esto cada año",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      0,
+      636,
+      516
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame_720.jpg",
+     "alt": "Frame_720.jpg",
+     "natural": [
+      648,
+      526
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_collage_with_text_bWUKXA",
+   "tipo": "Image Collage With Text Section",
+   "caja": [
+    0,
+    1600,
+    1440,
+    561
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs tex",
+     "caja": [
+      70,
+      0,
+      1300,
+      465
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw media-sticky",
+     "caja": [
+      720,
+      0,
+      664,
+      465
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      32,
+      636,
+      48
+     ],
+     "texto": "Encontramos soluciones efectivas en otros países, pero con costo muy elevado para el mercado mexicano.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      112,
+      636,
+      144
+     ],
+     "texto": "Fue entonces que Como buenos emprendedores pusimos manos a la obra y después de meses de prueba y error, finalmente llegamos a un prototipo ",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      70,
+      113,
+      615,
+      69
+     ],
+     "texto": "decidimos crear nuestra propia versión: más económica, más práctica, y pensada para las necesidades reales en México.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      734,
+      0,
+      303,
+      270
+     ],
+     "radius": "32px",
+     "src": "/media/files/IMG_1499.jpg",
+     "alt": "IMG_1499.jpg",
+     "natural": [
+      648,
+      577
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1067,
+      0,
+      303,
+      465
+     ],
+     "radius": "32px",
+     "src": "/media/files/7453CB00-0FC6-43F1-967E-293CC2D0D04F.jpg",
+     "alt": "7453CB00-0FC6-43F1-967E-293CC2D0D04F.jpg",
+     "natural": [
+      648,
+      994
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__content_collage_gmtJtP",
+   "tipo": "Content Collage Section",
+   "caja": [
+    0,
+    2162,
+    1440,
+    725
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section-content-collage gap-equal d-grid ",
+     "caja": [
+      70,
+      0,
+      1300,
+      629
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "28.8px",
+     "cols": "303.391px 303.391px 303.406px 303.406px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "a",
+     "cls": "collage__block collage__block-video d-flex fd-column card--c",
+     "caja": [
+      70,
+      0,
+      636,
+      629
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "center",
+     "align": "center",
+     "pad": "24px"
+    },
+    {
+     "tag": "a",
+     "cls": "collage__block collage__block-image d-flex fd-column card--c",
+     "caja": [
+      734,
+      0,
+      636,
+      300
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "center",
+     "align": "center",
+     "pad": "24px"
+    },
+    {
+     "tag": "a",
+     "cls": "collage__block collage__block-image d-flex fd-column card--c",
+     "caja": [
+      734,
+      329,
+      636,
+      300
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "flex-start",
+     "align": "center",
+     "pad": "24px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "video",
+     "caja": [
+      70,
+      0,
+      636,
+      636
+     ],
+     "src": "/media/videos/5fbf311e67eb42f7a351fe743b6a8699.SD-480p-0.9Mbps-46396031.mp4",
+     "poster": "/media/files/5fbf311e67eb42f7a351fe743b6a8699.thumbnail.0000000000_small.jpg",
+     "autoplay": true,
+     "loop": true,
+     "muted": true,
+     "controls": false,
+     "fit": "contain"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      734,
+      0,
+      636,
+      300
+     ],
+     "src": "/media/files/IMG_0603.jpg",
+     "alt": "IMG_0603.jpg",
+     "natural": [
+      578,
+      433
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      734,
+      329,
+      636,
+      300
+     ],
+     "src": "/media/files/IMG_0665.jpg",
+     "alt": "IMG_0665.jpg",
+     "natural": [
+      578,
+      433
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__text_hkKCwP",
+   "tipo": "Text Section",
+   "caja": [
+    0,
+    2886,
+    1440,
+    208
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      80,
+      0,
+      1280,
+      83
+     ],
+     "texto": "Desarrollar el producto fue solo el comienzo.",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      611,
+      2,
+      746,
+      77
+     ],
+     "texto": "Llevarlo a quienes más lo necesitan fue el verdadero reto",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__running_content_kEbwHQ",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    3094,
+    1440,
+    68
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden ",
+     "caja": [
+      0,
+      23,
+      1440,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -201,
+      23,
+      995,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      794,
+      23,
+      995,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1789,
+      23,
+      995,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      2784,
+      23,
+      995,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3779,
+      23,
+      995,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "strong",
+     "caja": [
+      -185,
+      24,
+      306,
+      20
+     ],
+     "texto": "Diseñado para resistir lo inesperado",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "700",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      154,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      208,
+      23,
+      162,
+      23
+     ],
+     "texto": "Seguridad confiable",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(161, 196, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      402,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      457,
+      23,
+      267,
+      23
+     ],
+     "texto": "Protege lo que de verdad importa",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      756,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      810,
+      24,
+      306,
+      20
+     ],
+     "texto": "Diseñado para resistir lo inesperado",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "700",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1149,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1203,
+      23,
+      162,
+      23
+     ],
+     "texto": "Seguridad confiable",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(161, 196, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1397,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1452,
+      23,
+      267,
+      23
+     ],
+     "texto": "Protege lo que de verdad importa",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1751,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      1805,
+      24,
+      306,
+      20
+     ],
+     "texto": "Diseñado para resistir lo inesperado",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "700",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2144,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2198,
+      23,
+      162,
+      23
+     ],
+     "texto": "Seguridad confiable",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(161, 196, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2392,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2447,
+      23,
+      267,
+      23
+     ],
+     "texto": "Protege lo que de verdad importa",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2746,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      2800,
+      24,
+      306,
+      20
+     ],
+     "texto": "Diseñado para resistir lo inesperado",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "700",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3139,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3193,
+      23,
+      162,
+      23
+     ],
+     "texto": "Seguridad confiable",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(161, 196, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3387,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3442,
+      23,
+      267,
+      23
+     ],
+     "texto": "Protege lo que de verdad importa",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3741,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      3795,
+      24,
+      306,
+      20
+     ],
+     "texto": "Diseñado para resistir lo inesperado",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "700",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4134,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4188,
+      23,
+      162,
+      23
+     ],
+     "texto": "Seguridad confiable",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(161, 196, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4382,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4437,
+      23,
+      267,
+      23
+     ],
+     "texto": "Protege lo que de verdad importa",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4736,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_collage_with_text_VaAdgp",
+   "tipo": "Image Collage With Text Section",
+   "caja": [
+    0,
+    3162,
+    1440,
+    669
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs tex",
+     "caja": [
+      70,
+      96,
+      1300,
+      477
+     ],
+     "display": "flex",
+     "dir": "row-reverse",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column top-xs t",
+     "caja": [
+      734,
+      96,
+      636,
+      200
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "flex-start",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw media-sticky",
+     "caja": [
+      56,
+      96,
+      664,
+      477
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h5",
+     "caja": [
+      734,
+      128,
+      636,
+      72
+     ],
+     "texto": "Nos enfrentamos a retos de diseño y producción, dificultades para explicar el producto sin imágenes ni videos de calidad, limitaciones econó",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      734,
+      232,
+      636,
+      48
+     ],
+     "texto": "Pero nunca nos detuvimos.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      734,
+      233,
+      577,
+      45
+     ],
+     "texto": "Aprendimos en el camino y seguimos adelante.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      96,
+      636,
+      477
+     ],
+     "radius": "32px",
+     "src": "/media/files/IMG_2103.jpg",
+     "alt": "IMG_2103.jpg",
+     "natural": [
+      648,
+      486
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__text_TFJTtp",
+   "tipo": "Text Section",
+   "caja": [
+    0,
+    3830,
+    1440,
+    175
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      430,
+      0,
+      580,
+      50
+     ],
+     "texto": "Más que un Negocio,",
+     "font": "Archivo",
+     "size": "39.8131px",
+     "weight": "500",
+     "lh": "49.7664px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      815,
+      3,
+      195,
+      43
+     ],
+     "texto": "una Misión",
+     "font": "Archivo",
+     "size": "39.8131px",
+     "weight": "500",
+     "lh": "49.7664px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_collage_with_text_CrFeQW",
+   "tipo": "Image Collage With Text Section",
+   "caja": [
+    0,
+    4005,
+    1440,
+    732
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs tex",
+     "caja": [
+      70,
+      0,
+      1300,
+      636
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column top-xs t",
+     "caja": [
+      70,
+      0,
+      636,
+      272
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "flex-start",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw media-sticky",
+     "caja": [
+      720,
+      0,
+      664,
+      636
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      32,
+      636,
+      72
+     ],
+     "texto": "Las inundaciones son el desastre natural que más pérdidas económicas genera a nivel mundial, y sabemos que no podemos resolver el problema d",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      136,
+      636,
+      120
+     ],
+     "texto": "Pero cada hogar protegido es una familia que duerme tranquila cuando llueve. Cada negocio que se salva de una inundación es un emprendedor q",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      70,
+      233,
+      438,
+      21
+     ],
+     "texto": "Y eso, para nosotros, ya es hacer una diferencia.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      734,
+      0,
+      636,
+      636
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Frame697.jpg",
+     "natural": [
+      648,
+      648
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_collage_with_text_bq3VQV",
+   "tipo": "Image Collage With Text Section",
+   "caja": [
+    0,
+    4737,
+    1440,
+    610
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs tex",
+     "caja": [
+      70,
+      0,
+      1300,
+      514
+     ],
+     "display": "flex",
+     "dir": "row-reverse",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column top-xs t",
+     "caja": [
+      734,
+      0,
+      636,
+      240
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "flex-start",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw media-sticky",
+     "caja": [
+      56,
+      0,
+      664,
+      514
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h5",
+     "caja": [
+      734,
+      32,
+      636,
+      192
+     ],
+     "texto": "Lo que más nos llena el corazón es escuchar a quienes, tras años de preocupación, por fin encontraron tranquilidad. Cuando nos dicen que aho",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "strong",
+     "caja": [
+      734,
+      177,
+      547,
+      45
+     ],
+     "texto": "nos recuerdan por qué hacemos lo que hacemos.",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      0,
+      636,
+      514
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame_719.jpg",
+     "alt": "Frame_719.jpg",
+     "natural": [
+      648,
+      524
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_banner_gbg3dt",
+   "tipo": "Image Banner Section",
+   "caja": [
+    0,
+    5347,
+    1440,
+    761
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      0,
+      0,
+      1440,
+      761
+     ],
+     "src": "/media/files/oficina.jpg",
+     "alt": "oficina.jpg",
+     "natural": [
+      1440,
+      761
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__text_fBdkNw",
+   "tipo": "Text Section",
+   "caja": [
+    0,
+    6108,
+    1440,
+    317
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column middle-x",
+     "caja": [
+      70,
+      96,
+      1300,
+      125
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "div",
+     "caja": [
+      622,
+      96,
+      196,
+      24
+     ],
+     "texto": "También hemos tenido",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      389,
+      132,
+      661,
+      60
+     ],
+     "texto": "🏆 Reconocimientos y Premios",
+     "font": "Archivo",
+     "size": "47.7757px",
+     "weight": "500",
+     "lh": "59.7197px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__media_with_text_columns_PJPAHV",
+   "tipo": "Media With Text Columns Section",
+   "caja": [
+    0,
+    6425,
+    1440,
+    1418
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section ctnr d-grid-md d-flex fd-column   ",
+     "caja": [
+      6,
+      0,
+      1428,
+      1418
+     ],
+     "display": "grid",
+     "dir": "column",
+     "gap": "48px",
+     "cols": "1300px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 64px 96px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content d-flex fd-column middle-xs ta-center top-m",
+     "caja": [
+      70,
+      0,
+      1300,
+      119
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "flex-start",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw r-gap-equal js-carousel-items",
+     "caja": [
+      56,
+      167,
+      1329,
+      1155
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "28.8px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      70,
+      581,
+      414,
+      113
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      513,
+      581,
+      414,
+      113
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      956,
+      581,
+      414,
+      113
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      70,
+      1137,
+      414,
+      185
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      513,
+      1137,
+      414,
+      142
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-grid gap-12 wb-break-word w-100 ta-left",
+     "caja": [
+      956,
+      1137,
+      414,
+      142
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "414.141px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "24px 0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      70,
+      36,
+      1280,
+      83
+     ],
+     "texto": "Nuestro esfuerzo ha sido reconocido en varias ocasiones, lo que nos motiva a seguir creciendo:",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      167,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame_864.jpg",
+     "alt": "Frame_864.jpg",
+     "natural": [
+      720,
+      720
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      70,
+      605,
+      414,
+      29
+     ],
+     "texto": "Temporada 10 Shark Tank México",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      70,
+      646,
+      414,
+      24
+     ],
+     "texto": "Nadando con tiburones, sin dejar pasar el agua.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      513,
+      167,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/efa26da4-9212-47bd-9505-e11b44a1a765_1.jpg",
+     "alt": "efa26da4-9212-47bd-9505-e11b44a1a765_1.jpg",
+     "natural": [
+      720,
+      600
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      513,
+      605,
+      414,
+      29
+     ],
+     "texto": "Premio Oro y Plata a la Calidad",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      513,
+      646,
+      414,
+      24
+     ],
+     "texto": "Galardonados a nivel nacional en la Ciudad de México",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      956,
+      167,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/480881100_1042952801187486_2810394445159684620_n_1.jpg",
+     "alt": "480881100_1042952801187486_2810394445159684620_n_1.jpg",
+     "natural": [
+      720,
+      720
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      956,
+      605,
+      414,
+      29
+     ],
+     "texto": "Ganador del premio \"Acelera y Envía\"",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      956,
+      646,
+      414,
+      24
+     ],
+     "texto": "Elaborado por Wortev y Estafeta",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      723,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame_718.jpg",
+     "alt": "Frame_718.jpg",
+     "natural": [
+      720,
+      720
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      70,
+      1161,
+      414,
+      29
+     ],
+     "texto": "Primer Lugar en Innovación Estatal",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      70,
+      1202,
+      414,
+      96
+     ],
+     "texto": "Instituto Sinaloense de la Juventud",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      513,
+      723,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/IMG_3514_2.jpg",
+     "alt": "IMG_3514_2.jpg",
+     "natural": [
+      720,
+      718
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      513,
+      1161,
+      414,
+      58
+     ],
+     "texto": "Seleccionados campamento nacional POSiBLE",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      513,
+      1230,
+      414,
+      24
+     ],
+     "texto": "Programa nacional de emprendimiento y networking",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      956,
+      723,
+      414,
+      414
+     ],
+     "radius": "32px",
+     "src": "/media/files/Frame_721.jpg",
+     "alt": "Frame_721.jpg",
+     "natural": [
+      720,
+      720
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      956,
+      1161,
+      414,
+      58
+     ],
+     "texto": "Ganador en emprendimiento premio municipal de la juventud",
+     "font": "Archivo",
+     "size": "23.04px",
+     "weight": "500",
+     "lh": "28.8px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      956,
+      1230,
+      414,
+      24
+     ],
+     "texto": "Otorgado por el Instituto Municipal de la Juventud",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "left"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__text_EFGjRk",
+   "tipo": "Text Section",
+   "caja": [
+    0,
+    7842,
+    1440,
+    710
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column top-xs t",
+     "caja": [
+      70,
+      96,
+      1300,
+      518
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      80,
+      96,
+      1280,
+      69
+     ],
+     "texto": "Sabemos que esto es solo el comienzo. Queremos seguir mejorando y expandiendo nuestro alcance para ayudar a más personas en México y en otro",
+     "font": "Archivo",
+     "size": "27.648px",
+     "weight": "500",
+     "lh": "34.56px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      80,
+      194,
+      1280,
+      100
+     ],
+     "texto": "Porque al final, no se trata solo de vender un producto.",
+     "font": "Archivo",
+     "size": "39.8131px",
+     "weight": "500",
+     "lh": "49.7664px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      384,
+      197,
+      919,
+      93
+     ],
+     "texto": "Se trata de proteger hogares, negocios y sueños.",
+     "font": "Archivo",
+     "size": "39.8131px",
+     "weight": "500",
+     "lh": "49.7664px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      718,
+      322,
+      4,
+      24
+     ],
+     "texto": ".",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      660,
+      394,
+      120,
+      24
+     ],
+     "texto": "Con cariño",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      660,
+      450,
+      120,
+      24
+     ],
+     "texto": "Equipo Diluvium",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      601,
+      522,
+      239,
+      44
+     ],
+     "texto": "Volver a la página de inicio",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px",
+     "href": "https://www.diluvium.com.mx"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__video_with_text_U3TQ8g",
+   "tipo": "Video With Text Section",
+   "caja": [
+    0,
+    8553,
+    1440,
+    693
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content gap-horizontal-md center-xs fd-",
+     "caja": [
+      70,
+      96,
+      1300,
+      501
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "28.8px",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content s-header__banner d-flex fd-column middle-x",
+     "caja": [
+      70,
+      96,
+      381,
+      130
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "flex-start",
+     "align": "flex-start",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "div",
+     "caja": [
+      70,
+      96,
+      209,
+      24
+     ],
+     "texto": "Aqui puedes ver nuestra",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "left"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      70,
+      132,
+      327,
+      41
+     ],
+     "texto": "Entrevista con",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(255, 255, 255)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      291,
+      134,
+      106,
+      36
+     ],
+     "texto": "Wortev",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(248, 160, 29)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      70,
+      202,
+      298,
+      24
+     ],
+     "texto": "En su podcast \"The talk para emprender\"",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      480,
+      96,
+      890,
+      501
+     ],
+     "src": "/media/files/Captura_de_pantalla_2025-05-09_a_la_s_11.49.55_a.m..jpg",
+     "alt": "Cargar vídeo",
+     "natural": [
+      918,
+      470
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      913,
+      334,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__multiple_product_tabs_6Wik6g",
+   "tipo": "Multiple Product Tabs Section",
+   "caja": [
+    0,
+    9245,
+    1440,
+    957
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section ctnr d-flex fd-column  ",
+     "caja": [
+      6,
+      0,
+      1428,
+      957
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "48px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "96px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "s-header__content d-flex fd-column middle-xs ta-center middl",
+     "caja": [
+      70,
+      96,
+      1300,
+      41
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex fd-column gap-content",
+     "caja": [
+      70,
+      217,
+      1300,
+      643
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "48px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw r-gap-equal js-carousel-items ox-auto p-relative scrollab",
+     "caja": [
+      -72,
+      217,
+      1585,
+      643
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "28.8px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "10px 128px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      70,
+      227,
+      414,
+      623
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      70,
+      642,
+      414,
+      209
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "24px 20px"
+    },
+    {
+     "tag": "span",
+     "cls": "price__sale  d-flex middle-xs fw-wrap gap-8 ta-center center",
+     "caja": [
+      90,
+      727,
+      374,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      513,
+      227,
+      414,
+      623
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      513,
+      642,
+      414,
+      209
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "24px 20px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      956,
+      227,
+      414,
+      623
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      956,
+      642,
+      414,
+      209
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "24px 20px"
+    },
+    {
+     "tag": "div",
+     "cls": "sht-card product-card product-card--alt d-flex fd-column pro",
+     "caja": [
+      1399,
+      227,
+      414,
+      623
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "card__content d-flex fd-column gap-16 flex-1 w-100 wb-break-",
+     "caja": [
+      1399,
+      642,
+      414,
+      209
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "16px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "24px 20px"
+    },
+    {
+     "tag": "span",
+     "cls": "price__sale  d-flex middle-xs fw-wrap gap-8 ta-center center",
+     "caja": [
+      1419,
+      727,
+      374,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      491,
+      96,
+      458,
+      41
+     ],
+     "texto": "Otras personas también vieron",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      98,
+      247,
+      107,
+      18
+     ],
+     "texto": "Rebaja hasta 8%",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "lh": "17.5px",
+     "color": "rgb(29, 107, 28)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      90,
+      247,
+      374,
+      374
+     ],
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "natural": [
+      360,
+      360
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      163,
+      667,
+      229,
+      17
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      211,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      229,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      247,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      265,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      283,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      283,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      304,
+      703,
+      34,
+      15
+     ],
+     "texto": "(204)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      168,
+      731,
+      103,
+      16
+     ],
+     "texto": "$ 5,999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "600",
+     "lh": "17px",
+     "color": "rgba(49, 49, 49, 0.63)",
+     "align": "center",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      279,
+      727,
+      108,
+      24
+     ],
+     "texto": "$ 5,500.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      210,
+      787,
+      134,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      533,
+      247,
+      374,
+      374
+     ],
+     "src": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+     "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "natural": [
+      360,
+      360
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      543,
+      667,
+      354,
+      37
+     ],
+     "texto": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      658,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      676,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      694,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      712,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      730,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      730,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      751,
+      723,
+      26,
+      15
+     ],
+     "texto": "(22)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      666,
+      747,
+      107,
+      24
+     ],
+     "texto": "$ 7,000.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      653,
+      787,
+      134,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      976,
+      247,
+      374,
+      374
+     ],
+     "src": "/media/products/Frame237.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "natural": [
+      360,
+      360
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      994,
+      667,
+      339,
+      37
+     ],
+     "texto": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1101,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1119,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1137,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1155,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1173,
+      722,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1194,
+      723,
+      26,
+      15
+     ],
+     "texto": "(10)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1094,
+      747,
+      139,
+      24
+     ],
+     "texto": "Desde $ 749.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1096,
+      787,
+      134,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/tapon-inflable-anti-inundaciones"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1427,
+      247,
+      116,
+      18
+     ],
+     "texto": "Rebaja hasta 30%",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "lh": "17.5px",
+     "color": "rgb(29, 107, 28)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      1419,
+      247,
+      374,
+      374
+     ],
+     "src": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+     "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "natural": [
+      360,
+      360
+     ],
+     "fit": "contain",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1419,
+      667,
+      373,
+      17
+     ],
+     "texto": "Funda de repuesto Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(49, 49, 49)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/products/funda-de-repuesto-compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1547,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1565,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1583,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1601,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1619,
+      702,
+      16,
+      16
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1640,
+      703,
+      18,
+      15
+     ],
+     "texto": "(2)",
+     "font": "Archivo",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(49, 49, 49)",
+     "align": "center"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      1508,
+      731,
+      93,
+      16
+     ],
+     "texto": "$ 999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "600",
+     "lh": "17px",
+     "color": "rgba(49, 49, 49, 0.63)",
+     "align": "center",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1608,
+      727,
+      95,
+      24
+     ],
+     "texto": "$ 699.00 MXN",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1539,
+      787,
+      134,
+      40
+     ],
+     "texto": "Ver producto",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 20px",
+     "href": "/products/funda-de-repuesto-compuerta-anti-inundaciones"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245202652__image_banner_FVgnwR",
+   "tipo": "Image Banner Section",
+   "caja": [
+    0,
+    10202,
+    1440,
+    128
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      0,
+      0,
+      1440,
+      128
+     ],
+     "src": "/media/files/Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+     "alt": "Frame_726_545d3bc6-9be1-4c3d-8c4b-81da87c7a2cb.jpg",
+     "natural": [
+      1440,
+      115
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237764316__footer",
+   "tipo": "Section Footer",
+   "caja": [
+    0,
+    10330,
+    1440,
+    814
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "footer__content d-grid gap-32",
+     "caja": [
+      70,
+      200,
+      1300,
+      429
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "32px",
+     "cols": "1300px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw between-xs hide-empty r-gap-32 gap-lg-zero",
+     "caja": [
+      56,
+      200,
+      1329,
+      357
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "0px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "clm d-flex fd-column gap-24 wb-break-word",
+     "caja": [
+      56,
+      200,
+      332,
+      357
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 14.4px",
+     "maxW": "25%"
+    },
+    {
+     "tag": "ul",
+     "cls": "start-xs gap-8 ls-none d-flex fw-wrap hide-empty",
+     "caja": [
+      70,
+      517,
+      303,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "border newletter-spacing pt-8 pt-md-16 br-card-content d-fle",
+     "caja": [
+      734,
+      200,
+      636,
+      182
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "8px 24px 24px"
+    },
+    {
+     "tag": "div",
+     "cls": "form__field d-flex fd-column fd-row-sm fd-column-lg gap-12",
+     "caja": [
+      759,
+      257,
+      586,
+      100
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw hide-empty r-gap-32",
+     "caja": [
+      56,
+      589,
+      1329,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "footer__content__bottom m-auto d-flex center-xs fd-column mi",
+     "caja": [
+      70,
+      693,
+      1300,
+      41
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px 48px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "button",
+     "caja": [
+      70,
+      96,
+      150,
+      40
+     ],
+     "texto": "Volver arriba",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "pad": "6px 20px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      184,
+      108,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      200,
+      200,
+      49
+     ],
+     "src": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+     "alt": "Diluvium",
+     "natural": [
+      200,
+      49
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      317,
+      303,
+      48
+     ],
+     "texto": "Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      397,
+      303,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      453,
+      303,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      80,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      128,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      176,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      224,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      402,
+      200,
+      303,
+      40
+     ],
+     "texto": "Main menu",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      240,
+      39,
+      48
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      288,
+      76,
+      48
+     ],
+     "texto": "Productos",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      336,
+      69,
+      48
+     ],
+     "texto": "Contacto",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      384,
+      67,
+      48
+     ],
+     "texto": "Nosotros",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(248, 160, 29)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      432,
+      33,
+      48
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      759,
+      209,
+      586,
+      40
+     ],
+     "texto": "Suscríbete para ofertas y descuentos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      759,
+      313,
+      586,
+      44
+     ],
+     "texto": "Suscribirme",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(237, 237, 237)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      589,
+      303,
+      40
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/search"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      70,
+      597,
+      303,
+      24
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      589,
+      303,
+      40
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/terms-of-service"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      402,
+      597,
+      303,
+      24
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      734,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/refund-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      734,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1067,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/privacy-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1067,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      1153,
+      705,
+      79,
+      16
+     ],
+     "texto": "© •",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1167,
+      705,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1233,
+      705,
+      138,
+      16
+     ],
+     "texto": "Tecnología de Shopify",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "https://es.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+    }
+   ]
+  }
+ ]
+}

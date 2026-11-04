@@ -14,7 +14,8 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 MEDIDAS = RAIZ / "docs/sitio-actual/medidas"
-CAPTURAS = RAIZ / "docs/sitio-actual/capturas/2026-10-31"
+# La captura más nueva que exista de cada página y vista (las del 3-nov van con las medidas del mismo día).
+CARPETAS_CAPTURAS = [RAIZ / "docs/sitio-actual/capturas/2026-11-03", RAIZ / "docs/sitio-actual/capturas/2026-10-31"]
 
 
 def linea(e: dict) -> str:
@@ -47,7 +48,8 @@ def main() -> None:
             foto = salida / f"{base}-{vista}-replica.jpg"
         else:
             datos = json.loads((MEDIDAS / f"{pagina}-{vista}.json").read_text())
-            foto = CAPTURAS / f"{pagina}-{vista}.jpg"
+            foto = next((c / f"{pagina}-{vista}.jpg" for c in CARPETAS_CAPTURAS if (c / f"{pagina}-{vista}.jpg").exists()),
+                        CARPETAS_CAPTURAS[0] / f"{pagina}-{vista}.jpg")
         for i in indices:
             s = datos["secciones"][i]
             x, y, w, h = s["caja"]

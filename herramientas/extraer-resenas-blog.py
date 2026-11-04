@@ -1,11 +1,11 @@
-"""Saca del HTML capturado del sitio actual las reseñas publicadas y la lista de artículos del blog.
+"""Saca del HTML capturado del sitio actual las reseñas publicadas (Trustoo).
 
-Solo guarda lo que la página muestra al público: nombre como aparece, estrellas, texto y fotos de cada reseña
-(Trustoo); título, dirección, foto, resumen y fecha de cada artículo. Nada de pedidos, correos ni teléfonos.
+Solo guarda lo que la página muestra al público: nombre como aparece, estrellas, texto y fotos de cada reseña.
+Nada de pedidos, correos ni teléfonos. Los artículos del blog ya no salen de aquí: contenido/blog.json lo genera
+herramientas/extraer-articulos.py (con más campos; este script no lo toca).
 
 Uso: python3 -I herramientas/extraer-resenas-blog.py [--sin-fotos]
-Salida: contenido/resenas.json, contenido/blog.json y las fotos de reseñas en public/media/resenas/
-(las fotos de artículos ya están en public/media/articles/; si falta alguna, se descarga ahí).
+Salida: contenido/resenas.json y las fotos de reseñas en public/media/resenas/
 """
 
 import html
@@ -19,9 +19,7 @@ from urllib.parse import urlparse
 RAIZ = Path(__file__).resolve().parent.parent
 PORTADA = RAIZ / "docs/sitio-actual/capturas/2026-11-03/portada.html"
 RESENAS = RAIZ / "docs/sitio-actual/capturas/2026-10-31/resenas.html"
-BLOG = RAIZ / "docs/sitio-actual/capturas/2026-10-31/blog.html"
 FOTOS_RESENAS = RAIZ / "public/media/resenas"
-FOTOS_ARTICULOS = RAIZ / "public/media/articles"
 # Solo se descargan fotos de estos servidores (las de Trustoo y las de la tienda).
 SERVIDORES = {"img.trustoo.io", "www.diluvium.com.mx", "cdn.shopify.com"}
 
@@ -131,37 +129,6 @@ def pagina_resenas(sin_fotos: bool) -> list[dict]:
     return salida
 
 
-def articulos_blog(sin_fotos: bool) -> list[dict]:
-    """Tarjetas de /blogs/blog en el orden del sitio (más nuevo primero)."""
-    h = BLOG.read_text(encoding="utf-8")
-    salida = []
-    for tarjeta in re.split(r'<div class="sht-card card', h)[1:]:
-        enlace = re.search(r'<h3[^>]*card__heading[^>]*>\s*<a href="([^"]+)">([\s\S]*?)</a>', tarjeta)
-        if not enlace:
-            continue
-        imagen = re.search(r'<img src="([^"]+)" alt="([^"]*)"[^>]*?width="(\d+)" height="(\d+)"', tarjeta)
-        fecha = re.search(r'<span class="d-inline-block">([\s\S]*?)</span>', tarjeta)
-        resumen = re.search(r'class="card__excerpt[^"]*">([\s\S]*?)</p>', tarjeta)
-        articulo = {
-            "titulo": limpio(enlace.group(2)),
-            "url": enlace.group(1),
-            "fecha": limpio(fecha.group(1)) if fecha else "",
-            "resumen": limpio(resumen.group(1)) if resumen else "",
-        }
-        if imagen:
-            original = "https:" + html.unescape(imagen.group(1)).split("?")[0] if imagen.group(1).startswith("//") else html.unescape(imagen.group(1)).split("?")[0]
-            nombre = Path(urlparse(original).path).name
-            descargar(original, FOTOS_ARTICULOS / nombre, sin_fotos)
-            articulo["imagen"] = {
-                "src": f"/media/articles/{nombre}",
-                "alt": limpio(imagen.group(2)),
-                "ancho": int(imagen.group(3)),
-                "alto": int(imagen.group(4)),
-            }
-        salida.append(articulo)
-    return salida
-
-
 def main() -> None:
     sin_fotos = "--sin-fotos" in sys.argv
     carrusel = carrusel_portada(sin_fotos)
@@ -170,15 +137,9 @@ def main() -> None:
         "carrusel": carrusel,
         "pagina": pagina_resenas(sin_fotos),
     }
-    blog = {
-        "fuente": "Artículos de /blogs/blog, sacados del HTML capturado por herramientas/extraer-resenas-blog.py",
-        "articulos": articulos_blog(sin_fotos),
-    }
-    for nombre, datos in (("resenas.json", resenas), ("blog.json", blog)):
-        (RAIZ / "contenido" / nombre).write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (RAIZ / "contenido" / "resenas.json").write_text(json.dumps(resenas, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     filas = carrusel["filas"]
     print(f"carrusel: {len(filas)} filas, {sum(len(f) for f in filas)} reseñas · página: {len(resenas['pagina'])} reseñas")
-    print(f"blog: {len(blog['articulos'])} artículos")
 
 
 if __name__ == "__main__":

@@ -19,22 +19,24 @@ export type ResenaTarjeta = {
   texto: string;
   foto: { src: string; ancho: number; alto: number } | null;
   variasFotos: boolean;
+  /** Producto reseñado (solo en la página de todas las reseñas): enlace con su foto al pie de la tarjeta. */
+  producto?: { titulo: string; url: string; foto: string };
 };
 
 const POR_PAGINA = 13;
-const SEPARACION_X = 12;
-const SEPARACION_Y = 16;
+export const SEPARACION_X = 12;
+export const SEPARACION_Y = 16;
 
-const ORDENES = [
+export const ORDENES = [
   { clave: "destacados", texto: "Destacados" },
   { clave: "foto", texto: "Prioridad de foto" },
   { clave: "nuevo", texto: "El más nuevo" },
   { clave: "altas", texto: "Calificaciones más altas" },
   { clave: "bajas", texto: "Calificaciones más bajas" },
 ] as const;
-type Orden = (typeof ORDENES)[number]["clave"];
+export type Orden = (typeof ORDENES)[number]["clave"];
 
-function ordenar(lista: ResenaTarjeta[], orden: Orden): ResenaTarjeta[] {
+export function ordenar(lista: ResenaTarjeta[], orden: Orden): ResenaTarjeta[] {
   const copia = [...lista];
   // «Destacados» y «El más nuevo» quedan en el orden publicado: las reseñas guardadas no traen fecha ni destacado.
   if (orden === "foto") copia.sort((a, b) => Number(Boolean(b.foto)) - Number(Boolean(a.foto)) || a.id - b.id);
@@ -67,7 +69,7 @@ function Flecha({ izquierda = false }: { izquierda?: boolean }) {
   );
 }
 
-function Tarjeta({
+export function Tarjeta({
   resena,
   corte,
   completa,
@@ -104,7 +106,7 @@ function Tarjeta({
             alt=""
             width={resena.foto.ancho}
             height={resena.foto.alto}
-            sizes="(min-width: 1200px) 270px, (min-width: 768px) 235px, 50vw"
+            sizes={resena.producto ? "(min-width: 768px) 204px, 50vw" : "(min-width: 1200px) 270px, (min-width: 768px) 235px, 50vw"}
             className="block h-auto w-full rounded-t-lg"
           />
           {resena.variasFotos && (
@@ -138,11 +140,26 @@ function Tarjeta({
           </span>
         )}
       </p>
+      {resena.producto && (
+        <a
+          href={resena.producto.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-4 mt-8 flex items-center border-t border-black/[0.09] pt-2 text-xs leading-[normal] text-naranja"
+        >
+          <span
+            className="block h-10 w-10 shrink-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${resena.producto.foto})` }}
+            aria-hidden="true"
+          />
+          <span className="ml-3 block min-w-0 flex-1 text-black [word-break:break-word]">{resena.producto.titulo}</span>
+        </a>
+      )}
     </div>
   );
 }
 
-function Detalle({
+export function Detalle({
   resena,
   alCerrar,
   alAnterior,

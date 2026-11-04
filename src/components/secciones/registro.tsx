@@ -25,6 +25,15 @@ import { ProductoPrincipal } from "./ProductoPrincipal";
 import { CodigoPropio } from "./CodigoPropio";
 import { PreguntasFrecuentes } from "./PreguntasFrecuentes";
 import { MigasDePan } from "./MigasDePan";
+import { ContenidoPagina } from "./ContenidoPagina";
+import { Texto } from "./Texto";
+import { ListaArticulos } from "./ListaArticulos";
+import { Articulo } from "./Articulo";
+import { ProductosColeccion } from "./ProductosColeccion";
+import { ListaColecciones } from "./ListaColecciones";
+import { Carrito } from "./Carrito";
+import { Busqueda } from "./Busqueda";
+import { NoEncontrada } from "./NoEncontrada";
 
 // `producto` llega en las páginas de producto (el de esa página); en las demás páginas no viene.
 export type PropsSeccion = { seccion: Seccion; producto?: Producto };
@@ -53,6 +62,15 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "custom-liquid": CodigoPropio,
   faqs: PreguntasFrecuentes,
   breadcrumb: MigasDePan,
+  "main-page": ContenidoPagina,
+  "text": Texto,
+  "main-blog": ListaArticulos,
+  "main-article": Articulo,
+  "main-collection-products": ProductosColeccion,
+  "main-list-collections": ListaColecciones,
+  "main-cart": Carrito,
+  "main-search": Busqueda,
+  "main-404": NoEncontrada,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

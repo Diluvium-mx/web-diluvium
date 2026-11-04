@@ -1,0 +1,5040 @@
+{
+ "url": "https://www.diluvium.com.mx/pages/reviews",
+ "ancho": 1440,
+ "altoPagina": 33556,
+ "secciones": [
+  {
+   "id": "shopify-section-sections--23149237928156__running_content_WwxgYn",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    0,
+    1440,
+    68
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      23,
+      1440,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -470,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      699,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1867,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3036,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      4205,
+      23,
+      1169,
+      23
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -454,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -129,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -75,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      -50,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      271,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      325,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      374,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      660,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      715,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1040,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1094,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1119,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1439,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1494,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1543,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1829,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1883,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2208,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2263,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2287,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2608,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2662,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2711,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2997,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3052,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3377,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3431,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3456,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3777,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3831,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3880,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4166,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4221,
+      23,
+      293,
+      23
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4546,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      4600,
+      23,
+      313,
+      23
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4625,
+      24,
+      289,
+      20
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4945,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      5000,
+      23,
+      303,
+      23
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      5048,
+      24,
+      254,
+      20
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      5335,
+      23,
+      23,
+      23
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__extra-info-header",
+   "tipo": "",
+   "caja": [
+    0,
+    68,
+    1440,
+    57
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-small-padding extra-info-header__content ctnr",
+     "caja": [
+      6,
+      0,
+      1428,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "extra-info-header__left",
+     "caja": [
+      70,
+      16,
+      350,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      16,
+      125,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "tel:(668) 241 9579"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      70,
+      21,
+      14,
+      15
+     ],
+     "viewBox": "0 0 61 64"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      216,
+      16,
+      204,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "mailto:contacto@diluvium.com.mx"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      1313,
+      16,
+      57,
+      24
+     ],
+     "texto": "🇲🇽MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__header",
+   "tipo": "Header Section",
+   "caja": [
+    0,
+    125,
+    1440,
+    85
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "header",
+     "cls": "header ctnr header--horizontal header--horizontal-left heade",
+     "caja": [
+      6,
+      0,
+      1428,
+      85
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px 32px",
+     "cols": "200px 954px 82px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "ul",
+     "cls": "main__menu d-flex c-gap-2x middle-xs fd-row fw-wrap h-100 m-",
+     "caja": [
+      302,
+      22,
+      954,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 32px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      16,
+      200,
+      53
+     ],
+     "src": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+     "alt": "Diluvium",
+     "natural": [
+      400,
+      105
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      302,
+      22,
+      47,
+      40
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      302,
+      30,
+      47,
+      24
+     ],
+     "texto": "Inicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      381,
+      22,
+      90,
+      40
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      381,
+      30,
+      90,
+      24
+     ],
+     "texto": "Productos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      503,
+      22,
+      80,
+      40
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      503,
+      30,
+      80,
+      24
+     ],
+     "texto": "Contacto",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      615,
+      22,
+      80,
+      40
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      615,
+      30,
+      80,
+      24
+     ],
+     "texto": "Nosotros",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      727,
+      22,
+      40,
+      40
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      727,
+      30,
+      40,
+      24
+     ],
+     "texto": "Blog",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1298,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1336,
+      20,
+      44,
+      44
+     ],
+     "texto": "Carrito 0 artículos",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/cart"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1346,
+      30,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149245169884__main",
+   "tipo": "Main Page Section",
+   "caja": [
+    0,
+    209,
+    1440,
+    32533
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "section ctnr d-grid gap-2x   hide-empty wb-break-word",
+     "caja": [
+      6,
+      0,
+      1428,
+      32533
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "48px",
+     "cols": "1300px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "96px 64px",
+     "maxW": "1428px"
+    },
+    {
+     "tag": "div",
+     "cls": "",
+     "caja": [
+      403,
+      185,
+      634,
+      458
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "40px 0px 30px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-head-content",
+     "caja": [
+      403,
+      285,
+      634,
+      328
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "20px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "tt-head-left ",
+     "caja": [
+      454,
+      285,
+      532,
+      242
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "32px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px",
+     "maxW": "532px"
+    },
+    {
+     "tag": "div",
+     "cls": "product-rating",
+     "caja": [
+      645,
+      285,
+      150,
+      100
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "vstar-star",
+     "caja": [
+      645,
+      357,
+      150,
+      20
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "center",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "head-center",
+     "caja": [
+      600,
+      417,
+      240,
+      110
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "10px normal",
+     "cols": "59px 136px 45px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px",
+     "maxW": "300px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      1017,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      634,
+      1272,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      850,
+      1319,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      1645,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      634,
+      2016,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      850,
+      1914,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      2241,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      850,
+      2619,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      634,
+      2490,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      2712,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      634,
+      3074,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      850,
+      3193,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      3366,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      634,
+      3650,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      850,
+      3879,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    },
+    {
+     "tag": "a",
+     "cls": "related-product",
+     "caja": [
+      419,
+      3933,
+      171,
+      49
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "8px 0px 0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      579,
+      96,
+      282,
+      41
+     ],
+     "texto": "Customer Reviews",
+     "font": "Archivo",
+     "size": "33.1776px",
+     "weight": "500",
+     "lh": "41.472px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      680,
+      225,
+      80,
+      20
+     ],
+     "texto": "Reseñas",
+     "font": "Instrument Sans",
+     "size": "20px",
+     "weight": "600",
+     "lh": "20px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      697,
+      281,
+      47,
+      39
+     ],
+     "texto": "4.9",
+     "font": "Instrument Sans",
+     "size": "32px",
+     "weight": "700",
+     "lh": "32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      665,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      687,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      709,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      731,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      753,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      753,
+      357,
+      20,
+      20
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      645,
+      385,
+      150,
+      18
+     ],
+     "texto": "238",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      708,
+      385,
+      50,
+      18
+     ],
+     "texto": "reseñas",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      600,
+      417,
+      9,
+      14
+     ],
+     "texto": "5",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      612,
+      415,
+      47,
+      18
+     ],
+     "texto": "estrella",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      795,
+      417,
+      45,
+      14
+     ],
+     "texto": "224",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      600,
+      441,
+      9,
+      14
+     ],
+     "texto": "4",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      612,
+      439,
+      47,
+      18
+     ],
+     "texto": "estrella",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      795,
+      441,
+      45,
+      14
+     ],
+     "texto": "13",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      600,
+      465,
+      9,
+      14
+     ],
+     "texto": "3",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      612,
+      463,
+      47,
+      18
+     ],
+     "texto": "estrella",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      795,
+      465,
+      45,
+      14
+     ],
+     "texto": "0",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      600,
+      489,
+      9,
+      14
+     ],
+     "texto": "2",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      612,
+      487,
+      47,
+      18
+     ],
+     "texto": "estrella",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      795,
+      489,
+      45,
+      14
+     ],
+     "texto": "0",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      600,
+      513,
+      9,
+      14
+     ],
+     "texto": "1",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      612,
+      511,
+      47,
+      18
+     ],
+     "texto": "estrella",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      795,
+      513,
+      45,
+      14
+     ],
+     "texto": "1",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "14px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      592,
+      563,
+      256,
+      40
+     ],
+     "texto": "Escribir una reseña de la tienda",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "600",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "radius": "10px",
+     "border": "1px solid rgba(143, 143, 143, 0.8)",
+     "pad": "4px 24px"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      403,
+      643,
+      107,
+      29
+     ],
+     "texto": "Reseñas ( )",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "600",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      476,
+      643,
+      27,
+      20
+     ],
+     "texto": "238",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "600",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      533,
+      643,
+      170,
+      26
+     ],
+     "texto": "( )",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      533,
+      643,
+      148,
+      20
+     ],
+     "texto": "Reseñas de la tienda",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      686,
+      643,
+      9,
+      20
+     ],
+     "texto": "0",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      912,
+      685,
+      107,
+      18
+     ],
+     "texto": "Prioridad de foto",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "right"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1027,
+      693,
+      10,
+      6
+     ],
+     "viewBox": "0 0 10 6"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      719,
+      203,
+      152
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2025/5/16/XfRn45zB5W.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      300
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      890,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      890,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      890,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      890,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      890,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      916,
+      73,
+      18
+     ],
+     "texto": "Carmela C.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      946,
+      171,
+      39
+     ],
+     "texto": "Tiene un exelente ajuste y fácil de instalar",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      1017,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      1031,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      719,
+      203,
+      270
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/10/1/ZSpiewKZJt.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      376,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      1008,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      1008,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      1008,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      1008,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      1008,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1034,
+      64,
+      18
+     ],
+     "texto": "Juan C. A.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      1064,
+      171,
+      176
+     ],
+     "texto": "Soy Juan Carlos Ávila quiero contarles que con el paso del huracán Otis en Acapulco mi casa quedó llena de lodo, nos dimos a la tarea de bus",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1201,
+      152,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1201,
+      152,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      634,
+      1272,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      686,
+      1286,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1007,
+      727,
+      22,
+      22
+     ],
+     "viewBox": "0 0 22 22"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      834,
+      719,
+      203,
+      396
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/7/18/EzTBWf8m2N.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      257,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      850,
+      1133,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      866,
+      1133,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      882,
+      1133,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      1133,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      914,
+      1133,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      1159,
+      59,
+      18
+     ],
+     "texto": "Blanca T.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      850,
+      1189,
+      171,
+      98
+     ],
+     "texto": "En el 2021 compré una medidna y me funcionó excelente, esta vez compré una chica y estoy feliz de sentirme segura",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      850,
+      1319,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      902,
+      1333,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      576,
+      1106,
+      22,
+      22
+     ],
+     "viewBox": "0 0 22 22"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      1098,
+      203,
+      265
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/7/18/wNjmk4rTZY.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      384,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      1381,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      1381,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      1381,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      1381,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      1381,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      1407,
+      57,
+      18
+     ],
+     "texto": "Marco E.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      1437,
+      171,
+      176
+     ],
+     "texto": "Decidí adquirir mi compuerta anti inundaciones por el riesgo latente al cual esta expuesta mi casa cuando una lluvia fuerte cae en la ciudad",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      1574,
+      142,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      1574,
+      142,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      1645,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      1659,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      792,
+      1361,
+      22,
+      22
+     ],
+     "viewBox": "0 0 22 22"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      1353,
+      203,
+      361
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/7/3/3jC3xcijGp.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      282,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      1732,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      1732,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      1732,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      1732,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      1732,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1758,
+      48,
+      18
+     ],
+     "texto": "Elías N.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      1788,
+      171,
+      196
+     ],
+     "texto": "Lo compré como prevención, sin embargo no lo he necesitado, lo revise y se ve de material de buena calidad y llego en tiempo y perfectamente",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1945,
+      164,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      1945,
+      164,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      634,
+      2016,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      686,
+      2030,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      834,
+      1399,
+      203,
+      271
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/6/20/sQFkYf4Xae.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      375,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      850,
+      1688,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      866,
+      1688,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      882,
+      1688,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      1688,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      914,
+      1688,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      1714,
+      67,
+      18
+     ],
+     "texto": "Horacio R.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      850,
+      1744,
+      171,
+      137
+     ],
+     "texto": "Estoy muy satisfecho con la compuerta que compre para proteger mi negocio de inundaciones. Es robusta, de alta calidad y su instalación fue ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      850,
+      1914,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      902,
+      1928,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      1726,
+      203,
+      271
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/6/7/day3DmXKNA.JPG?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      375,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      2015,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      2015,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      2015,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      2015,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      2015,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      2041,
+      45,
+      18
+     ],
+     "texto": "Juan L.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      2071,
+      171,
+      137
+     ],
+     "texto": "Ya lo probe en la puerta peatonal y quedo perfecto. A esperar las proximas lluvias fuertes para utilizarlo. Se ve muy resistente y de buena ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      2241,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      2255,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      834,
+      1994,
+      203,
+      362
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/5/25/anBmrZMz2E.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      281,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      850,
+      2374,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      866,
+      2374,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      882,
+      2374,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      2374,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      914,
+      2374,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      2400,
+      54,
+      18
+     ],
+     "texto": "Juana R.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      850,
+      2430,
+      171,
+      157
+     ],
+     "texto": "El servicio fue profesional, la instalación muy facil y rápida confirme las instrucciones, la entrega acorde a lo prometido. Estoy complacid",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      850,
+      2619,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      902,
+      2633,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      2096,
+      203,
+      209
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/5/2/T8sdFYB4Y4.jpeg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      412
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      2324,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      2324,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      2324,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      2324,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      2324,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      2350,
+      42,
+      18
+     ],
+     "texto": "Elza L.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      2380,
+      171,
+      78
+     ],
+     "texto": "Excelente atención, mi paquete llegó en el tiempo estimado, quedé muy conforme. Gracias",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      634,
+      2490,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      686,
+      2504,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      2321,
+      203,
+      246
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/5f6e8a1c-6498-4ec2-aa37-0909f1c5e83c.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      483
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      2585,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      2585,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      2585,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      2585,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      2585,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      2611,
+      68,
+      18
+     ],
+     "texto": "PEDRO M.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      2641,
+      171,
+      39
+     ],
+     "texto": "QUEDO EXCELENTE MUCHAS GRACIAS!!",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      2712,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      2726,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      2571,
+      203,
+      221
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/e4a8bdf1-0b99-44d4-b265-73ea291c8396.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      434
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      2810,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      2810,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      2810,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      2810,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      2810,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      2836,
+      98,
+      18
+     ],
+     "texto": "Maximiliano G.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      2866,
+      171,
+      176
+     ],
+     "texto": "Se ve duradera, tiene un gato en el medio que presiona bien, la semana pasada hubiera entrado unos 5 cm de agua si no tuvieramos compuerta, ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      3003,
+      159,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      3003,
+      159,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      634,
+      3074,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      686,
+      3088,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      834,
+      2699,
+      203,
+      211
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/ddacd39a-42e3-4a40-931a-2773db43a6b0.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      416
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      850,
+      2929,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      866,
+      2929,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      882,
+      2929,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      2929,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      914,
+      2929,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      2955,
+      61,
+      18
+     ],
+     "texto": "Jose R. R.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      850,
+      2985,
+      171,
+      176
+     ],
+     "texto": "Increible! No descansaba en las noches cuando habia tormenta porque pensaba que se iba a meter mientras estaba dormido, ahora duermo como be",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      3122,
+      171,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      3122,
+      171,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      850,
+      3193,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      902,
+      3207,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      2793,
+      203,
+      271
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/9668d290-37da-455a-9a12-01e16301a239.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      375,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      3082,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      3082,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      3082,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      3082,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      3082,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3108,
+      57,
+      18
+     ],
+     "texto": "Laura M.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      3138,
+      171,
+      196
+     ],
+     "texto": "Siempre temiamos por la seguridad de nuestros hijos durante las inundaciones. Pero ahora sabemos que estan seguros gracias a este producto, ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3295,
+      139,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3295,
+      139,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      3366,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      3380,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      3155,
+      203,
+      271
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/3e4b7c7f-9741-4351-b1a1-f419281bb567.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      375,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      3444,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      3444,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      3444,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      3444,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      3444,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      3470,
+      43,
+      18
+     ],
+     "texto": "Luis C.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      3500,
+      171,
+      118
+     ],
+     "texto": "Llegó en perfecto estado y antes del tiempo estimado de entrega, cuenta con todo lo necesario para su instalación y se instala rápido y fáci",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      634,
+      3650,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      686,
+      3664,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      834,
+      3274,
+      203,
+      362
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/8bd4b952-58ea-4ffd-b582-b2765607241a.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      281,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      850,
+      3654,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      866,
+      3654,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      882,
+      3654,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      898,
+      3654,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      914,
+      3654,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      850,
+      3680,
+      37,
+      18
+     ],
+     "texto": "Fer Z.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      850,
+      3710,
+      171,
+      137
+     ],
+     "texto": "Excelente producto! Fácil de instalar y queda bien firme, la colocamos en minutos y me siguen preguntando los vecinos que si donde la compré",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      850,
+      3879,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      902,
+      3893,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      403,
+      3447,
+      203,
+      203
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/178d7562-df15-4f0e-b721-7da4fbb74893.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      400,
+      400
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      419,
+      3669,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      435,
+      3669,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      451,
+      3669,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      467,
+      3669,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      3669,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3695,
+      53,
+      18
+     ],
+     "texto": "Maria E.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      419,
+      3725,
+      171,
+      176
+     ],
+     "texto": "Pusimos de estas en las entradas y tapones en los baños, llegaron en 4 días y las pudimos poner sin problema, los muchachos muy atentos nos ",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3862,
+      139,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      419,
+      3862,
+      139,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      419,
+      3933,
+      171,
+      49
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(248, 160, 29)",
+     "align": "left",
+     "border": "1px solid rgba(0, 0, 0, 0.09)",
+     "pad": "8px 0px 0px",
+     "href": "https://www.diluvium.com.mx/products/compuerta-anti-inundaciones"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      471,
+      3947,
+      119,
+      30
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      618,
+      3731,
+      203,
+      271
+     ],
+     "radius": "8px 8px 0px 0px",
+     "src": "https://img.trustoo.io/pro/64793084124/2024/2/7/1f375fb7-6479-41b0-a3d7-7bfdfc3648ca.jpg?x-oss-process=style/trustoo_card_small",
+     "alt": "0",
+     "natural": [
+      375,
+      500
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      634,
+      4020,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      650,
+      4020,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      666,
+      4020,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      682,
+      4020,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      698,
+      4020,
+      14,
+      14
+     ],
+     "viewBox": "0 0 18 17"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      4046,
+      71,
+      18
+     ],
+     "texto": "Gilberto R.",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "700",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      634,
+      4076,
+      171,
+      196
+     ],
+     "texto": "Tenemos un baño en la puerta de atras por donde entraba el agua, el año pasado pedimos una de estas y gaD ya no se ha metido el agua, espere",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "19.6px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      4233,
+      155,
+      38
+     ],
+     "texto": "...",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      634,
+      4233,
+      155,
+      38
+     ],
+     "texto": "Mostrar reseña completa",
+     "font": "Instrument Sans",
+     "size": "14px",
+     "weight": "400",
+     "lh": "12px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237764316__footer",
+   "tipo": "Section Footer",
+   "caja": [
+    0,
+    32742,
+    1440,
+    814
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "footer__content d-grid gap-32",
+     "caja": [
+      70,
+      200,
+      1300,
+      429
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "32px",
+     "cols": "1300px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw between-xs hide-empty r-gap-32 gap-lg-zero",
+     "caja": [
+      56,
+      200,
+      1329,
+      357
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "0px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "clm d-flex fd-column gap-24 wb-break-word",
+     "caja": [
+      56,
+      200,
+      332,
+      357
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 14.4px",
+     "maxW": "25%"
+    },
+    {
+     "tag": "ul",
+     "cls": "start-xs gap-8 ls-none d-flex fw-wrap hide-empty",
+     "caja": [
+      70,
+      517,
+      303,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "border newletter-spacing pt-8 pt-md-16 br-card-content d-fle",
+     "caja": [
+      734,
+      200,
+      636,
+      182
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "8px 24px 24px"
+    },
+    {
+     "tag": "div",
+     "cls": "form__field d-flex fd-column fd-row-sm fd-column-lg gap-12",
+     "caja": [
+      759,
+      257,
+      586,
+      100
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw hide-empty r-gap-32",
+     "caja": [
+      56,
+      589,
+      1329,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "footer__content__bottom m-auto d-flex center-xs fd-column mi",
+     "caja": [
+      70,
+      693,
+      1300,
+      41
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "4px 48px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "button",
+     "caja": [
+      70,
+      96,
+      150,
+      40
+     ],
+     "texto": "Volver arriba",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "pad": "6px 20px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      184,
+      108,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      70,
+      200,
+      200,
+      49
+     ],
+     "src": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+     "alt": "Diluvium",
+     "natural": [
+      200,
+      49
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      317,
+      303,
+      48
+     ],
+     "texto": "Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      397,
+      303,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      70,
+      453,
+      303,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      80,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      128,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      176,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      224,
+      527,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      402,
+      200,
+      303,
+      40
+     ],
+     "texto": "Main menu",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      240,
+      39,
+      48
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      288,
+      76,
+      48
+     ],
+     "texto": "Productos",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      336,
+      69,
+      48
+     ],
+     "texto": "Contacto",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      384,
+      67,
+      48
+     ],
+     "texto": "Nosotros",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      432,
+      33,
+      48
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      759,
+      209,
+      586,
+      40
+     ],
+     "texto": "Suscríbete para ofertas y descuentos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      759,
+      313,
+      586,
+      44
+     ],
+     "texto": "Suscribirme",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(237, 237, 237)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      70,
+      589,
+      303,
+      40
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/search"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      70,
+      597,
+      303,
+      24
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      402,
+      589,
+      303,
+      40
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/terms-of-service"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      402,
+      597,
+      303,
+      24
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      734,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/refund-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      734,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1067,
+      589,
+      303,
+      40
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/privacy-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      1067,
+      597,
+      303,
+      24
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      1153,
+      705,
+      79,
+      16
+     ],
+     "texto": "© •",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1167,
+      705,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      1233,
+      705,
+      138,
+      16
+     ],
+     "texto": "Tecnología de Shopify",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "right",
+     "pad": "0px",
+     "href": "https://es.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+    }
+   ]
+  }
+ ]
+}

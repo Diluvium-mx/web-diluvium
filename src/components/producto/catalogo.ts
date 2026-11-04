@@ -61,8 +61,12 @@ const RESENAS: Record<string, { promedio: number; total: number }> = {
 
 /** Proveedor que la tienda muestra en las tarjetas (ajuste «show_vendor»), tal como está capturado en Shopify. */
 export function proveedor(p: Producto): string {
-  return p.nombre === "compuerta-anti-inundaciones" ? "Diluvium" : "evita-inundarte-mx";
+  return PROVEEDOR_DILUVIUM.has(p.nombre) ? "Diluvium" : "evita-inundarte-mx";
 }
+
+// Productos con «Diluvium» como proveedor (leído de la búsqueda en vivo, 3-nov-2026); los demás dicen
+// «evita-inundarte-mx».
+const PROVEEDOR_DILUVIUM = new Set(["compuerta-anti-inundaciones", "mini-compuerta"]);
 
 export function resenas(p: Producto) {
   return RESENAS[p.nombre];

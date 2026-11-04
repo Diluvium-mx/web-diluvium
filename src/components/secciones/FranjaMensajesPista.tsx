@@ -26,7 +26,7 @@ export function FranjaPista({ velocidad, children }: { velocidad: number; childr
   return (
     <div ref={pista} className="flex w-max">
       {Array.from({ length: COPIAS }, (_, i) => (
-        <div key={i} className="franja-pista flex shrink-0 items-center gap-4 pr-4 md:gap-8 md:pr-8" aria-hidden={i > 0}>
+        <div key={i} className="franja-pista flex shrink-0 items-center gap-4 pr-4 md:gap-6 md:pr-6 min-[1025px]:gap-8 min-[1025px]:pr-8" aria-hidden={i > 0}>
           {children}
         </div>
       ))}

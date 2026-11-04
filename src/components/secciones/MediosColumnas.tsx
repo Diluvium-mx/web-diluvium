@@ -3,7 +3,8 @@
 // Columnas de videos con texto («No necesitas confiar en nosotros, confía en ellos.») (sección
 // «media-with-text-columns»). Cada video muestra su foto con un botón de reproducir; al tocarlo se cambia por el
 // video con controles y con sonido, como en el sitio. Celular y tableta: carrusel que se desliza con el dedo;
-// computadora: 4 columnas.
+// computadora: 4 columnas. Con «list_style» apagado (Nosotros: fotos de premios) va en cuadrícula: una columna en
+// celular, dos en tableta y «columns_per_row» en computadora.
 
 import Image from "next/image";
 import { useState } from "react";
@@ -67,6 +68,29 @@ function Video({ bloque, proporcion }: { bloque: Bloque; proporcion: string }) {
   );
 }
 
+/** Foto cuadrada (o con «image_ratio») de un bloque «image», con las esquinas redondeadas del tema. */
+function Foto({ src, proporcion, columnas }: { src: string; proporcion: string; columnas: number }) {
+  return (
+    <div className="relative overflow-hidden rounded-2xl md:rounded-3xl min-[1025px]:rounded-[32px]" style={{ aspectRatio: proporcion }}>
+      {src && (
+        <Image
+          src={src}
+          alt=""
+          fill
+          sizes={`(min-width: 1025px) ${Math.round(90 / columnas)}vw, (min-width: 768px) 45vw, 100vw`}
+          className="object-cover"
+        />
+      )}
+    </div>
+  );
+}
+
+const COLUMNAS_COMPU: Record<number, string> = {
+  2: "min-[1025px]:grid-cols-2",
+  3: "min-[1025px]:grid-cols-3",
+  4: "min-[1025px]:grid-cols-4",
+};
+
 // CSS propio que la sección trae en el tema («custom_css», no viene en el contenido): en la portada el espacio de
 // abajo es de 20 px.
 const ABAJO_PROPIO: Record<string, string> = { media_with_text_columns_cVz6pJ: "pb-5" };
@@ -83,6 +107,8 @@ export function MediosColumnas({ seccion, producto }: { seccion: Seccion; produc
   const abajo = ABAJO_PROPIO[seccion.id] ?? "pb-[var(--aire)]";
   const alinear = `${ALINEAR_CEL[texto(seccion.ajustes, "content_align_mobile")] ?? ""} ${ALINEAR_COMPU[texto(seccion.ajustes, "content_align_desktop")] ?? ""}`;
   const proporcion = (texto(seccion.ajustes, "image_ratio") || "2/3").replace("/", " / ");
+  const columnas = Number(texto(seccion.ajustes, "columns_per_row")) || 4;
+  const tamanoColumna = texto(seccion.ajustes, "column_heading_size") === "h4" ? "!text-[length:var(--h4)]" : "!text-[length:var(--h5)]";
 
   return (
     <section className={`medios-columnas ${esquema(seccion.ajustes, "scheme-2")}`} data-seccion="media-with-text-columns">
@@ -98,6 +124,27 @@ export function MediosColumnas({ seccion, producto }: { seccion: Seccion; produc
           <Titulo texto={texto(seccion.ajustes, "heading")} className="break-words" />
         </div>
 
+        {texto(seccion.ajustes, "list_style") === "false" ? (
+          <ul
+            className={`m-0 grid list-none grid-cols-1 gap-[14.04px] p-0 md:grid-cols-2 md:gap-6 min-[1025px]:gap-[28.8px] ${
+              COLUMNAS_COMPU[columnas] ?? COLUMNAS_COMPU[3]
+            }`}
+          >
+            {seccion.bloques.map((b) => (
+              <li key={b.id} className="flex min-w-0 flex-col">
+                {b.tipo === "video" ? (
+                  <Video bloque={b} proporcion={proporcion} />
+                ) : (
+                  <Foto src={texto(b.ajustes, "image")} proporcion={proporcion} columnas={columnas} />
+                )}
+                <div className="grid gap-3 break-words py-4 text-left min-[1025px]:py-6">
+                  {texto(b.ajustes, "heading") && <h3 className={`m-0 ${tamanoColumna}`}>{texto(b.ajustes, "heading")}</h3>}
+                  <TextoRico html={texto(b.ajustes, "description")} />
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
         <ul
           className="medios-fila -mx-[var(--margen)] flex snap-x snap-mandatory list-none gap-[3.6vw] overflow-x-auto scroll-px-[var(--margen)] px-[var(--margen)] md:gap-6 min-[1025px]:mx-0 min-[1025px]:grid min-[1025px]:grid-cols-4 min-[1025px]:gap-[2vw] min-[1025px]:overflow-visible min-[1025px]:px-0"
           aria-label="Videos de clientes"
@@ -115,6 +162,7 @@ export function MediosColumnas({ seccion, producto }: { seccion: Seccion; produc
             </li>
           ))}
         </ul>
+        )}
       </div>
     </section>
   );

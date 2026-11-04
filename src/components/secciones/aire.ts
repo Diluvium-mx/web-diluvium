@@ -5,7 +5,7 @@
 
 import productos from "@contenido/productos.json";
 import type { Producto } from "@/components/producto/catalogo";
-import type { Seccion } from "@/lib/contenido";
+import type { NombrePlantilla, Seccion } from "@/lib/contenido";
 import { plantilla, plantillaProducto, siNo, texto } from "@/lib/contenido";
 
 // Fondo de cada esquema de color (los mismos de globals.css). Esquemas con el mismo fondo cuentan como iguales.
@@ -29,11 +29,39 @@ const SIN_FONDO_PROPIO = new Set([
   "whatsapp-form",
 ]);
 
-/** Secciones de la página donde está la sección: la plantilla del producto o, si no hay producto, la portada. */
-function seccionesDeLaPagina(producto?: Producto): Seccion[] {
+// Plantillas de páginas sueltas (sin producto) donde se busca la sección.
+const PLANTILLAS: NombrePlantilla[] = [
+  "portada",
+  "page",
+  "page.nosotros",
+  "page.contact",
+  "page.instalacion",
+  "page.distribuidor",
+  "blog",
+  "article",
+  "collection",
+  "list-collections",
+  "cart",
+  "search",
+  "404",
+];
+
+/** Secciones de la página donde está la sección: la plantilla del producto o, si no hay producto, la plantilla que
+ * contiene esa misma sección (los ids se repiten entre plantillas, así que se compara el objeto mismo). */
+function seccionesDeLaPagina(seccion: Seccion, producto?: Producto): Seccion[] {
   if (producto) {
     const datos = productos.productos.find((p) => p.nombre === producto.nombre);
     return plantillaProducto(datos?.plantilla ?? "").secciones;
+  }
+  for (const nombre of PLANTILLAS) {
+    const lista = plantilla(nombre)?.secciones;
+    if (lista?.includes(seccion)) return lista;
+  }
+  // En piezas del navegador («use client») la sección llega copiada: se busca la que tenga el mismo contenido.
+  const copia = JSON.stringify(seccion);
+  for (const nombre of PLANTILLAS) {
+    const lista = plantilla(nombre)?.secciones;
+    if (lista?.some((s) => s.id === seccion.id && JSON.stringify(s) === copia)) return lista;
   }
   return plantilla("portada").secciones;
 }
@@ -45,11 +73,18 @@ function fondo(seccion: Seccion): string {
 /** ¿La sección va sin aire arriba? (por su ajuste o porque la anterior tiene el mismo fondo) */
 export function sinAireArriba(seccion: Seccion, producto?: Producto): boolean {
   if (siNo(seccion.ajustes, "remove_padding_top")) return true;
-  const lista = seccionesDeLaPagina(producto);
-  const i = lista.findIndex((s) => s.id === seccion.id);
+  const lista = seccionesDeLaPagina(seccion, producto);
+  const i = lista.includes(seccion) ? lista.indexOf(seccion) : lista.findIndex((s) => s.id === seccion.id);
   const anterior = i > 0 ? lista[i - 1] : undefined;
   if (!anterior || SIN_FONDO_PROPIO.has(anterior.tipo)) return false;
   return fondo(anterior) === fondo(seccion);
+}
+
+/** ¿Es la última sección de su página? (en vivo, una franja al final deja además un renglón de aire abajo) */
+export function esUltimaDeLaPagina(seccion: Seccion, producto?: Producto): boolean {
+  const lista = seccionesDeLaPagina(seccion, producto);
+  const ultima = lista[lista.length - 1];
+  return Boolean(ultima) && (ultima === seccion || JSON.stringify(ultima) === JSON.stringify(seccion));
 }
 
 /** Clases de aire de arriba y abajo de una sección (var(--aire): 64 px celular, 96 px desde tableta). */

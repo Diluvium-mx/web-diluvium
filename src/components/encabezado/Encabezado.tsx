@@ -6,11 +6,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import menus from "@contenido/menus.json";
 import type { Seccion } from "@/lib/contenido";
 import { numero, texto } from "@/lib/contenido";
 import { IconoBolsa, IconoBuscar, IconoCerrar, IconoMenu } from "@/components/comunes/Iconos";
+import { BuscadorRapido } from "./BuscadorRapido";
+import { PanelCarrito } from "./PanelCarrito";
 
 export function Encabezado({ seccion }: { seccion: Seccion }) {
   const ruta = usePathname();
@@ -18,6 +20,10 @@ export function Encabezado({ seccion }: { seccion: Seccion }) {
   const [abiertoEn, setAbiertoEn] = useState<string | null>(null);
   const abierto = abiertoEn === ruta;
   const setAbierto = (si: boolean) => setAbiertoEn(si ? ruta : null);
+  // Buscador y carrito lateral: igual, se cierran solos al cambiar de página.
+  const [ventana, setVentana] = useState<{ cual: "buscar" | "carrito"; ruta: string } | null>(null);
+  const abierta = ventana && ventana.ruta === ruta ? ventana.cual : null;
+  const cerrarVentana = useCallback(() => setVentana(null), []);
   const logo = texto(seccion.ajustes, "logo");
   const anchoLogo = numero(seccion.ajustes, "logo_width", 200);
   const anchoLogoCel = numero(seccion.ajustes, "logo_width_mobile", 140);
@@ -74,14 +80,39 @@ export function Encabezado({ seccion }: { seccion: Seccion }) {
         </nav>
 
         <div className="flex items-center justify-end gap-3.5">
-          <Link href="/search" aria-label="Buscar" className="flex h-10 w-5 xl:h-11 items-center justify-center xl:w-6">
+          {/* Como la tienda: son enlaces a /search y /cart, pero al tocarlos abren el buscador y el carrito lateral. */}
+          <a
+            href="/search"
+            role="button"
+            aria-label="Buscar"
+            aria-haspopup="dialog"
+            onClick={(e) => {
+              e.preventDefault();
+              setVentana({ cual: "buscar", ruta });
+            }}
+            className="flex h-10 w-5 xl:h-11 items-center justify-center xl:w-6"
+          >
             <IconoBuscar className="h-5 w-5 xl:h-6 xl:w-6" />
-          </Link>
-          <Link href="/cart" aria-label="Carrito 0 artículos" className="flex h-10 w-5 xl:h-11 items-center justify-center xl:w-11">
+          </a>
+          <a
+            href="/cart"
+            role="button"
+            aria-label="Carrito 0 artículos"
+            aria-haspopup="true"
+            aria-expanded={abierta === "carrito"}
+            onClick={(e) => {
+              e.preventDefault();
+              setVentana({ cual: "carrito", ruta });
+            }}
+            className="flex h-10 w-5 xl:h-11 items-center justify-center xl:w-11"
+          >
             <IconoBolsa className="h-5 w-5 xl:h-6 xl:w-6" />
-          </Link>
+          </a>
         </div>
       </div>
+
+      {abierta === "buscar" && <BuscadorRapido cerrar={cerrarVentana} />}
+      {abierta === "carrito" && <PanelCarrito cerrar={cerrarVentana} />}
 
       {abierto && (
         <div className="fixed inset-0 z-40 xl:hidden" role="dialog" aria-modal="true" aria-label="Menú">

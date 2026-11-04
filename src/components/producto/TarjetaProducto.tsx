@@ -16,6 +16,7 @@ export function TarjetaProducto({
   vendedor = false,
   muestrasColor = false,
   precioApilado = false,
+  estrellasSeparadas = false,
 }: {
   producto: Producto;
   /** Ancho de la foto en cada vista (para que el navegador baje el tamaño justo). */
@@ -27,6 +28,9 @@ export function TarjetaProducto({
   muestrasColor?: boolean;
   /** En las páginas de producto el precio con rebaja va en dos renglones a la izquierda, en verde. */
   precioApilado?: boolean;
+  /** En las páginas sueltas (/pages/…) la app de reseñas pone las estrellas en otro lugar de la tarjeta y quedan
+   *  12 px abajo del título en vez de 5 px (medido en vivo en Nosotros, 3-nov-2026). */
+  estrellasSeparadas?: boolean;
 }) {
   const enlace = enlaceProducto(producto);
   const precio = resumenPrecio(producto);
@@ -81,7 +85,7 @@ export function TarjetaProducto({
           )}
           {/* Tamaño en style: las reglas base de h1…h6 de globals.css (sin capa) les ganan a las clases. Peso 700:
               la tienda pide 600 pero solo carga Archivo 500 y 700, así que el navegador dibuja 700. */}
-          <h3 className="text-[#313131]" style={{ fontSize: 16, lineHeight: "20px", fontWeight: 700 }}>
+          <h3 className={`text-[#313131] ${estrellasSeparadas ? "mb-3" : ""}`} style={{ fontSize: 16, lineHeight: "20px", fontWeight: 700 }}>
             <Link href={enlace}>{producto.titulo}</Link>
           </h3>
           {calificacion && <Estrellas promedio={calificacion.promedio} total={calificacion.total} />}
