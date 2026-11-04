@@ -1,6 +1,18 @@
 # Proceso de réplica exacta de diluvium.com.mx
 
-31-oct-2026 · Estado: **paso 1 en curso** (OK del dueño el 3-nov-2026).
+31-oct-2026 · Estado: **paso 1 (réplica visual) terminado el 4-nov-2026** (OK del dueño el 3-nov-2026).
+
+## Resultado del paso 1 (4-nov-2026)
+
+Las **34 páginas** del sitio replicadas en celular (390), tableta (768) y computadora (1440): portada, 7 productos,
+7 colecciones y su lista, Nosotros, Contacto, Instalación, Distribuidor, Preguntas frecuentes, Reseñas, Carrito
+compartido, blog y 3 artículos, carrito, búsqueda (con resultados), 3 políticas y 404.
+
+- **102 comparaciones, 979 secciones:** 101 de 102 páginas-vista miden lo mismo que en vivo (±2 px) y todas sus
+  secciones quedan en ±4 px y ≤ 2 % de píxeles distintos. La única fuera de meta: la lista de 238 reseñas en celular
+  (26 px de redondeo en 50,000 px, 0.9 %). Lo que se mueve solo (franjas, logos, carruseles) se revisa lado a lado; los
+  videos se comparan congelados en su primer cuadro.
+- Resumen de todo: `python3 -I herramientas/resumen-comparaciones.py` (después de correr las comparaciones).
 
 ## Avance del paso 1 (3-nov-2026)
 

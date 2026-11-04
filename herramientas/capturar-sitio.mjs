@@ -126,6 +126,8 @@ try {
         awaitPromise: true,
         expression: `(async()=>{for(let y=0;y<document.body.scrollHeight;y+=400){scrollTo(0,y);await new Promise(r=>setTimeout(r,300))}const t=Date.now();while([...document.images].some(i=>!i.complete)&&Date.now()-t<8000){await new Promise(r=>setTimeout(r,250))}scrollTo(0,0);await new Promise(r=>setTimeout(r,1500))})()`,
       });
+      // Videos que corren solos: se congelan en su primer cuadro (igual que en comparar.mjs).
+      await s("Runtime.evaluate", { awaitPromise: true, expression: `(async()=>{const vs=[...document.querySelectorAll('video')];await Promise.all(vs.map(v=>new Promise(r=>{v.pause();v.autoplay=false;if(v.readyState===0){r();return}if(v.currentTime===0){r();return}v.addEventListener('seeked',()=>r(),{once:true});v.currentTime=0;setTimeout(r,3000)})));await new Promise(r=>setTimeout(r,500))})()` });
       const { cssContentSize } = await s("Page.getLayoutMetrics");
       const alto = Math.min(Math.ceil(cssContentSize.height), 30000);
       const { data } = await s("Page.captureScreenshot", {

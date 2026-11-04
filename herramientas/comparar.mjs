@@ -10,7 +10,7 @@
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { abrirChrome } from "./cdp.mjs";
+import { abrirChrome, CONGELAR_VIDEOS, espera } from "./cdp.mjs";
 import { MEDIR } from "./medir.mjs";
 
 const [pagina, ruta = "/", vistasArg = "celular,compu", soloArg] = process.argv.slice(2);
@@ -49,6 +49,9 @@ try {
     mkdirSync(carpeta, { recursive: true });
 
     const p = await chrome.abrirPagina(BASE + ruta, vista, { esperaMs: 4000 });
+    // Primero se congelan los videos y se deja que la página termine de acomodarse; después se mide y se captura.
+    await p.evaluar(CONGELAR_VIDEOS);
+    await espera(1500);
     const local = await p.evaluar(MEDIR);
     const { buffer } = await p.capturar({ calidad: 80 });
     const localFoto = join(SALIDA, `${pagina}-${vista}-replica.jpg`);

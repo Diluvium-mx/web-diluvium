@@ -299,12 +299,15 @@ export function ListaResenas({
   // Posiciones: cada tarjeta a la columna más corta (empate: la de la izquierda).
   const columnas = ancho ? columnasPara(anchoVentana) : 0;
   const anchoColumna = ancho && columnas ? (ancho - SEPARACION_X * (columnas - 1)) / columnas : 0;
-  const listas = ancho !== null && visibles.every((r) => alturas[r.id] !== undefined);
+  // Ya hay columnas en cuanto alguna tarjeta está medida. Las que acaban de llegar (al bajar o con «Ver más») se
+  // dibujan ocultas hasta tener su alto, para que las demás no se reacomoden ni parpadeen.
+  const listas = ancho !== null && visibles.some((r) => alturas[r.id] !== undefined);
   const posiciones = new Map<number, { left: number; top: number }>();
   let altoLista = 0;
   if (listas) {
     const altos = new Array<number>(columnas).fill(0);
     for (const r of visibles) {
+      if (alturas[r.id] === undefined) continue;
       const c = altos.indexOf(Math.min(...altos));
       posiciones.set(r.id, { left: c * (anchoColumna + SEPARACION_X), top: altos[c] });
       altos[c] += alturas[r.id] + SEPARACION_Y;
@@ -407,7 +410,13 @@ export function ListaResenas({
                 completa={completas.has(r.id)}
                 alExpandir={() => setCompletas((s) => new Set(s).add(r.id))}
                 alAbrirFoto={() => setAbierta(r.id)}
-                estilo={p ? { position: "absolute", left: p.left, top: p.top, width: anchoColumna } : undefined}
+                estilo={
+                  p
+                    ? { position: "absolute", left: p.left, top: p.top, width: anchoColumna }
+                    : listas
+                      ? { position: "absolute", left: 0, top: 0, width: anchoColumna, visibility: "hidden" }
+                      : undefined
+                }
                 refTarjeta={(el) => {
                   if (el) tarjetas.current.set(r.id, el);
                   else tarjetas.current.delete(r.id);

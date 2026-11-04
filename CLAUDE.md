@@ -16,12 +16,12 @@ Todo lo de este proyecto vive en esta carpeta (`~/Documents/web-diluvium`).
 | **Costo mensual real** Shopify contra página propia, edición y pruebas A/B | `docs/costos-y-comparacion.md` |
 | Ficha de cada página del tema (secciones, textos, medios) | `docs/sitio-actual/paginas/<plantilla>.md` |
 | Colores y letras del tema · lista de fotos y videos | `docs/sitio-actual/diseno.md` · `docs/sitio-actual/medios.md` |
-| Capturas de referencia (celular y computadora) | `docs/sitio-actual/capturas/2026-10-31/` (portada también `2026-11-03/`, con tableta) |
+| Capturas de referencia (celular, tableta y computadora) | `docs/sitio-actual/capturas/2026-11-03/` (las 34 páginas; videos en su primer cuadro) |
 | Medidas reales del sitio en vivo · herramientas | `docs/sitio-actual/medidas/` · `docs/herramientas.md` |
 | Ciberseguridad (reglas de pagos, llaves, revisiones) | `docs/seguridad.md` |
 | Qué tiene la tienda actual (páginas, productos, apps, pagos) | `docs/sitio-actual/inventario.md` |
 
-## Código (paso 1: réplica visual)
+## Código (paso 1: réplica visual, terminado el 4-nov-2026)
 Next.js **16.4.3** (App Router; las APIs cambiaron: leer `node_modules/next/dist/docs/` antes de usarlas) · React
 19.2 · Tailwind 4 · TypeScript estricto. Mismas versiones que el CRM, fijas.
 - `src/app/globals.css`: medidas del sitio en vivo (colores, letras, márgenes `--margen`, aire `--aire`, escala `--h1…`,

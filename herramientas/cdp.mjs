@@ -30,6 +30,8 @@ export const VISTAS = {
 
 export const espera = (ms) => new Promise((r) => setTimeout(r, ms));
 
+export const CONGELAR_VIDEOS = `(async()=>{const vs=[...document.querySelectorAll('video')];await Promise.all(vs.map(v=>new Promise(r=>{v.pause();v.autoplay=false;if(v.readyState===0){r();return}if(v.currentTime===0){r();return}v.addEventListener('seeked',()=>r(),{once:true});v.currentTime=0;setTimeout(r,3000)})));await new Promise(r=>setTimeout(r,500))})()`;
+
 export async function abrirChrome() {
   const perfil = mkdtempSync(join(tmpdir(), "chrome-diluvium-"));
   const chrome = spawn(CHROME, [
@@ -88,6 +90,8 @@ export async function abrirChrome() {
     return {
       evaluar,
       async capturar({ calidad = 70, alto = null } = {}) {
+        // Videos que corren solos: se congelan en su primer cuadro para que la captura no dependa del momento.
+        await evaluar(CONGELAR_VIDEOS);
         const { cssContentSize } = await s("Page.getLayoutMetrics");
         const h = alto ?? Math.min(Math.ceil(cssContentSize.height), 30000);
         const { data } = await s("Page.captureScreenshot", {
