@@ -69,7 +69,8 @@ export function ListaResenasTienda({
   // Alto de cada tarjeta (cambia al abrir el texto completo o al cargar la foto).
   const medirTarjetas = useCallback(() => {
     const nuevas: Record<number, number> = {};
-    tarjetas.current.forEach((el, id) => (nuevas[id] = el.getBoundingClientRect().height));
+    // Alto en píxeles enteros, como la app en vivo (sus posiciones son números redondos: 379, 634…).
+    tarjetas.current.forEach((el, id) => (nuevas[id] = el.offsetHeight));
     setAlturas((antes) => {
       const iguales =
         Object.keys(nuevas).length === Object.keys(antes).length &&

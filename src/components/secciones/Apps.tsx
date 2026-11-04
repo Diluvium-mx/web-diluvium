@@ -10,6 +10,7 @@ import resenas from "@contenido/resenas.json";
 import { esquema, siNo } from "@/lib/contenido";
 import type { PropsSeccion } from "./registro";
 import { clasesAire } from "./aire";
+import { calificacionTienda, redondear } from "@/components/resenas/calificaciones";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 
@@ -55,7 +56,8 @@ function Tarjeta({ resena, oculta }: { resena: Resena; oculta: boolean }) {
 }
 
 export function Apps({ seccion, producto }: PropsSeccion) {
-  const { calificacion, total } = CARRUSEL.resumen;
+  const { promedio, total } = calificacionTienda();
+  const calificacion = redondear(promedio, 1);
   const aire = clasesAire(seccion, producto);
   // Sin bloques: en vivo la sección queda vacía y solo deja su aire (las reseñas del producto las pone la app
   // después del producto principal, no aquí).

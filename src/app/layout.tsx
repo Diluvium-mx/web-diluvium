@@ -6,6 +6,7 @@ import { BarraContacto } from "@/components/encabezado/BarraContacto";
 import { Encabezado } from "@/components/encabezado/Encabezado";
 import { Pie } from "@/components/pie/Pie";
 import { BotonWhatsapp } from "@/components/comunes/BotonWhatsapp";
+import { DatosEstructurados, datosOrganizacion } from "@/lib/seo";
 import "./globals.css";
 
 // Las mismas letras que usa el tema (Google Fonts); Next las descarga al construir y las sirve desde la página.
@@ -15,9 +16,8 @@ const bevan = Bevan({ subsets: ["latin"], weight: "400", variable: "--font-bevan
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.diluvium.com.mx"),
+  // Título, descripción y fichas para redes salen de cada página (src/lib/seo.tsx), como en vivo.
   title: { default: "Diluvium", template: "%s – Diluvium" },
-  description:
-    "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
   icons: { icon: "/media/files/Favicon_2aabf220-4641-4694-9dbb-be135ad53af1.png" },
 };
 
@@ -32,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={`${instrumentSans.variable} ${archivo.variable} ${bevan.variable}`}>
       <body>
+        <DatosEstructurados datos={datosOrganizacion()} />
         {franja && <FranjaMensajes seccion={franja} />}
         {contacto && <BarraContacto seccion={contacto} />}
         {cabecera && <Encabezado seccion={cabecera} />}

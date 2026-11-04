@@ -1,8 +1,12 @@
 "use client";
 
-// Cantidad y botón «Añadir al carrito». Se ven y reaccionan como en la tienda (menos/más, agotado), pero todavía no
-// agregan nada: el carrito llega en el paso 3.
+// Cantidad y botón «Añadir al carrito», como en la tienda: agrega la variante elegida al carrito y abre el carrito
+// lateral. Si se piden más piezas de las que hay, agrega las que alcanzan, avisa arriba de la cantidad y no abre el
+// carrito (igual que en vivo).
 
+import { useState } from "react";
+import { abrirCarrito, agregar, avisoExistencias } from "@/components/carrito/estado";
+import { AvisoError } from "@/components/carrito/piezas";
 import { BOTON_GRANDE, BOTON_PRIMARIO } from "../estilos";
 import { puedeComprarse, useFicha } from "./Estado";
 import { IconoMas, IconoMenos } from "./Iconos";
@@ -15,15 +19,28 @@ const BOTON_CANTIDAD =
 export function Compra({ titulo }: { titulo: string }) {
   const { variantes, elegida, cantidad, setCantidad } = useFicha();
   const agotada = !puedeComprarse(variantes[elegida]);
+  const [aviso, setAviso] = useState<string | null>(null);
 
   return (
     <form
       className="grid grid-cols-1 gap-3"
       onSubmit={(e) => {
         e.preventDefault();
-        // Paso 3: carrito
+        if (agotada) return;
+        const { tope } = agregar(variantes[elegida].id, cantidad);
+        if (tope === null) {
+          setAviso(null);
+          abrirCarrito({ anadido: true });
+        } else {
+          setAviso(avisoExistencias(tope));
+        }
       }}
     >
+      {aviso && (
+        <AvisoError>
+          <span>{aviso}</span>
+        </AvisoError>
+      )}
       <div className="flex w-full flex-col items-start">
         <div className="flex w-full flex-col gap-3">
           <div>

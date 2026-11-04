@@ -3,6 +3,7 @@ import { plantilla } from "@/lib/contenido";
 import { leerFiltros } from "@/components/producto/colecciones";
 import { Secciones } from "@/components/secciones/registro";
 import { Busqueda, resultadosBusqueda } from "@/components/secciones/Busqueda";
+import { metadatos } from "@/lib/seo";
 
 // Búsqueda, con la misma dirección que en Shopify: /search?q=…&type=…&sort_by=…&filter.v.…
 
@@ -19,9 +20,10 @@ async function leerConsulta(searchParams: Props["searchParams"]) {
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const consulta = await leerConsulta(searchParams);
   const q = consulta.q.trim();
-  if (!q) return { title: "Buscar", alternates: { canonical: "/search" } };
+  if (!q) return metadatos("/search");
   const n = resultadosBusqueda(consulta).lista.length;
-  return { title: `Búsqueda: ${n} resultados encontrados para "${q}"`, alternates: { canonical: `/search?q=${encodeURIComponent(q)}` } };
+  const titulo = `Búsqueda: ${n} resultados encontrados para "${q}"`;
+  return metadatos("/search", { titulo: `${titulo} – Diluvium`, tituloRedes: titulo, canonica: `/search?q=${encodeURIComponent(q)}` });
 }
 
 export default async function PaginaBusqueda({ searchParams }: Props) {

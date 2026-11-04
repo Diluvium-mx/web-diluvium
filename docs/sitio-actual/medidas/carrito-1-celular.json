@@ -1,0 +1,1951 @@
+{
+ "url": "https://www.diluvium.com.mx/cart?_su_rec=0K0DyvRqDcaolMn0WlXMkSmkWd1WX3nhxiVvPK4W4q4K_pe9MhLYHNpcLh3O_55XUZIRB4n-AFXwHDmmNsRaNHAWRqVkqFjstDb2TNaC8_krxYJovQQ2JR0UEVo6m13SPakkvvhbowQroNfPWG6D7ljT8MSm4j_sXnRpBnglMH0uvzd5cV8BrySAycs45ltl7xplUtw3wg_ah9Cn2U6qzl_A6MdGC3D3WpEKZygNKjiISxG4OwVEkvAIvQRlGbPGssREFMYNFmQ6Eg9kaThJd-b0LYwbnKKQ2e8ZBbud0YoHuOKiRAdGRpn4zsvR2wnogRYU_ziRo1SVBgspIOkMWNTxcvrX3BUSMNTxXwkGfLuGeGULeGI&_su_rec_id=a55b2368-4d9b-422e-b5c5-1e09d14f7221-1793821594",
+ "ancho": 390,
+ "altoPagina": 2495,
+ "secciones": [
+  {
+   "id": "shopify-section-sections--23149237928156__running_content_WwxgYn",
+   "tipo": "Running Content Section",
+   "caja": [
+    0,
+    0,
+    390,
+    64
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "marquee-container js-marquee-items d-flex o-hidden marquee--",
+     "caja": [
+      0,
+      21,
+      390,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      -854,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      176,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      1206,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      2235,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-marquee-item d-flex fw-nowrap fs-0 marquee__items--animat",
+     "caja": [
+      3265,
+      21,
+      1030,
+      21
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "p",
+     "caja": [
+      -846,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -547,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -509,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      -485,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      -195,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      -158,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      -111,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      146,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      184,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      483,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      520,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      545,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      834,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      872,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      919,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1176,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1214,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1513,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1550,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1575,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      1864,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      1902,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      1949,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2206,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2243,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2543,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2580,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2604,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      2894,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      2931,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      2979,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3236,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3273,
+      21,
+      283,
+      21
+     ],
+     "texto": "⭐️⭐️⭐️⭐️⭐️ 1,500+ Clientes felices",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3572,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3610,
+      21,
+      298,
+      21
+     ],
+     "texto": "🛡️",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      3634,
+      22,
+      274,
+      19
+     ],
+     "texto": "Sistema de sellado único en México",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      3924,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      3961,
+      21,
+      288,
+      21
+     ],
+     "texto": "🏆 #1",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "em",
+     "caja": [
+      4008,
+      22,
+      241,
+      19
+     ],
+     "texto": "Sistema ganador en innovación",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      4265,
+      21,
+      21,
+      21
+     ],
+     "viewBox": "0 0 25 24"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__extra-info-header",
+   "tipo": "",
+   "caja": [
+    0,
+    64,
+    390,
+    57
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "s-small-padding extra-info-header__content ctnr",
+     "caja": [
+      0,
+      0,
+      390,
+      56
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "16px 24px",
+     "maxW": "1348px"
+    },
+    {
+     "tag": "div",
+     "cls": "extra-info-header__left",
+     "caja": [
+      24,
+      16,
+      268,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      16,
+      94,
+      24
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "tel:(668) 241 9579"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      24,
+      23,
+      10,
+      10
+     ],
+     "viewBox": "0 0 61 64"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      139,
+      16,
+      153,
+      24
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "mailto:contacto@diluvium.com.mx"
+    },
+    {
+     "tag": "div",
+     "caja": [
+      323,
+      16,
+      43,
+      24
+     ],
+     "texto": "🇲🇽MXN",
+     "font": "Instrument Sans",
+     "size": "12px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237928156__header",
+   "tipo": "Header Section",
+   "caja": [
+    0,
+    121,
+    390,
+    72
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "header",
+     "cls": "header ctnr header--horizontal header--horizontal-left heade",
+     "caja": [
+      0,
+      0,
+      390,
+      72
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "8px",
+     "cols": "40px 212px 74px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "16px 24px",
+     "maxW": "1348px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "svg",
+     "caja": [
+      34,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      108,
+      18,
+      140,
+      37
+     ],
+     "src": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+     "alt": "Diluvium",
+     "natural": [
+      400,
+      105
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      302,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      336,
+      16,
+      40,
+      40
+     ],
+     "texto": "Carrito 1 1 artículos",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/cart"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      346,
+      26,
+      20,
+      20
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      361,
+      21,
+      8,
+      17
+     ],
+     "texto": "1",
+     "font": "sans-serif",
+     "size": "13.6px",
+     "weight": "500",
+     "lh": "17px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-template--23149244645596__main",
+   "tipo": "Main Cart Section",
+   "caja": [
+    0,
+    257,
+    390,
+    658
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "sht-cart-frm",
+     "cls": "cart-content d-flex fd-column gap-content",
+     "caja": [
+      24,
+      0,
+      342,
+      658
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "js-cart-form-content-cart-items d-flex fd-column gap-content",
+     "caja": [
+      24,
+      49,
+      342,
+      226
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "cart-item d-grid pt-2x pb-2x",
+     "caja": [
+      24,
+      49,
+      342,
+      178
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "normal 12px",
+     "cols": "48px 150.516px 119.484px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "cart-item__product d-grid",
+     "caja": [
+      24,
+      65,
+      211,
+      90
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "48px 150.516px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex middle-xs end-md mt-16 mt-md-0",
+     "caja": [
+      84,
+      171,
+      151,
+      40
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "span",
+     "cls": "cart-freeship-progress d-flex middle-xs w-100",
+     "caja": [
+      41,
+      368,
+      308,
+      17
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex middle-xs between-xs mb-16 gap-24",
+     "caja": [
+      41,
+      401,
+      308,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "24px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h1",
+     "caja": [
+      24,
+      0,
+      342,
+      25
+     ],
+     "texto": "Su carrito ( )",
+     "font": "Archivo",
+     "size": "20.25px",
+     "weight": "500",
+     "lh": "25.3125px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      236,
+      1,
+      11,
+      22
+     ],
+     "texto": "1",
+     "font": "Archivo",
+     "size": "20.25px",
+     "weight": "500",
+     "lh": "25.3125px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      24,
+      65,
+      48,
+      80
+     ],
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "natural": [
+      390,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      84,
+      65,
+      151,
+      48
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones?variant=46431147524316"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      84,
+      121,
+      125,
+      33
+     ],
+     "texto": "Extra Chica (69cm a 78cm)",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      93,
+      183,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      157,
+      183,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      198,
+      179,
+      24,
+      24
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      247,
+      65,
+      119,
+      24
+     ],
+     "texto": "$ 5,500.00 MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "right"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      247,
+      97,
+      119,
+      17
+     ],
+     "texto": "$ 5,999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "right",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      256,
+      159,
+      16
+     ],
+     "texto": "Agregar notas de pedido",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "700",
+     "lh": "17px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start",
+     "deco": "underline"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      283,
+      342,
+      24
+     ],
+     "texto": "Order note",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      41,
+      312,
+      308,
+      48
+     ],
+     "texto": "¡Buenas noticias! Tu pedido califica para envío gratis.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      259,
+      368,
+      90,
+      17
+     ],
+     "texto": "$ 499.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      41,
+      401,
+      36,
+      24
+     ],
+     "texto": "Total",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      226,
+      401,
+      123,
+      24
+     ],
+     "texto": "$ 5,500.00 MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(0, 66, 136)",
+     "align": "right"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      41,
+      441,
+      308,
+      40
+     ],
+     "texto": "Finalizar compra",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 247, 236)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "border": "1px solid rgb(0, 66, 136)",
+     "pad": "8px 20px"
+    },
+    {
+     "tag": "iframe",
+     "caja": [
+      41,
+      489,
+      308,
+      54
+     ],
+     "src": ""
+    },
+    {
+     "tag": "a",
+     "caja": [
+      41,
+      555,
+      308,
+      40
+     ],
+     "texto": "Seguir comprando",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(0, 66, 136)",
+     "align": "center",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "8px 20px",
+     "href": "/collections/all"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      41,
+      607,
+      308,
+      34
+     ],
+     "texto": "Impuesto incluido. calculados al finalizar la compra.",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(0, 66, 136, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      163,
+      607,
+      35,
+      16
+     ],
+     "texto": "Envío",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(0, 66, 136)",
+     "align": "center",
+     "deco": "underline",
+     "pad": "0px",
+     "href": "/policies/shipping-policy"
+    }
+   ]
+  },
+  {
+   "id": "shopify-section-sections--23149237764316__footer",
+   "tipo": "Section Footer",
+   "caja": [
+    0,
+    979,
+    390,
+    1515
+   ],
+   "bg": "rgba(0, 0, 0, 0)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "footer__content d-grid gap-32",
+     "caja": [
+      24,
+      168,
+      342,
+      1154
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "32px",
+     "cols": "342px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw between-xs hide-empty r-gap-32 gap-lg-zero",
+     "caja": [
+      17,
+      168,
+      356,
+      866
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "space-between",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "clm d-flex fd-column gap-24 wb-break-word",
+     "caja": [
+      17,
+      168,
+      356,
+      332
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "24px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px 7.02px",
+     "maxW": "100%"
+    },
+    {
+     "tag": "ul",
+     "cls": "start-xs gap-8 ls-none d-flex fw-wrap hide-empty",
+     "caja": [
+      24,
+      464,
+      342,
+      36
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "flex-start",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "border newletter-spacing pt-8 pt-md-16 br-card-content d-fle",
+     "caja": [
+      24,
+      844,
+      342,
+      190
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "8px 16px 16px"
+    },
+    {
+     "tag": "div",
+     "cls": "form__field d-flex fd-column fd-row-sm fd-column-lg gap-12",
+     "caja": [
+      41,
+      925,
+      308,
+      92
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "rw hide-empty r-gap-32",
+     "caja": [
+      17,
+      1066,
+      356,
+      256
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "32px normal",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "footer__content__bottom m-auto d-flex center-xs fd-column mi",
+     "caja": [
+      24,
+      1386,
+      342,
+      49
+     ],
+     "display": "flex",
+     "dir": "column",
+     "gap": "32px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "button",
+     "caja": [
+      24,
+      64,
+      150,
+      40
+     ],
+     "texto": "Volver arriba",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(0, 66, 136)",
+     "pad": "6px 20px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      138,
+      76,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      24,
+      168,
+      140,
+      34
+     ],
+     "src": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+     "alt": "Diluvium",
+     "natural": [
+      200,
+      49
+     ],
+     "fit": "fill",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      270,
+      342,
+      45
+     ],
+     "texto": "Calle Morelos #254 Col. Centro, Los Mochis, Sinaloa, México",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      347,
+      342,
+      23
+     ],
+     "texto": "(668) 241 9579",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "h5",
+     "caja": [
+      24,
+      402,
+      342,
+      23
+     ],
+     "texto": "contacto@diluvium.com.mx",
+     "font": "Archivo",
+     "size": "18px",
+     "weight": "500",
+     "lh": "22.5px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      34,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      78,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      122,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      166,
+      474,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      24,
+      532,
+      342,
+      40
+     ],
+     "texto": "Main menu",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      572,
+      39,
+      48
+     ],
+     "texto": "Inicio",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      620,
+      76,
+      48
+     ],
+     "texto": "Productos",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/collections/all-products"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      668,
+      69,
+      48
+     ],
+     "texto": "Contacto",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/contact"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      716,
+      67,
+      48
+     ],
+     "texto": "Nosotros",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/pages/nosotros"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      764,
+      33,
+      48
+     ],
+     "texto": "Blog",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "16px 0px 8px",
+     "href": "/blogs/blog"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      41,
+      853,
+      308,
+      64
+     ],
+     "texto": "Suscríbete para ofertas y descuentos",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      41,
+      977,
+      308,
+      40
+     ],
+     "texto": "Suscribirme",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(237, 237, 237)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1066,
+      342,
+      40
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/search"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1074,
+      342,
+      24
+     ],
+     "texto": "Buscar",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1138,
+      342,
+      40
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/terms-of-service"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1146,
+      342,
+      24
+     ],
+     "texto": "Términos del servicio",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1210,
+      342,
+      40
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/refund-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1218,
+      342,
+      24
+     ],
+     "texto": "Política de reembolso",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      24,
+      1282,
+      342,
+      40
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "pad": "8px 0px",
+     "href": "/policies/privacy-policy"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      24,
+      1290,
+      342,
+      24
+     ],
+     "texto": "Política de privacidad",
+     "font": "Archivo",
+     "size": "19.2px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      87,
+      1418,
+      79,
+      16
+     ],
+     "texto": "© •",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      101,
+      1418,
+      55,
+      16
+     ],
+     "texto": "Diluvium",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center",
+     "pad": "0px",
+     "href": "/"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      166,
+      1418,
+      138,
+      16
+     ],
+     "texto": "Tecnología de Shopify",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(255, 255, 255, 0.6)",
+     "align": "center",
+     "pad": "0px",
+     "href": "https://es.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+    }
+   ]
+  }
+ ]
+}

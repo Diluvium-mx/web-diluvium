@@ -6,6 +6,7 @@ import { Secciones } from "@/components/secciones/registro";
 import { ContenidoPagina } from "@/components/secciones/ContenidoPagina";
 import { MigasDePan } from "@/components/secciones/MigasDePan";
 import { ResenasTienda } from "@/components/resenas/ResenasTienda";
+import { metadatos } from "@/lib/seo";
 
 // Páginas de Shopify con las mismas direcciones: /pages/<nombre>. Cada una usa su plantilla del tema; el título y el
 // texto de la página (que no vienen en el tema) salen de contenido/paginas.json.
@@ -28,8 +29,7 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ nombre: string }> }): Promise<Metadata> {
-  const p = pagina((await params).nombre);
-  return p ? { title: p.titulo } : {};
+  return metadatos(`/pages/${(await params).nombre}`);
 }
 
 export default async function PaginaTienda({ params }: { params: Promise<{ nombre: string }> }) {

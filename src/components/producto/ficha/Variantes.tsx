@@ -9,21 +9,34 @@ import { IconoExistencias } from "./Iconos";
 
 const RAYA = "pointer-events-none absolute box-content h-[2px] rounded-[50px] border border-[rgba(10,85,154,0.12)] bg-white";
 
-function Cuadro({ v, elegida, agotada }: { v: VarianteFicha; elegida: boolean; agotada: boolean }) {
+/** Cuadro de una variante: 72 px en la ficha; 48 px («chico») en la ventana «Quick add». */
+export function Cuadro({
+  v,
+  elegida,
+  agotada,
+  chico = false,
+}: {
+  v: Pick<VarianteFicha, "titulo">;
+  elegida: boolean;
+  agotada: boolean;
+  chico?: boolean;
+}) {
   return (
     <span
-      className={`relative flex size-[72px] cursor-pointer items-center justify-center overflow-hidden rounded-[8px] transition-shadow duration-300 after:pointer-events-none after:absolute after:inset-0 after:rounded-[8px] after:shadow-[inset_0_0_0_1px_rgba(10,85,154,0.12)] ${
+      className={`relative flex ${chico ? "size-12" : "size-[72px]"} cursor-pointer items-center justify-center overflow-hidden rounded-[8px] transition-shadow duration-300 after:pointer-events-none after:absolute after:inset-0 after:rounded-[8px] after:shadow-[inset_0_0_0_1px_rgba(10,85,154,0.12)] ${
         elegida ? "shadow-[inset_0_0_0_1px_rgba(10,85,154,0.12),0_0_0_2px_#fff,0_0_0_3px_#0a559a]" : ""
       }`}
     >
       <span
-        className={`pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-[13.6px] leading-[17px] ${
+        className={`pointer-events-none absolute inset-x-0 ${chico ? "[overflow-wrap:anywhere]" : ""} top-1/2 -translate-y-1/2 text-center text-[13.6px] leading-[17px] ${
           agotada ? "text-[rgba(10,85,154,0.4)]" : "text-azul"
         }`}
       >
         {v.titulo}
       </span>
-      {agotada && <span className={`${RAYA} top-[73px] -left-1 z-[2] w-[141.4%] origin-top-left -rotate-45`} />}
+      {agotada && (
+        <span className={`${RAYA} ${chico ? "top-[49px]" : "top-[73px]"} -left-1 z-[2] w-[141.4%] origin-top-left -rotate-45`} />
+      )}
     </span>
   );
 }
@@ -44,7 +57,11 @@ function Boton({ v, elegida, agotada }: { v: VarianteFicha; elegida: boolean; ag
 /** «Disponibles: 5» (verde), «Pocas unidades: 4» (amarillo, de 4 para abajo) o «Agotado» (rojo). */
 export function Existencias() {
   const { variantes, elegida } = useFicha();
-  const n = variantes[elegida].existencias;
+  return <AvisoExistencias n={variantes[elegida].existencias} />;
+}
+
+/** El mismo aviso con el número de piezas directo (lo usa también la ventana «Quick add»). */
+export function AvisoExistencias({ n }: { n: number | null }) {
   if (n === null) return null;
   const tipo = n <= 0 ? "agotado" : n <= 4 ? "pocas" : "hay";
   const fondo = { hay: "bg-[#04943d]", pocas: "bg-[#ffa800]", agotado: "bg-[#eb544a]" }[tipo];

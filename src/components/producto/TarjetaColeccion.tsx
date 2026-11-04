@@ -7,6 +7,7 @@ import Link from "next/link";
 import type { Producto } from "./catalogo";
 import { precioTexto, proveedor, resenas, resumenPrecio } from "./catalogo";
 import { Estrellas } from "./Estrellas";
+import { AgregarRapido } from "@/components/carrito/AgregarRapido";
 
 export function TarjetaColeccion({
   producto,
@@ -105,15 +106,8 @@ export function TarjetaColeccion({
               contador («+2») escondido y deja 16 px abajo del precio. */}
           {producto.variantes.length > 3 && <div className="mt-4" aria-hidden="true" />}
         </div>
-        {/* Paso 3: carrito. En vivo agrega el producto (o abre la ventana para elegir tamaño) y abre el carrito. */}
-        {agregarRapido && (
-          <button
-            type="button"
-            className="relative isolate flex min-h-10 w-full items-center justify-center overflow-hidden bg-white px-5 py-1.5 font-titulo leading-[normal] font-medium shadow-[inset_0_0_0_1px_rgba(0,66,136,0.12)] transition-colors duration-[400ms] after:absolute after:inset-x-0 after:top-0 after:bottom-full after:-z-10 after:bg-azul-oscuro after:transition-[bottom] after:duration-[400ms] hover:text-white hover:after:bottom-0"
-          >
-            Quick add
-          </button>
-        )}
+        {/* Como en vivo: agrega el producto (o abre la ventana para elegir tamaño) y abre el carrito. */}
+        {agregarRapido && <AgregarRapido producto={producto.nombre} />}
       </div>
     </div>
   );

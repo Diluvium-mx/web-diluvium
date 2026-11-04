@@ -14,6 +14,33 @@ compartido, blog y 3 artículos, carrito, búsqueda (con resultados), 3 polític
   videos se comparan congelados en su primer cuadro.
 - Resumen de todo: `python3 -I herramientas/resumen-comparaciones.py` (después de correr las comparaciones).
 
+## Después del paso 1: lo que se hizo sin cuentas ni servicios (4-nov-2026)
+
+- **Google y redes igual que en vivo** en las 34 páginas: título, descripción (o su ausencia), dirección canónica,
+  Open Graph, Twitter y datos estructurados (Organization en todas, WebSite en la portada, Product con una oferta por
+  tamaño, precio, disponibilidad y código de barras, Article en el blog). Los textos salen de `contenido/seo.json`
+  (`herramientas/extraer-seo.py`). La ficha Product se arma con el catálogo, para que precio y disponibilidad no se
+  desfasen. Se revisa con `node herramientas/comparar-seo.mjs` (34 de 34 iguales).
+- **`/sitemap.xml` y `/robots.txt`** en las mismas direcciones: las mismas 25 direcciones que publica hoy la tienda y
+  sus reglas para lo que existe aquí. Las reglas propias de Shopify se quitaron.
+- **Calificaciones calculadas** con las 238 reseñas publicadas (dan lo mismo que en vivo: 4.94 con 204, 4.82 con 22,
+  5 con 10 y 5 con 2). Ya no están escritas a mano.
+- Una diferencia a propósito: en vivo la lista de redes de la organización trae huecos vacíos, que Google marca como
+  error. Aquí se quitaron (no se ve en la página).
+- **Carrito funcionando en el navegador** (igual que en vivo, menos el pago):
+  - agregar desde la ficha y desde la búsqueda (con su ventana para elegir tamaño);
+  - el carrito lateral y `/cart`, con cantidades, quitar, totales y la barra de envío gratis;
+  - el tope de piezas en existencia, con el mismo aviso;
+  - comparado con capturas nuevas de la tienda con artículos (`herramientas/capturar-carrito.mjs` y
+    `comparar-carrito.mjs`, todo ≤ 2 %).
+
+  Se guarda solo «variante y piezas»; el precio siempre sale del catálogo. «Finalizar compra», PayPal y guardar la
+  nota del pedido esperan al paso 3.
+- **Revisión de que nada se movió** (portada, 3 productos, colección, búsqueda, blog y reseñas, en las 3 vistas):
+  todo en meta. Excepción: la lista de 238 reseñas. Sus tarjetas quedan 1–2 px corridas según cuándo cargan las fotos,
+  y la comparación de esa sección da entre 0.5 % y 14 % de una corrida a otra, con el mismo contenido y el mismo
+  orden. Ahora se mide el alto de cada tarjeta en píxeles enteros, como lo hace la app en vivo.
+
 ## Avance del paso 1 (3-nov-2026)
 
 **Portada terminada** en celular (390), tableta (768) y computadora (1440): las 27 secciones (encabezado, 23 de la
@@ -36,11 +63,18 @@ WhatsApp.
 
 **Funciones que esperan al paso 3 (aspecto listo, conexión pendiente):**
 
+**El carrito ya funciona (4-nov-2026)** en el navegador, igual que en vivo: «Añadir al carrito» en la ficha y «Quick add»
+en la búsqueda (con su ventana de tamaños) lo agregan y abren el carrito lateral; número en la bolsa, piezas, quitar,
+totales, barra de envío gratis, tope de existencias con su aviso y la página /cart. Se guarda en el navegador solo
+como «variante y piezas»; precio, título y foto salen siempre del catálogo. Referencia: capturas y medidas del
+4-nov-2026 (`herramientas/capturar-carrito.mjs`, `comparar-carrito.mjs`). Del carrito solo esperan el pago y guardar la nota del pedido.
+
 | Función | Qué hace en vivo | Qué falta |
 |---|---|---|
 | Formulario «¡Hola!» (portada) | Manda los datos al correo de la tienda y muestra «gracias» | Servicio de correos + Turnstile |
 | Suscripción del pie | Guarda el correo como suscriptor | Base de datos + Turnstile |
-| «Añadir al carrito» y carrito | Agrega el producto y abre el carrito lateral | Carrito (paso 3) |
+| Pago («Finalizar compra» y PayPal en el carrito) | Lleva al pago de Shopify | Pago con Mercado Pago, precio calculado en el servidor |
+| Notas del pedido (carrito) | Guarda la nota con el carrito | Se guarda con el pedido en el servidor |
 | Búsqueda (lupa del encabezado) | Abre el buscador | Se construye con las páginas |
 
 **Sigue:** páginas de producto (compuerta, XXL, mini, tapón, accesorios), después páginas, blog y carrito.

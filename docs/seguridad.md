@@ -106,6 +106,10 @@ Mercado Pago puede castigar o cerrar la cuenta. Defensas:
 - Pocas dependencias y conocidas; versiones fijas con archivo de bloqueo; `npm ci` en cada despliegue.
 - No se instala un paquete publicado hace menos de una semana (los ataques recientes a npm se descubren en días).
 - Avisos automáticos de GitHub (Dependabot) y `npm audit` en cada cambio; acciones de GitHub con permisos mínimos.
+- Pendiente (4-nov-2026): alerta moderada de `minimatch` dentro de `typescript-eslint`. Solo afecta al revisor de código
+  (`npm run lint`), nunca a la página. La corrección (minimatch 11) salió hace días y `typescript-eslint` todavía pide
+  la 10; forzarla rompe la regla de una semana y el rango del paquete. Se actualiza cuando `typescript-eslint` la acepte
+  (revisión de cyber-neo antes de abrir).
 
 ## 10. Datos personales (ley mexicana)
 

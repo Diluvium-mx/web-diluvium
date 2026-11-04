@@ -2,6 +2,7 @@
 // Solo para mostrar: el precio que vale para cobrar lo calcula el servidor en el paso 3 (docs/seguridad.md §2).
 
 import datos from "@contenido/productos.json";
+import { calificacionProducto, redondear } from "@/components/resenas/calificaciones";
 
 export type ImagenProducto = { src: string; alt: string; ancho: number; alto: number };
 export type Variante = {
@@ -50,15 +51,6 @@ export function productosDeColeccion(nombre: string, cuantos?: number): Producto
   return cuantos ? lista.slice(0, cuantos) : lista;
 }
 
-// Calificaciones de la app de reseñas (Trustoo) tal como salen en las tarjetas de la tienda en vivo (3-nov-2026).
-// «promedio» sale del ancho de la estrella parcial (82 % en la compuerta XXL).
-const RESENAS: Record<string, { promedio: number; total: number }> = {
-  "compuerta-anti-inundaciones": { promedio: 4.94, total: 204 },
-  "compuerta-anti-inundaciones-hecha-a-la-medida": { promedio: 4.82, total: 22 },
-  "tapon-inflable-anti-inundaciones": { promedio: 5, total: 10 },
-  "funda-de-repuesto-compuerta-anti-inundaciones": { promedio: 5, total: 2 },
-};
-
 /** Proveedor que la tienda muestra en las tarjetas (ajuste «show_vendor»), tal como está capturado en Shopify. */
 export function proveedor(p: Producto): string {
   return PROVEEDOR_DILUVIUM.has(p.nombre) ? "Diluvium" : "evita-inundarte-mx";
@@ -68,8 +60,11 @@ export function proveedor(p: Producto): string {
 // «evita-inundarte-mx».
 const PROVEEDOR_DILUVIUM = new Set(["compuerta-anti-inundaciones", "mini-compuerta"]);
 
+// Calificación que sale en las tarjetas (estrellas y número de reseñas): se calcula con las reseñas publicadas.
+// El promedio va con 2 decimales, que es lo que mide el ancho de la estrella parcial en vivo (82 % en la XXL).
 export function resenas(p: Producto) {
-  return RESENAS[p.nombre];
+  const { promedio, total } = calificacionProducto(p.nombre);
+  return total ? { promedio: redondear(promedio, 2), total } : undefined;
 }
 
 export type Medio =
@@ -97,11 +92,8 @@ export function mediosProducto(p: Producto): Medio[] {
   return medios;
 }
 
-/** 5500 → «$ 5,500.00 MXN», como el formato de moneda de la tienda. */
-export function precioTexto(cantidad: number): string {
-  const numero = cantidad.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  return `$ ${numero} MXN`;
-}
+// Formato de moneda en archivo aparte: también lo usa el carrito, que va en todas las páginas.
+export { precioTexto } from "./formato-precio";
 
 /** Precio que muestra una tarjeta: el menor, «Desde» si las variantes cuestan distinto, y el precio anterior. */
 export function resumenPrecio(p: Producto) {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import politicas from "@contenido/politicas.json";
 import { ESTILO_TEXTO_PAGINA } from "@/components/secciones/ContenidoPagina";
+import { metadatos } from "@/lib/seo";
 
 // Políticas de la tienda con las mismas direcciones que en Shopify: /policies/<nombre>. No son secciones del tema:
 // solo el título y el texto (contenido/politicas.json, sacado con herramientas/extraer-paginas.py).
@@ -17,8 +18,7 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ nombre: string }> }): Promise<Metadata> {
-  const p = politica((await params).nombre);
-  return p ? { title: p.titulo } : {};
+  return metadatos(`/policies/${(await params).nombre}`);
 }
 
 export default async function PaginaPolitica({ params }: { params: Promise<{ nombre: string }> }) {

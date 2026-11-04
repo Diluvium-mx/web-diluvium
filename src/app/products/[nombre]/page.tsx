@@ -5,6 +5,7 @@ import { plantillaProducto } from "@/lib/contenido";
 import { producto } from "@/components/producto/catalogo";
 import { Secciones } from "@/components/secciones/registro";
 import { ResenasProducto } from "@/components/resenas/ResenasProducto";
+import { DatosEstructurados, MetaProducto, datosProducto, metadatos } from "@/lib/seo";
 
 // Páginas de producto con las mismas direcciones que en Shopify: /products/<nombre>.
 
@@ -15,8 +16,7 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ nombre: string }> }): Promise<Metadata> {
-  const p = producto((await params).nombre);
-  return p ? { title: p.titulo } : {};
+  return metadatos(`/products/${(await params).nombre}`);
 }
 
 export default async function PaginaProducto({ params }: { params: Promise<{ nombre: string }> }) {
@@ -29,6 +29,8 @@ export default async function PaginaProducto({ params }: { params: Promise<{ nom
   const corte = secciones.findIndex((s) => s.tipo === "main-product") + 1;
   return (
     <>
+      <MetaProducto producto={p} />
+      <DatosEstructurados datos={datosProducto(p)} />
       <Secciones secciones={secciones.slice(0, corte)} producto={p} />
       <ResenasProducto producto={p} />
       <Secciones secciones={secciones.slice(corte)} producto={p} />

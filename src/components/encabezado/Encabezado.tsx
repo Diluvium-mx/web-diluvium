@@ -13,6 +13,7 @@ import { numero, texto } from "@/lib/contenido";
 import { IconoBolsa, IconoBuscar, IconoCerrar, IconoMenu } from "@/components/comunes/Iconos";
 import { BuscadorRapido } from "./BuscadorRapido";
 import { PanelCarrito } from "./PanelCarrito";
+import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
 
 export function Encabezado({ seccion }: { seccion: Seccion }) {
   const ruta = usePathname();
@@ -21,9 +22,14 @@ export function Encabezado({ seccion }: { seccion: Seccion }) {
   const abierto = abiertoEn === ruta;
   const setAbierto = (si: boolean) => setAbiertoEn(si ? ruta : null);
   // Buscador y carrito lateral: igual, se cierran solos al cambiar de página.
-  const [ventana, setVentana] = useState<{ cual: "buscar" | "carrito"; ruta: string } | null>(null);
+  // «anadido»: el carrito se abrió solo tras agregar un producto (muestra «Producto añadido al carrito»).
+  const [ventana, setVentana] = useState<{ cual: "buscar" | "carrito"; ruta: string; anadido?: boolean } | null>(null);
   const abierta = ventana && ventana.ruta === ruta ? ventana.cual : null;
   const cerrarVentana = useCallback(() => setVentana(null), []);
+  const { piezas } = useCarrito();
+
+  // La ficha y «Quick add» piden abrir el carrito lateral al agregar.
+  useEffect(() => alAbrirCarrito(({ anadido }) => setVentana({ cual: "carrito", ruta, anadido })), [ruta]);
   const logo = texto(seccion.ajustes, "logo");
   const anchoLogo = numero(seccion.ajustes, "logo_width", 200);
   const anchoLogoCel = numero(seccion.ajustes, "logo_width_mobile", 140);
@@ -97,22 +103,31 @@ export function Encabezado({ seccion }: { seccion: Seccion }) {
           <a
             href="/cart"
             role="button"
-            aria-label="Carrito 0 artículos"
+            aria-label={`Carrito ${piezas} artículos`}
             aria-haspopup="true"
             aria-expanded={abierta === "carrito"}
             onClick={(e) => {
               e.preventDefault();
               setVentana({ cual: "carrito", ruta });
             }}
-            className="flex h-10 w-5 xl:h-11 items-center justify-center xl:w-11"
+            className="relative flex h-10 w-5 xl:h-11 items-center justify-center xl:w-11"
           >
             <IconoBolsa className="h-5 w-5 xl:h-6 xl:w-6" />
+            {/* Número de piezas: círculo naranja arriba a la derecha de la bolsa (solo con productos, como en vivo). */}
+            {piezas > 0 && (
+              <span
+                aria-hidden="true"
+                className="absolute top-[3px] left-[calc(50%-1px)] flex xl:left-[calc(50%+1px)] h-5 min-w-5 items-center justify-center rounded-[50px] bg-naranja px-[5px] text-center [font-family:sans-serif] text-[13.6px] leading-[17px] font-medium whitespace-nowrap text-white"
+              >
+                {piezas}
+              </span>
+            )}
           </a>
         </div>
       </div>
 
       {abierta === "buscar" && <BuscadorRapido cerrar={cerrarVentana} />}
-      {abierta === "carrito" && <PanelCarrito cerrar={cerrarVentana} />}
+      {abierta === "carrito" && <PanelCarrito cerrar={cerrarVentana} anadido={ventana?.anadido} />}
 
       {abierto && (
         <div className="fixed inset-0 z-40 xl:hidden" role="dialog" aria-modal="true" aria-label="Menú">

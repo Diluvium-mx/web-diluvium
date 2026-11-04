@@ -1,7 +1,10 @@
 // Expresión que se ejecuta dentro de la página para medirla (la usan medir-estilos.mjs y comparar.mjs).
 // Selector de secciones: las de Shopify en el sitio en vivo o [data-seccion] en la réplica.
 
-export const MEDIR = String.raw`(() => {
+// medirCon(selector) mide otras piezas como si fueran secciones (p. ej. el carrito lateral, que no es sección).
+const SECCIONES = "[data-seccion], main .shopify-section, body > .shopify-section, .shopify-section-group-header-group, .shopify-section-group-footer-group";
+
+export const medirCon = (selector) => String.raw`(() => {
   const local = (u) => {
     if (!u) return u;
     const m = u.match(/\/cdn\/shop\/(files|products|videos|articles|collections)\/(.+?)(\?|$)/);
@@ -18,7 +21,7 @@ export const MEDIR = String.raw`(() => {
     return [Math.round(r.left), Math.round(r.top + scrollY - y0), Math.round(r.width), Math.round(r.height)];
   };
   const textoPropio = (el) => [...el.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join(" ").replace(/\s+/g, " ").trim();
-  const secciones = [...document.querySelectorAll("[data-seccion], main .shopify-section, body > .shopify-section, .shopify-section-group-header-group, .shopify-section-group-footer-group")]
+  const secciones = [...document.querySelectorAll(${JSON.stringify(selector)})]
     .filter((s, i, arr) => !arr.some((o) => o !== s && o.contains(s)))
     .filter(visible);
   return {
@@ -70,3 +73,5 @@ export const MEDIR = String.raw`(() => {
     }),
   };
 })()`;
+
+export const MEDIR = medirCon(SECCIONES);

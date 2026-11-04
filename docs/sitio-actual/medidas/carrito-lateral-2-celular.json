@@ -1,0 +1,721 @@
+{
+ "url": "https://www.diluvium.com.mx/products/tapon-inflable-anti-inundaciones",
+ "ancho": 390,
+ "altoPagina": 12731,
+ "secciones": [
+  {
+   "id": "",
+   "tipo": "",
+   "caja": [
+    24,
+    24,
+    342,
+    796
+   ],
+   "bg": "rgb(255, 255, 255)",
+   "layouts": [
+    {
+     "tag": "div",
+     "cls": "drawer__header d-flex middle-xs between-xs",
+     "caja": [
+      24,
+      0,
+      342,
+      60
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "12px",
+     "cols": "254px 40px",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "12px 12px 12px 24px"
+    },
+    {
+     "tag": "div",
+     "cls": "drawer--animate drawer__heading d-flex c-gap-10 middle-xs",
+     "caja": [
+      48,
+      14,
+      254,
+      32
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal 10px",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "span",
+     "cls": "cart-freeship-progress d-flex middle-xs w-100",
+     "caja": [
+      48,
+      184,
+      294,
+      17
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "li",
+     "cls": "cart-drawer__product gap-16 d-grid pt-16 pb-16",
+     "caja": [
+      48,
+      225,
+      294,
+      239
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px",
+     "cols": "80px 198px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex middle-xs mt-12",
+     "caja": [
+      144,
+      406,
+      198,
+      42
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "sht-cart-drwr-qty-inp",
+     "cls": "field_quantity gap-8 d-inline-flex middle-xs center-xs mr-8",
+     "caja": [
+      144,
+      406,
+      130,
+      42
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "li",
+     "cls": "cart-drawer__product gap-16 d-grid pt-16 pb-16",
+     "caja": [
+      48,
+      464,
+      294,
+      212
+     ],
+     "display": "grid",
+     "dir": "row",
+     "gap": "16px",
+     "cols": "80px 198px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "16px 0px"
+    },
+    {
+     "tag": "div",
+     "cls": "d-flex middle-xs mt-12",
+     "caja": [
+      144,
+      618,
+      198,
+      42
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "normal",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "sht-cart-drwr-qty-inp",
+     "cls": "field_quantity gap-8 d-inline-flex middle-xs center-xs mr-8",
+     "caja": [
+      144,
+      618,
+      130,
+      42
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "8px",
+     "justify": "center",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "drawer--animate d-flex middle-xs between-xs mb-12",
+     "caja": [
+      44,
+      602,
+      302,
+      24
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "normal",
+     "justify": "space-between",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "div",
+     "cls": "drawer--animate d-flex gap-12 mt-12",
+     "caja": [
+      44,
+      686,
+      302,
+      48
+     ],
+     "display": "flex",
+     "dir": "row",
+     "gap": "12px",
+     "justify": "normal",
+     "align": "normal",
+     "pad": "0px"
+    }
+   ],
+   "elementos": [
+    {
+     "tag": "h2",
+     "caja": [
+      48,
+      19,
+      53,
+      21
+     ],
+     "texto": "Carrito",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      111,
+      14,
+      32,
+      32
+     ],
+     "texto": "3",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "bg": "rgb(10, 85, 154)"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      324,
+      22,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "sht-message-success",
+     "caja": [
+      48,
+      72,
+      294,
+      56
+     ],
+     "texto": "Producto añadido al carrito",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(4, 148, 61)",
+     "align": "start"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      56,
+      80,
+      16,
+      16
+     ],
+     "texto": ">",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "viewBox": "0 0 18 12"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      48,
+      128,
+      294,
+      48
+     ],
+     "texto": "¡Buenas noticias! Tu pedido califica para envío gratis.",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      252,
+      184,
+      90,
+      17
+     ],
+     "texto": "$ 499.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      48,
+      241,
+      80,
+      80
+     ],
+     "src": "/media/products/Frame237.png",
+     "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "natural": [
+      390,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      144,
+      241,
+      198,
+      96
+     ],
+     "texto": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/products/tapon-inflable-anti-inundaciones?variant=43040043106524"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      144,
+      345,
+      198,
+      24
+     ],
+     "texto": "$ 1,498.00 MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      144,
+      377,
+      107,
+      16
+     ],
+     "texto": "2 pulgadas (5cm)",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      145,
+      409,
+      36,
+      36
+     ],
+     "texto": "disminuir",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      155,
+      419,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      237,
+      409,
+      36,
+      36
+     ],
+     "texto": "aumentar",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      247,
+      419,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      292,
+      419,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "img",
+     "caja": [
+      48,
+      480,
+      80,
+      80
+     ],
+     "src": "/media/files/Frame697.jpg",
+     "alt": "Compuerta Anti-Inundaciones",
+     "natural": [
+      390,
+      390
+     ],
+     "fit": "cover",
+     "pos": "50% 50%"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      144,
+      480,
+      198,
+      48
+     ],
+     "texto": "Compuerta Anti-Inundaciones",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "700",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start",
+     "pad": "0px",
+     "href": "/products/compuerta-anti-inundaciones?variant=46431147524316"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      144,
+      536,
+      198,
+      24
+     ],
+     "texto": "$ 5,500.00 MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "s",
+     "caja": [
+      144,
+      564,
+      198,
+      17
+     ],
+     "texto": "$ 5,999.00 MXN",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "start",
+     "deco": "line-through"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      144,
+      589,
+      167,
+      16
+     ],
+     "texto": "Extra Chica (69cm a 78cm)",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "start"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      145,
+      621,
+      36,
+      36
+     ],
+     "texto": "disminuir",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      155,
+      631,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      237,
+      621,
+      36,
+      36
+     ],
+     "texto": "aumentar",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "pad": "0px"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      247,
+      631,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "svg",
+     "caja": [
+      292,
+      631,
+      16,
+      16
+     ],
+     "viewBox": "0 0 25 24"
+    },
+    {
+     "tag": "h2",
+     "caja": [
+      44,
+      604,
+      35,
+      20
+     ],
+     "texto": "Total",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "20px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "p",
+     "caja": [
+      227,
+      602,
+      119,
+      24
+     ],
+     "texto": "$ 6,998.00 MXN",
+     "font": "Instrument Sans",
+     "size": "16px",
+     "weight": "400",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "span",
+     "caja": [
+      44,
+      638,
+      150,
+      36
+     ],
+     "texto": "Agregar notas de pedido",
+     "font": "Archivo",
+     "size": "13.6px",
+     "weight": "500",
+     "lh": "17px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center",
+     "deco": "underline"
+    },
+    {
+     "tag": "h3",
+     "caja": [
+      69,
+      490,
+      252,
+      21
+     ],
+     "texto": "Order note",
+     "font": "Archivo",
+     "size": "17.072px",
+     "weight": "500",
+     "lh": "21.34px",
+     "color": "rgb(10, 85, 154)",
+     "align": "start"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      44,
+      686,
+      144,
+      48
+     ],
+     "texto": "Ver carrito",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "lh": "24px",
+     "color": "rgb(10, 85, 154)",
+     "align": "center",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "6px 24px",
+     "href": "/cart"
+    },
+    {
+     "tag": "button",
+     "caja": [
+      200,
+      686,
+      146,
+      48
+     ],
+     "texto": "Finalizar compra",
+     "font": "Archivo",
+     "size": "16px",
+     "weight": "500",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "bg": "rgb(248, 160, 29)",
+     "border": "1px solid rgb(248, 160, 29)",
+     "pad": "6px 24px"
+    },
+    {
+     "tag": "small",
+     "caja": [
+      44,
+      742,
+      302,
+      34
+     ],
+     "texto": "Impuesto incluido. calculados al finalizar la compra.",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgba(10, 85, 154, 0.6)",
+     "align": "center"
+    },
+    {
+     "tag": "a",
+     "caja": [
+      163,
+      742,
+      35,
+      16
+     ],
+     "texto": "Envío",
+     "font": "Instrument Sans",
+     "size": "13.6px",
+     "weight": "400",
+     "lh": "17px",
+     "color": "rgb(248, 160, 29)",
+     "align": "center",
+     "deco": "underline",
+     "pad": "0px",
+     "href": "/policies/shipping-policy"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,701 @@
+{
+  "paginas": {
+    "/": {
+      "titulo": "Diluvium México",
+      "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+      "canonica": "/",
+      "og": {
+        "tipo": "website",
+        "titulo": "Diluvium México",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Diluvium México",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/products/compuerta-anti-inundaciones": {
+      "titulo": "Compuerta Anti-Inundaciones – Diluvium",
+      "descripcion": "Evita el paso del agua durante lluvias intensas e inundaciones, protege tu entrada en minutos, asegurando la protección de lo que más valoras. Rápida, eficiente y reutilizable.  🕑 Rápida Instalación: En tan solo 10 minutos protege tu domicilio ante fuertes lluvias. No se requieren modificaciones en tu entrada. 💦 Hecha ",
+      "canonica": "/products/compuerta-anti-inundaciones",
+      "og": {
+        "tipo": "product",
+        "titulo": "Compuerta Anti-Inundaciones",
+        "descripcion": "Evita el paso del agua durante lluvias intensas e inundaciones, protege tu entrada en minutos, asegurando la protección de lo que más valoras. Rápida, eficiente y reutilizable.  🕑 Rápida Instalación: En tan solo 10 minutos protege tu domicilio ante fuertes lluvias. No se requieren modificaciones en tu entrada. 💦 Hecha ",
+        "imagen": "/media/files/Frame697.jpg",
+        "ancho": 1300,
+        "alto": 1300
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Compuerta Anti-Inundaciones",
+        "descripcion": "Evita el paso del agua durante lluvias intensas e inundaciones, protege tu entrada en minutos, asegurando la protección de lo que más valoras. Rápida, eficiente y reutilizable.  🕑 Rápida Instalación: En tan solo 10 minutos protege tu domicilio ante fuertes lluvias. No se requieren modificaciones en tu entrada. 💦 Hecha "
+      }
+    },
+    "/products/compuerta-anti-inundaciones-hecha-a-la-medida": {
+      "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medida – Diluvium",
+      "descripcion": "Esta compuerta se adapta a tu entrada, puede medir hasta 2.5m de ancho x 60cm de alto, creando un sello en todo el contorno para impedir el paso del agua. Está hecha de acero, para resistir fuertes impactos de olas y altas presiones de agua. Cuando está lloviendo se coloca en 10 minutos y cuando pasa la lluvia se retir",
+      "canonica": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+      "og": {
+        "tipo": "product",
+        "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+        "descripcion": "Esta compuerta se adapta a tu entrada, puede medir hasta 2.5m de ancho x 60cm de alto, creando un sello en todo el contorno para impedir el paso del agua. Está hecha de acero, para resistir fuertes impactos de olas y altas presiones de agua. Cuando está lloviendo se coloca en 10 minutos y cuando pasa la lluvia se retir",
+        "imagen": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+        "ancho": 1260,
+        "alto": 1260
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+        "descripcion": "Esta compuerta se adapta a tu entrada, puede medir hasta 2.5m de ancho x 60cm de alto, creando un sello en todo el contorno para impedir el paso del agua. Está hecha de acero, para resistir fuertes impactos de olas y altas presiones de agua. Cuando está lloviendo se coloca en 10 minutos y cuando pasa la lluvia se retir"
+      }
+    },
+    "/products/mini-compuerta": {
+      "titulo": "Mini Compuerta Anti-Inundaciones (30cm altura) – Diluvium",
+      "descripcion": null,
+      "canonica": "/products/mini-compuerta",
+      "og": {
+        "tipo": "product",
+        "titulo": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/IMG1.jpg",
+        "ancho": 1080,
+        "alto": 1080
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/products/tapon-inflable-anti-inundaciones": {
+      "titulo": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar c – Diluvium",
+      "descripcion": "Cuando el drenaje se satura, el agua puede salir por las coladeras y causar daños en el hogar. El Tapón Inflable Anti Inundaciones se introduce en la tubería y, al inflarse, bloquea de manera segura el paso del agua.Fabricado en goma de alta resistencia, se instala fácilmente en coladeras de regaderas o inodoros, sella",
+      "canonica": "/products/tapon-inflable-anti-inundaciones",
+      "og": {
+        "tipo": "product",
+        "titulo": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar c",
+        "descripcion": "Cuando el drenaje se satura, el agua puede salir por las coladeras y causar daños en el hogar. El Tapón Inflable Anti Inundaciones se introduce en la tubería y, al inflarse, bloquea de manera segura el paso del agua.Fabricado en goma de alta resistencia, se instala fácilmente en coladeras de regaderas o inodoros, sella",
+        "imagen": "/media/products/Frame237.png",
+        "ancho": 1080,
+        "alto": 1080
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar c",
+        "descripcion": "Cuando el drenaje se satura, el agua puede salir por las coladeras y causar daños en el hogar. El Tapón Inflable Anti Inundaciones se introduce en la tubería y, al inflarse, bloquea de manera segura el paso del agua.Fabricado en goma de alta resistencia, se instala fácilmente en coladeras de regaderas o inodoros, sella"
+      }
+    },
+    "/products/funda-de-repuesto-compuerta-anti-inundaciones": {
+      "titulo": "Funda de repuesto Compuerta Anti-Inundaciones – Diluvium",
+      "descripcion": "Respuesto para tu compuerta anti inundaciones, en caso de ruptura o desgaste. Esta funda es elástica para que se expanda junto con la compuerta, e impermeable para impedir el flujo de agua a través de ella. Recomendamos reponerla cada 4-5 años dependiendo del uso. Este producto incluye solamente la funda, no la compuer",
+      "canonica": "/products/funda-de-repuesto-compuerta-anti-inundaciones",
+      "og": {
+        "tipo": "product",
+        "titulo": "Funda de repuesto Compuerta Anti-Inundaciones",
+        "descripcion": "Respuesto para tu compuerta anti inundaciones, en caso de ruptura o desgaste. Esta funda es elástica para que se expanda junto con la compuerta, e impermeable para impedir el flujo de agua a través de ella. Recomendamos reponerla cada 4-5 años dependiendo del uso. Este producto incluye solamente la funda, no la compuer",
+        "imagen": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+        "ancho": 2251,
+        "alto": 2251
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Funda de repuesto Compuerta Anti-Inundaciones",
+        "descripcion": "Respuesto para tu compuerta anti inundaciones, en caso de ruptura o desgaste. Esta funda es elástica para que se expanda junto con la compuerta, e impermeable para impedir el flujo de agua a través de ella. Recomendamos reponerla cada 4-5 años dependiendo del uso. Este producto incluye solamente la funda, no la compuer"
+      }
+    },
+    "/products/accesorio-tira-de-hule-de-repuesto": {
+      "titulo": "Tira de hule de repuesto (accesorio) – Diluvium",
+      "descripcion": "Este hule se coloca al contorno de la compuerta antes de expanderla. Es presionado para crear un sello hermético, que impide el flujo de agua. Mide 1 1/2 x 1/2 pulgadas x 2.3m de largo.",
+      "canonica": "/products/accesorio-tira-de-hule-de-repuesto",
+      "og": {
+        "tipo": "product",
+        "titulo": "Tira de hule de repuesto (accesorio)",
+        "descripcion": "Este hule se coloca al contorno de la compuerta antes de expanderla. Es presionado para crear un sello hermético, que impide el flujo de agua. Mide 1 1/2 x 1/2 pulgadas x 2.3m de largo.",
+        "imagen": "/media/products/Tiradehule.png",
+        "ancho": 1953,
+        "alto": 1953
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Tira de hule de repuesto (accesorio)",
+        "descripcion": "Este hule se coloca al contorno de la compuerta antes de expanderla. Es presionado para crear un sello hermético, que impide el flujo de agua. Mide 1 1/2 x 1/2 pulgadas x 2.3m de largo."
+      }
+    },
+    "/products/accesorio-plastilina-de-secado-rapido": {
+      "titulo": "Plastilina de secado rápido (accesorio) – Diluvium",
+      "descripcion": "Esta plastilina se coloca en las esquinas inferiores antes de instalar la compuerta. Su función es sellar pequeñas filtraciones que pueden formarse en los extremos inferiores al colocar la compuerta. Una vez colocada esta se amolda a la esquina y se seca en un tiempo promedio de 15 minutos, sellando por completo ese es",
+      "canonica": "/products/accesorio-plastilina-de-secado-rapido",
+      "og": {
+        "tipo": "product",
+        "titulo": "Plastilina de secado rápido (accesorio)",
+        "descripcion": "Esta plastilina se coloca en las esquinas inferiores antes de instalar la compuerta. Su función es sellar pequeñas filtraciones que pueden formarse en los extremos inferiores al colocar la compuerta. Una vez colocada esta se amolda a la esquina y se seca en un tiempo promedio de 15 minutos, sellando por completo ese es",
+        "imagen": "/media/products/Accesorio3.png",
+        "ancho": 2683,
+        "alto": 2683
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Plastilina de secado rápido (accesorio)",
+        "descripcion": "Esta plastilina se coloca en las esquinas inferiores antes de instalar la compuerta. Su función es sellar pequeñas filtraciones que pueden formarse en los extremos inferiores al colocar la compuerta. Una vez colocada esta se amolda a la esquina y se seca en un tiempo promedio de 15 minutos, sellando por completo ese es"
+      }
+    },
+    "/collections/all-products": {
+      "titulo": "Todos los productos – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/all-products",
+      "og": {
+        "tipo": "website",
+        "titulo": "Todos los productos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/collections/CECI_Testimonio_7_1_1.jpg",
+        "ancho": 1258,
+        "alto": 944
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Todos los productos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/all": {
+      "titulo": "Productos – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/all",
+      "og": {
+        "tipo": "website",
+        "titulo": "Productos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Productos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/a-compuerta": {
+      "titulo": "A Compuerta – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/a-compuerta",
+      "og": {
+        "tipo": "website",
+        "titulo": "A Compuerta",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "A Compuerta",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/coleccion-para-escritorio": {
+      "titulo": "Coleccion para escritorio – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/coleccion-para-escritorio",
+      "og": {
+        "tipo": "website",
+        "titulo": "Coleccion para escritorio",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Coleccion para escritorio",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/coleccion-para-mobile": {
+      "titulo": "Coleccion para mobile – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/coleccion-para-mobile",
+      "og": {
+        "tipo": "website",
+        "titulo": "Coleccion para mobile",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Coleccion para mobile",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/frontpage": {
+      "titulo": "Home page – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/frontpage",
+      "og": {
+        "tipo": "website",
+        "titulo": "Home page",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Home page",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections/los-mas-vendidos": {
+      "titulo": "Los mas vendidos – Diluvium",
+      "descripcion": null,
+      "canonica": "/collections/los-mas-vendidos",
+      "og": {
+        "tipo": "website",
+        "titulo": "Los mas vendidos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Los mas vendidos",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/collections": {
+      "titulo": "Colecciones – Diluvium",
+      "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+      "canonica": "/collections",
+      "og": {
+        "tipo": "website",
+        "titulo": "Colecciones",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Colecciones",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/nosotros": {
+      "titulo": "Nosotros – Diluvium",
+      "descripcion": null,
+      "canonica": "/pages/nosotros",
+      "og": {
+        "tipo": "website",
+        "titulo": "Nosotros",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Nosotros",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/contact": {
+      "titulo": "Contact – Diluvium",
+      "descripcion": null,
+      "canonica": "/pages/contact",
+      "og": {
+        "tipo": "website",
+        "titulo": "Contact",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Contact",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/preguntas-frecuentes": {
+      "titulo": "Tamaños – Diluvium",
+      "descripcion": "1. Mide la anchura de tu entrada Elige un marco firme donde pueda hacer presión la compuerta 2. Encuentra tu tamaño en la siguiente tabla:",
+      "canonica": "/pages/preguntas-frecuentes",
+      "og": {
+        "tipo": "website",
+        "titulo": "Tamaños",
+        "descripcion": "1. Mide la anchura de tu entrada Elige un marco firme donde pueda hacer presión la compuerta 2. Encuentra tu tamaño en la siguiente tabla:",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Tamaños",
+        "descripcion": "1. Mide la anchura de tu entrada Elige un marco firme donde pueda hacer presión la compuerta 2. Encuentra tu tamaño en la siguiente tabla:"
+      }
+    },
+    "/pages/instalacion": {
+      "titulo": "Instalacion – Diluvium",
+      "descripcion": null,
+      "canonica": "/pages/instalacion",
+      "og": {
+        "tipo": "website",
+        "titulo": "Instalacion",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Instalacion",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/distribuidor": {
+      "titulo": "Distribuidor – Diluvium",
+      "descripcion": null,
+      "canonica": "/pages/distribuidor",
+      "og": {
+        "tipo": "website",
+        "titulo": "Distribuidor",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Distribuidor",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/reviews": {
+      "titulo": "Customer Reviews – Diluvium",
+      "descripcion": "",
+      "canonica": "/pages/reviews",
+      "og": {
+        "tipo": "website",
+        "titulo": "Customer Reviews",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Customer Reviews",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/pages/share-cart": {
+      "titulo": "Share Cart – Diluvium",
+      "descripcion": "",
+      "canonica": "/pages/share-cart",
+      "og": {
+        "tipo": "website",
+        "titulo": "Share Cart",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Share Cart",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/search": {
+      "titulo": "Buscar – Diluvium",
+      "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+      "canonica": "/search",
+      "og": {
+        "tipo": "website",
+        "titulo": "Buscar",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Buscar",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/blogs/blog": {
+      "titulo": "Blog – Diluvium",
+      "descripcion": null,
+      "canonica": "/blogs/blog",
+      "og": {
+        "tipo": "website",
+        "titulo": "Blog",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Blog",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias": {
+      "titulo": "¿Cómo evitar que entre agua a tu casa cuando llueve? – Diluvium",
+      "descripcion": "SOLUCIÓN - 4 lugares principales por donde entra el agua y cómo sellarlos. Cada año hay meses en donde las lluvias llegan a ser muy propensas y fuertes...  En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, las posibles filtraciones y los pasos a seguir para sellar esas entradas de agua. Ha",
+      "canonica": "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+      "og": {
+        "tipo": "article",
+        "titulo": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+        "descripcion": "SOLUCIÓN - 4 lugares principales por donde entra el agua y cómo sellarlos. Cada año hay meses en donde las lluvias llegan a ser muy propensas y fuertes...  En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, las posibles filtraciones y los pasos a seguir para sellar esas entradas de agua. Ha",
+        "imagen": "/media/articles/Frame_frame.png",
+        "ancho": 1360,
+        "alto": 696
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+        "descripcion": "SOLUCIÓN - 4 lugares principales por donde entra el agua y cómo sellarlos. Cada año hay meses en donde las lluvias llegan a ser muy propensas y fuertes...  En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, las posibles filtraciones y los pasos a seguir para sellar esas entradas de agua. Ha"
+      }
+    },
+    "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4": {
+      "titulo": "Kit de evacuación rápida - inundaciones – Diluvium",
+      "descripcion": "¿Qué debo de tener listo en una mochila en caso de inundaciones? En este apartado resumiremos los artículos que te recomendamos tener a la mano si es que vives en zona propensa a inundarse. Que no te agarre desprevenido... Te dejamos una imagen con el resumen de lo más importante:     Entre lo principal recomendamos: P",
+      "canonica": "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+      "og": {
+        "tipo": "article",
+        "titulo": "Kit de evacuación rápida - inundaciones",
+        "descripcion": "¿Qué debo de tener listo en una mochila en caso de inundaciones? En este apartado resumiremos los artículos que te recomendamos tener a la mano si es que vives en zona propensa a inundarse. Que no te agarre desprevenido... Te dejamos una imagen con el resumen de lo más importante:     Entre lo principal recomendamos: P",
+        "imagen": "/media/articles/Mochila_2.png",
+        "ancho": 1307,
+        "alto": 602
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Kit de evacuación rápida - inundaciones",
+        "descripcion": "¿Qué debo de tener listo en una mochila en caso de inundaciones? En este apartado resumiremos los artículos que te recomendamos tener a la mano si es que vives en zona propensa a inundarse. Que no te agarre desprevenido... Te dejamos una imagen con el resumen de lo más importante:     Entre lo principal recomendamos: P"
+      }
+    },
+    "/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades": {
+      "titulo": "¿Por qué aumentan las inundaciones en nuestras ciudades? – Diluvium",
+      "descripcion": "  Escrito por Diluvium ® Las lluvias son inevitables y forman parte de la naturaleza con la que debemos lidiar. Sin embargo, hay diversos factores que contribuyen al creciente problema de las inundaciones, siendo uno de los más significativos la contaminación. En este artículo, descubrirás algunos agentes contaminantes",
+      "canonica": "/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+      "og": {
+        "tipo": "article",
+        "titulo": "¿Por qué aumentan las inundaciones en nuestras ciudades?",
+        "descripcion": "  Escrito por Diluvium ® Las lluvias son inevitables y forman parte de la naturaleza con la que debemos lidiar. Sin embargo, hay diversos factores que contribuyen al creciente problema de las inundaciones, siendo uno de los más significativos la contaminación. En este artículo, descubrirás algunos agentes contaminantes",
+        "imagen": "/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg",
+        "ancho": 1024,
+        "alto": 686
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "¿Por qué aumentan las inundaciones en nuestras ciudades?",
+        "descripcion": "  Escrito por Diluvium ® Las lluvias son inevitables y forman parte de la naturaleza con la que debemos lidiar. Sin embargo, hay diversos factores que contribuyen al creciente problema de las inundaciones, siendo uno de los más significativos la contaminación. En este artículo, descubrirás algunos agentes contaminantes"
+      }
+    },
+    "/cart": {
+      "titulo": "Tu carrito – Diluvium",
+      "descripcion": null,
+      "canonica": "/cart",
+      "og": {
+        "tipo": "website",
+        "titulo": "Tu carrito",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Tu carrito",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "404": {
+      "titulo": "404 No encontrado – Diluvium",
+      "descripcion": null,
+      "canonica": "/404",
+      "og": {
+        "tipo": "website",
+        "titulo": "404 No encontrado",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "404 No encontrado",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/policies/privacy-policy": {
+      "titulo": "Política de privacidad – Diluvium",
+      "descripcion": null,
+      "canonica": "/policies/privacy-policy",
+      "og": {
+        "tipo": "website",
+        "titulo": "Política de privacidad",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Política de privacidad",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/policies/refund-policy": {
+      "titulo": "Política de reembolso – Diluvium",
+      "descripcion": null,
+      "canonica": "/policies/refund-policy",
+      "og": {
+        "tipo": "website",
+        "titulo": "Política de reembolso",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Política de reembolso",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
+    "/policies/terms-of-service": {
+      "titulo": "Términos del servicio – Diluvium",
+      "descripcion": null,
+      "canonica": "/policies/terms-of-service",
+      "og": {
+        "tipo": "website",
+        "titulo": "Términos del servicio",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "Términos del servicio",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    }
+  },
+  "articulos": {
+    "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias": {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "articleBody": "SOLUCIÓN - 4 lugares principales por donde entra el agua y cómo sellarlos.\nCada año hay meses en donde las lluvias llegan a ser muy propensas y fuertes... \nEn este apartado hablaremos de cómo estar preparado para temporadas de lluvias, las posibles filtraciones y los pasos a seguir para sellar esas entradas de agua.\nHay 4 principales lugares por donde se filtra el agua de lluvia hacia la casa o negocio:\n \n1. Agua que cae del techo\n\n \nEn la mayoría de ocasiones, el agua que empieza a gotear a través del techo es principalmente problema de una mala impermeabilizada.\nEs recomendable impermeabilizar cada 7 años (dependiendo de la calidad de los materiales) y si llueve mucho en tu zona cada 4 años.\nIdentifica los lugares donde gotea y asesorate con un especialista las maneras para impermeabilizar correctamente esa sección. Como la lluvia empieza por el techado, es preferente empezar a revisar por ahí para no generar humedad en el techo y las paredes.\nExisten indicadores fáciles de distinguir que determinan la necesidad de dar mantenimiento inmediato al inmueble, tales como:\n\nPintura en mal estado\nZonas visibles de humedad\nGrietas en los muros y acabados.\n\nEn otras palabras, la solución recomendada es la siguiente:\n- Asesorarse de expertos para reparar cada zona de goteo basado en impermeabilizante. - \n  \n2. Agua que entra por las entradas principales\n La segunda entrada más frecuente es a través de entradas convencionales que pueden ser de puerta sencilla, doble puerta o ventana corrediza.\nPara estos casos es necesario bloquear o desviar el acceso del agua al negocio o domicilio, para ello se tienen varios métodos:\n2.1) Con compuertas Anti Inundaciones (Recomendado)\n\nEs una compuerta que se coloca en las entradas del inmueble, está hecha para bloquear el paso del agua en temporadas de lluvias, se coloca en el marco de una entrada y se expande hasta adaptarse al contorno, se coloca en 10-15 minutos y se retira en 5 minutos. \nSi quieres más información puedes \nencontrarla aqui:\n\n\n\n\n\n\n\n \n\n2.2) Sistemas Anti Inundaciones \n\n \nEs un sistema que no vendamos nosotros, ya que consideramos poco conveniente que no se adapte a la entrada, pero sabemos que bloquea el flujo del agua de manera eficiente, por lo que habrá que integrarlo en este Blog, ya que la finalidad es protegerse.\nEste sistema funciona normalmente anclando 2 rieles en forma de U en los costados y en el medio tiene un pánel, normalmente de aluminio o metal, que en su contorno tiene un empaque para que al hacer presión selle el contorno y no pase el agua.\n \n\n2.3) Sacos de arena\n\n \nOtra opción muy utilizada son los sacos de arena, es ligeramente más económico aunque no obtiene los mismos resultados, pero definitivamente te ayuda a bloquear mucha agua que entraría.\nLos sacos de arena son el método más implementado y el más económico, pero hemos descubierto que es el menos eficiente, ya que un gran porcentaje del agua se trasmina a través de los sacos, son normalmente pesados y no se re-utilizan, por lo que la inversión de sacos de arena se tiene que hacer cada vez que llueva mucho, es una solución rápida pero no duradera.\n \n\n2.4) Tablas de madera\n\nOtro método que puede ayudar es colocando fijamente una tabla de madera con adhesivo y sellador al contorno, esto controlará la presión del agua para una menor filtración, no es lo más recomendable, pero si ayuda a controlar el flujo del agua.\nLa desventaja principal de este método es que la tabla una vez colocada es difícil quitarla, por lo que normalmente dura meses en el mismo lugar, y se tiene que estar saltando cada vez que pasas a través de la entrada. No es una solución estética ni práctica, pero si es económica.\n \n\n\n3. Agua que sale por tuberías o coladeras \nEn ocasiones es tanta la lluvia que satura el drenaje público, por lo que busca salida a través de la coladera de regaderas, alcantarillado y escusados.\nExisten diferentes métodos para bloquearla:\n\n3.1) Tapón inflable anti inundaciones (Recomendado)\n\n \nSegún opiniones de nuestros clientes, ha sido la manera más eficiente de bloquear rápidamente las tuberías, se trata de un tapón de goma que se coloca en la coladera y se infla de manera similar a un balón de fútbol, sellando el contorno y evitando que salga agua por la tubería.\n \n\nSi quieres más información puedes encontrarla aqui:\n\n  \n\n3.2) Válvula Check\nEsta válvula se coloca en la tubería del domicilio que da hacia el drenaje, es decir, el agua sucia que sale del escusado, regadera y lavamanos.\nLo que hace esta válvula es dejar que el agua sucia salga al drenaje sin problema, y cuando hay fuertes lluvias y se satura el drenaje, la misma válvula bloquea el paso del agua hacia adentro del domicilio, como en la siguiente imagen:\n \n\n \nEs probable que la pueda instalar un buen plomero en tu ciudad, recomendamos en acudir con alguien que tenga algo de experiencia del tema, pero es relativamente barata en comparación de la catástrofe que puede evitar, ya que por ahí pasa pura agua sucia.\n \n\n\n4. Agua que transmina entre las paredes \nPor último, mucha del agua que entra se transmina por paredes, para solucionar este problema recomendamos apoyarse con expertos para enjarrar y sellar las paredes más propensas a retener agua.\n\n \nUn método simple pero poco utilizado, es que después de enjarrar se aplique sellador a 1 metro de altura del piso, de esta manera es menos probable que se transmine a través de las paredes.\nEsta opción varía dependiendo de la zona, así que hay que saber exactamente de dónde entra agua y enfocarse en esas áreas.\n \nEstos son los consejos que te podemos dar basado en nuestra experiencia, esperemos te sirvan\n\n\n\n\n\n\n\n\nPuedes también:\n\n\n\n \n\n \n\n\n\n\n",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.diluvium.com.mx"
+      },
+      "headline": "¿Cómo evitar que entre agua a tu casa cuando llueve?",
+      "description": "En este apartado hablaremos de cómo estar preparado para temporadas de lluvias, los pasos a seguir y los métodos de preparación a llevar a cabo previamente a las lluvias.",
+      "image": [
+        "https://www.diluvium.com.mx/media/articles/Frame_frame.png"
+      ],
+      "datePublished": "2024-02-11T20:51:00Z",
+      "dateCreated": "2022-06-16T20:51:50Z",
+      "author": {
+        "@type": "Person",
+        "name": "Luis Navarro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Diluvium"
+      }
+    },
+    "/blogs/blog/como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4": {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "articleBody": "¿Qué debo de tener listo en una mochila en caso de inundaciones?\nEn este apartado resumiremos los artículos que te recomendamos tener a la mano si es que vives en zona propensa a inundarse.\nQue no te agarre desprevenido...\nTe dejamos una imagen con el resumen de lo más importante:\n \n\n \nEntre lo principal recomendamos:\n\nPasaporte y documentos importantes\nComida enlatada\nAgua embotellada\nEfectivo\nRopa / cambios\nBotiquín de primeros auxilios\nÚtiles de aseo\n\n \nEs un procedimiento simple pero muchas personas no se dan el tiempo de preparar su kit, por lo que recomendamos hacerlo lo antes posible para estar prevenido.\n \n \n ",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.diluvium.com.mx"
+      },
+      "headline": "Kit de evacuación rápida - inundaciones",
+      "description": "En este apartado se hablará de los materiales que recomendamos que tengas en una mochila para poder agarrar y salir en caso de emergencia.",
+      "image": [
+        "https://www.diluvium.com.mx/media/articles/Mochila_2.png"
+      ],
+      "datePublished": "2024-07-03T20:58:00Z",
+      "dateCreated": "2022-06-16T20:58:33Z",
+      "author": {
+        "@type": "Person",
+        "name": "Luis Navarro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Diluvium"
+      }
+    },
+    "/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades": {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "articleBody": " \nEscrito por Diluvium ®\nLas lluvias son inevitables y forman parte de la naturaleza con la que debemos lidiar. Sin embargo, hay diversos factores que contribuyen al creciente problema de las inundaciones, siendo uno de los más significativos la contaminación. En este artículo, descubrirás algunos agentes contaminantes que provocan el aumento de las inundaciones en nuestros hogares.\n \nAcumulación de basura\nCuando la basura se acumula en las calles, no solo afecta visualmente el entorno y empobrece la estética de nuestras vías, sino que también tiene efectos aún más perjudiciales al obstruir los sistemas de drenaje.Durante las lluvias, el agua arrastra la basura hacia las alcantarillas y sistemas de desagüe pluvial, creando un obstáculo que impide el flujo adecuado del agua, bloqueando los sistemas de drenaje y aumentando el riesgo de inundaciones.Cuando el agua no tiene una vía de escape, busca seguir su curso natural, lo que resulta en un incremento de su nivel y, como consecuencia, daños en nuestras viviendas.\n \nAplicación de concreto en las ciudades\nAunque solemos ver el pavimento, el concreto y las construcciones como parte del desarrollo urbano sin considerarlos como contaminantes, en realidad desempeñan un papel perjudicial en la naturaleza en general.Al cubrir los suelos con materiales que evitan la infiltración de la lluvia, se reduce la capacidad natural del suelo para absorber el agua pluvial. Esto se vuelve especialmente problemático en zonas bajas, donde el agua se acumula y, al no poder ser absorbida por superficies impermeables, los sistemas de drenaje urbano resultan insuficientes, provocando inundaciones.\n \n \nContaminación del agua\nUno de los problemas más graves que enfrentamos en la actualidad es la contaminación de los ríos y arroyos, principalmente debido a los desechos que tardan muchos años en degradarse.Además de los desechos generados por actividades humanas, también se produce una sedimentación natural que es arrastrada hacia los cuerpos de agua. Con el tiempo, esta sedimentación aumenta y reduce la capacidad de los ríos y arroyos para contener grandes volúmenes de agua.Durante períodos de lluvias constantes, los ríos y arroyos ya no tienen la capacidad de acumular agua como solían hacerlo en el pasado. La lluvia intensa se acumula en otras áreas, aumentando el riesgo de desbordamientos y provocando inundaciones como consecuencia de la contaminación.\n \nCambio climático\nEl cambio climático es una de las consecuencias directas de la contaminación y juega un papel fundamental en las inundaciones.El exceso de emisiones de gases altera el clima en general, incluyendo la intensidad de las lluvias. Según su ciclo natural, la Tierra intenta equilibrar la temperatura en la atmósfera, y una forma de eliminar el exceso de calor es a través de lluvias intensas y más frecuentes. Aunque esto puede ayudar al planeta a mantener su equilibrio ecológico, en áreas urbanas aumenta la probabilidad de inundaciones debido a la contaminación.\n \nConclusión\nDesafortunadamente, los esfuerzos humanos no son suficientes para combatir el cambio climático. \nSin embargo, afortunadamente, puedes proteger tu hogar y limitar los daños causados por estos desastres al adquirir productos especializados para prevenir inundaciones.\nHemos dedicado muchos años con la meta de ayudar a la mayor cantidad de personas posible de protegerse de inundaciones, esperemos esta información te haya sido útil.\n \n \n \n ",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.diluvium.com.mx"
+      },
+      "headline": "¿Por qué aumentan las inundaciones en nuestras ciudades?",
+      "description": "Además de las lluvias intensas, hay otros factores invisibles que están empeorando las inundaciones en nuestras ciudades: desde la acumulación de basura hasta el exceso de concreto en calles y banquetas. En esta sección descubrirás cómo la contaminación urbana, el mal manejo del agua y el cambio climático están afectando directamente tu entorno… y qué puedes hacer para proteger tu hogar.",
+      "image": [
+        "https://www.diluvium.com.mx/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg"
+      ],
+      "datePublished": "2024-06-16T11:15:00Z",
+      "dateCreated": "2023-06-07T14:06:54Z",
+      "author": {
+        "@type": "Person",
+        "name": "Luis Navarro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Diluvium"
+      }
+    }
+  },
+  "codigosBarras": {
+    "43039686131932": "7500464704443",
+    "43039686164700": "7500464704450",
+    "43039686197468": "7500464704467",
+    "43039686263004": "7500464704474"
+  },
+  "organizacion": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Diluvium",
+    "logo": "https://www.diluvium.com.mx/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+    "sameAs": [
+      "https://www.facebook.com/GrupoDiluvium",
+      "https://www.instagram.com/diluviummx/",
+      "https://www.youtube.com/@diluviummexico"
+    ],
+    "url": "https://www.diluvium.com.mx"
+  },
+  "sitioWeb": {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Diluvium",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.diluvium.com.mx/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "url": "https://www.diluvium.com.mx"
+  }
+}

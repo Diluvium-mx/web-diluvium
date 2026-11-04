@@ -18,9 +18,20 @@ Los comandos se corren desde la raíz del proyecto.
 | Medidas reales (letras, tamaños, colores, posiciones) | `node herramientas/medir-estilos.mjs <url> <nombre> [vistas]` | `docs/sitio-actual/medidas/<nombre>-<vista>.json` |
 | Ver en corto una sección (y su recorte) | `python3 -I herramientas/ver-seccion.py <pagina> <indices> [vistas] [carpeta]` | pantalla + recortes |
 | Correr JavaScript en una página (en vivo o réplica) | `node herramientas/inspeccionar.mjs <url> <vista> '<expresión>'` | pantalla |
+| Lo que leen Google y las redes (título, descripción, fichas) | `python3 -I herramientas/extraer-seo.py` | `contenido/seo.json` |
+| Comparar eso mismo contra el sitio en vivo | `node herramientas/comparar-seo.mjs [paginas]` | pantalla |
 | **Comparar la réplica contra el sitio en vivo** | `npm run comparar -- <pagina> <ruta> [vistas] [indices]` | `comparaciones/` |
+| Capturas y medidas del carrito **con productos** en vivo (agrega como visitante, sin analítica) | `node herramientas/capturar-carrito.mjs [vistas]` | `docs/sitio-actual/capturas/2026-11-04/`, `docs/sitio-actual/medidas/carrito-*` |
+| Comparar el carrito lateral y /cart con productos | `node herramientas/comparar-carrito.mjs [vistas]` | `comparaciones/carrito/` |
 
 Vistas: `celular` (390 px), `tableta` (768 px), `compu` (1440 px).
+
+## Scripts que hacen algo en el sitio en vivo
+
+Si un script hace algo más que mirar (por ejemplo, agregar al carrito), abre las páginas con
+`abrirPagina(url, vista, { bloquear: BLOQUEAR_ANALITICA })` (`herramientas/cdp.mjs`): bloquea analítica, píxeles de
+anuncios y telemetría también dentro de iframes y trabajadores, para no ensuciar las métricas de la tienda. Nunca
+iniciar sesión, ir al pago ni enviar formularios.
 
 ## Cómo se lee la comparación
 
