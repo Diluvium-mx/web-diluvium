@@ -72,12 +72,16 @@ como «variante y piezas»; precio, título y foto salen siempre del catálogo. 
 | Función | Qué hace en vivo | Qué falta |
 |---|---|---|
 | Formulario «¡Hola!» (portada) | Manda los datos al correo de la tienda y muestra «gracias» | Servicio de correos + Turnstile |
+| Formulario de la página Contacto | Manda nombre, correo y mensaje al correo de la tienda | Servicio de correos + Turnstile |
 | Suscripción del pie | Guarda el correo como suscriptor | Base de datos + Turnstile |
+| «Escribir una reseña» (fichas y página de reseñas) | Abre el formulario y la reseña queda en revisión | Base de datos + revisión en el administrador |
 | Pago («Finalizar compra» y PayPal en el carrito) | Lleva al pago de Shopify | Pago con Mercado Pago, precio calculado en el servidor |
 | Notas del pedido (carrito) | Guarda la nota con el carrito | Se guarda con el pedido en el servidor |
-| Búsqueda (lupa del encabezado) | Abre el buscador | Se construye con las páginas |
+| Correos de la tienda y pedidos en el administrador | Confirmación de pedido, guía de envío, «Notificar al cliente» | Base de datos + servicio de correos |
+| Medición (Clarity, Google, Meta, TikTok) | Mapa de calor, visitas y conversiones | Paso 4 (no se ve en la página) |
 
-**Sigue:** páginas de producto (compuerta, XXL, mini, tapón, accesorios), después páginas, blog y carrito.
+Nada visible de la tienda queda sin replicar: las 34 páginas, sus piezas, el buscador y el carrito ya están. La app de
+descuentos por cantidad (Pumper) carga en vivo pero no muestra nada (solo oculta datos internos del carrito).
 
 Objetivo: tener la página **idéntica** a la de hoy, pero en código propio, para manipularla fácilmente con Claude Code y
 dejar de pagar Shopify. Este documento dice exactamente qué se replica, de dónde sale cada cosa, en qué orden y cómo
