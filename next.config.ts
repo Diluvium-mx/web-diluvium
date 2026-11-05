@@ -13,6 +13,8 @@ const SECURITY_HEADERS = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Paquetes con código especial para Cloudflare (workerd), como en la plantilla oficial de Payload para Cloudflare.
+  serverExternalPackages: ["jose", "pg-cloudflare"],
   // Hay un package-lock.json suelto en la carpeta de usuario; sin esto Next toma esa carpeta como raíz.
   turbopack: { root: import.meta.dirname },
   images: {

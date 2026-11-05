@@ -1,0 +1,18 @@
+// Configuración de Cloudflare (Workers) para la página y el administrador. Basada en la plantilla oficial de Payload
+// para Cloudflare (templates/with-cloudflare-d1, versión 3.92). Los «database_id» y nombres reales se llenan al crear la
+// cuenta; mientras, wrangler usa copias locales en .wrangler/ (fuera del repositorio).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "diluvium",
+  "compatibility_date": "2026-10-15",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  // Base del administrador (SQLite en Cloudflare).
+  "d1_databases": [{ "binding": "D1", "database_id": "PENDIENTE-AL-CREAR-LA-CUENTA", "database_name": "diluvium" }],
+  // Fotos y videos que se suban en el administrador.
+  "r2_buckets": [{ "binding": "R2", "bucket_name": "diluvium-medios" }],
+  // Optimización de fotos de la página (Cloudflare Images; 5,000 transformaciones únicas gratis al mes).
+  "images": { "binding": "IMAGES" },
+  "observability": { "enabled": true }
+}

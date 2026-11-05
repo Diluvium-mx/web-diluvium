@@ -9,3 +9,5 @@ import configPromesa from "../../payload.config";
 const config = await configPromesa;
 await generateImportMap(config, { force: true, log: true });
 await generateTypes(config, { log: true });
+
+process.exit(0);

@@ -2,51 +2,23 @@
 // encima, si tiene, una tarjeta con título, texto y botón. Con «adapt_img» el alto sale de la proporción de la foto
 // (sin bajar del relleno: 80 px celular, 96 px tableta, 128 px computadora). El tema cambia de foto en 1025 px.
 
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { getImageProps } from "next/image";
 import Link from "next/link";
 import type { Bloque, Seccion } from "@/lib/contenido";
 import { bloquesDe, esquema, numero, plantilla, siNo, texto } from "@/lib/contenido";
 import { BOTON_GRANDE, BOTON_PRIMARIO } from "@/components/producto/estilos";
+import medidasGuardadas from "@contenido/medidas-imagenes.json";
 
-// ---- Medidas de las fotos (se leen del archivo en /public; las usan también otras secciones de medios) ----
+// ---- Medidas de las fotos (las usan también otras secciones de medios) ----
 
-const MEDIDAS = new Map<string, { ancho: number; alto: number }>();
+// Medidas de todas las fotos de public/media, calculadas antes de construir (herramientas/medidas-imagenes.mjs): así la
+// página no lee archivos al momento de la visita, que en Cloudflare no se puede.
+const MEDIDAS = medidasGuardadas as Record<string, number[]>;
 
-/** Ancho y alto en píxeles de una foto local («/media/…»), leídos de la cabecera del PNG, JPG o WebP. */
+/** Ancho y alto en píxeles de una foto local («/media/…»). Si no está medida, cuadrada (la página no se rompe). */
 export function medidasImagen(src: string): { ancho: number; alto: number } {
-  const guardada = MEDIDAS.get(src);
-  if (guardada) return guardada;
-  let medidas = { ancho: 1000, alto: 1000 };
-  try {
-    const b = readFileSync(join(process.cwd(), "public", decodeURIComponent(src.split("?")[0])));
-    if (b.readUInt32BE(0) === 0x89504e47) {
-      medidas = { ancho: b.readUInt32BE(16), alto: b.readUInt32BE(20) };
-    } else if (b.toString("ascii", 0, 4) === "RIFF" && b.toString("ascii", 12, 15) === "VP8") {
-      const tipo = b.toString("ascii", 12, 16);
-      if (tipo === "VP8X") medidas = { ancho: 1 + b.readUIntLE(24, 3), alto: 1 + b.readUIntLE(27, 3) };
-      else if (tipo === "VP8L") {
-        const bits = b.readUInt32LE(21);
-        medidas = { ancho: 1 + (bits & 0x3fff), alto: 1 + ((bits >> 14) & 0x3fff) };
-      } else medidas = { ancho: b.readUInt16LE(26) & 0x3fff, alto: b.readUInt16LE(28) & 0x3fff };
-    } else if (b[0] === 0xff && b[1] === 0xd8) {
-      let i = 2;
-      while (i < b.length - 9) {
-        if (b[i] !== 0xff) { i++; continue; }
-        const marca = b[i + 1];
-        if (marca >= 0xc0 && marca <= 0xcf && marca !== 0xc4 && marca !== 0xc8 && marca !== 0xcc) {
-          medidas = { ancho: b.readUInt16BE(i + 7), alto: b.readUInt16BE(i + 5) };
-          break;
-        }
-        i += 2 + b.readUInt16BE(i + 2);
-      }
-    }
-  } catch {
-    // Si la foto no está, se queda la proporción cuadrada; la página no se rompe.
-  }
-  MEDIDAS.set(src, medidas);
-  return medidas;
+  const m = MEDIDAS[decodeURIComponent(src.split("?")[0])];
+  return m ? { ancho: m[0], alto: m[1] } : { ancho: 1000, alto: 1000 };
 }
 
 // ---- Posición del contenido (ajustes «content_position_mobile» y «content_position_desktop») ----

@@ -66,6 +66,22 @@ Cliente ──► diluvium.com.mx (Vercel: firewall, anti-DDoS, HTTPS)
 >
 > **Dominio:** se queda registrado en GoDaddy y su DNS pasa a Cloudflare (gratis).
 >
+> **Probado en esta Mac (5-nov-2026, rama `cloudflare`):** la página y el administrador corren con el motor de
+> Cloudflare.
+> - Los dos riesgos quedaron resueltos: OpenNext 1.20.14 acepta Next 16.4.3, y las fotos se optimizan bien con
+>   Cloudflare Images.
+> - Detalle en `docs/administrador.md`.
+>
+> **Para qué usa Diluvium Resend** (lo que hoy manda Shopify y hay que mandar nosotros):
+> - confirmación de pedido;
+> - envío con número de guía («Notificar al cliente»);
+> - pedido entregado con invitación a dejar reseña;
+> - recuperación de pago abandonado;
+> - avisos internos (pedido nuevo, formularios «¡Hola!», Contacto y Distribuidor al correo de la tienda);
+> - códigos y recuperación de contraseña del administrador.
+>
+> En temporada fuerte (≈ 5 pedidos al día) son ≈ 1,200–1,500 correos al mes y ≈ 40 en el día más cargado.
+>
 > La tabla de abajo queda como referencia.
 
 | Para qué | Servicio recomendado | Costo | Por qué este |

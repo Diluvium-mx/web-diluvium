@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "next dev --port 3100",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start --port 3100",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
@@ -21,18 +21,25 @@
     "admin:esquema": "python3 -I herramientas/esquema-secciones.py",
     "admin:sembrar": "tsx --env-file=.env src/payload/scripts/sembrar.ts",
     "admin:exportar": "tsx --env-file=.env src/payload/scripts/exportar.ts",
-    "admin:generar": "tsx --env-file=.env --tsconfig tsconfig.json src/payload/scripts/generar.ts"
+    "admin:generar": "tsx --env-file=.env --tsconfig tsconfig.json src/payload/scripts/generar.ts",
+    "prebuild": "node herramientas/medidas-imagenes.mjs",
+    "cf:construir": "opennextjs-cloudflare build",
+    "cf:probar": "opennextjs-cloudflare preview",
+    "cf:tipos": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "admin:migrar": "tsx --env-file=.env src/payload/scripts/migrar.ts",
+    "cf:local": "wrangler dev --port 8788 --ip 127.0.0.1"
   },
   "dependencies": {
-    "@payloadcms/db-sqlite": "3.92.1",
+    "@opennextjs/cloudflare": "1.20.14",
+    "@payloadcms/db-d1-sqlite": "3.92.1",
     "@payloadcms/next": "3.92.1",
+    "@payloadcms/storage-r2": "3.92.1",
     "@payloadcms/ui": "3.92.1",
     "graphql": "16.14.2",
     "next": "16.4.3",
     "payload": "3.92.1",
     "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "sharp": "0.35.5"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.3",
@@ -43,7 +50,8 @@
     "eslint-config-next": "16.4.3",
     "tailwindcss": "4.3.3",
     "tsx": "4.23.15",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "wrangler": "4.155.0"
   },
   "overrides": {
     "dompurify": "3.4.17"

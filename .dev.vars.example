@@ -1,0 +1,2 @@
+# Llaves del Worker en esta Mac (wrangler las lee al probar con npm run cf:probar). Copiar a .dev.vars.
+PAYLOAD_SECRET=

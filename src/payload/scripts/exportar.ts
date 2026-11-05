@@ -21,10 +21,11 @@ const todos = async (collection: Parameters<Payload["find"]>[0]["collection"]) =
   (await payload.find({ collection, pagination: false, depth: 0, sort: collection === "plantillas" ? "id" : "orden" })).docs as unknown as Doc[];
 const global = async (slug: Parameters<Payload["findGlobal"]>[0]["slug"]) => (await payload.findGlobal({ slug, depth: 0 })) as unknown as Dic;
 
-// Fotos y videos: las que ya estaban conservan su dirección; las subidas después van en /media/admin/<archivo>.
+// Fotos y videos: las que ya estaban conservan su dirección; las subidas después se sirven desde R2 por la dirección del
+// administrador (/api/medios/file/<archivo>).
 const medios = new Map<number | string, { ruta: string; ancho: number | null; alto: number | null }>();
 for (const m of await todos("medios")) {
-  medios.set(m.id, { ruta: (m.ruta as string) || `/media/admin/${m.filename as string}`, ancho: (m.width as number) ?? null, alto: (m.height as number) ?? null });
+  medios.set(m.id, { ruta: (m.ruta as string) || (m.url as string), ancho: (m.width as number) ?? null, alto: (m.height as number) ?? null });
 }
 const ruta = (id: unknown) => (id == null ? null : (medios.get(id as number)?.ruta ?? null));
 const txt = (v: unknown) => (v == null ? "" : String(v));

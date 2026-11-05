@@ -4,8 +4,20 @@
     {
       "name": "web-diluvium",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 3100
+    },
+    {
+      "name": "cloudflare-local",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "cf:local"
+      ],
+      "port": 8788
     }
   ]
 }

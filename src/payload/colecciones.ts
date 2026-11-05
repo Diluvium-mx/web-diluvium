@@ -34,9 +34,11 @@ export const Medios: CollectionConfig = {
   labels: { singular: "Foto o video", plural: "Fotos y videos" },
   admin: { useAsTitle: "filename", group: "Contenido" },
   upload: {
-    // En esta Mac se guardan aquí; al publicar, en el almacenamiento del hosting (paso 2, publicación).
-    staticDir: "public/media/admin",
+    // Se guardan en Cloudflare R2 (en esta Mac, en su copia local). Sin recortes ni punto de enfoque: Cloudflare no
+    // tiene «sharp», la herramienta que los hace.
     mimeTypes: ["image/*", "video/mp4", "video/webm"],
+    crop: false,
+    focalPoint: false,
   },
   fields: [
     { name: "alt", label: "Texto alternativo (para lectores de pantalla y Google)", type: "text" },

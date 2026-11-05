@@ -8,7 +8,6 @@
 import { existsSync, rmSync } from "node:fs";
 import path from "node:path";
 import { getPayload, type Payload } from "payload";
-import config from "../../payload.config";
 import { ESQUEMA, type CampoEsquema } from "../secciones";
 import { CONTENIDO, PLANTILLAS, RAIZ, esMedio, leer, seccionPorTipo } from "./comun";
 
@@ -16,13 +15,18 @@ type Dic = Record<string, unknown>;
 type Seccion = { id: string; tipo: string; ajustes: Dic; bloques: { id: string; tipo: string; ajustes: Dic }[] };
 
 const desdeCero = process.argv.includes("--desde-cero");
+// Desde cero solo en esta Mac: borra las copias locales de D1 y R2 que guarda wrangler. Nunca toca la cuenta de Cloudflare.
 if (desdeCero) {
-  const base = (process.env.DATABASE_URL ?? "").replace(/^file:/, "");
-  if (base && !base.includes("://")) rmSync(path.resolve(RAIZ, base), { force: true });
-  rmSync(path.join(RAIZ, "public/media/admin"), { recursive: true, force: true });
+  if (process.env.CLOUDFLARE_REMOTO === "1") throw new Error("--desde-cero no se usa contra la base de Cloudflare");
+  rmSync(path.join(RAIZ, ".wrangler/state"), { recursive: true, force: true });
 }
 
+// La configuración se carga después de borrar: al cargarla, wrangler abre la copia local de D1 y R2.
+const { default: config } = await import("../../payload.config");
 const payload: Payload = await getPayload({ config });
+// Las tablas salen de las migraciones (D1 no deja crearlas solas): se aplican las que falten antes de cargar.
+await payload.db.migrate();
+
 if (!desdeCero && (await payload.count({ collection: "productos" })).totalDocs > 0) {
   console.error("El administrador ya tiene contenido. Para cargar todo de nuevo: npm run admin:sembrar -- --desde-cero");
   process.exit(1);

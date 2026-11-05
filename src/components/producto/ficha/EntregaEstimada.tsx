@@ -32,8 +32,8 @@ export function EntregaEstimada() {
     setFechas(fechasEntrega(new Date()));
     const control = new AbortController();
     fetch("https://ipinfo.io/json", { signal: control.signal, credentials: "omit", referrerPolicy: "no-referrer" })
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((d: { region?: unknown; country?: unknown }) =>
+      .then((r) => (r.ok ? (r.json() as Promise<{ region?: unknown; country?: unknown }>) : Promise.reject(new Error(String(r.status)))))
+      .then((d) =>
         setLugar({
           nombre: typeof d.region === "string" && d.region ? d.region : "México",
           pais: typeof d.country === "string" ? d.country : "MX",
