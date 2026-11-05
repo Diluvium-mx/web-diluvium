@@ -48,6 +48,26 @@ Cliente ──► diluvium.com.mx (Vercel: firewall, anti-DDoS, HTTPS)
 
 ## 3. Servicios de terceros (recomendación)
 
+> **Cambio del 5-nov-2026 (pedido del dueño: hospedaje de USD 13 o menos al mes).** La recomendación de hospedaje
+> pasa de Vercel Pro + Neon + Vercel Blob (≈ USD 23) a **Cloudflare Workers Paid (USD 5/mes)**. En una sola cuenta
+> incluye:
+> - la página y el administrador (Next.js con OpenNext);
+> - la base de datos **D1** (SQLite, el mismo formato que la base local; 5 GB incluidos);
+> - las fotos en **R2** (10 GB y tráfico gratis);
+> - DNS, candado, firewall, Turnstile y **Access** (protege `/admin`; gratis hasta 50 usuarios).
+>
+> Payload trae una plantilla oficial para esto (`templates/with-cloudflare-d1`, versión 3.92). Hay que comprobar dos
+> riesgos con una prueba local antes de contratar:
+> - OpenNext declara compatibilidad hasta Next 16.3.3 y aquí usamos 16.4.3;
+> - sin `sharp`, las fotos se optimizan con Cloudflare Images (5,000 transformaciones únicas gratis al mes).
+>
+> **Correos:** Resend Pro (USD 20, ya contratado por el dueño) admite 10 dominios; diluvium.com.mx entra sin costo
+> extra.
+>
+> **Dominio:** se queda registrado en GoDaddy y su DNS pasa a Cloudflare (gratis).
+>
+> La tabla de abajo queda como referencia.
+
 | Para qué | Servicio recomendado | Costo | Por qué este |
 |---|---|---|---|
 | Hospedar la página | **Vercel Pro** | USD 20/mes (≈ $373) | El mejor lugar para Next.js; firewall con 40 reglas, protección de bots (BotID) y DDoS incluidos. El plan gratis **prohíbe** tiendas. Además separa la tienda de Railway (donde está el CRM y donde hubo el incidente del 21-oct) |
