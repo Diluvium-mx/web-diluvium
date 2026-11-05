@@ -78,8 +78,17 @@ Los comandos usan `tsx` directo: la herramienta `payload` choca con Node 26 (car
   `src/app/(sitio)/`, y la página 404 general en `src/app/global-not-found.tsx`.
 - `wrangler.jsonc`, `open-next.config.ts` y `cloudflare-env.d.ts`: configuración de Cloudflare. `.dev.vars` (fuera
   del repositorio) lleva la llave del Worker en esta Mac.
-- `src/payload/componentes/`: logo, ícono y bienvenida del administrador. Colores de la marca en
-  `src/app/(payload)/custom.scss`.
+- **Diseño del administrador = el del CRM** (`crm-diluvium › app/globals.css`), en `src/app/(payload)/custom.scss` y
+  `src/payload/componentes/`:
+  - mismos colores y letra Helvetica, en claro y oscuro;
+  - barra lateral azul con degradado e íconos que hacen su gesto al pasar el mouse (`IconosMenu.tsx`);
+  - barra de arriba azul con el correo y la píldora de sol y luna, cuyo cambio de tema se extiende en círculo
+    (`BarraSuperior.tsx`);
+  - luz que sigue al cursor y pulsación al presionar (`BrilloCursor.tsx`);
+  - «Guardar» en naranja;
+  - inicio con números reales (productos, piezas, inventario por revisar, reseñas y páginas; `Bienvenida.tsx`).
+
+  La pantalla de entrada no cambió; solo ganó el ojito para ver la contraseña (`OjoContrasena.tsx`).
 - Local y fuera del repositorio: `.wrangler/` (copias locales de D1 y R2). Se regeneran con
   `npm run admin:sembrar -- --desde-cero`. La base anterior (`datos/admin.db`) queda solo como respaldo.
 

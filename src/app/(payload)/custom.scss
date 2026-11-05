@@ -1,199 +1,1102 @@
-// Colores y letras de Diluvium en el administrador (los mismos de la página: src/app/(sitio)/globals.css).
-// Payload pone sus estilos en una capa («payload-default»); lo de aquí va fuera de capas y les gana.
+// Administrador con el diseño del CRM de Diluvium (crm-diluvium › app/globals.css): mismos colores, letra Helvetica,
+// barra lateral azul con degradado y sombra, barra de arriba azul, tarjetas limpias, luz que sigue al cursor,
+// pulsación al presionar, íconos animados en el menú y tema claro u oscuro con la píldora de sol y luna.
+// Payload pone sus estilos en la capa «payload-default»; lo de aquí va fuera de capas y les gana.
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap");
+// Letra de la pantalla de entrada (la misma que tenía; el resto del administrador usa Helvetica, como el CRM).
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap");
 
+// ── Colores de la marca (los mismos del CRM) ──────────────────────────────────────────────────────────────────────
 :root {
-  --diluvium-azul: #0a559a;
-  --diluvium-azul-oscuro: #004288;
-  --diluvium-azul-titulo: #1c397b;
-  --diluvium-naranja: #f8a01d;
-  --diluvium-gris: #ecf0f3;
-  --diluvium-texto: #1c2b3a;
-  --font-body: "Instrument Sans", system-ui, sans-serif;
+  --brand-navy: #0a559a;
+  --brand-navy-dark: #245595;
+  --brand-orange: #de8c11;
+  --brand-orange-light: #fe9f29;
+  --brand-font: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--brand-font);
+  --style-radius-s: 6px;
+  --style-radius-m: 10px;
+  --style-radius-l: 14px;
+
+  // Luz del cursor (navy sobre superficies claras; blanca sobre azul).
+  --glow-surface: 10 85 154;
+  --glow-rgb: var(--glow-surface);
+  --glow-alpha: 0.12;
+  --glow-alpha-press: 0.22;
+}
+
+@mixin tema-claro {
+  --background: #ffffff;
+  --foreground: #1e2a35;
+  --card: #ffffff;
+  --muted: #ecf0f3;
+  --muted-foreground: #4d5b68;
+  --border: #d8dee6;
+
+  --theme-bg: #f6f8fa;
+  --theme-text: var(--foreground);
+  --theme-input-bg: #ffffff;
+  --theme-border-color: var(--border);
+  --theme-elevation-0: #ffffff;
+  --theme-elevation-50: #f6f8fa;
+  --theme-elevation-100: #ecf0f3;
+  --theme-elevation-150: #d8dee6;
+  --theme-elevation-200: #c5ced9;
+  --theme-elevation-400: #6b7a88;
+  --theme-elevation-500: #4d5b68;
+  --theme-elevation-800: #1e2a35;
+  --theme-elevation-1000: #0f1a24;
+  --theme-success-500: var(--brand-navy);
 }
 
 html[data-theme="light"] {
-  --theme-bg: #f5f7fa;
-  --theme-text: var(--diluvium-texto);
-  --theme-input-bg: #ffffff;
-  --theme-elevation-0: #ffffff;
-  --theme-elevation-50: #f2f5f8;
-  --theme-elevation-100: #e6ebf1;
-  --theme-elevation-150: #d9e0e8;
-  --theme-success-500: var(--diluvium-azul);
+  @include tema-claro;
+}
+
+html[data-theme="dark"] {
+  --background: #0b1a2b;
+  --foreground: #e6edf3;
+  --card: #16293e;
+  --muted: #0f2236;
+  --muted-foreground: #9fb2c4;
+  --border: #24384f;
+  --glow-surface: 150 195 240;
+
+  --theme-bg: var(--background);
+  --theme-text: var(--foreground);
+  --theme-input-bg: #0f2236;
+  --theme-border-color: var(--border);
+  --theme-elevation-0: #0b1a2b;
+  --theme-elevation-50: #102338;
+  --theme-elevation-100: #16293e;
+  --theme-elevation-150: #24384f;
+  --theme-elevation-200: #2e4561;
+  --theme-elevation-400: #7f95aa;
+  --theme-elevation-500: #9fb2c4;
+  --theme-elevation-800: #dce5ee;
+  --theme-elevation-1000: #ffffff;
+  --theme-success-500: #2f6db0;
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--brand-font);
 }
 
 h1,
 h2,
 h3,
-h4,
-.doc-header__title,
-.collection-list__header h1 {
-  font-family: "Archivo", system-ui, sans-serif;
-  color: var(--diluvium-azul-titulo);
+h4 {
+  font-family: var(--brand-font);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 a {
-  color: var(--diluvium-azul);
+  color: var(--brand-navy);
 }
 
-// Barra lateral: azul de la marca con letras blancas.
-.nav {
-  background: var(--diluvium-azul-oscuro);
-  border-right: 0;
+html[data-theme="dark"] a {
+  color: #8fc1f0;
+}
 
-  .nav-group__toggle,
-  .nav-group__label {
-    color: rgb(255 255 255 / 0.6);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-size: 11px;
+// ── Barra lateral (como el sidebar del CRM) ───────────────────────────────────────────────────────────────────────
+.nav {
+  --glow-rgb: 255 255 255;
+  --glow-alpha: 0.16;
+  --glow-alpha-press: 0.3;
+  border-right: 1px solid rgb(255 255 255 / 0.05);
+  background: linear-gradient(to bottom, var(--brand-navy), #08477f);
+  box-shadow: 6px 0 24px -10px rgb(4 30 60 / 0.6);
+  color: #ffffff;
+  z-index: 20;
+}
+
+html[data-theme="dark"] .nav {
+  background: linear-gradient(to bottom, var(--brand-navy), #073763);
+}
+
+.nav__scroll {
+  --nav-padding-inline-start: 12px;
+  --nav-padding-inline-end: 12px;
+}
+
+.nav-group {
+  margin-bottom: 14px;
+}
+
+.nav-group__toggle {
+  color: rgb(255 255 255 / 0.55);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 12px;
+
+  &:hover,
+  &:focus-visible {
+    color: #ffffff;
+  }
+}
+
+.nav .nav-group__indicator svg,
+.nav-group__toggle svg {
+  color: rgb(255 255 255 / 0.55);
+}
+
+// Cada sección: barrita blanca a la izquierda, ícono y texto; la activa con fondo más claro, negritas y una sombra
+// leve que la levanta; las demás se iluminan al pasar el cursor.
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 1px 0;
+  padding: 8px 12px 8px 22px;
+  border-radius: 6px;
+  color: rgb(255 255 255 / 0.8);
+  font-size: 14px;
+  text-decoration: none !important;
+  transition:
+    background-color 0.2s ease-out,
+    color 0.2s ease-out,
+    box-shadow 0.2s ease-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 4px;
+    height: 16px;
+    margin-top: -8px;
+    border-radius: 999px;
+    background: #ffffff;
+    opacity: 0;
+    transform: scaleY(0.5);
+    transition:
+      opacity 0.2s ease-out,
+      transform 0.2s ease-out;
   }
 
-  .nav__link,
-  a {
+  &:hover,
+  &:focus-visible {
+    background: rgb(255 255 255 / 0.06);
     color: #ffffff;
-    border-radius: 6px;
 
-    &:hover,
-    &.active,
-    &[aria-current="page"] {
-      background: rgb(255 255 255 / 0.12);
-      color: #ffffff;
+    &::after {
+      opacity: 0.4;
     }
   }
 
-  .nav__link-indicator {
-    background: var(--diluvium-naranja);
-  }
-
-  svg {
+  // El enlace de la página abierta (Payload lo pinta como <div> con su indicador).
+  &:has(.nav__link-indicator) {
+    background: rgb(255 255 255 / 0.15);
     color: #ffffff;
+    font-weight: 600;
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.12),
+      0 6px 14px -8px rgb(0 0 0 / 0.55);
+
+    &::after {
+      opacity: 1;
+      transform: scaleY(1);
+    }
   }
 }
 
-// Botones: principal en azul, secundario con borde azul; el naranja queda para lo que llama la atención.
-.btn--style-primary {
-  background: var(--diluvium-azul);
+.nav__link-indicator {
+  display: none;
+}
+
+.nav__link-label {
+  color: inherit;
+}
+
+.nav__controls {
+  border-top: 1px solid rgb(255 255 255 / 0.1);
+  padding-top: 12px;
+
+  a,
+  button,
+  svg {
+    color: rgb(255 255 255 / 0.8) !important;
+  }
+}
+
+// ── Íconos del menú (gestos copiados del CRM) ────────────────────────────────────────────────────────────────────
+[data-nav-icon] {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+[data-nav-icon] [data-nav-anim] {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+[data-nav-icon] [data-nav-anim="draw"] {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+@keyframes nav-pop {
+  from {
+    transform: scale(0.4);
+    opacity: 0.2;
+  }
+}
+
+@keyframes nav-bob {
+  40% {
+    transform: translateY(-2.5px);
+  }
+}
+
+@keyframes nav-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes nav-shake {
+  25% {
+    transform: rotate(-14deg);
+  }
+  55% {
+    transform: rotate(9deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes nav-twinkle {
+  40% {
+    transform: scale(0.3);
+    opacity: 0.2;
+  }
+}
+
+@keyframes nav-spin {
+  50% {
+    transform: scale(0.8) rotate(36deg);
+  }
+  to {
+    transform: rotate(72deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim] {
+    animation-duration: 550ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1.2);
+    animation-fill-mode: both;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="pop"] {
+    animation-name: nav-pop;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="bob"] {
+    animation-name: nav-bob;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="draw"] {
+    animation-name: nav-draw;
+    animation-timing-function: ease-out;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="shake"] {
+    animation-name: nav-shake;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="twinkle"] {
+    animation-name: nav-twinkle;
+  }
+  [data-nav-item]:is(:hover, :focus-visible) [data-nav-anim="spin"] {
+    animation-name: nav-spin;
+  }
+}
+
+// ── Barra de arriba (como el header del CRM) ─────────────────────────────────────────────────────────────────────
+.app-header {
+  --glow-rgb: 255 255 255;
+  background: var(--brand-navy-dark);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+  box-shadow: 0 6px 18px -8px rgb(4 30 60 / 0.55);
   color: #ffffff;
-  box-shadow: none;
+  z-index: 10;
+
+  .app-header__bg {
+    display: none;
+  }
+
+  a,
+  button,
+  .step-nav,
+  .step-nav a,
+  .step-nav span,
+  svg {
+    color: #ffffff !important;
+  }
+}
+
+// El selector «Panel de Control» de la barra (react-select) también en blanco.
+.app-header {
+  .rs__control,
+  .rs__value-container {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .rs__single-value,
+  .rs__indicator,
+  .rs__placeholder {
+    color: #ffffff !important;
+  }
+}
+
+// El ícono de la barra va en una pastilla blanca, como el logo del CRM.
+.step-nav__home img,
+.app-header img {
+  background: #ffffff;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.barra-superior__correo {
+  max-width: 260px;
+  overflow: hidden;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ffffff;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+// ── Píldora de tema (igual a la del CRM) ─────────────────────────────────────────────────────────────────────────
+.theme-pill {
+  position: relative;
+  flex-shrink: 0;
+  width: 62px;
+  height: 32px;
+  padding: 0;
+  zoom: 0.8;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 0.4);
+  background: rgb(255 255 255 / 0.14);
+  cursor: pointer;
+  transition:
+    background-color 0.25s,
+    border-color 0.25s !important;
+
+  &:hover {
+    border-color: rgb(255 255 255 / 0.7);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+}
+
+html[data-theme="dark"] .theme-pill {
+  background: #0b1a2b;
+  border-color: rgb(255 255 255 / 0.28);
+}
+
+.theme-pill-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+  transition:
+    transform 0.3s cubic-bezier(0.3, 1.4, 0.5, 1),
+    background-color 0.25s !important;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+html[data-theme="dark"] .theme-pill-knob {
+  transform: translateX(30px);
+  background: #e6edf3;
+}
+
+.theme-pill-sun {
+  color: var(--brand-orange) !important;
+}
+
+.theme-pill-moon {
+  display: none;
+  color: var(--brand-navy) !important;
+}
+
+html[data-theme="dark"] .theme-pill-sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-pill-moon {
+  display: block;
+}
+
+.theme-pill-cloud,
+.theme-pill-star {
+  position: absolute;
+  pointer-events: none;
+}
+
+.theme-pill-cloud {
+  transition:
+    opacity 0.35s 0.1s,
+    transform 0.35s 0.1s cubic-bezier(0.3, 0, 0.3, 1) !important;
+
+  > span {
+    position: relative;
+    display: block;
+    width: 9px;
+    height: 3px;
+    border-radius: 999px;
+    background: #ffffff;
+    opacity: 0.92;
+    animation: theme-pill-drift 4.5s ease-in-out infinite alternate;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+
+    &::before {
+      width: 4px;
+      height: 4px;
+      left: 1.5px;
+      top: -2.5px;
+    }
+
+    &::after {
+      width: 3px;
+      height: 3px;
+      left: 4.5px;
+      top: -1.5px;
+    }
+  }
+
+  &.c1 {
+    left: 32px;
+    top: 9px;
+  }
+
+  &.c2 {
+    left: 42px;
+    top: 17px;
+
+    > span {
+      width: 13px;
+      height: 4px;
+      animation-duration: 5.5s;
+      animation-delay: -2s;
+
+      &::before {
+        width: 6px;
+        height: 6px;
+        left: 2px;
+        top: -4px;
+      }
+
+      &::after {
+        width: 4.5px;
+        height: 4.5px;
+        left: 6.5px;
+        top: -2.5px;
+      }
+    }
+  }
+
+  &.c3 {
+    left: 33px;
+    top: 24px;
+
+    > span {
+      width: 8px;
+      opacity: 0.8;
+      animation-duration: 3.8s;
+      animation-delay: -1s;
+    }
+  }
+}
+
+html[data-theme="dark"] .theme-pill-cloud {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s,
+    transform 0.25s ease-in !important;
+}
+
+.theme-pill-star {
+  opacity: 0;
+  transform: scale(0.3);
+  transition:
+    opacity 0.25s,
+    transform 0.25s ease-in !important;
+
+  > span {
+    display: block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 2px #ffffff;
+
+    &.spark {
+      border-radius: 0;
+      box-shadow: none;
+      clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    }
+  }
+
+  &.s1 {
+    left: 7px;
+    top: 6px;
+
+    > span {
+      width: 6px;
+      height: 6px;
+      animation-duration: 2.6s;
+      animation-delay: 0.6s;
+    }
+  }
+
+  &.s2 {
+    left: 20px;
+    top: 5px;
+
+    > span {
+      animation-duration: 2.9s;
+      animation-delay: 1.1s;
+    }
+  }
+
+  &.s3 {
+    left: 15px;
+    top: 15px;
+
+    > span {
+      width: 2.5px;
+      height: 2.5px;
+      animation-duration: 2.2s;
+      animation-delay: 0.8s;
+    }
+  }
+
+  &.s4 {
+    left: 22px;
+    top: 19px;
+
+    > span {
+      width: 5px;
+      height: 5px;
+      animation-duration: 3.1s;
+      animation-delay: 1.4s;
+    }
+  }
+
+  &.s5 {
+    left: 6px;
+    top: 21px;
+
+    > span {
+      width: 1.5px;
+      height: 1.5px;
+      animation-duration: 2s;
+      animation-delay: 1s;
+    }
+  }
+}
+
+html[data-theme="dark"] .theme-pill-star {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.35s 0.1s,
+    transform 0.35s 0.1s cubic-bezier(0.3, 0, 0.3, 1) !important;
+
+  > span {
+    animation: theme-pill-twinkle 2.4s ease-in-out 0.6s infinite;
+  }
+}
+
+@keyframes theme-pill-twinkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(0.55);
+  }
+}
+
+@keyframes theme-pill-drift {
+  from {
+    transform: translateX(-1.5px);
+  }
+  to {
+    transform: translateX(1.5px);
+  }
+}
+
+// El tema nuevo se extiende en círculo desde la píldora (BarraSuperior.tsx anima el recorte).
+html[data-theme-circle]::view-transition-old(root),
+html[data-theme-circle]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+// ── Superficies interactivas: luz que sigue al cursor y pulsación al presionar (como todo el CRM) ────────────────
+// Solo en lo que va en el flujo normal (no en los enlaces invisibles que cubren una tarjeta, que van encima).
+:where(.btn--style-primary, .btn--style-secondary, .card, .nav__link, [data-glow]):where(:not([data-no-glow], .card__click)) {
+  position: relative;
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at var(--glow-x, 50%) var(--glow-y, 50%),
+      rgb(var(--glow-rgb) / var(--glow-alpha)),
+      rgb(var(--glow-rgb) / calc(var(--glow-alpha) * 0.55)) 55%,
+      rgb(var(--glow-rgb) / calc(var(--glow-alpha) * 0.35))
+    );
+    opacity: 0;
+  }
+
+  &:where(:not(:disabled, [aria-disabled="true"])) {
+    @media (hover: hover) {
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+
+    &:focus-visible::before,
+    &:active::before {
+      opacity: 1;
+    }
+
+    &:active::before {
+      --glow-alpha: var(--glow-alpha-press);
+    }
+  }
+}
+
+// Sobre fondos azules la luz es blanca.
+.btn--style-primary,
+.tablero__ver {
+  --glow-rgb: 255 255 255;
+  --glow-alpha: 0.16;
+  --glow-alpha-press: 0.3;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :where(.btn--style-primary, .btn--style-secondary, .card, .nav__link, [data-glow]):where(:not([data-no-glow], .card__click)) {
+    &::before {
+      transition: opacity 180ms ease-out;
+    }
+
+    &:where(:not(:disabled, [aria-disabled="true"])):active {
+      animation: press-pulse 200ms cubic-bezier(0.2, 0, 0, 1);
+
+      &::before {
+        animation: glow-press 360ms cubic-bezier(0.2, 0, 0, 1);
+      }
+    }
+  }
+}
+
+@keyframes press-pulse {
+  0% {
+    scale: 1;
+  }
+  45% {
+    scale: 0.97;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes glow-press {
+  0% {
+    box-shadow: 0 0 0 0 rgb(var(--glow-rgb) / 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 6px rgb(var(--glow-rgb) / 0);
+  }
+}
+
+// ── Botones (navy; el naranja solo para la acción principal de guardar) ──────────────────────────────────────────
+.btn {
+  border-radius: var(--style-radius-s);
+  font-family: var(--brand-font);
+  font-weight: 600;
+}
+
+.btn--style-primary {
+  background: var(--brand-navy);
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgb(4 30 60 / 0.2);
 
   &:hover:not(:disabled) {
-    background: var(--diluvium-azul-oscuro);
+    background: #08477f;
+  }
+}
+
+// «Guardar» y «Publicar» de cada documento: la acción principal, en naranja como en el CRM.
+.doc-controls .btn--style-primary,
+.form-submit .btn--style-primary {
+  background: var(--brand-orange);
+
+  &:hover:not(:disabled) {
+    background: var(--brand-orange-light);
   }
 }
 
 .btn--style-secondary {
-  box-shadow: inset 0 0 0 1px var(--diluvium-azul);
-  color: var(--diluvium-azul);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--border);
+  color: var(--brand-navy);
+
+  &:hover:not(:disabled) {
+    box-shadow: inset 0 0 0 1px var(--brand-navy);
+  }
 }
 
-// Tarjetas del panel: blancas, con sombra suave y una raya naranja al pasar el ratón.
-.card {
-  background: #ffffff;
-  border: 1px solid var(--theme-elevation-150);
-  border-radius: 10px;
-  box-shadow: 0 1px 2px rgb(16 42 78 / 0.06);
-  transition:
-    box-shadow 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
+html[data-theme="dark"] .btn--style-secondary {
+  color: #e6edf3;
+}
 
-  .card__title {
-    font-family: "Archivo", system-ui, sans-serif;
-    color: var(--diluvium-azul-titulo);
-  }
+// ── Campos (borde que se pinta de azul con un halo al escribir, como el CRM) ──────────────────────────────────────
+input:not([type="checkbox"], [type="radio"]),
+textarea,
+.react-select .rs__control {
+  border-radius: var(--style-radius-s) !important;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease !important;
+}
+
+input:not([type="checkbox"], [type="radio"]):focus,
+textarea:focus,
+.react-select .rs__control--is-focused {
+  border-color: var(--brand-navy) !important;
+  box-shadow: 0 0 0 3px rgb(10 85 154 / 0.3) !important;
+  outline: none;
+}
+
+// ── Tarjetas de las secciones (como las del Dashboard del CRM) ───────────────────────────────────────────────────
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--style-radius-m);
+  box-shadow: 0 1px 2px rgb(4 30 60 / 0.05);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 
   &:hover {
-    border-color: var(--diluvium-naranja);
-    box-shadow: 0 6px 18px rgb(16 42 78 / 0.12);
+    border-color: rgb(10 85 154 / 0.45);
+    box-shadow: 0 8px 22px -12px rgb(4 30 60 / 0.35);
+    transform: translateY(-1px);
+  }
+
+  .card__title {
+    font-family: var(--brand-font);
+    font-weight: 600;
+    color: var(--foreground);
+  }
+}
+
+.collections__label,
+.dashboard__label {
+  font-family: var(--brand-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+// Entradas que aparecen en cascada al abrir el panel.
+@media (prefers-reduced-motion: no-preference) {
+  .collections__card-list > li,
+  .tablero__tarjeta {
+    animation: entrar 420ms cubic-bezier(0.2, 0.8, 0.3, 1) both;
+  }
+
+  @for $i from 1 through 12 {
+    .collections__card-list > li:nth-child(#{$i}),
+    .tablero__tarjeta:nth-child(#{$i}) {
+      animation-delay: #{$i * 40}ms;
+    }
+  }
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+// ── Inicio (Bienvenida.tsx), al estilo del Dashboard del CRM ─────────────────────────────────────────────────────
+.tablero {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.tablero__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tablero__titulo {
+  margin: 0;
+  font-size: 22px;
+  color: var(--foreground);
+}
+
+.tablero__sub {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.tablero__ver {
+  margin: 0;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+.tablero__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.tablero__tarjeta {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--style-radius-m);
+  background: var(--card);
+  color: var(--foreground) !important;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgb(4 30 60 / 0.05);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    border-color: rgb(10 85 154 / 0.45);
+    box-shadow: 0 8px 22px -12px rgb(4 30 60 / 0.35);
     transform: translateY(-1px);
   }
 }
 
-.dashboard__label {
-  font-family: "Archivo", system-ui, sans-serif;
-  color: var(--diluvium-azul-titulo);
+.tablero__tarjeta--alerta {
+  border-color: rgb(222 140 17 / 0.55);
+  background: linear-gradient(var(--card), var(--card)) padding-box;
+  box-shadow: inset 3px 0 0 var(--brand-orange);
 }
 
-// Entrada al administrador: fondo azul con la tarjeta blanca al centro.
+.tablero__tarjeta-titulo {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tablero__numero {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.tablero__nota {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.tablero__avisos {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--style-radius-m);
+  background: var(--card);
+
+  ul {
+    display: grid;
+    gap: 4px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 10px;
+    border-radius: var(--style-radius-s);
+    color: var(--foreground) !important;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+
+.tablero__avisos-titulo {
+  margin: 0;
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+.tablero__etiqueta {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7a4a00;
+  background: rgb(254 159 41 / 0.2);
+}
+
+.tablero__etiqueta--agotado {
+  color: #9b1c1c;
+  background: rgb(220 38 38 / 0.14);
+}
+
+html[data-theme="dark"] .tablero__etiqueta {
+  color: #ffd9a3;
+}
+
+html[data-theme="dark"] .tablero__etiqueta--agotado {
+  color: #fecaca;
+}
+
+// ── Entrada al administrador (sin cambios: fondo azul, tarjeta blanca, campos claros y botón azul) ────────────────
+// Siempre en claro, aunque la computadora esté en modo oscuro, y con el botón azul de antes (no el naranja de
+// «Guardar»). Lo único nuevo aquí es el ojito de la contraseña.
 .template-minimal {
+  @include tema-claro;
+  --theme-elevation-0: #ffffff;
+  color: #1e2a35;
+  font-family: "Instrument Sans", system-ui, sans-serif;
+
+  * {
+    font-family: inherit;
+  }
+
+  label,
+  .field-label {
+    color: #1e2a35 !important;
+  }
+
+  input:not([type="checkbox"], [type="radio"]) {
+    background: #ffffff !important;
+    color: #1e2a35 !important;
+    border: 1px solid #d8dee6 !important;
+  }
+
+  a {
+    color: var(--brand-navy) !important;
+  }
+
+  .form-submit .btn--style-primary {
+    background: var(--brand-navy);
+
+    &:hover:not(:disabled) {
+      background: #08477f;
+    }
+  }
+
   background:
     radial-gradient(circle at 20% 0%, rgb(248 160 29 / 0.18), transparent 45%),
-    linear-gradient(160deg, var(--diluvium-azul-oscuro), var(--diluvium-azul));
+    linear-gradient(160deg, #004288, var(--brand-navy));
 
   .template-minimal__wrap {
     background: #ffffff;
-    border-radius: 14px;
+    color: #1e2a35;
+    border-radius: var(--style-radius-l);
     padding: 40px;
     box-shadow: 0 20px 50px rgb(0 0 0 / 0.25);
   }
 }
 
-// Franja de bienvenida del panel.
-.diluvium-bienvenida {
-  display: grid;
-  gap: 24px;
-  margin-bottom: 32px;
-  padding: 28px 32px;
-  border-radius: 14px;
-  color: #ffffff;
-  background:
-    radial-gradient(circle at 90% 10%, rgb(248 160 29 / 0.35), transparent 40%),
-    linear-gradient(135deg, var(--diluvium-azul-oscuro), var(--diluvium-azul));
+// Ojito de la contraseña (OjoContrasena.tsx), como el del CRM.
+.con-ojo {
+  position: relative;
 
-  &__saludo {
-    margin: 0 0 6px;
-    font-size: 13px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    opacity: 0.8;
+  input {
+    padding-right: 44px !important;
+  }
+}
+
+.ojo-contrasena {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 0 6px 6px 0;
+  background: transparent;
+  color: #4d5b68;
+  cursor: pointer;
+  transition: color 0.15s ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
   }
 
-  &__titulo {
-    margin: 0;
-    color: #ffffff;
-    font-size: 30px;
-  }
-
-  &__texto {
-    margin: 8px 0 0;
-    opacity: 0.9;
-  }
-
-  &__accesos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    a {
-      display: grid;
-      gap: 4px;
-      height: 100%;
-      padding: 14px 16px;
-      border-radius: 10px;
-      color: #ffffff;
-      text-decoration: none;
-      background: rgb(255 255 255 / 0.12);
-      border: 1px solid rgb(255 255 255 / 0.18);
-      transition: background 0.15s ease;
-
-      &:hover {
-        background: rgb(255 255 255 / 0.22);
-      }
-    }
-
-    span {
-      font-size: 13px;
-      opacity: 0.85;
-    }
+  &:hover,
+  &:focus-visible {
+    color: var(--brand-navy);
+    outline: none;
   }
 }

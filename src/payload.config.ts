@@ -42,10 +42,15 @@ export default buildConfig({
       titleSuffix: " · Administrador Diluvium",
       icons: [{ rel: "icon", type: "image/png", url: "/media/files/Favicon_2aabf220-4641-4694-9dbb-be135ad53af1.png" }],
     },
-    // Siempre claro, con los colores de la marca (src/app/(payload)/custom.scss).
-    theme: "light",
+    // Diseño del CRM de Diluvium (src/app/(payload)/custom.scss), en claro u oscuro con la píldora de la barra.
+    theme: "all",
     components: {
       graphics: { Logo: "/payload/componentes/Marca#Logo", Icon: "/payload/componentes/Marca#Icono" },
+      // Luz que sigue al cursor e íconos animados del menú, en todo el administrador.
+      providers: ["/payload/componentes/BrilloCursor#BrilloCursor", "/payload/componentes/IconosMenu#IconosMenu"],
+      // Correo y píldora de tema en la barra de arriba.
+      actions: ["/payload/componentes/BarraSuperior#BarraSuperior"],
+      beforeLogin: ["/payload/componentes/OjoContrasena#OjoContrasena"],
       beforeDashboard: ["/payload/componentes/Bienvenida#Bienvenida"],
     },
   },
