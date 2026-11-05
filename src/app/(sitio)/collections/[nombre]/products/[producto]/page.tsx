@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import productos from "@contenido/productos.json";
-import PaginaProducto, { generateMetadata as metadatosProducto } from "@/app/products/[nombre]/page";
+import PaginaProducto, { generateMetadata as metadatosProducto } from "@/app/(sitio)/products/[nombre]/page";
 import { todasLasColecciones } from "@/components/producto/colecciones";
 
 // Ficha de producto abierta desde una colección (/collections/<colección>/products/<producto>), como en Shopify:

@@ -21,3 +21,7 @@ comparaciones/
 
 # datos del negocio (ventas reales): el repositorio es público; viven solo en esta Mac
 docs/costos-y-comparacion.md
+
+# administrador: base de datos local y fotos subidas en esta Mac (se regeneran con npm run admin:sembrar)
+datos/
+public/media/admin/

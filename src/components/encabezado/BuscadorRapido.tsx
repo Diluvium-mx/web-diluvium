@@ -7,7 +7,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import type { SugerenciasJson } from "@/app/search/suggest/route";
+import type { SugerenciasJson } from "@/app/(sitio)/search/suggest/route";
 import { IconoBuscar } from "@/components/comunes/Iconos";
 import { IconoEquis } from "@/components/producto/IconosColeccion";
 import { useAparecer } from "./useAparecer";

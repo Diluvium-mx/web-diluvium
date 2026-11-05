@@ -1,3 +1,4 @@
+import { withPayload } from "@payloadcms/next/withPayload";
 import type { NextConfig } from "next";
 
 // Encabezados de seguridad básicos (docs/seguridad.md §7). La política de contenido (CSP) estricta se arma en el
@@ -13,13 +14,16 @@ const SECURITY_HEADERS = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Hay un package-lock.json suelto en la carpeta de usuario; sin esto Next toma esa carpeta como raíz.
-  turbopack: { root: __dirname },
+  turbopack: { root: import.meta.dirname },
   images: {
     qualities: [75, 90],
   },
+  // Dos diseños raíz (tienda y administrador): la página 404 general va en app/global-not-found.tsx.
+  experimental: { globalNotFound: true },
   async headers() {
     return [{ source: "/:path*", headers: SECURITY_HEADERS }];
   },
 };
 
-export default nextConfig;
+// Payload (administrador) se monta en /admin y su API en /api.
+export default withPayload(nextConfig, { devBundleServerPackages: false });

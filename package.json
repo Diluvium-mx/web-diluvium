@@ -2,6 +2,7 @@
   "name": "web-diluvium",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "Página propia de diluvium.com.mx (réplica exacta del sitio de Shopify)",
   "engines": {
     "node": ">=22.12.0"
@@ -16,12 +17,22 @@
     "contenido": "python3 -I herramientas/contenido-tema.py",
     "medios": "node herramientas/descargar-medios.mjs",
     "capturar:referencia": "node herramientas/capturar-sitio.mjs docs/sitio-actual/capturas/2026-10-31",
-    "comparar": "node herramientas/comparar.mjs"
+    "comparar": "node herramientas/comparar.mjs",
+    "admin:esquema": "python3 -I herramientas/esquema-secciones.py",
+    "admin:sembrar": "tsx --env-file=.env src/payload/scripts/sembrar.ts",
+    "admin:exportar": "tsx --env-file=.env src/payload/scripts/exportar.ts",
+    "admin:generar": "tsx --env-file=.env --tsconfig tsconfig.json src/payload/scripts/generar.ts"
   },
   "dependencies": {
+    "@payloadcms/db-sqlite": "3.92.1",
+    "@payloadcms/next": "3.92.1",
+    "@payloadcms/ui": "3.92.1",
+    "graphql": "16.14.2",
     "next": "16.4.3",
+    "payload": "3.92.1",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "sharp": "0.35.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.3",
@@ -31,6 +42,10 @@
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.3",
     "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
     "typescript": "5.9.3"
+  },
+  "overrides": {
+    "dompurify": "3.4.17"
   }
 }

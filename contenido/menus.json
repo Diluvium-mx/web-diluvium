@@ -3,26 +3,65 @@
   "principal": {
     "titulo": "Main menu",
     "enlaces": [
-      { "texto": "Inicio", "url": "/" },
-      { "texto": "Productos", "url": "/collections/all-products" },
-      { "texto": "Contacto", "url": "/pages/contact" },
-      { "texto": "Nosotros", "url": "/pages/nosotros" },
-      { "texto": "Blog", "url": "/blogs/blog" }
+      {
+        "texto": "Inicio",
+        "url": "/"
+      },
+      {
+        "texto": "Productos",
+        "url": "/collections/all-products"
+      },
+      {
+        "texto": "Contacto",
+        "url": "/pages/contact"
+      },
+      {
+        "texto": "Nosotros",
+        "url": "/pages/nosotros"
+      },
+      {
+        "texto": "Blog",
+        "url": "/blogs/blog"
+      }
     ]
   },
   "pie": {
     "titulo": "Footer",
     "enlaces": [
-      { "texto": "Buscar", "url": "/search" },
-      { "texto": "Términos del servicio", "url": "/policies/terms-of-service" },
-      { "texto": "Política de reembolso", "url": "/policies/refund-policy" },
-      { "texto": "Política de privacidad", "url": "/policies/privacy-policy" }
+      {
+        "texto": "Buscar",
+        "url": "/search"
+      },
+      {
+        "texto": "Términos del servicio",
+        "url": "/policies/terms-of-service"
+      },
+      {
+        "texto": "Política de reembolso",
+        "url": "/policies/refund-policy"
+      },
+      {
+        "texto": "Política de privacidad",
+        "url": "/policies/privacy-policy"
+      }
     ]
   },
   "redes": [
-    { "red": "facebook", "url": "https://www.facebook.com/GrupoDiluvium" },
-    { "red": "youtube", "url": "https://www.youtube.com/@diluviummexico" },
-    { "red": "instagram", "url": "https://www.instagram.com/diluviummx/" },
-    { "red": "linkedin", "url": "https://mx.linkedin.com/company/grupodiluvium" }
+    {
+      "red": "facebook",
+      "url": "https://www.facebook.com/GrupoDiluvium"
+    },
+    {
+      "red": "youtube",
+      "url": "https://www.youtube.com/@diluviummexico"
+    },
+    {
+      "red": "instagram",
+      "url": "https://www.instagram.com/diluviummx/"
+    },
+    {
+      "red": "linkedin",
+      "url": "https://mx.linkedin.com/company/grupodiluvium"
+    }
   ]
 }

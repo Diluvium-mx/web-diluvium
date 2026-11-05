@@ -11,6 +11,8 @@ export type Variante = {
   precio: number;
   precioAntes: number | null;
   opcion1: string;
+  codigoBarras?: string;
+  existencias?: number | null;
 };
 export type Producto = {
   id: number;
@@ -20,6 +22,9 @@ export type Producto = {
   opciones: { nombre: string; valores: string[] }[];
   variantes: Variante[];
   imagenes: ImagenProducto[];
+  proveedor: string;
+  /** Videos de la galería y en qué lugar van entre las fotos. */
+  videos: { posicion: number; src: string; poster: string }[];
 };
 
 const PRODUCTOS = (datos as { productos: Producto[] }).productos;
@@ -51,14 +56,10 @@ export function productosDeColeccion(nombre: string, cuantos?: number): Producto
   return cuantos ? lista.slice(0, cuantos) : lista;
 }
 
-/** Proveedor que la tienda muestra en las tarjetas (ajuste «show_vendor»), tal como está capturado en Shopify. */
+/** Proveedor que la tienda muestra en las tarjetas (ajuste «show_vendor»), tal como está en el catálogo. */
 export function proveedor(p: Producto): string {
-  return PROVEEDOR_DILUVIUM.has(p.nombre) ? "Diluvium" : "evita-inundarte-mx";
+  return p.proveedor;
 }
-
-// Productos con «Diluvium» como proveedor (leído de la búsqueda en vivo, 3-nov-2026); los demás dicen
-// «evita-inundarte-mx».
-const PROVEEDOR_DILUVIUM = new Set(["compuerta-anti-inundaciones", "mini-compuerta"]);
 
 // Calificación que sale en las tarjetas (estrellas y número de reseñas): se calcula con las reseñas publicadas.
 // El promedio va con 2 decimales, que es lo que mide el ancho de la estrella parcial en vivo (82 % en la XXL).
@@ -71,22 +72,11 @@ export type Medio =
   | ({ tipo: "imagen" } & ImagenProducto)
   | { tipo: "video"; src: string; poster: string; alt: string };
 
-// Videos de la galería de cada producto (la exportación solo trae fotos). Posición y archivos leídos de la tienda en
-// vivo (3-nov-2026); los archivos ya están en public/media.
-const VIDEOS: Record<string, { posicion: number; src: string; poster: string }[]> = {
-  "compuerta-anti-inundaciones": [
-    {
-      posicion: 3,
-      src: "/media/videos/97ace9cb89da49c5be7042aaedb7e317.HD-720p-1.6Mbps-49405165.mp4",
-      poster: "/media/files/97ace9cb89da49c5be7042aaedb7e317.thumbnail.0000000000.jpg",
-    },
-  ],
-};
 
 /** Fotos y videos de la galería, en el orden de la tienda. */
 export function mediosProducto(p: Producto): Medio[] {
   const medios: Medio[] = p.imagenes.map((i) => ({ tipo: "imagen", ...i }));
-  for (const v of VIDEOS[p.nombre] ?? []) {
+  for (const v of p.videos) {
     medios.splice(v.posicion, 0, { tipo: "video", src: v.src, poster: v.poster, alt: p.titulo });
   }
   return medios;

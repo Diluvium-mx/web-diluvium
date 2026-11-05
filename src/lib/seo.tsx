@@ -20,7 +20,6 @@ type Ficha = {
 
 const FICHAS = seo.paginas as Record<string, Ficha>;
 const ARTICULOS = seo.articulos as Record<string, object>;
-const CODIGOS_BARRAS = seo.codigosBarras as Record<string, string>;
 
 export function fichaSeo(ruta: string): Ficha | undefined {
   return FICHAS[ruta];
@@ -116,7 +115,7 @@ export function datosProducto(p: Producto): object {
     brand: { "@type": "Brand", name: "Diluvium" },
     offers: p.variantes.map((v) => ({
       "@type": "Offer",
-      ...(CODIGOS_BARRAS[String(v.id)] ? { gtin13: Number(CODIGOS_BARRAS[String(v.id)]) } : {}),
+      ...(v.codigoBarras ? { gtin13: Number(v.codigoBarras) } : {}),
       availability: disponible(v) ? "http://schema.org/InStock" : "http://schema.org/OutOfStock",
       price: v.precio,
       priceCurrency: "MXN",

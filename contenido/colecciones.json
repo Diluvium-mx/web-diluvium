@@ -15,7 +15,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/collections/CECI_Testimonio_7_1_1.jpg",
    "orden": "title-ascending",
-   "precioMaximo": 7000.0,
+   "precioMaximo": 7000,
    "productos": [
     "compuerta-anti-inundaciones",
     "compuerta-anti-inundaciones-hecha-a-la-medida",
@@ -116,7 +116,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "title-ascending",
-   "precioMaximo": 7000.0,
+   "precioMaximo": 7000,
    "productos": [
     "compuerta-anti-inundaciones",
     "compuerta-anti-inundaciones-hecha-a-la-medida",
@@ -216,7 +216,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "best-selling",
-   "precioMaximo": 5500.0,
+   "precioMaximo": 5500,
    "productos": [
     "compuerta-anti-inundaciones"
    ],
@@ -257,7 +257,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "price-descending",
-   "precioMaximo": 7000.0,
+   "precioMaximo": 7000,
    "productos": [
     "compuerta-anti-inundaciones-hecha-a-la-medida",
     "tapon-inflable-anti-inundaciones",
@@ -318,7 +318,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "best-selling",
-   "precioMaximo": 7000.0,
+   "precioMaximo": 7000,
    "productos": [
     "tapon-inflable-anti-inundaciones",
     "compuerta-anti-inundaciones-hecha-a-la-medida"
@@ -369,7 +369,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "best-selling",
-   "precioMaximo": 5500.0,
+   "precioMaximo": 5500,
    "productos": [
     "compuerta-anti-inundaciones"
    ],
@@ -410,7 +410,7 @@
    "descripcionHtml": "",
    "imagenCompartir": "/media/files/Portada_RS.jpg",
    "orden": "manual",
-   "precioMaximo": 7000.0,
+   "precioMaximo": 7000,
    "productos": [
     "compuerta-anti-inundaciones",
     "compuerta-anti-inundaciones-hecha-a-la-medida",

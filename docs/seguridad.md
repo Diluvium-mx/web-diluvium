@@ -59,6 +59,13 @@ Mercado Pago puede castigar o cerrar la cuenta. Defensas:
   **registro de auditoría** (quién, qué, cuándo).
 - El administrador puede vivir en una dirección propia (por ejemplo `admin.diluvium.com.mx`) con reglas más duras
   del firewall.
+- **Hecho en esta Mac (5-nov-2026, `docs/administrador.md`):**
+  - la API del administrador solo responde con sesión (sin sesión, 403);
+  - 5 intentos fallidos bloquean la cuenta 15 minutos;
+  - sin GraphQL.
+
+  **Falta antes de publicar:** 2FA, roles, registro de auditoría y crear el usuario del dueño en cuanto exista la
+  base del hosting (mientras no hay usuarios, `/admin` deja crear el primero).
 
 ## 5. Llaves y secretos
 

@@ -285,11 +285,11 @@
       "fotos": [
         "/media/resenas/EzTBWf8m2N-card-small.jpeg"
       ],
-      "variasFotos": true,
       "producto": {
         "titulo": "Compuerta Anti-Inundaciones",
         "url": "/products/compuerta-anti-inundaciones"
-      }
+      },
+      "variasFotos": true
     },
     {
       "nombre": "Marco E.",
@@ -298,11 +298,11 @@
       "fotos": [
         "/media/resenas/wNjmk4rTZY-card-small.jpeg"
       ],
-      "variasFotos": true,
       "producto": {
         "titulo": "Compuerta Anti-Inundaciones",
         "url": "/products/compuerta-anti-inundaciones"
-      }
+      },
+      "variasFotos": true
     },
     {
       "nombre": "Elías N.",
@@ -311,11 +311,11 @@
       "fotos": [
         "/media/resenas/3jC3xcijGp-card-small.jpg"
       ],
-      "variasFotos": true,
       "producto": {
         "titulo": "Compuerta Anti-Inundaciones",
         "url": "/products/compuerta-anti-inundaciones"
-      }
+      },
+      "variasFotos": true
     },
     {
       "nombre": "Horacio R.",
@@ -1250,11 +1250,11 @@
       "fotos": [
         "/media/resenas/m5KWNkGnNw-card-small.jpg"
       ],
-      "variasFotos": true,
       "producto": {
         "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medid...",
         "url": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
-      }
+      },
+      "variasFotos": true
     },
     {
       "nombre": "Ricardo M.",
@@ -1275,11 +1275,11 @@
       "fotos": [
         "/media/resenas/MXNiZTJkAA-card-small.jpeg"
       ],
-      "variasFotos": true,
       "producto": {
         "titulo": "Compuerta Anti-Inundaciones XXL - Hecha a la medid...",
         "url": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
-      }
+      },
+      "variasFotos": true
     },
     {
       "nombre": "Jose R.",

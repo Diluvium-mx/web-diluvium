@@ -1,5 +1,23 @@
 {
   "paginas": {
+    "404": {
+      "titulo": "404 No encontrado – Diluvium",
+      "descripcion": null,
+      "canonica": "/404",
+      "og": {
+        "tipo": "website",
+        "titulo": "404 No encontrado",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
+        "imagen": "/media/files/Portada_RS.jpg",
+        "ancho": 1200,
+        "alto": 628
+      },
+      "twitter": {
+        "tarjeta": "summary_large_image",
+        "titulo": "404 No encontrado",
+        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
+      }
+    },
     "/": {
       "titulo": "Diluvium México",
       "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
@@ -522,24 +540,6 @@
         "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
       }
     },
-    "404": {
-      "titulo": "404 No encontrado – Diluvium",
-      "descripcion": null,
-      "canonica": "/404",
-      "og": {
-        "tipo": "website",
-        "titulo": "404 No encontrado",
-        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas.",
-        "imagen": "/media/files/Portada_RS.jpg",
-        "ancho": 1200,
-        "alto": 628
-      },
-      "twitter": {
-        "tarjeta": "summary_large_image",
-        "titulo": "404 No encontrado",
-        "descripcion": "Empresa mexicana especializada en prevención de inundaciones. Ofrecemos protecciones reutilizables, diseñadas para proteger hogares y negocios de la entrada de agua durante lluvias intensas."
-      }
-    },
     "/policies/privacy-policy": {
       "titulo": "Política de privacidad – Diluvium",
       "descripcion": null,
@@ -668,12 +668,6 @@
         "name": "Diluvium"
       }
     }
-  },
-  "codigosBarras": {
-    "43039686131932": "7500464704443",
-    "43039686164700": "7500464704450",
-    "43039686197468": "7500464704467",
-    "43039686263004": "7500464704474"
   },
   "organizacion": {
     "@context": "http://schema.org",
