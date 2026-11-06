@@ -23,6 +23,8 @@ Los comandos se corren desde la raíz del proyecto.
 | **Comparar la réplica contra el sitio en vivo** | `npm run comparar -- <pagina> <ruta> [vistas] [indices]` | `comparaciones/` |
 | Capturas y medidas del carrito **con productos** en vivo (agrega como visitante, sin analítica) | `node herramientas/capturar-carrito.mjs [vistas]` | `docs/sitio-actual/capturas/2026-11-04/`, `docs/sitio-actual/medidas/carrito-*` |
 | Comparar el carrito lateral y /cart con productos | `node herramientas/comparar-carrito.mjs [vistas]` | `comparaciones/carrito/` |
+| Capturas y medidas de la pantalla de pago en vivo (solo mira; no escribe datos ni paga) | `node herramientas/capturar-pago.mjs [vistas]` | `docs/sitio-actual/capturas/2026-11-06/`, `docs/sitio-actual/medidas/pago-*` |
+| Comparar /checkout (tarjeta, PayPal, Mercado Pago, resumen abierto) | `node herramientas/comparar-pago.mjs [vistas] [estados]` | `comparaciones/pago/` |
 
 Vistas: `celular` (390 px), `tableta` (768 px), `compu` (1440 px).
 

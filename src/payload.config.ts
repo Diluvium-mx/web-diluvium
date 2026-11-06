@@ -24,6 +24,7 @@ import {
   Usuarios,
 } from "./payload/colecciones";
 import { AjustesTema, CarruselResenas, DatosGoogle, Fuentes, Menus } from "./payload/globales";
+import { AjustesVenta, Descuentos, Pedidos } from "./payload/pedidos";
 
 const carpeta = path.dirname(fileURLToPath(import.meta.url));
 
@@ -55,8 +56,8 @@ export default buildConfig({
     },
   },
   i18n: { supportedLanguages: { es }, fallbackLanguage: "es" },
-  collections: [Productos, Resenas, Colecciones, Plantillas, Paginas, Politicas, Articulos, FichasSeo, Medios, Usuarios],
-  globals: [Menus, CarruselResenas, AjustesTema, DatosGoogle, Fuentes],
+  collections: [Pedidos, Descuentos, Productos, Resenas, Colecciones, Plantillas, Paginas, Politicas, Articulos, FichasSeo, Medios, Usuarios],
+  globals: [AjustesVenta, Menus, CarruselResenas, AjustesTema, DatosGoogle, Fuentes],
   secret: process.env.PAYLOAD_SECRET,
   // D1 no deja que Payload copie la estructura solo («push»): las tablas se crean con migraciones (src/migrations,
   // npm run admin:migrar), como en la plantilla oficial.

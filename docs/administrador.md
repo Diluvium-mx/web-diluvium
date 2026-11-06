@@ -92,6 +92,29 @@ Los comandos usan `tsx` directo: la herramienta `payload` choca con Node 26 (car
 - Local y fuera del repositorio: `.wrangler/` (copias locales de D1 y R2). Se regeneran con
   `npm run admin:sembrar -- --desde-cero`. La base anterior (`datos/admin.db`) queda solo como respaldo.
 
+## Ventas (paso 3, 6-nov-2026)
+- **Pedidos:**
+  - los crea la pantalla de pago (`/checkout`) en el servidor, con el precio calculado ahí con el catálogo publicado
+    (`src/lib/pago/`);
+  - en el administrador se ven el cliente, la dirección, los artículos, los totales, la forma de pago, las notas y el
+    historial, y se escribe el número de guía y la paquetería con «Notificar al cliente»;
+  - los números siguen después del último de Shopify (#1362);
+  - cada pedido lleva una clave al azar: la página de «gracias» pide el número **y** la clave, así nadie puede ver
+    pedidos ajenos;
+  - nadie puede crearlos desde la API.
+- **Códigos de descuento:** porcentaje o monto, compra mínima, vigencia y usos máximos. Viven solo en la base, nunca en
+  el repositorio.
+- **Envío y pedidos:** nombre del envío, desde cuánto es gratis ($499) y el costo debajo de eso (falta el dato real de
+  la tienda), y el número del próximo pedido.
+- **Falta:**
+  - el cobro: tarjeta con los campos seguros de Mercado Pago, Checkout Pro de Mercado Pago y PayPal, con las llaves
+    de prueba;
+  - los avisos firmados de la pasarela;
+  - los correos (confirmación de pedido y de envío);
+  - descontar existencias al pagar.
+
+  Mientras tanto, el pedido queda «pendiente» y no se cobra.
+
 ## Lo que pasó de código a datos (ahora se edita)
 Las piezas en existencia, los códigos de barras, los videos de la galería y el proveedor de cada producto estaban
 escritos a mano en el código. Ahora están en `contenido/productos.json` y se editan en Productos.

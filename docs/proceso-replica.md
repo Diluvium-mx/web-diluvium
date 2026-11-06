@@ -75,7 +75,7 @@ como «variante y piezas»; precio, título y foto salen siempre del catálogo. 
 | Formulario de la página Contacto | Manda nombre, correo y mensaje al correo de la tienda | Servicio de correos + Turnstile |
 | Suscripción del pie | Guarda el correo como suscriptor | Base de datos + Turnstile |
 | «Escribir una reseña» (fichas y página de reseñas) | Abre el formulario y la reseña queda en revisión | Base de datos + revisión en el administrador |
-| Pago («Finalizar compra» y PayPal en el carrito) | Lleva al pago de Shopify | Pago con Mercado Pago, precio calculado en el servidor |
+| Pago | La pantalla de pago de Shopify | **Pantalla lista (6-nov-2026)**: `/checkout`, igual a la de Shopify en 11 estados y vistas, con el precio calculado en el servidor, el pedido guardado en el administrador y la página de «gracias». Falta el cobro real (llaves de prueba de Mercado Pago y PayPal) y el botón de PayPal exprés |
 | Notas del pedido (carrito) | Guarda la nota con el carrito | Se guarda con el pedido en el servidor |
 | Correos de la tienda y pedidos en el administrador | Confirmación de pedido, guía de envío, «Notificar al cliente» | Base de datos + servicio de correos |
 | Medición (Clarity, Google, Meta, TikTok) | Mapa de calor, visitas y conversiones | Paso 4 (no se ve en la página) |

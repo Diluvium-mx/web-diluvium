@@ -137,6 +137,11 @@ export function quitar(id: number) {
   cambiar(id, 0);
 }
 
+/** Deja el carrito vacío (al terminar un pedido en la pantalla de pago). */
+export function vaciar() {
+  guardar(VACIO);
+}
+
 // Abrir el carrito lateral desde cualquier parte (la ficha, «Quick add»). El encabezado es quien lo dibuja.
 type AlAbrir = (opciones: { anadido: boolean }) => void;
 const abridores = new Set<AlAbrir>();

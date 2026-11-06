@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Pantalla de pago: medidas de la pantalla de pago en vivo (docs/sitio-actual/medidas/pago-*.json). No es código de
+   Shopify: son los valores que calcula el navegador, reescritos aquí. Usa las letras del sistema, como en vivo. */
+
+@theme {
+  --font-sistema: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --color-acento: rgb(0, 91, 209);
+  --color-tenue: rgb(112, 112, 112);
+  --color-tenue-2: rgb(102, 102, 102);
+  --color-borde: rgb(222, 222, 222);
+  --color-gris: rgb(245, 245, 245);
+  --color-elegido: rgb(246, 246, 255);
+  --color-error: rgb(221, 29, 29);
+  --color-paypal: #ffc43c;
+
+  /* Celular hasta 749 px; tableta desde 750 px; computadora (dos columnas) desde 1000 px. */
+  --breakpoint-t: 750px;
+  --breakpoint-c: 1000px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: var(--font-sistema);
+    font-size: 14px;
+    line-height: 18.9px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  button,
+  input,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+/* Texto solo para lectores de pantalla (los títulos ocultos que tiene la pantalla en vivo). */
+.solo-lector {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

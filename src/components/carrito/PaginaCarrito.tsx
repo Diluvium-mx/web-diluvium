@@ -7,6 +7,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { precioTexto } from "@/components/producto/formato-precio";
 import { enlaceArticulo } from "./catalogo";
@@ -75,8 +76,7 @@ function Linea({ linea, numero }: { linea: LineaCompleta; numero: number }) {
 }
 
 /**
- * Botón de PayPal (pago acelerado de la tienda). Paso 3: pago (Mercado Pago, precio calculado en el servidor);
- * mientras tanto se ve igual y no hace nada.
+ * Botón de PayPal (pago acelerado de la tienda). Paso 3: PayPal; mientras tanto se ve igual y no hace nada.
  */
 function BotonPaypal() {
   return (
@@ -85,7 +85,7 @@ function BotonPaypal() {
         type="button"
         aria-label="PayPal"
         onClick={() => {
-          // Paso 3: pago (Mercado Pago, precio calculado en el servidor)
+          // Paso 3: PayPal
         }}
         className="flex h-full w-full cursor-pointer items-center justify-center rounded-[4px] bg-[#ffc439] hover:brightness-95"
       >
@@ -100,6 +100,7 @@ function BotonPaypal() {
 
 export function PaginaCarrito() {
   const { lineas, piezas, total } = useCarrito();
+  const router = useRouter();
   const vacio = lineas.length === 0;
 
   return (
@@ -148,9 +149,8 @@ export function PaginaCarrito() {
                   <button
                     type="button"
                     name="checkout"
-                    onClick={() => {
-                      // Paso 3: pago (Mercado Pago, precio calculado en el servidor)
-                    }}
+                    // A la pantalla de pago (el precio lo vuelve a calcular el servidor).
+                    onClick={() => router.push("/checkout")}
                     className="relative isolate inline-flex min-h-10 w-full cursor-pointer items-center justify-center overflow-hidden border border-azul-oscuro bg-azul-oscuro px-5 py-2 font-titulo leading-[normal] font-medium text-[#fff7ec] transition-colors duration-[400ms] after:absolute after:inset-x-0 after:top-0 after:bottom-full after:-z-10 after:bg-white after:transition-[bottom] after:duration-[400ms] hover:text-azul-oscuro hover:after:bottom-0"
                   >
                     Finalizar compra

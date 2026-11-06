@@ -67,6 +67,8 @@ export interface Config {
   };
   blocks: {};
   collections: {
+    pedidos: Pedido;
+    descuentos: Descuento;
     productos: Producto;
     resenas: Resena;
     colecciones: Coleccione;
@@ -84,6 +86,8 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
+    pedidos: PedidosSelect<false> | PedidosSelect<true>;
+    descuentos: DescuentosSelect<false> | DescuentosSelect<true>;
     productos: ProductosSelect<false> | ProductosSelect<true>;
     resenas: ResenasSelect<false> | ResenasSelect<true>;
     colecciones: ColeccionesSelect<false> | ColeccionesSelect<true>;
@@ -104,6 +108,7 @@ export interface Config {
   };
   fallbackLocale: null;
   globals: {
+    'ajustes-venta': AjustesVenta;
     menus: Menu;
     'carrusel-resenas': CarruselResena;
     'ajustes-tema': AjustesTema;
@@ -111,6 +116,7 @@ export interface Config {
     fuentes: Fuente;
   };
   globalsSelect: {
+    'ajustes-venta': AjustesVentaSelect<false> | AjustesVentaSelect<true>;
     menus: MenusSelect<false> | MenusSelect<true>;
     'carrusel-resenas': CarruselResenasSelect<false> | CarruselResenasSelect<true>;
     'ajustes-tema': AjustesTemaSelect<false> | AjustesTemaSelect<true>;
@@ -144,6 +150,189 @@ export interface UsuarioAuthOperations {
     email: string;
     password: string;
   };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pedidos".
+ */
+export interface Pedido {
+  id: number;
+  titulo?: string | null;
+  numero: number;
+  clave?: string | null;
+  estadoPago?: ('pendiente' | 'pagado' | 'reembolsado' | 'cancelado') | null;
+  estadoPreparacion?: ('no-preparado' | 'preparado' | 'entregado') | null;
+  articulos?:
+    | {
+        titulo?: string | null;
+        opcion?: string | null;
+        cantidad?: number | null;
+        precio?: number | null;
+        idVariante?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  totales?: {
+    subtotal?: number | null;
+    descuento?: number | null;
+    codigoDescuento?: string | null;
+    envio?: number | null;
+    metodoEnvio?: string | null;
+  };
+  total?: number | null;
+  pago?: {
+    metodo?: ('tarjeta' | 'mercadopago' | 'paypal') | null;
+    meses?: number | null;
+    idPago?: string | null;
+    detalle?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  cliente?: string | null;
+  correo?: string | null;
+  novedades?: boolean | null;
+  entrega?: {
+    nombre?: string | null;
+    apellidos?: string | null;
+    direccion?: string | null;
+    interior?: string | null;
+    codigoPostal?: string | null;
+    ciudad?: string | null;
+    estado?:
+      | (
+          | 'AGU'
+          | 'BCN'
+          | 'BCS'
+          | 'CAM'
+          | 'CHP'
+          | 'CHH'
+          | 'DIF'
+          | 'COA'
+          | 'COL'
+          | 'DUR'
+          | 'MEX'
+          | 'GUA'
+          | 'GRO'
+          | 'HID'
+          | 'JAL'
+          | 'MIC'
+          | 'MOR'
+          | 'NAY'
+          | 'NLE'
+          | 'OAX'
+          | 'PUE'
+          | 'QUE'
+          | 'ROO'
+          | 'SLP'
+          | 'SIN'
+          | 'SON'
+          | 'TAB'
+          | 'TAM'
+          | 'TLA'
+          | 'VER'
+          | 'YUC'
+          | 'ZAC'
+        )
+      | null;
+    telefono?: string | null;
+  };
+  facturacion?: {
+    nombre?: string | null;
+    apellidos?: string | null;
+    direccion?: string | null;
+    interior?: string | null;
+    codigoPostal?: string | null;
+    ciudad?: string | null;
+    estado?:
+      | (
+          | 'AGU'
+          | 'BCN'
+          | 'BCS'
+          | 'CAM'
+          | 'CHP'
+          | 'CHH'
+          | 'DIF'
+          | 'COA'
+          | 'COL'
+          | 'DUR'
+          | 'MEX'
+          | 'GUA'
+          | 'GRO'
+          | 'HID'
+          | 'JAL'
+          | 'MIC'
+          | 'MOR'
+          | 'NAY'
+          | 'NLE'
+          | 'OAX'
+          | 'PUE'
+          | 'QUE'
+          | 'ROO'
+          | 'SLP'
+          | 'SIN'
+          | 'SON'
+          | 'TAB'
+          | 'TAM'
+          | 'TLA'
+          | 'VER'
+          | 'YUC'
+          | 'ZAC'
+        )
+      | null;
+    telefono?: string | null;
+  };
+  envios?:
+    | {
+        guia: string;
+        paqueteria?:
+          ('Estafeta' | 'FedEx' | 'DHL' | 'Paquetexpress' | '99minutos' | 'Redpack' | 'UPS' | 'J&T' | 'Otro') | null;
+        /**
+         * Al guardar, el cliente recibe la «Confirmación de envío» con su número de guía (paso 3, correos).
+         */
+        notificar?: boolean | null;
+        notificado?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  notas?: string | null;
+  comentarios?: string | null;
+  etiquetas?: string | null;
+  historial?:
+    | {
+        fecha?: string | null;
+        evento?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "descuentos".
+ */
+export interface Descuento {
+  id: number;
+  /**
+   * Lo que escribe el cliente (no importa si es con mayúsculas o minúsculas).
+   */
+  codigo: string;
+  tipo: 'porcentaje' | 'monto';
+  valor: number;
+  minimo?: number | null;
+  desde?: string | null;
+  hasta?: string | null;
+  usosMaximos?: number | null;
+  usos?: number | null;
+  activo?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -2868,6 +3057,14 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
+        relationTo: 'pedidos';
+        value: number | Pedido;
+      } | null)
+    | ({
+        relationTo: 'descuentos';
+        value: number | Descuento;
+      } | null)
+    | ({
         relationTo: 'productos';
         value: number | Producto;
       } | null)
@@ -2948,6 +3145,110 @@ export interface PayloadMigration {
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pedidos_select".
+ */
+export interface PedidosSelect<T extends boolean = true> {
+  titulo?: T;
+  numero?: T;
+  clave?: T;
+  estadoPago?: T;
+  estadoPreparacion?: T;
+  articulos?:
+    | T
+    | {
+        titulo?: T;
+        opcion?: T;
+        cantidad?: T;
+        precio?: T;
+        idVariante?: T;
+        id?: T;
+      };
+  totales?:
+    | T
+    | {
+        subtotal?: T;
+        descuento?: T;
+        codigoDescuento?: T;
+        envio?: T;
+        metodoEnvio?: T;
+      };
+  total?: T;
+  pago?:
+    | T
+    | {
+        metodo?: T;
+        meses?: T;
+        idPago?: T;
+        detalle?: T;
+      };
+  cliente?: T;
+  correo?: T;
+  novedades?: T;
+  entrega?:
+    | T
+    | {
+        nombre?: T;
+        apellidos?: T;
+        direccion?: T;
+        interior?: T;
+        codigoPostal?: T;
+        ciudad?: T;
+        estado?: T;
+        telefono?: T;
+      };
+  facturacion?:
+    | T
+    | {
+        nombre?: T;
+        apellidos?: T;
+        direccion?: T;
+        interior?: T;
+        codigoPostal?: T;
+        ciudad?: T;
+        estado?: T;
+        telefono?: T;
+      };
+  envios?:
+    | T
+    | {
+        guia?: T;
+        paqueteria?: T;
+        notificar?: T;
+        notificado?: T;
+        id?: T;
+      };
+  notas?: T;
+  comentarios?: T;
+  etiquetas?: T;
+  historial?:
+    | T
+    | {
+        fecha?: T;
+        evento?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "descuentos_select".
+ */
+export interface DescuentosSelect<T extends boolean = true> {
+  codigo?: T;
+  tipo?: T;
+  valor?: T;
+  minimo?: T;
+  desde?: T;
+  hasta?: T;
+  usosMaximos?: T;
+  usos?: T;
+  activo?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -4774,6 +5075,27 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ajustes-venta".
+ */
+export interface AjustesVenta {
+  id: number;
+  envio?: {
+    nombre?: string | null;
+    gratisDesde?: number | null;
+    /**
+     * Revisar con la tienda de hoy: cuánto se cobra en pedidos de menos de $499.
+     */
+    costo?: number | null;
+  };
+  /**
+   * Sigue después del último de Shopify para no repetir números.
+   */
+  siguienteNumero?: number | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "menus".
  */
 export interface Menu {
@@ -4986,6 +5308,23 @@ export interface Fuente {
     | null;
   updatedAt?: string | null;
   createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ajustes-venta_select".
+ */
+export interface AjustesVentaSelect<T extends boolean = true> {
+  envio?:
+    | T
+    | {
+        nombre?: T;
+        gratisDesde?: T;
+        costo?: T;
+      };
+  siguienteNumero?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

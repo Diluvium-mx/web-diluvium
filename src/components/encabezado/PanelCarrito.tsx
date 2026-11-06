@@ -8,6 +8,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IconoEquis } from "@/components/producto/IconosColeccion";
 import { IconoExistencias } from "@/components/producto/ficha/Iconos";
@@ -84,6 +85,7 @@ function Linea({ linea, numero, cerrar }: { linea: LineaCompleta; numero: number
 export function PanelCarrito({ cerrar, anadido = false }: { cerrar: () => void; anadido?: boolean }) {
   const visible = useAparecer();
   const { lineas, piezas, total } = useCarrito();
+  const router = useRouter();
   const vacio = lineas.length === 0;
 
   useEffect(() => {
@@ -183,7 +185,9 @@ export function PanelCarrito({ cerrar, anadido = false }: { cerrar: () => void; 
                     type="button"
                     name="checkout"
                     onClick={() => {
-                      // Paso 3: pago (Mercado Pago, precio calculado en el servidor)
+                      // A la pantalla de pago (el precio lo vuelve a calcular el servidor).
+                      cerrar();
+                      router.push("/checkout");
                     }}
                     className="relative isolate flex min-h-10 w-full cursor-pointer items-center justify-center overflow-hidden border border-naranja bg-naranja px-6 py-1.5 font-titulo leading-[normal] font-medium text-white transition-colors duration-[400ms] after:absolute after:inset-x-0 after:top-0 after:bottom-full after:-z-10 after:bg-white after:transition-[bottom] after:duration-[400ms] hover:text-naranja hover:after:bottom-0 min-[1025px]:min-h-11"
                   >
