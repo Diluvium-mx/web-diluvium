@@ -71,13 +71,13 @@ como «variante y piezas»; precio, título y foto salen siempre del catálogo. 
 
 | Función | Qué hace en vivo | Qué falta |
 |---|---|---|
-| Formulario «¡Hola!» (portada) | Manda los datos al correo de la tienda y muestra «gracias» | Servicio de correos + Turnstile |
-| Formulario de la página Contacto | Manda nombre, correo y mensaje al correo de la tienda | Servicio de correos + Turnstile |
-| Suscripción del pie | Guarda el correo como suscriptor | Base de datos + Turnstile |
-| «Escribir una reseña» (fichas y página de reseñas) | Abre el formulario y la reseña queda en revisión | Base de datos + revisión en el administrador |
+| Formulario «¡Hola!» (portada) | Manda los datos al correo de la tienda y muestra «gracias» | **Listo (10-nov-2026)**: guarda en Ventas › Mensajes y muestra el mensaje de gracias; el aviso por correo sale al conectar Resend. Falta el captcha (paso de seguridad) |
+| Formulario de la página Contacto | Manda nombre, correo y mensaje al correo de la tienda | **Listo (10-nov-2026)**, igual que el de la portada |
+| Suscripción del pie | Guarda el correo como suscriptor | **Listo (10-nov-2026)**: Ventas › Suscriptores, con «Gracias por suscribirse» |
+| «Escribir una reseña» (fichas y página de reseñas) | Abre el formulario y la reseña queda en revisión | **Listo (10-nov-2026)**: la misma ventana (capturas del 10-nov), con fotos; la reseña llega oculta a Reseñas para publicarla |
 | Pago | La pantalla de pago de Shopify | **Pantalla lista (6-nov-2026)**: `/checkout`, igual a la de Shopify en 11 estados y vistas, con el precio calculado en el servidor, el pedido guardado en el administrador y la página de «gracias». Falta el cobro real (llaves de prueba de Mercado Pago y PayPal) y el botón de PayPal exprés |
 | Notas del pedido (carrito) | Guarda la nota con el carrito | Se guarda con el pedido en el servidor |
-| Correos de la tienda y pedidos en el administrador | Confirmación de pedido, guía de envío, «Notificar al cliente» | Base de datos + servicio de correos |
+| Correos de la tienda y pedidos en el administrador | Confirmación de pedido, guía de envío, «Notificar al cliente» | **Correos listos (10-nov-2026)** con vista previa en `/correos/<tipo>`; salen al conectar Resend |
 | Medición (Clarity, Google, Meta, TikTok) | Mapa de calor, visitas y conversiones | Paso 4 (no se ve en la página) |
 
 Nada visible de la tienda queda sin replicar: las 34 páginas, sus piezas, el buscador y el carrito ya están. La app de

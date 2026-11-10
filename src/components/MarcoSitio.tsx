@@ -22,6 +22,8 @@ export const METADATOS_SITIO: Metadata = {
   // Título, descripción y fichas para redes salen de cada página (src/lib/seo.tsx), como en vivo.
   title: { default: "Diluvium", template: "%s – Diluvium" },
   icons: { icon: "/media/files/Favicon_2aabf220-4641-4694-9dbb-be135ad53af1.png" },
+  // En la copia de prueba ninguna página se indexa (aunque alguien comparta el enlace).
+  ...(process.env.SITIO_PRUEBA === "1" ? { robots: { index: false, follow: false } } : {}),
 };
 
 export function MarcoSitio({ children }: { children: React.ReactNode }) {

@@ -8,9 +8,10 @@
 // - La foto abre la reseña en grande; el texto largo se corta con «...Mostrar reseña completa».
 // Todo el texto de clientes va como texto plano.
 
+import { BotonEscribir } from "./EscribirResena";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Detalle, ORDENES, ordenar, SEPARACION_X, SEPARACION_Y, Tarjeta, type Orden, type ResenaTarjeta } from "./ListaResenas";
-import { BOTON_RESENAS, EstrellasResena } from "./piezas";
+import { EstrellasResena } from "./piezas";
 
 const POR_PAGINA = 15;
 
@@ -166,13 +167,11 @@ export function ListaResenasTienda({
             </div>
           </div>
           <div className="mt-5 flex py-4 md:justify-end md:pb-2.5 min-[1025px]:mt-0 min-[1025px]:justify-center">
-            {/* Paso 3: abrir el formulario para escribir una reseña de la tienda (guardar en la base de datos, con revisión antes de publicar). */}
-            <button
-              type="button"
-              className={`${BOTON_RESENAS} h-10 w-full px-[5px] py-1 text-sm font-semibold md:w-[260px] md:px-6 min-[1025px]:w-[256.4px]`}
-            >
-              Escribir una reseña de la tienda
-            </button>
+            {/* Abre la ventana para mandar una reseña de la tienda (sin producto); queda oculta hasta que el dueño la publica. */}
+            <BotonEscribir
+              texto="Escribir una reseña de la tienda"
+              className="h-10 w-full px-[5px] py-1 text-sm font-semibold md:w-[260px] md:px-6 min-[1025px]:w-[256.4px]"
+            />
           </div>
         </div>
       </div>

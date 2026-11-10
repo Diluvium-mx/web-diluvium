@@ -1,13 +1,15 @@
 "use client";
 
-// Formulario «¡Hola!» para cotizar (sección «whatsapp-form»). En el sitio en vivo es el formulario de contacto de
-// Shopify: manda los datos al correo de la tienda y muestra el mensaje de gracias. Aquí queda igual en aspecto; el
-// envío del correo se conecta en el paso 3 (servicio de correos), como decidió el dueño el 3-nov-2026.
+// Formulario «¡Hola!» para cotizar (sección «whatsapp-form»). Como en vivo (formulario de contacto de Shopify): al
+// enviarlo, el formulario se cambia por el mensaje de gracias de la sección; si falta el correo, sale el aviso en rojo.
+// Se guarda en el administrador (Ventas › Mensajes) y avisa por correo a la tienda (src/lib/formularios).
 // Celular y tableta: foto de la señora arriba y el formulario en un recuadro gris. Computadora: franja gris con el
 // formulario a la izquierda y la foto de la muchacha a la derecha, saliendo por arriba de la franja.
 
 import Image from "next/image";
-import type { FormEvent } from "react";
+import { useState, useTransition, type FormEvent } from "react";
+import { enviarMensaje } from "@/lib/formularios/acciones";
+import { useTrampa } from "@/components/comunes/Trampa";
 import type { Seccion } from "@/lib/contenido";
 import { texto } from "@/lib/contenido";
 
@@ -19,10 +21,23 @@ const CAMPO =
 
 export function FormularioWhatsapp({ seccion }: { seccion: Seccion }) {
   const a = seccion.ajustes;
-  // Paso 3: mandar los datos al correo de la tienda (con Turnstile y límite de intentos) y después mostrar
-  // texto(a, "success_message") en el aviso de abajo, como hace Shopify.
+  const [enviado, setEnviado] = useState(false);
+  const [error, setError] = useState("");
+  const [enviando, iniciar] = useTransition();
+  const { CampoTrampa, datos } = useTrampa();
+
   function enviar(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const f = new FormData(e.currentTarget);
+    iniciar(async () => {
+      const r = await enviarMensaje(
+        "hola",
+        { nombre: String(f.get("nombre") ?? ""), telefono: String(f.get("telefono") ?? ""), correo: String(f.get("email") ?? ""), pagina: location.pathname },
+        datos(),
+      );
+      if (r.ok) setEnviado(true);
+      else setError(r.error);
+    });
   }
 
   return (
@@ -32,9 +47,22 @@ export function FormularioWhatsapp({ seccion }: { seccion: Seccion }) {
     >
       <div className="mx-auto grid w-full grid-cols-1 bg-white py-12 min-[1025px]:relative min-[1025px]:h-[340px] min-[1025px]:max-w-[calc(var(--ancho-pagina)+2*var(--margen))] min-[1025px]:bg-[#dae1eb] min-[1025px]:py-0">
         <div className="bg-[#eaeef1] px-[var(--margen)] py-[var(--aire)] min-[1025px]:absolute min-[1025px]:left-[var(--margen)] min-[1025px]:top-[140px] min-[1025px]:w-full min-[1025px]:max-w-[400px] min-[1025px]:-translate-y-[35%] min-[1025px]:bg-transparent min-[1025px]:p-0">
-          <form onSubmit={enviar} className="text-black" aria-label="Contacto">
+          {enviado ? (
+            <div className="text-black" role="status">
+              <p className="m-0 text-[32px] font-semibold leading-[1.25]">
+                {texto(a, "success_message") || "¡Gracias por contactarnos! Te responderemos a la brevedad."}
+              </p>
+            </div>
+          ) : (
+          <form onSubmit={enviar} className="relative text-black" aria-label="Contacto" noValidate>
+            {CampoTrampa}
             <h2 className="!mb-[5px] text-black">{texto(a, "title")}</h2>
             <p className="m-0 mb-[10.6667px] leading-[19.2px]">{texto(a, "subtitle")}</p>
+            {error && (
+              <ul className="m-0 mb-4 list-none p-0" role="alert">
+                <li className="text-[red]">{error}</li>
+              </ul>
+            )}
             <div className="flex">
               <div className="w-1/2">
                 <input className={CAMPO} type="text" name="nombre" placeholder="Nombre" aria-label="Nombre" autoComplete="name" maxLength={200} />
@@ -46,12 +74,13 @@ export function FormularioWhatsapp({ seccion }: { seccion: Seccion }) {
             <input className={CAMPO} type="email" name="email" placeholder="Email" aria-label="Email" autoComplete="email" maxLength={200} />
             <button
               type="submit"
+              disabled={enviando}
               className="relative z-[1] inline-flex h-10 w-full cursor-pointer items-center justify-center border border-solid border-[#0c559a] bg-[#0c559a] px-5 py-1.5 font-titulo text-base font-medium leading-[normal] text-white transition-colors duration-[400ms] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
             >
               {texto(a, "button_text") || "Enviar"}
             </button>
-            <p role="status" className="sr-only" />
           </form>
+          )}
         </div>
         <div className="order-first min-[1025px]:hidden">
           <Image

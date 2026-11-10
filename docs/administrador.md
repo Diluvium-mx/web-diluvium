@@ -110,10 +110,38 @@ Los comandos usan `tsx` directo: la herramienta `payload` choca con Node 26 (car
   - el cobro: tarjeta con los campos seguros de Mercado Pago, Checkout Pro de Mercado Pago y PayPal, con las llaves
     de prueba;
   - los avisos firmados de la pasarela;
-  - los correos (confirmación de pedido y de envío);
+  - conectar Resend para que los correos salgan (ya están hechos, ver abajo);
   - descontar existencias al pagar.
 
   Mientras tanto, el pedido queda «pendiente» y no se cobra.
+
+### Correos de la tienda (10-nov-2026)
+Los correos que hoy manda Shopify, hechos en `src/lib/correos/` (una plantilla por archivo, con versión en texto simple;
+tablas y estilos en línea, 600 px, logo de Diluvium, azul de la marca y botón naranja):
+
+| Correo | A quién | Cuándo sale |
+|---|---|---|
+| Confirmación de pedido («¡Gracias por tu compra!») | Cliente | El pago del pedido pasa a «Pagado» |
+| Pedido nuevo #… | Tienda (`CORREO_TIENDA`) | Junto con la confirmación de pedido |
+| Confirmación de envío («Tu pedido está en camino», con la guía y el enlace de Envía; con «Otro», sin enlace) | Cliente | Se guarda un envío con «Notificar al cliente» que no tenga fecha en «Ya se le avisó» |
+| Pedido entregado + invitación a reseña (lleva a `/products/<nombre>#resenas-producto`) | Cliente | La preparación pasa a «Entregado» |
+| Recordatorio de pago abandonado («Completar compra» → `/checkout`) | Cliente | Todavía no: solo plantilla (falta definir cuándo) |
+| Mensaje nuevo (formularios de contacto) | Tienda | Lo llama el formulario con `avisoMensajeNuevo()` (`src/lib/correos/avisos.ts`) |
+
+- **Cómo salen:** un gancho de Pedidos (`src/lib/correos/ganchos-pedidos.ts`) revisa cada guardado. Cada correo deja un
+  renglón en el historial del pedido, que también evita mandarlo dos veces; al envío se le pone la fecha de «Ya se le
+  avisó». Si el correo falla, el pedido se guarda igual.
+- **Envío:** `enviarCorreo()` (`src/lib/correos/enviar.ts`) usa la API de Resend. **Sin `RESEND_API_KEY` no se manda
+  nada:** el correo queda anotado como «pendiente».
+- **Correos enviados** (Ventas): cada correo con destinatario, asunto, tipo, estado (pendiente, enviado o error), el
+  error si lo hubo, la fecha, el HTML y el texto. Solo lectura. Viven solo en la base: llevan datos de clientes.
+- **Vista previa:** `/correos/<tipo>` (por ejemplo `http://localhost:3100/correos/confirmacion-pedido`). Usa datos
+  inventados (pedido #1362, Cliente de Prueba) y muestra el correo y su versión en texto. Solo con sesión iniciada; sin
+  ella da 404. Hay accesos en el inicio del administrador, en la tarjeta «Correos».
+- **Variables** (`.env.example`): `RESEND_API_KEY`, `CORREO_REMITENTE` (p. ej. `Diluvium <pedidos@diluvium.com.mx>`) y
+  `CORREO_TIENDA` (por omisión `contacto@diluvium.com.mx`).
+- **Falta (dueño):** cuenta de Resend, verificar el dominio `diluvium.com.mx` (registros DNS SPF y DKIM que da Resend) y
+  poner la llave y el remitente en el hosting. Los pendientes guardados antes de eso no se reenvían solos.
 
 ## Lo que pasó de código a datos (ahora se edita)
 Las piezas en existencia, los códigos de barras, los videos de la galería y el proveedor de cada producto estaban

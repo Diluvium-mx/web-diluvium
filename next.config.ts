@@ -9,6 +9,8 @@ const SECURITY_HEADERS = [
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
+  // Copia de prueba (SITIO_PRUEBA=1 al construir): ningún buscador la indexa, ni la página ni las fotos.
+  ...(process.env.SITIO_PRUEBA === "1" ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] : []),
 ];
 
 const nextConfig: NextConfig = {

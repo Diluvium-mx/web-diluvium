@@ -69,6 +69,9 @@ export interface Config {
   collections: {
     pedidos: Pedido;
     descuentos: Descuento;
+    mensajes: Mensaje;
+    suscriptores: Suscriptore;
+    correos: Correo;
     productos: Producto;
     resenas: Resena;
     colecciones: Coleccione;
@@ -88,6 +91,9 @@ export interface Config {
   collectionsSelect: {
     pedidos: PedidosSelect<false> | PedidosSelect<true>;
     descuentos: DescuentosSelect<false> | DescuentosSelect<true>;
+    mensajes: MensajesSelect<false> | MensajesSelect<true>;
+    suscriptores: SuscriptoresSelect<false> | SuscriptoresSelect<true>;
+    correos: CorreosSelect<false> | CorreosSelect<true>;
     productos: ProductosSelect<false> | ProductosSelect<true>;
     resenas: ResenasSelect<false> | ResenasSelect<true>;
     colecciones: ColeccionesSelect<false> | ColeccionesSelect<true>;
@@ -331,6 +337,64 @@ export interface Descuento {
   usosMaximos?: number | null;
   usos?: number | null;
   activo?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mensajes".
+ */
+export interface Mensaje {
+  id: number;
+  formulario?: ('hola' | 'contacto') | null;
+  nombre?: string | null;
+  telefono?: string | null;
+  correo?: string | null;
+  mensaje?: string | null;
+  pagina?: string | null;
+  atendido?: boolean | null;
+  notas?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "suscriptores".
+ */
+export interface Suscriptore {
+  id: number;
+  correo: string;
+  origen?: ('pie' | 'pago') | null;
+  activo?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Vista previa de cada correo: /correos/confirmacion-pedido (con sesión iniciada).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "correos".
+ */
+export interface Correo {
+  id: number;
+  para: string;
+  tipo?:
+    | (
+        | 'confirmacion-pedido'
+        | 'confirmacion-envio'
+        | 'pedido-entregado'
+        | 'pago-abandonado'
+        | 'pedido-nuevo'
+        | 'mensaje-nuevo'
+      )
+    | null;
+  asunto: string;
+  estado?: ('pendiente' | 'enviado' | 'error') | null;
+  fecha?: string | null;
+  pedido?: number | null;
+  error?: string | null;
+  html?: string | null;
+  texto?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3065,6 +3129,18 @@ export interface PayloadLockedDocument {
         value: number | Descuento;
       } | null)
     | ({
+        relationTo: 'mensajes';
+        value: number | Mensaje;
+      } | null)
+    | ({
+        relationTo: 'suscriptores';
+        value: number | Suscriptore;
+      } | null)
+    | ({
+        relationTo: 'correos';
+        value: number | Correo;
+      } | null)
+    | ({
         relationTo: 'productos';
         value: number | Producto;
       } | null)
@@ -3247,6 +3323,50 @@ export interface DescuentosSelect<T extends boolean = true> {
   usosMaximos?: T;
   usos?: T;
   activo?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mensajes_select".
+ */
+export interface MensajesSelect<T extends boolean = true> {
+  formulario?: T;
+  nombre?: T;
+  telefono?: T;
+  correo?: T;
+  mensaje?: T;
+  pagina?: T;
+  atendido?: T;
+  notas?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "suscriptores_select".
+ */
+export interface SuscriptoresSelect<T extends boolean = true> {
+  correo?: T;
+  origen?: T;
+  activo?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "correos_select".
+ */
+export interface CorreosSelect<T extends boolean = true> {
+  para?: T;
+  tipo?: T;
+  asunto?: T;
+  estado?: T;
+  fecha?: T;
+  pedido?: T;
+  error?: T;
+  html?: T;
+  texto?: T;
   updatedAt?: T;
   createdAt?: T;
 }

@@ -49,15 +49,8 @@ export const BOTON_RESENAS =
   "cursor-pointer rounded-[10px] border border-[rgb(143_143_143/0.8)] bg-azul-oscuro text-white " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul-oscuro";
 
-/** «Escriba un comentario». En vivo abre el formulario de Trustoo para mandar una reseña. */
-export function BotonEscribir({ className = "" }: { className?: string }) {
-  // Paso 3: abrir el formulario para escribir una reseña (guardar en la base de datos, con revisión antes de publicar).
-  return (
-    <button type="button" className={`${BOTON_RESENAS} ${className}`}>
-      Escriba un comentario
-    </button>
-  );
-}
+// «Escriba un comentario» abre la ventana para mandar una reseña (EscribirResena.tsx).
+export { BotonEscribir } from "./EscribirResena";
 
 export function IconoOrdenar() {
   return (

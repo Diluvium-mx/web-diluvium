@@ -4,6 +4,7 @@
 // Los datos de clientes viven SOLO en la base (nunca en el repositorio ni en contenido/).
 
 import type { CollectionConfig, Field, GlobalConfig } from "payload";
+import { correosDelPedido } from "@/lib/correos/ganchos-pedidos";
 import { ESTADOS } from "@/lib/pago/tipos";
 
 const direccion = (name: string, label: string): Field => ({
@@ -44,6 +45,8 @@ export const Pedidos: CollectionConfig = {
   defaultSort: "-numero",
   // Los pedidos los crea la pantalla de pago (en el servidor) y se editan aquí; nadie sin sesión los ve.
   access: { create: () => false },
+  // Correos al cliente y a la tienda al confirmar el pago, al notificar un envío y al marcar «Entregado».
+  hooks: { afterChange: [correosDelPedido] },
   fields: [
     { name: "titulo", label: "Pedido", type: "text", admin: { readOnly: true } },
     { name: "numero", label: "Número", type: "number", required: true, unique: true, admin: { position: "sidebar", readOnly: true } },

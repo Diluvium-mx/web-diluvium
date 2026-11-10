@@ -27,7 +27,11 @@
     "cf:probar": "opennextjs-cloudflare preview",
     "cf:tipos": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "admin:migrar": "tsx --env-file=.env src/payload/scripts/migrar.ts",
-    "cf:local": "wrangler dev --port 8788 --ip 127.0.0.1"
+    "cf:local": "wrangler dev --port 8788 --ip 127.0.0.1",
+    "cf:desplegar-prueba": "SITIO_PRUEBA=1 opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:entrar": "wrangler login",
+    "cf:crear": "wrangler d1 create diluvium && wrangler r2 bucket create diluvium-medios",
+    "cf:llave": "node -e \"process.stdout.write(require('node:crypto').randomBytes(32).toString('hex'))\" | wrangler secret put PAYLOAD_SECRET"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "1.20.14",

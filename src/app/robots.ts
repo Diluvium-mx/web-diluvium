@@ -6,6 +6,8 @@ import { SITIO } from "@/lib/seo";
 // varios filtros (son la misma página repetida). Las reglas propias de Shopify (/cdn/wpm, /services, …) se quitan.
 
 export default function robots(): MetadataRoute.Robots {
+  // Copia de prueba (SITIO_PRUEBA=1 al construir): Google no lee nada, para que no compita con la tienda de Shopify.
+  if (process.env.SITIO_PRUEBA === "1") return { rules: { userAgent: "*", disallow: "/" } };
   return {
     rules: {
       userAgent: "*",

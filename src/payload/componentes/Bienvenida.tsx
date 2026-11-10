@@ -3,6 +3,7 @@
 // que se están acabando), reseñas publicadas con su promedio y páginas editables. Abajo quedan las secciones de Payload.
 
 import type { Payload } from "payload";
+import { TIPOS_CORREO } from "@/lib/correos/muestras";
 
 const POCAS = 3;
 
@@ -72,6 +73,23 @@ export async function Bienvenida({ payload }: { payload: Payload }) {
           </ul>
         </div>
       )}
+
+      {/* Vista previa de los correos de la tienda (src/app/(payload)/correos/[tipo]/page.tsx). */}
+      <div className="tablero__avisos">
+        <h2 className="tablero__avisos-titulo">Correos</h2>
+        <ul>
+          {TIPOS_CORREO.map((t) => (
+            <li key={t.tipo}>
+              <a href={`/correos/${t.tipo}`} target="_blank" rel="noopener" data-glow>
+                <span>
+                  <strong>{t.nombre}</strong> · vista previa
+                </span>
+                <span className="tablero__etiqueta">{t.para}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

@@ -10,6 +10,7 @@ import { enlaceProducto } from "@/components/producto/catalogo";
 import { medidasImagen } from "@/components/secciones/ImagenBanner";
 import { ListaResenas, type ResenaTarjeta } from "./ListaResenas";
 import { BotonEscribir, EstrellasResena } from "./piezas";
+import { ProveedorProductoResena } from "./EscribirResena";
 
 type ResenaPagina = {
   nombre: string;
@@ -59,8 +60,20 @@ function SinResenas() {
 
 export function ResenasProducto({ producto }: { producto: Producto }) {
   const lista = resenasDe(producto);
-  if (lista.length === 0) return <SinResenas />;
+  // Los botones «Escriba un comentario» de adentro mandan la reseña a este producto.
+  const datos = { nombre: producto.nombre, titulo: producto.titulo, imagen: producto.imagenes[0]?.src ?? null };
+  if (lista.length === 0) {
+    return (
+      <ProveedorProductoResena producto={datos}>
+        <SinResenas />
+      </ProveedorProductoResena>
+    );
+  }
   const conteo = [5, 4, 3, 2, 1].map((n) => ({ estrellas: n, total: lista.filter((r) => r.calificacion === n).length }));
   const promedio = lista.reduce((s, r) => s + r.calificacion, 0) / lista.length;
-  return <ListaResenas resenas={lista} promedio={promedio} conteo={conteo} />;
+  return (
+    <ProveedorProductoResena producto={datos}>
+      <ListaResenas resenas={lista} promedio={promedio} conteo={conteo} />
+    </ProveedorProductoResena>
+  );
 }
