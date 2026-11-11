@@ -3,6 +3,24 @@
 10-nov-2026 · Estado: **lista para publicar en una dirección de prueba**. Falta la cuenta de Cloudflare (la crea el
 dueño).
 
+## Copia ligera de prueba (plan GRATIS) — publicada el 11-nov-2026
+Para revisar versiones en línea mientras la tienda sigue en Shopify, sin pagar Workers:
+- **Dirección:** `https://diluvium-prueba.web-diluvium.workers.dev` (el Worker «diluvium-prueba»; el dominio no se
+  toca).
+- **Qué es:** la misma página, pero sin el administrador, sin base de datos y sin fotos subidas. El pago y los
+  formularios avisan que es una copia de prueba y no guardan nada.
+- **Peso:** 1.3 MB comprimido (el plan gratis admite 3 MB; la página completa pesa 3.7 MB por el administrador).
+- **No se indexa:** se construye con `SITIO_PRUEBA=1`.
+- **Comandos:**
+  - `npm run prueba:medir` arma la copia y dice cuánto pesa;
+  - `npm run prueba:publicar` la arma y la publica (con los archivos de ahora);
+  - `node herramientas/publicar-prueba.mjs --desde=<rama> --publicar` la arma con lo guardado en una rama de git.
+- **Cómo se arma:** `herramientas/publicar-prueba.mjs` hace una copia temporal y le quita el administrador. No
+  cambia nada del proyecto.
+
+La página completa (administrador, pedidos, correos) se publica con el plan de pago cuando llegue la mudanza; los
+pasos están abajo.
+
 ## Por qué primero una dirección de prueba
 - La copia se publica en `diluvium.<cuenta>.workers.dev` (o en `nueva.diluvium.com.mx` cuando el DNS esté en
   Cloudflare).

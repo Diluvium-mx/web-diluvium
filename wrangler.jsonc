@@ -1,4 +1,6 @@
-// Configuración de Cloudflare (Workers) para la página y el administrador. Basada en la plantilla oficial de Payload
+// Configuración de Cloudflare (Workers) para la página y el administrador. «remote: true»: los scripts con
+// CLOUDFLARE_REMOTO=1 usan la base y las fotos de la cuenta; sin eso (y en «npm run cf:local», con --local) se usan
+// las copias de esta Mac. Basada en la plantilla oficial de Payload
 // para Cloudflare (templates/with-cloudflare-d1, versión 3.92). Los «database_id» y nombres reales se llenan al crear la
 // cuenta; mientras, wrangler usa copias locales en .wrangler/ (fuera del repositorio).
 {
@@ -9,9 +11,9 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
   // Base del administrador (SQLite en Cloudflare).
-  "d1_databases": [{ "binding": "D1", "database_id": "PENDIENTE-AL-CREAR-LA-CUENTA", "database_name": "diluvium" }],
+  "d1_databases": [{ "binding": "D1", "database_id": "088bb8dd-e613-4512-92d5-9503a2a84c28", "database_name": "diluvium", "remote": true }],
   // Fotos y videos que se suban en el administrador.
-  "r2_buckets": [{ "binding": "R2", "bucket_name": "diluvium-medios" }],
+  "r2_buckets": [{ "binding": "R2", "bucket_name": "diluvium-medios", "remote": true }],
   // Optimización de fotos de la página (Cloudflare Images; 5,000 transformaciones únicas gratis al mes).
   "images": { "binding": "IMAGES" },
   "observability": { "enabled": true }

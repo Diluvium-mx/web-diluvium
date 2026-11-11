@@ -34,6 +34,16 @@ import { ListaColecciones } from "./ListaColecciones";
 import { Carrito } from "./Carrito";
 import { Busqueda } from "./Busqueda";
 import { NoEncontrada } from "./NoEncontrada";
+// Secciones propias de las versiones de la portada para pruebas (/v/<versión>).
+import { EncabezadoVersion } from "./landing/Encabezado";
+import { PortadaVersion } from "./landing/Portada";
+import { ResenasVersion } from "./landing/Resenas";
+import { ComparacionVersion } from "./landing/Comparacion";
+import { BeneficiosVersion } from "./landing/Beneficios";
+import { PasosVersion } from "./landing/Pasos";
+import { PreguntasVersion } from "./landing/Preguntas";
+import { CierreVersion } from "./landing/Cierre";
+import { PieVersion } from "./landing/Pie";
 
 // `producto` llega en las páginas de producto (el de esa página); en las demás páginas no viene.
 export type PropsSeccion = { seccion: Seccion; producto?: Producto };
@@ -71,6 +81,15 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "main-cart": Carrito,
   "main-search": Busqueda,
   "main-404": NoEncontrada,
+  "landing-encabezado": EncabezadoVersion,
+  "landing-portada": PortadaVersion,
+  "landing-resenas": ResenasVersion,
+  "landing-comparacion": ComparacionVersion,
+  "landing-beneficios": BeneficiosVersion,
+  "landing-pasos": PasosVersion,
+  "landing-preguntas": PreguntasVersion,
+  "landing-cierre": CierreVersion,
+  "landing-pie": PieVersion,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

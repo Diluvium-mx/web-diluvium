@@ -26,7 +26,9 @@ export const METADATOS_SITIO: Metadata = {
   ...(process.env.SITIO_PRUEBA === "1" ? { robots: { index: false, follow: false } } : {}),
 };
 
-export function MarcoSitio({ children }: { children: React.ReactNode }) {
+/** Franja, barra de contacto, encabezado, pie y botón de WhatsApp de la tienda alrededor del contenido. Lo usa
+ * MarcoSitio y la versión A de las pruebas (/v/a), que tiene su propio diseño raíz. */
+export function PiezasTienda({ children }: { children: React.ReactNode }) {
   const encabezado = plantilla("encabezado").secciones;
   const pie = plantilla("pie").secciones;
   const franja = encabezado.find((s) => s.tipo === "running-content");
@@ -35,15 +37,23 @@ export function MarcoSitio({ children }: { children: React.ReactNode }) {
   const piePagina = pie.find((s) => s.tipo === "footer");
 
   return (
+    <>
+      {franja && <FranjaMensajes seccion={franja} />}
+      {contacto && <BarraContacto seccion={contacto} />}
+      {cabecera && <Encabezado seccion={cabecera} />}
+      <main>{children}</main>
+      {piePagina && <Pie seccion={piePagina} />}
+      <BotonWhatsapp />
+    </>
+  );
+}
+
+export function MarcoSitio({ children }: { children: React.ReactNode }) {
+  return (
     <html lang="es" className={`${instrumentSans.variable} ${archivo.variable} ${bevan.variable}`}>
       <body>
         <DatosEstructurados datos={datosOrganizacion()} />
-        {franja && <FranjaMensajes seccion={franja} />}
-        {contacto && <BarraContacto seccion={contacto} />}
-        {cabecera && <Encabezado seccion={cabecera} />}
-        <main>{children}</main>
-        {piePagina && <Pie seccion={piePagina} />}
-        <BotonWhatsapp />
+        <PiezasTienda>{children}</PiezasTienda>
       </body>
     </html>
   );

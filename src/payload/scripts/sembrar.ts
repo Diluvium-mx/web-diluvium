@@ -9,10 +9,8 @@ import { existsSync, rmSync } from "node:fs";
 import path from "node:path";
 import { getPayload, type Payload } from "payload";
 import { ESQUEMA, type CampoEsquema } from "../secciones";
-import { CONTENIDO, PLANTILLAS, RAIZ, esMedio, leer, seccionPorTipo } from "./comun";
-
-type Dic = Record<string, unknown>;
-type Seccion = { id: string; tipo: string; ajustes: Dic; bloques: { id: string; tipo: string; ajustes: Dic }[] };
+import { CONTENIDO, PLANTILLAS, RAIZ, leer } from "./comun";
+import { ajustesAdmin, seccionesAdmin, type Dic, type SeccionTema } from "./plantillas";
 
 const desdeCero = process.argv.includes("--desde-cero");
 // Desde cero solo en esta Mac: borra las copias locales de D1 y R2 que guarda wrangler. Nunca toca la cuenta de Cloudflare.
@@ -46,15 +44,8 @@ async function medio(ruta: unknown, alt = ""): Promise<number | null> {
   return medios.get(limpia)!;
 }
 
-/** Ajustes del tema → datos del bloque: fotos y videos como referencia; el orden original va en «claves». */
-async function ajustes(valores: Dic, campos: CampoEsquema[]) {
-  const tipos = new Map(campos.map((c) => [c.clave, c.tipo]));
-  const datos: Dic = { claves: Object.keys(valores) };
-  for (const [clave, valor] of Object.entries(valores)) {
-    datos[clave] = esMedio(tipos.get(clave) ?? "") ? await medio(valor) : valor;
-  }
-  return datos;
-}
+/** Ajustes del tema → datos del bloque (./plantillas.ts). */
+const ajustes = (valores: Dic, campos: CampoEsquema[]) => ajustesAdmin(valores, campos, medio);
 
 // --- Productos -----------------------------------------------------------------------------------------------------
 type Producto = {
@@ -181,33 +172,10 @@ await payload.updateGlobal({ slug: "menus", data: { principal: menus.principal, 
 await payload.updateGlobal({ slug: "ajustes-tema", data: (await ajustes(leer<Dic>("tema/ajustes.json"), ESQUEMA.ajustesTema)) as never });
 
 // --- Plantillas: secciones de cada página ----------------------------------------------------------------------------
-// Nombre corto de cada sección en la lista del administrador: su primer título o texto (sin formato).
-function nombreCorto(s: { ajustes: Dic; bloques?: { ajustes: Dic }[] }): string | undefined {
-  for (const fuente of [s.ajustes, ...(s.bloques ?? []).map((b) => b.ajustes)]) {
-    for (const clave of ["heading", "title", "subheading", "text", "description", "content", "button_label"]) {
-      const v = fuente[clave];
-      if (typeof v === "string" && v.trim()) {
-        const limpio = v.replace(/<[^>]+>/g, " ").replace(/[[\]]/g, "").replace(/\s+/g, " ").trim();
-        if (limpio) return limpio.length > 50 ? `${limpio.slice(0, 50)}…` : limpio;
-      }
-    }
-  }
-  return undefined;
-}
-
 for (const [i, [archivo, titulo]] of Object.entries(PLANTILLAS).entries()) {
   if (!existsSync(path.join(CONTENIDO, "tema", `${archivo}.json`))) continue;
-  const plantilla = leer<{ fuente: string; secciones: Seccion[] }>(`tema/${archivo}.json`);
-  const secciones = [];
-  for (const s of plantilla.secciones) {
-    const esquema = seccionPorTipo(s.tipo);
-    const bloques = [];
-    for (const b of s.bloques) {
-      const eb = esquema.bloques.find((x) => x.tipo === b.tipo)!;
-      bloques.push({ blockType: eb.slug, blockName: nombreCorto({ ajustes: b.ajustes }), idTema: b.id, ...(await ajustes(b.ajustes, eb.campos)) });
-    }
-    secciones.push({ blockType: esquema.slug, blockName: nombreCorto(s), idTema: s.id, ...(await ajustes(s.ajustes, esquema.campos)), ...(esquema.bloques.length ? { bloques } : {}) });
-  }
+  const plantilla = leer<{ fuente: string; secciones: SeccionTema[] }>(`tema/${archivo}.json`);
+  const secciones = await seccionesAdmin(plantilla.secciones, medio);
   await payload.create({ collection: "plantillas", data: { titulo, archivo, orden: i, secciones: secciones as never } });
 }
 console.log(`${Object.keys(PLANTILLAS).length} plantillas`);

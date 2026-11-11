@@ -25,7 +25,12 @@ const nextConfig: NextConfig = {
   // Dos diseños raíz (tienda y administrador): la página 404 general va en app/global-not-found.tsx.
   experimental: { globalNotFound: true },
   async headers() {
-    return [{ source: "/:path*", headers: SECURITY_HEADERS }];
+    return [
+      { source: "/:path*", headers: SECURITY_HEADERS },
+      // Versiones de la portada para pruebas: nunca se indexan, ni en la copia de prueba ni al publicar.
+      { source: "/v", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+      { source: "/v/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+    ];
   },
 };
 

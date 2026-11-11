@@ -4460,6 +4460,629 @@
     }
    ],
    "bloques": []
+  },
+  {
+   "tipo": "landing-beneficios",
+   "slug": "landing-beneficios",
+   "dbName": "s39",
+   "etiqueta": "Versión: beneficios",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "benefit",
+     "slug": "s39-b00",
+     "dbName": "s39b00",
+     "etiqueta": "Beneficio",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "textoLargo",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "textoLargo",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-cierre",
+   "slug": "landing-cierre",
+   "dbName": "s40",
+   "etiqueta": "Versión: cierre",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "texto",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "rating_text",
+     "tipo": "texto",
+     "etiqueta": "Calificación ({calificacion} = 4.9)",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "button_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace del botón",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "textoLargo",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "point",
+     "slug": "s40-b00",
+     "dbName": "s40b00",
+     "etiqueta": "Viñeta",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-comparacion",
+   "slug": "landing-comparacion",
+   "dbName": "s41",
+   "etiqueta": "Versión: lo de siempre contra Diluvium",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "heading_before",
+     "tipo": "texto",
+     "etiqueta": "Título de «lo de siempre»",
+     "diseno": false
+    },
+    {
+     "clave": "image_before",
+     "tipo": "imagen",
+     "etiqueta": "Foto de antes",
+     "diseno": false
+    },
+    {
+     "clave": "alt_before",
+     "tipo": "texto",
+     "etiqueta": "Texto alternativo de antes",
+     "diseno": false
+    },
+    {
+     "clave": "heading_after",
+     "tipo": "texto",
+     "etiqueta": "Título de «con Diluvium»",
+     "diseno": false
+    },
+    {
+     "clave": "image_after",
+     "tipo": "imagen",
+     "etiqueta": "Foto de después",
+     "diseno": false
+    },
+    {
+     "clave": "alt_after",
+     "tipo": "texto",
+     "etiqueta": "Texto alternativo de después",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "after",
+     "slug": "s41-b00",
+     "dbName": "s41b00",
+     "etiqueta": "Punto de «con Diluvium»",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "before",
+     "slug": "s41-b01",
+     "dbName": "s41b01",
+     "etiqueta": "Punto de «lo de siempre»",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-encabezado",
+   "slug": "landing-encabezado",
+   "dbName": "s42",
+   "etiqueta": "Versión: encabezado",
+   "campos": [
+    {
+     "clave": "logo",
+     "tipo": "imagen",
+     "etiqueta": "Logo",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "button_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace del botón",
+     "diseno": false
+    },
+    {
+     "clave": "menu_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del menú",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "textoLargo",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "link",
+     "slug": "s42-b00",
+     "dbName": "s42b00",
+     "etiqueta": "Enlace del menú",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      },
+      {
+       "clave": "url",
+       "tipo": "texto",
+       "etiqueta": "Dirección",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-pasos",
+   "slug": "landing-pasos",
+   "dbName": "s43",
+   "etiqueta": "Versión: cómo funciona (pasos)",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "step",
+     "slug": "s43-b00",
+     "dbName": "s43b00",
+     "etiqueta": "Paso",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-pie",
+   "slug": "landing-pie",
+   "dbName": "s44",
+   "etiqueta": "Versión: pie de página",
+   "campos": [
+    {
+     "clave": "text",
+     "tipo": "texto",
+     "etiqueta": "Texto",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "landing-portada",
+   "slug": "landing-portada",
+   "dbName": "s45",
+   "etiqueta": "Versión: primera pantalla",
+   "campos": [
+    {
+     "clave": "color_scheme",
+     "tipo": "texto",
+     "etiqueta": "Esquema de color",
+     "diseno": true
+    },
+    {
+     "clave": "rating_text",
+     "tipo": "texto",
+     "etiqueta": "Calificación ({calificacion} = 4.9)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "textoLargo",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "producto",
+     "tipo": "texto",
+     "etiqueta": "Producto (su dirección, sin /products/)",
+     "diseno": false
+    },
+    {
+     "clave": "price_note",
+     "tipo": "texto",
+     "etiqueta": "Nota del precio",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "button_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace del botón",
+     "diseno": false
+    },
+    {
+     "clave": "guarantees",
+     "tipo": "texto",
+     "etiqueta": "Quita-miedos junto al botón",
+     "diseno": false
+    },
+    {
+     "clave": "media_caption",
+     "tipo": "texto",
+     "etiqueta": "Pie de la foto",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "before_after",
+     "slug": "s45-b00",
+     "dbName": "s45b00",
+     "etiqueta": "Foto de antes y después",
+     "campos": [
+      {
+       "clave": "image_before",
+       "tipo": "imagen",
+       "etiqueta": "Foto de antes",
+       "diseno": false
+      },
+      {
+       "clave": "alt_before",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo de antes",
+       "diseno": false
+      },
+      {
+       "clave": "label_before",
+       "tipo": "texto",
+       "etiqueta": "Etiqueta de antes",
+       "diseno": false
+      },
+      {
+       "clave": "image_after",
+       "tipo": "imagen",
+       "etiqueta": "Foto de después",
+       "diseno": false
+      },
+      {
+       "clave": "alt_after",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo de después",
+       "diseno": false
+      },
+      {
+       "clave": "label_after",
+       "tipo": "texto",
+       "etiqueta": "Etiqueta de después",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "image",
+     "slug": "s45-b01",
+     "dbName": "s45b01",
+     "etiqueta": "Imagen",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "logo",
+     "slug": "s45-b02",
+     "dbName": "s45b02",
+     "etiqueta": "Logo",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      },
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "name",
+       "tipo": "texto",
+       "etiqueta": "Nombre junto al logo",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "sizes",
+     "slug": "s45-b03",
+     "dbName": "s45b03",
+     "etiqueta": "Tamaños con «Añadir al carrito»",
+     "campos": [
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "measure_text",
+       "tipo": "texto",
+       "etiqueta": "Texto de «¿Cómo medir?»",
+       "diseno": false
+      },
+      {
+       "clave": "custom_text",
+       "tipo": "texto",
+       "etiqueta": "Pregunta de la medida especial",
+       "diseno": false
+      },
+      {
+       "clave": "custom_link_text",
+       "tipo": "texto",
+       "etiqueta": "Texto del enlace a la medida especial",
+       "diseno": false
+      },
+      {
+       "clave": "custom_link",
+       "tipo": "texto",
+       "etiqueta": "Enlace a la medida especial",
+       "diseno": false
+      },
+      {
+       "clave": "button_text",
+       "tipo": "texto",
+       "etiqueta": "Texto del botón",
+       "diseno": false
+      },
+      {
+       "clave": "error_text",
+       "tipo": "texto",
+       "etiqueta": "Aviso si no eligen tamaño",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-preguntas",
+   "slug": "landing-preguntas",
+   "dbName": "s46",
+   "etiqueta": "Versión: preguntas frecuentes",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "texto",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "textoLargo",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "question",
+     "slug": "s46-b00",
+     "dbName": "s46b00",
+     "etiqueta": "Pregunta",
+     "campos": [
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "description",
+       "tipo": "html",
+       "etiqueta": "Descripción",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-resenas",
+   "slug": "landing-resenas",
+   "dbName": "s47",
+   "etiqueta": "Versión: muro de reseñas",
+   "campos": [
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "review",
+     "slug": "s47-b00",
+     "dbName": "s47b00",
+     "etiqueta": "Reseña",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      }
+     ]
+    }
+   ]
   }
  ],
  "ajustesTema": [

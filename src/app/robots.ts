@@ -3,7 +3,8 @@ import { SITIO } from "@/lib/seo";
 
 // /robots.txt con las mismas reglas que tiene hoy la tienda para las partes que existen aquí: se puede leer todo lo
 // público y no se leen el administrador, el carrito con artículos, el pago, los pedidos ni las listas con orden o
-// varios filtros (son la misma página repetida). Las reglas propias de Shopify (/cdn/wpm, /services, …) se quitan.
+// varios filtros (son la misma página repetida), ni las versiones de la portada para pruebas (/v). Las reglas
+// propias de Shopify (/cdn/wpm, /services, …) se quitan.
 
 export default function robots(): MetadataRoute.Robots {
   // Copia de prueba (SITIO_PRUEBA=1 al construir): Google no lee nada, para que no compita con la tienda de Shopify.
@@ -14,6 +15,9 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [
         "/admin",
+        // Versiones de la portada para pruebas (/v y /v/<versión>): páginas de trabajo, nunca en Google.
+        "/v/",
+        "/v$",
         "/api/",
         "/cart/",
         "/checkout",

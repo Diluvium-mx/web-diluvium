@@ -1,0 +1,454 @@
+{
+ "fuente": "Versión B4 de la portada (elige tu tamaño aquí); prueba de landing, plan del 28-oct-2026. No viene de Shopify.",
+ "secciones": [
+  {
+   "id": "landing_encabezado_b4",
+   "tipo": "landing-encabezado",
+   "ajustes": {
+    "logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+    "button_text": "Comprar",
+    "button_link": "#tamanos",
+    "menu_text": "Menú",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+   },
+   "bloques": [
+    {
+     "id": "link_resenas",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Reseñas",
+      "url": "#resenas"
+     }
+    },
+    {
+     "id": "link_pasos",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Cómo funciona",
+      "url": "#como-funciona"
+     }
+    },
+    {
+     "id": "link_preguntas",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Preguntas frecuentes",
+      "url": "#preguntas"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_portada_b4",
+   "tipo": "landing-portada",
+   "ajustes": {
+    "color_scheme": "claro",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "heading": "La solución definitiva contra inundaciones en México",
+    "subheading": "¿Cansado de sacar agua con la escoba cada tormenta? Diluvium la frena en tu puerta y se coloca en 10 minutos, sin obras.",
+    "producto": "compuerta-anti-inundaciones",
+    "price_note": "Cualquier tamaño de {desde} a {hasta} cm",
+    "button_text": "Añadir al carrito",
+    "button_link": "#tamanos",
+    "guarantees": "Envío gratis · Garantía de 1 año · Hasta 6 MSI",
+    "media_caption": ""
+   },
+   "bloques": [
+    {
+     "id": "image_puerta",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/Frame_626.jpg",
+      "alt": "Compuerta Diluvium puesta en una puerta de madera"
+     }
+    },
+    {
+     "id": "sizes",
+     "tipo": "sizes",
+     "ajustes": {
+      "heading": "Elige tu tamaño",
+      "measure_text": "¿Cómo medir?",
+      "custom_text": "¿Tu entrada mide más de {hasta} cm?",
+      "custom_link_text": "Hecha a la medida",
+      "custom_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+      "button_text": "Añadir al carrito",
+      "error_text": "Elige el tamaño de tu entrada para continuar."
+     }
+    },
+    {
+     "id": "logo_shark",
+     "tipo": "logo",
+     "ajustes": {
+      "text": "Visto en",
+      "image": "/media/files/SHARK_TANK_LOGO.png",
+      "alt": "Shark Tank México",
+      "name": ""
+     }
+    },
+    {
+     "id": "logo_amazon",
+     "tipo": "logo",
+     "ajustes": {
+      "text": "También en",
+      "image": "/media/files/Amazon_icon-icons.com_66787.svg",
+      "alt": "",
+      "name": "Amazon"
+     }
+    },
+    {
+     "id": "logo_meli",
+     "tipo": "logo",
+     "ajustes": {
+      "text": "",
+      "image": "/media/files/idS7VeI30G_1772158270429.jpg",
+      "alt": "",
+      "name": "Mercado Libre"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_resenas_b4",
+   "tipo": "landing-resenas",
+   "ajustes": {
+    "heading": "{calificacion} de 5 en más de 200 reseñas",
+    "subheading": "Fotos reales de clientes con su compuerta puesta."
+   },
+   "bloques": [
+    {
+     "id": "review_1",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/c57530d7-0a87-4bf2-b2ea-5905bdcdfb1a-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_2",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/ddacd39a-42e3-4a40-931a-2773db43a6b0-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_3",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/d4d2f01b-38fd-4073-b89c-6b1642caadab-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_4",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/00c7de20-ae8a-4a94-96e7-691dedc457be-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_5",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/RiZG5RAXeH-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_6",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/e4a8bdf1-0b99-44d4-b265-73ea291c8396-card-small.jpg"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_comparacion_b4",
+   "tipo": "landing-comparacion",
+   "ajustes": {
+    "heading": "Lo de siempre contra Diluvium",
+    "heading_before": "Lo de siempre",
+    "image_before": "/media/files/Antes_1.jpg",
+    "alt_before": "Entrada tapada con costales de arena y una tabla",
+    "heading_after": "Con Diluvium",
+    "image_after": "/media/files/Despues_1.jpg",
+    "alt_after": "La misma entrada protegida con la compuerta Diluvium"
+   },
+   "bloques": [
+    {
+     "id": "before_1",
+     "tipo": "before",
+     "ajustes": {
+      "text": "Costales que pesan y no sellan"
+     }
+    },
+    {
+     "id": "before_2",
+     "tipo": "before",
+     "ajustes": {
+      "text": "Trapear de madrugada"
+     }
+    },
+    {
+     "id": "before_3",
+     "tipo": "before",
+     "ajustes": {
+      "text": "Muebles y aparatos perdidos"
+     }
+    },
+    {
+     "id": "before_4",
+     "tipo": "before",
+     "ajustes": {
+      "text": "Miedo cada vez que llueve"
+     }
+    },
+    {
+     "id": "after_1",
+     "tipo": "after",
+     "ajustes": {
+      "text": "Sello firme en toda la entrada"
+     }
+    },
+    {
+     "id": "after_2",
+     "tipo": "after",
+     "ajustes": {
+      "text": "Lista en 10 minutos"
+     }
+    },
+    {
+     "id": "after_3",
+     "tipo": "after",
+     "ajustes": {
+      "text": "Reutilizable de 5 a 7 años"
+     }
+    },
+    {
+     "id": "after_4",
+     "tipo": "after",
+     "ajustes": {
+      "text": "Duermes tranquilo"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_beneficios_b4",
+   "tipo": "landing-beneficios",
+   "ajustes": {
+    "heading": "Hecha para que el agua no pase"
+   },
+   "bloques": [
+    {
+     "id": "benefit_1",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/IMG_2103.jpg",
+      "alt": "Agua de un lado de la compuerta y piso seco del otro",
+      "heading": "Detiene hasta 50 cm de agua",
+      "text": "Funda de neopreno impermeable y tira de hule en todo el contorno: el agua se queda afuera."
+     }
+    },
+    {
+     "id": "benefit_2",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/IMG_1499.jpg",
+      "alt": "Una persona coloca la compuerta en su entrada",
+      "heading": "Lista en 10 minutos, sin obras",
+      "text": "Se ajusta a presión con su gato mecánico, sin perforar ni modificar tu entrada. Cuando avisan tormenta, te da tiempo."
+     }
+    },
+    {
+     "id": "benefit_3",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/21.jpg",
+      "alt": "Partes de la compuerta: funda de neopreno, gato mecánico, marco de acero y tornillos para sellar",
+      "heading": "Acero que aguanta olas y golpes",
+      "text": "Marco de acero de alta resistencia, hecho para la presión del agua y los movimientos bruscos."
+     }
+    },
+    {
+     "id": "benefit_4",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/Frame_629.jpg",
+      "alt": "Compuerta Diluvium puesta en una puerta de herrería",
+      "heading": "Úsala cada temporada",
+      "text": "La quitas cuando quieras, la guardas y vuelve a servir. Vida útil de 5 a 7 años."
+     }
+    },
+    {
+     "id": "benefit_5",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/Frame_734.jpg",
+      "alt": "Compuerta Diluvium en una entrada de puerta doble",
+      "heading": "Para tu medida exacta",
+      "text": "{tamanos} tamaños de {desde} a {hasta} cm, y hecha a la medida hasta 2.5 m de ancho."
+     }
+    },
+    {
+     "id": "benefit_6",
+     "tipo": "benefit",
+     "ajustes": {
+      "image": "/media/files/Frame_643.jpg",
+      "alt": "Calle inundada y la compuerta frenando el agua en la entrada",
+      "heading": "Duerme tranquilo, aunque llueva fuerte",
+      "text": "Las tormentas suelen llegar de noche. La compuerta mantiene el agua afuera y a tu familia a salvo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_pasos_b4",
+   "tipo": "landing-pasos",
+   "ajustes": {
+    "heading": "Protegida en 3 pasos, sin albañiles",
+    "button_text": "Ver tabla de medidas"
+   },
+   "bloques": [
+    {
+     "id": "step_1",
+     "tipo": "step",
+     "ajustes": {
+      "image": "/media/files/Frame_601.jpg",
+      "alt": "Dibujo de una puerta con la flecha del ancho",
+      "heading": "Mide el ancho de tu entrada",
+      "text": "De marco a marco o de pared a pared, con una cinta métrica."
+     }
+    },
+    {
+     "id": "step_2",
+     "tipo": "step",
+     "ajustes": {
+      "image": "/media/files/Frame_598.jpg",
+      "alt": "Tabla de tamaños de la compuerta",
+      "heading": "Elige tu tamaño",
+      "text": "Todos cuestan {precio}, con envío gratis."
+     }
+    },
+    {
+     "id": "step_3",
+     "tipo": "step",
+     "ajustes": {
+      "image": "/media/files/Frame_603.jpg",
+      "alt": "Dibujo de una puerta con la compuerta puesta",
+      "heading": "Recíbela y colócala",
+      "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos."
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_preguntas_b4",
+   "tipo": "landing-preguntas",
+   "ajustes": {
+    "heading": "Preguntas frecuentes",
+    "text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me va a quedar en mi puerta?",
+      "description": "<p>Mide el ancho de tu entrada de marco a marco o de pared a pared. Si mide de {desde} a {hasta} cm hay un tamaño estándar; si es más ancha, la hacemos a la medida (hasta 2.5 m). Necesitas un marco firme de 4 cm donde la compuerta haga presión.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Hay que perforar o hacer obra?",
+      "description": "<p>No. La entrada se queda tal como está: la compuerta se ajusta a presión con su gato mecánico. Se coloca en unos 10 minutos y la puedes quitar cuando quieras o dejarla puesta por meses.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De verdad no pasa el agua? ¿Hasta qué altura?",
+      "description": "<p>Soporta hasta 50 cm de agua. Lleva una funda de neopreno impermeable y una tira de hule en todo el contorno, y trae plastilina de secado rápido para sellar cualquier filtración en las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Y si mi piso o mi marco están chuecos?",
+      "description": "<p>La tira de hule absorbe imperfecciones como pequeñas grietas y ligeros desniveles. Si el marco es muy irregular, habría que arreglarlo antes de colocar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>1 año de garantía: si quieres cambiar de tamaño o pedir un reembolso, te ayudamos. Su vida útil es de 5 a 7 años.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo pago?",
+      "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>"
+     }
+    },
+    {
+     "id": "question_7",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>La compuerta de acero expandible, su funda hecha a la medida, la tira de hule para el contorno, una llave para girar los tornillos de abajo y plastilina de secado rápido.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cierre_b4",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "button_text": "Elegir mi tamaño",
+    "button_link": "#tamanos",
+    "whatsapp_text": "¿Dudas con tu medida? Escríbenos por WhatsApp",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_pie_b4",
+   "tipo": "landing-pie",
+   "ajustes": {
+    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México."
+   },
+   "bloques": []
+  }
+ ]
+}

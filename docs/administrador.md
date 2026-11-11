@@ -9,7 +9,7 @@ Un panel en `/admin` (Payload 3.92.1, en español) para editar la página sin c�
 | Grupo | Qué se edita |
 |---|---|
 | **Tienda** | Productos (nombre, descripción, tamaños, precios, precio tachado, **piezas en existencia**, código de barras, fotos y videos de la galería), Reseñas (estrellas, texto, fotos, producto, publicada sí/no), Colecciones (productos y orden), Carrusel de reseñas de la portada |
-| **Diseño de páginas** | Plantillas: las secciones de cada página en orden (25 plantillas, 39 tipos de sección, 69 tipos de pieza), con sus textos, fotos, botones y enlaces. Lo de forma (alineación, márgenes, colores) va en «Diseño», plegado. Ajustes generales del tema |
+| **Diseño de páginas** | Plantillas: las secciones de cada página en orden (29 plantillas, 48 tipos de sección, 81 tipos de pieza), con sus textos, fotos, botones y enlaces. Lo de forma (alineación, márgenes, colores) va en «Diseño», plegado. Ajustes generales del tema |
 | **Contenido** | Páginas, Políticas, Blog, Menús, Fotos y videos |
 | **Google** | Fichas para Google de cada página (título, descripción, imagen al compartir) y los datos fijos de la empresa |
 
@@ -59,6 +59,7 @@ oficial de Payload para Cloudflare (`templates/with-cloudflare-d1`, versión 3.9
 | Armar la página para Cloudflare | `npm run cf:construir` |
 | Correrla con el motor de Cloudflare en esta Mac (puerto 8788) | `npm run cf:local` |
 | Cargar todo el contenido actual al administrador (base vacía) | `npm run admin:sembrar` |
+| Agregar solo las plantillas nuevas, sin borrar nada (p. ej. una versión de la portada) | `npm run admin:agregar-plantillas` |
 | Borrar la base local y cargar todo de nuevo | `npm run admin:sembrar -- --desde-cero` |
 | Pasar lo del administrador a `contenido/` | `npm run admin:exportar` |
 | Exportar a otra carpeta (para comparar) | `npm run admin:exportar -- --en <carpeta>` |
@@ -142,6 +143,31 @@ tablas y estilos en línea, 600 px, logo de Diluvium, azul de la marca y botón 
   `CORREO_TIENDA` (por omisión `contacto@diluvium.com.mx`).
 - **Falta (dueño):** cuenta de Resend, verificar el dominio `diluvium.com.mx` (registros DNS SPF y DKIM que da Resend) y
   poner la llave y el remitente en el hosting. Los pendientes guardados antes de eso no se reenvían solos.
+
+## Versiones de la portada para pruebas (/v, 11-nov-2026)
+Taller para armar y revisar versiones de la portada antes de que el dueño apruebe cuál va a la prueba A/B real en
+Shopify. Plan: `~/Documents/Diluvium CRM/reportes/pruebas-abc-web/plan-landing-b-v2-2026-10-28.md`.
+
+- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy) y `/v/b1` … `/v/b4`. Nunca se indexan: `noindex` en cada
+  página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
+  (`src/app/(versiones)/`), sin las 2 barras de arriba de la tienda.
+- **Contenido:** `contenido/tema/index.b1.json` … `index.b4.json`, en el administrador como «Portada · versión B1
+  (prueba)»… Las secciones son de tipo `landing-*` (`src/components/secciones/landing/`). Precio, tamaños y
+  calificación salen del catálogo y de las reseñas: en los textos se escriben `{precio}`, `{precio_antes}`, `{desde}`,
+  `{hasta}`, `{tamanos}` y `{calificacion}`. El muro de reseñas elige reseñas publicadas por su foto.
+- **Medición:** `Medicion.tsx` etiqueta Clarity (`experiment` = `landing-b`, `version` = A, B1…) y manda los eventos de
+  la prueba de Shopify (`boton_portada`, `elige_tamano`, `abre_tabla`, `agrega_carrito`, `toca_whatsapp`, `ve_precio`
+  e `interaccion_util` una vez). Cada elemento lleva `data-evento="…"`. Sin Clarity no pasa nada; en desarrollo, a la
+  consola.
+- **Agregar una versión (B5):**
+  1. Copiar `contenido/tema/index.b1.json` a `index.b5.json` y cambiar lo propio (las piezas de «Versión: primera
+     pantalla» deciden la variante: `before_after`, una `image`, varias `image` o `sizes`).
+  2. Agregarla en `src/lib/contenido.ts` (import y `"portada.b5"`), en `src/lib/versiones.ts` (`VERSIONES`) y en
+     `src/payload/scripts/comun.ts` (`PLANTILLAS`: «Portada · versión B5 (prueba)»).
+  3. Si usa tipos de sección o de pieza nuevos: la pieza en `src/components/secciones/landing/` y en `registro.tsx`.
+  4. `npm run admin:esquema` (los números de lo que ya existe no cambian), `npm run admin:generar` y
+     `npm run admin:agregar-plantillas` (agrega solo las plantillas que falten, sin borrar nada).
+  5. `npm run admin:exportar -- --en <carpeta>` debe dar el mismo `index.b5.json`.
 
 ## Lo que pasó de código a datos (ahora se edita)
 Las piezas en existencia, los códigos de barras, los videos de la galería y el proveedor de cada producto estaban

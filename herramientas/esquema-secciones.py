@@ -92,6 +92,12 @@ SECCIONES = {
     "product-recommendation": "Productos recomendados", "running-content": "Franja que corre",
     "scrolling-logos": "Logos que se desplazan", "spacer": "Espacio", "text": "Texto", "video-with-text":
     "Video con texto", "whatsapp-form": "Formulario de WhatsApp",
+    # Secciones propias de las versiones de prueba de la portada (/v/<versión>).
+    "landing-encabezado": "Versión: encabezado", "landing-portada": "Versión: primera pantalla",
+    "landing-resenas": "Versión: muro de reseñas", "landing-comparacion": "Versión: lo de siempre contra Diluvium",
+    "landing-beneficios": "Versión: beneficios", "landing-pasos": "Versión: cómo funciona (pasos)",
+    "landing-preguntas": "Versión: preguntas frecuentes", "landing-cierre": "Versión: cierre",
+    "landing-pie": "Versión: pie de página",
 }
 
 BLOQUES = {
@@ -103,6 +109,10 @@ BLOQUES = {
     "search": "Búsqueda", "single_menu": "Menú", "social": "Redes sociales", "store_information": "Datos de la tienda",
     "subheading": "Subtítulo", "tab": "Pestaña", "text": "Texto", "title": "Título", "variant": "Tamaños",
     "video": "Video", "view_detail": "Ver detalles", "whatsapp-button": "Botón de WhatsApp",
+    # Piezas de las versiones de prueba.
+    "link": "Enlace del menú", "before_after": "Foto de antes y después", "sizes": "Tamaños con «Añadir al carrito»",
+    "before": "Punto de «lo de siempre»", "after": "Punto de «con Diluvium»", "benefit": "Beneficio", "step": "Paso",
+    "question": "Pregunta", "point": "Viñeta",
 }
 
 
@@ -122,6 +132,18 @@ FIJAS = {
     "heading_size": "Tamaño del título", "button_text": "Texto del botón", "button_label": "Texto del botón",
     "button_link": "Enlace del botón", "link": "Enlace", "text": "Texto", "title": "Título", "image": "Imagen",
     "content": "Contenido", "label": "Texto", "url": "Dirección", "video_url": "Dirección del video",
+    # Ajustes de las versiones de prueba. En los textos se pueden usar {precio}, {precio_antes}, {desde}, {hasta},
+    # {tamanos} y {calificacion}: salen del catálogo y de las reseñas publicadas.
+    "alt": "Texto alternativo (para quien no ve la foto)", "alt_before": "Texto alternativo de antes",
+    "alt_after": "Texto alternativo de después", "label_before": "Etiqueta de antes", "label_after": "Etiqueta de después",
+    "heading_before": "Título de «lo de siempre»", "heading_after": "Título de «con Diluvium»",
+    "image_before": "Foto de antes", "image_after": "Foto de después", "rating_text": "Calificación ({calificacion} = 4.9)",
+    "price_note": "Nota del precio", "guarantees": "Quita-miedos junto al botón", "media_caption": "Pie de la foto",
+    "producto": "Producto (su dirección, sin /products/)", "menu_text": "Texto del menú",
+    "whatsapp_link": "Enlace de WhatsApp", "whatsapp_text": "Texto del enlace de WhatsApp",
+    "measure_text": "Texto de «¿Cómo medir?»", "custom_text": "Pregunta de la medida especial",
+    "custom_link_text": "Texto del enlace a la medida especial", "custom_link": "Enlace a la medida especial",
+    "error_text": "Aviso si no eligen tamaño", "name": "Nombre junto al logo",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».
 PANTALLAS = {"desktop": "computadora", "mobile": "celular", "md": "computadora", "xs": "celular"}
@@ -181,8 +203,36 @@ def main() -> None:
                 for k, v in b["ajustes"].items():
                     blq.setdefault(k, []).append(v)
 
+    # Números estables: cada tipo de sección y de pieza conserva el número que ya tenía (las piezas guardadas en el
+    # administrador se reconocen por él, «s05-b02»). Los tipos nuevos toman el siguiente número libre, al final.
+    previos: dict[str, int] = {}
+    previos_bloques: dict[tuple[str, str], int] = {}
+    if SALIDA.exists():
+        for s in json.loads(SALIDA.read_text()).get("secciones", []):
+            previos[s["tipo"]] = int(s["dbName"][1:])
+            for b in s["bloques"]:
+                previos_bloques[(s["tipo"], b["tipo"])] = int(b["dbName"].split("b")[-1])
+
+    numeros: dict[str, int] = {}
+    for tipo in sorted(secciones):
+        if tipo in previos:
+            numeros[tipo] = previos[tipo]
+    for tipo in sorted(secciones):
+        if tipo not in numeros:
+            numeros[tipo] = max([*numeros.values(), *previos.values(), -1]) + 1
+
     esquema = {"secciones": []}
-    for n, (tipo, sec) in enumerate(sorted(secciones.items())):
+    for tipo in sorted(secciones, key=lambda t: numeros[t]):
+        sec = secciones[tipo]
+        n = numeros[tipo]
+        numeros_bloques: dict[str, int] = {}
+        for bt in sorted(sec["bloques"]):
+            if (tipo, bt) in previos_bloques:
+                numeros_bloques[bt] = previos_bloques[(tipo, bt)]
+        for bt in sorted(sec["bloques"]):
+            if bt not in numeros_bloques:
+                usados = [*numeros_bloques.values(), *(m for (t, _), m in previos_bloques.items() if t == tipo), -1]
+                numeros_bloques[bt] = max(usados) + 1
         esquema["secciones"].append({
             "tipo": tipo,
             "slug": tipo,
@@ -191,8 +241,8 @@ def main() -> None:
             "campos": campos(sec["muestras"]),
             "bloques": [
                 {"tipo": bt, "slug": f"s{n:02d}-b{m:02d}", "dbName": f"s{n:02d}b{m:02d}", "etiqueta": etiqueta_bloque(bt),
-                 "campos": campos(muestras)}
-                for m, (bt, muestras) in enumerate(sorted(sec["bloques"].items()))
+                 "campos": campos(sec["bloques"][bt])}
+                for bt, m in sorted(numeros_bloques.items(), key=lambda x: x[1])
             ],
         })
     ajustes = json.loads((TEMA / "ajustes.json").read_text())

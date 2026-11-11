@@ -2943,6 +2943,417 @@ export interface Plantilla {
             blockName?: string | null;
             blockType: 'whatsapp-form';
           }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  alt?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's39-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-beneficios';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            text?: string | null;
+            rating_text?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            whatsapp_text?: string | null;
+            whatsapp_link?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's40-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-cierre';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            heading_before?: string | null;
+            image_before?: (number | null) | Medio;
+            alt_before?: string | null;
+            heading_after?: string | null;
+            image_after?: (number | null) | Medio;
+            alt_after?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's41-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's41-b01';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-comparacion';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            logo?: (number | null) | Medio;
+            button_text?: string | null;
+            button_link?: string | null;
+            menu_text?: string | null;
+            whatsapp_link?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  text?: string | null;
+                  url?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's42-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-encabezado';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            button_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  alt?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's43-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-pasos';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            text?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-pie';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            rating_text?: string | null;
+            heading?: string | null;
+            subheading?: string | null;
+            producto?: string | null;
+            price_note?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            guarantees?: string | null;
+            media_caption?: string | null;
+            color_scheme?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image_before?: (number | null) | Medio;
+                      alt_before?: string | null;
+                      label_before?: string | null;
+                      image_after?: (number | null) | Medio;
+                      alt_after?: string | null;
+                      label_after?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's45-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image?: (number | null) | Medio;
+                      alt?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's45-b01';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      image?: (number | null) | Medio;
+                      alt?: string | null;
+                      name?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's45-b02';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      heading?: string | null;
+                      measure_text?: string | null;
+                      custom_text?: string | null;
+                      custom_link_text?: string | null;
+                      custom_link?: string | null;
+                      button_text?: string | null;
+                      error_text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's45-b03';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-portada';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            text?: string | null;
+            whatsapp_link?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  heading?: string | null;
+                  /**
+                   * Texto con formato (HTML): <p>párrafo</p>, <strong>negritas</strong>, <a href="…">enlace</a>.
+                   */
+                  description?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's46-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-preguntas';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            subheading?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's47-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-resenas';
+          }
       )[]
     | null;
   /**
@@ -5014,6 +5425,279 @@ export interface PlantillasSelect<T extends boolean = true> {
               subtitle?: T;
               button_text?: T;
               success_message?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'landing-beneficios'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              bloques?:
+                | T
+                | {
+                    's39-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-cierre'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              text?: T;
+              rating_text?: T;
+              button_text?: T;
+              button_link?: T;
+              whatsapp_text?: T;
+              whatsapp_link?: T;
+              bloques?:
+                | T
+                | {
+                    's40-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-comparacion'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              heading_before?: T;
+              image_before?: T;
+              alt_before?: T;
+              heading_after?: T;
+              image_after?: T;
+              alt_after?: T;
+              bloques?:
+                | T
+                | {
+                    's41-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's41-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-encabezado'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              logo?: T;
+              button_text?: T;
+              button_link?: T;
+              menu_text?: T;
+              whatsapp_link?: T;
+              bloques?:
+                | T
+                | {
+                    's42-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          url?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-pasos'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              button_text?: T;
+              bloques?:
+                | T
+                | {
+                    's43-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-pie'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              text?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'landing-portada'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              rating_text?: T;
+              heading?: T;
+              subheading?: T;
+              producto?: T;
+              price_note?: T;
+              button_text?: T;
+              button_link?: T;
+              guarantees?: T;
+              media_caption?: T;
+              color_scheme?: T;
+              bloques?:
+                | T
+                | {
+                    's45-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image_before?: T;
+                          alt_before?: T;
+                          label_before?: T;
+                          image_after?: T;
+                          alt_after?: T;
+                          label_after?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's45-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's45-b02'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          image?: T;
+                          alt?: T;
+                          name?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's45-b03'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          heading?: T;
+                          measure_text?: T;
+                          custom_text?: T;
+                          custom_link_text?: T;
+                          custom_link?: T;
+                          button_text?: T;
+                          error_text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-preguntas'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              text?: T;
+              whatsapp_link?: T;
+              bloques?:
+                | T
+                | {
+                    's46-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          heading?: T;
+                          description?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-resenas'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              subheading?: T;
+              bloques?:
+                | T
+                | {
+                    's47-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };

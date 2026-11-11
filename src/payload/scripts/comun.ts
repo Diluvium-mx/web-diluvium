@@ -53,6 +53,11 @@ export const PLANTILLAS: Record<string, string> = {
   search: "Búsqueda",
   "404": "Página no encontrada (404)",
   password: "Contraseña",
+  // Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
+  "index.b1": "Portada · versión B1 (prueba)",
+  "index.b2": "Portada · versión B2 (prueba)",
+  "index.b3": "Portada · versión B3 (prueba)",
+  "index.b4": "Portada · versión B4 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));

@@ -5,6 +5,11 @@ import ajustesTema from "@contenido/tema/ajustes.json";
 import encabezado from "@contenido/tema/header-group.json";
 import pie from "@contenido/tema/footer-group.json";
 import portada from "@contenido/tema/index.json";
+// Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
+import portadaB1 from "@contenido/tema/index.b1.json";
+import portadaB2 from "@contenido/tema/index.b2.json";
+import portadaB3 from "@contenido/tema/index.b3.json";
+import portadaB4 from "@contenido/tema/index.b4.json";
 import productoGeneral from "@contenido/tema/product.json";
 import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
 import productoMedida from "@contenido/tema/product.medida-especial.json";
@@ -30,6 +35,10 @@ export type Plantilla = { fuente: string; secciones: Seccion[] };
 
 const PLANTILLAS = {
   portada: portada as Plantilla,
+  "portada.b1": portadaB1 as Plantilla,
+  "portada.b2": portadaB2 as Plantilla,
+  "portada.b3": portadaB3 as Plantilla,
+  "portada.b4": portadaB4 as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
   product: productoGeneral as Plantilla,

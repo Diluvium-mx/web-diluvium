@@ -1,0 +1,88 @@
+/* Versiones de la portada para pruebas (/v/…). Parte de lo de la tienda (colores, letras, carrito lateral) y agrega
+   lo propio de las versiones B: azul marino de la marca, naranja solo en botones y títulos en Archivo extra gruesa y
+   ancha. Nada de esto cambia la tienda. */
+@import "../(sitio)/globals.css";
+
+@theme {
+  --color-marino: #0a559a;
+  --color-marino-2: #245595;
+  --color-marino-hondo: #083e72;
+  /* Naranja de la marca, solo para botones. Lleva texto «tinta» (6.2:1); el blanco no llega a 4.5:1. */
+  --color-boton: #de8c11;
+  --color-boton-encima: #c97d0c;
+  --color-tinta: #0c1e33;
+  --color-niebla: #f2f5f9;
+  --color-linea: #d9e2ec;
+  --color-texto-suave: #45566a;
+  --color-estrella: #f2b01e;
+}
+
+/* Títulos: Archivo extra gruesa y ancha (eje «wdth»), parecida a la Integral CF de los anuncios. */
+.titulo-ancho {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+/* Contenedor de las versiones: 16 px de margen en celular, 32 en tableta y 56 en computadora; 1240 px de contenido. */
+.marco-version {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(1240px + 2 * var(--margen-version));
+  margin-inline: auto;
+  padding-inline: var(--margen-version);
+  --margen-version: 16px;
+}
+@media (min-width: 768px) {
+  .marco-version { --margen-version: 32px; }
+}
+@media (min-width: 1200px) {
+  .marco-version { --margen-version: 56px; }
+}
+
+/* Foco visible en todo (teclado). En fondos oscuros el anillo es blanco. */
+.version :focus-visible {
+  outline: 3px solid var(--anillo, #0a559a);
+  outline-offset: 3px;
+}
+.fondo-oscuro {
+  --anillo: #ffffff;
+}
+
+/* El texto de la primera pantalla entra suave una sola vez. */
+@keyframes version-entrar {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+.entrar {
+  animation: version-entrar 0.55s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+  animation-delay: var(--retraso, 0ms);
+}
+
+/* B2: acercamiento lento a la foto del producto, una sola vez (no se repite). */
+@keyframes version-acercar {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.acercar {
+  animation: version-acercar 14s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entrar, .acercar { animation: none; }
+  html:focus-within { scroll-behavior: auto; }
+}
+
+/* Saltos dentro de la página (menú, «Comprar» en B4): suaves y sin quedar debajo del encabezado fijo. */
+html:focus-within { scroll-behavior: smooth; }
+.version [id] { scroll-margin-top: 88px; }
+
+/* Ventanas (<dialog>): fondo oscuro detrás. */
+.version dialog::backdrop { background: rgba(12, 30, 51, 0.55); }
+
+/* Preguntas: el «+» gira al abrir. */
+.version details[open] .giro { transform: rotate(45deg); }
+.version summary::-webkit-details-marker { display: none; }

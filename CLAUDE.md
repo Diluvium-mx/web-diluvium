@@ -27,6 +27,7 @@ Todo lo de este proyecto vive en esta carpeta (`~/Documents/web-diluvium`).
 Next.js **16.4.3** (App Router; las APIs cambiaron: leer `node_modules/next/dist/docs/` antes de usarlas) · React
 19.2 · Tailwind 4 · TypeScript estricto. Mismas versiones que el CRM, fijas.
 - `src/app/(sitio)/`: la tienda · `src/app/(payload)/`: el administrador (`/admin`) · `src/app/global-not-found.tsx`: 404.
+- `src/app/(versiones)/`: versiones de la portada para pruebas A/B (`/v`, `/v/b1`…; nunca se indexan; `docs/administrador.md`).
 - `src/app/(sitio)/globals.css`: medidas del sitio en vivo (colores, letras, márgenes `--margen`, aire `--aire`, escala `--h1…`,
   esquemas `.esquema-1…6`, `.contenedor`).
 - `contenido/`: lo que la página muestra (tema, productos, menús). Lo escribe el administrador con
