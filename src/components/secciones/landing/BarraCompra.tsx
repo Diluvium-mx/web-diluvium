@@ -15,6 +15,7 @@ export function BarraCompra({
   enlace,
   conTamanos,
   textoElegir,
+  siempre = false,
 }: {
   precio: string;
   precioAntes: string | null;
@@ -22,6 +23,8 @@ export function BarraCompra({
   enlace: string;
   conTamanos: boolean;
   textoElegir: string;
+  /** B6: la barra se ve siempre que el botón principal no esté a la vista (también al abrir, si queda abajo). */
+  siempre?: boolean;
 }) {
   const [visible, setVisible] = useState(false);
   const elegido = useElegido();
@@ -34,7 +37,8 @@ export function BarraCompra({
     let pendiente = 0;
     const revisar = () => {
       pendiente = 0;
-      setVisible(ancla.getBoundingClientRect().bottom < 0);
+      const r = ancla.getBoundingClientRect();
+      setVisible(r.bottom < 0 || (siempre && r.top > window.innerHeight));
     };
     const alBajar = () => {
       if (!pendiente) pendiente = requestAnimationFrame(revisar);
@@ -47,7 +51,7 @@ export function BarraCompra({
       window.removeEventListener("scroll", alBajar);
       window.removeEventListener("resize", alBajar);
     };
-  }, []);
+  }, [siempre]);
 
   const clase = `${CLASE_BOTON} min-h-12 flex-1 rounded-lg px-4 text-base shadow-none`;
 

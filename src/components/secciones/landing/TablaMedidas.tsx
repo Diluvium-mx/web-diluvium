@@ -5,11 +5,13 @@
 // fuera, y regresa el foco al botón que la abrió. Abrirla cuenta como «abre_tabla».
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import { IconoTache } from "./piezas";
 
 export function TablaMedidas({ texto, className }: { texto: string; className: string }) {
   const ventana = useRef<HTMLDialogElement>(null);
+  // Puede haber dos en la página (la ficha y los pasos): cada una con su propio título.
+  const idTitulo = `${useId()}-titulo`;
   const cerrar = () => ventana.current?.close();
   return (
     <>
@@ -18,12 +20,12 @@ export function TablaMedidas({ texto, className }: { texto: string; className: s
       </button>
       <dialog
         ref={ventana}
-        aria-labelledby="tabla-medidas-titulo"
+        aria-labelledby={idTitulo}
         onClick={(e) => e.target === e.currentTarget && cerrar()}
         className="version m-auto max-h-[92dvh] w-[min(92vw,520px)] max-w-none overflow-y-auto rounded-2xl bg-white p-0 text-marino"
       >
         <div className="sticky top-0 z-[1] flex items-center justify-between border-b border-linea bg-white py-3 pr-3 pl-6">
-          <h2 id="tabla-medidas-titulo" className="titulo-ancho m-0 text-xl">
+          <h2 id={idTitulo} className="titulo-ancho m-0 text-xl">
             ¿Qué tamaño necesito?
           </h2>
           <button type="button" onClick={cerrar} aria-label="Cerrar" className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-niebla">

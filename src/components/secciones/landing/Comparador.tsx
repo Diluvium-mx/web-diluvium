@@ -9,7 +9,18 @@ import { useRef, useState } from "react";
 
 type Lado = { src: string; alt: string; etiqueta: string };
 
-export function Comparador({ antes, despues, sizes }: { antes: Lado; despues: Lado; sizes: string }) {
+/** «forma»: proporción de la caja (la de la portada si no se dice; en la galería de la ficha, «size-full»). */
+export function Comparador({
+  antes,
+  despues,
+  sizes,
+  forma = "aspect-[4/3] md:aspect-[16/9] lg:aspect-square rounded-2xl md:rounded-3xl",
+}: {
+  antes: Lado;
+  despues: Lado;
+  sizes: string;
+  forma?: string;
+}) {
   const [pos, setPos] = useState(50);
   const [movido, setMovido] = useState(false);
   const caja = useRef<HTMLDivElement>(null);
@@ -27,7 +38,7 @@ export function Comparador({ antes, despues, sizes }: { antes: Lado; despues: La
   return (
     <div
       ref={caja}
-      className="relative aspect-[4/3] touch-pan-y overflow-hidden rounded-2xl bg-niebla select-none md:aspect-[16/9] md:rounded-3xl lg:aspect-square"
+      className={`relative touch-pan-y overflow-hidden bg-niebla select-none ${forma}`}
       onPointerDown={(e) => {
         arrastrando.current = true;
         e.currentTarget.setPointerCapture(e.pointerId);

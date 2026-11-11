@@ -97,7 +97,7 @@ SECCIONES = {
     "landing-resenas": "Versión: muro de reseñas", "landing-comparacion": "Versión: lo de siempre contra Diluvium",
     "landing-beneficios": "Versión: beneficios", "landing-pasos": "Versión: cómo funciona (pasos)",
     "landing-preguntas": "Versión: preguntas frecuentes", "landing-cierre": "Versión: cierre",
-    "landing-pie": "Versión: pie de página",
+    "landing-pie": "Versión: pie de página", "landing-ficha": "Versión: ficha del producto",
 }
 
 BLOQUES = {
@@ -112,7 +112,8 @@ BLOQUES = {
     # Piezas de las versiones de prueba.
     "link": "Enlace del menú", "before_after": "Foto de antes y después", "sizes": "Tamaños con «Añadir al carrito»",
     "before": "Punto de «lo de siempre»", "after": "Punto de «con Diluvium»", "benefit": "Beneficio", "step": "Paso",
-    "question": "Pregunta", "point": "Viñeta",
+    "question": "Pregunta", "point": "Viñeta", "trust": "Confianza (ícono: envio, garantia, pago, meses, devolucion o factura)",
+    "marketplace": "Otra tienda (Mercado Libre, Amazon)",
 }
 
 
@@ -144,6 +145,13 @@ FIJAS = {
     "measure_text": "Texto de «¿Cómo medir?»", "custom_text": "Pregunta de la medida especial",
     "custom_link_text": "Texto del enlace a la medida especial", "custom_link": "Enlace a la medida especial",
     "error_text": "Aviso si no eligen tamaño", "name": "Nombre junto al logo",
+    # Ficha del producto de las versiones (landing-ficha).
+    "sold_text": "Vendidas (junto a las estrellas)", "size_heading": "Título de los tamaños",
+    "helper_text": "Ayuda para medir (vacío: no se muestra)", "trust_heading": "Título de confianza (vacío: sin recuadro)",
+    "marketplace_text": "Texto antes de las otras tiendas", "gallery_style": "Galería (normal o baja)",
+    "include_product_media": "Agregar las fotos del producto", "sticky_bar": "Barra de compra (al_bajar o siempre)",
+    "sticky_text": "Texto de la barra si no han elegido tamaño", "poster": "Foto antes de reproducir",
+    "icon": "Ícono",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».
 PANTALLAS = {"desktop": "computadora", "mobile": "celular", "md": "computadora", "xs": "celular"}

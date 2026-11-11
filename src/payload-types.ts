@@ -3354,6 +3354,153 @@ export interface Plantilla {
             blockName?: string | null;
             blockType: 'landing-resenas';
           }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            producto?: string | null;
+            rating_text?: string | null;
+            sold_text?: string | null;
+            heading?: string | null;
+            subheading?: string | null;
+            price_note?: string | null;
+            measure_text?: string | null;
+            helper_text?: string | null;
+            custom_text?: string | null;
+            custom_link_text?: string | null;
+            custom_link?: string | null;
+            button_text?: string | null;
+            error_text?: string | null;
+            whatsapp_link?: string | null;
+            trust_heading?: string | null;
+            marketplace_text?: string | null;
+            media_caption?: string | null;
+            include_product_media?: boolean | null;
+            sticky_bar?: string | null;
+            sticky_text?: string | null;
+            size_heading?: string | null;
+            gallery_style?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image_before?: (number | null) | Medio;
+                      alt_before?: string | null;
+                      label_before?: string | null;
+                      image_after?: (number | null) | Medio;
+                      alt_after?: string | null;
+                      label_after?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image?: (number | null) | Medio;
+                      alt?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b01';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      name?: string | null;
+                      image?: (number | null) | Medio;
+                      link?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b02';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b03';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image?: (number | null) | Medio;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b04';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      icon?: string | null;
+                      heading?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b05';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'landing-ficha';
+          }
       )[]
     | null;
   /**
@@ -5694,6 +5841,104 @@ export interface PlantillasSelect<T extends boolean = true> {
                           idTema?: T;
                           claves?: T;
                           image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'landing-ficha'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              producto?: T;
+              rating_text?: T;
+              sold_text?: T;
+              heading?: T;
+              subheading?: T;
+              price_note?: T;
+              measure_text?: T;
+              helper_text?: T;
+              custom_text?: T;
+              custom_link_text?: T;
+              custom_link?: T;
+              button_text?: T;
+              error_text?: T;
+              whatsapp_link?: T;
+              trust_heading?: T;
+              marketplace_text?: T;
+              media_caption?: T;
+              include_product_media?: T;
+              sticky_bar?: T;
+              sticky_text?: T;
+              size_heading?: T;
+              gallery_style?: T;
+              bloques?:
+                | T
+                | {
+                    's48-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image_before?: T;
+                          alt_before?: T;
+                          label_before?: T;
+                          image_after?: T;
+                          alt_after?: T;
+                          label_after?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b02'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          name?: T;
+                          image?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b03'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b04'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b05'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          heading?: T;
+                          text?: T;
                           id?: T;
                           blockName?: T;
                         };

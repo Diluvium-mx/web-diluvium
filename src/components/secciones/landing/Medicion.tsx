@@ -4,6 +4,8 @@
 // - etiqueta la visita en Clarity con «experiment» y «version» (A, B1…);
 // - manda los mismos eventos: boton_portada, elige_tamano, abre_tabla, agrega_carrito, toca_whatsapp, ve_precio y
 //   interaccion_util (una sola vez por visita a la página, con la primera acción útil).
+// Además, de la ficha nueva (11-nov-2026): mira_galeria, mira_video, usa_medida (escribió la medida de su entrada) y
+// toca_marketplace (se fue a Mercado Libre o Amazon); no cuentan como «interaccion_util».
 // Cada elemento dice su evento con data-evento="…"; los enlaces a WhatsApp se reconocen solos. El precio que cuenta
 // como «visto» lleva data-precio. Sin Clarity no pasa nada; en desarrollo los eventos salen en la consola.
 
@@ -66,6 +68,12 @@ export function Medicion({ experimento, version }: { experimento: string; versio
       if (enlace && /whatsapp|wa\.me/i.test(enlace.getAttribute("href") ?? "")) evento("toca_whatsapp");
     };
     document.addEventListener("click", alTocar, true);
+    // Lo que no es un clic (escribir la medida de la entrada) llega como «dlv-evento».
+    const alAvisar = (e: Event) => {
+      const nombre = (e as CustomEvent<unknown>).detail;
+      if (typeof nombre === "string" && /^[a-z_]{3,40}$/.test(nombre)) evento(nombre);
+    };
+    document.addEventListener("dlv-evento", alAvisar);
 
     // «ve_precio»: el precio se vio al menos al 60 % (una vez).
     let observador: IntersectionObserver | null = null;
@@ -85,6 +93,7 @@ export function Medicion({ experimento, version }: { experimento: string; versio
 
     return () => {
       document.removeEventListener("click", alTocar, true);
+      document.removeEventListener("dlv-evento", alAvisar);
       observador?.disconnect();
     };
   }, [experimento, version]);

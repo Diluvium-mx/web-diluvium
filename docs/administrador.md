@@ -144,30 +144,38 @@ tablas y estilos en línea, 600 px, logo de Diluvium, azul de la marca y botón 
 - **Falta (dueño):** cuenta de Resend, verificar el dominio `diluvium.com.mx` (registros DNS SPF y DKIM que da Resend) y
   poner la llave y el remitente en el hosting. Los pendientes guardados antes de eso no se reenvían solos.
 
-## Versiones de la portada para pruebas (/v, 11-nov-2026)
-Taller para armar y revisar versiones de la portada antes de que el dueño apruebe cuál va a la prueba A/B real en
-Shopify. Plan: `~/Documents/Diluvium CRM/reportes/pruebas-abc-web/plan-landing-b-v2-2026-10-28.md`.
+## Versiones de la página para pruebas (/v, 11-nov-2026)
+Taller para armar y revisar versiones antes de que el dueño apruebe cuál va a la prueba A/B real. Plan:
+`~/Documents/Diluvium CRM/reportes/pruebas-abc-web/plan-landing-b-v2-2026-10-28.md`. Mapa de calor que decidió la ficha
+nueva y B5/B6: `~/Documents/Diluvium CRM/reportes/pruebas-abc-web/clarity-2026-11-11.md` (fuera del repo: datos del
+negocio).
 
-- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy) y `/v/b1` … `/v/b4`. Nunca se indexan: `noindex` en cada
-  página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
+- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy), `/v/b1` … `/v/b6`, y la ficha de la compuerta de cada una
+  en `/v/<versión>/products/compuerta-anti-inundaciones` (la A es la ficha de hoy). Nunca se indexan: `noindex` en
+  cada página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
   (`src/app/(versiones)/`), sin las 2 barras de arriba de la tienda.
-- **Contenido:** `contenido/tema/index.b1.json` … `index.b4.json`, en el administrador como «Portada · versión B1
-  (prueba)»… Las secciones son de tipo `landing-*` (`src/components/secciones/landing/`). Precio, tamaños y
-  calificación salen del catálogo y de las reseñas: en los textos se escriben `{precio}`, `{precio_antes}`, `{desde}`,
-  `{hasta}`, `{tamanos}` y `{calificacion}`. El muro de reseñas elige reseñas publicadas por su foto.
+- **Contenido:** portadas en `contenido/tema/index.b1.json` … `index.b6.json` («Portada · versión B1 (prueba)»…) y
+  fichas en `product.b1.json` … `product.b6.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
+  `landing-*` (`src/components/secciones/landing/`); la ficha es `landing-ficha` (`Ficha.tsx`, `Galeria.tsx`,
+  `CompraFicha.tsx`). Precio, tamaños y calificación salen del catálogo y de las reseñas: en los textos se escriben
+  `{precio}`, `{precio_antes}`, `{desde}`, `{hasta}`, `{tamanos}` y `{calificacion}`.
+- **Enlaces:** el contenido guarda las direcciones de la tienda (`/products/…`, igual que en Shopify). Dentro de una
+  versión, `EnlacesVersion.tsx` las cambia por las de esa versión (la compuerta → su ficha; el logo → su portada).
+  Los productos con ficha propia están en `PRODUCTOS_VERSION` (`src/lib/versiones.ts`).
 - **Medición:** `Medicion.tsx` etiqueta Clarity (`experiment` = `landing-b`, `version` = A, B1…) y manda los eventos de
   la prueba de Shopify (`boton_portada`, `elige_tamano`, `abre_tabla`, `agrega_carrito`, `toca_whatsapp`, `ve_precio`
-  e `interaccion_util` una vez). Cada elemento lleva `data-evento="…"`. Sin Clarity no pasa nada; en desarrollo, a la
-  consola.
-- **Agregar una versión (B5):**
-  1. Copiar `contenido/tema/index.b1.json` a `index.b5.json` y cambiar lo propio (las piezas de «Versión: primera
-     pantalla» deciden la variante: `before_after`, una `image`, varias `image` o `sizes`).
-  2. Agregarla en `src/lib/contenido.ts` (import y `"portada.b5"`), en `src/lib/versiones.ts` (`VERSIONES`) y en
-     `src/payload/scripts/comun.ts` (`PLANTILLAS`: «Portada · versión B5 (prueba)»).
+  e `interaccion_util` una vez). La ficha nueva agrega `mira_galeria`, `mira_video`, `usa_medida` y
+  `toca_marketplace` (no cuentan como interacción útil). Cada elemento lleva `data-evento="…"`; lo que no es un clic
+  se avisa con el evento del navegador `dlv-evento`. Sin Clarity no pasa nada; en desarrollo, a la consola.
+- **Agregar una versión (B7):**
+  1. Copiar `index.b1.json` a `index.b7.json` (y `product.b1.json` a `product.b7.json`) y cambiar lo propio.
+  2. Agregarla en `src/lib/contenido.ts` (imports, `"portada.b7"` y `"producto.b7"`), en `src/lib/versiones.ts`
+     (`VERSIONES`, con `ficha`) y en `src/payload/scripts/comun.ts` (`PLANTILLAS`).
   3. Si usa tipos de sección o de pieza nuevos: la pieza en `src/components/secciones/landing/` y en `registro.tsx`.
   4. `npm run admin:esquema` (los números de lo que ya existe no cambian), `npm run admin:generar` y
-     `npm run admin:agregar-plantillas` (agrega solo las plantillas que falten, sin borrar nada).
-  5. `npm run admin:exportar -- --en <carpeta>` debe dar el mismo `index.b5.json`.
+     `npm run admin:agregar-plantillas` (agrega solo las que falten). Si se retoca el archivo de una versión que
+     nadie ha editado en el administrador: `npm run admin:agregar-plantillas -- --reemplazar=product.b7`.
+  5. `npm run admin:exportar -- --en <carpeta>` debe dar los mismos archivos.
 
 ## Lo que pasó de código a datos (ahora se edita)
 Las piezas en existencia, los códigos de barras, los videos de la galería y el proveedor de cada producto estaban

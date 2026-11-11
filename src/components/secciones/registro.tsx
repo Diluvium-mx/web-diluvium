@@ -44,6 +44,7 @@ import { PasosVersion } from "./landing/Pasos";
 import { PreguntasVersion } from "./landing/Preguntas";
 import { CierreVersion } from "./landing/Cierre";
 import { PieVersion } from "./landing/Pie";
+import { FichaVersion } from "./landing/Ficha";
 
 // `producto` llega en las páginas de producto (el de esa página); en las demás páginas no viene.
 export type PropsSeccion = { seccion: Seccion; producto?: Producto };
@@ -90,6 +91,7 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "landing-preguntas": PreguntasVersion,
   "landing-cierre": CierreVersion,
   "landing-pie": PieVersion,
+  "landing-ficha": FichaVersion,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

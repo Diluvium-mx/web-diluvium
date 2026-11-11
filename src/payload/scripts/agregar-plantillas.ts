@@ -3,6 +3,9 @@
 // reutilizan (por su dirección en la página); solo se suben las que falten.
 //
 // Uso: npm run admin:agregar-plantillas   (en esta Mac, la copia local; con CLOUDFLARE_REMOTO=1, la de la cuenta)
+//      npm run admin:agregar-plantillas -- --reemplazar=product.b1,product.b2
+//        vuelve a cargar esas plantillas desde contenido/tema/ (borra lo que tengan en el administrador: solo para
+//        versiones de prueba que se armaron en archivos y nadie ha editado todavía en el administrador).
 // Antes: la plantilla en PLANTILLAS (comun.ts), npm run admin:esquema y npm run admin:generar.
 
 import { existsSync } from "node:fs";
@@ -18,6 +21,17 @@ console.log(process.env.CLOUDFLARE_REMOTO === "1" ? "Base: la de Cloudflare (cue
 const existentes = new Set(
   (await payload.find({ collection: "plantillas", pagination: false, depth: 0, select: { archivo: true } })).docs.map((d) => d.archivo as string),
 );
+
+const reemplazar = (process.argv.find((a) => a.startsWith("--reemplazar="))?.split("=")[1] ?? "")
+  .split(",")
+  .map((x) => x.trim())
+  .filter((x) => x in PLANTILLAS);
+for (const archivo of reemplazar) {
+  if (!existentes.has(archivo)) continue;
+  await payload.delete({ collection: "plantillas", where: { archivo: { equals: archivo } } });
+  existentes.delete(archivo);
+  console.log(`- ${archivo} (se vuelve a cargar)`);
+}
 
 const medios = new Map<string, Promise<number>>();
 const medio: Medio = async (ruta, alt = "") => {

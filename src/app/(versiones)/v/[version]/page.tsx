@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { plantilla } from "@/lib/contenido";
 import { EXPERIMENTO, VERSIONES, version } from "@/lib/versiones";
 import { PiezasTienda } from "@/components/MarcoSitio";
 import { Secciones } from "@/components/secciones/registro";
 import { Medicion } from "@/components/secciones/landing/Medicion";
+import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
+import { PastillaVersion } from "../../PastillaVersion";
 
 // Una versión de la portada: /v/a es la portada de hoy con el marco de la tienda; /v/b1… son las versiones B, cada
 // una con su contenido (contenido/tema/index.<versión>.json) y su propio encabezado. Todas llevan la medición.
@@ -21,33 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ version: 
   return v ? { title: `Versión ${v.etiqueta}: ${v.nombre}` } : {};
 }
 
-/** «Versión B1 · cambiar»: lleva a la lista de versiones. Solo para revisar; no forma parte de la versión. En
- * computadora flota abajo a la izquierda; en celular y tableta va al final, para no tapar el botón ni la barra. */
-function PastillaVersion({ etiqueta }: { etiqueta: string }) {
-  const contenido = (
-    <>
-      Versión {etiqueta}
-      <span aria-hidden="true">·</span>
-      <span className="underline underline-offset-2">cambiar</span>
-    </>
-  );
-  return (
-    <>
-      <Link
-        href="/v"
-        className="fixed bottom-4 left-4 z-[35] hidden min-h-9 items-center gap-1.5 rounded-full bg-tinta/85 px-3.5 text-[13px] font-semibold text-white shadow-lg backdrop-blur hover:bg-tinta lg:inline-flex"
-      >
-        {contenido}
-      </Link>
-      <div className="bg-tinta pb-24 text-center md:pb-4 lg:hidden">
-        <Link href="/v" className="inline-flex min-h-11 items-center gap-1.5 text-[14px] font-semibold text-white">
-          {contenido}
-        </Link>
-      </div>
-    </>
-  );
-}
-
 export default async function PaginaVersion({ params }: { params: Promise<{ version: string }> }) {
   const v = version((await params).version);
   if (!v) notFound();
@@ -61,6 +35,7 @@ export default async function PaginaVersion({ params }: { params: Promise<{ vers
         </PiezasTienda>
         <PastillaVersion etiqueta={v.etiqueta} />
         <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
+        <EnlacesVersion clave={v.clave} />
       </>
     );
   }
@@ -85,6 +60,7 @@ export default async function PaginaVersion({ params }: { params: Promise<{ vers
       <Secciones secciones={pie} />
       <PastillaVersion etiqueta={v.etiqueta} />
       <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
+      <EnlacesVersion clave={v.clave} />
     </div>
   );
 }

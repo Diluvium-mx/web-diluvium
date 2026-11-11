@@ -5083,6 +5083,292 @@
      ]
     }
    ]
+  },
+  {
+   "tipo": "landing-ficha",
+   "slug": "landing-ficha",
+   "dbName": "s48",
+   "etiqueta": "Versión: ficha del producto",
+   "campos": [
+    {
+     "clave": "producto",
+     "tipo": "texto",
+     "etiqueta": "Producto (su dirección, sin /products/)",
+     "diseno": false
+    },
+    {
+     "clave": "rating_text",
+     "tipo": "texto",
+     "etiqueta": "Calificación ({calificacion} = 4.9)",
+     "diseno": false
+    },
+    {
+     "clave": "sold_text",
+     "tipo": "texto",
+     "etiqueta": "Vendidas (junto a las estrellas)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "textoLargo",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "price_note",
+     "tipo": "texto",
+     "etiqueta": "Nota del precio",
+     "diseno": false
+    },
+    {
+     "clave": "size_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de los tamaños",
+     "diseno": true
+    },
+    {
+     "clave": "measure_text",
+     "tipo": "texto",
+     "etiqueta": "Texto de «¿Cómo medir?»",
+     "diseno": false
+    },
+    {
+     "clave": "helper_text",
+     "tipo": "texto",
+     "etiqueta": "Ayuda para medir (vacío: no se muestra)",
+     "diseno": false
+    },
+    {
+     "clave": "custom_text",
+     "tipo": "texto",
+     "etiqueta": "Pregunta de la medida especial",
+     "diseno": false
+    },
+    {
+     "clave": "custom_link_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace a la medida especial",
+     "diseno": false
+    },
+    {
+     "clave": "custom_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace a la medida especial",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "error_text",
+     "tipo": "texto",
+     "etiqueta": "Aviso si no eligen tamaño",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "textoLargo",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "trust_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de confianza (vacío: sin recuadro)",
+     "diseno": false
+    },
+    {
+     "clave": "marketplace_text",
+     "tipo": "texto",
+     "etiqueta": "Texto antes de las otras tiendas",
+     "diseno": false
+    },
+    {
+     "clave": "media_caption",
+     "tipo": "texto",
+     "etiqueta": "Pie de la foto",
+     "diseno": false
+    },
+    {
+     "clave": "gallery_style",
+     "tipo": "texto",
+     "etiqueta": "Galería (normal o baja)",
+     "diseno": true
+    },
+    {
+     "clave": "include_product_media",
+     "tipo": "siNo",
+     "etiqueta": "Agregar las fotos del producto",
+     "diseno": false
+    },
+    {
+     "clave": "sticky_bar",
+     "tipo": "texto",
+     "etiqueta": "Barra de compra (al_bajar o siempre)",
+     "diseno": false
+    },
+    {
+     "clave": "sticky_text",
+     "tipo": "texto",
+     "etiqueta": "Texto de la barra si no han elegido tamaño",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "before_after",
+     "slug": "s48-b00",
+     "dbName": "s48b00",
+     "etiqueta": "Foto de antes y después",
+     "campos": [
+      {
+       "clave": "image_before",
+       "tipo": "imagen",
+       "etiqueta": "Foto de antes",
+       "diseno": false
+      },
+      {
+       "clave": "alt_before",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo de antes",
+       "diseno": false
+      },
+      {
+       "clave": "label_before",
+       "tipo": "texto",
+       "etiqueta": "Etiqueta de antes",
+       "diseno": false
+      },
+      {
+       "clave": "image_after",
+       "tipo": "imagen",
+       "etiqueta": "Foto de después",
+       "diseno": false
+      },
+      {
+       "clave": "alt_after",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo de después",
+       "diseno": false
+      },
+      {
+       "clave": "label_after",
+       "tipo": "texto",
+       "etiqueta": "Etiqueta de después",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "image",
+     "slug": "s48-b01",
+     "dbName": "s48b01",
+     "etiqueta": "Imagen",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "marketplace",
+     "slug": "s48-b02",
+     "dbName": "s48b02",
+     "etiqueta": "Otra tienda (Mercado Libre, Amazon)",
+     "campos": [
+      {
+       "clave": "name",
+       "tipo": "texto",
+       "etiqueta": "Nombre junto al logo",
+       "diseno": false
+      },
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "link",
+       "tipo": "textoLargo",
+       "etiqueta": "Enlace",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "point",
+     "slug": "s48-b03",
+     "dbName": "s48b03",
+     "etiqueta": "Viñeta",
+     "campos": [
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "review",
+     "slug": "s48-b04",
+     "dbName": "s48b04",
+     "etiqueta": "Reseña",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "trust",
+     "slug": "s48-b05",
+     "dbName": "s48b05",
+     "etiqueta": "Confianza (ícono: envio, garantia, pago, meses, devolucion o factura)",
+     "campos": [
+      {
+       "clave": "icon",
+       "tipo": "texto",
+       "etiqueta": "Ícono",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
   }
  ],
  "ajustesTema": [

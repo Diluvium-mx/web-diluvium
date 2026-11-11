@@ -80,6 +80,13 @@ export default buildConfig({
 // plantilla oficial de Payload para Cloudflare.
 function contextoLocal(): Promise<CloudflareContext> {
   return import(/* webpackIgnore: true */ `${"__wrangler".replaceAll("_", "")}`).then(({ getPlatformProxy }) =>
-    getPlatformProxy({ environment: process.env.CLOUDFLARE_ENV, remoteBindings: process.env.CLOUDFLARE_REMOTO === "1" }),
+    getPlatformProxy({
+      environment: process.env.CLOUDFLARE_ENV,
+      remoteBindings: process.env.CLOUDFLARE_REMOTO === "1",
+      // Al construir (next build), Next arma las páginas con varios procesos a la vez y todos abrirían la misma copia
+      // local de la base: SQLite se traba («database is locked»). La construcción no lee la base (la página sale de
+      // contenido/), así que ahí va una base en memoria, vacía, que no toca la copia local.
+      ...(process.env.NEXT_PHASE === "phase-production-build" ? { persist: false } : {}),
+    }),
   );
 }
