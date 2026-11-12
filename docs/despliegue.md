@@ -17,6 +17,12 @@ Para revisar versiones en línea mientras la tienda sigue en Shopify, sin pagar 
   - `node herramientas/publicar-prueba.mjs --desde=<rama> --publicar` la arma con lo guardado en una rama de git.
 - **Cómo se arma:** `herramientas/publicar-prueba.mjs` hace una copia temporal y le quita el administrador. No
   cambia nada del proyecto.
+- **Páginas como archivos fijos (12-nov-2026):** el plan gratis da 10 ms de procesador por visita y armar una página
+  dentro del Worker a veces se pasaba (error 1102, «Worker exceeded resource limits»). Las páginas que ya salen hechas
+  de la construcción se suben como archivos fijos y Cloudflare las entrega sin pasar por el Worker; los encabezados de
+  seguridad y «no indexar» van en `_headers`. El Worker queda para las fotos optimizadas, el carrito/pago y lo dinámico.
+- **Vista en celular de la lista /v:** `node herramientas/capturar-versiones.mjs [dirección]` vuelve a tomar la primera
+  pantalla de cada portada (`public/media/versiones/`).
 
 La página completa (administrador, pedidos, correos) se publica con el plan de pago cuando llegue la mudanza; los
 pasos están abajo.

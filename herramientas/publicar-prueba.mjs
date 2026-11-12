@@ -11,9 +11,9 @@
 //      node herramientas/publicar-prueba.mjs --publicar           (además la publica)
 
 import { execFileSync } from "node:child_process";
-import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 
 const RAIZ = new URL("..", import.meta.url).pathname;
 const COPIA = join(tmpdir(), "diluvium-prueba-ligera");
@@ -108,6 +108,36 @@ const correr = (cmd, args, env = {}) =>
 
 console.log("Construyendo (unos minutos)…");
 correr(join(COPIA, "node_modules/.bin/opennextjs-cloudflare"), ["build"]);
+
+// Plan gratis: cada visita tiene 10 ms de procesador y armar una página dentro del Worker a veces se pasa (error 1102,
+// «Worker exceeded resource limits», ~1 de cada 8 visitas). Las páginas que ya salen hechas de la construcción se
+// copian como archivos fijos: Cloudflare las entrega directo, sin pasar por el Worker (sin límite y sin costo). El
+// Worker queda solo para lo que sí se arma al momento: fotos optimizadas, carrito/pago (acciones) y lo dinámico.
+const manifiesto = JSON.parse(readFileSync(join(COPIA, ".next/prerender-manifest.json"), "utf8"));
+let fijas = 0;
+for (const [ruta, datos] of Object.entries(manifiesto.routes)) {
+  if (ruta.startsWith("/_") || datos.initialRevalidateSeconds !== false) continue;
+  const relativa = `${ruta === "/" ? "/index" : ruta}.html`;
+  const origen = join(COPIA, ".next/server/app", relativa);
+  if (!existsSync(origen)) continue;
+  const destino = join(COPIA, ".open-next/assets", relativa);
+  mkdirSync(dirname(destino), { recursive: true });
+  copyFileSync(origen, destino);
+  fijas++;
+}
+// Los archivos fijos no pasan por next.config.ts: los mismos encabezados (seguridad y «no indexar») van en _headers.
+writeFileSync(
+  join(COPIA, ".open-next/assets/_headers"),
+  `/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  X-Robots-Tag: noindex, nofollow
+`,
+);
+console.log(`${fijas} páginas como archivos fijos (sin pasar por el Worker)`);
 
 const medida = execFileSync(join(COPIA, "node_modules/.bin/wrangler"), ["deploy", "--dry-run", "--outdir", join(COPIA, ".medida")], {
   cwd: COPIA,

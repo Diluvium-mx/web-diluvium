@@ -15,26 +15,56 @@ export default function ListaVersiones() {
           <Image src="/media/files/Logo_Diluvium_horizontal_sin_fondo.png" alt="Diluvium" width={1572} height={413} sizes="168px" className="h-auto w-[132px] md:w-[168px]" />
         </div>
       </header>
-      <main className="marco-version py-10 md:py-14">
+      <main className="marco-version py-8 md:py-12">
         <h1 className="titulo-ancho m-0 text-[32px] md:text-[44px]">Versiones de la página</h1>
-        <p className="m-0 mt-3 max-w-[46rem] text-[17px] leading-[1.6] text-texto-suave">
-          La página de hoy (A) y 6 versiones de la B, cada una con su portada y su ficha de la compuerta (la página a la
-          que llega casi toda la gente desde los anuncios). La ficha nueva sale del mapa de calor de Clarity: precio,
-          tamaños y botón en la primera pantalla del celular. Se editan en el administrador (Plantillas › «Portada ·
-          versión …» y «Producto · versión …»). Estas páginas no aparecen en Google.
-        </p>
-        <ul className="m-0 mt-8 grid list-none gap-4 p-0 md:grid-cols-2 xl:grid-cols-3">
+        <ul className="m-0 mt-6 grid list-none gap-4 p-0 lg:grid-cols-2 md:mt-8">
           {VERSIONES.map((v) => (
-            <li key={v.clave} className="flex flex-col rounded-2xl border border-linea bg-white p-6">
-              <p className="m-0 flex flex-wrap items-center gap-x-3 gap-y-1">
-                <span className="titulo-ancho text-[28px]">{v.etiqueta}</span>
-                <span className="font-titulo text-[19px] font-bold">{v.nombre}</span>
-                {v.recomendada && <span className="text-[14px] font-semibold text-texto-suave">(recomendada)</span>}
-              </p>
-              <dl className="m-0 mt-4 grid gap-3 text-[15.5px] leading-[1.5] text-tinta">
+            <li
+              key={v.clave}
+              className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-4 rounded-2xl border border-linea bg-white p-5 sm:gap-x-6 sm:p-6"
+            >
+              <div className="min-w-0">
+                <p className="m-0 flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <span className="titulo-ancho text-[28px]">{v.etiqueta}</span>
+                  <span className="font-titulo text-[19px] font-bold">{v.nombre}</span>
+                  {v.recomendada && <span className="text-[14px] font-semibold text-texto-suave">(recomendada)</span>}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <Link
+                    href={`/v/${v.clave}`}
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-marino px-5 font-titulo font-bold text-white hover:bg-marino-hondo"
+                  >
+                    Portada
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                  <Link
+                    href={`/v/${v.clave}/products/${PRODUCTOS_VERSION[0]}`}
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-marino px-5 font-titulo font-bold text-marino hover:bg-niebla"
+                  >
+                    Producto
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
+              </div>
+              {/* Primera pantalla en celular (herramientas/capturar-versiones.mjs). Lleva a la portada. */}
+              <Link
+                href={`/v/${v.clave}`}
+                aria-label={`Ver la portada ${v.etiqueta} (así abre en el celular)`}
+                className="row-span-1 block w-[104px] self-start overflow-hidden rounded-[18px] border-[5px] border-tinta bg-tinta shadow-[0_10px_24px_-14px_rgba(12,30,51,0.7)] sm:row-span-2 sm:w-[150px] xl:w-[164px]"
+              >
+                <Image
+                  src={`/media/versiones/portada-${v.clave}.webp`}
+                  alt=""
+                  width={390}
+                  height={844}
+                  unoptimized
+                  className="block h-auto w-full rounded-[13px]"
+                />
+              </Link>
+              <dl className="col-span-2 m-0 grid gap-3 text-[15.5px] leading-[1.5] text-tinta sm:col-span-1">
                 {[
                   ["Qué cambia en la portada", v.cambia],
-                  ["Qué cambia en la ficha", v.cambiaFicha],
+                  ["Qué cambia en el producto", v.cambiaFicha],
                   ["Qué prueba", v.prueba],
                   ["A favor", v.aFavor],
                   ["En contra", v.enContra],
@@ -45,30 +75,9 @@ export default function ListaVersiones() {
                   </div>
                 ))}
               </dl>
-              <div className="mt-auto flex flex-wrap gap-2 pt-6">
-                <Link
-                  href={`/v/${v.clave}`}
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-marino px-5 font-titulo font-bold text-white hover:bg-marino-hondo"
-                >
-                  Portada {v.etiqueta}
-                  <span aria-hidden="true">→</span>
-                </Link>
-                <Link
-                  href={`/v/${v.clave}/products/${PRODUCTOS_VERSION[0]}`}
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-marino px-5 font-titulo font-bold text-marino hover:bg-niebla"
-                >
-                  Ficha {v.etiqueta}
-                  <span aria-hidden="true">→</span>
-                </Link>
-              </div>
             </li>
           ))}
         </ul>
-        <p className="m-0 mt-8 max-w-[46rem] text-[15px] leading-[1.6] text-texto-suave">
-          Cada versión manda a Clarity (cuando esté instalado) la etiqueta «version» y los mismos eventos que la prueba de
-          Shopify: boton_portada, elige_tamano, abre_tabla, agrega_carrito, toca_whatsapp, ve_precio e interaccion_util.
-          La ficha nueva agrega mira_galeria, mira_video, usa_medida y toca_marketplace (ir a Mercado Libre o Amazon).
-        </p>
       </main>
     </div>
   );
