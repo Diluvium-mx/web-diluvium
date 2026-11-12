@@ -112,11 +112,13 @@ correr(join(COPIA, "node_modules/.bin/opennextjs-cloudflare"), ["build"]);
 // Plan gratis: cada visita tiene 10 ms de procesador y armar una página dentro del Worker a veces se pasa (error 1102,
 // «Worker exceeded resource limits», ~1 de cada 8 visitas). Las páginas que ya salen hechas de la construcción se
 // copian como archivos fijos: Cloudflare las entrega directo, sin pasar por el Worker (sin límite y sin costo). El
-// Worker queda solo para lo que sí se arma al momento: fotos optimizadas, carrito/pago (acciones) y lo dinámico.
+// Worker queda para lo que sí se arma al momento: fotos optimizadas y lo dinámico.
+// Solo las páginas de revisión (/v…): un archivo fijo no recibe POST, y las acciones del servidor (el total de la
+// pantalla de pago, los formularios de la tienda) hacen POST a la misma dirección de la página.
 const manifiesto = JSON.parse(readFileSync(join(COPIA, ".next/prerender-manifest.json"), "utf8"));
 let fijas = 0;
 for (const [ruta, datos] of Object.entries(manifiesto.routes)) {
-  if (ruta.startsWith("/_") || datos.initialRevalidateSeconds !== false) continue;
+  if (!(ruta === "/v" || ruta.startsWith("/v/")) || datos.initialRevalidateSeconds !== false) continue;
   const relativa = `${ruta === "/" ? "/index" : ruta}.html`;
   const origen = join(COPIA, ".next/server/app", relativa);
   if (!existsSync(origen)) continue;
