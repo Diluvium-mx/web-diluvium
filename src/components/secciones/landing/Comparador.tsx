@@ -3,9 +3,17 @@
 // B1: foto de antes y después que se desliza. Se arrastra desde cualquier punto de la foto (mouse o dedo), se puede
 // tocar para saltar ahí y se mueve con las flechas del teclado (Inicio/Fin a los extremos). Al primer movimiento se
 // esconde la pista «Desliza».
+//
+// Fluido en el celular (14-nov-2026): al arrastrar no se vuelve a dibujar nada con React. La posición vive en una
+// referencia y, una vez por cuadro (requestAnimationFrame), solo se mueven tres capas con `transform`, que el
+// teléfono hace en la tarjeta gráfica sin repintar las fotos:
+//   - la foto de «después» va en una caja que se corre a la derecha (y la foto adentro se corre de regreso), así se ve
+//     solo la parte derecha sin recortar con clip-path;
+//   - la línea y el botón van en un riel del mismo ancho que se corre igual.
+// El tamaño de la caja se lee una vez al poner el dedo, no en cada movimiento.
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type Lado = { src: string; alt: string; etiqueta: string };
 
@@ -21,36 +29,73 @@ export function Comparador({
   sizes: string;
   forma?: string;
 }) {
-  const [pos, setPos] = useState(50);
+  // Solo para lectores de pantalla y la pista: se actualiza al soltar o con el teclado, no en cada movimiento.
+  const [valor, setValor] = useState(50);
   const [movido, setMovido] = useState(false);
   const caja = useRef<HTMLDivElement>(null);
-  const arrastrando = useRef(false);
+  const capa = useRef<HTMLDivElement>(null);
+  const foto = useRef<HTMLDivElement>(null);
+  const riel = useRef<HTMLDivElement>(null);
+  const pos = useRef(50);
+  const cuadro = useRef(0);
+  const medida = useRef<{ izquierda: number; ancho: number } | null>(null);
+
+  const pintar = useCallback(() => {
+    cuadro.current = 0;
+    const p = pos.current;
+    if (capa.current) capa.current.style.transform = `translate3d(${p}%,0,0)`;
+    if (foto.current) foto.current.style.transform = `translate3d(${-p}%,0,0)`;
+    if (riel.current) riel.current.style.transform = `translate3d(${p}%,0,0)`;
+  }, []);
+
+  const colocar = useCallback(
+    (p: number) => {
+      pos.current = Math.min(100, Math.max(0, p));
+      if (!cuadro.current) cuadro.current = requestAnimationFrame(pintar);
+    },
+    [pintar],
+  );
+
+  useEffect(() => () => cancelAnimationFrame(cuadro.current), []);
 
   function mover(clientX: number) {
-    const r = caja.current?.getBoundingClientRect();
-    if (!r || r.width === 0) return;
-    setPos(Math.min(100, Math.max(0, ((clientX - r.left) / r.width) * 100)));
-    setMovido(true);
+    const m = medida.current;
+    if (!m || m.ancho === 0) return;
+    colocar(((clientX - m.izquierda) / m.ancho) * 100);
   }
 
-  const redondo = Math.round(pos);
+  function soltar() {
+    medida.current = null;
+    setValor(Math.round(pos.current));
+  }
+
+  function teclado(nuevo: number) {
+    colocar(nuevo);
+    setValor(Math.round(pos.current));
+    setMovido(true);
+  }
 
   return (
     <div
       ref={caja}
-      className={`relative touch-pan-y overflow-hidden bg-niebla select-none ${forma}`}
+      className={`relative touch-pan-y overflow-hidden bg-niebla select-none [-webkit-touch-callout:none] ${forma}`}
       onPointerDown={(e) => {
-        arrastrando.current = true;
+        const r = e.currentTarget.getBoundingClientRect();
+        medida.current = { izquierda: r.left, ancho: r.width };
         e.currentTarget.setPointerCapture(e.pointerId);
         mover(e.clientX);
+        if (!movido) setMovido(true);
       }}
-      onPointerMove={(e) => arrastrando.current && mover(e.clientX)}
-      onPointerUp={() => (arrastrando.current = false)}
-      onPointerCancel={() => (arrastrando.current = false)}
+      onPointerMove={(e) => medida.current && mover(e.clientX)}
+      onPointerUp={soltar}
+      onPointerCancel={soltar}
+      onLostPointerCapture={() => medida.current && soltar()}
     >
       <Image src={antes.src} alt={antes.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" draggable={false} />
-      <div className="absolute inset-0" style={{ clipPath: `inset(0 0 0 ${pos}%)` }}>
-        <Image src={despues.src} alt={despues.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" draggable={false} />
+      <div ref={capa} className="absolute inset-0 overflow-hidden will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
+        <div ref={foto} className="absolute inset-0 will-change-transform" style={{ transform: "translate3d(-50%,0,0)" }}>
+          <Image src={despues.src} alt={despues.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" draggable={false} />
+        </div>
       </div>
 
       {antes.etiqueta && (
@@ -64,32 +109,33 @@ export function Comparador({
         </span>
       )}
 
-      <div className="pointer-events-none absolute inset-y-0 w-[3px] -translate-x-1/2 bg-white shadow-[0_0_0_1px_rgba(12,30,51,0.15)]" style={{ left: `${pos}%` }} />
-      <div
-        role="slider"
-        tabIndex={0}
-        aria-label="Comparar antes y después"
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-valuenow={redondo}
-        aria-valuetext={`${redondo} % de la foto de antes a la vista`}
-        aria-orientation="horizontal"
-        className="absolute top-1/2 flex size-12 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full bg-white text-marino shadow-[0_6px_18px_-6px_rgba(12,30,51,0.6)] active:cursor-grabbing"
-        style={{ left: `${pos}%` }}
-        onKeyDown={(e) => {
-          const paso = e.shiftKey ? 10 : 4;
-          if (e.key === "ArrowLeft" || e.key === "ArrowDown") setPos((p) => Math.max(0, p - paso));
-          else if (e.key === "ArrowRight" || e.key === "ArrowUp") setPos((p) => Math.min(100, p + paso));
-          else if (e.key === "Home") setPos(0);
-          else if (e.key === "End") setPos(100);
-          else return;
-          e.preventDefault();
-          setMovido(true);
-        }}
-      >
-        <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-          <path d="M9 7l-5 5 5 5M15 7l5 5-5 5" />
-        </svg>
+      {/* Riel del ancho de la caja: la línea y el botón quedan en su orilla izquierda y el riel se corre. */}
+      <div ref={riel} className="pointer-events-none absolute inset-0 will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
+        <div className="absolute inset-y-0 left-0 w-[3px] -translate-x-1/2 bg-white shadow-[0_0_0_1px_rgba(12,30,51,0.15)]" />
+        <div
+          role="slider"
+          tabIndex={0}
+          aria-label="Comparar antes y después"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={valor}
+          aria-valuetext={`${valor} % de la foto de antes a la vista`}
+          aria-orientation="horizontal"
+          className="pointer-events-auto absolute top-1/2 left-0 flex size-12 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full bg-white text-marino shadow-[0_6px_18px_-6px_rgba(12,30,51,0.6)] active:cursor-grabbing"
+          onKeyDown={(e) => {
+            const paso = e.shiftKey ? 10 : 4;
+            if (e.key === "ArrowLeft" || e.key === "ArrowDown") teclado(pos.current - paso);
+            else if (e.key === "ArrowRight" || e.key === "ArrowUp") teclado(pos.current + paso);
+            else if (e.key === "Home") teclado(0);
+            else if (e.key === "End") teclado(100);
+            else return;
+            e.preventDefault();
+          }}
+        >
+          <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+            <path d="M9 7l-5 5 5 5M15 7l5 5-5 5" />
+          </svg>
+        </div>
       </div>
 
       <span
