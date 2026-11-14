@@ -139,9 +139,10 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                   alt={m.alt}
                   fill
                   sizes={TAMANO}
-                  // La primera es la foto más grande de la pantalla: va primero; las demás, cuando se acercan.
+                  // La primera es la foto más grande de la pantalla: va primero. La 2 y la 3 también cargan de una vez
+                  // (al deslizar rápido en iPhone no asoma un cuadro vacío); las demás, cuando se acercan.
                   preload={i === 0}
-                  loading={i === 0 ? "eager" : "lazy"}
+                  loading={i < 3 ? "eager" : "lazy"}
                   className="object-cover"
                 />
               )}

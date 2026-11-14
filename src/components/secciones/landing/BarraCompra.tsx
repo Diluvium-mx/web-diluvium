@@ -1,6 +1,7 @@
 "use client";
 
-// Barra de compra fija abajo en el celular: precio y el botón principal. Aparece cuando el botón de la primera
+// Barra de compra fija abajo en el celular: precio y el botón principal. Fondo blanco sólido, sin «backdrop-blur»: en
+// un teléfono el desenfoque detrás de algo fijo se recalcula en cada cuadro al bajar la página y traba (14-nov-2026). Aparece cuando el botón de la primera
 // pantalla ya quedó arriba (fuera de la vista) y se esconde al regresar. En B4 agrega el tamaño elegido o, si aún no
 // eligen, lleva a los tamaños.
 
@@ -59,7 +60,7 @@ export function BarraCompra({
     <div
       aria-hidden={!visible}
       inert={!visible}
-      className={`fixed inset-x-0 bottom-0 z-40 border-t border-linea bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur transition-[transform,visibility] duration-300 md:hidden ${
+      className={`fixed inset-x-0 bottom-0 z-40 border-t border-linea bg-white pb-[env(safe-area-inset-bottom)] shadow-[0_-6px_18px_-12px_rgba(12,30,51,0.35)] transition-[transform,visibility] duration-300 will-change-transform md:hidden ${
         visible ? "visible translate-y-0" : "invisible translate-y-full"
       }`}
     >
