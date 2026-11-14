@@ -7,7 +7,7 @@
 // - en el celular es más baja (4:3), para que título, precio y tamaños entren en la primera pantalla;
 // - en computadora lleva miniaturas debajo;
 // - el video se carga solo cuando lo tocan (la página abre rápido dentro de Facebook e Instagram);
-// - la foto de antes y después (B1) se arrastra; en esa foto la galería se mueve con las flechas.
+// - la foto de antes y después (B1) se arrastra desde su línea; el resto de esa foto desliza la galería como las demás.
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -146,7 +146,7 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                 />
               )}
               {m.tipo === "video" && <Video m={m} />}
-              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" />}
+              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" />}
             </div>
           ))}
         </div>

@@ -11,6 +11,12 @@
 //     solo la parte derecha sin recortar con clip-path;
 //   - la línea y el botón van en un riel del mismo ancho que se corre igual.
 // El tamaño de la caja se lee una vez al poner el dedo, no en cada movimiento.
+//
+// «arrastre»:
+//   - "foto" (portada): se arrastra desde cualquier punto de la foto (deja bajar la página con el dedo: pan-y);
+//   - "linea" (galería de la ficha): solo desde el botón o una franja de 64 px junto a la línea. El resto de la foto
+//     deja deslizar la galería. Si los dos gestos comparten la foto, en iPhone el teléfono empieza a correr la galería,
+//     la cancela y la regresa de golpe: se siente trabado (14-nov-2026).
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -23,11 +29,13 @@ export function Comparador({
   despues,
   sizes,
   forma = "aspect-[4/3] md:aspect-[16/9] lg:aspect-square rounded-2xl md:rounded-3xl",
+  arrastre = "foto",
 }: {
   antes: Lado;
   despues: Lado;
   sizes: string;
   forma?: string;
+  arrastre?: "foto" | "linea";
 }) {
   // Solo para lectores de pantalla y la pista: se actualiza al soltar o con el teclado, no en cada movimiento.
   const [valor, setValor] = useState(50);
@@ -69,6 +77,24 @@ export function Comparador({
     setValor(Math.round(pos.current));
   }
 
+  // Poner el dedo: se mide la caja una vez y se sigue al dedo aunque salga de la franja.
+  const tocar = (e: React.PointerEvent<HTMLElement>) => {
+    const r = caja.current?.getBoundingClientRect();
+    if (!r) return;
+    medida.current = { izquierda: r.left, ancho: r.width };
+    e.currentTarget.setPointerCapture(e.pointerId);
+    if (arrastre === "foto") mover(e.clientX);
+    if (!movido) setMovido(true);
+  };
+  const manejadores = {
+    onPointerDown: tocar,
+    onPointerMove: (e: React.PointerEvent<HTMLElement>) => medida.current && mover(e.clientX),
+    onPointerUp: soltar,
+    onPointerCancel: soltar,
+    onLostPointerCapture: () => medida.current && soltar(),
+  };
+  const enFoto = arrastre === "foto";
+
   function teclado(nuevo: number) {
     colocar(nuevo);
     setValor(Math.round(pos.current));
@@ -78,18 +104,8 @@ export function Comparador({
   return (
     <div
       ref={caja}
-      className={`relative touch-pan-y overflow-hidden bg-niebla select-none [-webkit-touch-callout:none] ${forma}`}
-      onPointerDown={(e) => {
-        const r = e.currentTarget.getBoundingClientRect();
-        medida.current = { izquierda: r.left, ancho: r.width };
-        e.currentTarget.setPointerCapture(e.pointerId);
-        mover(e.clientX);
-        if (!movido) setMovido(true);
-      }}
-      onPointerMove={(e) => medida.current && mover(e.clientX)}
-      onPointerUp={soltar}
-      onPointerCancel={soltar}
-      onLostPointerCapture={() => medida.current && soltar()}
+      className={`relative overflow-hidden bg-niebla select-none [-webkit-touch-callout:none] ${enFoto ? "touch-pan-y" : ""} ${forma}`}
+      {...(enFoto ? manejadores : {})}
     >
       <Image src={antes.src} alt={antes.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" draggable={false} />
       <div ref={capa} className="absolute inset-0 overflow-hidden will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
@@ -112,6 +128,10 @@ export function Comparador({
       {/* Riel del ancho de la caja: la línea y el botón quedan en su orilla izquierda y el riel se corre. */}
       <div ref={riel} className="pointer-events-none absolute inset-0 will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
         <div className="absolute inset-y-0 left-0 w-[3px] -translate-x-1/2 bg-white shadow-[0_0_0_1px_rgba(12,30,51,0.15)]" />
+        {!enFoto && (
+          // Franja para agarrar la línea con el dedo (64 px): aquí el teléfono no corre la galería ni la página.
+          <div aria-hidden="true" className="pointer-events-auto absolute inset-y-0 left-0 w-16 -translate-x-1/2 cursor-grab touch-none active:cursor-grabbing" {...manejadores} />
+        )}
         <div
           role="slider"
           tabIndex={0}
@@ -121,7 +141,8 @@ export function Comparador({
           aria-valuenow={valor}
           aria-valuetext={`${valor} % de la foto de antes a la vista`}
           aria-orientation="horizontal"
-          className="pointer-events-auto absolute top-1/2 left-0 flex size-12 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full bg-white text-marino shadow-[0_6px_18px_-6px_rgba(12,30,51,0.6)] active:cursor-grabbing"
+          className={`pointer-events-auto absolute top-1/2 left-0 flex size-12 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full bg-white text-marino shadow-[0_6px_18px_-6px_rgba(12,30,51,0.6)] active:cursor-grabbing ${enFoto ? "" : "touch-none"}`}
+          {...(enFoto ? {} : manejadores)}
           onKeyDown={(e) => {
             const paso = e.shiftKey ? 10 : 4;
             if (e.key === "ArrowLeft" || e.key === "ArrowDown") teclado(pos.current - paso);
@@ -144,7 +165,7 @@ export function Comparador({
           movido ? "opacity-0" : "opacity-100"
         }`}
       >
-        ← Desliza →
+        {enFoto ? "← Desliza →" : "← Arrastra la línea →"}
       </span>
     </div>
   );
