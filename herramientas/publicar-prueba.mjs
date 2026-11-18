@@ -107,7 +107,16 @@ const correr = (cmd, args, env = {}) =>
   execFileSync(cmd, args, { cwd: COPIA, stdio: "inherit", env: { ...process.env, SITIO_PRUEBA: "1", ...env } });
 
 console.log("Construyendo (unos minutos)…");
-correr(join(COPIA, "node_modules/.bin/opennextjs-cloudflare"), ["build"]);
+try {
+  correr(join(COPIA, "node_modules/.bin/opennextjs-cloudflare"), ["build"]);
+} catch (error) {
+  // Next.js detiene la construcción una vez cuando su versión tiene un aviso de seguridad y deja seguir si se repite
+  // en los siguientes 5 minutos en la misma carpeta. Se repite una sola vez y se avisa: la actualización la decide el
+  // dueño (mismas versiones que el CRM).
+  if (!existsSync(join(COPIA, ".next/cache/next-agentic-upgrade-retries"))) throw error;
+  console.log("\n⚠ Next.js avisa que su versión tiene una falla de seguridad conocida (ver npm audit). Se reintenta una vez.\n");
+  correr(join(COPIA, "node_modules/.bin/opennextjs-cloudflare"), ["build"]);
+}
 
 // Plan gratis: cada visita tiene 10 ms de procesador y armar una página dentro del Worker a veces se pasa (error 1102,
 // «Worker exceeded resource limits», ~1 de cada 8 visitas). Las páginas que ya salen hechas de la construcción se
