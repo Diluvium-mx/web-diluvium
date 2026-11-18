@@ -62,6 +62,12 @@
   animation-delay: var(--retraso, 0ms);
 }
 
+/* Video de la galería: el ícono de pausa/reproducir aparece y se desvanece al tocar. */
+@keyframes video-destello {
+  from { opacity: 1; transform: scale(0.9); }
+  to { opacity: 0; transform: scale(1.15); }
+}
+
 /* B2: acercamiento lento a la foto del producto, una sola vez (no se repite). */
 @keyframes version-acercar {
   from { transform: scale(1); }

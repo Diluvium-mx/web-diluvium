@@ -8,17 +8,9 @@ import portada from "@contenido/tema/index.json";
 // Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
 import portadaB1 from "@contenido/tema/index.b1.json";
 import portadaB2 from "@contenido/tema/index.b2.json";
-import portadaB3 from "@contenido/tema/index.b3.json";
-import portadaB4 from "@contenido/tema/index.b4.json";
-import portadaB5 from "@contenido/tema/index.b5.json";
-import portadaB6 from "@contenido/tema/index.b6.json";
 // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/<producto>; mapa de calor del 11-nov-2026).
 import productoB1 from "@contenido/tema/product.b1.json";
 import productoB2 from "@contenido/tema/product.b2.json";
-import productoB3 from "@contenido/tema/product.b3.json";
-import productoB4 from "@contenido/tema/product.b4.json";
-import productoB5 from "@contenido/tema/product.b5.json";
-import productoB6 from "@contenido/tema/product.b6.json";
 import productoGeneral from "@contenido/tema/product.json";
 import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
 import productoMedida from "@contenido/tema/product.medida-especial.json";
@@ -46,16 +38,8 @@ const PLANTILLAS = {
   portada: portada as Plantilla,
   "portada.b1": portadaB1 as Plantilla,
   "portada.b2": portadaB2 as Plantilla,
-  "portada.b3": portadaB3 as Plantilla,
-  "portada.b4": portadaB4 as Plantilla,
-  "portada.b5": portadaB5 as Plantilla,
-  "portada.b6": portadaB6 as Plantilla,
   "producto.b1": productoB1 as Plantilla,
   "producto.b2": productoB2 as Plantilla,
-  "producto.b3": productoB3 as Plantilla,
-  "producto.b4": productoB4 as Plantilla,
-  "producto.b5": productoB5 as Plantilla,
-  "producto.b6": productoB6 as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
   product: productoGeneral as Plantilla,

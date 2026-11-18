@@ -150,12 +150,14 @@ Taller para armar y revisar versiones antes de que el dueño apruebe cuál va a 
 nueva y B5/B6: `~/Documents/Diluvium CRM/reportes/pruebas-abc-web/clarity-2026-11-11.md` (fuera del repo: datos del
 negocio).
 
-- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy), `/v/b1` … `/v/b6`, y la ficha de la compuerta de cada una
+- **Versiones vigentes (18-nov-2026):** A (la de hoy), **B1** y **B2**; el dueño descartó B3–B6 (siguen en el
+  historial de git, commit `1dac460`). Luego vienen C y D con el mismo proceso.
+- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy), `/v/b1`, `/v/b2`, y la ficha de la compuerta de cada una
   en `/v/<versión>/products/compuerta-anti-inundaciones` (la A es la ficha de hoy). Nunca se indexan: `noindex` en
   cada página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
   (`src/app/(versiones)/`), sin las 2 barras de arriba de la tienda.
-- **Contenido:** portadas en `contenido/tema/index.b1.json` … `index.b6.json` («Portada · versión B1 (prueba)»…) y
-  fichas en `product.b1.json` … `product.b6.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
+- **Contenido:** portadas en `contenido/tema/index.b1.json` e `index.b2.json` («Portada · versión B1 (prueba)»…) y
+  fichas en `product.b1.json` y `product.b2.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
   `landing-*` (`src/components/secciones/landing/`); la ficha es `landing-ficha` (`Ficha.tsx`, `Galeria.tsx`,
   `CompraFicha.tsx`). Precio, tamaños y calificación salen del catálogo y de las reseñas: en los textos se escriben
   `{precio}`, `{precio_antes}`, `{desde}`, `{hasta}`, `{tamanos}` y `{calificacion}`.
@@ -167,6 +169,8 @@ negocio).
   e `interaccion_util` una vez). La ficha nueva agrega `mira_galeria`, `mira_video`, `usa_medida` y
   `toca_marketplace` (no cuentan como interacción útil). Cada elemento lleva `data-evento="…"`; lo que no es un clic
   se avisa con el evento del navegador `dlv-evento`. Sin Clarity no pasa nada; en desarrollo, a la consola.
+- **Quitar versiones:** `npm run admin:agregar-plantillas -- --quitar=index.b3,product.b3` (y quitarlas de
+  `contenido.ts`, `versiones.ts` y `comun.ts`).
 - **Agregar una versión (B7):**
   1. Copiar `index.b1.json` a `index.b7.json` (y `product.b1.json` a `product.b7.json`) y cambiar lo propio.
   2. Agregarla en `src/lib/contenido.ts` (imports, `"portada.b7"` y `"producto.b7"`), en `src/lib/versiones.ts`

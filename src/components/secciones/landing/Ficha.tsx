@@ -208,9 +208,10 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
           )}
 
           {tiendas.length > 0 && (
+            // Logos grandes, siempre (dueño, 18-nov-2026): se reconocen de un vistazo.
             <div className="mt-5 border-t border-linea pt-4">
-              {r("marketplace_text") && <p className="m-0 text-[14.5px] text-texto-suave">{r("marketplace_text")}</p>}
-              <ul className="m-0 mt-1 flex list-none flex-wrap gap-x-5 p-0">
+              {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-bold">{r("marketplace_text")}</p>}
+              <ul className="m-0 mt-2.5 grid list-none grid-cols-2 gap-2.5 p-0">
                 {tiendas.map((t) => (
                   <li key={t.id}>
                     <a
@@ -218,12 +219,12 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                       target="_blank"
                       rel="noopener noreferrer"
                       data-evento="toca_marketplace"
-                      className="inline-flex min-h-11 items-center gap-2 text-[15px] font-semibold text-marino underline decoration-linea decoration-2 underline-offset-4 hover:decoration-marino"
+                      className="flex min-h-[68px] items-center justify-center gap-2.5 rounded-xl border-2 border-linea bg-white px-3 text-[16px] font-bold text-tinta hover:border-marino"
                     >
                       {texto(t.ajustes, "image") && (
-                        <Foto src={texto(t.ajustes, "image")} alt="" sizes="28px" className="size-6 rounded object-contain" />
+                        <Foto src={texto(t.ajustes, "image")} alt="" sizes="96px" className="size-12 shrink-0 object-contain" />
                       )}
-                      {texto(t.ajustes, "name")}
+                      <span className="leading-tight">{texto(t.ajustes, "name")}</span>
                     </a>
                   </li>
                 ))}

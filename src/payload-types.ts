@@ -3251,28 +3251,6 @@ export interface Plantilla {
                       blockName?: string | null;
                       blockType: 's45-b02';
                     }
-                  | {
-                      idTema?: string | null;
-                      claves?:
-                        | {
-                            [k: string]: unknown;
-                          }
-                        | unknown[]
-                        | string
-                        | number
-                        | boolean
-                        | null;
-                      heading?: string | null;
-                      measure_text?: string | null;
-                      custom_text?: string | null;
-                      custom_link_text?: string | null;
-                      custom_link?: string | null;
-                      button_text?: string | null;
-                      error_text?: string | null;
-                      id?: string | null;
-                      blockName?: string | null;
-                      blockType: 's45-b03';
-                    }
                 )[]
               | null;
             id?: string | null;
@@ -3421,23 +3399,6 @@ export interface Plantilla {
                         | number
                         | boolean
                         | null;
-                      image?: (number | null) | Medio;
-                      alt?: string | null;
-                      id?: string | null;
-                      blockName?: string | null;
-                      blockType: 's48-b01';
-                    }
-                  | {
-                      idTema?: string | null;
-                      claves?:
-                        | {
-                            [k: string]: unknown;
-                          }
-                        | unknown[]
-                        | string
-                        | number
-                        | boolean
-                        | null;
                       name?: string | null;
                       image?: (number | null) | Medio;
                       link?: string | null;
@@ -3460,22 +3421,6 @@ export interface Plantilla {
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b03';
-                    }
-                  | {
-                      idTema?: string | null;
-                      claves?:
-                        | {
-                            [k: string]: unknown;
-                          }
-                        | unknown[]
-                        | string
-                        | number
-                        | boolean
-                        | null;
-                      image?: (number | null) | Medio;
-                      id?: string | null;
-                      blockName?: string | null;
-                      blockType: 's48-b04';
                     }
                   | {
                       idTema?: string | null;
@@ -5781,21 +5726,6 @@ export interface PlantillasSelect<T extends boolean = true> {
                           id?: T;
                           blockName?: T;
                         };
-                    's45-b03'?:
-                      | T
-                      | {
-                          idTema?: T;
-                          claves?: T;
-                          heading?: T;
-                          measure_text?: T;
-                          custom_text?: T;
-                          custom_link_text?: T;
-                          custom_link?: T;
-                          button_text?: T;
-                          error_text?: T;
-                          id?: T;
-                          blockName?: T;
-                        };
                   };
               id?: T;
               blockName?: T;
@@ -5892,16 +5822,6 @@ export interface PlantillasSelect<T extends boolean = true> {
                           id?: T;
                           blockName?: T;
                         };
-                    's48-b01'?:
-                      | T
-                      | {
-                          idTema?: T;
-                          claves?: T;
-                          image?: T;
-                          alt?: T;
-                          id?: T;
-                          blockName?: T;
-                        };
                     's48-b02'?:
                       | T
                       | {
@@ -5919,15 +5839,6 @@ export interface PlantillasSelect<T extends boolean = true> {
                           idTema?: T;
                           claves?: T;
                           text?: T;
-                          id?: T;
-                          blockName?: T;
-                        };
-                    's48-b04'?:
-                      | T
-                      | {
-                          idTema?: T;
-                          claves?: T;
-                          image?: T;
                           id?: T;
                           blockName?: T;
                         };

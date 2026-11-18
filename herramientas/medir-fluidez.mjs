@@ -7,12 +7,12 @@
 //   - tareas largas del procesador (más de 50 ms) y saltos de contenido (CLS; bueno: menos de 0.1).
 //
 // Uso: node herramientas/medir-fluidez.mjs [dirección base] [versiones=a,b1,…] [lentitud=4]
-//      node herramientas/medir-fluidez.mjs http://localhost:3100 b1,b6
+//      node herramientas/medir-fluidez.mjs http://localhost:3100 b1,b2
 
 import { abrirChrome } from "./cdp.mjs";
 
 const BASE = (process.argv[2] ?? "https://diluvium-prueba.web-diluvium.workers.dev").replace(/\/$/, "");
-const VERSIONES = (process.argv[3] ?? "a,b1,b2,b3,b4,b5,b6").split(",");
+const VERSIONES = (process.argv[3] ?? "a,b1,b2").split(",");
 const LENTITUD = Number(process.argv[4] ?? 4);
 const PRODUCTO = "compuerta-anti-inundaciones";
 const pausa = (ms) => new Promise((r) => setTimeout(r, ms));

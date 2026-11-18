@@ -46,28 +46,41 @@ function Mosaico({ fotos }: { fotos: Bloque[] }) {
 
 function FilaConfianza({ logos }: { logos: Bloque[] }) {
   if (!logos.length) return null;
+  // Cada texto («Visto en», «Encuéntranos en:») va junto con los logos que le siguen, en un mismo renglón: así en el
+  // celular Mercado Libre no se queda solo en otra línea, lejos de Amazon.
+  const grupos: Bloque[][] = [];
+  for (const l of logos) {
+    if (texto(l.ajustes, "text") || !grupos.length) grupos.push([l]);
+    else grupos[grupos.length - 1].push(l);
+  }
   return (
     <div className="border-y border-linea bg-niebla text-marino">
-      <ul className="marco-version m-0 flex list-none flex-wrap items-center justify-center gap-x-6 gap-y-2 py-3.5 text-[15px] font-semibold md:gap-x-10 md:py-4">
-        {logos.map((l) => {
-          const etiqueta = texto(l.ajustes, "text");
-          const nombre = texto(l.ajustes, "name");
-          const imagen = texto(l.ajustes, "image");
-          return (
-            <li key={l.id} className="flex items-center gap-2">
-              {etiqueta && <span className="text-texto-suave">{etiqueta}</span>}
-              {imagen && (
-                <Foto
-                  src={imagen}
-                  alt={texto(l.ajustes, "alt")}
-                  sizes="96px"
-                  className={/shark/i.test(imagen) ? "h-9 w-auto md:h-10" : "size-7 rounded-md object-contain md:size-8"}
-                />
-              )}
-              {nombre && <span>{nombre}</span>}
-            </li>
-          );
-        })}
+      <ul className="marco-version m-0 flex list-none flex-wrap items-center justify-center gap-x-8 gap-y-3 py-3.5 text-[15px] font-semibold md:gap-x-12 md:py-4">
+        {grupos.map((g) => (
+          <li key={g[0].id} className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
+            {/* Con varios logos (Amazon y Mercado Libre), en el celular el texto va arriba y los logos juntos abajo. */}
+            {g.length > 1 && <span className="w-full text-center text-texto-suave sm:w-auto">{texto(g[0].ajustes, "text")}</span>}
+            {g.map((l) => {
+              const etiqueta = g.length > 1 ? "" : texto(l.ajustes, "text");
+              const nombre = texto(l.ajustes, "name");
+              const imagen = texto(l.ajustes, "image");
+              return (
+                <span key={l.id} className="flex items-center gap-2">
+                  {etiqueta && <span className="text-texto-suave">{etiqueta}</span>}
+                  {imagen && (
+                    <Foto
+                      src={imagen}
+                      alt={texto(l.ajustes, "alt")}
+                      sizes="96px"
+                      className={/shark/i.test(imagen) ? "h-9 w-auto md:h-10" : "size-11 rounded-md object-contain md:size-12"}
+                    />
+                  )}
+                  {nombre && <span>{nombre}</span>}
+                </span>
+              );
+            })}
+          </li>
+        ))}
       </ul>
     </div>
   );

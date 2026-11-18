@@ -6,6 +6,8 @@
 //      npm run admin:agregar-plantillas -- --reemplazar=product.b1,product.b2
 //        vuelve a cargar esas plantillas desde contenido/tema/ (borra lo que tengan en el administrador: solo para
 //        versiones de prueba que se armaron en archivos y nadie ha editado todavía en el administrador).
+//      npm run admin:agregar-plantillas -- --quitar=index.b3,product.b3
+//        borra esas plantillas del administrador (versiones de prueba descartadas; siguen en el historial de git).
 // Antes: la plantilla en PLANTILLAS (comun.ts), npm run admin:esquema y npm run admin:generar.
 
 import { existsSync } from "node:fs";
@@ -31,6 +33,17 @@ for (const archivo of reemplazar) {
   await payload.delete({ collection: "plantillas", where: { archivo: { equals: archivo } } });
   existentes.delete(archivo);
   console.log(`- ${archivo} (se vuelve a cargar)`);
+}
+
+const quitar = (process.argv.find((a) => a.startsWith("--quitar="))?.split("=")[1] ?? "")
+  .split(",")
+  .map((x) => x.trim())
+  .filter((x) => /^(index|product)\.b\d+$/.test(x));
+for (const archivo of quitar) {
+  if (!existentes.has(archivo)) continue;
+  await payload.delete({ collection: "plantillas", where: { archivo: { equals: archivo } } });
+  existentes.delete(archivo);
+  console.log(`× ${archivo} (quitada)`);
 }
 
 const medios = new Map<string, Promise<number>>();

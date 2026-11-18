@@ -56,17 +56,9 @@ export const PLANTILLAS: Record<string, string> = {
   // Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
   "index.b1": "Portada · versión B1 (prueba)",
   "index.b2": "Portada · versión B2 (prueba)",
-  "index.b3": "Portada · versión B3 (prueba)",
-  "index.b4": "Portada · versión B4 (prueba)",
-  "index.b5": "Portada · versión B5 (prueba)",
-  "index.b6": "Portada · versión B6 (prueba)",
   // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/compuerta-anti-inundaciones).
   "product.b1": "Producto · versión B1 (prueba)",
   "product.b2": "Producto · versión B2 (prueba)",
-  "product.b3": "Producto · versión B3 (prueba)",
-  "product.b4": "Producto · versión B4 (prueba)",
-  "product.b5": "Producto · versión B5 (prueba)",
-  "product.b6": "Producto · versión B6 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));

@@ -6,12 +6,13 @@
 // - se desliza con el dedo (scroll-snap, sin código que mueva nada) y tiene flechas grandes y un contador «2 / 9»;
 // - en el celular es más baja (4:3), para que título, precio y tamaños entren en la primera pantalla;
 // - en computadora lleva miniaturas debajo;
-// - el video se carga solo cuando lo tocan (la página abre rápido dentro de Facebook e Instagram);
+// - el video tiene su propio reproductor (VideoGaleria.tsx): corre solo al llegar a él y se pausa con un toque;
 // - la foto de antes y después (B1) se arrastra desde su línea; el resto de esa foto desliza la galería como las demás.
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Comparador } from "./Comparador";
+import { VideoGaleria } from "./VideoGaleria";
 
 export type MedioGaleria =
   | { tipo: "imagen"; src: string; alt: string }
@@ -45,29 +46,6 @@ function Flecha({ lado, onClick, disabled }: { lado: "antes" | "despues"; onClic
       <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
         <path d={lado === "antes" ? "M15 6l-6 6 6 6" : "M9 6l6 6-6 6"} />
       </svg>
-    </button>
-  );
-}
-
-function Video({ m }: { m: Extract<MedioGaleria, { tipo: "video" }> }) {
-  const [reproducir, setReproducir] = useState(false);
-  if (reproducir) {
-    return <video src={m.src} poster={m.poster} controls autoPlay playsInline className="absolute inset-0 size-full bg-tinta object-contain" />;
-  }
-  return (
-    <button
-      type="button"
-      onClick={() => setReproducir(true)}
-      data-evento="mira_video"
-      className="group absolute inset-0 cursor-pointer"
-      aria-label={`Ver el video: ${m.alt}`}
-    >
-      <Image src={m.poster} alt="" fill sizes={TAMANO} className="object-cover" />
-      <span className="absolute top-1/2 left-1/2 flex size-16 -translate-1/2 items-center justify-center rounded-full bg-white/95 text-marino shadow-lg transition-transform group-hover:scale-105">
-        <svg viewBox="0 0 24 24" className="ml-1 size-8" fill="currentColor" aria-hidden="true" focusable="false">
-          <path d="M8 5.5v13l10.5-6.5L8 5.5z" />
-        </svg>
-      </span>
     </button>
   );
 }
@@ -146,7 +124,7 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                   className="object-cover"
                 />
               )}
-              {m.tipo === "video" && <Video m={m} />}
+              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} />}
               {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" />}
             </div>
           ))}

@@ -4947,56 +4947,6 @@
        "diseno": false
       }
      ]
-    },
-    {
-     "tipo": "sizes",
-     "slug": "s45-b03",
-     "dbName": "s45b03",
-     "etiqueta": "Tamaños con «Añadir al carrito»",
-     "campos": [
-      {
-       "clave": "heading",
-       "tipo": "texto",
-       "etiqueta": "Título",
-       "diseno": false
-      },
-      {
-       "clave": "measure_text",
-       "tipo": "texto",
-       "etiqueta": "Texto de «¿Cómo medir?»",
-       "diseno": false
-      },
-      {
-       "clave": "custom_text",
-       "tipo": "texto",
-       "etiqueta": "Pregunta de la medida especial",
-       "diseno": false
-      },
-      {
-       "clave": "custom_link_text",
-       "tipo": "texto",
-       "etiqueta": "Texto del enlace a la medida especial",
-       "diseno": false
-      },
-      {
-       "clave": "custom_link",
-       "tipo": "texto",
-       "etiqueta": "Enlace a la medida especial",
-       "diseno": false
-      },
-      {
-       "clave": "button_text",
-       "tipo": "texto",
-       "etiqueta": "Texto del botón",
-       "diseno": false
-      },
-      {
-       "clave": "error_text",
-       "tipo": "texto",
-       "etiqueta": "Aviso si no eligen tamaño",
-       "diseno": false
-      }
-     ]
     }
    ]
   },
@@ -5269,26 +5219,6 @@
      ]
     },
     {
-     "tipo": "image",
-     "slug": "s48-b01",
-     "dbName": "s48b01",
-     "etiqueta": "Imagen",
-     "campos": [
-      {
-       "clave": "image",
-       "tipo": "imagen",
-       "etiqueta": "Imagen",
-       "diseno": false
-      },
-      {
-       "clave": "alt",
-       "tipo": "texto",
-       "etiqueta": "Texto alternativo (para quien no ve la foto)",
-       "diseno": false
-      }
-     ]
-    },
-    {
      "tipo": "marketplace",
      "slug": "s48-b02",
      "dbName": "s48b02",
@@ -5324,20 +5254,6 @@
        "clave": "text",
        "tipo": "texto",
        "etiqueta": "Texto",
-       "diseno": false
-      }
-     ]
-    },
-    {
-     "tipo": "review",
-     "slug": "s48-b04",
-     "dbName": "s48b04",
-     "etiqueta": "Reseña",
-     "campos": [
-      {
-       "clave": "image",
-       "tipo": "imagen",
-       "etiqueta": "Imagen",
        "diseno": false
       }
      ]
