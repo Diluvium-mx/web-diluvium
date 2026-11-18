@@ -23,6 +23,14 @@ Para revisar versiones en línea mientras la tienda sigue en Shopify, sin pagar 
   indexar» van en `_headers`. El resto de la tienda sigue por el Worker, porque un archivo fijo no recibe POST y las
   acciones del servidor (total de la pantalla de pago, formularios) lo usan. En `/v/a` (tienda de hoy) el boletín y
   «Escribir reseña» no responden en esta copia.
+- **Videos por partes (18-nov-2026):** los archivos fijos de Cloudflare siempre mandan el video completo y Safari del
+  iPhone exige pedazos (206). `cloudflare/worker.js` es la entrada del Worker: atiende `/media/videos/*`
+  («run_worker_first») y lo demás lo pasa a OpenNext. Medido con `wrangler tail`: 1 a 7 ms de procesador por pedido
+  (límite del plan gratis: 10 ms).
+- **Aviso de seguridad de Next.js:** si la construcción se detiene con «SecurityFatalError», `publicar-prueba.mjs`
+  reintenta una vez (Next deja seguir así) y lo dice en pantalla. La actualización de Next la decide el dueño.
+- **Medir cada cambio:** el peso sale al publicar (límite 3 MB comprimido) y `node herramientas/medir-fluidez.mjs`
+  mide la fluidez en celular.
 - **Vista en celular de la lista /v:** `node herramientas/capturar-versiones.mjs [dirección]` vuelve a tomar la primera
   pantalla de cada portada (`public/media/versiones/`).
 
