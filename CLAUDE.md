@@ -24,7 +24,7 @@ Todo lo de este proyecto vive en esta carpeta (`~/Documents/web-diluvium`).
 | Qué tiene la tienda actual (páginas, productos, apps, pagos) | `docs/sitio-actual/inventario.md` |
 
 ## Código (paso 1 terminado el 4-nov-2026 · paso 2, administrador, funcionando en esta Mac el 5-nov-2026)
-Next.js **16.4.3** (App Router; las APIs cambiaron: leer `node_modules/next/dist/docs/` antes de usarlas) · React
+Next.js **16.4.6** (App Router; las APIs cambiaron: leer `node_modules/next/dist/docs/` antes de usarlas) · React
 19.2 · Tailwind 4 · TypeScript estricto. Mismas versiones que el CRM, fijas.
 - `src/app/(sitio)/`: la tienda · `src/app/(payload)/`: el administrador (`/admin`) · `src/app/global-not-found.tsx`: 404.
 - `src/app/(versiones)/`: versiones para pruebas A/B, portada y ficha de la compuerta (`/v`, `/v/b1`,
