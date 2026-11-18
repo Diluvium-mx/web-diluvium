@@ -5,11 +5,13 @@
 // cuenta; mientras, wrangler usa copias locales en .wrangler/ (fuera del repositorio).
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
+  // Entrada propia: entrega los videos por partes (Safari del iPhone) y lo demás va a OpenNext (cloudflare/worker.js).
+  "main": "cloudflare/worker.js",
   "name": "diluvium",
   "compatibility_date": "2026-10-15",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
-  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  // Los videos pasan primero por el Worker (por partes); el resto de los archivos fijos se entregan directo.
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS", "run_worker_first": ["/media/videos/*"] },
   // Base del administrador (SQLite en Cloudflare).
   "d1_databases": [{ "binding": "D1", "database_id": "088bb8dd-e613-4512-92d5-9503a2a84c28", "database_name": "diluvium", "remote": true }],
   // Fotos y videos que se suban en el administrador.

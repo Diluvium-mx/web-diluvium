@@ -88,11 +88,12 @@ writeFileSync(
   JSON.stringify(
     {
       $schema: "node_modules/wrangler/config-schema.json",
-      main: ".open-next/worker.js",
+      main: "cloudflare/worker.js",
       name: "diluvium-prueba",
       compatibility_date: "2026-10-15",
       compatibility_flags: ["nodejs_compat", "global_fetch_strictly_public"],
-      assets: { directory: ".open-next/assets", binding: "ASSETS" },
+      // Videos por partes (Safari del iPhone): pasan primero por cloudflare/worker.js.
+      assets: { directory: ".open-next/assets", binding: "ASSETS", run_worker_first: ["/media/videos/*"] },
       images: { binding: "IMAGES" },
       // También al momento de la visita (robots.txt y páginas que se arman en el Worker): que Google no la indexe.
       vars: { SITIO_PRUEBA: "1" },
