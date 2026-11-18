@@ -5,8 +5,8 @@
 // navegador pida un pedazo. Chrome lo reproduce igual, pero Safari del iPhone (y el navegador de Facebook e Instagram
 // en iPhone) pide pedazos y, si no los recibe, puede no reproducir el video (18-nov-2026).
 //
-// Cuesta muy poco procesador (el plan gratis da 10 ms por visita): el archivo pasa en flujo, sin cargarlo completo en
-// memoria; solo se cortan los trozos de las orillas. wrangler manda aquí /media/videos/* («run_worker_first»).
+// Cuesta muy poco procesador (el plan gratis da 10 ms por visita): el video se recibe, se mide y se corta el pedazo.
+// wrangler manda aquí /media/videos/* («run_worker_first»).
 // Va en JavaScript (no TypeScript) para que la revisión de tipos de Next no lo lea: depende de .open-next/, que solo
 // existe al construir.
 
@@ -28,52 +28,30 @@ function rango(cabecera, total) {
   return inicio <= fin ? [inicio, fin] : null;
 }
 
-async function videoPorPartes(request, env, ctx) {
+async function videoPorPartes(request, env) {
   const completo = await env.ASSETS.fetch(new Request(request.url, { method: "GET" }));
-  const total = Number(completo.headers.get("content-length"));
-  const pedido = request.headers.get("range");
-  if (!completo.ok || !completo.body || !pedido || !total) return completo;
-
-  const partes = rango(pedido, total);
-  if (!partes) {
-    completo.body.cancel();
-    return new Response(null, { status: 416, headers: { "content-range": `bytes */${total}` } });
-  }
+  if (!completo.ok) return completo;
+  // Dentro del Worker el archivo puede llegar sin «content-length»: se recibe completo y se mide. Los videos de la
+  // página pesan unos pocos MB y copiarlos en memoria toma poco más de 1 ms de procesador.
+  const datos = await completo.arrayBuffer();
+  const total = datos.byteLength;
+  const partes = rango(request.headers.get("range") ?? "", total);
+  if (!partes) return new Response(null, { status: 416, headers: { "content-range": `bytes */${total}` } });
   const [inicio, fin] = partes;
-  const largo = fin - inicio + 1;
-
-  // Se deja pasar solo lo que cae entre inicio y fin; al llegar a fin se corta el resto del archivo.
-  let visto = 0;
-  const corte = new TransformStream({
-    transform(trozo, control) {
-      const desde = visto;
-      visto += trozo.byteLength;
-      if (visto <= inicio) return;
-      if (desde > fin) {
-        control.terminate();
-        return;
-      }
-      control.enqueue(trozo.subarray(Math.max(0, inicio - desde), Math.min(trozo.byteLength, fin - desde + 1)));
-      if (visto > fin) control.terminate();
-    },
-  });
-  // FixedLengthStream: Cloudflare manda el «content-length» exacto (Safari lo espera en un 206).
-  const { readable, writable } = new FixedLengthStream(largo);
-  ctx.waitUntil(completo.body.pipeThrough(corte).pipeTo(writable).catch(() => {}));
 
   const cabeceras = new Headers(completo.headers);
   cabeceras.set("content-range", `bytes ${inicio}-${fin}/${total}`);
-  cabeceras.set("content-length", String(largo));
+  cabeceras.set("content-length", String(fin - inicio + 1));
   cabeceras.set("accept-ranges", "bytes");
   cabeceras.delete("content-encoding");
-  return new Response(request.method === "HEAD" ? null : readable, { status: 206, headers: cabeceras });
+  return new Response(request.method === "HEAD" ? null : datos.slice(inicio, fin + 1), { status: 206, headers: cabeceras });
 }
 
 const worker = {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
     if (pathname.startsWith("/media/videos/") && (request.method === "GET" || request.method === "HEAD")) {
-      if (request.headers.has("range")) return videoPorPartes(request, env, ctx);
+      if (request.headers.has("range")) return videoPorPartes(request, env);
       // Sin «Range»: el archivo tal cual, y se avisa que se puede pedir por partes.
       const r = await env.ASSETS.fetch(request);
       const cabeceras = new Headers(r.headers);
