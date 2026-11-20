@@ -17,7 +17,7 @@ export function BeneficiosVersion({ seccion }: PropsSeccion) {
         </h2>
         <ul className="m-0 grid list-none gap-x-6 gap-y-10 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-12">
           {items.map((b) => (
-            <li key={b.id}>
+            <li key={b.id} data-pieza={b.id}>
               {texto(b.ajustes, "image") && (
                 <div className="relative mb-5 aspect-[4/3] overflow-hidden rounded-2xl bg-niebla">
                   <Image

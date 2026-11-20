@@ -22,6 +22,7 @@ import {
   type PlantillaTema,
 } from "@/lib/mapa";
 import type { MedioBiblioteca } from "@/lib/editor/archivos";
+import { MapaElementos } from "./MapaElementos";
 
 type Props = { plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
 type Seleccion = { seccionId: string; piezaId: string; clave: string };
@@ -163,7 +164,7 @@ const ES_DE_FOTO = new Set(["imagen", "video", "focal", "zoom"]);
 export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const archivos = Object.keys(PAGINAS_MAPA) as ArchivoMapa[];
   const [archivo, setArchivo] = useState<ArchivoMapa>("product.b1");
-  const [modo, setModo] = useState<"fotos" | "textos">("fotos");
+  const [modo, setModo] = useState<"fotos" | "textos" | "mapa">("fotos");
   const [borradores, setBorradores] = useState(() => copia(plantillas));
   const [guardadas, setGuardadas] = useState(() => copia(plantillas));
   const [medios, setMedios] = useState(biblioteca);
@@ -414,6 +415,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
             [
               ["fotos", "Fotos"],
               ["textos", "Textos"],
+              ["mapa", "Mapa"],
             ] as const
           ).map(([m, t]) => (
             <button
@@ -463,7 +465,10 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         </div>
       )}
 
-      <div className="flex min-h-0 flex-1">
+      {/* ── Pestaña Mapa: cada elemento de la página con su número fijo ── */}
+      {modo === "mapa" && <MapaElementos archivo={archivo} secciones={mapa} ruta={ruta} vista={vista} />}
+
+      <div className={`min-h-0 flex-1 ${modo === "mapa" ? "hidden" : "flex"}`}>
         {/* ── Pestaña Textos: la lista de cada parte ── */}
         {modo === "textos" && (
           <main className="min-h-0 flex-1 overflow-y-auto p-4">

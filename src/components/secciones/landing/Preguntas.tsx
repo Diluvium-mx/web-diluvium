@@ -28,7 +28,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
         </div>
         <div className="border-t border-linea">
           {preguntas.map((p) => (
-            <details key={p.id} name="preguntas-version" className="group border-b border-linea">
+            <details key={p.id} data-pieza={p.id} name="preguntas-version" className="group border-b border-linea">
               <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-4 font-titulo text-[18px] leading-snug font-bold md:text-[19px]">
                 {textoVersion(p.ajustes, "heading")}
                 <svg viewBox="0 0 24 24" className="giro size-6 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true" focusable="false">

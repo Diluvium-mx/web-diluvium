@@ -27,6 +27,12 @@ export type MedioGaleria =
 
 const TAMANO = "(min-width: 1200px) 640px, (min-width: 1024px) 52vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)";
 
+/** «sección|pieza|campo» → «pieza» (para que cada cuadro conserve su número en el mapa aunque cambie de lugar). */
+function piezaDe(m: MedioGaleria): string | undefined {
+  const marca = m.tipo === "antesDespues" ? m.antes.marca : m.marca;
+  return marca?.["data-editar"]?.split("|")[1] || undefined;
+}
+
 function miniatura(m: MedioGaleria): { src: string; alt: string } {
   if (m.tipo === "imagen") return m;
   if (m.tipo === "video") return { src: m.poster, alt: m.alt };
@@ -108,6 +114,8 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
           {medios.map((m, i) => (
             <div
               key={i}
+              // Para el mapa de elementos: la pieza de la plantilla a la que pertenece este cuadro.
+              data-pieza={piezaDe(m)}
               role="group"
               aria-roledescription="foto"
               aria-label={`${i + 1} de ${medios.length}`}

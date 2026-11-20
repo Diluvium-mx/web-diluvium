@@ -124,7 +124,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
   const listaConfianza = confianza.length > 0 && (
     <ul className={`m-0 grid list-none grid-cols-2 gap-x-3 gap-y-3 p-0 ${tituloConfianza ? "" : "mt-5 border-t border-linea pt-4"}`}>
       {confianza.map((c) => (
-        <li key={c.id} className="flex items-start gap-2.5">
+        <li key={c.id} data-pieza={c.id} className="flex items-start gap-2.5">
           <IconoConfianza nombre={texto(c.ajustes, "icon")} />
           <span className="text-[14.5px] leading-[1.35]">
             <strong className="block font-bold text-marino">{rellenar(texto(c.ajustes, "heading"), venta)}</strong>
@@ -200,7 +200,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
           {puntos.length > 0 && (
             <ul className="m-0 mt-5 grid list-none gap-1.5 p-0 text-[15.5px] text-tinta">
               {puntos.map((p) => (
-                <li key={p.id} className="flex items-start gap-2">
+                <li key={p.id} data-pieza={p.id} className="flex items-start gap-2">
                   <IconoPalomita className="mt-0.5 size-5 shrink-0 text-marino" />
                   {rellenar(texto(p.ajustes, "text"), venta)}
                 </li>
@@ -214,7 +214,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-bold">{r("marketplace_text")}</p>}
               <ul className="m-0 mt-2.5 grid list-none grid-cols-2 gap-2.5 p-0">
                 {tiendas.map((t) => (
-                  <li key={t.id}>
+                  <li key={t.id} data-pieza={t.id}>
                     <a
                       href={texto(t.ajustes, "link")}
                       target="_blank"

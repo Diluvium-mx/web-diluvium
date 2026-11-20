@@ -29,7 +29,7 @@ function Mosaico({ fotos, seccionId }: { fotos: Bloque[]; seccionId: string }) {
   return (
     <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3 lg:grid-cols-2">
       {fotos.slice(0, 4).map((f, i) => (
-        <div key={f.id} className="relative aspect-square overflow-hidden rounded-xl bg-marino-hondo md:aspect-[4/5] md:rounded-2xl">
+        <div key={f.id} data-pieza={f.id} className="relative aspect-square overflow-hidden rounded-xl bg-marino-hondo md:aspect-[4/5] md:rounded-2xl">
           <Image
             src={texto(f.ajustes, "image")}
             alt={texto(f.ajustes, "alt")}
@@ -68,7 +68,7 @@ function FilaConfianza({ logos }: { logos: Bloque[] }) {
               const nombre = texto(l.ajustes, "name");
               const imagen = texto(l.ajustes, "image");
               return (
-                <span key={l.id} className="flex items-center gap-2">
+                <span key={l.id} data-pieza={l.id} className="flex items-center gap-2">
                   {etiqueta && <span className="text-texto-suave">{etiqueta}</span>}
                   {imagen && (
                     <Foto

@@ -36,7 +36,18 @@ Los acomodos y las fotos cambiadas se ven al momento; las fotos agregadas, quita
 Cada parte con su nombre del mapa y sus textos para escribirlos ahí mismo (los que llevan formato aceptan `<p>`,
 `<strong>`, `<a href="…">`). Se ven en la página de la derecha al guardar.
 
+### Mapa (números de cada elemento)
+La pestaña **Mapa** (a la derecha de Textos) muestra la página con un **número sobre cada elemento** (títulos, textos,
+botones, enlaces, tamaños, campos, fotos, videos, íconos) y la tabla con el número, qué es, en qué parte está y qué
+dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. «Copiar» copia el número con su nombre.
+- Los números **no cambian**: al cambiar un texto o mover fotos, cada elemento conserva su número. Lo nuevo toma el
+  siguiente número libre y un número quitado no se vuelve a usar (como en el mapa del CRM).
+- El menú, el carrito y la guía de tamaños también llevan número; si los abres en la página, «Volver a leer» numera
+  lo que aparezca.
+
 ### Guardar y publicar
+- **Importante: nada queda hasta presionar «Guardar».** Si cierras o recargas el editor sin guardar, los ajustes se
+  pierden (el navegador avisa antes de cerrar).
 - **Guardar** escribe los cambios en la página y en el administrador al mismo tiempo y deja una copia de la versión
   anterior en `.editor-respaldos/` (fuera de git), por si hay que regresar.
 - **Descartar cambios** regresa a lo último guardado.
@@ -50,6 +61,11 @@ Cada parte con su nombre del mapa y sus textos para escribirlos ahí mismo (los 
 - Publicar: `api/publicar` lanza `herramientas/publicar-prueba.mjs --publicar` aparte y responde cómo va.
 - Seguridad (`src/lib/editor/guardia.ts`): solo con `npm run dev`, solo con dirección `localhost` y los cambios solo
   desde la misma página (Origin). En producción responde 404 y `publicar-prueba.mjs` lo quita de la copia.
+- Mapa de elementos: `src/lib/elementos.ts` (`escanear`) lee la página y arma la firma de cada elemento: sección |
+  pieza (`data-pieza`, en las piezas que se repiten) | tipo:orden dentro de la pieza (las fotos, por su campo). La
+  firma no depende del texto. `api/elementos` da el siguiente número libre a lo nuevo y guarda
+  `contenido/mapa-elementos.json` (número, nombre y parte de cada firma). Para ubicar «Producto 37»: buscar `"n": 37`
+  en `product.b1` de ese archivo; la firma dice la sección, la pieza y el orden.
 - Las páginas que se editan están en `PAGINAS_MAPA` (`src/lib/mapa.ts`). Para C1 y D1: agregarlas ahí.
 - Cada foto de la página lleva `data-editar="sección|pieza|campo"` (`marcaEditar` en `src/lib/mapa.ts`): así el
   editor sabe qué campo tocaste. El encuadre se guarda como `focal` («x% y%») y el acercamiento como `zoom` (1 a 3);

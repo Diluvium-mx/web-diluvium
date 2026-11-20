@@ -19,7 +19,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
         </h2>
         <ol className="m-0 grid list-none gap-4 p-0 md:grid-cols-3 lg:gap-6">
           {pasos.map((p, i) => (
-            <li key={p.id} className="flex gap-4 rounded-2xl bg-white p-4 md:flex-col md:p-6">
+            <li key={p.id} data-pieza={p.id} className="flex gap-4 rounded-2xl bg-white p-4 md:flex-col md:p-6">
               {texto(p.ajustes, "image") && (
                 <div className="relative aspect-square w-24 shrink-0 overflow-hidden rounded-xl bg-white md:aspect-[4/3] md:w-full">
                   <Image

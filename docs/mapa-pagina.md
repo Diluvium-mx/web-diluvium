@@ -1,5 +1,8 @@
 # Mapa de la página (para pedir cambios en una línea)
 
+> **Desde el 21-nov-2026 lo principal es la pestaña Mapa del editor** (`docs/editor.md`): un número fijo por cada
+> elemento, «Producto 37: …». Esta guía es el mapa por partes y campos (`?mapa` en la página publicada).
+
 20-nov-2026. Igual que el mapa del CRM, pero **vivo**: los nombres salen solos del contenido de la página, así que
 nunca se quedan viejos y no hay capturas que actualizar.
 

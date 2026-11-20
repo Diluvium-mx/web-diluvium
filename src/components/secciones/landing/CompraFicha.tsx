@@ -172,6 +172,7 @@ export function CompraFicha({
               return (
                 <label
                   key={t.id}
+                  data-pieza={`tamano-${t.id}`}
                   className={`relative flex min-h-[60px] cursor-pointer flex-col items-center justify-center rounded-xl border-2 px-1 py-1.5 text-center transition-colors has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-marino ${
                     agotado
                       ? "cursor-not-allowed border-linea text-texto-suave line-through"

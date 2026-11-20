@@ -47,7 +47,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
         </div>
         <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {tarjetas.map((t) => (
-            <li key={t.id} className="grid min-h-[176px] grid-cols-[116px_minmax(0,1fr)] overflow-hidden rounded-2xl border border-linea bg-white md:grid-cols-[140px_minmax(0,1fr)]">
+            <li key={t.id} data-pieza={t.id} className="grid min-h-[176px] grid-cols-[116px_minmax(0,1fr)] overflow-hidden rounded-2xl border border-linea bg-white md:grid-cols-[140px_minmax(0,1fr)]">
               <div className="relative overflow-hidden bg-niebla">
                 <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="140px" className="object-cover" style={estiloFoto(t.ajustes)} {...marcaEditar(seccion.id, t.id, "image")} />
               </div>
