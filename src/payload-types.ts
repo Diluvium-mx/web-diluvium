@@ -3211,26 +3211,11 @@ export interface Plantilla {
                       image_after?: (number | null) | Medio;
                       alt_after?: string | null;
                       label_after?: string | null;
+                      focal_before?: string | null;
+                      focal_after?: string | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's45-b00';
-                    }
-                  | {
-                      idTema?: string | null;
-                      claves?:
-                        | {
-                            [k: string]: unknown;
-                          }
-                        | unknown[]
-                        | string
-                        | number
-                        | boolean
-                        | null;
-                      image?: (number | null) | Medio;
-                      alt?: string | null;
-                      id?: string | null;
-                      blockName?: string | null;
-                      blockType: 's45-b01';
                     }
                   | {
                       idTema?: string | null;
@@ -3384,6 +3369,8 @@ export interface Plantilla {
                       image_after?: (number | null) | Medio;
                       alt_after?: string | null;
                       label_after?: string | null;
+                      focal_before?: string | null;
+                      focal_after?: string | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b00';
@@ -3439,6 +3426,42 @@ export interface Plantilla {
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b05';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image?: (number | null) | Medio;
+                      alt?: string | null;
+                      focal?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b06';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      video?: (number | null) | Medio;
+                      poster?: (number | null) | Medio;
+                      alt?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's48-b07';
                     }
                 )[]
               | null;
@@ -5701,16 +5724,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           image_after?: T;
                           alt_after?: T;
                           label_after?: T;
-                          id?: T;
-                          blockName?: T;
-                        };
-                    's45-b01'?:
-                      | T
-                      | {
-                          idTema?: T;
-                          claves?: T;
-                          image?: T;
-                          alt?: T;
+                          focal_before?: T;
+                          focal_after?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5819,6 +5834,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           image_after?: T;
                           alt_after?: T;
                           label_after?: T;
+                          focal_before?: T;
+                          focal_after?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5850,6 +5867,28 @@ export interface PlantillasSelect<T extends boolean = true> {
                           icon?: T;
                           heading?: T;
                           text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b06'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          focal?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's48-b07'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          video?: T;
+                          poster?: T;
+                          alt?: T;
                           id?: T;
                           blockName?: T;
                         };

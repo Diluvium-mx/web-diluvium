@@ -13,6 +13,7 @@ import type { PropsSeccion } from "../registro";
 import type { Bloque } from "@/lib/contenido";
 import { texto } from "@/lib/contenido";
 import { Comparador } from "./Comparador";
+import { posicionFoto } from "@/lib/mapa";
 import { SelectorTamano } from "./SelectorTamano";
 import { BarraCompra } from "./BarraCompra";
 import { datosVenta, pesos, rellenar } from "./datos";
@@ -36,6 +37,7 @@ function Mosaico({ fotos }: { fotos: Bloque[] }) {
             sizes="(min-width: 1200px) 296px, (min-width: 1024px) 23vw, (min-width: 768px) calc(25vw - 24px), calc(50vw - 20px)"
             loading="eager"
             fetchPriority={i === 0 ? "high" : "auto"}
+            style={posicionFoto(f.ajustes.focal) ? { objectPosition: posicionFoto(f.ajustes.focal) } : undefined}
             className="object-cover"
           />
         </div>
@@ -111,8 +113,8 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
     medio = (
       <Comparador
         sizes={TAMANO_MEDIO}
-        antes={{ src: texto(b, "image_before"), alt: texto(b, "alt_before"), etiqueta: texto(b, "label_before") }}
-        despues={{ src: texto(b, "image_after"), alt: texto(b, "alt_after"), etiqueta: texto(b, "label_after") }}
+        antes={{ src: texto(b, "image_before"), alt: texto(b, "alt_before"), etiqueta: texto(b, "label_before"), posicion: posicionFoto(b.focal_before) }}
+        despues={{ src: texto(b, "image_after"), alt: texto(b, "alt_after"), etiqueta: texto(b, "label_after"), posicion: posicionFoto(b.focal_after) }}
       />
     );
   } else if (mosaico) {
@@ -126,6 +128,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
           fill
           sizes={TAMANO_MEDIO}
           preload
+          style={posicionFoto(fotos[0].ajustes.focal) ? { objectPosition: posicionFoto(fotos[0].ajustes.focal) } : undefined}
           className={`object-cover ${tamanos ? "" : "acercar"}`}
         />
       </div>

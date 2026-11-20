@@ -4893,25 +4893,17 @@
        "tipo": "texto",
        "etiqueta": "Etiqueta de después",
        "diseno": false
-      }
-     ]
-    },
-    {
-     "tipo": "image",
-     "slug": "s45-b01",
-     "dbName": "s45b01",
-     "etiqueta": "Imagen",
-     "campos": [
+      },
       {
-       "clave": "image",
-       "tipo": "imagen",
-       "etiqueta": "Imagen",
+       "clave": "focal_before",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto de antes (x% y%)",
        "diseno": false
       },
       {
-       "clave": "alt",
+       "clave": "focal_after",
        "tipo": "texto",
-       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "etiqueta": "Encuadre de la foto de después (x% y%)",
        "diseno": false
       }
      ]
@@ -5215,6 +5207,18 @@
        "tipo": "texto",
        "etiqueta": "Etiqueta de después",
        "diseno": false
+      },
+      {
+       "clave": "focal_before",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto de antes (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "focal_after",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto de después (x% y%)",
+       "diseno": false
       }
      ]
     },
@@ -5280,6 +5284,58 @@
        "clave": "text",
        "tipo": "texto",
        "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "image",
+     "slug": "s48-b06",
+     "dbName": "s48b06",
+     "etiqueta": "Imagen",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      }
+     ]
+    },
+    {
+     "tipo": "video",
+     "slug": "s48-b07",
+     "dbName": "s48b07",
+     "etiqueta": "Video",
+     "campos": [
+      {
+       "clave": "video",
+       "tipo": "video",
+       "etiqueta": "Video",
+       "diseno": false
+      },
+      {
+       "clave": "poster",
+       "tipo": "imagen",
+       "etiqueta": "Foto antes de reproducir",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
        "diseno": false
       }
      ]

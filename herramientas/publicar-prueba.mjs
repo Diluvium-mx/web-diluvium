@@ -43,6 +43,8 @@ execFileSync("cp", ["-cR", join(RAIZ, "node_modules"), join(COPIA, "node_modules
 
 // Sin administrador, y sin la página de «gracias» (aquí no se toman pedidos).
 rmSync(join(COPIA, "src/app/(payload)"), { recursive: true, force: true });
+// Ni el editor local (solo funciona en esta Mac con npm run dev).
+rmSync(join(COPIA, "src/app/(editor)"), { recursive: true, force: true });
 rmSync(join(COPIA, "src/app/(pago)/checkout/gracias"), { recursive: true, force: true });
 
 // Pago: el resumen se calcula igual (catálogo publicado, sin códigos de descuento); no se crean pedidos.
@@ -141,7 +143,7 @@ for (const [ruta, datos] of Object.entries(manifiesto.routes)) {
 writeFileSync(
   join(COPIA, ".open-next/assets/_headers"),
   `/*
-  X-Frame-Options: DENY
+  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()

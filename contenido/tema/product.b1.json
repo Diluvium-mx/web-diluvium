@@ -53,7 +53,7 @@
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "Arrastra la línea: costales contra Diluvium.",
     "gallery_style": "normal",
-    "include_product_media": true,
+    "include_product_media": false,
     "sticky_bar": "al_bajar",
     "sticky_text": "Elegir mi tamaño"
    },
@@ -67,7 +67,108 @@
       "label_before": "Antes: costales",
       "image_after": "/media/files/Despues_2.jpg",
       "alt_after": "La misma entrada con la compuerta Diluvium puesta",
-      "label_after": "Después: Diluvium"
+      "label_after": "Después: Diluvium",
+      "focal_before": "50% 50%",
+      "focal_after": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/8.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/5_07b7910a-8a08-4b54-a1f6-d81b2757cd81.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "video_4",
+     "tipo": "video",
+     "ajustes": {
+      "video": "/media/videos/97ace9cb89da49c5be7042aaedb7e317.HD-720p-1.6Mbps-49405165.mp4",
+      "poster": "/media/files/97ace9cb89da49c5be7042aaedb7e317.thumbnail.0000000000.jpg",
+      "alt": "Video de la compuerta anti-inundaciones frenando el agua"
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/6.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/Imagenpasosbuena.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/21.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_8",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/3_09d648f8-73a2-461f-91b2-63b4af47c660.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_9",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/6_61bbe95a-a71d-493a-9e88-6d6ad41c5b39.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_10",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/9.Queincluyeelpaquete.png",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
+     }
+    },
+    {
+     "id": "foto_11",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/1.Compuertarecta.jpg",
+      "alt": "Compuerta Anti-Inundaciones",
+      "focal": "50% 50%"
      }
     },
     {

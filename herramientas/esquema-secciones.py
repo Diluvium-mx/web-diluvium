@@ -151,7 +151,8 @@ FIJAS = {
     "marketplace_text": "Texto antes de las otras tiendas", "gallery_style": "Galería (normal o baja)",
     "include_product_media": "Agregar las fotos del producto", "sticky_bar": "Barra de compra (al_bajar o siempre)",
     "sticky_text": "Texto de la barra si no han elegido tamaño", "poster": "Foto antes de reproducir",
-    "icon": "Ícono",
+    "icon": "Ícono", "focal": "Encuadre de la foto (x% y%)", "focal_before": "Encuadre de la foto de antes (x% y%)",
+    "focal_after": "Encuadre de la foto de después (x% y%)", "video": "Video", "poster": "Foto antes de reproducir",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».
 PANTALLAS = {"desktop": "computadora", "mobile": "celular", "md": "computadora", "xs": "celular"}

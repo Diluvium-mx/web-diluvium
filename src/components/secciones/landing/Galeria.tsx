@@ -15,12 +15,12 @@ import { Comparador } from "./Comparador";
 import { VideoGaleria } from "./VideoGaleria";
 
 export type MedioGaleria =
-  | { tipo: "imagen"; src: string; alt: string }
+  | { tipo: "imagen"; src: string; alt: string; posicion?: string }
   | { tipo: "video"; src: string; poster: string; alt: string }
   | {
       tipo: "antesDespues";
-      antes: { src: string; alt: string; etiqueta: string };
-      despues: { src: string; alt: string; etiqueta: string };
+      antes: { src: string; alt: string; etiqueta: string; posicion?: string };
+      despues: { src: string; alt: string; etiqueta: string; posicion?: string };
     };
 
 const TAMANO = "(min-width: 1200px) 640px, (min-width: 1024px) 52vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)";
@@ -121,6 +121,8 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                   // (al deslizar rápido en iPhone no asoma un cuadro vacío); las demás, cuando se acercan.
                   preload={i === 0}
                   loading={i < 3 ? "eager" : "lazy"}
+                  // Encuadre elegido en el editor: el punto de la foto que nunca se corta.
+                  style={m.posicion ? { objectPosition: m.posicion } : undefined}
                   className="object-cover"
                 />
               )}

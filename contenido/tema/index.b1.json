@@ -63,7 +63,9 @@
       "label_before": "Antes: costales",
       "image_after": "/media/files/Despues_2.jpg",
       "alt_after": "La misma entrada con la compuerta Diluvium puesta",
-      "label_after": "Después: Diluvium"
+      "label_after": "Después: Diluvium",
+      "focal_before": "50% 50%",
+      "focal_after": "50% 50%"
      }
     },
     {

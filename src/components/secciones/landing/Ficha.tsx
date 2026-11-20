@@ -26,6 +26,7 @@ import { CompraFicha } from "./CompraFicha";
 import { Galeria, type MedioGaleria } from "./Galeria";
 import { datosVenta, pesos, rellenar, PRODUCTO_PRINCIPAL } from "./datos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
+import { posicionFoto } from "@/lib/mapa";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -56,11 +57,11 @@ function medios(bloques: Bloque[], incluirProducto: boolean, nombreProducto: str
     if (b.tipo === "before_after" && texto(a, "image_before") && texto(a, "image_after")) {
       propios.push({
         tipo: "antesDespues",
-        antes: { src: texto(a, "image_before"), alt: texto(a, "alt_before"), etiqueta: texto(a, "label_before") },
-        despues: { src: texto(a, "image_after"), alt: texto(a, "alt_after"), etiqueta: texto(a, "label_after") },
+        antes: { src: texto(a, "image_before"), alt: texto(a, "alt_before"), etiqueta: texto(a, "label_before"), posicion: posicionFoto(a.focal_before) },
+        despues: { src: texto(a, "image_after"), alt: texto(a, "alt_after"), etiqueta: texto(a, "label_after"), posicion: posicionFoto(a.focal_after) },
       });
     } else if (b.tipo === "image" && texto(a, "image")) {
-      propios.push({ tipo: "imagen", src: texto(a, "image"), alt: texto(a, "alt") || alt });
+      propios.push({ tipo: "imagen", src: texto(a, "image"), alt: texto(a, "alt") || alt, posicion: posicionFoto(a.focal) });
     } else if (b.tipo === "video" && texto(a, "video")) {
       propios.push({ tipo: "video", src: texto(a, "video"), poster: texto(a, "poster"), alt: texto(a, "alt") || alt });
     }

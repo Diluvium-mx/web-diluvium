@@ -4,7 +4,9 @@ import type { NextConfig } from "next";
 // Encabezados de seguridad básicos (docs/seguridad.md §7). La política de contenido (CSP) estricta se arma en el
 // paso 5, cuando estén todos los scripts de terceros (Mercado Pago, PayPal, Clarity, Google, Meta, TikTok).
 const SECURITY_HEADERS = [
-  { key: "X-Frame-Options", value: "DENY" },
+  // SAMEORIGIN: la página solo se puede abrir dentro de sí misma (la vista de celular del editor local); desde otros
+  // sitios sigue bloqueada (protección contra clickjacking).
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },

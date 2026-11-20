@@ -7,6 +7,8 @@ import { Secciones } from "@/components/secciones/registro";
 import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../PastillaVersion";
+import { MapaVersion } from "@/components/mapa/MapaVersion";
+import { esArchivoMapa } from "@/lib/mapa";
 
 // Una versión de la portada: /v/a es la portada de hoy con el marco de la tienda; /v/b1… son las versiones B, cada
 // una con su contenido (contenido/tema/index.<versión>.json) y su propio encabezado. Todas llevan la medición.
@@ -61,6 +63,8 @@ export default async function PaginaVersion({ params }: { params: Promise<{ vers
       <PastillaVersion etiqueta={v.etiqueta} />
       <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
       <EnlacesVersion clave={v.clave} />
+      {/* Mapa con los nombres de cada parte: solo con «?mapa» en la dirección. */}
+      {esArchivoMapa(`index.${v.clave}`) && <MapaVersion archivo={`index.${v.clave}` as "index.b1"} />}
     </div>
   );
 }

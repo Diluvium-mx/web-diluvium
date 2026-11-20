@@ -10,6 +10,8 @@ import { ResenasProducto } from "@/components/resenas/ResenasProducto";
 import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../../../PastillaVersion";
+import { MapaVersion } from "@/components/mapa/MapaVersion";
+import { esArchivoMapa } from "@/lib/mapa";
 
 // La ficha del producto dentro de una versión: /v/a/products/<producto> es la ficha de hoy con el marco de la tienda;
 // /v/b1/products/<producto>… es la ficha nueva de cada versión (contenido/tema/product.<versión>.json), que nace del
@@ -74,6 +76,8 @@ export default async function FichaVersion({ params }: { params: Promise<{ versi
       <PastillaVersion etiqueta={v.etiqueta} />
       <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
       <EnlacesVersion clave={v.clave} />
+      {/* Mapa con los nombres de cada parte: solo con «?mapa» en la dirección. */}
+      {esArchivoMapa(`product.${v.clave}`) && <MapaVersion archivo={`product.${v.clave}` as "product.b1"} />}
     </div>
   );
 }

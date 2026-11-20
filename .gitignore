@@ -31,3 +31,6 @@ public/media/admin/
 .open-next/
 .dev.vars*
 !.dev.vars.example
+
+# editor local: copias de cada plantilla antes de guardar
+.editor-respaldos/

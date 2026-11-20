@@ -20,6 +20,7 @@ Todo lo de este proyecto vive en esta carpeta (`~/Documents/web-diluvium`).
 | Medidas reales del sitio en vivo · herramientas | `docs/sitio-actual/medidas/` · `docs/herramientas.md` |
 | Ciberseguridad (reglas de pagos, llaves, revisiones) | `docs/seguridad.md` |
 | **Administrador** (Payload: qué se edita, cómo llega a la página, comandos) | `docs/administrador.md` |
+| **Mapa de la página** (nombres B1-P2.4 para pedir cambios; `?mapa`) · **Editor local** de fotos y textos (`localhost:3100/editor`) | `docs/mapa-pagina.md` · `docs/editor.md` |
 | **Publicar en Cloudflare** (dirección de prueba sin indexar, pasos del dueño y comandos) | `docs/despliegue.md` |
 | Qué tiene la tienda actual (páginas, productos, apps, pagos) | `docs/sitio-actual/inventario.md` |
 
