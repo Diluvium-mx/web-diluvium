@@ -65,7 +65,9 @@
       "alt_after": "La misma entrada con la compuerta Diluvium puesta",
       "label_after": "Después: Diluvium",
       "focal_before": "50% 50%",
-      "focal_after": "50% 50%"
+      "focal_after": "50% 50%",
+      "zoom_before": 1,
+      "zoom_after": 1
      }
     },
     {
@@ -112,42 +114,54 @@
      "id": "review_1",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/c57530d7-0a87-4bf2-b2ea-5905bdcdfb1a-card-small.jpg"
+      "image": "/media/resenas/c57530d7-0a87-4bf2-b2ea-5905bdcdfb1a-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
      "id": "review_2",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/ddacd39a-42e3-4a40-931a-2773db43a6b0-card-small.jpg"
+      "image": "/media/resenas/ddacd39a-42e3-4a40-931a-2773db43a6b0-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
      "id": "review_3",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/d4d2f01b-38fd-4073-b89c-6b1642caadab-card-small.jpg"
+      "image": "/media/resenas/d4d2f01b-38fd-4073-b89c-6b1642caadab-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
      "id": "review_4",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/00c7de20-ae8a-4a94-96e7-691dedc457be-card-small.jpg"
+      "image": "/media/resenas/00c7de20-ae8a-4a94-96e7-691dedc457be-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
      "id": "review_5",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/RiZG5RAXeH-card-small.jpg"
+      "image": "/media/resenas/RiZG5RAXeH-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
      "id": "review_6",
      "tipo": "review",
      "ajustes": {
-      "image": "/media/resenas/e4a8bdf1-0b99-44d4-b265-73ea291c8396-card-small.jpg"
+      "image": "/media/resenas/e4a8bdf1-0b99-44d4-b265-73ea291c8396-card-small.jpg",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     }
    ]
@@ -162,7 +176,11 @@
     "alt_before": "Entrada tapada con costales de arena y una tabla",
     "heading_after": "Con Diluvium",
     "image_after": "/media/files/Despues_1.jpg",
-    "alt_after": "La misma entrada protegida con la compuerta Diluvium"
+    "alt_after": "La misma entrada protegida con la compuerta Diluvium",
+    "focal_before": "50% 50%",
+    "zoom_before": 1,
+    "focal_after": "50% 50%",
+    "zoom_after": 1
    },
    "bloques": [
     {
@@ -237,7 +255,9 @@
       "image": "/media/files/IMG_2103.jpg",
       "alt": "Agua de un lado de la compuerta y piso seco del otro",
       "heading": "Detiene hasta 50 cm de agua",
-      "text": "Funda de neopreno impermeable y tira de hule en todo el contorno: el agua se queda afuera."
+      "text": "Funda de neopreno impermeable y tira de hule en todo el contorno: el agua se queda afuera.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -247,7 +267,9 @@
       "image": "/media/files/IMG_1499.jpg",
       "alt": "Una persona coloca la compuerta en su entrada",
       "heading": "Lista en 10 minutos, sin obras",
-      "text": "Se ajusta a presión con su gato mecánico, sin perforar ni modificar tu entrada. Cuando avisan tormenta, te da tiempo."
+      "text": "Se ajusta a presión con su gato mecánico, sin perforar ni modificar tu entrada. Cuando avisan tormenta, te da tiempo.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -257,7 +279,9 @@
       "image": "/media/files/21.jpg",
       "alt": "Partes de la compuerta: funda de neopreno, gato mecánico, marco de acero y tornillos para sellar",
       "heading": "Acero que aguanta olas y golpes",
-      "text": "Marco de acero de alta resistencia, hecho para la presión del agua y los movimientos bruscos."
+      "text": "Marco de acero de alta resistencia, hecho para la presión del agua y los movimientos bruscos.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -267,7 +291,9 @@
       "image": "/media/files/Frame_629.jpg",
       "alt": "Compuerta Diluvium puesta en una puerta de herrería",
       "heading": "Úsala cada temporada",
-      "text": "La quitas cuando quieras, la guardas y vuelve a servir. Vida útil de 5 a 7 años."
+      "text": "La quitas cuando quieras, la guardas y vuelve a servir. Vida útil de 5 a 7 años.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -277,7 +303,9 @@
       "image": "/media/files/Frame_734.jpg",
       "alt": "Compuerta Diluvium en una entrada de puerta doble",
       "heading": "Para tu medida exacta",
-      "text": "{tamanos} tamaños de {desde} a {hasta} cm, y hecha a la medida hasta 2.5 m de ancho."
+      "text": "{tamanos} tamaños de {desde} a {hasta} cm, y hecha a la medida hasta 2.5 m de ancho.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -287,7 +315,9 @@
       "image": "/media/files/Frame_643.jpg",
       "alt": "Calle inundada y la compuerta frenando el agua en la entrada",
       "heading": "Duerme tranquilo, aunque llueva fuerte",
-      "text": "Las tormentas suelen llegar de noche. La compuerta mantiene el agua afuera y a tu familia a salvo."
+      "text": "Las tormentas suelen llegar de noche. La compuerta mantiene el agua afuera y a tu familia a salvo.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     }
    ]
@@ -307,7 +337,9 @@
       "image": "/media/files/Frame_601.jpg",
       "alt": "Dibujo de una puerta con la flecha del ancho",
       "heading": "Mide el ancho de tu entrada",
-      "text": "De marco a marco o de pared a pared, con una cinta métrica."
+      "text": "De marco a marco o de pared a pared, con una cinta métrica.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -317,7 +349,9 @@
       "image": "/media/files/Frame_598.jpg",
       "alt": "Tabla de tamaños de la compuerta",
       "heading": "Elige tu tamaño",
-      "text": "Todos cuestan {precio}, con envío gratis."
+      "text": "Todos cuestan {precio}, con envío gratis.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     },
     {
@@ -327,7 +361,9 @@
       "image": "/media/files/Frame_603.jpg",
       "alt": "Dibujo de una puerta con la compuerta puesta",
       "heading": "Recíbela y colócala",
-      "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos."
+      "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos.",
+      "focal": "50% 50%",
+      "zoom": 1
      }
     }
    ]

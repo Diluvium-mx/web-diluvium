@@ -4,6 +4,7 @@
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 import { IconoPalomita, IconoTache } from "./piezas";
 
@@ -23,8 +24,8 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
         <div className="grid gap-4 md:grid-cols-2 lg:gap-6">
           <div className="overflow-hidden rounded-2xl border border-linea bg-white">
             {texto(a, "image_before") && (
-              <div className="relative aspect-[16/10] lg:aspect-[2/1]">
-                <Image src={texto(a, "image_before")} alt={texto(a, "alt_before")} fill sizes={TAMANO} className="object-cover grayscale-[35%]" />
+              <div className="relative aspect-[16/10] overflow-hidden lg:aspect-[2/1]">
+                <Image src={texto(a, "image_before")} alt={texto(a, "alt_before")} fill sizes={TAMANO} className="object-cover grayscale-[35%]" style={estiloFoto(a, "image_before")} {...marcaEditar(seccion.id, "", "image_before")} />
               </div>
             )}
             <div className="p-6 md:p-8">
@@ -43,8 +44,8 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
           </div>
           <div className="fondo-oscuro overflow-hidden rounded-2xl bg-marino text-white">
             {texto(a, "image_after") && (
-              <div className="relative aspect-[16/10] lg:aspect-[2/1]">
-                <Image src={texto(a, "image_after")} alt={texto(a, "alt_after")} fill sizes={TAMANO} className="object-cover" />
+              <div className="relative aspect-[16/10] overflow-hidden lg:aspect-[2/1]">
+                <Image src={texto(a, "image_after")} alt={texto(a, "alt_after")} fill sizes={TAMANO} className="object-cover" style={estiloFoto(a, "image_after")} {...marcaEditar(seccion.id, "", "image_after")} />
               </div>
             )}
             <div className="p-6 md:p-8">

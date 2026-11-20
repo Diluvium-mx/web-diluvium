@@ -26,7 +26,7 @@ import { CompraFicha } from "./CompraFicha";
 import { Galeria, type MedioGaleria } from "./Galeria";
 import { datosVenta, pesos, rellenar, PRODUCTO_PRINCIPAL } from "./datos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
-import { posicionFoto } from "@/lib/mapa";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -50,20 +50,20 @@ function IconoConfianza({ nombre }: { nombre: string }) {
   );
 }
 
-function medios(bloques: Bloque[], incluirProducto: boolean, nombreProducto: string, alt: string): MedioGaleria[] {
+function medios(seccionId: string, bloques: Bloque[], incluirProducto: boolean, nombreProducto: string, alt: string): MedioGaleria[] {
   const propios: MedioGaleria[] = [];
   for (const b of bloques) {
     const a = b.ajustes;
     if (b.tipo === "before_after" && texto(a, "image_before") && texto(a, "image_after")) {
       propios.push({
         tipo: "antesDespues",
-        antes: { src: texto(a, "image_before"), alt: texto(a, "alt_before"), etiqueta: texto(a, "label_before"), posicion: posicionFoto(a.focal_before) },
-        despues: { src: texto(a, "image_after"), alt: texto(a, "alt_after"), etiqueta: texto(a, "label_after"), posicion: posicionFoto(a.focal_after) },
+        antes: { src: texto(a, "image_before"), alt: texto(a, "alt_before"), etiqueta: texto(a, "label_before"), estilo: estiloFoto(a, "image_before"), marca: marcaEditar(seccionId, b.id, "image_before") },
+        despues: { src: texto(a, "image_after"), alt: texto(a, "alt_after"), etiqueta: texto(a, "label_after"), estilo: estiloFoto(a, "image_after"), marca: marcaEditar(seccionId, b.id, "image_after") },
       });
     } else if (b.tipo === "image" && texto(a, "image")) {
-      propios.push({ tipo: "imagen", src: texto(a, "image"), alt: texto(a, "alt") || alt, posicion: posicionFoto(a.focal) });
+      propios.push({ tipo: "imagen", src: texto(a, "image"), alt: texto(a, "alt") || alt, estilo: estiloFoto(a), marca: marcaEditar(seccionId, b.id, "image") });
     } else if (b.tipo === "video" && texto(a, "video")) {
-      propios.push({ tipo: "video", src: texto(a, "video"), poster: texto(a, "poster"), alt: texto(a, "alt") || alt });
+      propios.push({ tipo: "video", src: texto(a, "video"), poster: texto(a, "poster"), alt: texto(a, "alt") || alt, estilo: estiloFoto(a, "video"), marca: marcaEditar(seccionId, b.id, "video") });
     }
   }
   if (!incluirProducto) return propios;
@@ -108,7 +108,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
   if (!venta) return null;
   const r = (clave: string) => rellenar(texto(a, clave), venta);
 
-  const galeria = medios(seccion.bloques, a.include_product_media !== false, nombre, venta.nombre);
+  const galeria = medios(seccion.id, seccion.bloques, a.include_product_media !== false, nombre, venta.nombre);
   const confianza = seccion.bloques.filter((b) => b.tipo === "trust");
   const puntos = seccion.bloques.filter((b) => b.tipo === "point" && texto(b.ajustes, "text"));
   const tiendas = seccion.bloques.filter((b) => b.tipo === "marketplace" && texto(b.ajustes, "link"));

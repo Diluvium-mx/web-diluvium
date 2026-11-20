@@ -4,6 +4,7 @@
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 
 export function BeneficiosVersion({ seccion }: PropsSeccion) {
@@ -22,6 +23,8 @@ export function BeneficiosVersion({ seccion }: PropsSeccion) {
                   <Image
                     src={texto(b.ajustes, "image")}
                     alt={texto(b.ajustes, "alt")}
+                    style={estiloFoto(b.ajustes)}
+                    {...marcaEditar(seccion.id, b.id, "image")}
                     fill
                     sizes="(min-width: 1200px) 397px, (min-width: 1024px) 31vw, (min-width: 768px) 46vw, calc(100vw - 32px)"
                     className="object-cover"

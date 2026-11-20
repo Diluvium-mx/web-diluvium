@@ -4,6 +4,7 @@
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 import { TablaMedidas } from "./TablaMedidas";
 
@@ -24,6 +25,8 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                   <Image
                     src={texto(p.ajustes, "image")}
                     alt={texto(p.ajustes, "alt")}
+                    style={estiloFoto(p.ajustes)}
+                    {...marcaEditar(seccion.id, p.id, "image")}
                     fill
                     sizes="(min-width: 1200px) 365px, (min-width: 768px) 30vw, 96px"
                     className="object-contain"

@@ -23,9 +23,9 @@
 //     la cancela y la regresa de golpe: se siente trabado (14-nov-2026).
 
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 
-type Lado = { src: string; alt: string; etiqueta: string; posicion?: string };
+type Lado = { src: string; alt: string; etiqueta: string; estilo?: CSSProperties; marca?: Record<string, string> };
 
 /** «forma»: proporción de la caja (la de la portada si no se dice; en la galería de la ficha, «size-full»). */
 export function Comparador({
@@ -177,10 +177,10 @@ export function Comparador({
       className={`relative overflow-hidden bg-niebla select-none [-webkit-touch-callout:none] ${enFoto ? "touch-pan-y" : ""} ${forma}`}
       {...(enFoto ? manejadores : {})}
     >
-      <Image src={antes.src} alt={antes.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" style={antes.posicion ? { objectPosition: antes.posicion } : undefined} draggable={false} />
+      <Image src={antes.src} alt={antes.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" style={antes.estilo} {...antes.marca} draggable={false} />
       <div ref={capa} className="absolute inset-0 overflow-hidden will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
         <div ref={foto} className="absolute inset-0 will-change-transform" style={{ transform: "translate3d(-50%,0,0)" }}>
-          <Image src={despues.src} alt={despues.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" style={despues.posicion ? { objectPosition: despues.posicion } : undefined} draggable={false} />
+          <Image src={despues.src} alt={despues.alt} fill sizes={sizes} loading="eager" fetchPriority="high" className="object-cover" style={despues.estilo} {...despues.marca} draggable={false} />
         </div>
       </div>
 

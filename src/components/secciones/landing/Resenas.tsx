@@ -6,6 +6,7 @@ import Image from "next/image";
 import resenas from "@contenido/resenas.json";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
@@ -30,7 +31,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
     .map((b) => {
       const foto = texto(b.ajustes, "image");
       const r = PUBLICADAS.find((x) => x.fotos.includes(foto));
-      return r ? { id: b.id, foto, ...r } : null;
+      return r ? { id: b.id, foto, ajustes: b.ajustes, ...r } : null;
     })
     .filter((x): x is NonNullable<typeof x> => x !== null);
   if (!tarjetas.length) return null;
@@ -47,8 +48,8 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
         <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {tarjetas.map((t) => (
             <li key={t.id} className="grid min-h-[176px] grid-cols-[116px_minmax(0,1fr)] overflow-hidden rounded-2xl border border-linea bg-white md:grid-cols-[140px_minmax(0,1fr)]">
-              <div className="relative bg-niebla">
-                <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="140px" className="object-cover" />
+              <div className="relative overflow-hidden bg-niebla">
+                <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="140px" className="object-cover" style={estiloFoto(t.ajustes)} {...marcaEditar(seccion.id, t.id, "image")} />
               </div>
               <figure className="m-0 flex flex-col gap-2 p-4 md:p-5">
                 <EstrellasResena n={t.calificacion} />

@@ -1,33 +1,47 @@
 "use client";
 
-// Editor local de las versiones (/editor). A la izquierda, cada parte de la página con su nombre del mapa (B1-P3…):
-// sus textos, sus fotos (cambiar, subir, encuadre) y sus piezas (ordenar, duplicar, quitar). A la derecha, la página
-// como se ve en un celular. «Guardar» escribe la plantilla y la pasa al administrador; «Publicar» sube la copia de
-// prueba a Cloudflare.
+// Editor local de las versiones (/editor), «B · directo en la página» (elegido por el dueño el 21-nov-2026).
+//
+// Fotos: se toca cualquier foto o video en la página de en medio y ahí mismo, dentro de su marco rojo, se arrastra
+// para acomodarla, se acerca, se cambia (biblioteca o subir desde la computadora), se quita, se agrega otra o se mueve
+// de lugar. Cada ajuste se ve al momento en la página. Textos: pestaña aparte con los textos de cada parte.
+// «Guardar» escribe la plantilla (contenido/tema/), la pasa al administrador y deja respaldo; «Publicar» sube la copia
+// de prueba a Cloudflare. Cada foto sabe de qué campo es por su marca data-editar="sección|pieza|campo" (mapa.ts).
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  clavesEncuadre,
+  estiloFoto,
   leerFocal,
   mapaPlantilla,
   PAGINAS_MAPA,
+  type Ajustes,
   type ArchivoMapa,
   type CampoMapa,
   type Esquema,
   type PlantillaTema,
-  type SeccionMapa,
 } from "@/lib/mapa";
 import type { MedioBiblioteca } from "@/lib/editor/archivos";
 
 type Props = { plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
-type Ruta = { s: number; b: number | null };
+type Seleccion = { seccionId: string; piezaId: string; clave: string };
+type Caja = { top: number; left: number; width: number; height: number };
 type EstadoPublicar = { corriendo: boolean; ok: boolean | null; peso: string | null; direccion: string | null; ultimas: string[] };
 
-const copia = <T,>(x: T): T => JSON.parse(JSON.stringify(x)) as T;
+const copia = <T,>(x: T): T => structuredClone(x);
+const marca = (s: Seleccion) => `${s.seccionId}|${s.piezaId}|${s.clave}`;
+const leerMarca = (m: string): Seleccion => {
+  const [seccionId, piezaId, clave] = m.split("|");
+  return { seccionId, piezaId, clave };
+};
 
-/** La foto que corresponde a un encuadre: focal → image, focal_before → image_before… */
-function fotoDelEncuadre(clave: string, ajustes: Record<string, unknown>): string {
-  const foto = clave === "focal" ? ajustes.image : ajustes[clave.replace("focal_", "image_")];
-  return typeof foto === "string" ? foto : "";
+/** Dónde está una foto dentro de la plantilla: índice de sección y de pieza (null = foto de la sección). */
+function ubicar(p: PlantillaTema, sel: Seleccion): { s: number; b: number | null; ajustes: Ajustes } | null {
+  const s = p.secciones.findIndex((x) => x.id === sel.seccionId);
+  if (s < 0) return null;
+  if (!sel.piezaId) return { s, b: null, ajustes: p.secciones[s].ajustes };
+  const b = p.secciones[s].bloques.findIndex((x) => x.id === sel.piezaId);
+  return b < 0 ? null : { s, b, ajustes: p.secciones[s].bloques[b].ajustes };
 }
 
 // ───────────────────────── Biblioteca de fotos y videos ─────────────────────────
@@ -35,54 +49,63 @@ function fotoDelEncuadre(clave: string, ajustes: Record<string, unknown>): strin
 function Biblioteca({
   medios,
   soloVideos,
+  soloResenas,
   alElegir,
   alCerrar,
   alSubir,
 }: {
   medios: MedioBiblioteca[];
   soloVideos: boolean;
+  soloResenas: boolean;
   alElegir: (src: string) => void;
   alCerrar: () => void;
   alSubir: (m: MedioBiblioteca) => void;
 }) {
   const [filtro, setFiltro] = useState("");
-  const [subiendo, setSubiendo] = useState("");
-  const lista = medios.filter((m) => m.video === soloVideos && m.nombre.toLowerCase().includes(filtro.toLowerCase())).slice(0, 240);
+  const [aviso, setAviso] = useState("");
+  const lista = medios
+    .filter((m) => m.video === soloVideos && (soloResenas ? m.carpeta === "resenas" : m.carpeta !== "resenas"))
+    .filter((m) => m.nombre.toLowerCase().includes(filtro.toLowerCase()))
+    .slice(0, 300);
 
   async function subir(archivos: FileList | null) {
     if (!archivos?.length) return;
     for (const archivo of archivos) {
-      setSubiendo(`Subiendo ${archivo.name}…`);
+      setAviso(`Subiendo ${archivo.name}…`);
       const datos = new FormData();
       datos.append("archivo", archivo);
       const r = await fetch("/editor/api/subir", { method: "POST", body: datos });
       const j = (await r.json().catch(() => ({}))) as { ok?: boolean; src?: string; nombre?: string; video?: boolean; mensaje?: string };
       if (!j.ok || !j.src) {
-        setSubiendo(j.mensaje ?? "No se pudo subir.");
+        setAviso(j.mensaje ?? "No se pudo subir.");
         return;
       }
       alSubir({ src: j.src, carpeta: "editor", nombre: j.nombre ?? "", video: Boolean(j.video), fecha: Date.now() });
       if (archivos.length === 1) alElegir(j.src);
     }
-    setSubiendo("");
+    setAviso("");
   }
 
   return (
     <div role="dialog" aria-modal="true" aria-label="Elegir foto" className="fixed inset-0 z-50 flex items-center justify-center bg-tinta/60 p-4" onClick={(e) => e.target === e.currentTarget && alCerrar()}>
       <div className="flex max-h-[90dvh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
         <div className="flex flex-wrap items-center gap-2 border-b border-linea p-3">
-          <strong className="mr-auto text-[17px]">{soloVideos ? "Elegir video" : "Elegir foto"}</strong>
+          <strong className="mr-auto text-[17px]">{soloVideos ? "Elegir video" : soloResenas ? "Elegir foto de una reseña publicada" : "Elegir foto"}</strong>
           <input value={filtro} onChange={(e) => setFiltro(e.target.value)} placeholder="Buscar por nombre…" className="h-10 w-56 rounded-lg border border-linea px-3" />
-          <label className="inline-flex h-10 cursor-pointer items-center rounded-lg bg-marino px-4 font-semibold text-white">
-            Subir desde la computadora
-            <input type="file" accept={soloVideos ? "video/mp4" : "image/jpeg,image/png,image/webp"} multiple className="sr-only" onChange={(e) => subir(e.target.files)} />
-          </label>
+          {!soloResenas && (
+            <label className="inline-flex h-10 cursor-pointer items-center rounded-lg bg-marino px-4 font-semibold text-white">
+              Subir desde la computadora
+              <input type="file" accept={soloVideos ? "video/mp4" : "image/jpeg,image/png,image/webp"} multiple className="sr-only" onChange={(e) => subir(e.target.files)} />
+            </label>
+          )}
           <button type="button" onClick={alCerrar} className="h-10 cursor-pointer rounded-lg border border-linea px-4">
             Cerrar
           </button>
         </div>
-        {subiendo && <p className="m-0 bg-[#fdf1dd] px-4 py-2 text-[14px] font-semibold">{subiendo}</p>}
-        <p className="m-0 px-4 pt-2 text-[13px] text-texto-suave">Lo que subas queda público en la página: nada de datos de clientes.</p>
+        {aviso && <p className="m-0 bg-[#fdf1dd] px-4 py-2 text-[14px] font-semibold">{aviso}</p>}
+        <p className="m-0 px-4 pt-2 text-[13px] text-texto-suave">
+          {soloResenas ? "El muro solo muestra reseñas publicadas: elige la foto de otra reseña." : "Lo que subas queda público en la página: nada de datos de clientes."}
+        </p>
         <ul className="m-0 grid list-none grid-cols-3 gap-2 overflow-y-auto p-3 sm:grid-cols-4 lg:grid-cols-6">
           {lista.map((m) => (
             <li key={m.src}>
@@ -106,82 +129,18 @@ function Biblioteca({
   );
 }
 
-// ───────────────────────── Encuadre (el punto de la foto que nunca se corta) ─────────────────────────
+// ───────────────────────── Un campo de texto (pestaña Textos) ─────────────────────────
 
-function Encuadre({ foto, valor, alCambiar }: { foto: string; valor: unknown; alCambiar: (v: string) => void }) {
-  const { x, y } = leerFocal(valor);
-  if (!foto) return <p className="m-0 text-[13px] text-texto-suave">Primero elige la foto.</p>;
-  return (
-    <div className="grid max-w-[560px] grid-cols-[minmax(0,1fr)_120px] items-start gap-3">
-      <div
-        className="relative w-fit cursor-crosshair overflow-hidden rounded-lg"
-        onClick={(e) => {
-          const r = e.currentTarget.getBoundingClientRect();
-          alCambiar(`${Math.round(((e.clientX - r.left) / r.width) * 100)}% ${Math.round(((e.clientY - r.top) / r.height) * 100)}%`);
-        }}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={foto} alt="" className="block max-h-[360px] w-auto max-w-full" draggable={false} />
-        <span className="pointer-events-none absolute size-7 -translate-1/2 rounded-full border-[3px] border-white bg-[#e11d48]/70 shadow-[0_0_0_2px_#e11d48]" style={{ left: `${x}%`, top: `${y}%` }} />
-      </div>
-      <div>
-        <p className="m-0 mb-1 text-[12px] text-texto-suave">Así queda en el celular (4:3):</p>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={foto} alt="" className="aspect-[4/3] w-full rounded-md object-cover" style={{ objectPosition: `${x}% ${y}%` }} />
-        <p className="m-0 mt-1 text-[12px] text-texto-suave">Toca en la foto el punto importante.</p>
-      </div>
-    </div>
-  );
-}
-
-// ───────────────────────── Un campo ─────────────────────────
-
-function Campo({
-  campo,
-  ajustes,
-  alCambiar,
-  alPedirMedio,
-}: {
-  campo: CampoMapa;
-  ajustes: Record<string, unknown>;
-  alCambiar: (v: unknown) => void;
-  alPedirMedio: (video: boolean) => void;
-}) {
+function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown) => void }) {
   const id = `campo-${campo.codigo}`;
   const valor = campo.valor;
   let control: React.ReactNode;
-  if (campo.tipo === "imagen" || campo.tipo === "video") {
-    const src = typeof valor === "string" ? valor : "";
-    control = (
-      <div className="flex items-center gap-3">
-        {src ? (
-          campo.tipo === "video" ? (
-            <video src={src} muted className="size-20 rounded-lg bg-tinta object-cover" />
-          ) : (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={src} alt="" className="size-20 rounded-lg bg-niebla object-cover" />
-          )
-        ) : (
-          <span className="flex size-20 items-center justify-center rounded-lg bg-niebla text-[12px] text-texto-suave">Sin foto</span>
-        )}
-        <div className="min-w-0">
-          <p className="m-0 truncate text-[13px] text-texto-suave">{campo.resumen}</p>
-          <button type="button" onClick={() => alPedirMedio(campo.tipo === "video")} className="mt-1 h-9 cursor-pointer rounded-lg bg-marino px-3 text-[14px] font-semibold text-white">
-            {campo.tipo === "video" ? "Cambiar video" : "Cambiar foto"}
-          </button>
-        </div>
-      </div>
-    );
-  } else if (campo.tipo === "focal") {
-    control = <Encuadre foto={fotoDelEncuadre(campo.clave, ajustes)} valor={valor} alCambiar={alCambiar} />;
-  } else if (campo.tipo === "siNo") {
+  if (campo.tipo === "siNo") {
     control = <input id={id} type="checkbox" checked={valor === true} onChange={(e) => alCambiar(e.target.checked)} className="size-5" />;
   } else if (campo.tipo === "numero") {
     control = <input id={id} type="number" value={typeof valor === "number" ? valor : ""} onChange={(e) => alCambiar(Number(e.target.value))} className="h-10 w-32 rounded-lg border border-linea px-3" />;
   } else if (campo.tipo === "html" || campo.tipo === "textoLargo") {
-    control = (
-      <textarea id={id} value={typeof valor === "string" ? valor : ""} onChange={(e) => alCambiar(e.target.value)} rows={campo.tipo === "html" ? 4 : 3} className="w-full rounded-lg border border-linea p-2 text-[14px] leading-snug" />
-    );
+    control = <textarea id={id} value={typeof valor === "string" ? valor : ""} onChange={(e) => alCambiar(e.target.value)} rows={campo.tipo === "html" ? 4 : 3} className="w-full rounded-lg border border-linea p-2 text-[14px] leading-snug" />;
   } else {
     control = <input id={id} value={typeof valor === "string" ? valor : String(valor ?? "")} onChange={(e) => alCambiar(e.target.value)} className="h-10 w-full rounded-lg border border-linea px-3 text-[14px]" />;
   }
@@ -197,27 +156,34 @@ function Campo({
   );
 }
 
+const ES_DE_FOTO = new Set(["imagen", "video", "focal", "zoom"]);
+
 // ───────────────────────── Editor ─────────────────────────
 
 export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const archivos = Object.keys(PAGINAS_MAPA) as ArchivoMapa[];
   const [archivo, setArchivo] = useState<ArchivoMapa>("product.b1");
+  const [modo, setModo] = useState<"fotos" | "textos">("fotos");
   const [borradores, setBorradores] = useState(() => copia(plantillas));
   const [guardadas, setGuardadas] = useState(() => copia(plantillas));
   const [medios, setMedios] = useState(biblioteca);
-  const [abierta, setAbierta] = useState<number | null>(1);
-  const [abiertos, setAbiertos] = useState<Set<string>>(new Set());
-  const [pedido, setPedido] = useState<{ ruta: Ruta; clave: string; video: boolean; nuevo?: boolean } | null>(null);
+  const [sel, setSel] = useState<Seleccion | null>(null);
+  const [caja, setCaja] = useState<Caja | null>(null);
+  const [pedido, setPedido] = useState<{ agregar: boolean } | null>(null);
+  const [abierta, setAbierta] = useState<number | null>(null);
   const [mensaje, setMensaje] = useState("");
   const [guardando, setGuardando] = useState(false);
   const [vista, setVista] = useState(0);
-  const [conMapa, setConMapa] = useState(true);
+  const [cargada, setCargada] = useState(0);
   const [publicacion, setPublicacion] = useState<EstadoPublicar | null>(null);
-  const arrastrado = useRef<{ s: number; b: number } | null>(null);
+  const marco = useRef<HTMLIFrameElement>(null);
+  const arrastre = useRef<{ px: number; py: number; x: number; y: number; ox: number; oy: number } | null>(null);
 
   const plantilla = borradores[archivo];
   const mapa = useMemo(() => mapaPlantilla(archivo, plantilla, esquema), [archivo, plantilla, esquema]);
   const pendientes = archivos.filter((a) => JSON.stringify(borradores[a]) !== JSON.stringify(guardadas[a]));
+  const doc = () => marco.current?.contentDocument ?? null;
+  const elementoSel = useCallback(() => (sel ? (doc()?.querySelector<HTMLElement>(`[data-editar="${CSS.escape(marca(sel))}"]`) ?? null) : null), [sel]);
 
   // Aviso si se cierra la pestaña con cambios sin guardar.
   useEffect(() => {
@@ -236,46 +202,145 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     });
   }
 
-  function ponerValor(ruta: Ruta, clave: string, valor: unknown) {
+  function ponerEnSel(cambios: Ajustes) {
+    if (!sel) return;
     cambiar((p) => {
-      const s = p.secciones[ruta.s];
-      const destino = ruta.b === null ? s.ajustes : s.bloques[ruta.b].ajustes;
-      destino[clave] = valor;
+      const u = ubicar(p, sel);
+      if (u) Object.assign(u.ajustes, cambios);
     });
   }
 
-  function moverBloque(s: number, de: number, a: number) {
-    cambiar((p) => {
-      const lista = p.secciones[s].bloques;
-      if (a < 0 || a >= lista.length) return;
-      const [pieza] = lista.splice(de, 1);
-      lista.splice(a, 0, pieza);
-    });
+  // ── Lo que se ajusta se ve al momento en la página de en medio ──
+  useEffect(() => {
+    const d = doc();
+    if (!d || modo !== "fotos") return;
+    for (const el of d.querySelectorAll<HTMLImageElement | HTMLVideoElement>("[data-editar]")) {
+      const s = leerMarca(el.dataset.editar ?? "");
+      const ahora = ubicar(plantilla, s);
+      const antes = ubicar(guardadas[archivo], s);
+      if (!ahora) {
+        // Quitada (se va al guardar).
+        el.style.opacity = "0.15";
+        continue;
+      }
+      const estilo = estiloFoto(ahora.ajustes, s.clave) ?? {};
+      el.style.objectPosition = String(estilo.objectPosition ?? "");
+      el.style.transform = String(estilo.transform ?? "");
+      el.style.transformOrigin = String(estilo.transformOrigin ?? "");
+      el.style.opacity = "";
+      const src = ahora.ajustes[s.clave];
+      if (typeof src === "string" && antes && src !== antes.ajustes[s.clave] && el.getAttribute("data-src-nueva") !== src) {
+        el.setAttribute("data-src-nueva", src);
+        if (el instanceof HTMLImageElement) el.srcset = "";
+        el.src = src;
+      }
+    }
+  }, [plantilla, guardadas, archivo, cargada, modo]);
+
+  // ── Tocar una foto en la página la elige; los enlaces no se abren mientras se edita ──
+  useEffect(() => {
+    const d = doc();
+    if (!d || modo !== "fotos") return;
+    const alTocar = (e: MouseEvent) => {
+      const marcada = d.elementsFromPoint(e.clientX, e.clientY).find((x) => (x as HTMLElement).dataset?.editar) as HTMLElement | undefined;
+      if (marcada) {
+        e.preventDefault();
+        e.stopPropagation();
+        setSel(leerMarca(marcada.dataset.editar ?? ""));
+        return;
+      }
+      if ((e.target as Element | null)?.closest?.("a")) e.preventDefault();
+    };
+    d.addEventListener("click", alTocar, true);
+    return () => d.removeEventListener("click", alTocar, true);
+  }, [cargada, modo]);
+
+  // ── El marco rojo sigue a la foto aunque se baje la página o se deslice la galería ──
+  useEffect(() => {
+    if (!sel || modo !== "fotos") return;
+    let cuadro = 0;
+    let previa = "";
+    const seguir = () => {
+      const el = elementoSel();
+      const marcoFoto = el?.parentElement?.closest<HTMLElement>(".overflow-hidden") ?? el;
+      if (marcoFoto) {
+        const r = marcoFoto.getBoundingClientRect();
+        const nueva = `${Math.round(r.top)},${Math.round(r.left)},${Math.round(r.width)},${Math.round(r.height)}`;
+        if (nueva !== previa) {
+          previa = nueva;
+          setCaja({ top: r.top, left: r.left, width: r.width, height: r.height });
+        }
+      } else if (previa !== "-") {
+        previa = "-";
+        setCaja(null);
+      }
+      cuadro = requestAnimationFrame(seguir);
+    };
+    cuadro = requestAnimationFrame(seguir);
+    return () => cancelAnimationFrame(cuadro);
+  }, [sel, modo, elementoSel, cargada]);
+
+  const u = sel ? ubicar(plantilla, sel) : null;
+  const claves = sel ? clavesEncuadre(sel.clave) : null;
+  const focal = u && claves ? leerFocal(u.ajustes[claves.focal]) : { x: 50, y: 50 };
+  const zoom = u && claves && typeof u.ajustes[claves.zoom] === "number" ? (u.ajustes[claves.zoom] as number) : 1;
+  const seccionSel = u ? mapa[u.s] : null;
+  const piezaSel = u && u.b !== null && seccionSel ? seccionSel.bloques[u.b] : null;
+  const campoSel = sel && seccionSel ? (piezaSel ?? seccionSel).campos.find((c) => c.clave === sel.clave) : null;
+  const esPieza = Boolean(u && u.b !== null);
+  const tipoPieza = u && u.b !== null ? plantilla.secciones[u.s].bloques[u.b].tipo : null;
+  const esVideo = sel?.clave === "video";
+
+  /** Cuánto se mueve el encuadre al arrastrar: lo que la foto sobra fuera de su marco (en px). */
+  function sobrante(): { ox: number; oy: number } {
+    const el = elementoSel();
+    if (!el || !caja) return { ox: 1, oy: 1 };
+    const nw = el instanceof HTMLVideoElement ? el.videoWidth : (el as HTMLImageElement).naturalWidth;
+    const nh = el instanceof HTMLVideoElement ? el.videoHeight : (el as HTMLImageElement).naturalHeight;
+    if (!nw || !nh) return { ox: caja.width * 0.5, oy: caja.height * 0.5 };
+    const escala = Math.max(caja.width / nw, caja.height / nh);
+    return {
+      ox: (nw * escala - caja.width) * zoom + caja.width * (zoom - 1),
+      oy: (nh * escala - caja.height) * zoom + caja.height * (zoom - 1),
+    };
   }
 
-  function duplicarBloque(s: number, b: number) {
+  function moverPieza(dir: -1 | 1) {
+    if (!u || u.b === null) return;
     cambiar((p) => {
-      const lista = p.secciones[s].bloques;
-      const nueva = copia(lista[b]);
+      const lista = p.secciones[u.s].bloques;
+      const tipo = lista[u.b!].tipo;
+      let j = u.b! + dir;
+      while (j >= 0 && j < lista.length && lista[j].tipo !== tipo) j += dir;
+      if (j < 0 || j >= lista.length) return;
+      [lista[u.b!], lista[j]] = [lista[j], lista[u.b!]];
+    });
+    setMensaje("Se movió de lugar: se ve en la página al guardar.");
+  }
+
+  function quitar() {
+    if (!u || u.b === null || !sel) return;
+    if (!confirm("¿Quitar esta foto de la página? (Se puede deshacer con «Descartar cambios» mientras no guardes.)")) return;
+    cambiar((p) => {
+      p.secciones[u.s].bloques.splice(u.b!, 1);
+    });
+    setSel(null);
+    setMensaje("Foto quitada: desaparece de la página al guardar.");
+  }
+
+  function agregarDespues(src: string) {
+    if (!u || u.b === null || !sel) return;
+    cambiar((p) => {
+      const lista = p.secciones[u.s].bloques;
+      const nueva = copia(lista[u.b!]);
       nueva.id = `${nueva.tipo}_${Date.now().toString(36)}`;
-      lista.splice(b + 1, 0, nueva);
+      nueva.ajustes[sel.clave] = src;
+      const k = clavesEncuadre(sel.clave);
+      nueva.ajustes[k.focal] = "50% 50%";
+      delete nueva.ajustes[k.zoom];
+      lista.splice(u.b! + 1, 0, nueva);
     });
-  }
-
-  function quitarBloque(s: number, b: number) {
-    if (!confirm("¿Quitar esta pieza? (Se puede deshacer con «Descartar cambios» mientras no guardes.)")) return;
-    cambiar((p) => {
-      p.secciones[s].bloques.splice(b, 1);
-    });
-  }
-
-  /** «Agregar foto»: una pieza de foto nueva justo después de la última foto de la sección. */
-  function agregarFoto(s: number, src: string) {
-    cambiar((p) => {
-      const lista = p.secciones[s].bloques;
-      const ultima = lista.map((b) => b.tipo).lastIndexOf("image");
-      lista.splice(ultima + 1, 0, { id: `image_${Date.now().toString(36)}`, tipo: "image", ajustes: { image: src, alt: "Compuerta Anti-Inundaciones", focal: "50% 50%" } });
-    });
+    setMensaje("Foto agregada después de la elegida: aparece en la página al guardar.");
   }
 
   async function guardar() {
@@ -292,6 +357,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         setGuardadas((g) => ({ ...g, [a]: copia(borradores[a]) }));
         setMensaje(`${PAGINAS_MAPA[a].nombre}: ${j.mensaje}`);
       }
+      setSel(null);
       setVista((v) => v + 1);
     } finally {
       setGuardando(false);
@@ -308,7 +374,6 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     setPublicacion({ corriendo: true, ok: null, peso: null, direccion: null, ultimas: ["Empezando…"] });
   }
 
-  // Mientras se publica, pregunta cada 4 s cómo va.
   useEffect(() => {
     if (!publicacion?.corriendo) return;
     const t = setInterval(async () => {
@@ -318,14 +383,15 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     return () => clearInterval(t);
   }, [publicacion?.corriendo]);
 
-  const seccion: SeccionMapa | null = abierta === null ? null : mapa[abierta] ?? null;
   const ruta = PAGINAS_MAPA[archivo].ruta;
+  const ALTO = 844;
+  const barraArriba = caja ? caja.top + caja.height + 190 > ALTO - 16 : false;
 
   return (
     <div className="flex h-dvh flex-col">
-      {/* Barra de arriba */}
+      {/* ── Barra de arriba ── */}
       <header className="flex flex-wrap items-center gap-2 border-b border-linea bg-white px-4 py-2.5">
-        <strong className="mr-2 text-[17px] text-marino">Editor · B1</strong>
+        <strong className="mr-1 text-[17px] text-marino">Editor · B1</strong>
         <div className="flex rounded-lg bg-niebla p-1">
           {archivos.map((a) => (
             <button
@@ -333,6 +399,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
               type="button"
               onClick={() => {
                 setArchivo(a);
+                setSel(null);
                 setAbierta(null);
               }}
               className={`h-9 cursor-pointer rounded-md px-3 text-[14px] font-semibold ${a === archivo ? "bg-white text-marino shadow" : "text-texto-suave"}`}
@@ -342,11 +409,35 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
             </button>
           ))}
         </div>
+        <div className="flex rounded-lg bg-niebla p-1">
+          {(
+            [
+              ["fotos", "Fotos"],
+              ["textos", "Textos"],
+            ] as const
+          ).map(([m, t]) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => {
+                setModo(m);
+                setSel(null);
+              }}
+              className={`h-9 cursor-pointer rounded-md px-3 text-[14px] font-semibold ${modo === m ? "bg-white text-marino shadow" : "text-texto-suave"}`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
         <span className="min-w-0 flex-1 truncate text-[14px] text-texto-suave">{mensaje}</span>
         <button
           type="button"
           disabled={!pendientes.length || guardando}
-          onClick={() => setBorradores(copia(guardadas))}
+          onClick={() => {
+            setBorradores(copia(guardadas));
+            setSel(null);
+            setVista((v) => v + 1);
+          }}
           className="h-10 cursor-pointer rounded-lg border border-linea bg-white px-3 text-[14px] disabled:cursor-not-allowed disabled:opacity-50"
         >
           Descartar cambios
@@ -361,9 +452,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
 
       {publicacion && (
         <div className={`border-b px-4 py-2 text-[13px] ${publicacion.ok === false ? "bg-[#fde8e8]" : publicacion.ok ? "bg-[#e6f6ea]" : "bg-[#fdf1dd]"}`}>
-          <strong>
-            {publicacion.corriendo ? "Publicando la copia de prueba (unos minutos)…" : publicacion.ok ? "Publicado." : "La publicación falló."}
-          </strong>{" "}
+          <strong>{publicacion.corriendo ? "Publicando la copia de prueba (unos minutos)…" : publicacion.ok ? "Publicado." : "La publicación falló."}</strong>{" "}
           {publicacion.peso && <>Peso: {publicacion.peso} de 3 MB. </>}
           {publicacion.direccion && !publicacion.corriendo && (
             <a href={`${publicacion.direccion}${ruta}`} target="_blank" rel="noreferrer" className="font-semibold text-marino underline">
@@ -374,155 +463,188 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         </div>
       )}
 
-      <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_430px]">
-        {/* Partes de la página */}
-        <main className="min-h-0 overflow-y-auto p-4">
-          <p className="m-0 mb-3 text-[14px] text-texto-suave">
-            Cada parte tiene su nombre del mapa. Toca una para ver sus textos, fotos y piezas. Los cambios se ven en la vista de la derecha al guardar.
-          </p>
-          <ul className="m-0 grid list-none gap-2 p-0">
-            {mapa.map((s, i) => (
-              <li key={s.id} className="rounded-xl border border-linea bg-white">
-                <button type="button" onClick={() => setAbierta(abierta === i ? null : i)} className="flex w-full cursor-pointer items-center gap-2 px-3 py-3 text-left">
-                  <code className="rounded bg-[#e11d48] px-2 py-1 font-mono text-[13px] font-bold text-white">{s.codigo}</code>
-                  <strong className="flex-1 text-[15px]">{s.etiqueta}</strong>
-                  <span className="text-[13px] text-texto-suave">{s.bloques.length ? `${s.bloques.length} piezas` : ""}</span>
-                  <span aria-hidden="true">{abierta === i ? "▴" : "▾"}</span>
-                </button>
-
-                {seccion && abierta === i && (
-                  <div className="border-t border-linea px-3 pb-3">
-                    {seccion.campos.filter((c) => !c.diseno).map((c) => (
-                      <Campo
-                        key={c.codigo}
-                        campo={c}
-                        ajustes={plantilla.secciones[i].ajustes}
-                        alCambiar={(v) => ponerValor({ s: i, b: null }, c.clave, v)}
-                        alPedirMedio={(video) => setPedido({ ruta: { s: i, b: null }, clave: c.clave, video })}
-                      />
-                    ))}
-
-                    {seccion.bloques.length > 0 && (
-                      <div className="mt-2">
-                        <div className="mb-1 flex items-center gap-2">
-                          <strong className="flex-1 text-[14px]">Piezas (arrástralas o usa ▲ ▼ para cambiar el orden)</strong>
-                          {seccion.bloques.some((b) => b.tipo === "image") && (
-                            <button type="button" onClick={() => setPedido({ ruta: { s: i, b: null }, clave: "image", video: false, nuevo: true })} className="h-9 cursor-pointer rounded-lg bg-marino px-3 text-[13px] font-semibold text-white">
-                              + Agregar foto
-                            </button>
-                          )}
-                        </div>
-                        <ul className="m-0 grid list-none gap-1.5 p-0">
-                          {seccion.bloques.map((b) => {
-                            const ajustes = plantilla.secciones[i].bloques[b.indice].ajustes;
-                            const foto = [ajustes.image, ajustes.image_after, ajustes.poster].find((x) => typeof x === "string" && x) as string | undefined;
-                            const llave = `${archivo}:${b.codigo}`;
-                            const abiertoB = abiertos.has(llave);
-                            return (
-                              <li
-                                key={plantilla.secciones[i].bloques[b.indice].id}
-                                draggable
-                                onDragStart={() => (arrastrado.current = { s: i, b: b.indice })}
-                                onDragOver={(e) => e.preventDefault()}
-                                onDrop={() => {
-                                  if (arrastrado.current && arrastrado.current.s === i) moverBloque(i, arrastrado.current.b, b.indice);
-                                  arrastrado.current = null;
-                                }}
-                                className="rounded-lg border border-linea bg-niebla"
-                              >
-                                <div className="flex items-center gap-2 p-1.5">
-                                  <span aria-hidden="true" className="cursor-grab px-1 text-texto-suave">⋮⋮</span>
-                                  {foto ? (
-                                    // eslint-disable-next-line @next/next/no-img-element
-                                    <img src={foto} alt="" className="size-11 rounded-md object-cover" />
-                                  ) : null}
-                                  <button
-                                    type="button"
-                                    onClick={() =>
-                                      setAbiertos((x) => {
-                                        const n = new Set(x);
-                                        if (n.has(llave)) n.delete(llave);
-                                        else n.add(llave);
-                                        return n;
-                                      })
-                                    }
-                                    className="min-w-0 flex-1 cursor-pointer text-left"
-                                  >
-                                    <code className="font-mono text-[12px] font-bold text-[#e11d48]">{b.codigo}</code> <span className="text-[13px] font-semibold">{b.etiqueta}</span>
-                                    <span className="block truncate text-[12px] text-texto-suave">{b.campos.find((c) => c.tipo !== "focal")?.resumen}</span>
-                                  </button>
-                                  <button type="button" aria-label="Subir" onClick={() => moverBloque(i, b.indice, b.indice - 1)} className="size-8 cursor-pointer rounded-md bg-white">▲</button>
-                                  <button type="button" aria-label="Bajar" onClick={() => moverBloque(i, b.indice, b.indice + 1)} className="size-8 cursor-pointer rounded-md bg-white">▼</button>
-                                  <button type="button" onClick={() => duplicarBloque(i, b.indice)} className="h-8 cursor-pointer rounded-md bg-white px-2 text-[12px]">Duplicar</button>
-                                  <button type="button" onClick={() => quitarBloque(i, b.indice)} className="h-8 cursor-pointer rounded-md bg-white px-2 text-[12px] text-[#b42318]">Quitar</button>
-                                </div>
-                                {abiertoB && (
-                                  <div className="border-t border-linea bg-white px-3">
-                                    {b.campos.map((c) => (
-                                      <Campo
-                                        key={c.codigo}
-                                        campo={c}
-                                        ajustes={ajustes}
-                                        alCambiar={(v) => ponerValor({ s: i, b: b.indice }, c.clave, v)}
-                                        alPedirMedio={(video) => setPedido({ ruta: { s: i, b: b.indice }, clave: c.clave, video })}
-                                      />
-                                    ))}
-                                  </div>
-                                )}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    )}
-
-                    {seccion.campos.some((c) => c.diseno) && (
-                      <details className="mt-2">
-                        <summary className="cursor-pointer py-2 text-[14px] font-semibold text-texto-suave">Diseño (colores, tamaños…)</summary>
-                        {seccion.campos.filter((c) => c.diseno).map((c) => (
+      <div className="flex min-h-0 flex-1">
+        {/* ── Pestaña Textos: la lista de cada parte ── */}
+        {modo === "textos" && (
+          <main className="min-h-0 flex-1 overflow-y-auto p-4">
+            <p className="m-0 mb-3 text-[14px] text-texto-suave">Los textos de cada parte, con su nombre del mapa. Las fotos se editan en la pestaña Fotos. Se ven en la página al guardar.</p>
+            <ul className="m-0 grid list-none gap-2 p-0">
+              {mapa.map((s, i) => {
+                const textos = s.campos.filter((c) => !c.diseno && !ES_DE_FOTO.has(c.tipo));
+                const piezas = s.bloques.filter((b) => b.campos.some((c) => !ES_DE_FOTO.has(c.tipo)));
+                if (!textos.length && !piezas.length) return null;
+                return (
+                  <li key={s.id} className="rounded-xl border border-linea bg-white">
+                    <button type="button" onClick={() => setAbierta(abierta === i ? null : i)} className="flex w-full cursor-pointer items-center gap-2 px-3 py-3 text-left">
+                      <code className="rounded bg-[#e11d48] px-2 py-1 font-mono text-[13px] font-bold text-white">{s.codigo}</code>
+                      <strong className="flex-1 text-[15px]">{s.etiqueta}</strong>
+                      <span aria-hidden="true">{abierta === i ? "▴" : "▾"}</span>
+                    </button>
+                    {abierta === i && (
+                      <div className="border-t border-linea px-3 pb-3">
+                        {textos.map((c) => (
                           <Campo
                             key={c.codigo}
                             campo={c}
-                            ajustes={plantilla.secciones[i].ajustes}
-                            alCambiar={(v) => ponerValor({ s: i, b: null }, c.clave, v)}
-                            alPedirMedio={(video) => setPedido({ ruta: { s: i, b: null }, clave: c.clave, video })}
+                            alCambiar={(v) =>
+                              cambiar((p) => {
+                                p.secciones[i].ajustes[c.clave] = v;
+                              })
+                            }
                           />
                         ))}
-                      </details>
+                        {piezas.map((b) => (
+                          <div key={b.codigo} className="mt-2 rounded-lg bg-niebla px-3 py-1">
+                            <p className="m-0 pt-1 text-[13px] font-bold">
+                              <code className="font-mono text-[#e11d48]">{b.codigo}</code> · {b.etiqueta}
+                            </p>
+                            {b.campos
+                              .filter((c) => !ES_DE_FOTO.has(c.tipo))
+                              .map((c) => (
+                                <Campo
+                                  key={c.codigo}
+                                  campo={c}
+                                  alCambiar={(v) =>
+                                    cambiar((p) => {
+                                      p.secciones[i].bloques[b.indice].ajustes[c.clave] = v;
+                                    })
+                                  }
+                                />
+                              ))}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </main>
+        )}
+
+        {/* ── La página en un celular (con el marco rojo encima en Fotos) ── */}
+        <div className={`flex min-h-0 items-start justify-center gap-6 overflow-auto bg-niebla p-4 ${modo === "fotos" ? "flex-1" : "w-[440px] shrink-0 border-l border-linea"}`}>
+          <div className="relative shrink-0 overflow-hidden rounded-[28px] border-[8px] border-tinta bg-white" style={{ width: 390 + 16, height: ALTO + 16 }}>
+            <iframe ref={marco} key={`${archivo}-${vista}`} title="Página" src={ruta} onLoad={() => setCargada((c) => c + 1)} className="size-full" style={{ width: 390, height: ALTO }} />
+
+            {modo === "fotos" && sel && caja && u && (
+              <div className="pointer-events-none absolute inset-0">
+                {/* Marco rojo sobre la foto: arrastrar acomoda la foto dentro de él. */}
+                <div
+                  className="pointer-events-auto absolute cursor-grab touch-none border-4 border-[#e11d48] active:cursor-grabbing"
+                  style={{ top: caja.top, left: caja.left, width: caja.width, height: caja.height }}
+                  onPointerDown={(e) => {
+                    const { ox, oy } = sobrante();
+                    arrastre.current = { px: e.clientX, py: e.clientY, x: focal.x, y: focal.y, ox, oy };
+                    try {
+                      e.currentTarget.setPointerCapture(e.pointerId);
+                    } catch {
+                      // Sin captura: se sigue igual mientras el puntero esté encima.
+                    }
+                  }}
+                  onPointerMove={(e) => {
+                    const a = arrastre.current;
+                    if (!a || !claves) return;
+                    // Arrastrar la foto a la derecha deja ver más de su lado izquierdo: el punto baja.
+                    // Si la foto no sobra hacia un lado, en ese sentido no hay nada que acomodar.
+                    const x = a.ox < 2 ? a.x : Math.round(Math.min(100, Math.max(0, a.x - ((e.clientX - a.px) / a.ox) * 100)));
+                    const y = a.oy < 2 ? a.y : Math.round(Math.min(100, Math.max(0, a.y - ((e.clientY - a.py) / a.oy) * 100)));
+                    ponerEnSel({ [claves.focal]: `${x}% ${y}%` });
+                  }}
+                  onPointerUp={() => (arrastre.current = null)}
+                  onPointerCancel={() => (arrastre.current = null)}
+                  onDoubleClick={() => setSel(null)}
+                >
+                  <span className="absolute top-1/2 left-1/2 -translate-1/2 rounded-full bg-tinta/70 px-2.5 py-1 text-[12px] font-semibold whitespace-nowrap text-white">✋ Arrastra la foto</span>
+                </div>
+
+                {/* Botones de la foto, debajo (o arriba si no caben). */}
+                <div
+                  className="pointer-events-auto absolute z-10 grid gap-2 rounded-xl bg-white p-2.5 shadow-[0_10px_30px_-8px_rgba(12,30,51,0.55)]"
+                  style={{
+                    left: Math.max(6, Math.min(caja.left, 390 - 326)),
+                    width: 320,
+                    ...(barraArriba ? { top: Math.max(6, caja.top - 186) } : { top: caja.top + caja.height + 6 }),
+                  }}
+                >
+                  <div className="flex items-center gap-2 text-[12px]">
+                    {campoSel && <code className="rounded bg-[#e11d48] px-1.5 py-0.5 font-mono text-[11px] font-bold text-white">{campoSel.codigo}</code>}
+                    <span className="min-w-0 flex-1 truncate font-semibold">{piezaSel?.etiqueta ?? campoSel?.etiqueta}</span>
+                    <button type="button" onClick={() => setSel(null)} className="h-7 cursor-pointer rounded-md bg-niebla px-2 font-semibold">
+                      Listo
+                    </button>
+                  </div>
+                  <label className="flex items-center gap-2 text-[13px]">
+                    <span className="w-14 shrink-0 font-semibold">Acercar</span>
+                    <input type="range" min={1} max={3} step={0.05} value={zoom} onChange={(e) => claves && ponerEnSel({ [claves.zoom]: Number(e.target.value) })} className="w-full" />
+                    <span className="w-9 text-right tabular-nums">{zoom.toFixed(1)}×</span>
+                  </label>
+                  <div className="flex flex-wrap gap-1.5">
+                    <button type="button" onClick={() => setPedido({ agregar: false })} className="h-8 cursor-pointer rounded-lg bg-marino px-2.5 text-[12.5px] font-semibold text-white">
+                      {esVideo ? "Cambiar video" : "Cambiar foto"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => claves && ponerEnSel({ [claves.focal]: "50% 50%", [claves.zoom]: 1 })}
+                      className="h-8 cursor-pointer rounded-lg border border-linea px-2.5 text-[12.5px] font-semibold"
+                    >
+                      Centrar
+                    </button>
+                    {esPieza && (
+                      <>
+                        <button type="button" onClick={() => setPedido({ agregar: true })} className="h-8 cursor-pointer rounded-lg border border-linea px-2.5 text-[12.5px] font-semibold">
+                          + Agregar otra
+                        </button>
+                        <button type="button" onClick={quitar} className="h-8 cursor-pointer rounded-lg border border-linea px-2.5 text-[12.5px] font-semibold text-[#b42318]">
+                          Quitar
+                        </button>
+                        <button type="button" aria-label="Mover antes" onClick={() => moverPieza(-1)} className="h-8 cursor-pointer rounded-lg border border-linea px-2 text-[12.5px] font-semibold">
+                          ◀ Antes
+                        </button>
+                        <button type="button" aria-label="Mover después" onClick={() => moverPieza(1)} className="h-8 cursor-pointer rounded-lg border border-linea px-2 text-[12.5px] font-semibold">
+                          Después ▶
+                        </button>
+                      </>
                     )}
                   </div>
-                )}
-              </li>
-            ))}
-          </ul>
-        </main>
+                  {!esPieza && <p className="m-0 text-[11.5px] text-texto-suave">Esta foto es fija en el diseño: se puede cambiar o acomodar, no quitar.</p>}
+                </div>
+              </div>
+            )}
+          </div>
 
-        {/* Vista de celular */}
-        <aside className="hidden min-h-0 flex-col items-center gap-2 border-l border-linea bg-white p-3 lg:flex">
-          <div className="flex w-full items-center gap-2 text-[13px]">
-            <strong className="flex-1">Vista de celular (lo guardado)</strong>
-            <label className="flex items-center gap-1">
-              <input type="checkbox" checked={conMapa} onChange={(e) => setConMapa(e.target.checked)} /> Con mapa
-            </label>
-            <button type="button" onClick={() => setVista((v) => v + 1)} className="h-8 cursor-pointer rounded-md border border-linea px-2">
-              Recargar
-            </button>
-          </div>
-          <div className="min-h-0 w-[390px] flex-1 overflow-hidden rounded-[28px] border-[8px] border-tinta">
-            <iframe key={`${archivo}-${vista}-${conMapa}`} title="Vista de celular" src={`${ruta}${conMapa ? "?mapa" : ""}`} className="size-full bg-white" />
-          </div>
-        </aside>
+          {modo === "fotos" && (
+            <aside className="w-[300px] shrink-0 pt-2 text-[14px] leading-relaxed text-texto-suave">
+              <p className="m-0 font-bold text-tinta">Cómo se usa</p>
+              <ol className="mt-1 mb-3 pl-5">
+                <li>Toca cualquier foto o video de la página.</li>
+                <li>Arrástrala dentro de su marco rojo hasta que quede bien; usa «Acercar» si hace falta.</li>
+                <li>Cámbiala, quítala, agrega otra o muévela de lugar con sus botones.</li>
+                <li>«Guardar» arriba cuando termines.</li>
+              </ol>
+              <p className="m-0">
+                Puedes bajar la página y deslizar la galería con el mouse como siempre: el marco sigue a la foto. Doble clic en el marco o «Listo» para soltarla.
+              </p>
+              {pendientes.length > 0 && (
+                <p className="mt-3 rounded-lg bg-[#fdf1dd] p-2.5 text-[13px] text-[#8a4b00]">
+                  Hay cambios sin guardar. Los ajustes de encuadre y las fotos cambiadas ya se ven; las fotos agregadas, quitadas o movidas aparecen al guardar.
+                </p>
+              )}
+            </aside>
+          )}
+        </div>
       </div>
 
-      {pedido && (
+      {pedido && sel && (
         <Biblioteca
           medios={medios}
-          soloVideos={pedido.video}
+          soloVideos={esVideo}
+          soloResenas={tipoPieza === "review"}
           alSubir={(m) => setMedios((x) => [m, ...x])}
           alCerrar={() => setPedido(null)}
           alElegir={(src) => {
-            if (pedido.nuevo) agregarFoto(pedido.ruta.s, src);
-            else ponerValor(pedido.ruta, pedido.clave, src);
+            if (pedido.agregar) agregarDespues(src);
+            else if (claves) ponerEnSel({ [sel.clave]: src, [claves.focal]: "50% 50%", [claves.zoom]: 1 });
             setPedido(null);
           }}
         />

@@ -9,9 +9,9 @@
 // - botón de sonido abajo a la derecha y una barra fina con el avance.
 // No baja nada hasta que llegan a él (preload="none"): la página abre igual de rápido.
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
-type Props = { src: string; poster: string; alt: string; activo: boolean };
+type Props = { src: string; poster: string; alt: string; activo: boolean; estilo?: CSSProperties; marca?: Record<string, string> };
 
 function Icono({ d, className = "size-8" }: { d: string; className?: string }) {
   return (
@@ -26,7 +26,7 @@ const PAUSA = "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z";
 const SIN_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm12.6 3l2.7-2.7-1.1-1.1-2.7 2.7-2.7-2.7-1.1 1.1 2.7 2.7-2.7 2.7 1.1 1.1 2.7-2.7 2.7 2.7 1.1-1.1z";
 const CON_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
 
-export function VideoGaleria({ src, poster, alt, activo }: Props) {
+export function VideoGaleria({ src, poster, alt, activo, estilo, marca }: Props) {
   const video = useRef<HTMLVideoElement>(null);
   const barra = useRef<HTMLDivElement>(null);
   const [andando, setAndando] = useState(false);
@@ -109,6 +109,8 @@ export function VideoGaleria({ src, poster, alt, activo }: Props) {
         disablePictureInPicture
         aria-label={alt}
         className="absolute inset-0 size-full object-cover"
+        style={estilo}
+        {...marca}
         onPlay={() => setAndando(true)}
         onPause={() => setAndando(false)}
         onWaiting={() => setCargando(true)}

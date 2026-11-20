@@ -10,17 +10,19 @@
 // - la foto de antes y después (B1) se arrastra desde su línea; el resto de esa foto desliza la galería como las demás.
 
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 import { Comparador } from "./Comparador";
 import { VideoGaleria } from "./VideoGaleria";
 
+/** estilo: encuadre y acercamiento elegidos en el editor · marca: para que el editor sepa de qué campo es la foto. */
+type Ajuste = { estilo?: CSSProperties; marca?: Record<string, string> };
 export type MedioGaleria =
-  | { tipo: "imagen"; src: string; alt: string; posicion?: string }
-  | { tipo: "video"; src: string; poster: string; alt: string }
+  | ({ tipo: "imagen"; src: string; alt: string } & Ajuste)
+  | ({ tipo: "video"; src: string; poster: string; alt: string } & Ajuste)
   | {
       tipo: "antesDespues";
-      antes: { src: string; alt: string; etiqueta: string; posicion?: string };
-      despues: { src: string; alt: string; etiqueta: string; posicion?: string };
+      antes: { src: string; alt: string; etiqueta: string } & Ajuste;
+      despues: { src: string; alt: string; etiqueta: string } & Ajuste;
     };
 
 const TAMANO = "(min-width: 1200px) 640px, (min-width: 1024px) 52vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)";
@@ -109,7 +111,8 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
               role="group"
               aria-roledescription="foto"
               aria-label={`${i + 1} de ${medios.length}`}
-              className="relative size-full shrink-0 snap-start snap-always"
+              // overflow-hidden: una foto acercada no se sale de su cuadro.
+              className="relative size-full shrink-0 snap-start snap-always overflow-hidden"
             >
               {m.tipo === "imagen" && (
                 <Image
@@ -121,12 +124,13 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                   // (al deslizar rápido en iPhone no asoma un cuadro vacío); las demás, cuando se acercan.
                   preload={i === 0}
                   loading={i < 3 ? "eager" : "lazy"}
-                  // Encuadre elegido en el editor: el punto de la foto que nunca se corta.
-                  style={m.posicion ? { objectPosition: m.posicion } : undefined}
+                  // Encuadre y acercamiento elegidos en el editor.
+                  style={m.estilo}
+                  {...m.marca}
                   className="object-cover"
                 />
               )}
-              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} />}
+              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} />}
               {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" />}
             </div>
           ))}

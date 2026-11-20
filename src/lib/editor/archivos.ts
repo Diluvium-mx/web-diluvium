@@ -73,7 +73,8 @@ export async function medirFotos() {
 
 export type MedioBiblioteca = { src: string; carpeta: string; nombre: string; video: boolean; fecha: number };
 
-const CARPETAS = ["editor", "files", "products", "videos", "articles", "collections"];
+// «resenas»: las fotos de las reseñas publicadas (el muro de reseñas solo acepta esas).
+const CARPETAS = ["editor", "files", "products", "videos", "articles", "collections", "resenas"];
 const ES_MEDIO = /\.(jpe?g|png|webp|gif|avif|mp4|webm)$/i;
 
 /** Fotos y videos que ya están en la página (public/media), los más nuevos primero. */

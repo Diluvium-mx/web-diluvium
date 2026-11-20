@@ -4504,6 +4504,18 @@
        "tipo": "textoLargo",
        "etiqueta": "Texto",
        "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "zoom",
+       "tipo": "numero",
+       "etiqueta": "Zoom",
+       "diseno": false
       }
      ]
     }
@@ -4621,6 +4633,30 @@
      "clave": "alt_after",
      "tipo": "texto",
      "etiqueta": "Texto alternativo de después",
+     "diseno": false
+    },
+    {
+     "clave": "focal_before",
+     "tipo": "texto",
+     "etiqueta": "Encuadre de la foto de antes (x% y%)",
+     "diseno": false
+    },
+    {
+     "clave": "zoom_before",
+     "tipo": "numero",
+     "etiqueta": "Zoom antes",
+     "diseno": false
+    },
+    {
+     "clave": "focal_after",
+     "tipo": "texto",
+     "etiqueta": "Encuadre de la foto de después (x% y%)",
+     "diseno": false
+    },
+    {
+     "clave": "zoom_after",
+     "tipo": "numero",
+     "etiqueta": "Zoom después",
      "diseno": false
     }
    ],
@@ -4764,6 +4800,18 @@
        "tipo": "texto",
        "etiqueta": "Texto",
        "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "zoom",
+       "tipo": "numero",
+       "etiqueta": "Zoom",
+       "diseno": false
       }
      ]
     }
@@ -4905,6 +4953,18 @@
        "tipo": "texto",
        "etiqueta": "Encuadre de la foto de después (x% y%)",
        "diseno": false
+      },
+      {
+       "clave": "zoom_before",
+       "tipo": "numero",
+       "etiqueta": "Zoom antes",
+       "diseno": false
+      },
+      {
+       "clave": "zoom_after",
+       "tipo": "numero",
+       "etiqueta": "Zoom después",
+       "diseno": false
       }
      ]
     },
@@ -5020,6 +5080,18 @@
        "clave": "image",
        "tipo": "imagen",
        "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "zoom",
+       "tipo": "numero",
+       "etiqueta": "Zoom",
        "diseno": false
       }
      ]
@@ -5219,6 +5291,18 @@
        "tipo": "texto",
        "etiqueta": "Encuadre de la foto de después (x% y%)",
        "diseno": false
+      },
+      {
+       "clave": "zoom_before",
+       "tipo": "numero",
+       "etiqueta": "Zoom antes",
+       "diseno": false
+      },
+      {
+       "clave": "zoom_after",
+       "tipo": "numero",
+       "etiqueta": "Zoom después",
+       "diseno": false
       }
      ]
     },
@@ -5311,6 +5395,12 @@
        "tipo": "texto",
        "etiqueta": "Encuadre de la foto (x% y%)",
        "diseno": false
+      },
+      {
+       "clave": "zoom",
+       "tipo": "numero",
+       "etiqueta": "Zoom",
+       "diseno": false
       }
      ]
     },
@@ -5336,6 +5426,18 @@
        "clave": "alt",
        "tipo": "texto",
        "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "focal_video",
+       "tipo": "texto",
+       "etiqueta": "Focal video",
+       "diseno": false
+      },
+      {
+       "clave": "zoom_video",
+       "tipo": "numero",
+       "etiqueta": "Zoom video",
        "diseno": false
       }
      ]

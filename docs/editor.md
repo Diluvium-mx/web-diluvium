@@ -1,6 +1,7 @@
 # Editor de la página (solo en esta Mac)
 
-20-nov-2026. Para cambiar fotos y textos de B1 sin pedirlos uno por uno. **No se sube a Cloudflare** (no gasta nada
+20-nov-2026 · rehecho el 21-nov como «directo en la página» (opción B que eligió el dueño). Para cambiar fotos y
+textos de B1 sin pedirlos uno por uno. **No se sube a Cloudflare** (no gasta nada
 del plan): vive en esta Mac, igual que el administrador.
 
 ## Cómo abrirlo
@@ -10,21 +11,35 @@ del plan): vive en esta Mac, igual que el administrador.
 Desde otra computadora o celular de la casa **no abre** (a propósito): solo funciona en esta Mac.
 
 ## Qué se puede hacer
-- **Pestañas Portada / Producto** de B1. Un punto (•) avisa que hay cambios sin guardar.
-- Cada parte sale con su **nombre del mapa** (B1-P2…; ver `docs/mapa-pagina.md`). Tócala para ver:
-  - **Textos:** se escriben ahí mismo. Los que llevan formato aceptan `<p>`, `<strong>`, `<a href="…">`.
-  - **Fotos y videos:** «Cambiar foto» abre la biblioteca con todo lo que ya tiene la página; «Subir desde la
-    computadora» agrega fotos (JPG, PNG o WebP de hasta 8 MB) o videos MP4 (hasta 24 MB). Lo que se sube queda en
-    `public/media/editor/` y es **público**: nada de datos de clientes.
-  - **Encuadre:** toca en la foto el punto importante (la compuerta, la cara del cliente) y ese punto nunca se corta
-    en el celular. Al lado se ve cómo queda.
-  - **Piezas** (fotos de la galería, reseñas, beneficios, pasos, preguntas…): arrástralas o usa ▲ ▼ para cambiar el
-    orden; «Duplicar» hace otra igual para editarla; «Quitar» la saca; «+ Agregar foto» suma una foto a la galería.
-  - **Diseño:** colores y tamaños, guardados aparte para no moverlos sin querer.
-- **Guardar** escribe los cambios en la página y en el administrador al mismo tiempo (no se desacomodan entre sí) y
-  deja una copia de la versión anterior en `.editor-respaldos/` (fuera de git), por si hay que regresar.
+Arriba: **Portada / Producto** de B1 (un punto • avisa que hay cambios sin guardar) y **Fotos / Textos**.
+
+### Fotos (directo en la página)
+1. Toca cualquier foto o video de la página de en medio (galería, antes y después, portada, reseñas, comparación,
+   beneficios, pasos). Se marca con un **marco rojo**.
+2. **Arrastra la foto dentro del marco** hasta que quede bien acomodada; **«Acercar»** la agranda. Se ve al momento.
+3. Sus botones:
+   - **Cambiar foto / Cambiar video:** biblioteca con todo lo que ya tiene la página, o **«Subir desde la
+     computadora»** (JPG, PNG o WebP de hasta 8 MB; MP4 de hasta 24 MB). Lo que se sube queda en
+     `public/media/editor/` y es **público**: nada de datos de clientes. En el muro de reseñas solo se pueden elegir
+     fotos de reseñas publicadas.
+   - **Centrar:** regresa la foto al centro y sin acercar.
+   - **+ Agregar otra:** pone otra foto justo después (en la galería, otra foto; en beneficios o pasos, otra pieza
+     igual con esa foto, para luego cambiar su texto en Textos).
+   - **Quitar** y **◀ Antes / Después ▶** (mover de lugar).
+   - Las fotos fijas del diseño (por ejemplo, la comparación) se pueden cambiar o acomodar, pero no quitar.
+4. **Listo** (o doble clic en el marco) suelta la foto. Se puede bajar la página y deslizar la galería como siempre:
+   el marco sigue a la foto.
+
+Los acomodos y las fotos cambiadas se ven al momento; las fotos agregadas, quitadas o movidas, al guardar.
+
+### Textos
+Cada parte con su nombre del mapa y sus textos para escribirlos ahí mismo (los que llevan formato aceptan `<p>`,
+`<strong>`, `<a href="…">`). Se ven en la página de la derecha al guardar.
+
+### Guardar y publicar
+- **Guardar** escribe los cambios en la página y en el administrador al mismo tiempo y deja una copia de la versión
+  anterior en `.editor-respaldos/` (fuera de git), por si hay que regresar.
 - **Descartar cambios** regresa a lo último guardado.
-- **Vista de celular** (a la derecha, en pantallas anchas): la página tal como quedó guardada, con o sin mapa.
 - **Publicar en la prueba** sube la copia de prueba a Cloudflare (unos minutos) y dice el peso (límite 3 MB).
 
 ## Cómo está hecho (para Claude)
@@ -36,6 +51,9 @@ Desde otra computadora o celular de la casa **no abre** (a propósito): solo fun
 - Seguridad (`src/lib/editor/guardia.ts`): solo con `npm run dev`, solo con dirección `localhost` y los cambios solo
   desde la misma página (Origin). En producción responde 404 y `publicar-prueba.mjs` lo quita de la copia.
 - Las páginas que se editan están en `PAGINAS_MAPA` (`src/lib/mapa.ts`). Para C1 y D1: agregarlas ahí.
-- La galería de B1 vive en la plantilla (piezas `image`/`video` de la ficha, `include_product_media: false`) para
-  poder ordenarla y encuadrarla. El encuadre se guarda como `focal` («x% y%») y lo leen la galería, el antes y
-  después y la foto de la portada.
+- Cada foto de la página lleva `data-editar="sección|pieza|campo"` (`marcaEditar` en `src/lib/mapa.ts`): así el
+  editor sabe qué campo tocaste. El encuadre se guarda como `focal` («x% y%») y el acercamiento como `zoom` (1 a 3);
+  para `image_before` son `focal_before` / `zoom_before`, para `video` son `focal_video` / `zoom_video`
+  (`clavesEncuadre`). Los aplica `estiloFoto` en la galería, el antes y después, la portada, beneficios, pasos,
+  comparación y reseñas; el marco de cada foto lleva `overflow-hidden` para que lo acercado no se salga.
+- La galería de B1 vive en la plantilla (piezas `image`/`video` de la ficha, `include_product_media: false`).

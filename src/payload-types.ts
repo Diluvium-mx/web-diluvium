@@ -2971,6 +2971,8 @@ export interface Plantilla {
                   alt?: string | null;
                   heading?: string | null;
                   text?: string | null;
+                  focal?: string | null;
+                  zoom?: number | null;
                   id?: string | null;
                   blockName?: string | null;
                   blockType: 's39-b00';
@@ -3038,6 +3040,10 @@ export interface Plantilla {
             heading_after?: string | null;
             image_after?: (number | null) | Medio;
             alt_after?: string | null;
+            focal_before?: string | null;
+            zoom_before?: number | null;
+            focal_after?: string | null;
+            zoom_after?: number | null;
             bloques?:
               | (
                   | {
@@ -3146,6 +3152,8 @@ export interface Plantilla {
                   alt?: string | null;
                   heading?: string | null;
                   text?: string | null;
+                  focal?: string | null;
+                  zoom?: number | null;
                   id?: string | null;
                   blockName?: string | null;
                   blockType: 's43-b00';
@@ -3213,6 +3221,8 @@ export interface Plantilla {
                       label_after?: string | null;
                       focal_before?: string | null;
                       focal_after?: string | null;
+                      zoom_before?: number | null;
+                      zoom_after?: number | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's45-b00';
@@ -3308,6 +3318,8 @@ export interface Plantilla {
                     | boolean
                     | null;
                   image?: (number | null) | Medio;
+                  focal?: string | null;
+                  zoom?: number | null;
                   id?: string | null;
                   blockName?: string | null;
                   blockType: 's47-b00';
@@ -3371,6 +3383,8 @@ export interface Plantilla {
                       label_after?: string | null;
                       focal_before?: string | null;
                       focal_after?: string | null;
+                      zoom_before?: number | null;
+                      zoom_after?: number | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b00';
@@ -3441,6 +3455,7 @@ export interface Plantilla {
                       image?: (number | null) | Medio;
                       alt?: string | null;
                       focal?: string | null;
+                      zoom?: number | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b06';
@@ -3459,6 +3474,8 @@ export interface Plantilla {
                       video?: (number | null) | Medio;
                       poster?: (number | null) | Medio;
                       alt?: string | null;
+                      focal_video?: string | null;
+                      zoom_video?: number | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's48-b07';
@@ -5561,6 +5578,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           alt?: T;
                           heading?: T;
                           text?: T;
+                          focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5608,6 +5627,10 @@ export interface PlantillasSelect<T extends boolean = true> {
               heading_after?: T;
               image_after?: T;
               alt_after?: T;
+              focal_before?: T;
+              zoom_before?: T;
+              focal_after?: T;
+              zoom_after?: T;
               bloques?:
                 | T
                 | {
@@ -5679,6 +5702,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           alt?: T;
                           heading?: T;
                           text?: T;
+                          focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5726,6 +5751,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           label_after?: T;
                           focal_before?: T;
                           focal_after?: T;
+                          zoom_before?: T;
+                          zoom_after?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5786,6 +5813,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           idTema?: T;
                           claves?: T;
                           image?: T;
+                          focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5836,6 +5865,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           label_after?: T;
                           focal_before?: T;
                           focal_after?: T;
+                          zoom_before?: T;
+                          zoom_after?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5878,6 +5909,7 @@ export interface PlantillasSelect<T extends boolean = true> {
                           image?: T;
                           alt?: T;
                           focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -5889,6 +5921,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           video?: T;
                           poster?: T;
                           alt?: T;
+                          focal_video?: T;
+                          zoom_video?: T;
                           id?: T;
                           blockName?: T;
                         };

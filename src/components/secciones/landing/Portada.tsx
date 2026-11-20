@@ -13,7 +13,7 @@ import type { PropsSeccion } from "../registro";
 import type { Bloque } from "@/lib/contenido";
 import { texto } from "@/lib/contenido";
 import { Comparador } from "./Comparador";
-import { posicionFoto } from "@/lib/mapa";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { SelectorTamano } from "./SelectorTamano";
 import { BarraCompra } from "./BarraCompra";
 import { datosVenta, pesos, rellenar } from "./datos";
@@ -25,7 +25,7 @@ function retraso(ms: number): CSSProperties {
   return { "--retraso": `${ms}ms` } as CSSProperties;
 }
 
-function Mosaico({ fotos }: { fotos: Bloque[] }) {
+function Mosaico({ fotos, seccionId }: { fotos: Bloque[]; seccionId: string }) {
   return (
     <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3 lg:grid-cols-2">
       {fotos.slice(0, 4).map((f, i) => (
@@ -37,7 +37,8 @@ function Mosaico({ fotos }: { fotos: Bloque[] }) {
             sizes="(min-width: 1200px) 296px, (min-width: 1024px) 23vw, (min-width: 768px) calc(25vw - 24px), calc(50vw - 20px)"
             loading="eager"
             fetchPriority={i === 0 ? "high" : "auto"}
-            style={posicionFoto(f.ajustes.focal) ? { objectPosition: posicionFoto(f.ajustes.focal) } : undefined}
+            style={estiloFoto(f.ajustes)}
+            {...marcaEditar(seccionId, f.id, "image")}
             className="object-cover"
           />
         </div>
@@ -113,12 +114,12 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
     medio = (
       <Comparador
         sizes={TAMANO_MEDIO}
-        antes={{ src: texto(b, "image_before"), alt: texto(b, "alt_before"), etiqueta: texto(b, "label_before"), posicion: posicionFoto(b.focal_before) }}
-        despues={{ src: texto(b, "image_after"), alt: texto(b, "alt_after"), etiqueta: texto(b, "label_after"), posicion: posicionFoto(b.focal_after) }}
+        antes={{ src: texto(b, "image_before"), alt: texto(b, "alt_before"), etiqueta: texto(b, "label_before"), estilo: estiloFoto(b, "image_before"), marca: marcaEditar(seccion.id, antesDespues.id, "image_before") }}
+        despues={{ src: texto(b, "image_after"), alt: texto(b, "alt_after"), etiqueta: texto(b, "label_after"), estilo: estiloFoto(b, "image_after"), marca: marcaEditar(seccion.id, antesDespues.id, "image_after") }}
       />
     );
   } else if (mosaico) {
-    medio = <Mosaico fotos={fotos} />;
+    medio = <Mosaico fotos={fotos} seccionId={seccion.id} />;
   } else if (fotos[0]) {
     medio = (
       <div className={`relative overflow-hidden rounded-2xl bg-niebla md:rounded-3xl ${tamanos ? "aspect-[16/10] md:aspect-[16/9] lg:aspect-square" : "aspect-[4/3] md:aspect-[16/9] lg:aspect-square"}`}>
@@ -128,7 +129,8 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
           fill
           sizes={TAMANO_MEDIO}
           preload
-          style={posicionFoto(fotos[0].ajustes.focal) ? { objectPosition: posicionFoto(fotos[0].ajustes.focal) } : undefined}
+          style={estiloFoto(fotos[0].ajustes)}
+          {...marcaEditar(seccion.id, fotos[0].id, "image")}
           className={`object-cover ${tamanos ? "" : "acercar"}`}
         />
       </div>
