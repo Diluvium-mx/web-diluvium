@@ -121,7 +121,7 @@ export function EncabezadoCliente({
           <a
             href={botonEnlace || "#"}
             data-evento="boton_portada"
-            className="ml-0.5 inline-flex h-10 items-center justify-center rounded-lg bg-boton px-3.5 font-titulo text-[15px] font-bold text-tinta [font-stretch:110%] transition-colors hover:bg-boton-encima md:ml-1 md:h-11 md:px-5 md:text-base"
+            className="ml-0.5 inline-flex h-10 items-center justify-center rounded-lg bg-boton px-3.5 font-titulo text-[15px] font-bold text-white [font-stretch:110%] transition-colors hover:bg-boton-encima md:ml-1 md:h-11 md:px-5 md:text-base"
           >
             {botonTexto}
           </a>

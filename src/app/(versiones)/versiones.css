@@ -7,9 +7,10 @@
   --color-marino: #0a559a;
   --color-marino-2: #245595;
   --color-marino-hondo: #083e72;
-  /* Naranja de la marca, solo para botones. Lleva texto «tinta» (6.2:1); el blanco no llega a 4.5:1. */
-  --color-boton: #de8c11;
-  --color-boton-encima: #c97d0c;
+  /* Naranja de los botones: el mismo de la tienda de hoy (#f8a01d, letra blanca), a pedido del dueño (20-nov-2026).
+     Ojo: el blanco sobre este naranja contrasta poco (2:1); por eso la letra va gruesa y grande. */
+  --color-boton: #f8a01d;
+  --color-boton-encima: #ec9310;
   --color-tinta: #0c1e33;
   --color-niebla: #f2f5f9;
   --color-linea: #d9e2ec;

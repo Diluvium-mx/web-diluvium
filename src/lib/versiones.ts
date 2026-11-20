@@ -57,18 +57,6 @@ export const VERSIONES: Version[] = [
     aFavor: "Muestra la realidad sin video, se mueve con la mano y usa material propio.",
     enContra: "Si la foto de «antes» no se entiende rápido, pierde fuerza.",
   },
-  {
-    clave: "b2",
-    etiqueta: "B2",
-    nombre: "Producto protagonista",
-    plantilla: "portada.b2",
-    ficha: "producto.b2",
-    cambiaFicha: "Página de producto nueva, sin agregados: mide cuánto gana sola.",
-    cambia: "Una foto grande de la compuerta frenando la inundación en una entrada real, con un acercamiento lento.",
-    prueba: "Que una página limpia, con el producto en grande, da más confianza.",
-    aFavor: "La más sencilla y elegante. El producto se entiende en 1 segundo.",
-    enContra: "Es la más parecida a A: si gana, gana por poco y tarda más en verse.",
-  },
 ];
 
 export function version(clave: string): Version | undefined {

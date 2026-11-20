@@ -7,10 +7,8 @@ import pie from "@contenido/tema/footer-group.json";
 import portada from "@contenido/tema/index.json";
 // Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
 import portadaB1 from "@contenido/tema/index.b1.json";
-import portadaB2 from "@contenido/tema/index.b2.json";
 // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/<producto>; mapa de calor del 11-nov-2026).
 import productoB1 from "@contenido/tema/product.b1.json";
-import productoB2 from "@contenido/tema/product.b2.json";
 import productoGeneral from "@contenido/tema/product.json";
 import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
 import productoMedida from "@contenido/tema/product.medida-especial.json";
@@ -37,9 +35,7 @@ export type Plantilla = { fuente: string; secciones: Seccion[] };
 const PLANTILLAS = {
   portada: portada as Plantilla,
   "portada.b1": portadaB1 as Plantilla,
-  "portada.b2": portadaB2 as Plantilla,
   "producto.b1": productoB1 as Plantilla,
-  "producto.b2": productoB2 as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
   product: productoGeneral as Plantilla,

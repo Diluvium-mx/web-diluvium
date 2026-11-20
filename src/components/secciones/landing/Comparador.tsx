@@ -12,6 +12,10 @@
 //   - la línea y el botón van en un riel del mismo ancho que se corre igual.
 // El tamaño de la caja se lee una vez al poner el dedo, no en cada movimiento.
 //
+// Invitación a deslizar (20-nov-2026, dueño): al quedar a la vista, la línea se mueve sola de un lado a otro, con una
+// manita que la acompaña, para que se entienda que se arrastra. Dos veces como máximo (la segunda, 3.5 s después) y
+// se detiene en cuanto la persona toca la foto o usa el teclado. No se mueve si el teléfono pide menos movimiento.
+//
 // «arrastre»:
 //   - "foto" (portada): se arrastra desde cualquier punto de la foto (deja bajar la página con el dedo: pan-y);
 //   - "linea" (galería de la ficha): solo desde el botón o una franja de 64 px junto a la línea. El resto de la foto
@@ -47,6 +51,8 @@ export function Comparador({
   const pos = useRef(50);
   const cuadro = useRef(0);
   const medida = useRef<{ izquierda: number; ancho: number } | null>(null);
+  const tocado = useRef(false);
+  const [mano, setMano] = useState(false);
 
   const pintar = useCallback(() => {
     cuadro.current = 0;
@@ -66,6 +72,66 @@ export function Comparador({
 
   useEffect(() => () => cancelAnimationFrame(cuadro.current), []);
 
+  // La línea se mueve sola al quedar a la vista: 50 → 22 → 78 → 50 %, con entrada y salida suaves.
+  useEffect(() => {
+    const el = caja.current;
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+    const tramos: [number, number, number][] = [
+      [50, 22, 600],
+      [22, 78, 950],
+      [78, 50, 600],
+    ];
+    const suave = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+    let animacion = 0;
+    let espera: ReturnType<typeof setTimeout> | undefined;
+    let veces = 0;
+    let visible = false;
+
+    const demostrar = () => {
+      if (tocado.current || !visible || veces >= 2) return;
+      veces++;
+      setMano(true);
+      const inicio = performance.now();
+      const total = tramos.reduce((a, t) => a + t[2], 0);
+      const paso = (ahora: number) => {
+        if (tocado.current) {
+          setMano(false);
+          return;
+        }
+        let t = ahora - inicio;
+        if (t >= total) {
+          colocar(50);
+          setMano(false);
+          espera = setTimeout(demostrar, 3500);
+          return;
+        }
+        for (const [desde, hasta, dura] of tramos) {
+          if (t <= dura) {
+            colocar(desde + (hasta - desde) * suave(t / dura));
+            break;
+          }
+          t -= dura;
+        }
+        animacion = requestAnimationFrame(paso);
+      };
+      animacion = requestAnimationFrame(paso);
+    };
+
+    const observador = new IntersectionObserver(
+      ([entrada]) => {
+        visible = entrada.isIntersecting;
+        if (visible && veces === 0) espera = setTimeout(demostrar, 700);
+      },
+      { threshold: 0.6 },
+    );
+    observador.observe(el);
+    return () => {
+      observador.disconnect();
+      cancelAnimationFrame(animacion);
+      clearTimeout(espera);
+    };
+  }, [colocar]);
+
   function mover(clientX: number) {
     const m = medida.current;
     if (!m || m.ancho === 0) return;
@@ -82,6 +148,8 @@ export function Comparador({
     const r = caja.current?.getBoundingClientRect();
     if (!r) return;
     medida.current = { izquierda: r.left, ancho: r.width };
+    tocado.current = true;
+    setMano(false);
     e.currentTarget.setPointerCapture(e.pointerId);
     if (arrastre === "foto") mover(e.clientX);
     if (!movido) setMovido(true);
@@ -96,6 +164,8 @@ export function Comparador({
   const enFoto = arrastre === "foto";
 
   function teclado(nuevo: number) {
+    tocado.current = true;
+    setMano(false);
     colocar(nuevo);
     setValor(Math.round(pos.current));
     setMovido(true);
@@ -128,6 +198,17 @@ export function Comparador({
       {/* Riel del ancho de la caja: la línea y el botón quedan en su orilla izquierda y el riel se corre. */}
       <div ref={riel} className="pointer-events-none absolute inset-0 will-change-transform" style={{ transform: "translate3d(50%,0,0)" }}>
         <div className="absolute inset-y-0 left-0 w-[3px] -translate-x-1/2 bg-white shadow-[0_0_0_1px_rgba(12,30,51,0.15)]" />
+        {/* Manita de la invitación a deslizar: va debajo del botón y se mueve con la línea. */}
+        <span
+          aria-hidden="true"
+          className={`pointer-events-none absolute top-1/2 left-0 mt-7 -translate-x-[30%] text-white drop-shadow-[0_2px_6px_rgba(12,30,51,0.6)] transition-opacity duration-300 ${
+            mano ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <svg viewBox="0 0 24 24" className="size-11" fill="currentColor" focusable="false">
+            <path d="M10 3.2a1.6 1.6 0 0 1 1.6 1.6v6.1l.6-.1a1.6 1.6 0 0 1 1.9 1.1l.1.4.5-.1a1.6 1.6 0 0 1 1.9 1.2l.1.4.4-.1a1.6 1.6 0 0 1 1.9 1.5V18a5 5 0 0 1-5 5h-1.6a5 5 0 0 1-4.2-2.3L4.6 16a1.6 1.6 0 0 1 2.4-2l1.4 1.2V4.8A1.6 1.6 0 0 1 10 3.2z" stroke="#0c1e33" strokeWidth="0.9" strokeLinejoin="round" />
+          </svg>
+        </span>
         {!enFoto && (
           // Franja para agarrar la línea con el dedo (64 px): aquí el teléfono no corre la galería ni la página.
           <div aria-hidden="true" className="pointer-events-auto absolute inset-y-0 left-0 w-16 -translate-x-1/2 cursor-grab touch-none active:cursor-grabbing" {...manejadores} />

@@ -150,14 +150,14 @@ Taller para armar y revisar versiones antes de que el dueño apruebe cuál va a 
 nueva y B5/B6: `~/Documents/Diluvium CRM/reportes/pruebas-abc-web/clarity-2026-11-11.md` (fuera del repo: datos del
 negocio).
 
-- **Versiones vigentes (18-nov-2026):** A (la de hoy), **B1** y **B2**; el dueño descartó B3–B6 (siguen en el
-  historial de git, commit `1dac460`). Luego vienen C y D con el mismo proceso.
-- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy), `/v/b1`, `/v/b2`, y la ficha de la compuerta de cada una
+- **Versiones vigentes (20-nov-2026):** A (la de hoy) y **B1**. El dueño descartó B3–B6 (18-nov) y B2 (20-nov);
+  siguen en el historial de git. Luego vienen C1 y D1, completamente distintas de B1.
+- **Direcciones:** `/v` (lista), `/v/a` (la portada de hoy), `/v/b1`, y la ficha de la compuerta de cada una
   en `/v/<versión>/products/compuerta-anti-inundaciones` (la A es la ficha de hoy). Nunca se indexan: `noindex` en
   cada página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
   (`src/app/(versiones)/`), sin las 2 barras de arriba de la tienda.
-- **Contenido:** portadas en `contenido/tema/index.b1.json` e `index.b2.json` («Portada · versión B1 (prueba)»…) y
-  fichas en `product.b1.json` y `product.b2.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
+- **Contenido:** portada en `contenido/tema/index.b1.json` («Portada · versión B1 (prueba)») y ficha en
+  `product.b1.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
   `landing-*` (`src/components/secciones/landing/`); la ficha es `landing-ficha` (`Ficha.tsx`, `Galeria.tsx`,
   `CompraFicha.tsx`). Precio, tamaños y calificación salen del catálogo y de las reseñas: en los textos se escriben
   `{precio}`, `{precio_antes}`, `{desde}`, `{hasta}`, `{tamanos}` y `{calificacion}`.

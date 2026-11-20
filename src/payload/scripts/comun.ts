@@ -55,10 +55,8 @@ export const PLANTILLAS: Record<string, string> = {
   password: "Contraseña",
   // Versiones de la portada para pruebas (/v/<versión>, sin indexar; src/lib/versiones.ts).
   "index.b1": "Portada · versión B1 (prueba)",
-  "index.b2": "Portada · versión B2 (prueba)",
   // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/compuerta-anti-inundaciones).
   "product.b1": "Producto · versión B1 (prueba)",
-  "product.b2": "Producto · versión B2 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));
