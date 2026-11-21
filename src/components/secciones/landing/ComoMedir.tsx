@@ -74,20 +74,32 @@ export function ComoMedir({
     if (abierta && !d.open) d.showModal();
   }, [abierta]);
 
-  // Arranque rápido (21-nov-2026): cuando el botón aparece en pantalla, el video ya baja su índice (144 KB) para que al
-  // tocarlo empiece al momento; al poner el dedo encima, empieza a bajar el video.
+  // Arranque rápido (21-nov-2026): cuando el botón está cerca de la pantalla (400 px antes; al abrir la página queda
+  // justo debajo), el video ya baja su índice (144 KB) para que al tocarlo empiece al momento; al poner el dedo encima,
+  // empieza a bajar el video.
   useEffect(() => {
     const b = boton.current;
     if (!b || !("IntersectionObserver" in window)) return;
-    const obs = new IntersectionObserver(([e]) => {
-      const v = elVideo();
-      if (e.isIntersecting && v && v.preload === "none") {
-        v.preload = "metadata";
-        obs.disconnect();
-      }
-    });
+    const obs = new IntersectionObserver(
+      ([e]) => {
+        const v = elVideo();
+        if (e.isIntersecting && v && v.preload === "none") {
+          v.preload = "metadata";
+          obs.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px 400px 0px" },
+    );
     obs.observe(b);
-    return () => obs.disconnect();
+    // Por si acaso (pantalla en segundo plano, navegador viejo): a los 1.5 s de abrir la página se prepara igual.
+    const respaldo = setTimeout(() => {
+      const v = elVideo();
+      if (v && v.preload === "none") v.preload = "metadata";
+    }, 1500);
+    return () => {
+      obs.disconnect();
+      clearTimeout(respaldo);
+    };
   }, []);
 
   return (
