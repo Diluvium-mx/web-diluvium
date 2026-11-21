@@ -11,7 +11,7 @@
 //      node herramientas/publicar-prueba.mjs --publicar           (además la publica)
 
 import { execFileSync } from "node:child_process";
-import { copyFileSync, cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 
@@ -115,6 +115,14 @@ const entornoLimpio = Object.fromEntries(
 );
 const correr = (cmd, args, env = {}) =>
   execFileSync(cmd, args, { cwd: COPIA, stdio: "inherit", env: { ...entornoLimpio, SITIO_PRUEBA: "1", ...env } });
+
+// Peso de cada video para que el Worker mande los pedazos mientras los lee (cloudflare/worker.js).
+{
+  const carpeta = join(COPIA, "public/media/videos");
+  const tamanos = {};
+  if (existsSync(carpeta)) for (const f of readdirSync(carpeta).sort()) if (f.endsWith(".mp4")) tamanos[`/media/videos/${f}`] = statSync(join(carpeta, f)).size;
+  writeFileSync(join(COPIA, "cloudflare/tamanos-videos.json"), JSON.stringify(tamanos, null, 1) + "\n");
+}
 
 console.log("Construyendo (unos minutos)…");
 try {
