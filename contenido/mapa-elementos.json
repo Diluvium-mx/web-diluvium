@@ -1,6 +1,6 @@
 {
  "product.b1": {
-  "siguiente": 360,
+  "siguiente": 361,
   "elementos": {
    "landing_ficha_b1|before_after_1|foto:before_after_1|image_before": {
     "n": 18,
@@ -274,7 +274,7 @@
    },
    "landing_encabezado_producto_b1||Enlace@div1>a3": {
     "n": 3,
-    "nombre": "Enlace «Carrito, 1 artículo»",
+    "nombre": "Enlace «Carrito, 0 artículos»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1156,7 +1156,7 @@
    },
    "landing_cierre_producto_b1||Enlace@div1>a2": {
     "n": 193,
-    "nombre": "Enlace «¿Dudas con tu medida? Escríbenos por WhatsApp»",
+    "nombre": "Enlace «¿Tienes otra duda? Te contestamos por WhatsApp.»",
     "parte": "B1-P7 · Cierre",
     "visto": "2026-11-21"
    },
@@ -1612,7 +1612,7 @@
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div1>strong1": {
     "n": 279,
-    "nombre": "Texto «Reseña 88 de 238»",
+    "nombre": "Texto «Reseña 29 de 238»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1624,25 +1624,25 @@
    },
    "landing_resenas_b1_producto||Foto@div1>dialog1>div1>div2>div1>img1": {
     "n": 281,
-    "nombre": "Foto «8sGsCiN8dS-card-small.jpg · Compuerta de Ricardo M. puesta en su entra»",
+    "nombre": "Foto «ab4b2b4f-4ccc-494b-95e5-f2878408aff9-card-small.jpg»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
    "landing_resenas_b1_producto||Ícono:1": {
     "n": 282,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «4 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p1": {
     "n": 283,
-    "nombre": "Texto «Ricardo M.»",
+    "nombre": "Texto «Maria E. S.»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p2": {
     "n": 284,
-    "nombre": "Texto «Sus compuertas valen cada peso»",
+    "nombre": "Texto «NO SUPE COMO INSTALARLA PERO LOS MUCHACHOS ME AYUDARON, SI …»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1654,7 +1654,7 @@
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div3>span1": {
     "n": 286,
-    "nombre": "Texto «88/238»",
+    "nombre": "Texto «29/238»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -2100,6 +2100,12 @@
     "n": 333,
     "nombre": "Ícono «PayPal»",
     "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Foto@div1>dialog1>div1>div2>div1>img2": {
+    "n": 360,
+    "nombre": "Foto «ab4b2b4f-4ccc-494b-95e5-f2878408aff9-card-small.jpg · Compuerta de Mar»",
+    "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    }
   }

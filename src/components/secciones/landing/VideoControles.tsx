@@ -2,14 +2,16 @@
 
 // Reproductor del video «¿Cómo medir?» (Producto 214/215, propuesta 2 que eligió el dueño, 21-nov-2026, con sus
 // cambios). Nada achica el video: los controles van encima.
-// - Tocar el video lo pausa (o lo sigue) al instante y muestra los controles. En pausa se quedan a la vista; mientras
-//   corre se esconden solos a los 2 s y queda una línea azul fina abajo con el avance.
+// - Al abrir la ventana empieza solo y sin nada encima (dueño, 21-nov-2026): se ve todo el video, con una línea azul
+//   fina abajo con el avance. Tocar el video lo pausa al instante y entonces aparecen los controles, que se quedan
+//   mientras está en pausa; al seguir, se quitan. Si el teléfono no deja empezar solo, se ven los controles para darle
+//   play.
 // - Controles: regresar 10 s, pausa/reproducir, adelantar 10 s; abajo la barra azul (se toca o se arrastra) con los
 //   tiempos y el botón de pantalla completa. Sonido arriba a la derecha.
 // - Empieza solo y con sonido al abrir la ventana (la persona lo pidió con un toque); si el teléfono no deja, empieza
 //   sin sonido con el botón para activarlo. Al cerrar la ventana se pausa y al volver sigue donde iba.
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const AZUL = "#3d8ef0";
 const PLAY = "M8 5.5v13l10.5-6.5L8 5.5z";
@@ -18,7 +20,6 @@ const SIN_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm12.6 3l2.7-2.7-1.1-1.1-2.7 2.7-2.7-2.7
 const CON_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
 const COMPLETA = "M4 9V4h5v2H6v3H4zm10-5h6v5h-2V6h-4V4zM4 15h2v3h3v2H4v-5zm14 3v-3h2v5h-6v-2h4z";
 const SALIR_COMPLETA = "M9 4v5H4V7h3V4h2zm6 0h2v3h3v2h-5V4zM4 15h5v5H7v-3H4v-2zm11 0h5v2h-3v3h-2v-5z";
-const ESCONDER_MS = 2000;
 
 const reloj = (s: number) => (Number.isFinite(s) ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}` : "0:00");
 
@@ -35,21 +36,14 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
   const video = useRef<HTMLVideoElement>(null);
   const pista = useRef<HTMLDivElement>(null);
   const arrastrando = useRef(false);
-  const espera = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [andando, setAndando] = useState(false);
+  // Mientras intenta empezar solo, no se ponen los controles encima.
+  const [arrancando, setArrancando] = useState(true);
   const [mudo, setMudo] = useState(false);
   const [t, setT] = useState(0);
   const [dur, setDur] = useState(0);
-  const [visibles, setVisibles] = useState(true);
   const [completa, setCompleta] = useState(false);
-
-  /** Muestra los controles; mientras corre, se esconden solos a los 2 s. */
-  const mostrar = useCallback((corriendo: boolean) => {
-    setVisibles(true);
-    clearTimeout(espera.current);
-    if (corriendo) espera.current = setTimeout(() => !arrastrando.current && setVisibles(false), ESCONDER_MS);
-  }, []);
-  useEffect(() => () => clearTimeout(espera.current), []);
+  const visibles = !andando && !arrancando;
 
   // Al abrir la ventana: con sonido; si el teléfono no deja, sin sonido. Al cerrarla, en pausa.
   useEffect(() => {
@@ -65,8 +59,11 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
       .catch(() => {
         v.muted = true;
         setMudo(true);
-        v.play().catch(() => {});
-      });
+        return v.play();
+      })
+      .catch(() => {})
+      .finally(() => setArrancando(false));
+    return () => setArrancando(true);
   }, [activo]);
 
   // El avance se pinta una vez por cuadro mientras corre.
@@ -87,17 +84,12 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
     return () => document.removeEventListener("fullscreenchange", cambio);
   }, []);
 
-  /** Tocar el video: pausa o sigue al instante y muestra los controles. */
+  /** Tocar el video: pausa (y salen los controles) o sigue (y se quitan), al instante. */
   function alternar() {
     const v = video.current;
     if (!v) return;
-    if (v.paused) {
-      v.play().catch(() => {});
-      mostrar(true);
-    } else {
-      v.pause();
-      mostrar(false);
-    }
+    if (v.paused) v.play().catch(() => {});
+    else v.pause();
   }
 
   function saltar(s: number) {
@@ -105,7 +97,6 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
     if (!v || !v.duration) return;
     v.currentTime = Math.min(v.duration, Math.max(0, v.currentTime + s));
     setT(v.currentTime);
-    mostrar(!v.paused);
   }
 
   function irA(clientX: number) {
@@ -121,7 +112,6 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
     if (!v) return;
     v.muted = !v.muted;
     setMudo(v.muted);
-    mostrar(!v.paused);
   }
 
   function pantallaCompleta() {
@@ -136,7 +126,6 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
       // iPhone: solo el video entra a pantalla completa (con los controles del teléfono).
       v.webkitEnterFullscreen?.();
     }
-    mostrar(!v.paused);
   }
 
   const f = dur ? t / dur : 0;
@@ -153,14 +142,8 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
         disablePictureInPicture
         aria-label={alt}
         className="absolute inset-0 size-full object-contain"
-        onPlay={() => {
-          setAndando(true);
-          mostrar(true);
-        }}
-        onPause={() => {
-          setAndando(false);
-          mostrar(false);
-        }}
+        onPlay={() => setAndando(true)}
+        onPause={() => setAndando(false)}
         onLoadedMetadata={(e) => setDur(e.currentTarget.duration)}
         onSeeked={(e) => setT(e.currentTarget.currentTime)}
       />
@@ -229,7 +212,6 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
               className="relative flex h-10 flex-1 cursor-pointer touch-none items-center"
               onPointerDown={(e) => {
                 arrastrando.current = true;
-                clearTimeout(espera.current);
                 try {
                   e.currentTarget.setPointerCapture(e.pointerId);
                 } catch {
@@ -238,14 +220,8 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
                 irA(e.clientX);
               }}
               onPointerMove={(e) => arrastrando.current && irA(e.clientX)}
-              onPointerUp={() => {
-                arrastrando.current = false;
-                mostrar(!video.current?.paused);
-              }}
-              onPointerCancel={() => {
-                arrastrando.current = false;
-                mostrar(!video.current?.paused);
-              }}
+              onPointerUp={() => (arrastrando.current = false)}
+              onPointerCancel={() => (arrastrando.current = false)}
               onKeyDown={(e) => {
                 if (e.key === "ArrowLeft") saltar(-5);
                 else if (e.key === "ArrowRight") saltar(5);

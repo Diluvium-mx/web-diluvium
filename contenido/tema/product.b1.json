@@ -338,9 +338,9 @@
     "heading_after": "Con Diluvium",
     "image_after": "/media/files/Despues_1.jpg",
     "alt_after": "La misma entrada protegida con la compuerta Diluvium",
-    "focal_before": "50% 50%",
+    "focal_before": "50% 100%",
     "zoom_before": 1,
-    "focal_after": "50% 50%",
+    "focal_after": "54% 100%",
     "zoom_after": 1
    },
    "bloques": [
@@ -454,7 +454,7 @@
    "tipo": "landing-preguntas",
    "ajustes": {
     "heading": "Antes de comprar",
-    "text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium",
     "search_heading": "¿No está tu pregunta? Escríbela aquí"
    },
@@ -542,8 +542,9 @@
     "rating_text": "{calificacion} · más de 200 reseñas",
     "button_text": "Elegir mi tamaño",
     "button_link": "#tamanos",
-    "whatsapp_text": "¿Dudas con tu medida? Escríbenos por WhatsApp",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
    },
    "bloques": [
     {

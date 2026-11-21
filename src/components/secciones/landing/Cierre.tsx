@@ -39,8 +39,19 @@ export function CierreVersion({ seccion }: PropsSeccion) {
         )}
         {whatsapp && (
           <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={`${CLASE_ENLACE} text-white`}>
-            <IconoWhatsapp className="size-5" />
-            {textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp"}
+            {/* «whatsapp_icon_end» (Producto 193, dueño 21-nov-2026): el logo justo después del punto final, en la misma
+                línea que la última palabra (aunque el texto ocupe dos renglones). */}
+            {a.whatsapp_icon_end === true ? (
+              <span>
+                {textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp"}
+                <IconoWhatsapp className="ml-1.5 inline size-5 align-[-4px]" />
+              </span>
+            ) : (
+              <>
+                <IconoWhatsapp className="size-5" />
+                {textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp"}
+              </>
+            )}
           </a>
         )}
       </div>

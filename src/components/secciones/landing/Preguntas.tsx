@@ -56,7 +56,8 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             {textoVersion(a, "heading")}
           </h2>
           {texto(a, "text") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{textoVersion(a, "text")}</p>}
-          {whatsapp && (
+          {/* El enlace acompaña al texto: sin texto, no se pone (Producto: el WhatsApp va al final, en 193). */}
+          {whatsapp && texto(a, "text") && (
             <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={`${CLASE_ENLACE} mt-2 text-marino`}>
               <IconoWhatsapp className="size-5 text-[#1a7f37]" />
               Escríbenos por WhatsApp

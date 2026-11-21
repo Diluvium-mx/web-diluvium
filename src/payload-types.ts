@@ -3000,6 +3000,7 @@ export interface Plantilla {
             button_link?: string | null;
             whatsapp_text?: string | null;
             whatsapp_link?: string | null;
+            whatsapp_icon_end?: boolean | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -5602,6 +5603,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               button_link?: T;
               whatsapp_text?: T;
               whatsapp_link?: T;
+              whatsapp_icon_end?: T;
               bloques?:
                 | T
                 | {

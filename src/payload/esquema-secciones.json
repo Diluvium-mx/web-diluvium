@@ -4568,6 +4568,12 @@
      "tipo": "textoLargo",
      "etiqueta": "Enlace de WhatsApp",
      "diseno": false
+    },
+    {
+     "clave": "whatsapp_icon_end",
+     "tipo": "siNo",
+     "etiqueta": "Whatsapp ícono end",
+     "diseno": false
     }
    ],
    "bloques": [
