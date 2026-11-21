@@ -43,8 +43,8 @@
     "size_heading": "Elige tu tamaño",
     "measure_text": "¿Cómo medir?",
     "helper_text": "¿Cuánto mide tu entrada?",
-    "custom_text": "¿Tu entrada mide más de {hasta} cm?",
-    "custom_link_text": "Hecha a la medida",
+    "custom_text": "¿Tu entrada mide más de {hasta} cm?🤔",
+    "custom_link_text": "",
     "custom_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
     "button_text": "Añadir al carrito",
     "error_text": "Elige el tamaño de tu entrada para continuar.",
@@ -267,7 +267,8 @@
    "tipo": "landing-resenas",
    "ajustes": {
     "heading": "{calificacion} de 5 en más de 200 reseñas",
-    "subheading": "Fotos reales de clientes con su compuerta puesta."
+    "subheading": "Fotos reales de clientes con su compuerta puesta.",
+    "layout": "dos_columnas"
    },
    "bloques": [
     {

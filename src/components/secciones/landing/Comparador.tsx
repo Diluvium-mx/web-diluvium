@@ -34,12 +34,16 @@ export function Comparador({
   sizes,
   forma = "aspect-[4/3] md:aspect-[16/9] lg:aspect-square rounded-2xl md:rounded-3xl",
   arrastre = "foto",
+  desvanecerEtiquetas = false,
 }: {
   antes: Lado;
   despues: Lado;
   sizes: string;
   forma?: string;
   arrastre?: "foto" | "linea";
+  /** Producto (21-nov-2026, dueño): al mover la línea, la etiqueta del lado que se achica se desvanece; con la línea
+   *  hasta un lado solo queda la etiqueta de la foto que se ve completa. */
+  desvanecerEtiquetas?: boolean;
 }) {
   // Solo para lectores de pantalla y la pista: se actualiza al soltar o con el teclado, no en cada movimiento.
   const [valor, setValor] = useState(50);
@@ -48,6 +52,8 @@ export function Comparador({
   const capa = useRef<HTMLDivElement>(null);
   const foto = useRef<HTMLDivElement>(null);
   const riel = useRef<HTMLDivElement>(null);
+  const etiquetaAntes = useRef<HTMLSpanElement>(null);
+  const etiquetaDespues = useRef<HTMLSpanElement>(null);
   const pos = useRef(50);
   const cuadro = useRef(0);
   const medida = useRef<{ izquierda: number; ancho: number } | null>(null);
@@ -60,7 +66,13 @@ export function Comparador({
     if (capa.current) capa.current.style.transform = `translate3d(${p}%,0,0)`;
     if (foto.current) foto.current.style.transform = `translate3d(${-p}%,0,0)`;
     if (riel.current) riel.current.style.transform = `translate3d(${p}%,0,0)`;
-  }, []);
+    if (desvanecerEtiquetas) {
+      // Visible completa mientras su foto ocupa la mitad o más; se desvanece hasta desaparecer con 10 % o menos.
+      const opacidad = (lado: number) => String(Math.min(1, Math.max(0, (lado - 10) / 40)));
+      if (etiquetaAntes.current) etiquetaAntes.current.style.opacity = opacidad(p);
+      if (etiquetaDespues.current) etiquetaDespues.current.style.opacity = opacidad(100 - p);
+    }
+  }, [desvanecerEtiquetas]);
 
   const colocar = useCallback(
     (p: number) => {
@@ -150,7 +162,11 @@ export function Comparador({
     medida.current = { izquierda: r.left, ancho: r.width };
     tocado.current = true;
     setMano(false);
-    e.currentTarget.setPointerCapture(e.pointerId);
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // Sin captura: se sigue al dedo mientras esté encima.
+    }
     if (arrastre === "foto") mover(e.clientX);
     if (!movido) setMovido(true);
   };
@@ -185,12 +201,12 @@ export function Comparador({
       </div>
 
       {antes.etiqueta && (
-        <span className="pointer-events-none absolute bottom-3 left-3 rounded-md bg-tinta/80 px-2.5 py-1 text-[13px] font-semibold text-white md:bottom-4 md:left-4 md:text-sm">
+        <span ref={etiquetaAntes} className="pointer-events-none absolute bottom-3 left-3 rounded-md bg-tinta/80 px-2.5 py-1 text-[13px] font-semibold text-white md:bottom-4 md:left-4 md:text-sm">
           {antes.etiqueta}
         </span>
       )}
       {despues.etiqueta && (
-        <span className="pointer-events-none absolute right-3 bottom-3 rounded-md bg-marino px-2.5 py-1 text-[13px] font-semibold text-white md:right-4 md:bottom-4 md:text-sm">
+        <span ref={etiquetaDespues} className="pointer-events-none absolute right-3 bottom-3 rounded-md bg-marino px-2.5 py-1 text-[13px] font-semibold text-white md:right-4 md:bottom-4 md:text-sm">
           {despues.etiqueta}
         </span>
       )}

@@ -1,6 +1,8 @@
 // Sección «landing-resenas»: muro de reseñas a la vista (sin carrusel ni flechas). Cada pieza elige una foto de una
 // reseña publicada; el nombre (como se publicó), las estrellas y el texto salen de esa reseña en contenido/resenas.json,
 // nunca se escriben aquí. Si la foto ya no corresponde a ninguna reseña publicada, la pieza no se muestra.
+// Con «layout» = dos_columnas (Producto de B1, 21-nov-2026): dos columnas como en la tienda de hoy y la reseña en
+// grande con su número y flechas (MuroResenas.tsx).
 
 import Image from "next/image";
 import resenas from "@contenido/resenas.json";
@@ -8,6 +10,8 @@ import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
+import { medidasImagen } from "../ImagenBanner";
+import { MuroResenas } from "./MuroResenas";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -45,6 +49,14 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
           </h2>
           {texto(a, "subheading") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{textoVersion(a, "subheading")}</p>}
         </div>
+        {texto(a, "layout") === "dos_columnas" ? (
+          <MuroResenas
+            tarjetas={tarjetas.map((t) => {
+              const { ancho, alto } = medidasImagen(t.foto);
+              return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
+            })}
+          />
+        ) : (
         <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {tarjetas.map((t) => (
             <li key={t.id} data-pieza={t.id} className="grid min-h-[176px] grid-cols-[116px_minmax(0,1fr)] overflow-hidden rounded-2xl border border-linea bg-white md:grid-cols-[140px_minmax(0,1fr)]">
@@ -59,6 +71,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
             </li>
           ))}
         </ul>
+        )}
       </div>
     </section>
   );

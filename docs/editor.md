@@ -62,10 +62,14 @@ dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. 
 - Seguridad (`src/lib/editor/guardia.ts`): solo con `npm run dev`, solo con dirección `localhost` y los cambios solo
   desde la misma página (Origin). En producción responde 404 y `publicar-prueba.mjs` lo quita de la copia.
 - Mapa de elementos: `src/lib/elementos.ts` (`escanear`) lee la página y arma la firma de cada elemento: sección |
-  pieza (`data-pieza`, en las piezas que se repiten) | tipo:orden dentro de la pieza (las fotos, por su campo). La
-  firma no depende del texto. `api/elementos` da el siguiente número libre a lo nuevo y guarda
-  `contenido/mapa-elementos.json` (número, nombre y parte de cada firma). Para ubicar «Producto 37»: buscar `"n": 37`
-  en `product.b1` de ese archivo; la firma dice la sección, la pieza y el orden.
+  pieza (`data-pieza`, en las piezas que se repiten) | tipo@camino (su lugar exacto dentro de la pieza, p. ej.
+  `Texto@div2>p1`). Las fotos van por su campo (`data-editar`) y `data-el` fija la firma a mano. La firma no depende
+  del texto, y quitar un elemento no mueve a los demás.
+- `api/elementos` decide el número: misma firma → mismo número; firma nueva pero en la misma parte y pieza
+  desapareció uno con el mismo texto → hereda su número (así sobreviven a cambios de código); si no, el siguiente
+  libre. Un número quitado queda apartado. Todo en `contenido/mapa-elementos.json`. Para ubicar «Producto 37»:
+  buscar `"n": 37` en `product.b1`. **Al rehacer una pieza, abrir la pestaña Mapa y comparar que los números sigan
+  en su lugar** (si cambió el texto y la firma a la vez, devolver el número a mano en ese archivo).
 - Las páginas que se editan están en `PAGINAS_MAPA` (`src/lib/mapa.ts`). Para C1 y D1: agregarlas ahí.
 - Cada foto de la página lleva `data-editar="sección|pieza|campo"` (`marcaEditar` en `src/lib/mapa.ts`): así el
   editor sabe qué campo tocaste. El encuadre se guarda como `focal` («x% y%») y el acercamiento como `zoom` (1 a 3);

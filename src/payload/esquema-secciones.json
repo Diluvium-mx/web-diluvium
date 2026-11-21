@@ -5067,6 +5067,12 @@
      "tipo": "texto",
      "etiqueta": "Subtítulo",
      "diseno": false
+    },
+    {
+     "clave": "layout",
+     "tipo": "texto",
+     "etiqueta": "Diseño",
+     "diseno": true
     }
    ],
    "bloques": [

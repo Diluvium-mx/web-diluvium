@@ -3305,6 +3305,7 @@ export interface Plantilla {
               | null;
             heading?: string | null;
             subheading?: string | null;
+            layout?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -5804,6 +5805,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               claves?: T;
               heading?: T;
               subheading?: T;
+              layout?: T;
               bloques?:
                 | T
                 | {

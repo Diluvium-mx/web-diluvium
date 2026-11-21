@@ -124,7 +124,8 @@ export function CompraFicha({
               />
             )}
           </div>
-          <p id={`${idAyuda}-resultado`} aria-live="polite" className="m-0 mt-2 min-h-5 text-[15px] leading-5 text-tinta">
+          {/* Sin texto de ayuda mientras no escriben (Producto 74, quitado el 21-nov-2026): el resultado aparece al escribir. */}
+          <p id={`${idAyuda}-resultado`} aria-live="polite" className="m-0 text-[15px] leading-5 text-tinta [&:not(:empty)]:mt-2">
             {resultado && "tamano" in resultado && (
               <>
                 Te queda la <strong>{resultado.tamano.nombre}</strong> ({resultado.tamano.medidas}). Ya está elegida.
@@ -148,7 +149,6 @@ export function CompraFicha({
                 .
               </>
             )}
-            {!medida && <span className="text-texto-suave">Escribe el ancho de marco a marco y te decimos tu tamaño.</span>}
           </p>
         </div>
       )}
@@ -206,10 +206,19 @@ export function CompraFicha({
 
       {textoMedida && enlaceMedida && (
         <p className="m-0 mt-1 text-[15px] text-texto-suave">
-          {textoMedida}{" "}
-          <a href={enlaceMedida} className="inline-flex min-h-11 items-center font-semibold text-marino underline decoration-2 underline-offset-4">
-            {textoEnlaceMedida}
-          </a>
+          {textoEnlaceMedida ? (
+            <>
+              {textoMedida}{" "}
+              <a href={enlaceMedida} className="inline-flex min-h-11 items-center font-semibold text-marino underline decoration-2 underline-offset-4">
+                {textoEnlaceMedida}
+              </a>
+            </>
+          ) : (
+            // Sin texto de enlace aparte, la pregunta completa es el enlace (Producto 80, 21-nov-2026).
+            <a href={enlaceMedida} className="inline-flex min-h-11 items-center font-semibold text-marino underline decoration-2 underline-offset-4">
+              {textoMedida}
+            </a>
+          )}
         </p>
       )}
 
