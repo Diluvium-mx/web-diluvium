@@ -113,7 +113,9 @@ try {
       }
       if (await tocar('button#boton-principal')) {
         await pausa(600);
-        await js(`document.querySelector('[aria-label*="Cerrar"]')?.click()`);
+        // El carrito abierto (lateral en A, hoja desde abajo en B): su propia ×.
+        await js(`(document.querySelector('[role=dialog][aria-modal=true] button[aria-label*="Cerrar"]:not([tabindex="-1"])')||document.querySelector('[aria-label*="Cerrar"]'))?.click()`);
+        await pausa(400);
         hechas.push("añadir al carrito");
       }
       if (await tocar('details summary')) hechas.push("pregunta");

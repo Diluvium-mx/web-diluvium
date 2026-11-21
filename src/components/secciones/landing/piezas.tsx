@@ -11,9 +11,9 @@ export const CLASE_BOTON =
 export const CLASE_ENLACE =
   "inline-flex min-h-11 cursor-pointer items-center gap-2 font-semibold underline decoration-2 underline-offset-4 hover:decoration-4";
 
-export function Estrellas({ className = "size-[18px]" }: { className?: string }) {
+export function Estrellas({ className = "size-[18px]", marca }: { className?: string; marca?: Record<string, string> }) {
   return (
-    <span className="inline-flex text-estrella" aria-hidden="true">
+    <span className="inline-flex text-estrella" aria-hidden="true" {...marca}>
       {[0, 1, 2, 3, 4].map((i) => (
         <svg key={i} viewBox="0 0 20 20" className={className} fill="currentColor" focusable="false">
           <path d="M10 1.5l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L10 14.8 4.7 17.7l1.2-5.9L1.4 7.7l6-.7L10 1.5z" />

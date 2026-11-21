@@ -10,6 +10,7 @@ import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { datosVenta, textoVersion } from "./datos";
 import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
+import { VentanaTabla } from "./VentanaTabla";
 
 export function PasosVersion({ seccion }: PropsSeccion) {
   const pasos = seccion.bloques.filter((b) => b.tipo === "step");
@@ -34,7 +35,8 @@ export function PasosVersion({ seccion }: PropsSeccion) {
           <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} />
           {boton && (
             <div className="mt-6 flex justify-center md:mt-8">
-              <TablaMedidas
+              <VentanaTabla
+                tamanos={tamanos}
                 texto={boton}
                 className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-bold text-marino transition-colors hover:bg-marino hover:text-white"
               />

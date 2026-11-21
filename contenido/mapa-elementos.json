@@ -1,6 +1,6 @@
 {
  "product.b1": {
-  "siguiente": 305,
+  "siguiente": 318,
   "elementos": {
    "landing_ficha_b1|before_after_1|foto:before_after_1|image_before": {
     "n": 18,
@@ -502,13 +502,13 @@
    },
    "landing_ficha_b1||Ícono@div1>div2>p1>span1": {
     "n": 54,
-    "nombre": "Íconos «junto a \"4.9 · +200 reseñas\"»",
+    "nombre": "Íconos «junto a \"+200 reseñas\"»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
    "landing_ficha_b1||Enlace@div1>div2>p1>a1": {
     "n": 55,
-    "nombre": "Enlace «4.9 · +200 reseñas»",
+    "nombre": "Enlace «+200 reseñas»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -580,7 +580,7 @@
    },
    "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div1>h21": {
     "n": 67,
-    "nombre": "Título «¿Cómo medir tu entrada?»",
+    "nombre": "Título «3 pasos clave»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -940,7 +940,7 @@
    },
    "landing_pasos_b1_producto||Título@div1>div1>dialog1>div1>h21": {
     "n": 157,
-    "nombre": "Título «¿Qué tamaño necesito?»",
+    "nombre": "Título «Tabla de tamaños»",
     "parte": "B1-P5 · Cómo funciona (pasos)",
     "visto": "2026-11-21"
    },
@@ -1282,13 +1282,13 @@
    },
    "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>button1": {
     "n": 217,
-    "nombre": "Botón «Ver pasos clave→»",
+    "nombre": "Botón «Ver pasos clave»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
    "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div3>button1": {
     "n": 224,
-    "nombre": "Botón «← Volver al video»",
+    "nombre": "Botón «Volver al video»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1636,7 +1636,7 @@
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div1>strong1": {
     "n": 279,
-    "nombre": "Texto «Reseña 6 de 6»",
+    "nombre": "Texto «Reseña 88 de 238»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1648,7 +1648,7 @@
    },
    "landing_resenas_b1_producto||Foto@div1>dialog1>div1>div2>div1>img1": {
     "n": 281,
-    "nombre": "Foto «e4a8bdf1-0b99-44d4-b265-73ea291c8396-card-small.jpg · Compuerta de Max»",
+    "nombre": "Foto «8sGsCiN8dS-card-small.jpg · Compuerta de Ricardo M. puesta en su entra»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1660,13 +1660,13 @@
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p1": {
     "n": 283,
-    "nombre": "Texto «Maximiliano G.»",
+    "nombre": "Texto «Ricardo M.»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p2": {
     "n": 284,
-    "nombre": "Texto «Se ve duradera, tiene un gato en el medio que presiona bien…»",
+    "nombre": "Texto «Sus compuertas valen cada peso»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1678,7 +1678,7 @@
    },
    "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div3>span1": {
     "n": 286,
-    "nombre": "Texto «6/6»",
+    "nombre": "Texto «88/238»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1736,27 +1736,9 @@
     "parte": "B1-P5 · Cómo funciona (pasos)",
     "visto": "2026-11-21"
    },
-   "landing_ficha_b1||Video@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>video1": {
-    "n": 214,
-    "nombre": "Video «Video: dónde medir tu entrada para elegir el tamaño de la c…»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
-   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>button1": {
-    "n": 215,
-    "nombre": "Botón «Reproducir el video»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
-   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>button2": {
-    "n": 216,
-    "nombre": "Botón «Quitar el sonido»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
    "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>span1": {
     "n": 296,
-    "nombre": "Texto «0:00»",
+    "nombre": "Texto «0:55»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1768,7 +1750,7 @@
    },
    "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>span2": {
     "n": 298,
-    "nombre": "Texto «0:00»",
+    "nombre": "Texto «2:12»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1780,7 +1762,7 @@
    },
    "landing_resenas_b1_producto||Texto@div1>div3>p1": {
     "n": 300,
-    "nombre": "Texto «Viendo 12 de 238 reseñas»",
+    "nombre": "Texto «Viendo 6 de 238 reseñas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -1806,6 +1788,102 @@
     "n": 304,
     "nombre": "Texto «O revisa las más comunes:»",
     "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div1>p1": {
+    "n": 305,
+    "nombre": "Texto «Antonio»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div1>p2": {
+    "n": 306,
+    "nombre": "Texto «Estaba cansado de improvisar cuando llovía. Esta barrera ha…»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div1>p1": {
+    "n": 307,
+    "nombre": "Texto «¿Cuándo llega y si no me convence?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div1>p2": {
+    "n": 308,
+    "nombre": "Texto «Llega en 3 a 5 días hábiles a cualquier parte de México (pu…»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div2>p1": {
+    "n": 309,
+    "nombre": "Texto «¿Envían a todo México? ¿Llega a mi ciudad?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div2>p2": {
+    "n": 310,
+    "nombre": "Texto «Sí, enviamos a todo México por paquetería de confianza y el…»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div3>p1": {
+    "n": 311,
+    "nombre": "Texto «¿Mandan fuera de México?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>div2>div3>p2": {
+    "n": 312,
+    "nombre": "Texto «Normalmente no, porque el envío internacional suele costar …»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Enlace@div1>div2>div1>div2>a1": {
+    "n": 313,
+    "nombre": "Enlace «¿No es lo que buscabas? Pregúntanos por WhatsApp»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>p1>span1": {
+    "n": 314,
+    "nombre": "Texto «4.9 de 5 estrellas»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Video@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>video1": {
+    "n": 214,
+    "nombre": "Video «Video: dónde medir tu entrada para elegir el tamaño de la c…»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button1": {
+    "n": 215,
+    "nombre": "Botón «Reproducir el video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button2": {
+    "n": 216,
+    "nombre": "Botón «Quitar el sonido»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto||Ícono@div1>div1>dialog1>div2>div1>span1>svg1": {
+    "n": 315,
+    "nombre": "Ícono «adorno»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto||Tabla@div1>div1>dialog1>div2>div1>table1": {
+    "n": 316,
+    "nombre": "Tabla «TamañoAncho de entradaExtra Chica69–78 cmChica79–90 cmMedia…»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto||Texto@div1>div1>dialog1>div2>p1": {
+    "n": 317,
+    "nombre": "Texto «Mide el ancho de tu entrada de marco a marco.»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
     "visto": "2026-11-21"
    }
   }

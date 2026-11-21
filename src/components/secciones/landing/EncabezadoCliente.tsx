@@ -8,8 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
-import { PanelCarrito } from "@/components/encabezado/PanelCarrito";
 import { IconoBolsa } from "@/components/comunes/Iconos";
+import { CarritoHoja } from "./CarritoHoja";
 import { IconoTache, IconoWhatsapp } from "./piezas";
 
 export type EnlaceMenu = { texto: string; url: string };
@@ -190,7 +190,8 @@ export function EncabezadoCliente({
         )}
       </dialog>
 
-      {carrito && <PanelCarrito cerrar={cerrarCarrito} anadido={carrito.anadido} />}
+      {/* Carrito de las versiones B: hoja desde abajo (propuesta 2, dueño 21-nov-2026). */}
+      {carrito && <CarritoHoja cerrar={cerrarCarrito} anadido={carrito.anadido} />}
     </header>
   );
 }

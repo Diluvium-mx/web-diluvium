@@ -28,14 +28,16 @@ function EstrellasResena({ n }: { n: number }) {
   );
 }
 
-/** Las demás reseñas publicadas (en el orden de la tienda), sin las que ya eligió la sección. Para «Ver más». */
+/** Las demás reseñas publicadas, sin las que ya eligió la sección. Para «Ver más»: primero todas las que traen foto
+ *  y al final las de puro texto (dueño, 21-nov-2026), cada grupo en el orden de la tienda. */
 function restantes(elegidas: string[]) {
-  return PUBLICADAS.flatMap((r, i) => {
+  const todas = PUBLICADAS.flatMap((r, i) => {
     if (r.fotos.some((f) => elegidas.includes(f))) return [];
     const foto = r.fotos[0] ?? "";
     const { ancho, alto } = foto ? medidasImagen(foto) : { ancho: 0, alto: 0 };
     return [{ id: `resena-${i + 1}`, nombre: r.nombre, calificacion: r.calificacion, texto: r.texto.trim(), foto, ancho, alto }];
   });
+  return [...todas.filter((r) => r.foto), ...todas.filter((r) => !r.foto)];
 }
 
 export function ResenasVersion({ seccion }: PropsSeccion) {

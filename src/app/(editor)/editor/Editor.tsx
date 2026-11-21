@@ -596,7 +596,16 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
               key={carga.n}
               title="Página"
               src={carga.ruta}
-              onLoad={() => {
+              onLoad={(e) => {
+                // Como en un teléfono: sin la barra de desplazamiento de la computadora a la derecha (tapaba la orilla
+                // de las olas y hacía ver la página 15 px más angosta). La página publicada no cambia.
+                const d = e.currentTarget.contentDocument;
+                if (d?.head && !d.getElementById("editor-sin-barra")) {
+                  const estilo = d.createElement("style");
+                  estilo.id = "editor-sin-barra";
+                  estilo.textContent = "html{scrollbar-width:none}html::-webkit-scrollbar{display:none}";
+                  d.head.appendChild(estilo);
+                }
                 setCargada((c) => c + 1);
                 revisarDireccion();
               }}

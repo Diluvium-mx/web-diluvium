@@ -16,7 +16,7 @@ export type EntradaBanco = { pregunta: string; respuesta: string; claves?: strin
 export type TamanoBuscador = { nombre: string; medidas: string };
 
 const RELLENO = new Set(
-  "a al algo algun alguna ante bien buen buena buenas buenos cada como con cual cuales de del dia donde e el ella en es esa ese eso esta estan este esto fue ha hay hola la las le les lo los mas me mi mis muy necesito ni no nos o oye para pero por porfa porfavor pregunta puede pueden puedo que quiero se sea ser si sin sobre son su sus tal tambien te tenga tengo ti tiene tienen todo tu tus un una unas uno unos usted ustedes y ya favor gracias saber quisiera".split(
+  "a al algo algun alguna ante bien buen buena buenas buenos cada como con cual cuales de del dia donde e el ella en es esa ese eso esta estan este esto fue ha hay hola la las le les lo los mas me mi mis muy necesito ni no nos o oye para pero por porfa porfavor pregunta puede pueden puedo que quiero se sea ser si sin sobre son su sus tal tambien te tenga tengo ti tiene tienen todo tu tus un una unas uno unos usted ustedes y ya favor gracias saber quisiera cuanto cuanta cuantos".split(
     " ",
   ),
 );
@@ -47,7 +47,7 @@ const TEMAS: Record<string, string[]> = {
   cuantas: ["cuantas", "varias", "dos", "tres", "puertas", "entradas"],
 };
 // Temas que casi toda pregunta trae: valen poco por sí solos.
-const DEBILES = new Set(["medida", "tiempo"]);
+const DEBILES = new Set(["medida"]);
 
 const quitarAcentos = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
 

@@ -102,3 +102,8 @@ html:focus-within { scroll-behavior: smooth; }
   .version [data-ola] + [data-seccion] { padding-top: 2.75rem; }
   .version [data-seccion]:has(+ [data-ola]) { padding-bottom: 2.75rem; }
 }
+
+/* Flecha de los botones de la ventana «¿Cómo medir?» (217 y 224): se mueve suave hacia donde lleva. */
+@keyframes empuje-der { 0%, 100% { transform: translateX(-3px); } 50% { transform: translateX(4px); } }
+@keyframes empuje-izq { 0%, 100% { transform: translateX(3px); } 50% { transform: translateX(-4px); } }
+@media (prefers-reduced-motion: reduce) { .version .flecha-empuje { animation: none !important; } }

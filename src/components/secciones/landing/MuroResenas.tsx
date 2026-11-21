@@ -12,9 +12,18 @@
 // agrega 6 más cada vez hasta llegar a todas (como el «Ver más» de las reseñas de la tienda de hoy). En la reseña en
 // grande se cuenta sobre el total («Reseña 7 de 238») y, al llegar a la última que está a la vista, «Siguiente» dice
 // «Ver 6 más» y las agrega. Las reseñas sin foto se ven solo con sus estrellas, nombre y texto.
+//
+// Más cómodo (21-nov-2026, dueño):
+//   - con 18 o más reseñas abiertas aparece una flecha flotante que lleva a la siguiente parte (B1-P4), para no bajar
+//     todas a mano;
+//   - la reseña en grande siempre mide lo mismo: «Anterior» y «Siguiente» no se mueven de lugar aunque cambie la foto.
+//     La foto se ve completa en un cuadro fijo y lo que sobra se llena con la misma foto difuminada (solo CSS: es la
+//     misma imagen, no baja nada de más ni pesa en Cloudflare).
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+
+const PARA_FLECHA = 18;
 
 export type TarjetaMuro = {
   id: string;
@@ -77,7 +86,9 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
   const [abierta, setAbierta] = useState<number | null>(null);
   const [cuantas, setCuantas] = useState(elegidas.length);
   const ventana = useRef<HTMLDialogElement>(null);
+  const muro = useRef<HTMLDivElement>(null);
   const inicioDedo = useRef<number | null>(null);
+  const [aLaVista, setALaVista] = useState(false);
   const todas = [...elegidas, ...mas];
   const total = todas.length;
   const tarjetas = todas.slice(0, cuantas);
@@ -89,6 +100,24 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
     if (abierta !== null && !d.open) d.showModal();
     if (abierta === null && d.open) d.close();
   }, [abierta]);
+
+  // La flecha flotante solo mientras el muro está en pantalla.
+  useEffect(() => {
+    const el = muro.current;
+    if (!el || cuantas < PARA_FLECHA) return;
+    const obs = new IntersectionObserver(([e]) => setALaVista(e.isIntersecting));
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [cuantas]);
+
+  /** Lleva a la parte que sigue después de las reseñas (B1-P4), justo debajo del encabezado fijo. */
+  function saltar() {
+    let siguiente = muro.current?.closest("section")?.nextElementSibling ?? null;
+    while (siguiente && !(siguiente as HTMLElement).dataset.seccion) siguiente = siguiente.nextElementSibling;
+    if (!siguiente) return;
+    const cabeza = document.querySelector<HTMLElement>("[data-seccion='landing-encabezado']")?.getBoundingClientRect().height ?? 64;
+    window.scrollTo({ top: siguiente.getBoundingClientRect().top + window.scrollY - cabeza, behavior: "smooth" });
+  }
 
   const ir = (i: number) => {
     const n = Math.min(total - 1, Math.max(0, i));
@@ -102,7 +131,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
 
   return (
     <>
-      <div className="grid max-w-[760px] grid-cols-2 items-start gap-3 md:gap-4">
+      <div ref={muro} className="grid max-w-[760px] grid-cols-2 items-start gap-3 md:gap-4">
         {columnas.map((col, c) => (
           <ul key={c} className="m-0 grid list-none gap-3 p-0 md:gap-4">
             {col.map((x) => (
@@ -111,6 +140,18 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
           </ul>
         ))}
       </div>
+      {cuantas >= PARA_FLECHA && aLaVista && (
+        <button
+          type="button"
+          onClick={saltar}
+          aria-label="Ir a la siguiente parte (dejar de ver reseñas)"
+          className="fixed right-4 bottom-[96px] z-30 flex size-14 cursor-pointer items-center justify-center rounded-full bg-marino text-white shadow-[0_10px_24px_-8px_rgba(12,30,51,0.6)] md:right-8 md:bottom-8"
+        >
+          <svg viewBox="0 0 24 24" className="size-7" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 4v15M6 13l6 6 6-6" />
+          </svg>
+        </button>
+      )}
       {cuantas < total && (
         <div className="mt-6 flex max-w-[760px] flex-col items-center gap-2">
           <button
@@ -136,11 +177,11 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
           if (e.key === "ArrowLeft" && abierta !== null) ir(abierta - 1);
         }}
         aria-label={t ? `Reseña ${abierta! + 1} de ${total}` : "Reseña"}
-        className="version m-auto max-h-[94dvh] w-[min(94vw,560px)] max-w-none overflow-hidden rounded-2xl bg-white p-0 text-tinta backdrop:bg-tinta/70"
+        className="version m-auto h-[min(90dvh,760px)] max-h-none w-[min(94vw,560px)] max-w-none overflow-hidden rounded-2xl bg-white p-0 text-tinta backdrop:bg-tinta/70"
       >
         {t && abierta !== null && (
           <div
-            className="flex max-h-[94dvh] flex-col"
+            className="flex h-full flex-col"
             onPointerDown={(e) => (inicioDedo.current = e.clientX)}
             onPointerUp={(e) => {
               // Deslizar a la izquierda: la siguiente; a la derecha: la anterior.
@@ -159,8 +200,10 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
             </div>
             <div className="min-h-0 flex-1 overflow-y-auto">
               {t.foto && (
-                <div className="flex items-center justify-center bg-tinta">
-                  <Image key={t.id} src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="560px" className="block h-auto max-h-[52dvh] w-full object-contain" />
+                // Cuadro fijo: la foto completa encima y la misma foto difuminada de fondo.
+                <div key={t.id} className="relative h-[42dvh] max-h-[380px] overflow-hidden bg-tinta">
+                  <Image src={t.foto} alt="" aria-hidden="true" fill sizes="560px" className="scale-110 object-cover opacity-60 blur-2xl" />
+                  <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="560px" className="object-contain" />
                 </div>
               )}
               <div className="px-5 pt-4 pb-5">

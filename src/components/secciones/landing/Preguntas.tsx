@@ -4,7 +4,8 @@
 // respuesta ahí mismo (PreguntaLibre.tsx), con las de la sección más preguntas-banco.ts.
 
 import type { PropsSeccion } from "../registro";
-import { texto } from "@/lib/contenido";
+import { texto, type Bloque } from "@/lib/contenido";
+import type { EntradaBanco } from "./buscarPregunta";
 import { TextoRico } from "@/components/comunes/Texto";
 import { datosVenta, pesos, textoVersion, rellenar } from "./datos";
 import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
@@ -25,30 +26,29 @@ const plano = (html: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
+/** Las preguntas de la sección (con su respuesta en texto plano) más las del banco, con los precios del catálogo. */
+export function armarBanco(preguntas: Bloque[]): EntradaBanco[] {
+  const medida = buscarProducto(ENLACE_MEDIDA.split("/").pop() ?? "");
+  const precioMedida = medida?.variantes[0] ? pesos(medida.variantes[0].precio) : "un precio según la medida";
+  return [
+    ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))) })),
+    ...BANCO_EXTRA.map((e) => ({ ...e, respuesta: rellenar(e.respuesta).replace("{precio_medida}", precioMedida) })),
+  ];
+}
+
+/** Los tamaños con su rango de medidas (para contestar «mi puerta mide 95 cm»). */
+export function tamanosBuscador() {
+  return (datosVenta()?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
+}
+
 export function PreguntasVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
   const preguntas = seccion.bloques.filter((b) => b.tipo === "question");
   const whatsapp = texto(a, "whatsapp_link");
   const tituloBuscador = texto(a, "search_heading");
-  let buscador = null;
-  if (tituloBuscador) {
-    const venta = datosVenta();
-    const medida = buscarProducto(ENLACE_MEDIDA.split("/").pop() ?? "");
-    const precioMedida = medida?.variantes[0] ? pesos(medida.variantes[0].precio) : "un precio según la medida";
-    const banco = [
-      ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))) })),
-      ...BANCO_EXTRA.map((e) => ({ ...e, respuesta: rellenar(e.respuesta).replace("{precio_medida}", precioMedida) })),
-    ];
-    buscador = (
-      <PreguntaLibre
-        titulo={tituloBuscador}
-        banco={banco}
-        tamanos={(venta?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }))}
-        whatsapp={whatsapp}
-        enlaceMedida={ENLACE_MEDIDA}
-      />
-    );
-  }
+  const buscador = tituloBuscador ? (
+    <PreguntaLibre titulo={tituloBuscador} banco={armarBanco(preguntas)} tamanos={tamanosBuscador()} whatsapp={whatsapp} enlaceMedida={ENLACE_MEDIDA} />
+  ) : null;
   return (
     <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">

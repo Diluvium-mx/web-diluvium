@@ -1,79 +1,89 @@
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { editorDisponible, hostLocal } from "@/lib/editor/guardia";
-import { BOTONES, BotonAzul, BotonBorde, BotonTarjeta, CARRITOS } from "./Muestras";
+import { leerPlantilla } from "@/lib/editor/archivos";
+import { armarBanco, tamanosBuscador } from "@/components/secciones/landing/Preguntas";
+import { Barra1, Barra2, Barra3, Barra4, Barra5, Barra6 } from "./BarrasVideo";
+import { Preguntas1, Preguntas2, Preguntas3, Preguntas4 } from "./PreguntasDemo";
 
 // Propuestas para que el dueño elija (editor local; solo en esta Mac: http://localhost:3100/editor/propuestas).
-// 21-nov-2026: los botones «Ver pasos clave» (Producto 217) y «Volver al video» (224), y el carrito. Los «pasos clave»
-// ya se eligieron (propuesta A) y están puestos en la ventana de «¿Cómo medir?» y en B1-P5.
+// 21-nov-2026 (segunda tanda): la barra de avance del video de «¿Cómo medir?» (214/215) y la caja de preguntas al final
+// de las preguntas frecuentes (B1-P6). Ya elegidos y puestos: pasos clave A, botones 217/224 diseño 1 y carrito 2.
 
 export const dynamic = "force-dynamic";
 
-const PROPUESTAS_BOTON = [
-  { id: "1", nombre: "1 · Botón azul", idea: "Lleno, de lado a lado, con letra blanca. La flecha va debajo del texto y se mueve suave hacia donde lleva.", Muestra: BotonAzul },
-  { id: "2", nombre: "2 · Botón con borde", idea: "Blanco con borde azul (no compite con el naranja de comprar). La flecha va debajo, en un círculo azul.", Muestra: BotonBorde },
-  { id: "3", nombre: "3 · Tarjeta con dibujo", idea: "A la izquierda un dibujo de lo que se va a ver (la lista de pasos o el video); a la derecha el texto y debajo la flecha naranja.", Muestra: BotonTarjeta },
+// (Las listas van aquí, en el servidor: un módulo de cliente solo puede pasar componentes, no listas.)
+const BARRAS = [
+  { id: "1", nombre: "1 · Línea al borde", idea: "Una línea azul pegada abajo, siempre a la vista (como TikTok o Reels). Al tocarla crece y se arrastra; el minuto sale grande al centro.", Muestra: Barra1 },
+  { id: "2", nombre: "2 · Controles al tocar", idea: "Como YouTube en el celular: al tocar el video salen el botón al centro y la barra con bolita y tiempos; a los 3 s se esconden y queda la línea fina.", Muestra: Barra2 },
+  { id: "3", nombre: "3 · Píldora flotante", idea: "Una cápsula translúcida abajo con pausa, tiempo y barra, siempre a la vista. Casi no tapa el video y todo se entiende sin explicar.", Muestra: Barra3 },
+  { id: "4", nombre: "4 · ±10 segundos", idea: "Al tocar salen tres botones grandes: regresar 10 s, pausa y adelantar 10 s, más la barra abajo. Fácil para regresar a lo que no se alcanzó a ver.", Muestra: Barra4 },
+  { id: "5", nombre: "5 · Por partes", idea: "La barra dividida en las partes del video (qué entrada sirve, dónde se coloca, medir y elegir, ventanas, contacto). Tocar una parte salta a ella.", Muestra: Barra5 },
+  { id: "6", nombre: "6 · Burbuja con el tiempo", idea: "Barra fina con bolita; al arrastrar, una burbuja azul encima de la bolita dice el minuto exacto al que va a saltar.", Muestra: Barra6 },
 ];
+
+const PREGUNTAS = [
+  { id: "1", nombre: "1 · Como el video", idea: "Cada pregunta es una tarjeta. Al abrirla, la respuesta se va escribiendo y debajo aparece la siguiente pregunta que suele seguir, unida con una línea. Lo que escriben en la caja se agrega como otra tarjeta.", Muestra: Preguntas1 },
+  { id: "2", nombre: "2 · Acordeón y caja al final", idea: "Las preguntas como están hoy y, al final, la caja. La respuesta sale debajo con 2 preguntas relacionadas para tocar.", Muestra: Preguntas2 },
+  { id: "3", nombre: "3 · Sugerencias al escribir", idea: "Mientras escriben, debajo de la caja salen las preguntas que se parecen (y el tamaño si escriben una medida); tocan la suya y sale la respuesta.", Muestra: Preguntas3 },
+  { id: "4", nombre: "4 · Con temas y «¿Te sirvió?»", idea: "Debajo de la caja, botones de tema (precio, envío, instalación…) para quien no sabe qué escribir. Si la respuesta no le sirvió, la manda por WhatsApp.", Muestra: Preguntas4 },
+];
+
 
 export default async function Propuestas() {
   if (!editorDisponible() || !hostLocal((await headers()).get("host"))) notFound();
+  const seccion = leerPlantilla("product.b1").secciones.find((s) => s.tipo === "landing-preguntas");
+  const preguntas = seccion?.bloques.filter((b) => b.tipo === "question") ?? [];
+  const banco = armarBanco(preguntas);
+  const datos = { faqs: banco.slice(0, preguntas.length), banco, tamanos: tamanosBuscador() };
+
   return (
     <main className="version min-h-dvh bg-[#e9edf2] px-6 py-8 text-marino">
-      <style>{`
-        @keyframes empuje-der { 0%, 100% { transform: translateX(-3px) } 50% { transform: translateX(4px) } }
-        @keyframes empuje-izq { 0%, 100% { transform: translateX(3px) } 50% { transform: translateX(-4px) } }
-      `}</style>
       <h1 className="titulo-ancho m-0 text-[30px]">Propuestas para elegir</h1>
       <p className="m-0 mt-2 max-w-3xl text-[16px] leading-relaxed text-tinta">
-        Dime cuál de cada una: por ejemplo «Botón 2» y «Carrito 4». (Los pasos clave ya quedaron con la propuesta A.)
+        Todas se pueden probar aquí mismo: dale play al video, arrastra la barra o escribe una pregunta. Dime cuál de cada una: por ejemplo «Barra 3» y «Preguntas 1».
       </p>
 
-      <section aria-labelledby="t-botones" className="mt-10">
-        <h2 id="t-botones" className="titulo-ancho m-0 text-[24px]">
-          Botones de la ventana «¿Cómo medir?» (217 y 224)
+      <section aria-labelledby="t-barras" className="mt-10">
+        <h2 id="t-barras" className="titulo-ancho m-0 text-[24px]">
+          Barra de avance del video (214 y 215)
         </h2>
         <p className="m-0 mt-1 mb-5 max-w-3xl text-[15px] text-tinta">
-          Botón de verdad, no enlace: sin subrayado y la flecha ya no es una letra del texto. Así se ven en la ventana, a tamaño de celular.
+          Ninguna achica el video: todo va encima. La barra es azul para que se vea sobre cualquier parte del video. Se ven a tamaño de la ventana en el celular.
         </p>
         <div className="flex flex-wrap items-start gap-8">
-          {PROPUESTAS_BOTON.map(({ id, nombre, idea, Muestra }) => (
-            <figure key={id} className="m-0 w-[375px]">
-              <figcaption className="mb-2">
+          {BARRAS.map(({ id, nombre, idea, Muestra }) => (
+            <figure key={id} className="m-0 w-[343px]">
+              <figcaption className="mb-2 min-h-[92px]">
                 <strong className="block font-titulo text-[19px]">{nombre}</strong>
                 <span className="text-[14px] text-tinta">{idea}</span>
               </figcaption>
-              <div className="grid gap-4 rounded-2xl bg-white p-4 shadow-[0_20px_50px_-20px_rgba(12,30,51,0.45)]">
-                <div aria-hidden="true" className="flex aspect-video items-center justify-center rounded-xl bg-tinta text-[13px] text-white/60">
-                  (video)
-                </div>
-                {BOTONES.map((b) => (
-                  <div key={b.texto}>
-                    <p className="m-0 mb-1.5 text-[12px] font-bold text-texto-suave">{b.lado === "derecha" ? "217 · debajo del video" : "224 · al final de los pasos"}</p>
-                    <Muestra b={b} />
-                  </div>
-                ))}
+              <div className="rounded-2xl bg-white p-3 shadow-[0_20px_50px_-20px_rgba(12,30,51,0.45)]">
+                <Muestra />
               </div>
             </figure>
           ))}
         </div>
       </section>
 
-      <section aria-labelledby="t-carrito" className="mt-14">
-        <h2 id="t-carrito" className="titulo-ancho m-0 text-[24px]">
-          Carrito (6 propuestas)
+      <section aria-labelledby="t-preguntas" className="mt-14">
+        <h2 id="t-preguntas" className="titulo-ancho m-0 text-[24px]">
+          Caja de preguntas al final de las preguntas frecuentes (B1-P6)
         </h2>
         <p className="m-0 mt-1 mb-5 max-w-3xl text-[15px] text-tinta">
-          Lo que más se usa hoy en las tiendas que mejor venden, hecho simple para nuestro cliente (30 a 50 años, en el celular): letra grande, un solo botón para pagar, «Envío gratis» a
-          la vista y nada de notas de pedido ni letras chiquitas. Todas quitan el 250 («Envío calculados al finalizar la compra»).
+          Al estilo del video que compartiste. Sin IA: contestan con lo que ya está escrito (aquí, las preguntas de la sección y el banco de hoy; al construirla, también toda la guía de
+          Angela del CRM). Si no hay respuesta, ofrece mandar la pregunta por WhatsApp. Prueba escribir, por ejemplo: «¿llega a Monterrey?» o «mi puerta mide 95 cm».
         </p>
         <div className="flex flex-wrap items-start gap-8">
-          {CARRITOS.map(({ id, nombre, idea, Muestra }) => (
+          {PREGUNTAS.map(({ id, nombre, idea, Muestra }) => (
             <figure key={id} className="m-0 w-[375px]">
-              <figcaption className="mb-2 min-h-[96px]">
+              <figcaption className="mb-2 min-h-[92px]">
                 <strong className="block font-titulo text-[19px]">{nombre}</strong>
                 <span className="text-[14px] text-tinta">{idea}</span>
               </figcaption>
-              <Muestra />
+              <div className="rounded-2xl bg-white p-4 shadow-[0_20px_50px_-20px_rgba(12,30,51,0.45)]">
+                <Muestra {...datos} />
+              </div>
             </figure>
           ))}
         </div>

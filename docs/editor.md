@@ -65,6 +65,9 @@ qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …�
 - Los números **no cambian**: al cambiar un texto o mover fotos, cada elemento conserva su número. Lo nuevo toma el
   siguiente número libre y un número quitado no se vuelve a usar (como en el mapa del CRM).
 
+- La página de en medio se ve sin la barra de desplazamiento de la computadora (como en un teléfono): Chrome la ponía a
+  la derecha, tapaba la orilla de las olas y hacía ver la página 15 px más angosta.
+
 ### Guardar y publicar
 - **Importante: nada queda hasta presionar «Guardar».** Si cierras o recargas el editor sin guardar, los ajustes se
   pierden (el navegador avisa antes de cerrar).
@@ -75,8 +78,11 @@ qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …�
 
 ### Propuestas
 `http://localhost:3100/editor/propuestas`: diseños para elegir antes de ponerlos en la página, a tamaño de celular.
-21-nov-2026: los 3 botones de la ventana «¿Cómo medir?» (217 «Ver pasos clave» y 224 «Volver al video») y 6 carritos.
-(Los «pasos clave» ya se eligieron: propuesta A, puesta en la ventana y en B1-P5.)
+Ahora (21-nov-2026, segunda tanda): 6 barras de avance para el video de «¿Cómo medir?» (214/215) y 4 cajas de preguntas
+para el final de B1-P6, todas para probar ahí mismo. Ya elegidos y puestos: pasos clave A, botones 217/224 (diseño 1)
+y carrito 2 (hoja desde abajo con ×).
+- Un módulo con «use client» solo puede pasarle componentes a la página del servidor, no listas: los nombres y textos
+  de cada propuesta van en `page.tsx`.
 
 ## Cómo está hecho (para Claude)
 - Página: `src/app/(editor)/editor/` (`page.tsx`, `Editor.tsx`) con su propio diseño raíz.

@@ -11,6 +11,33 @@ import { IconoTache } from "./piezas";
 import { PasosMedir, type TamanoPaso, type VariantePasos } from "./PasosMedir";
 import { VideoGaleria } from "./VideoGaleria";
 
+/** Botón azul de la ventana (propuesta 1 que eligió el dueño, 21-nov-2026): el texto y, debajo, una flecha dibujada
+ *  (no es una letra del texto) que se mueve suave hacia donde lleva. */
+function BotonVentana({ texto, lado, alTocar }: { texto: string; lado: "derecha" | "izquierda"; alTocar: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={alTocar}
+      className="mt-4 flex min-h-[64px] w-full cursor-pointer flex-col items-center justify-center gap-0.5 rounded-2xl bg-marino px-5 py-2.5 font-titulo text-[18px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,85,154,0.8)] transition-colors hover:bg-marino-hondo"
+    >
+      {texto}
+      <svg
+        viewBox="0 0 24 24"
+        className={`flecha-empuje size-6 ${lado === "derecha" ? "animate-[empuje-der_1.4s_ease-in-out_infinite]" : "animate-[empuje-izq_1.4s_ease-in-out_infinite]"}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        {lado === "derecha" ? <path d="M4 12h15M13 6l6 6-6 6" /> : <path d="M20 12H5M11 6l-6 6 6 6" />}
+      </svg>
+    </button>
+  );
+}
+
 export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto: string; className: string; tamanos: TamanoPaso[]; variante?: VariantePasos }) {
   const ventana = useRef<HTMLDialogElement>(null);
   const [abierta, setAbierta] = useState(false);
@@ -57,38 +84,21 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
 
         {/* El video se queda puesto (escondido) mientras se ven los pasos: al volver sigue donde iba. */}
         <div className={`p-4 ${vista === "video" ? "" : "hidden"}`}>
-          {/* Alto del video (16:9) más la franja de la barra de avance (48 px). */}
-          <div className="relative overflow-hidden rounded-xl bg-tinta">
-            <div aria-hidden="true" className="aspect-video" />
-            <div aria-hidden="true" className="h-12" />
+          <div className="relative aspect-video overflow-hidden rounded-xl bg-tinta">
             <VideoGaleria
               src="/media/videos/donde-medir.mp4"
               poster="/media/videos/donde-medir-poster.jpg"
               alt="Video: dónde medir tu entrada para elegir el tamaño de la compuerta"
               activo={abierta && vista === "video"}
               conSonido
-              conBarra
             />
           </div>
-          <button
-            type="button"
-            onClick={() => cambiarVista("pasos")}
-            className="mx-auto mt-3 flex min-h-12 cursor-pointer items-center gap-2 px-3 font-titulo text-[17px] font-bold text-marino underline decoration-2 underline-offset-4"
-          >
-            Ver pasos clave
-            <span aria-hidden="true">→</span>
-          </button>
+          <BotonVentana texto="Ver pasos clave" lado="derecha" alTocar={() => cambiarVista("pasos")} />
         </div>
         {vista === "pasos" && (
           <div className="p-4">
             <PasosMedir variante={variante} tamanos={tamanos} />
-            <button
-              type="button"
-              onClick={() => cambiarVista("video")}
-              className="mx-auto mt-4 flex min-h-12 cursor-pointer items-center gap-2 px-3 font-titulo text-[16px] font-bold text-marino underline decoration-2 underline-offset-4"
-            >
-              <span aria-hidden="true">←</span> Volver al video
-            </button>
+            <BotonVentana texto="Volver al video" lado="izquierda" alTocar={() => cambiarVista("video")} />
           </div>
         )}
       </dialog>

@@ -24,7 +24,7 @@ import { producto as buscarProducto } from "@/components/producto/catalogo";
 import { BarraCompra } from "./BarraCompra";
 import { CompraFicha } from "./CompraFicha";
 import { Galeria, type MedioGaleria } from "./Galeria";
-import { datosVenta, pesos, rellenar, PRODUCTO_PRINCIPAL } from "./datos";
+import { calificacion, datosVenta, pesos, rellenar, PRODUCTO_PRINCIPAL } from "./datos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 
@@ -145,13 +145,25 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
         <div className="min-w-0">
           {(r("rating_text") || vendidas) && (
             <p className="m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-[14.5px] leading-5 font-semibold">
-              <Estrellas className="size-4" />
+              {/* «4.9» a la izquierda de las estrellas (Producto 54/55, dueño 21-nov-2026); sale de las reseñas. data-el
+                  conserva los números del mapa de las estrellas (54) y de «vendidas» (56). */}
+              {r("rating_text") && (
+                <span className="font-bold text-tinta">
+                  {calificacion()}
+                  <span className="sr-only"> de 5 estrellas</span>
+                </span>
+              )}
+              <Estrellas className="size-4" marca={{ "data-el": "Ícono@div1>div2>p1>span1" }} />
               {r("rating_text") && (
                 <a href="#resenas" className="underline decoration-linea decoration-2 underline-offset-4 hover:decoration-marino">
                   {r("rating_text")}
                 </a>
               )}
-              {vendidas && <span className="border-l-2 border-linea pl-2 text-texto-suave">{vendidas}</span>}
+              {vendidas && (
+                <span className="border-l-2 border-linea pl-2 text-texto-suave" data-el="Texto@div1>div2>p1>span2">
+                  {vendidas}
+                </span>
+              )}
             </p>
           )}
           <h1 id="titulo-ficha" className="titulo-ancho m-0 mt-1.5 text-[26px] md:text-[36px] lg:text-[40px]">
