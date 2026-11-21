@@ -7,6 +7,11 @@
 //
 // Las tarjetas se reparten a la izquierda y a la derecha una y una (1 izq., 2 der., 3 izq.…), así se leen de izquierda
 // a derecha igual que el orden de las flechas. data-el conserva los números del mapa que tenían antes.
+//
+// Todas las reseñas de la tienda (21-nov-2026, dueño): primero las 6 elegidas en la sección y abajo «Ver más», que
+// agrega 6 más cada vez hasta llegar a todas (como el «Ver más» de las reseñas de la tienda de hoy). En la reseña en
+// grande se cuenta sobre el total («Reseña 7 de 238») y, al llegar a la última que está a la vista, «Siguiente» dice
+// «Ver 6 más» y las agrega. Las reseñas sin foto se ven solo con sus estrellas, nombre y texto.
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
@@ -16,14 +21,16 @@ export type TarjetaMuro = {
   nombre: string;
   calificacion: number;
   texto: string;
+  /** Vacío si la reseña no trae foto. */
   foto: string;
   ancho: number;
   alto: number;
   estilo?: CSSProperties;
-  marca: Record<string, string>;
+  marca?: Record<string, string>;
 };
 
 const CORTE = 75;
+const DE_A = 6;
 
 function Estrellas({ n, tamano = "size-4" }: { n: number; tamano?: string }) {
   return (
@@ -41,10 +48,13 @@ function Tarjeta({ t, alAbrir }: { t: TarjetaMuro; alAbrir: () => void }) {
   const texto = t.texto.trim();
   const cortado = texto.length > CORTE + 25;
   return (
-    <li data-pieza={t.id} onClick={alAbrir} className="cursor-pointer overflow-hidden rounded-xl bg-white shadow-[1px_1px_8px_rgb(0_0_0/0.12)]">
-      <div className="relative overflow-hidden bg-niebla">
-        <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="(min-width: 768px) 360px, 50vw" className="block h-auto w-full" style={t.estilo} {...t.marca} />
-      </div>
+    // Las que llegan con «Ver más» no llevan número en el mapa (serían cientos): solo las 6 elegidas de la sección.
+    <li data-pieza={t.id} data-sin-numero={t.marca ? undefined : ""} onClick={alAbrir} className="cursor-pointer overflow-hidden rounded-xl bg-white shadow-[1px_1px_8px_rgb(0_0_0/0.12)]">
+      {t.foto && (
+        <div className="relative overflow-hidden bg-niebla">
+          <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="(min-width: 768px) 360px, 50vw" className="block h-auto w-full" style={t.estilo} {...t.marca} />
+        </div>
+      )}
       <div className="px-3.5 pt-3.5 pb-4">
         <Estrellas n={t.calificacion} />
         <p className="m-0 mt-2.5 text-[15px] leading-5 font-bold text-tinta" data-el="Texto:2">
@@ -63,10 +73,15 @@ function Tarjeta({ t, alAbrir }: { t: TarjetaMuro; alAbrir: () => void }) {
   );
 }
 
-export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
+export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: TarjetaMuro[]; mas?: TarjetaMuro[] }) {
   const [abierta, setAbierta] = useState<number | null>(null);
+  const [cuantas, setCuantas] = useState(elegidas.length);
   const ventana = useRef<HTMLDialogElement>(null);
   const inicioDedo = useRef<number | null>(null);
+  const todas = [...elegidas, ...mas];
+  const total = todas.length;
+  const tarjetas = todas.slice(0, cuantas);
+  const verMas = () => setCuantas((c) => Math.min(total, c + DE_A));
 
   useEffect(() => {
     const d = ventana.current;
@@ -75,8 +90,14 @@ export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
     if (abierta === null && d.open) d.close();
   }, [abierta]);
 
-  const ir = (i: number) => setAbierta(Math.min(tarjetas.length - 1, Math.max(0, i)));
-  const t = abierta === null ? null : tarjetas[abierta];
+  const ir = (i: number) => {
+    const n = Math.min(total - 1, Math.max(0, i));
+    // Pasar de la última a la vista agrega las siguientes 6 al muro.
+    if (n >= cuantas) setCuantas((c) => Math.min(total, Math.max(c + DE_A, n + 1)));
+    setAbierta(n);
+  };
+  const t = abierta === null ? null : todas[abierta];
+  const siguienteAgrega = abierta !== null && abierta === cuantas - 1 && cuantas < total;
   const columnas = [tarjetas.filter((_, i) => i % 2 === 0), tarjetas.filter((_, i) => i % 2 === 1)];
 
   return (
@@ -90,6 +111,21 @@ export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
           </ul>
         ))}
       </div>
+      {cuantas < total && (
+        <div className="mt-6 flex max-w-[760px] flex-col items-center gap-2">
+          <button
+            type="button"
+            onClick={verMas}
+            data-evento="ver_mas_resenas"
+            className="flex min-h-13 w-full max-w-[340px] cursor-pointer items-center justify-center rounded-2xl border-[2.5px] border-marino bg-white px-6 font-titulo text-[17px] font-bold text-marino transition-colors hover:bg-marino hover:text-white"
+          >
+            Ver más
+          </button>
+          <p className="m-0 text-[14px] text-texto-suave tabular-nums">
+            Viendo {cuantas} de {total} reseñas
+          </p>
+        </div>
+      )}
 
       <dialog
         ref={ventana}
@@ -99,7 +135,7 @@ export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
           if (e.key === "ArrowRight" && abierta !== null) ir(abierta + 1);
           if (e.key === "ArrowLeft" && abierta !== null) ir(abierta - 1);
         }}
-        aria-label={t ? `Reseña ${abierta! + 1} de ${tarjetas.length}` : "Reseña"}
+        aria-label={t ? `Reseña ${abierta! + 1} de ${total}` : "Reseña"}
         className="version m-auto max-h-[94dvh] w-[min(94vw,560px)] max-w-none overflow-hidden rounded-2xl bg-white p-0 text-tinta backdrop:bg-tinta/70"
       >
         {t && abierta !== null && (
@@ -115,16 +151,18 @@ export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
           >
             <div className="flex items-center gap-2 border-b border-linea px-4 py-2.5">
               <strong className="flex-1 font-titulo text-[16px] text-marino">
-                Reseña {abierta + 1} de {tarjetas.length}
+                Reseña {abierta + 1} de {total}
               </strong>
               <button type="button" onClick={() => setAbierta(null)} aria-label="Cerrar" className="flex size-10 cursor-pointer items-center justify-center rounded-full text-[24px] leading-none hover:bg-niebla">
                 ×
               </button>
             </div>
             <div className="min-h-0 flex-1 overflow-y-auto">
-              <div className="flex items-center justify-center bg-tinta">
-                <Image key={t.id} src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="560px" className="block h-auto max-h-[52dvh] w-full object-contain" />
-              </div>
+              {t.foto && (
+                <div className="flex items-center justify-center bg-tinta">
+                  <Image key={t.id} src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="560px" className="block h-auto max-h-[52dvh] w-full object-contain" />
+                </div>
+              )}
               <div className="px-5 pt-4 pb-5">
                 <Estrellas n={t.calificacion} tamano="size-5" />
                 <p className="m-0 mt-2.5 text-[17px] font-bold">{t.nombre}</p>
@@ -135,11 +173,16 @@ export function MuroResenas({ tarjetas }: { tarjetas: TarjetaMuro[] }) {
               <button type="button" onClick={() => ir(abierta - 1)} disabled={abierta === 0} className="h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold text-marino disabled:cursor-not-allowed disabled:opacity-30">
                 ← Anterior
               </button>
-              <span className="w-14 text-center text-[14px] font-semibold text-texto-suave tabular-nums">
-                {abierta + 1}/{tarjetas.length}
+              <span className="w-16 text-center text-[14px] font-semibold text-texto-suave tabular-nums">
+                {abierta + 1}/{total}
               </span>
-              <button type="button" onClick={() => ir(abierta + 1)} disabled={abierta === tarjetas.length - 1} className="h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold text-marino disabled:cursor-not-allowed disabled:opacity-30">
-                Siguiente →
+              <button
+                type="button"
+                onClick={() => ir(abierta + 1)}
+                disabled={abierta === total - 1}
+                className={`h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold disabled:cursor-not-allowed disabled:opacity-30 ${siguienteAgrega ? "bg-marino text-white" : "text-marino"}`}
+              >
+                {siguienteAgrega ? "Ver 6 más →" : "Siguiente →"}
               </button>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { plantilla } from "@/lib/contenido";
 import { EXPERIMENTO, VERSIONES, version } from "@/lib/versiones";
 import { PiezasTienda } from "@/components/MarcoSitio";
 import { Secciones } from "@/components/secciones/registro";
+import { SeccionesConOlas } from "@/components/secciones/landing/Olas";
 import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../PastillaVersion";
@@ -57,7 +58,7 @@ export default async function PaginaVersion({ params }: { params: Promise<{ vers
       </a>
       <Secciones secciones={encabezado} />
       <main id="contenido">
-        <Secciones secciones={cuerpo} />
+        <SeccionesConOlas secciones={cuerpo} />
       </main>
       <Secciones secciones={pie} />
       <PastillaVersion etiqueta={v.etiqueta} />

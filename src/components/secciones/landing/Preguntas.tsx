@@ -1,16 +1,54 @@
 // Sección «landing-preguntas»: los miedos reales en acordeón (<details>, se abren con teclado y lectores de
 // pantalla sin código extra; abrir una cierra la otra). En computadora el título y el WhatsApp van a la izquierda.
+// Con «search_heading» (Producto de B1, 21-nov-2026): arriba de las preguntas, una caja para escribir la suya y ver la
+// respuesta ahí mismo (PreguntaLibre.tsx), con las de la sección más preguntas-banco.ts.
 
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { TextoRico } from "@/components/comunes/Texto";
-import { textoVersion, rellenar } from "./datos";
+import { datosVenta, pesos, textoVersion, rellenar } from "./datos";
 import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
+import { PreguntaLibre } from "./PreguntaLibre";
+import { BANCO_EXTRA } from "./preguntas-banco";
+import { producto as buscarProducto } from "@/components/producto/catalogo";
+
+const ENLACE_MEDIDA = "/products/compuerta-anti-inundaciones-hecha-a-la-medida";
+
+/** Texto plano de una respuesta con formato («<p>Sí. …</p>» → «Sí. …»). */
+const plano = (html: string) =>
+  html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
 
 export function PreguntasVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
   const preguntas = seccion.bloques.filter((b) => b.tipo === "question");
   const whatsapp = texto(a, "whatsapp_link");
+  const tituloBuscador = texto(a, "search_heading");
+  let buscador = null;
+  if (tituloBuscador) {
+    const venta = datosVenta();
+    const medida = buscarProducto(ENLACE_MEDIDA.split("/").pop() ?? "");
+    const precioMedida = medida?.variantes[0] ? pesos(medida.variantes[0].precio) : "un precio según la medida";
+    const banco = [
+      ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))) })),
+      ...BANCO_EXTRA.map((e) => ({ ...e, respuesta: rellenar(e.respuesta).replace("{precio_medida}", precioMedida) })),
+    ];
+    buscador = (
+      <PreguntaLibre
+        titulo={tituloBuscador}
+        banco={banco}
+        tamanos={(venta?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }))}
+        whatsapp={whatsapp}
+        enlaceMedida={ENLACE_MEDIDA}
+      />
+    );
+  }
   return (
     <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
@@ -26,7 +64,10 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             </a>
           )}
         </div>
-        <div className="border-t border-linea">
+        <div>
+          {buscador}
+          {buscador && <p className="m-0 mb-1 text-[15px] font-semibold text-texto-suave">O revisa las más comunes:</p>}
+          <div className="border-t border-linea">
           {preguntas.map((p) => (
             <details key={p.id} data-pieza={p.id} name="preguntas-version" className="group border-b border-linea">
               <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-4 font-titulo text-[18px] leading-snug font-bold md:text-[19px]">
@@ -38,6 +79,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
               <TextoRico html={rellenar(texto(p.ajustes, "description"))} className="pb-5 text-[16.5px] leading-[1.6] text-tinta" />
             </details>
           ))}
+          </div>
         </div>
       </div>
     </section>

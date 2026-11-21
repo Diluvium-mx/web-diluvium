@@ -13,9 +13,11 @@
 // El tamaño de la caja se lee una vez al poner el dedo, no en cada movimiento.
 //
 // Invitación a deslizar (20-nov-2026, dueño): al quedar a la vista, la línea se mueve sola de un lado a otro, con una
-// manita que la acompaña, para que se entienda que se arrastra. Dos veces como máximo (la segunda, 3.5 s después), o
-// cada «repetirCada» ms mientras siga a la vista y nadie la toque (producto: cada 6 s, dueño 21-nov-2026), y
-// se detiene en cuanto la persona toca la foto o usa el teclado. No se mueve si el teléfono pide menos movimiento.
+// manita que la acompaña, para que se entienda que se arrastra. Sin «repetirCada» (portada): dos veces como máximo
+// (la segunda, 3.5 s después) y nunca más en cuanto la persona la toca. Con «repetirCada» (producto: 6 s, dueño
+// 21-nov-2026) se repite siempre mientras está a la vista: si la persona la mueve, la línea se queda donde la dejó y,
+// pasados 6 s sin tocarla, vuelve sola (sale desde donde quedó, recorre y termina en el centro) y sigue repitiéndose.
+// No se mueve si el teléfono pide menos movimiento.
 //
 // «arrastre»:
 //   - "foto" (portada): se arrastra desde cualquier punto de la foto (deja bajar la página con el dedo: pan-y);
@@ -62,6 +64,9 @@ export function Comparador({
   const cuadro = useRef(0);
   const medida = useRef<{ izquierda: number; ancho: number } | null>(null);
   const tocado = useRef(false);
+  // Los maneja el efecto de la invitación: parar al tocar y volver a contar los 6 s al soltar.
+  const alTocar = useRef(() => {});
+  const alSoltar = useRef(() => {});
   const [mano, setMano] = useState(false);
 
   const pintar = useCallback(() => {
@@ -92,46 +97,51 @@ export function Comparador({
 
   useEffect(() => () => cancelAnimationFrame(cuadro.current), []);
 
-  // La línea se mueve sola al quedar a la vista: 50 → 22 → 78 → 50 %, con entrada y salida suaves.
+  // La línea se mueve sola al quedar a la vista: (donde esté) → 22 → 78 → 50 %, con entrada y salida suaves.
   useEffect(() => {
     const el = caja.current;
     if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
-    const tramos: [number, number, number][] = [
-      [50, 22, 600],
-      [22, 78, 950],
-      [78, 50, 600],
-    ];
     const suave = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
     let animacion = 0;
     let espera: ReturnType<typeof setTimeout> | undefined;
     let veces = 0;
     let corriendo = false;
     let visible = false;
+    let tocando = false;
 
-    const demostrar = () => {
-      if (corriendo || tocado.current || !visible || (!repetirCada && veces >= 2)) return;
+    const programar = (ms: number) => {
+      clearTimeout(espera);
+      espera = setTimeout(demostrar, ms);
+    };
+
+    function demostrar() {
+      if (corriendo || tocando || !visible) return;
+      if (!repetirCada && (tocado.current || veces >= 2)) return;
       corriendo = true;
       veces++;
       setMano(true);
-      const inicio = performance.now();
+      const desde = pos.current;
+      const tramos: [number, number, number][] = [
+        [desde, 22, 450 + Math.abs(desde - 22) * 6],
+        [22, 78, 950],
+        [78, 50, 600],
+      ];
       const total = tramos.reduce((a, t) => a + t[2], 0);
+      const inicio = performance.now();
       const paso = (ahora: number) => {
-        if (tocado.current) {
-          corriendo = false;
-          setMano(false);
-          return;
-        }
+        if (tocando) return;
         let t = ahora - inicio;
         if (t >= total) {
           corriendo = false;
           colocar(50);
+          setValor(50);
           setMano(false);
-          espera = setTimeout(demostrar, repetirCada ?? 3500);
+          programar(repetirCada ?? 3500);
           return;
         }
-        for (const [desde, hasta, dura] of tramos) {
+        for (const [a, b, dura] of tramos) {
           if (t <= dura) {
-            colocar(desde + (hasta - desde) * suave(t / dura));
+            colocar(a + (b - a) * suave(t / dura));
             break;
           }
           t -= dura;
@@ -139,16 +149,27 @@ export function Comparador({
         animacion = requestAnimationFrame(paso);
       };
       animacion = requestAnimationFrame(paso);
+    }
+
+    // La persona toma la línea: se detiene ahí mismo y se queda donde la deje.
+    alTocar.current = () => {
+      tocando = true;
+      clearTimeout(espera);
+      cancelAnimationFrame(animacion);
+      corriendo = false;
+      setMano(false);
+    };
+    // La suelta: 6 s después (si nadie la vuelve a tocar) vuelve sola y sigue repitiéndose.
+    alSoltar.current = () => {
+      tocando = false;
+      if (repetirCada) programar(repetirCada);
     };
 
     const observador = new IntersectionObserver(
       ([entrada]) => {
         visible = entrada.isIntersecting;
         // Al quedar a la vista: la primera vez a los 0.7 s; si se repite, vuelve a empezar al regresar a la foto.
-        if (visible && (veces === 0 || repetirCada)) {
-          clearTimeout(espera);
-          espera = setTimeout(demostrar, veces === 0 ? 700 : 1200);
-        }
+        if (visible && !tocando && (veces === 0 || repetirCada)) programar(veces === 0 ? 700 : 1200);
       },
       { threshold: 0.6 },
     );
@@ -169,6 +190,7 @@ export function Comparador({
   function soltar() {
     medida.current = null;
     setValor(Math.round(pos.current));
+    alSoltar.current();
   }
 
   // Poner el dedo: se mide la caja una vez y se sigue al dedo aunque salga de la franja.
@@ -177,7 +199,7 @@ export function Comparador({
     if (!r) return;
     medida.current = { izquierda: r.left, ancho: r.width };
     tocado.current = true;
-    setMano(false);
+    alTocar.current();
     try {
       e.currentTarget.setPointerCapture(e.pointerId);
     } catch {
@@ -197,10 +219,11 @@ export function Comparador({
 
   function teclado(nuevo: number) {
     tocado.current = true;
-    setMano(false);
+    alTocar.current();
     colocar(nuevo);
     setValor(Math.round(pos.current));
     setMovido(true);
+    alSoltar.current();
   }
 
   return (

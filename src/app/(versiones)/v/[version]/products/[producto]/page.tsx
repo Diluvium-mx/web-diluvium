@@ -6,6 +6,7 @@ import { EXPERIMENTO, PRODUCTOS_VERSION, VERSIONES, version } from "@/lib/versio
 import { producto as buscarProducto } from "@/components/producto/catalogo";
 import { PiezasTienda } from "@/components/MarcoSitio";
 import { Secciones } from "@/components/secciones/registro";
+import { SeccionesConOlas } from "@/components/secciones/landing/Olas";
 import { ResenasProducto } from "@/components/resenas/ResenasProducto";
 import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
@@ -70,7 +71,7 @@ export default async function FichaVersion({ params }: { params: Promise<{ versi
       </a>
       <Secciones secciones={encabezado} producto={p} />
       <main id="contenido">
-        <Secciones secciones={cuerpo} producto={p} />
+        <SeccionesConOlas secciones={cuerpo} producto={p} />
       </main>
       <Secciones secciones={pie} producto={p} />
       <PastillaVersion etiqueta={v.etiqueta} />

@@ -406,20 +406,21 @@
    "id": "landing_pasos_b1_producto",
    "tipo": "landing-pasos",
    "ajustes": {
-    "heading": "Protegida en 3 pasos, sin albañiles",
-    "button_text": "Ver tabla de medidas"
+    "heading": "3 pasos clave",
+    "button_text": "Ver tabla de medidas",
+    "layout": "tarjetas"
    },
    "bloques": [
     {
      "id": "step_1",
      "tipo": "step",
      "ajustes": {
-      "image": "/media/files/Frame_601.jpg",
-      "alt": "Dibujo de una puerta con la flecha del ancho",
+      "image": "/media/files/puerta_buena.jpg",
+      "alt": "Puerta con una flecha que marca el ancho, de marco a marco",
       "heading": "Mide el ancho de tu entrada",
       "text": "De marco a marco o de pared a pared, con una cinta métrica.",
       "focal": "50% 50%",
-      "zoom": 1
+      "zoom": 1.3
      }
     },
     {
@@ -442,8 +443,8 @@
       "alt": "Dibujo de una puerta con la compuerta puesta",
       "heading": "Recíbela y colócala",
       "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos.",
-      "focal": "50% 50%",
-      "zoom": 1
+      "focal": "50% 53%",
+      "zoom": 1.22
      }
     }
    ]
@@ -454,7 +455,8 @@
    "ajustes": {
     "heading": "Antes de comprar",
     "text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium"
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium",
+    "search_heading": "¿No está tu pregunta? Escríbela aquí"
    },
    "bloques": [
     {

@@ -1,6 +1,6 @@
 {
  "product.b1": {
-  "siguiente": 260,
+  "siguiente": 305,
   "elementos": {
    "landing_ficha_b1|before_after_1|foto:before_after_1|image_before": {
     "n": 18,
@@ -244,7 +244,7 @@
    },
    "landing_pasos_b1_producto|step_1|foto:step_1|image": {
     "n": 144,
-    "nombre": "Foto «Frame_601.jpg · Dibujo de una puerta con la flecha del ancho»",
+    "nombre": "Foto «puerta_buena.jpg · Puerta con una flecha que marca el ancho, de marco »",
     "parte": "B1-P5 · Cómo funciona (pasos)",
     "visto": "2026-11-21"
    },
@@ -874,7 +874,7 @@
    },
    "landing_pasos_b1_producto||Título@div1>h21": {
     "n": 143,
-    "nombre": "Título «Protegida en 3 pasos, sin albañiles»",
+    "nombre": "Título «3 pasos clave»",
     "parte": "B1-P5 · Cómo funciona (pasos)",
     "visto": "2026-11-21"
    },
@@ -1280,24 +1280,6 @@
     "parte": "B1-P8 · Pie de página",
     "visto": "2026-11-21"
    },
-   "landing_ficha_b1||Video@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>video1": {
-    "n": 214,
-    "nombre": "Video «Video: dónde medir tu entrada para elegir el tamaño de la c…»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
-   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button1": {
-    "n": 215,
-    "nombre": "Botón «Reproducir el video»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
-   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button2": {
-    "n": 216,
-    "nombre": "Botón «Quitar el sonido»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
    "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>button1": {
     "n": 217,
     "nombre": "Botón «Ver pasos clave→»",
@@ -1318,7 +1300,7 @@
    },
    "landing_ficha_b1||Texto@div1>div2>div2>div1>fieldset1>legend1>span1": {
     "n": 226,
-    "nombre": "Texto «· Extra Chica»",
+    "nombre": "Texto «· Extra Grande»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1336,7 +1318,7 @@
    },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div1>div1>span1": {
     "n": 229,
-    "nombre": "Texto «0»",
+    "nombre": "Texto «11»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1378,19 +1360,19 @@
    },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>span1": {
     "n": 236,
-    "nombre": "Texto «$ 5,500.00 MXN»",
+    "nombre": "Texto «$ 44,000.00 MXN»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>s1": {
     "n": 237,
-    "nombre": "Texto «$ 5,999.00 MXN»",
+    "nombre": "Texto «$ 47,992.00 MXN»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div2>dl1>div1>span1": {
     "n": 238,
-    "nombre": "Texto «Extra Chica (69cm a 78cm)»",
+    "nombre": "Texto «Extra Grande (111cm a 120cm)»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1414,7 +1396,7 @@
    },
    "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li1>div2>div3>button1": {
     "n": 242,
-    "nombre": "Botón «Eliminar Compuerta Anti-Inundaciones - Extra Chica (69cm a …»",
+    "nombre": "Botón «Eliminar Compuerta Anti-Inundaciones - Extra Grande (111cm …»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1426,7 +1408,7 @@
    },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div3>div1>p1": {
     "n": 244,
-    "nombre": "Texto «$ 5,500.00 MXN»",
+    "nombre": "Texto «$ 60,500.00 MXN»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1536,6 +1518,294 @@
     "n": 259,
     "nombre": "Enlace «Seguir comprando»",
     "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>span1": {
+    "n": 260,
+    "nombre": "Texto «Toca para oír»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li2>div1>a1": {
+    "n": 261,
+    "nombre": "Enlace «foto Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li2>div2>a1": {
+    "n": 262,
+    "nombre": "Enlace «Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li2>div2>div1>span1": {
+    "n": 263,
+    "nombre": "Texto «$ 5,500.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li2>div2>div1>s1": {
+    "n": 264,
+    "nombre": "Texto «$ 5,999.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li2>div2>div2>dl1>div1>span1": {
+    "n": 265,
+    "nombre": "Texto «Chica (79cm a 90cm)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li2>div2>div3>div1>button1": {
+    "n": 266,
+    "nombre": "Botón «disminuir»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Campo@div2>div1>div1>div2>ul1>li2>div2>div3>div1>input1": {
+    "n": 267,
+    "nombre": "Campo «Cantidad de Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li2>div2>div3>div1>button2": {
+    "n": 268,
+    "nombre": "Botón «aumentar»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li2>div2>div3>button1": {
+    "n": 269,
+    "nombre": "Botón «Eliminar Compuerta Anti-Inundaciones - Chica (79cm a 90cm)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li3>div1>a1": {
+    "n": 270,
+    "nombre": "Enlace «foto Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li3>div2>a1": {
+    "n": 271,
+    "nombre": "Enlace «Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li3>div2>div1>span1": {
+    "n": 272,
+    "nombre": "Texto «$ 11,000.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li3>div2>div1>s1": {
+    "n": 273,
+    "nombre": "Texto «$ 11,998.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li3>div2>div2>dl1>div1>span1": {
+    "n": 274,
+    "nombre": "Texto «Grande (101cm a 110cm)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li3>div2>div3>div1>button1": {
+    "n": 275,
+    "nombre": "Botón «disminuir»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Campo@div2>div1>div1>div2>ul1>li3>div2>div3>div1>input1": {
+    "n": 276,
+    "nombre": "Campo «Cantidad de Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li3>div2>div3>div1>button2": {
+    "n": 277,
+    "nombre": "Botón «aumentar»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li3>div2>div3>button1": {
+    "n": 278,
+    "nombre": "Botón «Eliminar Compuerta Anti-Inundaciones - Grande (101cm a 110c…»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div1>strong1": {
+    "n": 279,
+    "nombre": "Texto «Reseña 6 de 6»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Botón@div1>dialog1>div1>div1>button1": {
+    "n": 280,
+    "nombre": "Botón «Cerrar»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Foto@div1>dialog1>div1>div2>div1>img1": {
+    "n": 281,
+    "nombre": "Foto «e4a8bdf1-0b99-44d4-b265-73ea291c8396-card-small.jpg · Compuerta de Max»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Ícono:1": {
+    "n": 282,
+    "nombre": "Íconos «5 de 5 estrellas»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p1": {
+    "n": 283,
+    "nombre": "Texto «Maximiliano G.»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div2>div2>p2": {
+    "n": 284,
+    "nombre": "Texto «Se ve duradera, tiene un gato en el medio que presiona bien…»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Botón@div1>dialog1>div1>div3>button1": {
+    "n": 285,
+    "nombre": "Botón «← Anterior»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>dialog1>div1>div3>span1": {
+    "n": 286,
+    "nombre": "Texto «6/6»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Botón@div1>dialog1>div1>div3>button2": {
+    "n": 287,
+    "nombre": "Botón «Siguiente →»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_1|Texto@div1>span1": {
+    "n": 288,
+    "nombre": "Texto «1»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_1|Título@div1>h31": {
+    "n": 289,
+    "nombre": "Título «Mide el ancho de tu entrada»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_2|Texto@div1>span1": {
+    "n": 290,
+    "nombre": "Texto «2»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_2|Título@div1>h31": {
+    "n": 291,
+    "nombre": "Título «Elige tu tamaño»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_2|Ícono@div2>div1>span1>svg1": {
+    "n": 292,
+    "nombre": "Ícono «adorno»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_2|Tabla@div2>div1>table1": {
+    "n": 293,
+    "nombre": "Tabla «TamañoAncho de entradaExtra Chica69–78 cmChica79–90 cmMedia…»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_3|Texto@div1>span1": {
+    "n": 294,
+    "nombre": "Texto «3»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_pasos_b1_producto|step_3|Título@div1>h31": {
+    "n": 295,
+    "nombre": "Título «Recíbela y colócala»",
+    "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Video@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>video1": {
+    "n": 214,
+    "nombre": "Video «Video: dónde medir tu entrada para elegir el tamaño de la c…»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>button1": {
+    "n": 215,
+    "nombre": "Botón «Reproducir el video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>button2": {
+    "n": 216,
+    "nombre": "Botón «Quitar el sonido»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>span1": {
+    "n": 296,
+    "nombre": "Texto «0:00»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Control@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>div1": {
+    "n": 297,
+    "nombre": "Control «Avance del video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>span2": {
+    "n": 298,
+    "nombre": "Texto «0:00»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Botón@div1>div3>button1": {
+    "n": 299,
+    "nombre": "Botón «Ver más»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Texto@div1>div3>p1": {
+    "n": 300,
+    "nombre": "Texto «Viendo 12 de 238 reseñas»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>div1>label1": {
+    "n": 301,
+    "nombre": "Texto «¿No está tu pregunta? Escríbela aquí»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Campo@div1>div2>div1>div1>input1": {
+    "n": 302,
+    "nombre": "Campo «Ej. ¿Llega a Monterrey? · Mi puerta mide 95 cm»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Ícono@div1>div2>div1>div1>svg1": {
+    "n": 303,
+    "nombre": "Ícono «adorno»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>p1": {
+    "n": 304,
+    "nombre": "Texto «O revisa las más comunes:»",
+    "parte": "B1-P6 · Preguntas frecuentes",
     "visto": "2026-11-21"
    }
   }

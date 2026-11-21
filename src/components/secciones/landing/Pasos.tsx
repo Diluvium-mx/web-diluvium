@@ -1,16 +1,49 @@
 // Sección «landing-pasos»: «Protegida en 3 pasos, sin albañiles». Cada paso con su número, dibujo, título y texto;
 // abajo, el botón que abre la tabla de medidas (cuenta como «abre_tabla»).
+// Con «layout» = tarjetas (Producto de B1, 21-nov-2026, propuesta A que eligió el dueño): los mismos pasos clave de la
+// ventana «¿Cómo medir?», sin los textos grises; el paso 2 es la tabla de tamaños con la flecha que la recorre.
 
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
-import { textoVersion } from "./datos";
+import { datosVenta, textoVersion } from "./datos";
+import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
 
 export function PasosVersion({ seccion }: PropsSeccion) {
   const pasos = seccion.bloques.filter((b) => b.tipo === "step");
   const boton = texto(seccion.ajustes, "button_text");
+  if (texto(seccion.ajustes, "layout") === "tarjetas") {
+    const tamanos = (datosVenta()?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
+    const tarjetas: PasoMedir[] = pasos.map((p, i) => ({
+      titulo: textoVersion(p.ajustes, "heading"),
+      tabla: i === 1,
+      imagen: texto(p.ajustes, "image") || undefined,
+      alt: texto(p.ajustes, "alt"),
+      estilo: estiloFoto(p.ajustes),
+      marca: marcaEditar(seccion.id, p.id, "image"),
+      pieza: p.id,
+    }));
+    return (
+      <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
+        <div className="marco-version max-w-[560px]">
+          <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
+            {textoVersion(seccion.ajustes, "heading")}
+          </h2>
+          <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} />
+          {boton && (
+            <div className="mt-6 flex justify-center md:mt-8">
+              <TablaMedidas
+                texto={boton}
+                className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-bold text-marino transition-colors hover:bg-marino hover:text-white"
+              />
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  }
   return (
     <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
       <div className="marco-version">

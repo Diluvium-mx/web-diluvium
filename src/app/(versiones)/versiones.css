@@ -93,3 +93,12 @@ html:focus-within { scroll-behavior: smooth; }
 /* Preguntas: el «+» gira al abrir. */
 .version details[open] .giro { transform: rotate(45deg); }
 .version summary::-webkit-details-marker { display: none; }
+
+/* Olas entre partes (landing/Olas.tsx): junto a una ola, las partes pierden aire para que no quede un hueco blanco
+   (dueño, 21-nov-2026: «unirlo lo más posible»). Fuera de capa: gana a las clases de Tailwind de cada parte. */
+.version [data-ola] + [data-seccion] { padding-top: 1.75rem; }
+.version [data-seccion]:has(+ [data-ola]) { padding-bottom: 1.75rem; }
+@media (min-width: 768px) {
+  .version [data-ola] + [data-seccion] { padding-top: 2.75rem; }
+  .version [data-seccion]:has(+ [data-ola]) { padding-bottom: 2.75rem; }
+}

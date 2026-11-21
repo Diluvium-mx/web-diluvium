@@ -101,7 +101,7 @@ export function escanear(doc: Document, secciones: SeccionMapa[]): Elemento[] {
     const contados = new Set<Element>();
     const caminante = doc.createTreeWalker(raiz, NodeFilter.SHOW_ELEMENT);
     for (let el = caminante.nextNode() as Element | null; el; el = caminante.nextNode() as Element | null) {
-      if (el.closest(".sr-only")) continue;
+      if (el.closest(".sr-only, [data-sin-numero]")) continue;
       // Lo que ya está dentro de un elemento contado (el texto de un botón, el ícono de un enlace) no cuenta aparte.
       let dentro = false;
       for (let p = el.parentElement; p && p !== raiz.parentElement; p = p.parentElement) {

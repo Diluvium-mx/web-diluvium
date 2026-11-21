@@ -4768,6 +4768,12 @@
      "tipo": "texto",
      "etiqueta": "Texto del botón",
      "diseno": false
+    },
+    {
+     "clave": "layout",
+     "tipo": "texto",
+     "etiqueta": "Diseño",
+     "diseno": true
     }
    ],
    "bloques": [
@@ -5024,6 +5030,12 @@
      "clave": "whatsapp_link",
      "tipo": "textoLargo",
      "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "search_heading",
+     "tipo": "texto",
+     "etiqueta": "Búsqueda título",
      "diseno": false
     }
    ],

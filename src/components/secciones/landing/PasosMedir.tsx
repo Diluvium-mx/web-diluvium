@@ -12,7 +12,16 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 export type TamanoPaso = { nombre: string; medidas: string };
 export type VariantePasos = "a" | "b" | "c";
 /** Un paso: su título y su dibujo (o la tabla de tamaños). En la página (B1-P5) salen de la plantilla. */
-export type PasoMedir = { titulo: string; imagen?: string; alt?: string; tabla?: boolean; estilo?: CSSProperties; marca?: Record<string, string> };
+export type PasoMedir = {
+  titulo: string;
+  imagen?: string;
+  alt?: string;
+  tabla?: boolean;
+  estilo?: CSSProperties;
+  marca?: Record<string, string>;
+  /** Id de la pieza en la plantilla (para el mapa y el editor). */
+  pieza?: string;
+};
 
 // Los dibujos traen mucho blanco alrededor: se acercan para que la puerta y la palabra ANCHO se lean bien.
 const ACERCAR_PUERTA: CSSProperties = { transform: "scale(1.3)", transformOrigin: "50% 50%" };
@@ -120,7 +129,7 @@ function Tarjetas({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPaso[
   return (
     <ol className="m-0 grid list-none gap-3 p-0">
       {pasos.map((p, i) => (
-        <li key={i} className="rounded-2xl border border-linea bg-white p-4">
+        <li key={i} data-pieza={p.pieza} className="rounded-2xl border border-linea bg-white p-4">
           <div className="flex items-center gap-3">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-marino font-titulo text-[20px] font-bold text-white">{i + 1}</span>
             <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{p.titulo}</h3>

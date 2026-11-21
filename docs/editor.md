@@ -59,6 +59,9 @@ qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …�
 - Lo que aparece al tocar (una ventana, los pasos clave, lo que hay en el carrito, un aviso) toma número solo, sin
   botón de «Volver a leer».
 - Los números de lo que pasa por debajo del encabezado fijo no se encimen en el encabezado.
+- Las reseñas que aparecen con «Ver más» (B1-P3) no llevan número (serían cientos): solo las 6 elegidas de la sección,
+  el botón «Ver más» y la reseña en grande. En el código: `data-sin-numero` deja fuera del mapa a un elemento y todo lo
+  que tiene adentro.
 - Los números **no cambian**: al cambiar un texto o mover fotos, cada elemento conserva su número. Lo nuevo toma el
   siguiente número libre y un número quitado no se vuelve a usar (como en el mapa del CRM).
 
@@ -71,8 +74,9 @@ qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …�
 - **Publicar en la prueba** sube la copia de prueba a Cloudflare (unos minutos) y dice el peso (límite 3 MB).
 
 ### Propuestas
-`http://localhost:3100/editor/propuestas`: diseños para elegir antes de ponerlos en la página (21-nov-2026: los 3
-diseños de «pasos clave», cada uno en la ventana de «¿Cómo medir?» y en B1-P5, a tamaño de celular).
+`http://localhost:3100/editor/propuestas`: diseños para elegir antes de ponerlos en la página, a tamaño de celular.
+21-nov-2026: los 3 botones de la ventana «¿Cómo medir?» (217 «Ver pasos clave» y 224 «Volver al video») y 6 carritos.
+(Los «pasos clave» ya se eligieron: propuesta A, puesta en la ventana y en B1-P5.)
 
 ## Cómo está hecho (para Claude)
 - Página: `src/app/(editor)/editor/` (`page.tsx`, `Editor.tsx`) con su propio diseño raíz.

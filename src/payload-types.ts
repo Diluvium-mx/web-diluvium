@@ -3136,6 +3136,7 @@ export interface Plantilla {
               | null;
             heading?: string | null;
             button_text?: string | null;
+            layout?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3266,6 +3267,7 @@ export interface Plantilla {
             heading?: string | null;
             text?: string | null;
             whatsapp_link?: string | null;
+            search_heading?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -5691,6 +5693,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               claves?: T;
               heading?: T;
               button_text?: T;
+              layout?: T;
               bloques?:
                 | T
                 | {
@@ -5781,6 +5784,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               heading?: T;
               text?: T;
               whatsapp_link?: T;
+              search_heading?: T;
               bloques?:
                 | T
                 | {

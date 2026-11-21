@@ -28,6 +28,16 @@ function EstrellasResena({ n }: { n: number }) {
   );
 }
 
+/** Las demás reseñas publicadas (en el orden de la tienda), sin las que ya eligió la sección. Para «Ver más». */
+function restantes(elegidas: string[]) {
+  return PUBLICADAS.flatMap((r, i) => {
+    if (r.fotos.some((f) => elegidas.includes(f))) return [];
+    const foto = r.fotos[0] ?? "";
+    const { ancho, alto } = foto ? medidasImagen(foto) : { ancho: 0, alto: 0 };
+    return [{ id: `resena-${i + 1}`, nombre: r.nombre, calificacion: r.calificacion, texto: r.texto.trim(), foto, ancho, alto }];
+  });
+}
+
 export function ResenasVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
   const tarjetas = seccion.bloques
@@ -55,6 +65,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
               const { ancho, alto } = medidasImagen(t.foto);
               return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
             })}
+            mas={restantes(tarjetas.map((t) => t.foto))}
           />
         ) : (
         <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">

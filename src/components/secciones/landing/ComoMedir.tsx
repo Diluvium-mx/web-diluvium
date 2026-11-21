@@ -57,13 +57,17 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
 
         {/* El video se queda puesto (escondido) mientras se ven los pasos: al volver sigue donde iba. */}
         <div className={`p-4 ${vista === "video" ? "" : "hidden"}`}>
-          <div className="relative aspect-video overflow-hidden rounded-xl bg-tinta">
+          {/* Alto del video (16:9) más la franja de la barra de avance (48 px). */}
+          <div className="relative overflow-hidden rounded-xl bg-tinta">
+            <div aria-hidden="true" className="aspect-video" />
+            <div aria-hidden="true" className="h-12" />
             <VideoGaleria
               src="/media/videos/donde-medir.mp4"
               poster="/media/videos/donde-medir-poster.jpg"
               alt="Video: dónde medir tu entrada para elegir el tamaño de la compuerta"
               activo={abierta && vista === "video"}
               conSonido
+              conBarra
             />
           </div>
           <button
