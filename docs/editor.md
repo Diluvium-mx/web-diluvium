@@ -5,8 +5,12 @@ textos de B1 sin pedirlos uno por uno. **No se sube a Cloudflare** (no gasta nad
 del plan): vive en esta Mac, igual que el administrador.
 
 ## Cómo abrirlo
-1. En la Terminal, dentro de la carpeta del proyecto: `npm run dev`.
-2. En el navegador de esta Mac: `http://localhost:3100/editor`.
+- **Lo más fácil:** doble clic en **«Abrir editor.command»** (en la carpeta del proyecto; se puede arrastrar al Dock o
+  al Escritorio). Enciende el editor y lo abre en Google Chrome. **Deja abierta esa ventana de Terminal** mientras lo
+  usas: si la cierras, el editor se apaga y Chrome dice «localhost rechazó la conexión».
+- A mano: en la Terminal, dentro de la carpeta del proyecto, `npm run dev`, y en Chrome `http://localhost:3100/editor`.
+- Con el editor encendido también se ven las versiones en Chrome: `http://localhost:3100/v` (lista),
+  `http://localhost:3100/v/b1` (portada) y `http://localhost:3100/v/b1/products/compuerta-anti-inundaciones` (producto).
 
 Desde otra computadora o celular de la casa **no abre** (a propósito): solo funciona en esta Mac.
 
