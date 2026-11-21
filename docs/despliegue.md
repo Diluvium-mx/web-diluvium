@@ -26,7 +26,10 @@ Para revisar versiones en línea mientras la tienda sigue en Shopify, sin pagar 
 - **Videos por partes (18-nov-2026):** los archivos fijos de Cloudflare siempre mandan el video completo y Safari del
   iPhone exige pedazos (206). `cloudflare/worker.js` es la entrada del Worker: atiende `/media/videos/*`
   («run_worker_first») y lo demás lo pasa a OpenNext. Medido con `wrangler tail`: 1 a 7 ms de procesador por pedido
-  (límite del plan gratis: 10 ms).
+  (límite del plan gratis: 10 ms). Desde el 21-nov-2026 el pedazo se manda mientras se lee (antes esperaba los 6 MB
+  completos en cada pedazo): necesita el peso de cada video, `cloudflare/tamanos-videos.json`, que
+  `publicar-prueba.mjs` vuelve a escribir al publicar (un video nuevo en `public/media/videos/` entra solo; si no está
+  en la lista, el Worker hace lo de antes).
 - **Aviso de seguridad de Next.js:** si la construcción se detiene con «SecurityFatalError», `publicar-prueba.mjs`
   reintenta una vez (Next deja seguir así) y lo dice en pantalla. La actualización de Next la decide el dueño.
 - **Medir cada cambio:** el peso sale al publicar (límite 3 MB comprimido) y `node herramientas/medir-fluidez.mjs`

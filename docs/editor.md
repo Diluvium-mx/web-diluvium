@@ -46,8 +46,14 @@ ahí no hay fotos ni números que editar.
 Los acomodos y las fotos cambiadas se ven al momento; las fotos agregadas, quitadas o movidas, al guardar.
 
 ### Textos
-Cada parte con su nombre del mapa y sus textos para escribirlos ahí mismo (los que llevan formato aceptan `<p>`,
-`<strong>`, `<a href="…">`). Se ven en la página de la derecha al guardar.
+Cada parte con su nombre del mapa y el título que se ve en la página («B1-P6 · «Antes de comprar»»), y **todos sus
+textos** para escribirlos ahí mismo (los que llevan formato aceptan `<p>`, `<strong>`, `<a href="…">`). Se ven en la
+página de la derecha al guardar. Desde el 21-nov-2026 también los que estaban fijos en el código: la ventana «¿Cómo
+medir?» (títulos, botones y pasos), la tabla de tamaños, el resultado de la medida, «Ahorras», «Agotado», la pista del
+antes y después, las reseñas («Ver más», el contador y la reseña en grande), la caja de preguntas, el carrito, el
+menú y el pie. En algunos van datos que se llenan solos: {n} y {total} (reseñas), {tamano} y {medidas} (resultado de
+la medida), además de {precio}, {calificacion}, etc. Las respuestas que da la caja de preguntas (el banco, que trae la
+guía de Angela) todavía viven en el código: `src/components/secciones/landing/preguntas-banco.ts`.
 
 ### Mapa (números de cada elemento)
 La pestaña **Mapa** (entre Fotos y Textos) muestra la página con un **número sobre cada elemento** (títulos, textos,
@@ -105,6 +111,10 @@ y carrito 2 (hoja desde abajo con ×).
   flags set»; arreglado el 21-nov-2026).
 - Seguridad (`src/lib/editor/guardia.ts`): solo con `npm run dev`, solo con dirección `localhost` y los cambios solo
   desde la misma página (Origin). En producción responde 404 y `publicar-prueba.mjs` lo quita de la copia.
+- Textos: cada pieza lee los suyos con `tx(ajustes, clave, porDefecto)` (`landing/datos.ts`); los valores de siempre
+  están en `landing/textos.ts` (archivo común: las piezas del servidor y las del teléfono los usan) y sus nombres en
+  español en `herramientas/esquema-secciones.py` (FIJAS). Clave nueva en la plantilla → `npm run admin:esquema`,
+  `npm run admin:generar` y `npm run admin:agregar-plantillas -- --reemplazar=<archivo>`.
 - Mapa de elementos: `src/lib/elementos.ts` (`escanear`) lee la página y arma la firma de cada elemento: sección |
   pieza (`data-pieza`, en las piezas que se repiten) | tipo@camino (su lugar exacto dentro de la pieza, p. ej.
   `Texto@div2>p1`). Las fotos van por su campo (`data-editar`) y `data-el` fija la firma a mano. La firma no depende
