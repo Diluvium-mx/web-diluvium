@@ -153,6 +153,32 @@ FIJAS = {
     "sticky_text": "Texto de la barra si no han elegido tamaño", "poster": "Foto antes de reproducir",
     "icon": "Ícono", "focal": "Encuadre de la foto (x% y%)", "focal_before": "Encuadre de la foto de antes (x% y%)",
     "focal_after": "Encuadre de la foto de después (x% y%)", "video": "Video", "poster": "Foto antes de reproducir",
+    # Textos que estaban fijos en el código y ahora se editan (21-nov-2026). {n}, {total}, {tamano} y {medidas} se
+    # llenan solos.
+    "layout": "Diseño", "whatsapp_icon_end": "Logo de WhatsApp al final del texto",
+    "cart_title": "Carrito: título", "cart_added": "Carrito: aviso al agregar", "cart_shipping": "Carrito: «Envío»",
+    "cart_free": "Carrito: «Gratis»", "cart_total": "Carrito: «Total»", "cart_note": "Carrito: nota debajo de las formas de pago",
+    "cart_pay": "Carrito: botón para pagar", "cart_continue": "Carrito: botón para seguir viendo", "cart_remove": "Carrito: «Quitar»",
+    "cart_empty": "Carrito: texto si está vacío", "cart_empty_button": "Carrito: botón si está vacío",
+    "menu_page_heading": "Menú: título «En esta página»", "menu_store_heading": "Menú: título «Tienda»",
+    "savings_text": "Texto antes del ahorro («Ahorras»)", "measure_placeholder": "Ejemplo dentro del campo de la medida",
+    "fit_text": "Resultado de la medida ({tamano} y {medidas})", "wider_text": "Si la entrada es más ancha",
+    "wider_link_text": "Enlace si es más ancha", "narrower_text": "Si la entrada es más angosta",
+    "narrower_link_text": "Enlace si es más angosta", "sold_out_text": "Tamaño agotado",
+    "whatsapp_button_text": "Botón de WhatsApp debajo del de comprar", "drag_hint": "Pista del antes y después",
+    "sound_hint": "Aviso del sonido del video", "video_heading": "Ventana «¿Cómo medir?»: título del video",
+    "steps_button": "Ventana «¿Cómo medir?»: botón de los pasos", "steps_heading": "Ventana «¿Cómo medir?»: título de los pasos",
+    "back_button": "Ventana «¿Cómo medir?»: botón para volver al video", "step_1": "Ventana «¿Cómo medir?»: paso 1",
+    "step_2": "Ventana «¿Cómo medir?»: paso 2", "step_3": "Ventana «¿Cómo medir?»: paso 3",
+    "table_size": "Tabla: columna del tamaño", "table_width": "Tabla: columna del ancho",
+    "table_heading": "Ventana de la tabla: título", "table_note": "Ventana de la tabla: nota",
+    "more_button": "Botón «Ver más»", "count_text": "Cuántas se ven ({n} de {total})",
+    "read_more_text": "Texto para leer la reseña completa", "viewer_title": "Reseña en grande: título ({n} de {total})",
+    "prev_button": "Reseña en grande: anterior", "next_button": "Reseña en grande: siguiente",
+    "more_six_button": "Reseña en grande: ver más", "search_heading": "Caja de preguntas: título",
+    "search_placeholder": "Caja de preguntas: ejemplo dentro", "search_button": "Caja de preguntas: botón",
+    "no_answer_text": "Caja de preguntas: si no hay respuesta", "contact_heading": "Título de contacto",
+    "store_heading": "Título de la tienda",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».
 PANTALLAS = {"desktop": "computadora", "mobile": "celular", "md": "computadora", "xs": "celular"}

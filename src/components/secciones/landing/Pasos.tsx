@@ -7,7 +7,7 @@ import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
-import { datosVenta, textoVersion } from "./datos";
+import { datosVenta, textoVersion, tx } from "./datos";
 import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
 import { VentanaTabla } from "./VentanaTabla";
@@ -17,6 +17,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
   const boton = texto(seccion.ajustes, "button_text");
   if (texto(seccion.ajustes, "layout") === "tarjetas") {
     const tamanos = (datosVenta()?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
+    const columnas: [string, string] = [tx(seccion.ajustes, "table_size", "Tamaño"), tx(seccion.ajustes, "table_width", "Ancho de entrada")];
     const tarjetas: PasoMedir[] = pasos.map((p, i) => ({
       titulo: textoVersion(p.ajustes, "heading"),
       tabla: i === 1,
@@ -32,11 +33,14 @@ export function PasosVersion({ seccion }: PropsSeccion) {
           <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
             {textoVersion(seccion.ajustes, "heading")}
           </h2>
-          <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} />
+          <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} />
           {boton && (
             <div className="mt-6 flex justify-center md:mt-8">
               <VentanaTabla
                 tamanos={tamanos}
+                titulo={tx(seccion.ajustes, "table_heading", "Tabla de tamaños")}
+                nota={tx(seccion.ajustes, "table_note", "Mide el ancho de tu entrada de marco a marco.")}
+                columnas={columnas}
                 texto={boton}
                 className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-bold text-marino transition-colors hover:bg-marino hover:text-white"
               />

@@ -534,7 +534,16 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                   <li key={s.id} className="rounded-xl border border-linea bg-white">
                     <button type="button" onClick={() => setAbierta(abierta === i ? null : i)} className="flex w-full cursor-pointer items-center gap-2 px-3 py-3 text-left">
                       <code className="rounded bg-[#e11d48] px-2 py-1 font-mono text-[13px] font-bold text-white">{s.codigo}</code>
-                      <strong className="flex-1 text-[15px]">{s.etiqueta}</strong>
+                      {/* Con el título que se ve en la página («Antes de comprar»), no solo el tipo de parte. */}
+                      <span className="min-w-0 flex-1">
+                        <strong className="block truncate text-[15px]">
+                          {(() => {
+                            const t = s.campos.find((c) => c.clave === "heading")?.valor;
+                            return typeof t === "string" && t.trim() ? `«${t.replace(/<[^>]+>/g, "").replace(/\{calificacion\}/g, "4.9")}»` : s.etiqueta;
+                          })()}
+                        </strong>
+                        <span className="block text-[12px] text-texto-suave">{s.etiqueta}</span>
+                      </span>
                       <span aria-hidden="true">{abierta === i ? "▴" : "▾"}</span>
                     </button>
                     {abierta === i && (

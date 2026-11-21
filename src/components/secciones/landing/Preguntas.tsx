@@ -8,7 +8,7 @@ import type { PropsSeccion } from "../registro";
 import { texto, type Bloque } from "@/lib/contenido";
 import type { EntradaBanco } from "./buscarPregunta";
 import { TextoRico } from "@/components/comunes/Texto";
-import { datosVenta, pesos, textoVersion, rellenar } from "./datos";
+import { datosVenta, pesos, textoVersion, rellenar, tx } from "./datos";
 import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
 import { PreguntasTarjetas } from "./PreguntasTarjetas";
 import { BANCO_EXTRA } from "./preguntas-banco";
@@ -72,6 +72,9 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             tamanos={tamanosBuscador()}
             whatsapp={whatsapp}
             enlaceMedida={ENLACE_MEDIDA}
+            placeholder={tx(a, "search_placeholder", "Ej. ¿Llega a Monterrey?")}
+            textoBoton={tx(a, "search_button", "Preguntar")}
+            textoSinRespuesta={tx(a, "no_answer_text", "Mándanos tu pregunta por WhatsApp y te contestamos.")}
           />
         ) : (
         <div>

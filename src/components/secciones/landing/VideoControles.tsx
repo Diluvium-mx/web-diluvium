@@ -31,7 +31,7 @@ function Icono({ d, className }: { d: string; className: string }) {
   );
 }
 
-export function VideoControles({ src, poster, alt, activo }: { src: string; poster: string; alt: string; activo: boolean }) {
+export function VideoControles({ src, poster, alt, activo, tocaParaOir = "Toca para oír" }: { src: string; poster: string; alt: string; activo: boolean; tocaParaOir?: string }) {
   const caja = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const pista = useRef<HTMLDivElement>(null);
@@ -163,7 +163,7 @@ export function VideoControles({ src, poster, alt, activo }: { src: string; post
         <Icono d={mudo ? SIN_SONIDO : CON_SONIDO} className="size-6" />
       </button>
       {mudo && andando && (
-        <span className="pointer-events-none absolute top-5 right-16 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">Toca para oír</span>
+        <span className="pointer-events-none absolute top-5 right-16 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">{tocaParaOir}</span>
       )}
 
       {visibles ? (

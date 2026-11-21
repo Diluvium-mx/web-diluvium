@@ -8,7 +8,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { IconoTache } from "./piezas";
-import { PasosMedir, type TamanoPaso, type VariantePasos } from "./PasosMedir";
+import { PASOS_MEDIR, PasosMedir, type TamanoPaso, type VariantePasos } from "./PasosMedir";
+import { TEXTOS_COMO_MEDIR, type TextosComoMedir } from "./textos";
+
+
 import { VideoControles } from "./VideoControles";
 
 /** Botón azul de la ventana (propuesta 1 que eligió el dueño, 21-nov-2026): el texto y, debajo, una flecha dibujada
@@ -40,8 +43,23 @@ function BotonVentana({ texto, lado, alTocar }: { texto: string; lado?: "derecha
   );
 }
 
-export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto: string; className: string; tamanos: TamanoPaso[]; variante?: VariantePasos }) {
+export function ComoMedir({
+  texto,
+  className,
+  tamanos,
+  variante = "a",
+  textos = TEXTOS_COMO_MEDIR,
+}: {
+  texto: string;
+  className: string;
+  tamanos: TamanoPaso[];
+  variante?: VariantePasos;
+  textos?: TextosComoMedir;
+}) {
   const ventana = useRef<HTMLDialogElement>(null);
+  const boton = useRef<HTMLButtonElement>(null);
+  // El video vive dentro de la ventana (VideoControles); aquí solo se prepara y se le da play en el toque.
+  const elVideo = () => ventana.current?.querySelector("video") ?? null;
   const [abierta, setAbierta] = useState(false);
   const [vista, setVista] = useState<"video" | "pasos">("video");
   const cerrar = () => ventana.current?.close();
@@ -56,13 +74,40 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
     if (abierta && !d.open) d.showModal();
   }, [abierta]);
 
+  // Arranque rápido (21-nov-2026): cuando el botón aparece en pantalla, el video ya baja su índice (144 KB) para que al
+  // tocarlo empiece al momento; al poner el dedo encima, empieza a bajar el video.
+  useEffect(() => {
+    const b = boton.current;
+    if (!b || !("IntersectionObserver" in window)) return;
+    const obs = new IntersectionObserver(([e]) => {
+      const v = elVideo();
+      if (e.isIntersecting && v && v.preload === "none") {
+        v.preload = "metadata";
+        obs.disconnect();
+      }
+    });
+    obs.observe(b);
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <>
       <button
+        ref={boton}
         type="button"
         data-evento="abre_tabla"
         aria-haspopup="dialog"
+        onPointerDown={() => {
+          const v = elVideo();
+          if (v) v.preload = "auto";
+        }}
         onClick={() => {
+          // Play en el mismo toque: empieza antes y el iPhone lo deja con sonido.
+          const v = elVideo();
+          if (v) {
+            v.muted = false;
+            v.play().catch(() => {});
+          }
           setVista("video");
           setAbierta(true);
         }}
@@ -72,13 +117,13 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
       </button>
       <dialog
         ref={ventana}
-        aria-label="Cómo medir tu entrada"
+        aria-label={textos.tituloVideo}
         onClose={() => setAbierta(false)}
         onClick={(e) => e.target === e.currentTarget && cerrar()}
         className="version m-auto max-h-[94dvh] w-[min(94vw,560px)] max-w-none overflow-y-auto rounded-2xl bg-white p-0 text-marino backdrop:bg-tinta/70"
       >
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-linea bg-white py-2.5 pr-2 pl-5">
-          <h2 className="titulo-ancho m-0 text-[20px]">{vista === "video" ? "¿Cómo medir tu entrada?" : "3 pasos clave"}</h2>
+          <h2 className="titulo-ancho m-0 text-[20px]">{vista === "video" ? textos.tituloVideo : textos.tituloPasos}</h2>
           <button type="button" onClick={cerrar} aria-label="Cerrar" className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-niebla">
             <IconoTache className="size-6" />
           </button>
@@ -92,15 +137,16 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
               poster="/media/videos/donde-medir-poster.jpg"
               alt="Video: dónde medir tu entrada para elegir el tamaño de la compuerta"
               activo={abierta && vista === "video"}
+              tocaParaOir={textos.tocaParaOir}
             />
           </div>
           {/* 217: solo el texto, al centro (dueño, 21-nov-2026); 224 conserva su flecha. */}
-          <BotonVentana texto="Ver pasos clave" alTocar={() => cambiarVista("pasos")} />
+          <BotonVentana texto={textos.botonPasos} alTocar={() => cambiarVista("pasos")} />
         </div>
         {vista === "pasos" && (
           <div className="p-4">
-            <PasosMedir variante={variante} tamanos={tamanos} />
-            <BotonVentana texto="Volver al video" lado="izquierda" alTocar={() => cambiarVista("video")} />
+            <PasosMedir variante={variante} tamanos={tamanos} columnas={textos.columnas} pasos={PASOS_MEDIR.map((p, i) => ({ ...p, titulo: textos.pasos[i] ?? p.titulo }))} />
+            <BotonVentana texto={textos.botonVolver} lado="izquierda" alTocar={() => cambiarVista("video")} />
           </div>
         )}
       </dialog>

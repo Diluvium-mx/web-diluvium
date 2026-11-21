@@ -4,7 +4,24 @@
 import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { TEXTOS_CARRITO, type TextosCarrito } from "./textos";
+import { tx } from "./datos";
 import { EncabezadoCliente } from "./EncabezadoCliente";
+
+// Clave de cada texto del carrito en la plantilla (se editan en la pestaña Textos del editor).
+const CLAVES_CARRITO: Record<keyof TextosCarrito, string> = {
+  titulo: "cart_title",
+  agregado: "cart_added",
+  envio: "cart_shipping",
+  gratis: "cart_free",
+  total: "cart_total",
+  nota: "cart_note",
+  pagar: "cart_pay",
+  seguir: "cart_continue",
+  quitar: "cart_remove",
+  vacio: "cart_empty",
+  vacioBoton: "cart_empty_button",
+};
 
 export function EncabezadoVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
@@ -20,6 +37,9 @@ export function EncabezadoVersion({ seccion }: PropsSeccion) {
       whatsapp={texto(a, "whatsapp_link")}
       enPagina={enPagina}
       tienda={menus.principal.enlaces}
+      textosCarrito={Object.fromEntries(Object.entries(CLAVES_CARRITO).map(([k, c]) => [k, tx(a, c, TEXTOS_CARRITO[k as keyof TextosCarrito])])) as TextosCarrito}
+      textoEnPagina={tx(a, "menu_page_heading", "En esta página")}
+      textoTienda={tx(a, "menu_store_heading", "Tienda")}
     />
   );
 }

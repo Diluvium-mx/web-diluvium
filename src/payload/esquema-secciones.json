@@ -4572,7 +4572,7 @@
     {
      "clave": "whatsapp_icon_end",
      "tipo": "siNo",
-     "etiqueta": "Whatsapp ícono end",
+     "etiqueta": "Logo de WhatsApp al final del texto",
      "diseno": false
     }
    ],
@@ -4732,6 +4732,84 @@
      "tipo": "textoLargo",
      "etiqueta": "Enlace de WhatsApp",
      "diseno": false
+    },
+    {
+     "clave": "cart_title",
+     "tipo": "texto",
+     "etiqueta": "Carrito: título",
+     "diseno": false
+    },
+    {
+     "clave": "cart_added",
+     "tipo": "texto",
+     "etiqueta": "Carrito: aviso al agregar",
+     "diseno": false
+    },
+    {
+     "clave": "cart_shipping",
+     "tipo": "texto",
+     "etiqueta": "Carrito: «Envío»",
+     "diseno": false
+    },
+    {
+     "clave": "cart_free",
+     "tipo": "texto",
+     "etiqueta": "Carrito: «Gratis»",
+     "diseno": false
+    },
+    {
+     "clave": "cart_total",
+     "tipo": "texto",
+     "etiqueta": "Carrito: «Total»",
+     "diseno": false
+    },
+    {
+     "clave": "cart_note",
+     "tipo": "texto",
+     "etiqueta": "Carrito: nota debajo de las formas de pago",
+     "diseno": false
+    },
+    {
+     "clave": "cart_pay",
+     "tipo": "texto",
+     "etiqueta": "Carrito: botón para pagar",
+     "diseno": false
+    },
+    {
+     "clave": "cart_continue",
+     "tipo": "texto",
+     "etiqueta": "Carrito: botón para seguir viendo",
+     "diseno": false
+    },
+    {
+     "clave": "cart_remove",
+     "tipo": "texto",
+     "etiqueta": "Carrito: «Quitar»",
+     "diseno": false
+    },
+    {
+     "clave": "cart_empty",
+     "tipo": "texto",
+     "etiqueta": "Carrito: texto si está vacío",
+     "diseno": false
+    },
+    {
+     "clave": "cart_empty_button",
+     "tipo": "texto",
+     "etiqueta": "Carrito: botón si está vacío",
+     "diseno": false
+    },
+    {
+     "clave": "menu_page_heading",
+     "tipo": "texto",
+     "etiqueta": "Menú: título «En esta página»",
+     "diseno": false
+    },
+    {
+     "clave": "menu_store_heading",
+     "tipo": "texto",
+     "etiqueta": "Menú: título «Tienda»",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -4779,6 +4857,30 @@
      "clave": "layout",
      "tipo": "texto",
      "etiqueta": "Diseño",
+     "diseno": true
+    },
+    {
+     "clave": "table_heading",
+     "tipo": "texto",
+     "etiqueta": "Ventana de la tabla: título",
+     "diseno": false
+    },
+    {
+     "clave": "table_note",
+     "tipo": "texto",
+     "etiqueta": "Ventana de la tabla: nota",
+     "diseno": false
+    },
+    {
+     "clave": "table_size",
+     "tipo": "texto",
+     "etiqueta": "Tabla: columna del tamaño",
+     "diseno": true
+    },
+    {
+     "clave": "table_width",
+     "tipo": "texto",
+     "etiqueta": "Tabla: columna del ancho",
      "diseno": true
     }
    ],
@@ -4839,6 +4941,18 @@
      "clave": "text",
      "tipo": "texto",
      "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "contact_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de contacto",
+     "diseno": false
+    },
+    {
+     "clave": "store_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de la tienda",
      "diseno": false
     }
    ],
@@ -5041,7 +5155,25 @@
     {
      "clave": "search_heading",
      "tipo": "texto",
-     "etiqueta": "Búsqueda título",
+     "etiqueta": "Caja de preguntas: título",
+     "diseno": false
+    },
+    {
+     "clave": "search_placeholder",
+     "tipo": "texto",
+     "etiqueta": "Caja de preguntas: ejemplo dentro",
+     "diseno": false
+    },
+    {
+     "clave": "search_button",
+     "tipo": "texto",
+     "etiqueta": "Caja de preguntas: botón",
+     "diseno": false
+    },
+    {
+     "clave": "no_answer_text",
+     "tipo": "texto",
+     "etiqueta": "Caja de preguntas: si no hay respuesta",
      "diseno": false
     }
    ],
@@ -5091,6 +5223,48 @@
      "tipo": "texto",
      "etiqueta": "Diseño",
      "diseno": true
+    },
+    {
+     "clave": "more_button",
+     "tipo": "texto",
+     "etiqueta": "Botón «Ver más»",
+     "diseno": false
+    },
+    {
+     "clave": "count_text",
+     "tipo": "texto",
+     "etiqueta": "Cuántas se ven ({n} de {total})",
+     "diseno": false
+    },
+    {
+     "clave": "read_more_text",
+     "tipo": "texto",
+     "etiqueta": "Texto para leer la reseña completa",
+     "diseno": false
+    },
+    {
+     "clave": "viewer_title",
+     "tipo": "texto",
+     "etiqueta": "Reseña en grande: título ({n} de {total})",
+     "diseno": false
+    },
+    {
+     "clave": "prev_button",
+     "tipo": "texto",
+     "etiqueta": "Reseña en grande: anterior",
+     "diseno": false
+    },
+    {
+     "clave": "next_button",
+     "tipo": "texto",
+     "etiqueta": "Reseña en grande: siguiente",
+     "diseno": false
+    },
+    {
+     "clave": "more_six_button",
+     "tipo": "texto",
+     "etiqueta": "Reseña en grande: ver más",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -5259,6 +5433,126 @@
      "tipo": "texto",
      "etiqueta": "Texto de la barra si no han elegido tamaño",
      "diseno": false
+    },
+    {
+     "clave": "savings_text",
+     "tipo": "texto",
+     "etiqueta": "Texto antes del ahorro («Ahorras»)",
+     "diseno": false
+    },
+    {
+     "clave": "measure_placeholder",
+     "tipo": "texto",
+     "etiqueta": "Ejemplo dentro del campo de la medida",
+     "diseno": false
+    },
+    {
+     "clave": "fit_text",
+     "tipo": "texto",
+     "etiqueta": "Resultado de la medida ({tamano} y {medidas})",
+     "diseno": false
+    },
+    {
+     "clave": "wider_text",
+     "tipo": "texto",
+     "etiqueta": "Si la entrada es más ancha",
+     "diseno": false
+    },
+    {
+     "clave": "wider_link_text",
+     "tipo": "texto",
+     "etiqueta": "Enlace si es más ancha",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_text",
+     "tipo": "texto",
+     "etiqueta": "Si la entrada es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_link_text",
+     "tipo": "texto",
+     "etiqueta": "Enlace si es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "sold_out_text",
+     "tipo": "texto",
+     "etiqueta": "Tamaño agotado",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_button_text",
+     "tipo": "texto",
+     "etiqueta": "Botón de WhatsApp debajo del de comprar",
+     "diseno": false
+    },
+    {
+     "clave": "drag_hint",
+     "tipo": "texto",
+     "etiqueta": "Pista del antes y después",
+     "diseno": false
+    },
+    {
+     "clave": "sound_hint",
+     "tipo": "texto",
+     "etiqueta": "Aviso del sonido del video",
+     "diseno": false
+    },
+    {
+     "clave": "video_heading",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: título del video",
+     "diseno": false
+    },
+    {
+     "clave": "steps_button",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: botón de los pasos",
+     "diseno": false
+    },
+    {
+     "clave": "steps_heading",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: título de los pasos",
+     "diseno": false
+    },
+    {
+     "clave": "back_button",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: botón para volver al video",
+     "diseno": false
+    },
+    {
+     "clave": "step_1",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: paso 1",
+     "diseno": false
+    },
+    {
+     "clave": "step_2",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: paso 2",
+     "diseno": false
+    },
+    {
+     "clave": "step_3",
+     "tipo": "texto",
+     "etiqueta": "Ventana «¿Cómo medir?»: paso 3",
+     "diseno": false
+    },
+    {
+     "clave": "table_size",
+     "tipo": "texto",
+     "etiqueta": "Tabla: columna del tamaño",
+     "diseno": true
+    },
+    {
+     "clave": "table_width",
+     "tipo": "texto",
+     "etiqueta": "Tabla: columna del ancho",
+     "diseno": true
     }
    ],
    "bloques": [
@@ -5509,7 +5803,7 @@
   {
    "clave": "sold_out_text",
    "tipo": "texto",
-   "etiqueta": "Agotado fuera texto",
+   "etiqueta": "Tamaño agotado",
    "diseno": false
   },
   {

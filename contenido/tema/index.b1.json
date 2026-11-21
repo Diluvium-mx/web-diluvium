@@ -9,7 +9,20 @@
     "button_text": "Comprar",
     "button_link": "/products/compuerta-anti-inundaciones",
     "menu_text": "Menú",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "cart_title": "Tu carrito",
+    "cart_added": "Se agregó a tu carrito",
+    "cart_shipping": "Envío",
+    "cart_free": "Gratis",
+    "cart_total": "Total",
+    "cart_note": "IVA incluido · hasta 6 meses sin intereses",
+    "cart_pay": "Pagar ahora",
+    "cart_continue": "Seguir viendo",
+    "cart_remove": "Quitar",
+    "cart_empty": "Tu carrito está vacío.",
+    "cart_empty_button": "Ver la compuerta",
+    "menu_page_heading": "En esta página",
+    "menu_store_heading": "Tienda"
    },
    "bloques": [
     {
@@ -475,7 +488,9 @@
    "id": "landing_pie_b1",
    "tipo": "landing-pie",
    "ajustes": {
-    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México."
+    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México.",
+    "contact_heading": "Contacto",
+    "store_heading": "Tienda"
    },
    "bloques": []
   }

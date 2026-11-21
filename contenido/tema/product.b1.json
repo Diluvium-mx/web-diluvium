@@ -9,7 +9,20 @@
     "button_text": "Comprar",
     "button_link": "#tamanos",
     "menu_text": "Menú",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "cart_title": "Tu carrito",
+    "cart_added": "Se agregó a tu carrito",
+    "cart_shipping": "Envío",
+    "cart_free": "Gratis",
+    "cart_total": "Total",
+    "cart_note": "IVA incluido · hasta 6 meses sin intereses",
+    "cart_pay": "Pagar ahora",
+    "cart_continue": "Seguir viendo",
+    "cart_remove": "Quitar",
+    "cart_empty": "Tu carrito está vacío.",
+    "cart_empty_button": "Ver la compuerta",
+    "menu_page_heading": "En esta página",
+    "menu_store_heading": "Tienda"
    },
    "bloques": [
     {
@@ -55,7 +68,27 @@
     "gallery_style": "normal",
     "include_product_media": false,
     "sticky_bar": "al_bajar",
-    "sticky_text": "Elegir mi tamaño"
+    "sticky_text": "Elegir mi tamaño",
+    "savings_text": "Ahorras",
+    "measure_placeholder": "Ej. 95",
+    "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
+    "wider_text": "Tu entrada es más ancha:",
+    "wider_link_text": "la hacemos a la medida",
+    "narrower_text": "Tu entrada es más angosta.",
+    "narrower_link_text": "Escríbenos y vemos tu caso",
+    "sold_out_text": "Agotado",
+    "whatsapp_button_text": "Pregúntanos por WhatsApp",
+    "drag_hint": "← Arrastra la línea →",
+    "sound_hint": "Toca para oír",
+    "video_heading": "¿Cómo medir tu entrada?",
+    "steps_button": "Ver pasos clave",
+    "steps_heading": "3 pasos clave",
+    "back_button": "Volver al video",
+    "step_1": "Mide el ancho de tu entrada",
+    "step_2": "Elige tu tamaño",
+    "step_3": "Recíbela y colócala",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada"
    },
    "bloques": [
     {
@@ -268,7 +301,14 @@
    "ajustes": {
     "heading": "{calificacion} de 5 en más de 200 reseñas",
     "subheading": "Fotos reales de clientes con su compuerta puesta.",
-    "layout": "dos_columnas"
+    "layout": "dos_columnas",
+    "more_button": "Ver más",
+    "count_text": "Viendo {n} de {total} reseñas",
+    "read_more_text": "...Mostrar reseña completa",
+    "viewer_title": "Reseña {n} de {total}",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "more_six_button": "Ver 6 más"
    },
    "bloques": [
     {
@@ -408,7 +448,11 @@
    "ajustes": {
     "heading": "3 pasos clave",
     "button_text": "Ver tabla de medidas",
-    "layout": "tarjetas"
+    "layout": "tarjetas",
+    "table_heading": "Tabla de tamaños",
+    "table_note": "Mide el ancho de tu entrada de marco a marco.",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada"
    },
    "bloques": [
     {
@@ -456,7 +500,10 @@
     "heading": "Antes de comprar",
     "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium",
-    "search_heading": "¿No está tu pregunta? Escríbela aquí"
+    "search_heading": "¿No está tu pregunta? Escríbela aquí",
+    "search_placeholder": "Ej. ¿Llega a Monterrey?",
+    "search_button": "Preguntar",
+    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos."
    },
    "bloques": [
     {
@@ -574,7 +621,9 @@
    "id": "landing_pie_b1_producto",
    "tipo": "landing-pie",
    "ajustes": {
-    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México."
+    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México.",
+    "contact_heading": "Contacto",
+    "store_heading": "Tienda"
    },
    "bloques": []
   }

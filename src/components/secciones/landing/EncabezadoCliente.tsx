@@ -10,6 +10,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
 import { IconoBolsa } from "@/components/comunes/Iconos";
 import { CarritoHoja } from "./CarritoHoja";
+import type { TextosCarrito } from "./textos";
 import { IconoTache, IconoWhatsapp } from "./piezas";
 
 export type EnlaceMenu = { texto: string; url: string };
@@ -31,6 +32,9 @@ export function EncabezadoCliente({
   whatsapp,
   enPagina,
   tienda,
+  textosCarrito,
+  textoEnPagina = "En esta página",
+  textoTienda = "Tienda",
 }: {
   logo: string;
   botonTexto: string;
@@ -39,6 +43,9 @@ export function EncabezadoCliente({
   whatsapp: string;
   enPagina: EnlaceMenu[];
   tienda: EnlaceMenu[];
+  textosCarrito?: TextosCarrito;
+  textoEnPagina?: string;
+  textoTienda?: string;
 }) {
   const [conSombra, setConSombra] = useState(false);
   const [carrito, setCarrito] = useState<{ anadido: boolean } | null>(null);
@@ -151,7 +158,7 @@ export function EncabezadoCliente({
           </button>
         </div>
         <nav aria-label="En esta página" className="px-6 pt-4">
-          <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">En esta página</p>
+          <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">{textoEnPagina}</p>
           <ul className="m-0 list-none p-0">
             {enPagina.map((e) => (
               <li key={e.url}>
@@ -163,7 +170,7 @@ export function EncabezadoCliente({
           </ul>
         </nav>
         <nav aria-label="Tienda" className="px-6 pt-6">
-          <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">Tienda</p>
+          <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">{textoTienda}</p>
           <ul className="m-0 list-none p-0">
             {tienda.map((e) => (
               <li key={e.url}>
@@ -191,7 +198,7 @@ export function EncabezadoCliente({
       </dialog>
 
       {/* Carrito de las versiones B: hoja desde abajo (propuesta 2, dueño 21-nov-2026). */}
-      {carrito && <CarritoHoja cerrar={cerrarCarrito} anadido={carrito.anadido} />}
+      {carrito && <CarritoHoja cerrar={cerrarCarrito} anadido={carrito.anadido} textos={textosCarrito} />}
     </header>
   );
 }

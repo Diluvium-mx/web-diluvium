@@ -12,6 +12,9 @@ import { useId, useState } from "react";
 import type { Tamano } from "./datos";
 import { agregarElegido, elegir, useElegido } from "./eleccion";
 import { ComoMedir } from "./ComoMedir";
+import { TEXTOS_COMPRA, type TextosComoMedir, type TextosCompra } from "./textos";
+
+
 import { CLASE_BOTON, IconoWhatsapp } from "./piezas";
 
 /** Avisa a la medición de algo que no es un clic (escribir la medida). */
@@ -51,6 +54,8 @@ export function CompraFicha({
   textoBoton,
   textoError,
   whatsapp,
+  textos = TEXTOS_COMPRA,
+  textosComoMedir,
 }: {
   titulo: string;
   tamanos: Tamano[];
@@ -63,6 +68,8 @@ export function CompraFicha({
   textoBoton: string;
   textoError: string;
   whatsapp: string;
+  textos?: TextosCompra;
+  textosComoMedir?: TextosComoMedir;
 }) {
   const elegido = useElegido();
   const [aviso, setAviso] = useState("");
@@ -109,7 +116,7 @@ export function CompraFicha({
                 type="text"
                 inputMode="decimal"
                 autoComplete="off"
-                placeholder="Ej. 95"
+                placeholder={textos.placeholder}
                 value={medida}
                 onChange={(e) => alMedir(e.target.value.replace(/[^\d.,]/g, "").slice(0, 5))}
                 aria-describedby={`${idAyuda}-resultado`}
@@ -121,6 +128,7 @@ export function CompraFicha({
               <ComoMedir
                 texto={textoMedir}
                 tamanos={pasos}
+                textos={textosComoMedir}
                 className="min-h-11 cursor-pointer text-[15px] font-semibold underline decoration-2 underline-offset-4 hover:decoration-4"
               />
             )}
@@ -129,23 +137,25 @@ export function CompraFicha({
           <p id={`${idAyuda}-resultado`} aria-live="polite" className="m-0 text-[15px] leading-5 text-tinta [&:not(:empty)]:mt-2">
             {resultado && "tamano" in resultado && (
               <>
-                Te queda la <strong>{resultado.tamano.nombre}</strong> ({resultado.tamano.medidas}). Ya está elegida.
+                {textos.teQueda
+                  .split(/(\{tamano\})/)
+                  .map((parte, i) => (parte === "{tamano}" ? <strong key={i}>{resultado.tamano.nombre}</strong> : parte.replace("{medidas}", resultado.tamano.medidas)))}
               </>
             )}
             {resultado && "fuera" in resultado && resultado.fuera === "grande" && (
               <>
-                Tu entrada es más ancha:{" "}
+                {textos.masAncha}{" "}
                 <a href={enlaceMedida} className="font-semibold text-marino underline decoration-2 underline-offset-4">
-                  la hacemos a la medida
+                  {textos.masAnchaEnlace}
                 </a>
                 .
               </>
             )}
             {resultado && "fuera" in resultado && resultado.fuera === "chica" && (
               <>
-                Tu entrada es más angosta.{" "}
+                {textos.masAngosta}{" "}
                 <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className="font-semibold text-marino underline decoration-2 underline-offset-4">
-                  Escríbenos y vemos tu caso
+                  {textos.masAngostaEnlace}
                 </a>
                 .
               </>
@@ -164,6 +174,7 @@ export function CompraFicha({
             <ComoMedir
               texto={textoMedir}
               tamanos={pasos}
+                textos={textosComoMedir}
               className="float-right min-h-11 cursor-pointer text-[15px] font-semibold underline decoration-2 underline-offset-4 hover:decoration-4"
             />
           )}
@@ -198,7 +209,7 @@ export function CompraFicha({
                   />
                   <span className="text-[14.5px] leading-tight font-bold">{t.nombre}</span>
                   {t.medidas && <span className={`text-[13px] leading-5 ${activo ? "text-white" : "text-texto-suave"}`}>{t.medidas}</span>}
-                  {agotado && <span className="text-[12px] leading-4 no-underline">Agotado</span>}
+                  {agotado && <span className="text-[12px] leading-4 no-underline">{textos.agotado}</span>}
                 </label>
               );
             })}
@@ -261,7 +272,7 @@ export function CompraFicha({
           className="mt-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1a7f37] px-4 text-center font-titulo text-[16px] font-bold text-[#14632b] hover:bg-[#1a7f37]/5"
         >
           <IconoWhatsapp className="size-5 text-[#1a7f37]" />
-          Pregúntanos por WhatsApp
+          {textos.whatsapp}
         </a>
       )}
     </div>

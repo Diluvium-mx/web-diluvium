@@ -81,6 +81,9 @@ export function PreguntasTarjetas({
   whatsapp,
   enlaceMedida,
   titulo,
+  placeholder = "Ej. ¿Llega a Monterrey?",
+  textoBoton = "Preguntar",
+  textoSinRespuesta = "Mándanos tu pregunta por WhatsApp y te contestamos.",
 }: {
   faqs: EntradaBanco[];
   banco: EntradaBanco[];
@@ -90,6 +93,9 @@ export function PreguntasTarjetas({
   enlaceMedida: string;
   /** Lo que dice arriba de la caja («¿No está tu pregunta? Escríbela aquí»). */
   titulo: string;
+  placeholder?: string;
+  textoBoton?: string;
+  textoSinRespuesta?: string;
 }) {
   const indice = useMemo(() => indexar(banco), [banco]);
   const [hechas, setHechas] = useState<Hecha[]>([]);
@@ -155,7 +161,7 @@ export function PreguntasTarjetas({
                 data-evento="toca_whatsapp"
                 className="inline font-semibold text-[#14532d] underline decoration-2 underline-offset-4"
               >
-                Mándanos tu pregunta por WhatsApp y te contestamos.
+                {textoSinRespuesta}
                 <IconoWhatsapp className="ml-1.5 inline size-5 align-[-4px] text-[#1a7f37]" />
               </a>
             )}
@@ -181,11 +187,11 @@ export function PreguntasTarjetas({
             maxLength={200}
             enterKeyHint="send"
             autoComplete="off"
-            placeholder="Ej. ¿Llega a Monterrey?"
+            placeholder={placeholder}
             className="h-13 min-w-0 flex-1 rounded-xl border-2 border-linea bg-white px-3.5 text-[17px] text-tinta placeholder:text-[15.5px] placeholder:text-texto-suave focus:border-marino focus:outline-none"
           />
           <button type="submit" className="h-13 shrink-0 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[16px] font-bold text-white">
-            Preguntar
+            {textoBoton}
           </button>
         </div>
       </form>

@@ -39,6 +39,7 @@ export function Comparador({
   arrastre = "foto",
   desvanecerEtiquetas = false,
   repetirCada,
+  pista,
 }: {
   antes: Lado;
   despues: Lado;
@@ -50,6 +51,8 @@ export function Comparador({
   desvanecerEtiquetas?: boolean;
   /** Cada cuántos ms se repite la invitación a deslizar (sin límite) mientras nadie toque la foto. */
   repetirCada?: number;
+  /** Texto de la pista de arriba (editable); si no, «← Desliza →» o «← Arrastra la línea →». */
+  pista?: string;
 }) {
   // Solo para lectores de pantalla y la pista: se actualiza al soltar o con el teclado, no en cada movimiento.
   const [valor, setValor] = useState(50);
@@ -301,7 +304,7 @@ export function Comparador({
           movido ? "opacity-0" : "opacity-100"
         }`}
       >
-        {enFoto ? "← Desliza →" : "← Arrastra la línea →"}
+        {pista || (enFoto ? "← Desliza →" : "← Arrastra la línea →")}
       </span>
     </div>
   );

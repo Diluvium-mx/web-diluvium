@@ -58,7 +58,20 @@ function Flecha({ lado, onClick, disabled }: { lado: "antes" | "despues"; onClic
   );
 }
 
-export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleria[]; forma?: "normal" | "baja"; pie?: string }) {
+export function Galeria({
+  medios,
+  forma = "normal",
+  pie,
+  pista,
+  tocaParaOir,
+}: {
+  medios: MedioGaleria[];
+  forma?: "normal" | "baja";
+  pie?: string;
+  /** Pista del antes y después («← Arrastra la línea →»). */
+  pista?: string;
+  tocaParaOir?: string;
+}) {
   const tira = useRef<HTMLDivElement>(null);
   const [actual, setActual] = useState(0);
 
@@ -138,8 +151,8 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                   className="object-cover"
                 />
               )}
-              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} />}
-              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" desvanecerEtiquetas repetirCada={6000} />}
+              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} tocaParaOir={tocaParaOir} />}
+              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" desvanecerEtiquetas repetirCada={6000} pista={pista} />}
             </div>
           ))}
         </div>

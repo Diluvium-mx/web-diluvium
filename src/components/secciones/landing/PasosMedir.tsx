@@ -35,7 +35,7 @@ export const PASOS_MEDIR: PasoMedir[] = [
 
 /** Tabla de tamaños con una flecha que baja de tamaño en tamaño y vuelve a empezar arriba (ligera: solo se mueve
  *  mientras está a la vista y solo con transform/opacity). */
-export function TablaAnimada({ tamanos }: { tamanos: TamanoPaso[] }) {
+export function TablaAnimada({ tamanos, columnas = ["Tamaño", "Ancho de entrada"] }: { tamanos: TamanoPaso[]; columnas?: [string, string] }) {
   const [fila, setFila] = useState(0);
   const caja = useRef<HTMLDivElement>(null);
   const cuerpo = useRef<HTMLTableSectionElement>(null);
@@ -94,8 +94,8 @@ export function TablaAnimada({ tamanos }: { tamanos: TamanoPaso[] }) {
       <table className="w-full border-separate border-spacing-0 overflow-hidden rounded-xl border border-linea text-[16px]">
         <thead>
           <tr className="bg-marino text-white">
-            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">Tamaño</th>
-            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">Ancho de entrada</th>
+            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">{columnas[0]}</th>
+            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">{columnas[1]}</th>
           </tr>
         </thead>
         <tbody ref={cuerpo}>
@@ -121,12 +121,12 @@ function Dibujo({ paso }: { paso: PasoMedir }) {
   );
 }
 
-function Visual({ paso, tamanos }: { paso: PasoMedir; tamanos: TamanoPaso[] }) {
-  return paso.tabla ? <TablaAnimada tamanos={tamanos} /> : <Dibujo paso={paso} />;
+function Visual({ paso, tamanos, columnas }: { paso: PasoMedir; tamanos: TamanoPaso[]; columnas?: [string, string] }) {
+  return paso.tabla ? <TablaAnimada tamanos={tamanos} columnas={columnas} /> : <Dibujo paso={paso} />;
 }
 
 /** «a» · Tarjetas: cada paso en su tarjeta, número grande, título y dibujo. */
-function Tarjetas({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPaso[] }) {
+function Tarjetas({ pasos, tamanos, columnas }: { pasos: PasoMedir[]; tamanos: TamanoPaso[]; columnas?: [string, string] }) {
   return (
     <ol className="m-0 grid list-none gap-3 p-0">
       {pasos.map((p, i) => (
@@ -136,7 +136,7 @@ function Tarjetas({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPaso[
             <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{p.titulo}</h3>
           </div>
           <div className="mt-3">
-            <Visual paso={p} tamanos={tamanos} />
+            <Visual paso={p} tamanos={tamanos} columnas={columnas} />
           </div>
         </li>
       ))}
@@ -213,8 +213,19 @@ function Deslizable({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPas
   );
 }
 
-export function PasosMedir({ variante = "a", tamanos, pasos = PASOS_MEDIR }: { variante?: VariantePasos; tamanos: TamanoPaso[]; pasos?: PasoMedir[] }) {
+export function PasosMedir({
+  variante = "a",
+  tamanos,
+  pasos = PASOS_MEDIR,
+  columnas,
+}: {
+  variante?: VariantePasos;
+  tamanos: TamanoPaso[];
+  pasos?: PasoMedir[];
+  /** Encabezados de la tabla de tamaños. */
+  columnas?: [string, string];
+}) {
   if (variante === "b") return <Linea pasos={pasos} tamanos={tamanos} />;
   if (variante === "c") return <Deslizable pasos={pasos} tamanos={tamanos} />;
-  return <Tarjetas pasos={pasos} tamanos={tamanos} />;
+  return <Tarjetas pasos={pasos} tamanos={tamanos} columnas={columnas} />;
 }

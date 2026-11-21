@@ -8,7 +8,7 @@ import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
 import { plantilla, texto } from "@/lib/contenido";
 import { IconoFacebook, IconoInstagram, IconoLinkedin, IconoYoutube } from "@/components/comunes/Iconos";
-import { textoVersion } from "./datos";
+import { textoVersion, tx } from "./datos";
 
 const REDES: Record<string, { nombre: string; Icono: typeof IconoFacebook }> = {
   facebook: { nombre: "Facebook", Icono: IconoFacebook },
@@ -18,6 +18,7 @@ const REDES: Record<string, { nombre: string; Icono: typeof IconoFacebook }> = {
 };
 
 export function PieVersion({ seccion }: PropsSeccion) {
+  const a = seccion.ajustes;
   const tienda = plantilla("pie").secciones.find((s) => s.tipo === "footer")?.bloques.find((b) => b.tipo === "store_information");
   const logo = tienda ? texto(tienda.ajustes, "footer_image") : "";
   // La dirección, el teléfono y el correo vienen como renglones (<h5>) en el pie de la tienda.
@@ -47,7 +48,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </div>
         <address className="not-italic">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">Contacto</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{tx(a, "contact_heading", "Contacto")}</p>
           <ul className="m-0 grid list-none gap-2 p-0 text-[15px] leading-[1.5] text-white/85">
             {renglones.map((r) =>
               /@/.test(r) ? (
@@ -65,7 +66,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </address>
         <nav aria-label="Pie de página">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">Tienda</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{tx(a, "store_heading", "Tienda")}</p>
           <ul className="m-0 grid list-none gap-1 p-0 text-[15px] text-white/85">
             {[...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")].map((e) => (
               <li key={e.url}>

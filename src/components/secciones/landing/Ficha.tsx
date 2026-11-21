@@ -24,7 +24,8 @@ import { producto as buscarProducto } from "@/components/producto/catalogo";
 import { BarraCompra } from "./BarraCompra";
 import { CompraFicha } from "./CompraFicha";
 import { Galeria, type MedioGaleria } from "./Galeria";
-import { calificacion, datosVenta, pesos, rellenar, PRODUCTO_PRINCIPAL } from "./datos";
+import { calificacion, datosVenta, pesos, rellenar, tx, PRODUCTO_PRINCIPAL } from "./datos";
+import { TEXTOS_COMO_MEDIR, TEXTOS_COMPRA } from "./textos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 
@@ -139,7 +140,13 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
     <section data-seccion="landing-ficha" aria-labelledby="titulo-ficha" className="bg-white pt-3 pb-10 text-marino md:pt-6 md:pb-14 lg:pt-10 lg:pb-16">
       <div className="marco-version grid gap-4 md:gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-12">
         <div className="lg:sticky lg:top-24 lg:self-start">
-          <Galeria medios={galeria} forma={texto(a, "gallery_style") === "baja" ? "baja" : "normal"} pie={r("media_caption")} />
+          <Galeria
+            medios={galeria}
+            forma={texto(a, "gallery_style") === "baja" ? "baja" : "normal"}
+            pie={r("media_caption")}
+            pista={tx(a, "drag_hint", "← Arrastra la línea →")}
+            tocaParaOir={tx(a, "sound_hint", "Toca para oír")}
+          />
         </div>
 
         <div className="min-w-0">
@@ -179,7 +186,11 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                 <s>{precioAntes}</s>
               </span>
             )}
-            {ahorro && <span className="rounded-md bg-[#fdf1dd] px-2 py-0.5 text-[14px] font-bold text-[#8a4b00]">Ahorras {ahorro}</span>}
+            {ahorro && (
+              <span className="rounded-md bg-[#fdf1dd] px-2 py-0.5 text-[14px] font-bold text-[#8a4b00]">
+                {tx(a, "savings_text", "Ahorras")} {ahorro}
+              </span>
+            )}
           </div>
           {r("price_note") && <p className="m-0 mt-0.5 text-[15px] text-texto-suave">{r("price_note")}</p>}
 
@@ -197,6 +208,25 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               textoBoton={r("button_text") || "Añadir al carrito"}
               textoError={r("error_text")}
               whatsapp={texto(a, "whatsapp_link")}
+              textos={{
+                placeholder: tx(a, "measure_placeholder", TEXTOS_COMPRA.placeholder),
+                teQueda: tx(a, "fit_text", TEXTOS_COMPRA.teQueda),
+                masAncha: tx(a, "wider_text", TEXTOS_COMPRA.masAncha),
+                masAnchaEnlace: tx(a, "wider_link_text", TEXTOS_COMPRA.masAnchaEnlace),
+                masAngosta: tx(a, "narrower_text", TEXTOS_COMPRA.masAngosta),
+                masAngostaEnlace: tx(a, "narrower_link_text", TEXTOS_COMPRA.masAngostaEnlace),
+                agotado: tx(a, "sold_out_text", TEXTOS_COMPRA.agotado),
+                whatsapp: tx(a, "whatsapp_button_text", TEXTOS_COMPRA.whatsapp),
+              }}
+              textosComoMedir={{
+                tituloVideo: tx(a, "video_heading", TEXTOS_COMO_MEDIR.tituloVideo),
+                botonPasos: tx(a, "steps_button", TEXTOS_COMO_MEDIR.botonPasos),
+                tituloPasos: tx(a, "steps_heading", TEXTOS_COMO_MEDIR.tituloPasos),
+                botonVolver: tx(a, "back_button", TEXTOS_COMO_MEDIR.botonVolver),
+                pasos: [tx(a, "step_1", TEXTOS_COMO_MEDIR.pasos[0]), tx(a, "step_2", TEXTOS_COMO_MEDIR.pasos[1]), tx(a, "step_3", TEXTOS_COMO_MEDIR.pasos[2])],
+                columnas: [tx(a, "table_size", TEXTOS_COMO_MEDIR.columnas[0]), tx(a, "table_width", TEXTOS_COMO_MEDIR.columnas[1])],
+                tocaParaOir: tx(a, "sound_hint", TEXTOS_COMO_MEDIR.tocaParaOir),
+              }}
             />
           </div>
 

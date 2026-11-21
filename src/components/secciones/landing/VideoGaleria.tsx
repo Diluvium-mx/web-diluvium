@@ -23,6 +23,8 @@ type Props = {
   conSonido?: boolean;
   /** Ajuste de la foto antes de reproducir y del video: cover (llena el cuadro) o contain (se ve completo). */
   ajuste?: "cover" | "contain";
+  /** «Toca para oír» (editable). */
+  tocaParaOir?: string;
 };
 
 function Icono({ d, className = "size-8" }: { d: string; className?: string }) {
@@ -38,7 +40,7 @@ const PAUSA = "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z";
 const SIN_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm12.6 3l2.7-2.7-1.1-1.1-2.7 2.7-2.7-2.7-1.1 1.1 2.7 2.7-2.7 2.7 1.1 1.1 2.7-2.7 2.7 2.7 1.1-1.1z";
 const CON_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
 
-export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonido = false, ajuste = "cover" }: Props) {
+export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonido = false, ajuste = "cover", tocaParaOir = "Toca para oír" }: Props) {
   const video = useRef<HTMLVideoElement>(null);
   const barra = useRef<HTMLDivElement>(null);
   const [andando, setAndando] = useState(false);
@@ -170,7 +172,7 @@ export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonid
       </button>
       {mudo && andando && (
         <span className="pointer-events-none absolute right-16 bottom-6 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">
-          Toca para oír
+          {tocaParaOir}
         </span>
       )}
 

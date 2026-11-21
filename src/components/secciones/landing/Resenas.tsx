@@ -12,6 +12,8 @@ import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 import { medidasImagen } from "../ImagenBanner";
 import { MuroResenas } from "./MuroResenas";
+import { TEXTOS_MURO } from "./textos";
+import { tx } from "./datos";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -68,6 +70,15 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
               return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
             })}
             mas={restantes(tarjetas.map((t) => t.foto))}
+            textos={{
+              verMas: tx(a, "more_button", TEXTOS_MURO.verMas),
+              viendo: tx(a, "count_text", TEXTOS_MURO.viendo),
+              leerMas: tx(a, "read_more_text", TEXTOS_MURO.leerMas),
+              resena: tx(a, "viewer_title", TEXTOS_MURO.resena),
+              anterior: tx(a, "prev_button", TEXTOS_MURO.anterior),
+              siguiente: tx(a, "next_button", TEXTOS_MURO.siguiente),
+              verSeisMas: tx(a, "more_six_button", TEXTOS_MURO.verSeisMas),
+            }}
           />
         ) : (
         <ul className="m-0 grid list-none gap-4 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">

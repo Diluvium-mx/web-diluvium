@@ -3101,6 +3101,19 @@ export interface Plantilla {
             button_link?: string | null;
             menu_text?: string | null;
             whatsapp_link?: string | null;
+            cart_title?: string | null;
+            cart_added?: string | null;
+            cart_shipping?: string | null;
+            cart_free?: string | null;
+            cart_total?: string | null;
+            cart_note?: string | null;
+            cart_pay?: string | null;
+            cart_continue?: string | null;
+            cart_remove?: string | null;
+            cart_empty?: string | null;
+            cart_empty_button?: string | null;
+            menu_page_heading?: string | null;
+            menu_store_heading?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3137,7 +3150,11 @@ export interface Plantilla {
               | null;
             heading?: string | null;
             button_text?: string | null;
+            table_heading?: string | null;
+            table_note?: string | null;
             layout?: string | null;
+            table_size?: string | null;
+            table_width?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3177,6 +3194,8 @@ export interface Plantilla {
               | boolean
               | null;
             text?: string | null;
+            contact_heading?: string | null;
+            store_heading?: string | null;
             id?: string | null;
             blockName?: string | null;
             blockType: 'landing-pie';
@@ -3269,6 +3288,9 @@ export interface Plantilla {
             text?: string | null;
             whatsapp_link?: string | null;
             search_heading?: string | null;
+            search_placeholder?: string | null;
+            search_button?: string | null;
+            no_answer_text?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3308,6 +3330,13 @@ export interface Plantilla {
               | null;
             heading?: string | null;
             subheading?: string | null;
+            more_button?: string | null;
+            count_text?: string | null;
+            read_more_text?: string | null;
+            viewer_title?: string | null;
+            prev_button?: string | null;
+            next_button?: string | null;
+            more_six_button?: string | null;
             layout?: string | null;
             bloques?:
               | {
@@ -3364,8 +3393,28 @@ export interface Plantilla {
             include_product_media?: boolean | null;
             sticky_bar?: string | null;
             sticky_text?: string | null;
+            savings_text?: string | null;
+            measure_placeholder?: string | null;
+            fit_text?: string | null;
+            wider_text?: string | null;
+            wider_link_text?: string | null;
+            narrower_text?: string | null;
+            narrower_link_text?: string | null;
+            sold_out_text?: string | null;
+            whatsapp_button_text?: string | null;
+            drag_hint?: string | null;
+            sound_hint?: string | null;
+            video_heading?: string | null;
+            steps_button?: string | null;
+            steps_heading?: string | null;
+            back_button?: string | null;
+            step_1?: string | null;
+            step_2?: string | null;
+            step_3?: string | null;
             size_heading?: string | null;
             gallery_style?: string | null;
+            table_size?: string | null;
+            table_width?: string | null;
             bloques?:
               | (
                   | {
@@ -5671,6 +5720,19 @@ export interface PlantillasSelect<T extends boolean = true> {
               button_link?: T;
               menu_text?: T;
               whatsapp_link?: T;
+              cart_title?: T;
+              cart_added?: T;
+              cart_shipping?: T;
+              cart_free?: T;
+              cart_total?: T;
+              cart_note?: T;
+              cart_pay?: T;
+              cart_continue?: T;
+              cart_remove?: T;
+              cart_empty?: T;
+              cart_empty_button?: T;
+              menu_page_heading?: T;
+              menu_store_heading?: T;
               bloques?:
                 | T
                 | {
@@ -5695,7 +5757,11 @@ export interface PlantillasSelect<T extends boolean = true> {
               claves?: T;
               heading?: T;
               button_text?: T;
+              table_heading?: T;
+              table_note?: T;
               layout?: T;
+              table_size?: T;
+              table_width?: T;
               bloques?:
                 | T
                 | {
@@ -5723,6 +5789,8 @@ export interface PlantillasSelect<T extends boolean = true> {
               idTema?: T;
               claves?: T;
               text?: T;
+              contact_heading?: T;
+              store_heading?: T;
               id?: T;
               blockName?: T;
             };
@@ -5787,6 +5855,9 @@ export interface PlantillasSelect<T extends boolean = true> {
               text?: T;
               whatsapp_link?: T;
               search_heading?: T;
+              search_placeholder?: T;
+              search_button?: T;
+              no_answer_text?: T;
               bloques?:
                 | T
                 | {
@@ -5811,6 +5882,13 @@ export interface PlantillasSelect<T extends boolean = true> {
               claves?: T;
               heading?: T;
               subheading?: T;
+              more_button?: T;
+              count_text?: T;
+              read_more_text?: T;
+              viewer_title?: T;
+              prev_button?: T;
+              next_button?: T;
+              more_six_button?: T;
               layout?: T;
               bloques?:
                 | T
@@ -5855,8 +5933,28 @@ export interface PlantillasSelect<T extends boolean = true> {
               include_product_media?: T;
               sticky_bar?: T;
               sticky_text?: T;
+              savings_text?: T;
+              measure_placeholder?: T;
+              fit_text?: T;
+              wider_text?: T;
+              wider_link_text?: T;
+              narrower_text?: T;
+              narrower_link_text?: T;
+              sold_out_text?: T;
+              whatsapp_button_text?: T;
+              drag_hint?: T;
+              sound_hint?: T;
+              video_heading?: T;
+              steps_button?: T;
+              steps_heading?: T;
+              back_button?: T;
+              step_1?: T;
+              step_2?: T;
+              step_3?: T;
               size_heading?: T;
               gallery_style?: T;
+              table_size?: T;
+              table_width?: T;
               bloques?:
                 | T
                 | {

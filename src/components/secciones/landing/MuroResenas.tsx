@@ -22,8 +22,11 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { conValores, TEXTOS_MURO, type TextosMuro } from "./textos";
 
 const PARA_FLECHA = 18;
+
+
 
 export type TarjetaMuro = {
   id: string;
@@ -53,7 +56,7 @@ function Estrellas({ n, tamano = "size-4" }: { n: number; tamano?: string }) {
   );
 }
 
-function Tarjeta({ t, alAbrir }: { t: TarjetaMuro; alAbrir: () => void }) {
+function Tarjeta({ t, alAbrir, leerMas }: { t: TarjetaMuro; alAbrir: () => void; leerMas: string }) {
   const texto = t.texto.trim();
   const cortado = texto.length > CORTE + 25;
   return (
@@ -71,7 +74,7 @@ function Tarjeta({ t, alAbrir }: { t: TarjetaMuro; alAbrir: () => void }) {
         </p>
         <p className="m-0 mt-2 text-[15px] leading-[1.45] break-words text-tinta" data-el="Texto:1">
           {cortado ? texto.slice(0, CORTE) : texto}
-          {cortado && <span className="text-texto-suave">...Mostrar reseña completa</span>}
+          {cortado && <span className="text-texto-suave">{leerMas}</span>}
         </p>
         {/* Para teclado y lectores de pantalla (la tarjeta completa se toca con el dedo). */}
         <button type="button" onClick={alAbrir} className="sr-only">
@@ -82,7 +85,7 @@ function Tarjeta({ t, alAbrir }: { t: TarjetaMuro; alAbrir: () => void }) {
   );
 }
 
-export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: TarjetaMuro[]; mas?: TarjetaMuro[] }) {
+export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO }: { tarjetas: TarjetaMuro[]; mas?: TarjetaMuro[]; textos?: TextosMuro }) {
   const [abierta, setAbierta] = useState<number | null>(null);
   const [cuantas, setCuantas] = useState(elegidas.length);
   const ventana = useRef<HTMLDialogElement>(null);
@@ -135,7 +138,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
         {columnas.map((col, c) => (
           <ul key={c} className="m-0 grid list-none gap-3 p-0 md:gap-4">
             {col.map((x) => (
-              <Tarjeta key={x.id} t={x} alAbrir={() => setAbierta(tarjetas.indexOf(x))} />
+              <Tarjeta key={x.id} t={x} leerMas={textos.leerMas} alAbrir={() => setAbierta(tarjetas.indexOf(x))} />
             ))}
           </ul>
         ))}
@@ -160,11 +163,9 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
             data-evento="ver_mas_resenas"
             className="flex min-h-13 w-full max-w-[340px] cursor-pointer items-center justify-center rounded-2xl border-[2.5px] border-marino bg-white px-6 font-titulo text-[17px] font-bold text-marino transition-colors hover:bg-marino hover:text-white"
           >
-            Ver más
+            {textos.verMas}
           </button>
-          <p className="m-0 text-[14px] text-texto-suave tabular-nums">
-            Viendo {cuantas} de {total} reseñas
-          </p>
+          <p className="m-0 text-[14px] text-texto-suave tabular-nums">{conValores(textos.viendo, { n: cuantas, total })}</p>
         </div>
       )}
 
@@ -176,7 +177,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
           if (e.key === "ArrowRight" && abierta !== null) ir(abierta + 1);
           if (e.key === "ArrowLeft" && abierta !== null) ir(abierta - 1);
         }}
-        aria-label={t ? `Reseña ${abierta! + 1} de ${total}` : "Reseña"}
+        aria-label={t ? conValores(textos.resena, { n: abierta! + 1, total }) : "Reseña"}
         className="version m-auto h-[min(90dvh,760px)] max-h-none w-[min(94vw,560px)] max-w-none overflow-hidden rounded-2xl bg-white p-0 text-tinta backdrop:bg-tinta/70"
       >
         {t && abierta !== null && (
@@ -192,7 +193,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
           >
             <div className="flex items-center gap-2 border-b border-linea px-4 py-2.5">
               <strong className="flex-1 font-titulo text-[16px] text-marino">
-                Reseña {abierta + 1} de {total}
+                {conValores(textos.resena, { n: abierta + 1, total })}
               </strong>
               <button type="button" onClick={() => setAbierta(null)} aria-label="Cerrar" className="flex size-10 cursor-pointer items-center justify-center rounded-full text-[24px] leading-none hover:bg-niebla">
                 ×
@@ -214,7 +215,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
             </div>
             <div className="flex items-center gap-2 border-t border-linea px-3 py-2.5">
               <button type="button" onClick={() => ir(abierta - 1)} disabled={abierta === 0} className="h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold text-marino disabled:cursor-not-allowed disabled:opacity-30">
-                ← Anterior
+                ← {textos.anterior}
               </button>
               <span className="w-16 text-center text-[14px] font-semibold text-texto-suave tabular-nums">
                 {abierta + 1}/{total}
@@ -225,7 +226,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [] }: { tarjetas: Tarjet
                 disabled={abierta === total - 1}
                 className={`h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold disabled:cursor-not-allowed disabled:opacity-30 ${siguienteAgrega ? "bg-marino text-white" : "text-marino"}`}
               >
-                {siguienteAgrega ? "Ver 6 más →" : "Siguiente →"}
+                {siguienteAgrega ? textos.verSeisMas : textos.siguiente} →
               </button>
             </div>
           </div>

@@ -92,3 +92,9 @@ export function rellenar(plantillaTexto: string, venta: DatosVenta | null = dato
 export function textoVersion(ajustes: Ajustes, clave: string, venta?: DatosVenta | null): string {
   return rellenar(texto(ajustes, clave), venta === undefined ? datosVenta() : venta);
 }
+
+/** Texto editable desde el editor (pestaña Textos): el de la plantilla o, si no lo trae, el de siempre (21-nov-2026: todos
+ *  los textos de B1 se editan; los que estaban escritos en el código pasaron a la plantilla con estos mismos valores). */
+export function tx(ajustes: Ajustes, clave: string, porDefecto: string): string {
+  return texto(ajustes, clave) ? textoVersion(ajustes, clave) : porDefecto;
+}

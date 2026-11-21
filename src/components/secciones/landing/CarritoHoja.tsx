@@ -16,7 +16,9 @@ import { avisoExistencias, cambiar, quitar, useCarrito, type LineaCompleta } fro
 import { useAparecer } from "@/components/encabezado/useAparecer";
 import { LogoMastercard, LogoMercadoPago, LogoPaypal, LogoVisa } from "@/components/pago/Iconos";
 import { pesos } from "./datos";
+import { TEXTOS_CARRITO, type TextosCarrito } from "./textos";
 import { IconoTache } from "./piezas";
+
 
 /** Desde este total el envío es gratis (como en la tienda: «Envío gratis a partir de $499»). */
 const ENVIO_GRATIS_DESDE = 499;
@@ -29,7 +31,7 @@ function Palomita({ className = "size-4" }: { className?: string }) {
   );
 }
 
-function Linea({ linea, cerrar }: { linea: LineaCompleta; cerrar: () => void }) {
+function Linea({ linea, cerrar, quitarTexto }: { linea: LineaCompleta; cerrar: () => void; quitarTexto: string }) {
   const { articulo: a, cantidad } = linea;
   const [aviso, setAviso] = useState<string | null>(null);
   const poner = (n: number) => {
@@ -70,7 +72,7 @@ function Linea({ linea, cerrar }: { linea: LineaCompleta; cerrar: () => void }) 
           aria-label={`Quitar ${a.titulo}${a.opcion ? ` - ${a.opcion}` : ""}`}
           className="mt-1 inline-flex min-h-9 cursor-pointer items-center text-[14px] font-semibold text-texto-suave underline underline-offset-2"
         >
-          Quitar
+          {quitarTexto}
         </button>
         {aviso && <p className="m-0 mt-1 text-[14px] font-semibold text-[#b42318]">{aviso}</p>}
       </div>
@@ -78,7 +80,8 @@ function Linea({ linea, cerrar }: { linea: LineaCompleta; cerrar: () => void }) 
   );
 }
 
-export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; anadido?: boolean }) {
+export function CarritoHoja({ cerrar, anadido = false, textos = TEXTOS_CARRITO }: { cerrar: () => void; anadido?: boolean; textos?: TextosCarrito }) {
+  const t = textos;
   const visible = useAparecer();
   const { lineas, piezas, total } = useCarrito();
   const router = useRouter();
@@ -116,10 +119,13 @@ export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; a
               <span className="flex size-7 items-center justify-center rounded-full bg-[#13834a] text-white">
                 <Palomita />
               </span>
-              Se agregó a tu carrito
+              {t.agregado}
             </p>
           ) : (
-            <p className="m-0 flex-1 font-titulo text-[20px] font-bold text-marino">Tu carrito{piezas > 0 ? ` (${piezas})` : ""}</p>
+            <p className="m-0 flex-1 font-titulo text-[20px] font-bold text-marino">
+              {t.titulo}
+              {piezas > 0 ? ` (${piezas})` : ""}
+            </p>
           )}
           <button ref={equis} type="button" onClick={cerrar} aria-label="Cerrar el carrito" className="flex size-11 cursor-pointer items-center justify-center rounded-full text-marino hover:bg-niebla">
             <IconoTache className="size-6" />
@@ -128,25 +134,31 @@ export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; a
 
         {vacio ? (
           <div className="grid gap-3 px-5 pt-4 pb-6 text-center">
-            <p className="m-0 text-[17px] text-tinta">Tu carrito está vacío.</p>
+            <p className="m-0 text-[17px] text-tinta">{t.vacio}</p>
             <Link href="/products/compuerta-anti-inundaciones" onClick={cerrar} className="flex min-h-14 items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-bold text-white">
-              Ver la compuerta
+              {t.vacioBoton}
             </Link>
           </div>
         ) : (
           <>
             <ul className="m-0 min-h-0 flex-1 list-none divide-y divide-linea overflow-y-auto overscroll-contain px-5 py-1">
               {lineas.map((l) => (
-                <Linea key={l.articulo.id} linea={l} cerrar={cerrar} />
+                <Linea key={l.articulo.id} linea={l} cerrar={cerrar} quitarTexto={t.quitar} />
               ))}
             </ul>
             <div className="border-t border-linea px-5 pt-3 pb-5">
               <p className="m-0 flex justify-between text-[15.5px] text-tinta">
-                <span>Envío</span>
-                {total >= ENVIO_GRATIS_DESDE ? <strong className="text-[#13834a]">Gratis</strong> : <span className="text-texto-suave">Gratis desde {pesos(ENVIO_GRATIS_DESDE)}</span>}
+                <span>{t.envio}</span>
+                {total >= ENVIO_GRATIS_DESDE ? (
+                  <strong className="text-[#13834a]">{t.gratis}</strong>
+                ) : (
+                  <span className="text-texto-suave">
+                    {t.gratis} desde {pesos(ENVIO_GRATIS_DESDE)}
+                  </span>
+                )}
               </p>
               <p className="m-0 mt-1 flex items-baseline justify-between text-tinta">
-                <span className="text-[15.5px] font-bold">Total</span>
+                <span className="text-[15.5px] font-bold">{t.total}</span>
                 <strong className="text-[26px]">{pesos(total)}</strong>
               </p>
               {/* Formas de pago: solo los logos (los mismos de la pantalla de pago), del mismo tamaño (Producto 330–333). */}
@@ -164,7 +176,7 @@ export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; a
                   <LogoPaypal className="text-[10.5px]" />
                 </span>
               </p>
-              <p className="m-0 mt-1.5 text-center text-[13px] text-texto-suave">IVA incluido · hasta 6 meses sin intereses</p>
+              <p className="m-0 mt-1.5 text-center text-[13px] text-texto-suave">{t.nota}</p>
               <div className="mt-4 grid gap-2.5">
                 <button
                   type="button"
@@ -177,10 +189,10 @@ export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; a
                   }}
                   className="flex min-h-14 w-full cursor-pointer items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(248,160,29,0.9)] transition-colors hover:bg-boton-encima"
                 >
-                  Pagar ahora
+                  {t.pagar}
                 </button>
                 <button type="button" onClick={cerrar} className="flex min-h-12 w-full cursor-pointer items-center justify-center rounded-2xl border-2 border-marino font-titulo text-[17px] font-bold text-marino">
-                  Seguir viendo
+                  {t.seguir}
                 </button>
               </div>
             </div>
