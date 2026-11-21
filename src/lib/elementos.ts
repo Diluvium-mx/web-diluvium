@@ -29,6 +29,8 @@ function rolDe(el: Element): string | null {
   if (tag === "IMG") return "Foto";
   if (tag === "VIDEO") return "Video";
   if (/^H[1-6]$/.test(tag)) return "Título";
+  // Una tabla (la de tamaños de los pasos clave) es un solo elemento.
+  if (tag === "TABLE") return "Tabla";
   if (tag === "LABEL" && el.querySelector("input[type=radio],input[type=checkbox]")) return "Opción";
   if (INTERACTIVOS[tag]) return (el as HTMLInputElement).type === "hidden" ? null : INTERACTIVOS[tag];
   // Controles hechos a mano (la línea del antes y después) cuentan como uno solo.
@@ -51,6 +53,11 @@ function resumen(el: Element, rol: string): string {
     (rol === "Campo" ? h.placeholder || h.value || "" : "") ||
     (el.textContent ?? "");
   let limpio = texto.replace(/\s+/g, " ").trim();
+  // Un enlace o botón que solo lleva una foto se nombra por la foto.
+  if (!limpio && (rol === "Enlace" || rol === "Botón")) {
+    const foto = el.querySelector("img");
+    if (foto) limpio = `foto ${foto.alt || archivo(foto.currentSrc || foto.src)}`;
+  }
   if (!limpio && rol.startsWith("Ícono")) {
     // Un ícono sin texto se nombra por lo que tiene al lado («junto a "Envío gratis"»).
     const texto = (x: Element | null | undefined) => (x as HTMLElement | null)?.innerText || x?.textContent || "";

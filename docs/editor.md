@@ -15,11 +15,20 @@ del plan): vive en esta Mac, igual que el administrador.
 Desde otra computadora o celular de la casa **no abre** (a propósito): solo funciona en esta Mac.
 
 ## Qué se puede hacer
-Arriba: **Portada / Producto** de B1 (un punto • avisa que hay cambios sin guardar) y **Fotos / Textos**.
+Arriba: **Portada / Producto** de B1 (un punto • avisa que hay cambios sin guardar) y **Fotos / Mapa / Textos** (en ese
+orden, pedido del dueño el 21-nov-2026). Las tres pestañas usan **la misma página de en medio**: cambiar de pestaña no
+la vuelve a cargar.
+
+**Los botones y enlaces de la página funcionan como en la real**, en las tres pestañas: el carrito se abre, «¿Cómo
+medir?» abre su ventana y un enlace lleva a su página (por ejemplo, Producto 80 lleva a la compuerta hecha a la
+medida). Si un enlace lleva a la otra página de B1 (Portada ↔ Producto), la pestaña de arriba cambia sola. Si lleva a
+otra página (la de A, la hecha a la medida…), sale un aviso amarillo «Estás viendo otra página» con **«← Volver»**;
+ahí no hay fotos ni números que editar.
 
 ### Fotos (directo en la página)
 1. Toca cualquier foto o video de la página de en medio (galería, antes y después, portada, reseñas, comparación,
-   beneficios, pasos). Se marca con un **marco rojo**.
+   beneficios, pasos). Se marca con un **marco rojo**. Los botones chicos encima de una foto (flechas de la galería, la
+   línea del antes y después) siguen funcionando; el botón que cubre todo el video, en cambio, elige el video.
 2. **Arrastra la foto dentro del marco** hasta que quede bien acomodada; **«Acercar»** la agranda. Se ve al momento.
 3. Sus botones:
    - **Cambiar foto / Cambiar video:** biblioteca con todo lo que ya tiene la página, o **«Subir desde la
@@ -41,13 +50,17 @@ Cada parte con su nombre del mapa y sus textos para escribirlos ahí mismo (los 
 `<strong>`, `<a href="…">`). Se ven en la página de la derecha al guardar.
 
 ### Mapa (números de cada elemento)
-La pestaña **Mapa** (a la derecha de Textos) muestra la página con un **número sobre cada elemento** (títulos, textos,
-botones, enlaces, tamaños, campos, fotos, videos, íconos) y la tabla con el número, qué es, en qué parte está y qué
-dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. «Copiar» copia el número con su nombre.
+La pestaña **Mapa** (entre Fotos y Textos) muestra la página con un **número sobre cada elemento** (títulos, textos,
+botones, enlaces, tamaños, campos, fotos, videos, íconos, tablas) y la tabla con el número, qué es, en qué parte está y
+qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. «Copiar» copia el número con su nombre.
+- Sale al instante: los números guardados se piden al abrir el editor y la página ya está cargada.
+- **Ventanas:** si abres una ventana en la página (el carrito, «¿Cómo medir?», el menú), solo se ven los números de esa
+  ventana, en la página y en la tabla. Al cerrarla vuelven los de la página.
+- Lo que aparece al tocar (una ventana, los pasos clave, lo que hay en el carrito, un aviso) toma número solo, sin
+  botón de «Volver a leer».
+- Los números de lo que pasa por debajo del encabezado fijo no se encimen en el encabezado.
 - Los números **no cambian**: al cambiar un texto o mover fotos, cada elemento conserva su número. Lo nuevo toma el
   siguiente número libre y un número quitado no se vuelve a usar (como en el mapa del CRM).
-- El menú, el carrito y la guía de tamaños también llevan número; si los abres en la página, «Volver a leer» numera
-  lo que aparezca.
 
 ### Guardar y publicar
 - **Importante: nada queda hasta presionar «Guardar».** Si cierras o recargas el editor sin guardar, los ajustes se
@@ -57,8 +70,17 @@ dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. 
 - **Descartar cambios** regresa a lo último guardado.
 - **Publicar en la prueba** sube la copia de prueba a Cloudflare (unos minutos) y dice el peso (límite 3 MB).
 
+### Propuestas
+`http://localhost:3100/editor/propuestas`: diseños para elegir antes de ponerlos en la página (21-nov-2026: los 3
+diseños de «pasos clave», cada uno en la ventana de «¿Cómo medir?» y en B1-P5, a tamaño de celular).
+
 ## Cómo está hecho (para Claude)
 - Página: `src/app/(editor)/editor/` (`page.tsx`, `Editor.tsx`) con su propio diseño raíz.
+- Una sola página de en medio (`<iframe>`) para las tres pestañas; `carga` solo cambia (y la recarga) al elegir
+  Portada/Producto, al guardar o al descartar. `revisarDireccion` (al cargar y cada 0.7 s, por los enlaces que no
+  recargan) cambia la pestaña si la página es la otra de B1 o muestra el aviso «Estás viendo otra página».
+- En Fotos, un toque elige la foto que está debajo salvo que sea un control chico encima (menos del 60 % de la foto) o
+  un control que no la cubre; los enlaces no se detienen (`CONTROLES` en `Editor.tsx`).
 - Guardar: `api/guardar` revisa la forma (mismas secciones, piezas de tipos permitidos, valores simples), escribe
   `contenido/tema/<archivo>.json` con respaldo y corre `npm run admin:agregar-plantillas -- --reemplazar=<archivo>`.
 - Subir: `api/subir` (tipo y peso revisados, nombre limpio) y vuelve a medir las fotos (`medidas-imagenes.mjs`).
@@ -69,6 +91,11 @@ dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …»**. 
   pieza (`data-pieza`, en las piezas que se repiten) | tipo@camino (su lugar exacto dentro de la pieza, p. ej.
   `Texto@div2>p1`). Las fotos van por su campo (`data-editar`) y `data-el` fija la firma a mano. La firma no depende
   del texto, y quitar un elemento no mueve a los demás.
+- `MapaElementos.tsx` pone sus números en la capa encima de la página (portal) y usa el `<iframe>` del editor.
+  `GET api/elementos?archivo=` da los números guardados (se piden al abrir el editor); la pestaña lee la página al
+  instante y solo hace `POST` si hay firmas nuevas o nombres cambiados. Un `MutationObserver` (hijos y atributo
+  `open`) vuelve a leer 0.25 s después de cada cambio. Con una ventana abierta (`dialog[open]` o
+  `[role=dialog][aria-modal=true]` visible) solo se ven sus elementos.
 - `api/elementos` decide el número: misma firma → mismo número; firma nueva pero en la misma parte y pieza
   desapareció uno con el mismo texto → hereda su número (así sobreviven a cambios de código); si no, el siguiente
   libre. Un número quitado queda apartado. Todo en `contenido/mapa-elementos.json`. Para ubicar «Producto 37»:

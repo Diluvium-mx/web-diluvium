@@ -11,7 +11,19 @@
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 
-type Props = { src: string; poster: string; alt: string; activo: boolean; estilo?: CSSProperties; marca?: Record<string, string> };
+type Props = {
+  src: string;
+  poster: string;
+  alt: string;
+  activo: boolean;
+  estilo?: CSSProperties;
+  marca?: Record<string, string>;
+  /** Empieza con sonido (cuando la persona lo pidió con un toque, p. ej. «¿Cómo medir?»). Si el teléfono no lo deja,
+   *  empieza sin sonido y queda el botón para activarlo. */
+  conSonido?: boolean;
+  /** Ajuste de la foto antes de reproducir y del video: cover (llena el cuadro) o contain (se ve completo). */
+  ajuste?: "cover" | "contain";
+};
 
 function Icono({ d, className = "size-8" }: { d: string; className?: string }) {
   return (
@@ -26,12 +38,12 @@ const PAUSA = "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z";
 const SIN_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm12.6 3l2.7-2.7-1.1-1.1-2.7 2.7-2.7-2.7-1.1 1.1 2.7 2.7-2.7 2.7 1.1 1.1 2.7-2.7 2.7 2.7 1.1-1.1z";
 const CON_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
 
-export function VideoGaleria({ src, poster, alt, activo, estilo, marca }: Props) {
+export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonido = false, ajuste = "cover" }: Props) {
   const video = useRef<HTMLVideoElement>(null);
   const barra = useRef<HTMLDivElement>(null);
   const [andando, setAndando] = useState(false);
   const [cargando, setCargando] = useState(false);
-  const [mudo, setMudo] = useState(true);
+  const [mudo, setMudo] = useState(!conSonido);
   const [destello, setDestello] = useState<"play" | "pausa" | null>(null);
   // Si la persona lo pausó, ya no se vuelve a reproducir solo al regresar a esta foto.
   const pausadoPorUsuario = useRef(false);
@@ -47,10 +59,15 @@ export function VideoGaleria({ src, poster, alt, activo, estilo, marca }: Props)
     const ahorro =
       window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
       (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
-    if (ahorro || pausadoPorUsuario.current) return;
-    v.muted = true;
-    v.play().catch(() => {});
-  }, [activo]);
+    if (pausadoPorUsuario.current || (ahorro && !conSonido)) return;
+    v.muted = !conSonido;
+    v.play().catch(() => {
+      // El teléfono no dejó reproducir con sonido: sin sonido, con el botón para activarlo.
+      v.muted = true;
+      setMudo(true);
+      v.play().catch(() => {});
+    });
+  }, [activo, conSonido]);
 
   // La barra de avance se mueve una vez por cuadro mientras corre (transform: no repinta nada más).
   useEffect(() => {
@@ -108,7 +125,7 @@ export function VideoGaleria({ src, poster, alt, activo, estilo, marca }: Props)
         preload="none"
         disablePictureInPicture
         aria-label={alt}
-        className="absolute inset-0 size-full object-cover"
+        className={`absolute inset-0 size-full ${ajuste === "contain" ? "object-contain" : "object-cover"}`}
         style={estilo}
         {...marca}
         onPlay={() => setAndando(true)}

@@ -12,7 +12,7 @@ import { useId, useState } from "react";
 import type { Tamano } from "./datos";
 import { pesos } from "./datos";
 import { agregarElegido, elegir, useElegido } from "./eleccion";
-import { TablaMedidas } from "./TablaMedidas";
+import { ComoMedir } from "./ComoMedir";
 import { CLASE_BOTON, IconoFlecha, IconoWhatsapp } from "./piezas";
 
 /** Avisa a la medición de algo que no es un clic (escribir la medida). */
@@ -77,6 +77,8 @@ export function CompraFicha({
   const precio = pesos(actual?.precio ?? Math.min(...tamanos.map((t) => t.precio)));
   const resultado = medida ? tamanoPara(Number(medida.replace(",", ".")), tamanos) : null;
   const unico = tamanos.length === 1;
+  // Para la tabla de «Ver pasos clave»: solo los tamaños con medidas.
+  const pasos = tamanos.filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
 
   function alMedir(valor: string) {
     setMedida(valor);
@@ -98,11 +100,11 @@ export function CompraFicha({
   return (
     <div>
       {textoAyuda && !unico && (
-        <div className="mb-4 rounded-xl bg-niebla p-3.5">
-          <label htmlFor={idAyuda} className="block font-titulo text-[16px] font-bold">
+        <div className="mb-3 rounded-xl bg-niebla px-3.5 py-3">
+          <label htmlFor={idAyuda} className="block font-titulo text-[16px] leading-5 font-bold">
             {textoAyuda}
           </label>
-          <div className="mt-2 flex items-center gap-2">
+          <div className="mt-1.5 flex items-center gap-2">
             <div className="relative w-32">
               <input
                 id={idAyuda}
@@ -118,8 +120,9 @@ export function CompraFicha({
               <span className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-[15px] text-texto-suave">cm</span>
             </div>
             {textoMedir && (
-              <TablaMedidas
+              <ComoMedir
                 texto={textoMedir}
+                tamanos={pasos}
                 className="min-h-11 cursor-pointer text-[15px] font-semibold underline decoration-2 underline-offset-4 hover:decoration-4"
               />
             )}
@@ -155,13 +158,14 @@ export function CompraFicha({
 
       {!unico && (
         <fieldset id="tamanos" className="m-0 scroll-mt-28 border-0 p-0" aria-describedby={aviso ? idAviso : undefined}>
-          <legend className="float-left flex min-h-11 items-center p-0 font-titulo text-[17px] font-bold">
+          <legend className="float-left flex min-h-9 items-center p-0 font-titulo text-[17px] font-bold">
             {titulo}
             {actual && <span className="ml-2 font-sans text-[15px] font-semibold text-texto-suave">· {actual.nombre}</span>}
           </legend>
           {textoMedir && !textoAyuda && (
-            <TablaMedidas
+            <ComoMedir
               texto={textoMedir}
+              tamanos={pasos}
               className="float-right min-h-11 cursor-pointer text-[15px] font-semibold underline decoration-2 underline-offset-4 hover:decoration-4"
             />
           )}

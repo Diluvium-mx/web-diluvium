@@ -22,7 +22,7 @@ import {
   type PlantillaTema,
 } from "@/lib/mapa";
 import type { MedioBiblioteca } from "@/lib/editor/archivos";
-import { MapaElementos } from "./MapaElementos";
+import { MapaElementos, precargarNumeros } from "./MapaElementos";
 
 type Props = { plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
 type Seleccion = { seccionId: string; piezaId: string; clave: string };
@@ -159,12 +159,19 @@ function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown)
 
 const ES_DE_FOTO = new Set(["imagen", "video", "focal", "zoom"]);
 
+/** Controles de la página (botones, enlaces, la línea del antes y después…): en Fotos siguen funcionando. */
+const CONTROLES = "a,button,[role=button],[role=slider],[role=tab],input,select,textarea,label,summary";
+const area = (el: Element) => {
+  const r = el.getBoundingClientRect();
+  return r.width * r.height;
+};
+
 // ───────────────────────── Editor ─────────────────────────
 
 export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const archivos = Object.keys(PAGINAS_MAPA) as ArchivoMapa[];
   const [archivo, setArchivo] = useState<ArchivoMapa>("product.b1");
-  const [modo, setModo] = useState<"fotos" | "textos" | "mapa">("fotos");
+  const [modo, setModo] = useState<"fotos" | "mapa" | "textos">("fotos");
   const [borradores, setBorradores] = useState(() => copia(plantillas));
   const [guardadas, setGuardadas] = useState(() => copia(plantillas));
   const [medios, setMedios] = useState(biblioteca);
@@ -174,8 +181,13 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const [abierta, setAbierta] = useState<number | null>(null);
   const [mensaje, setMensaje] = useState("");
   const [guardando, setGuardando] = useState(false);
-  const [vista, setVista] = useState(0);
+  // La página de en medio es una sola para Fotos, Mapa y Textos: cambiar de pestaña no la vuelve a cargar.
+  // «carga» cambia solo al elegir Portada/Producto, al guardar o al descartar (vuelve a cargar la página).
+  const [carga, setCarga] = useState<{ ruta: string; n: number }>({ ruta: PAGINAS_MAPA["product.b1"].ruta, n: 0 });
   const [cargada, setCargada] = useState(0);
+  // Dirección de la página de en medio cuando no es una de B1 (se llegó por un enlace): sin fotos ni números.
+  const [fuera, setFuera] = useState<string | null>(null);
+  const [capa, setCapa] = useState<HTMLDivElement | null>(null);
   const [publicacion, setPublicacion] = useState<EstadoPublicar | null>(null);
   const marco = useRef<HTMLIFrameElement>(null);
   const arrastre = useRef<{ px: number; py: number; x: number; y: number; ox: number; oy: number } | null>(null);
@@ -194,6 +206,47 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     addEventListener("beforeunload", avisar);
     return () => removeEventListener("beforeunload", avisar);
   }, [pendientes.length]);
+
+  /** Vuelve a cargar la página de en medio (la de la pestaña elegida). */
+  const recargar = (a: ArchivoMapa = archivo) => {
+    setFuera(null);
+    setCarga((c) => ({ ruta: PAGINAS_MAPA[a].ruta, n: c.n + 1 }));
+  };
+
+  // Al abrir el editor: los números del Mapa y las dos páginas quedan listos (la primera vez tardan en prepararse).
+  useEffect(() => {
+    for (const a of archivos) {
+      void precargarNumeros(a);
+      fetch(PAGINAS_MAPA[a].ruta, { cache: "no-store" }).catch(() => {});
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  /** ¿Qué página se ve en medio? Si un enlace llevó a la otra de B1, cambia la pestaña; si es otra, lo avisa. */
+  const revisarDireccion = useCallback(() => {
+    let ruta: string | null = null;
+    try {
+      ruta = marco.current?.contentWindow?.location.pathname ?? null;
+    } catch {
+      ruta = null;
+    }
+    if (ruta === "about:blank" || ruta === "blank") return;
+    const de = (Object.keys(PAGINAS_MAPA) as ArchivoMapa[]).find((a) => PAGINAS_MAPA[a].ruta === ruta);
+    if (de) {
+      setFuera(null);
+      if (de !== archivo) {
+        setArchivo(de);
+        setSel(null);
+        setAbierta(null);
+      }
+    } else setFuera(ruta ?? "otra página");
+  }, [archivo]);
+
+  // Los enlaces que cambian de página sin recargar (los del menú) también se notan.
+  useEffect(() => {
+    const t = setInterval(revisarDireccion, 700);
+    return () => clearInterval(t);
+  }, [revisarDireccion]);
 
   function cambiar(fn: (p: PlantillaTema) => void) {
     setBorradores((todo) => {
@@ -214,7 +267,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
   // ── Lo que se ajusta se ve al momento en la página de en medio ──
   useEffect(() => {
     const d = doc();
-    if (!d || modo !== "fotos") return;
+    if (!d || modo !== "fotos" || fuera) return;
     for (const el of d.querySelectorAll<HTMLImageElement | HTMLVideoElement>("[data-editar]")) {
       const s = leerMarca(el.dataset.editar ?? "");
       const ahora = ubicar(plantilla, s);
@@ -236,25 +289,26 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         el.src = src;
       }
     }
-  }, [plantilla, guardadas, archivo, cargada, modo]);
+  }, [plantilla, guardadas, archivo, cargada, modo, fuera]);
 
-  // ── Tocar una foto en la página la elige; los enlaces no se abren mientras se edita ──
+  // ── Tocar una foto en la página la elige. Los botones y enlaces chicos encima de una foto (flechas de la galería,
+  //    la línea del antes y después) y todos los demás siguen funcionando y llevan a su página, como en la real ──
   useEffect(() => {
     const d = doc();
-    if (!d || modo !== "fotos") return;
+    if (!d || modo !== "fotos" || fuera) return;
     const alTocar = (e: MouseEvent) => {
       const marcada = d.elementsFromPoint(e.clientX, e.clientY).find((x) => (x as HTMLElement).dataset?.editar) as HTMLElement | undefined;
-      if (marcada) {
-        e.preventDefault();
-        e.stopPropagation();
-        setSel(leerMarca(marcada.dataset.editar ?? ""));
-        return;
-      }
-      if ((e.target as Element | null)?.closest?.("a")) e.preventDefault();
+      if (!marcada) return;
+      const control = (e.target as Element | null)?.closest?.(CONTROLES);
+      // Un botón chico encima de la foto funciona; uno que la cubre toda (el del video) o que la envuelve, la elige.
+      if (control && !control.contains(marcada) && area(control) < area(marcada) * 0.6) return;
+      e.preventDefault();
+      e.stopPropagation();
+      setSel(leerMarca(marcada.dataset.editar ?? ""));
     };
     d.addEventListener("click", alTocar, true);
     return () => d.removeEventListener("click", alTocar, true);
-  }, [cargada, modo]);
+  }, [cargada, modo, fuera]);
 
   // ── El marco rojo sigue a la foto aunque se baje la página o se deslice la galería ──
   useEffect(() => {
@@ -359,7 +413,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         setMensaje(`${PAGINAS_MAPA[a].nombre}: ${j.mensaje}`);
       }
       setSel(null);
-      setVista((v) => v + 1);
+      recargar();
     } finally {
       setGuardando(false);
     }
@@ -402,6 +456,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                 setArchivo(a);
                 setSel(null);
                 setAbierta(null);
+                recargar(a);
               }}
               className={`h-9 cursor-pointer rounded-md px-3 text-[14px] font-semibold ${a === archivo ? "bg-white text-marino shadow" : "text-texto-suave"}`}
             >
@@ -414,8 +469,8 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
           {(
             [
               ["fotos", "Fotos"],
-              ["textos", "Textos"],
               ["mapa", "Mapa"],
+              ["textos", "Textos"],
             ] as const
           ).map(([m, t]) => (
             <button
@@ -438,7 +493,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
           onClick={() => {
             setBorradores(copia(guardadas));
             setSel(null);
-            setVista((v) => v + 1);
+            recargar();
           }}
           className="h-10 cursor-pointer rounded-lg border border-linea bg-white px-3 text-[14px] disabled:cursor-not-allowed disabled:opacity-50"
         >
@@ -465,10 +520,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         </div>
       )}
 
-      {/* ── Pestaña Mapa: cada elemento de la página con su número fijo ── */}
-      {modo === "mapa" && <MapaElementos archivo={archivo} secciones={mapa} ruta={ruta} vista={vista} />}
-
-      <div className={`min-h-0 flex-1 ${modo === "mapa" ? "hidden" : "flex"}`}>
+      <div className="flex min-h-0 flex-1">
         {/* ── Pestaña Textos: la lista de cada parte ── */}
         {modo === "textos" && (
           <main className="min-h-0 flex-1 overflow-y-auto p-4">
@@ -528,11 +580,33 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         )}
 
         {/* ── La página en un celular (con el marco rojo encima en Fotos) ── */}
-        <div className={`flex min-h-0 items-start justify-center gap-6 overflow-auto bg-niebla p-4 ${modo === "fotos" ? "flex-1" : "w-[440px] shrink-0 border-l border-linea"}`}>
+        <div className={`flex min-h-0 items-start justify-center gap-6 overflow-auto bg-niebla p-4 ${modo === "textos" ? "w-[440px] shrink-0 border-l border-linea" : "flex-1"}`}>
+          <div className="grid shrink-0 gap-2">
+          {fuera && (
+            <div className="w-[406px] rounded-xl bg-[#fdf1dd] p-2.5 text-[13px] leading-snug text-[#8a4b00]">
+              <strong>Estás viendo otra página</strong> (<code className="font-mono">{fuera}</code>): así la verá la gente al tocar ese enlace. Aquí no hay fotos ni números para editar.{" "}
+              <button type="button" onClick={() => recargar()} className="cursor-pointer font-bold text-marino underline">
+                ← Volver a {PAGINAS_MAPA[archivo].nombre}
+              </button>
+            </div>
+          )}
           <div className="relative shrink-0 overflow-hidden rounded-[28px] border-[8px] border-tinta bg-white" style={{ width: 390 + 16, height: ALTO + 16 }}>
-            <iframe ref={marco} key={`${archivo}-${vista}`} title="Página" src={ruta} onLoad={() => setCargada((c) => c + 1)} className="size-full" style={{ width: 390, height: ALTO }} />
+            <iframe
+              ref={marco}
+              key={carga.n}
+              title="Página"
+              src={carga.ruta}
+              onLoad={() => {
+                setCargada((c) => c + 1);
+                revisarDireccion();
+              }}
+              className="size-full"
+              style={{ width: 390, height: ALTO }}
+            />
+            {/* Aquí pone sus números la pestaña Mapa. */}
+            <div ref={setCapa} className={`pointer-events-none absolute inset-0 ${modo === "mapa" ? "" : "hidden"}`} />
 
-            {modo === "fotos" && sel && caja && u && (
+            {modo === "fotos" && !fuera && sel && caja && u && (
               <div className="pointer-events-none absolute inset-0">
                 {/* Marco rojo sobre la foto: arrastrar acomoda la foto dentro de él. */}
                 <div
@@ -617,6 +691,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
               </div>
             )}
           </div>
+          </div>
 
           {modo === "fotos" && (
             <aside className="w-[300px] shrink-0 pt-2 text-[14px] leading-relaxed text-texto-suave">
@@ -628,7 +703,8 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                 <li>«Guardar» arriba cuando termines.</li>
               </ol>
               <p className="m-0">
-                Puedes bajar la página y deslizar la galería con el mouse como siempre: el marco sigue a la foto. Doble clic en el marco o «Listo» para soltarla.
+                Puedes bajar la página y deslizar la galería con el mouse como siempre: el marco sigue a la foto. Doble clic en el marco o «Listo» para soltarla. Los botones y
+                enlaces funcionan como en la página real (llevan a su página).
               </p>
               {pendientes.length > 0 && (
                 <p className="mt-3 rounded-lg bg-[#fdf1dd] p-2.5 text-[13px] text-[#8a4b00]">
@@ -638,6 +714,9 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
             </aside>
           )}
         </div>
+
+        {/* ── Pestaña Mapa: cada elemento de la página con su número fijo ── */}
+        {modo === "mapa" && <MapaElementos archivo={archivo} secciones={mapa} marco={marco} cargada={cargada} capa={capa} activo={!fuera} />}
       </div>
 
       {pedido && sel && (

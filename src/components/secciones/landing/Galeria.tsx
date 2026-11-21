@@ -139,7 +139,7 @@ export function Galeria({ medios, forma = "normal", pie }: { medios: MedioGaleri
                 />
               )}
               {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} />}
-              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" desvanecerEtiquetas />}
+              {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" desvanecerEtiquetas repetirCada={6000} />}
             </div>
           ))}
         </div>

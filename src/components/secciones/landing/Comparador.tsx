@@ -13,7 +13,8 @@
 // El tamaño de la caja se lee una vez al poner el dedo, no en cada movimiento.
 //
 // Invitación a deslizar (20-nov-2026, dueño): al quedar a la vista, la línea se mueve sola de un lado a otro, con una
-// manita que la acompaña, para que se entienda que se arrastra. Dos veces como máximo (la segunda, 3.5 s después) y
+// manita que la acompaña, para que se entienda que se arrastra. Dos veces como máximo (la segunda, 3.5 s después), o
+// cada «repetirCada» ms mientras siga a la vista y nadie la toque (producto: cada 6 s, dueño 21-nov-2026), y
 // se detiene en cuanto la persona toca la foto o usa el teclado. No se mueve si el teléfono pide menos movimiento.
 //
 // «arrastre»:
@@ -35,6 +36,7 @@ export function Comparador({
   forma = "aspect-[4/3] md:aspect-[16/9] lg:aspect-square rounded-2xl md:rounded-3xl",
   arrastre = "foto",
   desvanecerEtiquetas = false,
+  repetirCada,
 }: {
   antes: Lado;
   despues: Lado;
@@ -44,6 +46,8 @@ export function Comparador({
   /** Producto (21-nov-2026, dueño): al mover la línea, la etiqueta del lado que se achica se desvanece; con la línea
    *  hasta un lado solo queda la etiqueta de la foto que se ve completa. */
   desvanecerEtiquetas?: boolean;
+  /** Cada cuántos ms se repite la invitación a deslizar (sin límite) mientras nadie toque la foto. */
+  repetirCada?: number;
 }) {
   // Solo para lectores de pantalla y la pista: se actualiza al soltar o con el teclado, no en cada movimiento.
   const [valor, setValor] = useState(50);
@@ -66,11 +70,15 @@ export function Comparador({
     if (capa.current) capa.current.style.transform = `translate3d(${p}%,0,0)`;
     if (foto.current) foto.current.style.transform = `translate3d(${-p}%,0,0)`;
     if (riel.current) riel.current.style.transform = `translate3d(${p}%,0,0)`;
-    if (desvanecerEtiquetas) {
-      // Visible completa mientras su foto ocupa la mitad o más; se desvanece hasta desaparecer con 10 % o menos.
-      const opacidad = (lado: number) => String(Math.min(1, Math.max(0, (lado - 10) / 40)));
-      if (etiquetaAntes.current) etiquetaAntes.current.style.opacity = opacidad(p);
-      if (etiquetaDespues.current) etiquetaDespues.current.style.opacity = opacidad(100 - p);
+    if (desvanecerEtiquetas && caja.current) {
+      // Cada etiqueta se ve completa hasta que la línea está a punto de tocarla (6 px antes) y se desvanece mientras
+      // la línea le pasa encima (28 px). Así se lee completa todo el tiempo que no está tapada (dueño, 21-nov-2026).
+      const x = (p / 100) * caja.current.clientWidth;
+      const nivel = (v: number) => String(Math.min(1, Math.max(0, v / 34)));
+      const a = etiquetaAntes.current;
+      const d = etiquetaDespues.current;
+      if (a) a.style.opacity = nivel(x - (a.offsetLeft + a.offsetWidth - 28));
+      if (d) d.style.opacity = nivel(d.offsetLeft + 28 - x);
     }
   }, [desvanecerEtiquetas]);
 
@@ -97,24 +105,28 @@ export function Comparador({
     let animacion = 0;
     let espera: ReturnType<typeof setTimeout> | undefined;
     let veces = 0;
+    let corriendo = false;
     let visible = false;
 
     const demostrar = () => {
-      if (tocado.current || !visible || veces >= 2) return;
+      if (corriendo || tocado.current || !visible || (!repetirCada && veces >= 2)) return;
+      corriendo = true;
       veces++;
       setMano(true);
       const inicio = performance.now();
       const total = tramos.reduce((a, t) => a + t[2], 0);
       const paso = (ahora: number) => {
         if (tocado.current) {
+          corriendo = false;
           setMano(false);
           return;
         }
         let t = ahora - inicio;
         if (t >= total) {
+          corriendo = false;
           colocar(50);
           setMano(false);
-          espera = setTimeout(demostrar, 3500);
+          espera = setTimeout(demostrar, repetirCada ?? 3500);
           return;
         }
         for (const [desde, hasta, dura] of tramos) {
@@ -132,7 +144,11 @@ export function Comparador({
     const observador = new IntersectionObserver(
       ([entrada]) => {
         visible = entrada.isIntersecting;
-        if (visible && veces === 0) espera = setTimeout(demostrar, 700);
+        // Al quedar a la vista: la primera vez a los 0.7 s; si se repite, vuelve a empezar al regresar a la foto.
+        if (visible && (veces === 0 || repetirCada)) {
+          clearTimeout(espera);
+          espera = setTimeout(demostrar, veces === 0 ? 700 : 1200);
+        }
       },
       { threshold: 0.6 },
     );
@@ -142,7 +158,7 @@ export function Comparador({
       cancelAnimationFrame(animacion);
       clearTimeout(espera);
     };
-  }, [colocar]);
+  }, [colocar, repetirCada]);
 
   function mover(clientX: number) {
     const m = medida.current;

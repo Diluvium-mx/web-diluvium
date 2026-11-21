@@ -28,6 +28,19 @@ function leer(): Registro {
   return existsSync(ARCHIVO) ? (JSON.parse(readFileSync(ARCHIVO, "utf8")) as Registro) : {};
 }
 
+/** Lo que necesita la pestaña Mapa: firma → número y nombre guardado. */
+const resumir = (pagina: Registro[string] | undefined) =>
+  Object.fromEntries(Object.entries(pagina?.elementos ?? {}).map(([f, e]) => [f, { n: e.n, nombre: e.nombre }]));
+
+/** Los números guardados (para que el Mapa salga al instante, sin esperar a leer la página). */
+export async function GET(request: Request) {
+  const bloqueo = revisarPedido(request);
+  if (bloqueo) return bloqueo;
+  const archivo = new URL(request.url).searchParams.get("archivo");
+  if (!esArchivoMapa(archivo)) return Response.json({ ok: false, mensaje: "Página no válida." }, { status: 400 });
+  return Response.json({ ok: true, elementos: resumir(leer()[archivo]) });
+}
+
 export async function POST(request: Request) {
   const bloqueo = revisarPedido(request, { cambia: true });
   if (bloqueo) return bloqueo;
@@ -67,5 +80,5 @@ export async function POST(request: Request) {
     }
   }
   if (cambio) writeFileSync(ARCHIVO, JSON.stringify(registro, null, 1) + "\n");
-  return Response.json({ ok: true, numeros: Object.fromEntries(Object.entries(pagina.elementos).map(([f, e]) => [f, e.n])) });
+  return Response.json({ ok: true, elementos: resumir(pagina) });
 }

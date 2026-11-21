@@ -1,6 +1,6 @@
 {
  "product.b1": {
-  "siguiente": 214,
+  "siguiente": 260,
   "elementos": {
    "landing_ficha_b1|before_after_1|foto:before_after_1|image_before": {
     "n": 18,
@@ -580,7 +580,7 @@
    },
    "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div1>h21": {
     "n": 67,
-    "nombre": "Título «¿Qué tamaño necesito?»",
+    "nombre": "Título «¿Cómo medir tu entrada?»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1278,6 +1278,264 @@
     "n": 213,
     "nombre": "Texto «© 2026 Diluvium»",
     "parte": "B1-P8 · Pie de página",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Video@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>video1": {
+    "n": 214,
+    "nombre": "Video «Video: dónde medir tu entrada para elegir el tamaño de la c…»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button1": {
+    "n": 215,
+    "nombre": "Botón «Reproducir el video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button2": {
+    "n": 216,
+    "nombre": "Botón «Quitar el sonido»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>button1": {
+    "n": 217,
+    "nombre": "Botón «Ver pasos clave→»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div3>button1": {
+    "n": 224,
+    "nombre": "Botón «← Volver al video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>p2": {
+    "n": 225,
+    "nombre": "Texto «Elige el tamaño de tu entrada para continuar.»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>fieldset1>legend1>span1": {
+    "n": 226,
+    "nombre": "Texto «· Extra Chica»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>button1": {
+    "n": 227,
+    "nombre": "Botón «Cerrar»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Título@div2>div1>div1>div1>div1>h21": {
+    "n": 228,
+    "nombre": "Título «Carrito»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div1>div1>span1": {
+    "n": 229,
+    "nombre": "Texto «0»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div1>button1": {
+    "n": 230,
+    "nombre": "Botón «Cerrar»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>div1": {
+    "n": 231,
+    "nombre": "Texto «Producto añadido al carrito»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>div2>div1>span1": {
+    "n": 232,
+    "nombre": "Texto «¡Buenas noticias! Tu pedido califica para envío gratis.»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>div2>div1>span2>span1": {
+    "n": 233,
+    "nombre": "Texto «$ 499.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li1>div1>a1": {
+    "n": 234,
+    "nombre": "Enlace «foto Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li1>div2>a1": {
+    "n": 235,
+    "nombre": "Enlace «Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>span1": {
+    "n": 236,
+    "nombre": "Texto «$ 5,500.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>s1": {
+    "n": 237,
+    "nombre": "Texto «$ 5,999.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div2>dl1>div1>span1": {
+    "n": 238,
+    "nombre": "Texto «Extra Chica (69cm a 78cm)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li1>div2>div3>div1>button1": {
+    "n": 239,
+    "nombre": "Botón «disminuir»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Campo@div2>div1>div1>div2>ul1>li1>div2>div3>div1>input1": {
+    "n": 240,
+    "nombre": "Campo «Cantidad de Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li1>div2>div3>div1>button2": {
+    "n": 241,
+    "nombre": "Botón «aumentar»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div2>ul1>li1>div2>div3>button1": {
+    "n": 242,
+    "nombre": "Botón «Eliminar Compuerta Anti-Inundaciones - Extra Chica (69cm a …»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Título@div2>div1>div1>div3>div1>h21": {
+    "n": 243,
+    "nombre": "Título «Total»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div3>div1>p1": {
+    "n": 244,
+    "nombre": "Texto «$ 5,500.00 MXN»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div3>details1>summary1": {
+    "n": 245,
+    "nombre": "Botón «Agregar notas de pedido»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Título@div2>div1>div1>div3>details1>div1>h31": {
+    "n": 246,
+    "nombre": "Título «Order note»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Campo@div2>div1>div1>div3>details1>div1>textarea1": {
+    "n": 247,
+    "nombre": "Campo «Agregar notas de pedido aquí...»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div3>div2>a1": {
+    "n": 248,
+    "nombre": "Enlace «Ver carrito»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>div3>div2>button1": {
+    "n": 249,
+    "nombre": "Botón «Finalizar compra»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div3>small1": {
+    "n": 250,
+    "nombre": "Texto «Impuesto incluido. Envío calculados al finalizar la compra.»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li1>div1>span1": {
+    "n": 251,
+    "nombre": "Texto «1»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li1>div1>h31": {
+    "n": 218,
+    "nombre": "Título «Mide el ancho de tu entrada»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Foto@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li1>div2>div1>img1": {
+    "n": 219,
+    "nombre": "Foto «puerta_buena.jpg · Puerta con una flecha que marca el ancho, de marco »",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div1>span1": {
+    "n": 253,
+    "nombre": "Texto «2»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div1>h31": {
+    "n": 220,
+    "nombre": "Título «Elige tu tamaño»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Ícono@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div2>div1>span1>svg1": {
+    "n": 221,
+    "nombre": "Ícono «adorno»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Tabla@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div2>div1>table1": {
+    "n": 255,
+    "nombre": "Tabla «TamañoAncho de entradaExtra Chica69–78 cmChica79–90 cmMedia…»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li3>div1>span1": {
+    "n": 256,
+    "nombre": "Texto «3»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li3>div1>h31": {
+    "n": 222,
+    "nombre": "Título «Recíbela y colócala»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Foto@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li3>div2>div1>img1": {
+    "n": 223,
+    "nombre": "Foto «Frame_603.jpg · La compuerta Diluvium puesta en la parte de abajo de u»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>div1>p1": {
+    "n": 258,
+    "nombre": "Texto «Su carrito está vacío»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>div1>a1": {
+    "n": 259,
+    "nombre": "Enlace «Seguir comprando»",
+    "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    }
   }
