@@ -9,11 +9,11 @@
 import { useEffect, useRef, useState } from "react";
 import { IconoTache } from "./piezas";
 import { PasosMedir, type TamanoPaso, type VariantePasos } from "./PasosMedir";
-import { VideoGaleria } from "./VideoGaleria";
+import { VideoControles } from "./VideoControles";
 
 /** Botón azul de la ventana (propuesta 1 que eligió el dueño, 21-nov-2026): el texto y, debajo, una flecha dibujada
  *  (no es una letra del texto) que se mueve suave hacia donde lleva. */
-function BotonVentana({ texto, lado, alTocar }: { texto: string; lado: "derecha" | "izquierda"; alTocar: () => void }) {
+function BotonVentana({ texto, lado, alTocar }: { texto: string; lado?: "derecha" | "izquierda"; alTocar: () => void }) {
   return (
     <button
       type="button"
@@ -21,6 +21,7 @@ function BotonVentana({ texto, lado, alTocar }: { texto: string; lado: "derecha"
       className="mt-4 flex min-h-[64px] w-full cursor-pointer flex-col items-center justify-center gap-0.5 rounded-2xl bg-marino px-5 py-2.5 font-titulo text-[18px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,85,154,0.8)] transition-colors hover:bg-marino-hondo"
     >
       {texto}
+      {lado && (
       <svg
         viewBox="0 0 24 24"
         className={`flecha-empuje size-6 ${lado === "derecha" ? "animate-[empuje-der_1.4s_ease-in-out_infinite]" : "animate-[empuje-izq_1.4s_ease-in-out_infinite]"}`}
@@ -34,6 +35,7 @@ function BotonVentana({ texto, lado, alTocar }: { texto: string; lado: "derecha"
       >
         {lado === "derecha" ? <path d="M4 12h15M13 6l6 6-6 6" /> : <path d="M20 12H5M11 6l-6 6 6 6" />}
       </svg>
+      )}
     </button>
   );
 }
@@ -85,15 +87,15 @@ export function ComoMedir({ texto, className, tamanos, variante = "a" }: { texto
         {/* El video se queda puesto (escondido) mientras se ven los pasos: al volver sigue donde iba. */}
         <div className={`p-4 ${vista === "video" ? "" : "hidden"}`}>
           <div className="relative aspect-video overflow-hidden rounded-xl bg-tinta">
-            <VideoGaleria
+            <VideoControles
               src="/media/videos/donde-medir.mp4"
               poster="/media/videos/donde-medir-poster.jpg"
               alt="Video: dónde medir tu entrada para elegir el tamaño de la compuerta"
               activo={abierta && vista === "video"}
-              conSonido
             />
           </div>
-          <BotonVentana texto="Ver pasos clave" lado="derecha" alTocar={() => cambiarVista("pasos")} />
+          {/* 217: solo el texto, al centro (dueño, 21-nov-2026); 224 conserva su flecha. */}
+          <BotonVentana texto="Ver pasos clave" alTocar={() => cambiarVista("pasos")} />
         </div>
         {vista === "pasos" && (
           <div className="p-4">

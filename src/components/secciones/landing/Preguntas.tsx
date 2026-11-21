@@ -1,7 +1,8 @@
 // Sección «landing-preguntas»: los miedos reales en acordeón (<details>, se abren con teclado y lectores de
 // pantalla sin código extra; abrir una cierra la otra). En computadora el título y el WhatsApp van a la izquierda.
-// Con «search_heading» (Producto de B1, 21-nov-2026): arriba de las preguntas, una caja para escribir la suya y ver la
-// respuesta ahí mismo (PreguntaLibre.tsx), con las de la sección más preguntas-banco.ts.
+// Con «search_heading» (Producto de B1, 21-nov-2026): las preguntas en tarjetas y al final una caja para escribir otra y
+// ver la respuesta ahí mismo (PreguntasTarjetas.tsx, propuesta 1 que eligió el dueño), con las de la sección más
+// preguntas-banco.ts (incluye la guía de Angela del CRM).
 
 import type { PropsSeccion } from "../registro";
 import { texto, type Bloque } from "@/lib/contenido";
@@ -9,7 +10,7 @@ import type { EntradaBanco } from "./buscarPregunta";
 import { TextoRico } from "@/components/comunes/Texto";
 import { datosVenta, pesos, textoVersion, rellenar } from "./datos";
 import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
-import { PreguntaLibre } from "./PreguntaLibre";
+import { PreguntasTarjetas } from "./PreguntasTarjetas";
 import { BANCO_EXTRA } from "./preguntas-banco";
 import { producto as buscarProducto } from "@/components/producto/catalogo";
 
@@ -31,7 +32,7 @@ export function armarBanco(preguntas: Bloque[]): EntradaBanco[] {
   const medida = buscarProducto(ENLACE_MEDIDA.split("/").pop() ?? "");
   const precioMedida = medida?.variantes[0] ? pesos(medida.variantes[0].precio) : "un precio según la medida";
   return [
-    ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))) })),
+    ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))), pieza: p.id })),
     ...BANCO_EXTRA.map((e) => ({ ...e, respuesta: rellenar(e.respuesta).replace("{precio_medida}", precioMedida) })),
   ];
 }
@@ -46,9 +47,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
   const preguntas = seccion.bloques.filter((b) => b.tipo === "question");
   const whatsapp = texto(a, "whatsapp_link");
   const tituloBuscador = texto(a, "search_heading");
-  const buscador = tituloBuscador ? (
-    <PreguntaLibre titulo={tituloBuscador} banco={armarBanco(preguntas)} tamanos={tamanosBuscador()} whatsapp={whatsapp} enlaceMedida={ENLACE_MEDIDA} />
-  ) : null;
+  const banco = tituloBuscador ? armarBanco(preguntas) : [];
   return (
     <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
@@ -64,9 +63,17 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             </a>
           )}
         </div>
+        {tituloBuscador ? (
+          <PreguntasTarjetas
+            titulo={tituloBuscador}
+            faqs={banco.slice(0, preguntas.length)}
+            banco={banco}
+            tamanos={tamanosBuscador()}
+            whatsapp={whatsapp}
+            enlaceMedida={ENLACE_MEDIDA}
+          />
+        ) : (
         <div>
-          {buscador}
-          {buscador && <p className="m-0 mb-1 text-[15px] font-semibold text-texto-suave">O revisa las más comunes:</p>}
           <div className="border-t border-linea">
           {preguntas.map((p) => (
             <details key={p.id} data-pieza={p.id} name="preguntas-version" className="group border-b border-linea">
@@ -81,6 +88,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
           ))}
           </div>
         </div>
+        )}
       </div>
     </section>
   );

@@ -14,12 +14,12 @@ import { useEffect, useRef, useState } from "react";
 import { enlaceArticulo } from "@/components/carrito/catalogo";
 import { avisoExistencias, cambiar, quitar, useCarrito, type LineaCompleta } from "@/components/carrito/estado";
 import { useAparecer } from "@/components/encabezado/useAparecer";
+import { LogoMastercard, LogoMercadoPago, LogoPaypal, LogoVisa } from "@/components/pago/Iconos";
 import { pesos } from "./datos";
 import { IconoTache } from "./piezas";
 
 /** Desde este total el envío es gratis (como en la tienda: «Envío gratis a partir de $499»). */
 const ENVIO_GRATIS_DESDE = 499;
-const PAGOS = ["VISA", "Mastercard", "Mercado Pago", "PayPal"];
 
 function Palomita({ className = "size-4" }: { className?: string }) {
   return (
@@ -149,12 +149,20 @@ export function CarritoHoja({ cerrar, anadido = false }: { cerrar: () => void; a
                 <span className="text-[15.5px] font-bold">Total</span>
                 <strong className="text-[26px]">{pesos(total)}</strong>
               </p>
-              <p className="m-0 mt-2.5 flex flex-wrap justify-center gap-1.5 text-[11.5px] font-bold text-texto-suave" aria-label="Formas de pago: VISA, Mastercard, Mercado Pago y PayPal">
-                {PAGOS.map((m) => (
-                  <span key={m} aria-hidden="true" className="rounded-md border border-linea px-2 py-1">
-                    {m}
-                  </span>
-                ))}
+              {/* Formas de pago: solo los logos (los mismos de la pantalla de pago), del mismo tamaño (Producto 330–333). */}
+              <p className="m-0 mt-3 flex justify-center gap-2" role="list" aria-label="Formas de pago">
+                <span role="listitem">
+                  <LogoVisa className="h-7 w-11" />
+                </span>
+                <span role="listitem">
+                  <LogoMastercard className="h-7 w-11" />
+                </span>
+                <span role="listitem">
+                  <LogoMercadoPago className="h-7 w-11" />
+                </span>
+                <span role="listitem" className="flex h-7 w-11 items-center justify-center rounded-[3px] border border-linea bg-white">
+                  <LogoPaypal className="text-[10.5px]" />
+                </span>
               </p>
               <p className="m-0 mt-1.5 text-center text-[13px] text-texto-suave">IVA incluido · hasta 6 meses sin intereses</p>
               <div className="mt-4 grid gap-2.5">

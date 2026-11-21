@@ -107,3 +107,9 @@ html:focus-within { scroll-behavior: smooth; }
 @keyframes empuje-der { 0%, 100% { transform: translateX(-3px); } 50% { transform: translateX(4px); } }
 @keyframes empuje-izq { 0%, 100% { transform: translateX(3px); } 50% { transform: translateX(-4px); } }
 @media (prefers-reduced-motion: reduce) { .version .flecha-empuje { animation: none !important; } }
+
+/* Con una ventana abierta (galería, «¿Cómo medir?», reseñas, tabla, menú) la página de atrás no se mueve: el dedo o la
+   rueda solo desplazan la ventana (dueño, 21-nov-2026). overscroll-behavior evita que al llegar al final de la ventana
+   el movimiento pase a la página. */
+html:has(.version dialog[open]) { overflow: hidden; }
+.version dialog { overscroll-behavior: contain; }

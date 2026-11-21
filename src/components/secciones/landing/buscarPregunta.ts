@@ -12,11 +12,18 @@
 // Si nada se parece lo suficiente, no inventa: ofrece mandar la pregunta por WhatsApp ya escrita (respuesta segura de
 // una persona).
 
-export type EntradaBanco = { pregunta: string; respuesta: string; claves?: string; enlace?: { texto: string; href: string } };
+export type EntradaBanco = {
+  pregunta: string;
+  respuesta: string;
+  claves?: string;
+  enlace?: { texto: string; href: string };
+  /** Id de la pieza en la plantilla (las preguntas de la sección): conserva sus números en el mapa. */
+  pieza?: string;
+};
 export type TamanoBuscador = { nombre: string; medidas: string };
 
 const RELLENO = new Set(
-  "a al algo algun alguna ante bien buen buena buenas buenos cada como con cual cuales de del dia donde e el ella en es esa ese eso esta estan este esto fue ha hay hola la las le les lo los mas me mi mis muy necesito ni no nos o oye para pero por porfa porfavor pregunta puede pueden puedo que quiero se sea ser si sin sobre son su sus tal tambien te tenga tengo ti tiene tienen todo tu tus un una unas uno unos usted ustedes y ya favor gracias saber quisiera cuanto cuanta cuantos".split(
+  "a al algo algun alguna ante bien buen buena buenas buenos cada como con cual cuales de del dia donde e el ella en es esa ese eso esta estan este esto fue ha hay hola la las le les lo los mas me mi mis muy necesito ni no nos o oye para pero por porfa porfavor pregunta puede pueden puedo que quiero se sea ser si sin sobre son su sus tal tambien te tenga tengo ti tiene tienen todo tu tus un una unas uno unos usted ustedes y ya favor gracias saber quisiera cuanto cuanta cuantos sirve sirven funciona funcionan".split(
     " ",
   ),
 );
@@ -30,7 +37,7 @@ const TEMAS: Record<string, string[]> = {
   amedida: ["especial", "xxl", "porton*", "cochera*", "garage", "garaje", "zaguan", "bodega", "ancha", "anchas", "amplia*", "doble", "fabrican"],
   altura: ["altura", "alta", "altas", "alto", "altos", "nivel", "sube", "subir", "baja", "bajas", "bajo", "mini"],
   instalar: ["instal*", "coloc*", "poner", "pongo", "pone", "armar", "arma", "perfor*", "taladr*", "obra", "albanil*", "herramienta*", "tornillo*", "pegar", "fij*", "quitar", "quito", "retir*", "permanente", "video"],
-  agua: ["agua", "filtr*", "pasa", "pase", "sell*", "fuga*", "inund*", "lluvia*", "huracan*", "tormenta*", "funciona", "sirve", "aguanta", "detiene", "resiste"],
+  agua: ["agua", "filtr*", "pasa", "pase", "sell*", "fuga*", "inund*", "lluvia*", "huracan*", "tormenta*", "aguanta", "detiene", "resiste"],
   material: ["material*", "acero", "hule", "neopreno", "hecha", "hecho", "fabricad*", "metal", "plastico", "lona", "durable", "resistente", "oxida", "aluminio"],
   chueco: ["chuec*", "desnivel*", "irregular*", "disparej*", "grieta*", "inclinad*", "torcid*", "piso", "marco*", "escalon*", "rampa"],
   garantia: ["garantia*", "devol*", "devuel*", "reembols*", "cambio", "cambiar", "regres*", "convence", "satisfech*", "defect*", "falla*"],
@@ -39,15 +46,19 @@ const TEMAS: Record<string, string[]> = {
   incluye: ["incluye*", "trae", "traen", "viene", "vienen", "contiene", "partes", "piezas", "caja", "accesorio*", "llave"],
   fuera: ["extranjero", "usa", "unidos", "eu", "eua", "internacional*", "fuera", "pais", "guatemala", "canada"],
   tienda: ["tienda*", "fisica", "oficina*", "recoger", "recojo", "sucursal*", "ubica*", "direccion", "visitar", "local"],
-  cancelar: ["cancel*", "modific*", "pedido*", "orden", "compre", "equivoque"],
+  cancelar: ["cancel*", "modific*", "equivoque"],
+  comprar: ["compr*", "consigo", "pedir", "pido", "amazon", "mercadolibre"],
   durar: ["dura", "duran", "durar", "vida", "util", "reutiliz*", "veces", "anos"],
   repuesto: ["repuesto*", "refaccion*", "funda", "tira", "plastilina", "reponer", "nueva", "nuevo"],
   coladera: ["coladera*", "desague*", "drenaje", "tapon*", "registro", "alcantarilla", "regadera", "bano"],
   contacto: ["whatsapp", "telefono*", "numero", "llamar", "llamo", "correo", "email", "contacto", "hablar", "asesor*", "persona"],
-  cuantas: ["cuantas", "varias", "dos", "tres", "puertas", "entradas"],
+  cuantas: ["cuantas", "varias", "dos", "tres"],
 };
 // Temas que casi toda pregunta trae: valen poco por sí solos.
 const DEBILES = new Set(["medida"]);
+// Palabras que salen en casi todas las respuestas: suman poco y no bastan solas («¿cómo pinto mi puerta?» no es
+// ninguna pregunta del banco solo por decir «puerta»).
+const GENERICAS = new Set(["compuerta", "puerta", "entrada", "diluvium", "producto", "casa", "tamano"]);
 
 const quitarAcentos = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
 
@@ -90,6 +101,7 @@ function parecidas(a: string, b: string): boolean {
 }
 
 function temaDe(p: string): string | null {
+  if (GENERICAS.has(raiz(p))) return null;
   // Primero lo exacto (o el inicio de la palabra) en todos los temas; solo si nada coincide, con una falta de letra.
   for (const [tema, lista] of Object.entries(TEMAS)) {
     for (const w of lista) if (w.endsWith("*") ? p.startsWith(w.slice(0, -1)) : p === w) return tema;
@@ -98,7 +110,8 @@ function temaDe(p: string): string | null {
   for (const [tema, lista] of Object.entries(TEMAS)) {
     for (const w of lista) {
       const base = w.endsWith("*") ? w.slice(0, -1) : w;
-      if (base.length >= 5 && (parecidas(p, base) || (w.endsWith("*") && parecidas(p.slice(0, base.length + 1), base)))) return tema;
+      // Solo en palabras largas («garntia» → garantía); en cortas confunde («color» no es «coloc-ar»).
+      if (base.length >= 6 && (parecidas(p, base) || (w.endsWith("*") && parecidas(p.slice(0, base.length + 1), base)))) return tema;
     }
   }
   return null;
@@ -130,9 +143,15 @@ export function buscar(indice: Indice[], texto: string): EntradaBanco[] {
     for (const r of raices) {
       if (r.length < 3) continue;
       // Palabra igual; con una letra de diferencia solo en palabras largas (para que «Mérida» no sea «medida»).
-      if (x.raices.some((y) => y === r || (r.length >= 7 && parecidas(r, y)))) {
-        p += 1;
-        if (r.length >= 5) fuerte = true;
+      if (GENERICAS.has(r)) {
+        if (x.raices.includes(r)) p += 0.5;
+        continue;
+      }
+      const igual = x.raices.includes(r);
+      if (igual || (r.length >= 7 && x.raices.some((y) => parecidas(r, y)))) {
+        p += igual ? 2 : 1;
+        // Una palabra con sentido (4 letras o más, ya sin las de relleno) igual a la de la pregunta basta («pesa»).
+        if (r.length >= 4) fuerte = true;
       }
     }
     return { x, p: fuerte ? p : 0 };

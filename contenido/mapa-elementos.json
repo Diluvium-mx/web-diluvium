@@ -1,6 +1,6 @@
 {
  "product.b1": {
-  "siguiente": 318,
+  "siguiente": 360,
   "elementos": {
    "landing_ficha_b1|before_after_1|foto:before_after_1|image_before": {
     "n": 18,
@@ -94,7 +94,7 @@
    },
    "landing_resenas_b1_producto|review_1|Ícono:1": {
     "n": 107,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -118,7 +118,7 @@
    },
    "landing_resenas_b1_producto|review_2|Ícono:1": {
     "n": 111,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -142,7 +142,7 @@
    },
    "landing_resenas_b1_producto|review_3|Ícono:1": {
     "n": 115,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -166,7 +166,7 @@
    },
    "landing_resenas_b1_producto|review_4|Ícono:1": {
     "n": 119,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -190,7 +190,7 @@
    },
    "landing_resenas_b1_producto|review_5|Ícono:1": {
     "n": 123,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -214,7 +214,7 @@
    },
    "landing_resenas_b1_producto|review_6|Ícono:1": {
     "n": 127,
-    "nombre": "Íconos «5 de 5 estrellas»",
+    "nombre": "Ícono «5 de 5 estrellas»",
     "parte": "B1-P3 · Muro de reseñas",
     "visto": "2026-11-21"
    },
@@ -274,7 +274,7 @@
    },
    "landing_encabezado_producto_b1||Enlace@div1>a3": {
     "n": 3,
-    "nombre": "Enlace «Carrito, 0 artículos»",
+    "nombre": "Enlace «Carrito, 1 artículo»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -580,7 +580,7 @@
    },
    "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div1>h21": {
     "n": 67,
-    "nombre": "Título «3 pasos clave»",
+    "nombre": "Título «¿Cómo medir tu entrada?»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -658,7 +658,7 @@
    },
    "landing_ficha_b1||Botón@div1>div2>div2>div1>button1": {
     "n": 81,
-    "nombre": "Botón «Añadir al carrito · $5,500»",
+    "nombre": "Botón «Añadir al carrito»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1300,7 +1300,7 @@
    },
    "landing_ficha_b1||Texto@div1>div2>div2>div1>fieldset1>legend1>span1": {
     "n": 226,
-    "nombre": "Texto «· Extra Grande»",
+    "nombre": "Texto «· Extra Chica»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1346,18 +1346,6 @@
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
-   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li1>div1>a1": {
-    "n": 234,
-    "nombre": "Enlace «foto Compuerta Anti-Inundaciones»",
-    "parte": "B1-P1 · Encabezado",
-    "visto": "2026-11-21"
-   },
-   "landing_encabezado_producto_b1||Enlace@div2>div1>div1>div2>ul1>li1>div2>a1": {
-    "n": 235,
-    "nombre": "Enlace «Compuerta Anti-Inundaciones»",
-    "parte": "B1-P1 · Encabezado",
-    "visto": "2026-11-21"
-   },
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>span1": {
     "n": 236,
     "nombre": "Texto «$ 44,000.00 MXN»",
@@ -1367,12 +1355,6 @@
    "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div1>s1": {
     "n": 237,
     "nombre": "Texto «$ 47,992.00 MXN»",
-    "parte": "B1-P1 · Encabezado",
-    "visto": "2026-11-21"
-   },
-   "landing_encabezado_producto_b1||Texto@div2>div1>div1>div2>ul1>li1>div2>div2>dl1>div1>span1": {
-    "n": 238,
-    "nombre": "Texto «Extra Grande (111cm a 120cm)»",
     "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    },
@@ -1475,12 +1457,6 @@
    "landing_ficha_b1||Título@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div1>h31": {
     "n": 220,
     "nombre": "Título «Elige tu tamaño»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
-   "landing_ficha_b1||Ícono@div1>div2>div2>div1>div1>div1>dialog1>div3>ol1>li2>div2>div1>span1>svg1": {
-    "n": 221,
-    "nombre": "Ícono «adorno»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1742,12 +1718,6 @@
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
-   "landing_ficha_b1||Control@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>div1": {
-    "n": 297,
-    "nombre": "Control «Avance del video»",
-    "parte": "B1-P2 · Ficha del producto",
-    "visto": "2026-11-21"
-   },
    "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div3>div1>span2": {
     "n": 298,
     "nombre": "Texto «2:12»",
@@ -1764,12 +1734,6 @@
     "n": 300,
     "nombre": "Texto «Viendo 6 de 238 reseñas»",
     "parte": "B1-P3 · Muro de reseñas",
-    "visto": "2026-11-21"
-   },
-   "landing_preguntas_producto_b1||Texto@div1>div2>div1>label1": {
-    "n": 301,
-    "nombre": "Texto «¿No está tu pregunta? Escríbela aquí»",
-    "parte": "B1-P6 · Preguntas frecuentes",
     "visto": "2026-11-21"
    },
    "landing_preguntas_producto_b1||Campo@div1>div2>div1>div1>input1": {
@@ -1858,7 +1822,7 @@
    },
    "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>button1": {
     "n": 215,
-    "nombre": "Botón «Reproducir el video»",
+    "nombre": "Botón «Quitar el sonido»",
     "parte": "B1-P2 · Ficha del producto",
     "visto": "2026-11-21"
    },
@@ -1884,6 +1848,258 @@
     "n": 317,
     "nombre": "Texto «Mide el ancho de tu entrada de marco a marco.»",
     "parte": "B1-P5 · Cómo funciona (pasos)",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div1>p1": {
+    "n": 318,
+    "nombre": "Texto «Tu carrito (1)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div1>button1": {
+    "n": 319,
+    "nombre": "Botón «Cerrar el carrito»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>ul1>li1>a1": {
+    "n": 234,
+    "nombre": "Enlace «foto Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Enlace@div2>div1>ul1>li1>div1>a1": {
+    "n": 235,
+    "nombre": "Enlace «Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>ul1>li1>div1>p1": {
+    "n": 238,
+    "nombre": "Texto «Extra Chica (69cm a 78cm)»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>ul1>li1>div1>div1>span1>button1": {
+    "n": 320,
+    "nombre": "Botón «Una pieza menos de Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>ul1>li1>div1>div1>span1>span1": {
+    "n": 321,
+    "nombre": "Texto «1»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>ul1>li1>div1>div1>span1>button2": {
+    "n": 322,
+    "nombre": "Botón «Una pieza más de Compuerta Anti-Inundaciones»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>ul1>li1>div1>div1>span2>s1": {
+    "n": 323,
+    "nombre": "Texto «$5,999»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>ul1>li1>div1>div1>span2>strong1": {
+    "n": 324,
+    "nombre": "Texto «$5,500»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>ul1>li1>div1>button1": {
+    "n": 325,
+    "nombre": "Botón «Quitar Compuerta Anti-Inundaciones - Extra Chica (69cm a 78…»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div2>p1>span1": {
+    "n": 326,
+    "nombre": "Texto «Envío»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div2>p1>strong1": {
+    "n": 327,
+    "nombre": "Texto «Gratis»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div2>p2>span1": {
+    "n": 328,
+    "nombre": "Texto «Total»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div2>p2>strong1": {
+    "n": 329,
+    "nombre": "Texto «$5,500»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Texto@div2>div1>div2>p4": {
+    "n": 334,
+    "nombre": "Texto «IVA incluido · hasta 6 meses sin intereses»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div2>div1>button1": {
+    "n": 335,
+    "nombre": "Botón «Pagar ahora»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Botón@div2>div1>div2>div1>button2": {
+    "n": 336,
+    "nombre": "Botón «Seguir viendo»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_resenas_b1_producto||Botón@div1>button1": {
+    "n": 337,
+    "nombre": "Botón «Ir a la siguiente parte (dejar de ver reseñas)»",
+    "parte": "B1-P3 · Muro de reseñas",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details1>summary1": {
+    "n": 338,
+    "nombre": "Botón «¿Me va a quedar en mi puerta?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details2>summary1": {
+    "n": 339,
+    "nombre": "Botón «¿Hay que perforar o hacer obra?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details3>summary1": {
+    "n": 340,
+    "nombre": "Botón «¿De verdad no pasa el agua? ¿Hasta qué altura?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details4>summary1": {
+    "n": 341,
+    "nombre": "Botón «¿Y si mi piso o mi marco están chuecos?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details5>summary1": {
+    "n": 342,
+    "nombre": "Botón «¿Qué garantía tiene?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details6>summary1": {
+    "n": 343,
+    "nombre": "Botón «¿Cuándo llega y si no me convence?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details7>summary1": {
+    "n": 344,
+    "nombre": "Botón «¿Me dan factura?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details8>summary1": {
+    "n": 345,
+    "nombre": "Botón «¿Cómo pago?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>details9>summary1": {
+    "n": 346,
+    "nombre": "Botón «¿Qué incluye?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Texto@div1>div2>form1>label1": {
+    "n": 301,
+    "nombre": "Texto «¿No está tu pregunta? Escríbela aquí»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Campo@div1>div2>form1>div1>input1": {
+    "n": 347,
+    "nombre": "Campo «Ej. ¿Llega a Monterrey?»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_preguntas_producto_b1||Botón@div1>div2>form1>div1>button1": {
+    "n": 348,
+    "nombre": "Botón «Preguntar»",
+    "parte": "B1-P6 · Preguntas frecuentes",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div1>button1": {
+    "n": 349,
+    "nombre": "Botón «Regresar 10 segundos»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Ícono@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div1>span1>svg1": {
+    "n": 221,
+    "nombre": "Ícono «adorno»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div1>button2": {
+    "n": 350,
+    "nombre": "Botón «Adelantar 10 segundos»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div2>span1": {
+    "n": 351,
+    "nombre": "Texto «0:00»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Control@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div2>div1": {
+    "n": 297,
+    "nombre": "Control «Avance del video»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Texto@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div2>span2": {
+    "n": 352,
+    "nombre": "Texto «0:00»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_ficha_b1||Botón@div1>div2>div2>div1>div1>div1>dialog1>div2>div1>div1>div2>button1": {
+    "n": 353,
+    "nombre": "Botón «Pantalla completa»",
+    "parte": "B1-P2 · Ficha del producto",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Ícono@div2>div1>div2>p3>span1>svg1": {
+    "n": 330,
+    "nombre": "Ícono «Visa»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Ícono@div2>div1>div2>p3>span2>svg1": {
+    "n": 331,
+    "nombre": "Ícono «Mastercard»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Ícono@div2>div1>div2>p3>span3>svg1": {
+    "n": 332,
+    "nombre": "Ícono «Mercado Pago»",
+    "parte": "B1-P1 · Encabezado",
+    "visto": "2026-11-21"
+   },
+   "landing_encabezado_producto_b1||Ícono@div2>div1>div2>p3>span4>span1": {
+    "n": 333,
+    "nombre": "Ícono «PayPal»",
+    "parte": "B1-P1 · Encabezado",
     "visto": "2026-11-21"
    }
   }

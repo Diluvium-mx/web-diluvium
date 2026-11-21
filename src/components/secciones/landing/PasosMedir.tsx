@@ -114,7 +114,8 @@ export function TablaAnimada({ tamanos }: { tamanos: TamanoPaso[] }) {
 function Dibujo({ paso }: { paso: PasoMedir }) {
   if (!paso.imagen) return null;
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[250px] overflow-hidden rounded-xl border border-linea bg-white">
+    // Sin recuadro (dueño, 21-nov-2026): el dibujo ya trae fondo blanco, el mismo de la tarjeta.
+    <div className="relative mx-auto aspect-square w-full max-w-[250px] overflow-hidden bg-white">
       <Image src={paso.imagen} alt={paso.alt ?? ""} fill sizes="250px" className="object-contain" style={paso.estilo} {...paso.marca} />
     </div>
   );

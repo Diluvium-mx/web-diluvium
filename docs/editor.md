@@ -72,7 +72,9 @@ qué dice. Para pedir un cambio: **«Producto 37: …»** o **«Portada 21: …�
 - **Importante: nada queda hasta presionar «Guardar».** Si cierras o recargas el editor sin guardar, los ajustes se
   pierden (el navegador avisa antes de cerrar).
 - **Guardar** escribe los cambios en la página y en el administrador al mismo tiempo y deja una copia de la versión
-  anterior en `.editor-respaldos/` (fuera de git), por si hay que regresar.
+  anterior en `.editor-respaldos/` (fuera de git), por si hay que regresar. Solo aplica lo que cambiaste en el editor:
+  si mientras lo tenías abierto se cambió algo de la página desde el código, eso no se pierde al guardar.
+- **Publicar en la prueba publica lo guardado**: primero «Guardar» (si hay cambios sin guardar, el botón lo avisa).
 - **Descartar cambios** regresa a lo último guardado.
 - **Publicar en la prueba** sube la copia de prueba a Cloudflare (unos minutos) y dice el peso (límite 3 MB).
 
@@ -93,8 +95,14 @@ y carrito 2 (hoja desde abajo con ×).
   un control que no la cubre; los enlaces no se detienen (`CONTROLES` en `Editor.tsx`).
 - Guardar: `api/guardar` revisa la forma (mismas secciones, piezas de tipos permitidos, valores simples), escribe
   `contenido/tema/<archivo>.json` con respaldo y corre `npm run admin:agregar-plantillas -- --reemplazar=<archivo>`.
+  El editor manda también `base` (la plantilla que tenía al abrirse o al último guardado) y `combinarConBase`
+  (`src/lib/editor/archivos.ts`) aplica sobre el archivo solo lo que el editor cambió (clave por clave; si agregó,
+  quitó o movió piezas, manda su orden). Así un editor abierto desde antes no regresa cambios hechos en el código.
 - Subir: `api/subir` (tipo y peso revisados, nombre limpio) y vuelve a medir las fotos (`medidas-imagenes.mjs`).
-- Publicar: `api/publicar` lanza `herramientas/publicar-prueba.mjs --publicar` aparte y responde cómo va.
+- Publicar: `api/publicar` lanza `herramientas/publicar-prueba.mjs --publicar` aparte y responde cómo va
+  (bitácora en `$TMPDIR/diluvium-editor-publicar.log`). El script construye con un entorno limpio: lanzado desde
+  `npm run dev` heredaba `TURBOPACK=1` y `NODE_ENV=development`, y `next build --webpack` se negaba («Multiple bundler
+  flags set»; arreglado el 21-nov-2026).
 - Seguridad (`src/lib/editor/guardia.ts`): solo con `npm run dev`, solo con dirección `localhost` y los cambios solo
   desde la misma página (Origin). En producción responde 404 y `publicar-prueba.mjs` lo quita de la copia.
 - Mapa de elementos: `src/lib/elementos.ts` (`escanear`) lee la página y arma la firma de cada elemento: sección |

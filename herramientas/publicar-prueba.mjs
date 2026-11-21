@@ -106,8 +106,15 @@ writeFileSync(
   ),
 );
 
+// Cuando la publicación la lanza el editor (botón «Publicar en la prueba»), este proceso nace dentro de «npm run dev»
+// y hereda su modo de desarrollo: TURBOPACK=1, NODE_ENV=development y variables internas de Next. Con eso
+// «next build --webpack» se niega («Multiple bundler flags set», 21-nov-2026). Se construye siempre con un entorno
+// limpio, igual que desde la Terminal.
+const entornoLimpio = Object.fromEntries(
+  Object.entries(process.env).filter(([k]) => !/^(TURBOPACK|NODE_ENV|NEXT_|__NEXT|NEXT_RUNTIME)/.test(k)),
+);
 const correr = (cmd, args, env = {}) =>
-  execFileSync(cmd, args, { cwd: COPIA, stdio: "inherit", env: { ...process.env, SITIO_PRUEBA: "1", ...env } });
+  execFileSync(cmd, args, { cwd: COPIA, stdio: "inherit", env: { ...entornoLimpio, SITIO_PRUEBA: "1", ...env } });
 
 console.log("Construyendo (unos minutos)…");
 try {

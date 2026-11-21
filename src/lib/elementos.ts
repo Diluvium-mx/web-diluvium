@@ -36,6 +36,8 @@ function rolDe(el: Element): string | null {
   // Controles hechos a mano (la línea del antes y después) cuentan como uno solo.
   if (["slider", "button", "tab", "switch"].includes(el.getAttribute("role") ?? "")) return "Control";
   if (tag === "svg" || tag === "SVG") return "Ícono";
+  // Un logo hecho con letras (PayPal) cuenta como un solo ícono.
+  if (el.getAttribute("role") === "img") return "Ícono";
   if (CON_TEXTO.has(tag) && textoPropio(el)) return "Texto";
   return null;
 }

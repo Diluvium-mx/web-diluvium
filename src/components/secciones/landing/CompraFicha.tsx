@@ -10,10 +10,9 @@
 
 import { useId, useState } from "react";
 import type { Tamano } from "./datos";
-import { pesos } from "./datos";
 import { agregarElegido, elegir, useElegido } from "./eleccion";
 import { ComoMedir } from "./ComoMedir";
-import { CLASE_BOTON, IconoFlecha, IconoWhatsapp } from "./piezas";
+import { CLASE_BOTON, IconoWhatsapp } from "./piezas";
 
 /** Avisa a la medición de algo que no es un clic (escribir la medida). */
 function medir(nombre: string) {
@@ -74,7 +73,6 @@ export function CompraFicha({
   const idAyuda = `${nombre}-ayuda`;
 
   const actual = tamanos.find((t) => t.id === elegido) ?? null;
-  const precio = pesos(actual?.precio ?? Math.min(...tamanos.map((t) => t.precio)));
   const resultado = medida ? tamanoPara(Number(medida.replace(",", ".")), tamanos) : null;
   const unico = tamanos.length === 1;
   // Para la tabla de «Ver pasos clave»: solo los tamaños con medidas.
@@ -243,10 +241,13 @@ export function CompraFicha({
           setAviso(agregarElegido(id) ?? "");
         }}
       >
-        <span>
-          {textoBoton} · {precio}
-        </span>
-        <IconoFlecha />
+        {/* Producto 81 (dueño, 21-nov-2026): solo «Añadir al carrito» y el carrito; el precio ya está arriba. */}
+        <span>{textoBoton}</span>
+        <svg viewBox="0 0 24 24" className="size-6 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+          <path d="M3 4h2.2l2.1 10.6a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.6-1.2L20.5 8H6.2" />
+          <circle cx="9.5" cy="19.5" r="1.4" fill="currentColor" stroke="none" />
+          <circle cx="17" cy="19.5" r="1.4" fill="currentColor" stroke="none" />
+        </svg>
       </button>
       <p id={idAviso} role="status" className="m-0 text-[15px] font-semibold text-[#b42318] empty:hidden">
         {aviso}

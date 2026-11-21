@@ -5,7 +5,7 @@ import { execFile } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { promisify } from "node:util";
-import type { ArchivoMapa, Esquema, PlantillaTema } from "@/lib/mapa";
+import type { Ajustes, ArchivoMapa, BloqueTema, Esquema, PlantillaTema } from "@/lib/mapa";
 
 const correr = promisify(execFile);
 export const RAIZ = process.cwd();
@@ -49,6 +49,53 @@ export function revisarPlantilla(archivo: ArchivoMapa, nueva: unknown, esquema: 
     }
   }
   return null;
+}
+
+const igual = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
+
+/** Lo del disco más solo lo que cambió el editor (comparado con lo que tenía al abrirse). */
+function combinarAjustes(disco: Ajustes, cliente: Ajustes, base: Ajustes): Ajustes {
+  const r: Ajustes = { ...disco };
+  for (const k of new Set([...Object.keys(cliente), ...Object.keys(base)])) {
+    if (igual(cliente[k], base[k])) continue;
+    if (cliente[k] === undefined) delete r[k];
+    else r[k] = cliente[k];
+  }
+  return r;
+}
+
+/**
+ * Guardar sin pisar lo que cambió en el archivo mientras el editor estaba abierto (21-nov-2026): el editor manda la
+ * plantilla completa y la que tenía al abrirse («base»). Se aplica solo lo que el editor cambió (encuadres, fotos,
+ * textos, piezas agregadas, quitadas o movidas); lo demás se queda como está en el archivo (por ejemplo, un texto o
+ * un ajuste nuevo que se puso desde el código después de abrir el editor).
+ */
+export function combinarConBase(disco: PlantillaTema, cliente: PlantillaTema, base: PlantillaTema): PlantillaTema {
+  return {
+    ...disco,
+    secciones: disco.secciones.map((sd) => {
+      const sc = cliente.secciones.find((x) => x.id === sd.id);
+      const sb = base.secciones.find((x) => x.id === sd.id);
+      if (!sc || !sb) return sd;
+      const idsC = sc.bloques.map((b) => b.id);
+      const idsB = sb.bloques.map((b) => b.id);
+      const mezclar = (bd: BloqueTema | undefined, bc: BloqueTema, bb: BloqueTema | undefined) =>
+        bd && bb ? { ...bd, ajustes: combinarAjustes(bd.ajustes, bc.ajustes, bb.ajustes) } : bc;
+      let bloques: BloqueTema[];
+      if (igual(idsC, idsB)) {
+        // Mismas piezas y en el mismo orden: las del archivo con lo que cambió el editor.
+        bloques = sd.bloques.map((bd) => {
+          const bc = sc.bloques.find((x) => x.id === bd.id);
+          return bc ? mezclar(bd, bc, sb.bloques.find((x) => x.id === bd.id)) : bd;
+        });
+      } else {
+        // El editor agregó, quitó o movió piezas: manda su orden; cada pieza conserva lo del archivo que no tocó.
+        bloques = sc.bloques.map((bc) => mezclar(sd.bloques.find((x) => x.id === bc.id), bc, sb.bloques.find((x) => x.id === bc.id)));
+        for (const bd of sd.bloques) if (!idsB.includes(bd.id) && !idsC.includes(bd.id)) bloques.push(bd);
+      }
+      return { ...sd, ajustes: combinarAjustes(sd.ajustes, sc.ajustes, sb.ajustes), bloques };
+    }),
+  };
 }
 
 /** Guarda la plantilla (con respaldo de la anterior) y la pasa al administrador para que no se desacomoden. */
@@ -96,3 +143,4 @@ export function biblioteca(): MedioBiblioteca[] {
   }
   return lista.sort((a, b) => (a.carpeta === "editor" ? -1 : 0) - (b.carpeta === "editor" ? -1 : 0) || b.fecha - a.fecha);
 }
+// (21-nov-2026: guardar sin pisar cambios del archivo)

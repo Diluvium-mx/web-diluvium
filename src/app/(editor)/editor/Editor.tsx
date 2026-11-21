@@ -403,7 +403,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     setMensaje("Guardando…");
     try {
       for (const a of pendientes) {
-        const r = await fetch("/editor/api/guardar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ archivo: a, plantilla: borradores[a] }) });
+        const r = await fetch("/editor/api/guardar", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ archivo: a, plantilla: borradores[a], base: guardadas[a] }) });
         const j = (await r.json().catch(() => ({}))) as { ok?: boolean; mensaje?: string };
         if (!j.ok) {
           setMensaje(`No se guardó ${PAGINAS_MAPA[a].nombre}: ${j.mensaje ?? r.statusText}`);
