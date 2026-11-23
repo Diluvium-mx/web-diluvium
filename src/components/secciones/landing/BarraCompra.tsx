@@ -66,7 +66,7 @@ export function BarraCompra({
     >
       <div className="marco-version flex items-center gap-3 py-2.5">
         <p className="m-0 flex flex-col leading-tight text-marino">
-          <span className="titulo-ancho text-[22px]">{precio}</span>
+          <span className="text-[22px] leading-[1.1] font-bold">{precio}</span>
           {precioAntes && (
             <span className="text-[13px] text-texto-suave">
               antes <s>{precioAntes}</s>

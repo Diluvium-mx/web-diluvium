@@ -59,7 +59,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-resenas" id="resenas" aria-labelledby="titulo-resenas" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version">
         <div className="mb-8 max-w-[44rem] md:mb-10">
-          <h2 id="titulo-resenas" className="titulo-ancho m-0 text-[28px] md:text-[38px]">
+          <h2 id="titulo-resenas" className="titulo-version m-0 text-[28px] md:text-[38px]">
             {formato(textoVersion(a, "heading"))}
           </h2>
           {texto(a, "subheading") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{formato(textoVersion(a, "subheading"))}</p>}

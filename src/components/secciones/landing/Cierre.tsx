@@ -16,7 +16,7 @@ export function CierreVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-cierre" aria-labelledby="titulo-cierre" className="fondo-oscuro bg-marino py-16 text-white md:py-24">
       <div className="marco-version flex flex-col items-start gap-6 md:items-center md:text-center">
         <Calificacion texto={textoVersion(a, "rating_text")} />
-        <h2 id="titulo-cierre" className="titulo-ancho m-0 max-w-[44rem] text-[32px] md:text-[48px]">
+        <h2 id="titulo-cierre" className="titulo-version m-0 max-w-[44rem] text-[32px] md:text-[48px]">
           {formato(textoVersion(a, "heading"))}
         </h2>
         {texto(a, "text") && <p className="m-0 text-[18px] text-white/85">{formato(textoVersion(a, "text"))}</p>}

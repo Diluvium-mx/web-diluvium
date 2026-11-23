@@ -6,9 +6,9 @@ import "./versiones.css";
 // versiones B tengan su propio encabezado, sin las 2 barras de arriba. Nunca se indexa.
 
 const instrumentSans = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument-sans", display: "swap" });
-// Archivo con su eje de ancho («wdth»): los títulos de las versiones B van extra gruesos y anchos. Con el ancho normal
-// es la misma letra de la tienda (la versión A se ve igual).
-const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo", display: "swap" });
+// Las mismas letras de la tienda en todas las versiones (dueño, 23-nov-2026): Archivo de ancho normal, sin el eje
+// «wdth» (el archivo de la letra pesa menos).
+const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" });
 // Solo la usa la versión A (la portada de hoy): sin precarga.
 const bevan = Bevan({ subsets: ["latin"], weight: "400", variable: "--font-bevan", display: "swap", preload: false });
 

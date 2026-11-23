@@ -1,6 +1,7 @@
 /* Versiones de la portada para pruebas (/v/…). Parte de lo de la tienda (colores, letras, carrito lateral) y agrega
-   lo propio de las versiones B: azul marino de la marca, naranja solo en botones y títulos en Archivo extra gruesa y
-   ancha. Nada de esto cambia la tienda. */
+   lo propio de las versiones B: azul marino de la marca y naranja solo en botones. Las letras son las de la tienda de
+   hoy (dueño, 23-nov-2026): Archivo de grosor medio en títulos y botones, Instrument Sans en textos y precios. Nada de
+   esto cambia la tienda. */
 @import "../(sitio)/globals.css";
 
 @theme {
@@ -8,7 +9,7 @@
   --color-marino-2: #245595;
   --color-marino-hondo: #083e72;
   /* Naranja de los botones: el mismo de la tienda de hoy (#f8a01d, letra blanca), a pedido del dueño (20-nov-2026).
-     Ojo: el blanco sobre este naranja contrasta poco (2:1); por eso la letra va gruesa y grande. */
+     Ojo: el blanco sobre este naranja contrasta poco (2:1), igual que en la tienda; la letra va grande. */
   --color-boton: #f8a01d;
   --color-boton-encima: #ec9310;
   --color-tinta: #0c1e33;
@@ -18,13 +19,12 @@
   --color-estrella: #f2b01e;
 }
 
-/* Títulos: Archivo extra gruesa y ancha (eje «wdth»), parecida a la Integral CF de los anuncios. */
-.titulo-ancho {
+/* Títulos: la misma letra de la tienda de hoy (Archivo, grosor 500, ancho normal, interlineado 1.25). Antes era
+   Archivo extra gruesa y ancha; el dueño pidió la de la tienda (23-nov-2026). */
+.titulo-version {
   font-family: var(--font-titulo);
-  font-weight: 800;
-  font-stretch: 125%;
-  letter-spacing: -0.01em;
-  line-height: 1.04;
+  font-weight: 500;
+  line-height: 1.25;
   text-wrap: balance;
 }
 

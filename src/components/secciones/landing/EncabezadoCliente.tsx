@@ -128,7 +128,7 @@ export function EncabezadoCliente({
           <a
             href={botonEnlace || "#"}
             data-evento="boton_portada"
-            className="ml-0.5 inline-flex h-10 items-center justify-center rounded-lg bg-boton px-3.5 font-titulo text-[15px] font-bold text-white [font-stretch:110%] transition-colors hover:bg-boton-encima md:ml-1 md:h-11 md:px-5 md:text-base"
+            className="ml-0.5 inline-flex h-10 items-center justify-center rounded-lg bg-boton px-3.5 font-titulo text-[15px] font-medium text-white transition-colors hover:bg-boton-encima md:ml-1 md:h-11 md:px-5 md:text-base"
           >
             {botonTexto}
           </a>
@@ -138,7 +138,7 @@ export function EncabezadoCliente({
           type="button"
           onClick={() => menu.current?.showModal()}
           aria-haspopup="dialog"
-          className="flex h-10 cursor-pointer items-center gap-1 rounded-lg px-1 font-titulo text-[15px] font-semibold hover:bg-niebla md:h-11 md:px-2.5 md:text-base"
+          className="flex h-10 cursor-pointer items-center gap-1 rounded-lg px-1 font-titulo text-[15px] font-medium hover:bg-niebla md:h-11 md:px-2.5 md:text-base"
         >
           <IconoMenu />
           <span>{menuTexto || "Menú"}</span>
@@ -152,7 +152,7 @@ export function EncabezadoCliente({
         className="version m-0 ml-auto h-dvh max-h-dvh w-[min(88vw,380px)] max-w-none bg-white p-0 text-marino open:flex open:flex-col"
       >
         <div className="flex items-center justify-between border-b border-linea px-6 py-4">
-          <p className="m-0 font-titulo text-lg font-bold">{menuTexto || "Menú"}</p>
+          <p className="m-0 font-titulo text-lg font-medium">{menuTexto || "Menú"}</p>
           <button type="button" onClick={cerrarMenu} aria-label="Cerrar menú" className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-niebla">
             <IconoTache className="size-6" />
           </button>
@@ -162,7 +162,7 @@ export function EncabezadoCliente({
           <ul className="m-0 list-none p-0">
             {enPagina.map((e) => (
               <li key={e.url}>
-                <a href={e.url} onClick={cerrarMenu} className="block border-b border-linea py-3.5 font-titulo text-lg font-semibold">
+                <a href={e.url} onClick={cerrarMenu} className="block border-b border-linea py-3.5 font-titulo text-lg font-medium">
                   {e.texto}
                 </a>
               </li>

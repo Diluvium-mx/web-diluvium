@@ -158,7 +158,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
       >
         <div className="flex flex-col gap-3 [grid-area:cabeza] md:gap-4 lg:self-end">
           <Calificacion texto={r("rating_text")} className={`entrar ${marino ? "text-white" : ""}`} />
-          <h1 id="titulo-portada" className={`titulo-ancho entrar m-0 text-[34px] md:text-[48px] ${tamanos ? "" : "xl:text-[56px]"}`} style={retraso(60)}>
+          <h1 id="titulo-portada" className={`titulo-version entrar m-0 text-[34px] md:text-[48px] ${tamanos ? "" : "xl:text-[56px]"}`} style={retraso(60)}>
             {formato(r("heading"))}
           </h1>
           {texto(a, "subheading") && (
@@ -195,7 +195,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
 
           {precio && (
             <p data-precio className={`m-0 flex flex-wrap items-baseline gap-x-3 gap-y-0.5 ${tamanos ? "order-first" : ""}`}>
-              <span className="titulo-ancho text-[34px] md:text-[40px]">{precio}</span>
+              <span className="text-[34px] leading-[1.1] font-bold md:text-[40px]">{precio}</span>
               {precioAntes && (
                 <span className={`text-[17px] ${tonoSuave}`}>
                   <span className="sr-only">Precio anterior: </span>

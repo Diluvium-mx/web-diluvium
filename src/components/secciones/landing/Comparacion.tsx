@@ -19,7 +19,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
   return (
     <section data-seccion="landing-comparacion" aria-labelledby="titulo-comparacion" className="bg-niebla py-14 text-marino md:py-20">
       <div className="marco-version">
-        <h2 id="titulo-comparacion" className="titulo-ancho m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
+        <h2 id="titulo-comparacion" className="titulo-version m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
           {formato(textoVersion(a, "heading"))}
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:gap-6">
@@ -30,7 +30,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
               </div>
             )}
             <div className="p-6 md:p-8">
-              <h3 className="m-0 mb-4 font-titulo text-xl font-bold text-texto-suave md:text-2xl">{formato(textoVersion(a, "heading_before"))}</h3>
+              <h3 className="m-0 mb-4 font-titulo text-xl font-medium text-texto-suave md:text-2xl">{formato(textoVersion(a, "heading_before"))}</h3>
               <ul className="m-0 grid list-none gap-3 p-0">
                 {antes.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-[17px] text-tinta">
@@ -50,7 +50,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
               </div>
             )}
             <div className="p-6 md:p-8">
-              <h3 className="m-0 mb-4 font-titulo text-xl font-bold md:text-2xl">{formato(textoVersion(a, "heading_after"))}</h3>
+              <h3 className="m-0 mb-4 font-titulo text-xl font-medium md:text-2xl">{formato(textoVersion(a, "heading_after"))}</h3>
               <ul className="m-0 grid list-none gap-3 p-0">
                 {despues.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-[17px] font-semibold">

@@ -95,8 +95,8 @@ export function TablaAnimada({ tamanos, columnas = ["Tamaño", "Ancho de entrada
       <table className="w-full border-separate border-spacing-0 overflow-hidden rounded-xl border border-linea text-[16px]">
         <thead>
           <tr className="bg-marino text-white">
-            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">{columnas[0]}</th>
-            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-bold whitespace-nowrap">{columnas[1]}</th>
+            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-medium whitespace-nowrap">{columnas[0]}</th>
+            <th className="h-10 px-2.5 text-left font-titulo text-[15px] font-medium whitespace-nowrap">{columnas[1]}</th>
           </tr>
         </thead>
         <tbody ref={cuerpo}>
@@ -133,8 +133,8 @@ function Tarjetas({ pasos, tamanos, columnas }: { pasos: PasoMedir[]; tamanos: T
       {pasos.map((p, i) => (
         <li key={i} data-pieza={p.pieza} className="rounded-2xl border border-linea bg-white p-4">
           <div className="flex items-center gap-3">
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-marino font-titulo text-[20px] font-bold text-white">{i + 1}</span>
-            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-marino font-titulo text-[20px] font-medium text-white">{i + 1}</span>
+            <h3 className="m-0 font-titulo text-[20px] leading-tight font-medium text-marino">{formato(p.titulo)}</h3>
           </div>
           <div className="mt-3">
             <Visual paso={p} tamanos={tamanos} columnas={columnas} />
@@ -152,11 +152,11 @@ function Linea({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPaso[] }
       {pasos.map((p, i) => (
         <li key={i} className="relative grid grid-cols-[44px_minmax(0,1fr)] gap-3 pb-6 last:pb-0">
           {i < pasos.length - 1 && <span aria-hidden="true" className="absolute top-11 bottom-0 left-[20px] w-1 rounded bg-boton/30" />}
-          <span className="relative z-[1] flex size-11 items-center justify-center rounded-full border-4 border-white bg-boton font-titulo text-[20px] font-bold text-white shadow">
+          <span className="relative z-[1] flex size-11 items-center justify-center rounded-full border-4 border-white bg-boton font-titulo text-[20px] font-medium text-white shadow">
             {i + 1}
           </span>
           <div className="min-w-0 pt-1.5">
-            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
+            <h3 className="m-0 font-titulo text-[20px] leading-tight font-medium text-marino">{formato(p.titulo)}</h3>
             <div className="mt-3">
               <Visual paso={p} tamanos={tamanos} />
             </div>
@@ -186,10 +186,10 @@ function Deslizable({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPas
         {pasos.map((p, i) => (
           <li key={i} className="w-full shrink-0 snap-start px-1">
             <div className="rounded-2xl border border-linea bg-white p-4">
-              <p className="m-0 font-titulo text-[15px] font-bold text-boton">
+              <p className="m-0 font-titulo text-[15px] font-medium text-boton">
                 Paso {i + 1} de {pasos.length}
               </p>
-              <h3 className="m-0 mt-1 font-titulo text-[22px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
+              <h3 className="m-0 mt-1 font-titulo text-[22px] leading-tight font-medium text-marino">{formato(p.titulo)}</h3>
               <div className="mt-3 flex min-h-[270px] items-center">
                 <Visual paso={p} tamanos={tamanos} />
               </div>
@@ -203,10 +203,10 @@ function Deslizable({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPas
             <span key={i} className={`h-2.5 rounded-full transition-all ${i === actual ? "w-7 bg-marino" : "w-2.5 bg-linea"}`} />
           ))}
         </div>
-        <button type="button" onClick={() => ir(actual - 1)} disabled={actual === 0} className="h-11 cursor-pointer rounded-xl border-2 border-marino px-3 font-titulo text-[15px] font-bold text-marino disabled:opacity-30">
+        <button type="button" onClick={() => ir(actual - 1)} disabled={actual === 0} className="h-11 cursor-pointer rounded-xl border-2 border-marino px-3 font-titulo text-[15px] font-medium text-marino disabled:opacity-30">
           ←
         </button>
-        <button type="button" onClick={() => ir(actual + 1)} disabled={actual === pasos.length - 1} className="h-11 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[15px] font-bold text-white disabled:opacity-30">
+        <button type="button" onClick={() => ir(actual + 1)} disabled={actual === pasos.length - 1} className="h-11 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[15px] font-medium text-white disabled:opacity-30">
           Siguiente →
         </button>
       </div>

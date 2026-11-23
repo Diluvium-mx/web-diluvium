@@ -39,13 +39,13 @@ export default async function Propuestas() {
 
   return (
     <main className="version min-h-dvh bg-[#e9edf2] px-6 py-8 text-marino">
-      <h1 className="titulo-ancho m-0 text-[30px]">Propuestas para elegir</h1>
+      <h1 className="titulo-version m-0 text-[30px]">Propuestas para elegir</h1>
       <p className="m-0 mt-2 max-w-3xl text-[16px] leading-relaxed text-tinta">
         Todas se pueden probar aquí mismo: dale play al video, arrastra la barra o escribe una pregunta. Dime cuál de cada una: por ejemplo «Barra 3» y «Preguntas 1».
       </p>
 
       <section aria-labelledby="t-barras" className="mt-10">
-        <h2 id="t-barras" className="titulo-ancho m-0 text-[24px]">
+        <h2 id="t-barras" className="titulo-version m-0 text-[24px]">
           Barra de avance del video (214 y 215)
         </h2>
         <p className="m-0 mt-1 mb-5 max-w-3xl text-[15px] text-tinta">
@@ -67,7 +67,7 @@ export default async function Propuestas() {
       </section>
 
       <section aria-labelledby="t-preguntas" className="mt-14">
-        <h2 id="t-preguntas" className="titulo-ancho m-0 text-[24px]">
+        <h2 id="t-preguntas" className="titulo-version m-0 text-[24px]">
           Caja de preguntas al final de las preguntas frecuentes (B1-P6)
         </h2>
         <p className="m-0 mt-1 mb-5 max-w-3xl text-[15px] text-tinta">

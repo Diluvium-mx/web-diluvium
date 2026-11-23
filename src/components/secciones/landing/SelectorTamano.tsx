@@ -41,7 +41,7 @@ export function SelectorTamano({
     <div id="tamanos">
       <fieldset className="m-0 border-0 p-0" aria-describedby={aviso ? idAviso : undefined}>
         {/* La leyenda flota para quedar en la misma línea que «¿Cómo medir?» (una <legend> no puede ir dentro de otra caja). */}
-        <legend id={idTitulo} className="float-left flex min-h-11 items-center p-0 font-titulo text-[17px] font-bold">
+        <legend id={idTitulo} className="float-left flex min-h-11 items-center p-0 font-titulo text-[17px] font-medium">
           {titulo}
         </legend>
         {textoMedir && (

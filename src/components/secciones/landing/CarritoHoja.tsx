@@ -45,7 +45,7 @@ function Linea({ linea, cerrar, quitarTexto }: { linea: LineaCompleta; cerrar: (
         {a.imagen && <Image src={a.imagen.src} alt={a.imagen.alt} fill sizes="68px" className="object-cover" />}
       </Link>
       <div className="min-w-0 flex-1">
-        <Link href={enlace} onClick={cerrar} className="block font-titulo text-[16px] leading-tight font-bold text-marino">
+        <Link href={enlace} onClick={cerrar} className="block font-titulo text-[16px] leading-tight font-medium text-marino">
           {a.titulo}
         </Link>
         {a.opcion && <p className="m-0 mt-0.5 text-[14.5px] text-texto-suave">{a.opcion}</p>}
@@ -115,14 +115,14 @@ export function CarritoHoja({ cerrar, anadido = false, textos = TEXTOS_CARRITO }
       >
         <div className="flex items-center gap-2 py-2 pr-2 pl-5">
           {anadido && !vacio ? (
-            <p className="m-0 flex flex-1 items-center gap-2 font-titulo text-[18px] font-bold text-[#13834a]">
+            <p className="m-0 flex flex-1 items-center gap-2 font-titulo text-[18px] font-medium text-[#13834a]">
               <span className="flex size-7 items-center justify-center rounded-full bg-[#13834a] text-white">
                 <Palomita />
               </span>
               {t.agregado}
             </p>
           ) : (
-            <p className="m-0 flex-1 font-titulo text-[20px] font-bold text-marino">
+            <p className="m-0 flex-1 font-titulo text-[20px] font-medium text-marino">
               {t.titulo}
               {piezas > 0 ? ` (${piezas})` : ""}
             </p>
@@ -135,7 +135,7 @@ export function CarritoHoja({ cerrar, anadido = false, textos = TEXTOS_CARRITO }
         {vacio ? (
           <div className="grid gap-3 px-5 pt-4 pb-6 text-center">
             <p className="m-0 text-[17px] text-tinta">{t.vacio}</p>
-            <Link href="/products/compuerta-anti-inundaciones" onClick={cerrar} className="flex min-h-14 items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-bold text-white">
+            <Link href="/products/compuerta-anti-inundaciones" onClick={cerrar} className="flex min-h-14 items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-medium text-white">
               {t.vacioBoton}
             </Link>
           </div>
@@ -187,11 +187,11 @@ export function CarritoHoja({ cerrar, anadido = false, textos = TEXTOS_CARRITO }
                     cerrar();
                     router.push("/checkout");
                   }}
-                  className="flex min-h-14 w-full cursor-pointer items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(248,160,29,0.9)] transition-colors hover:bg-boton-encima"
+                  className="flex min-h-14 w-full cursor-pointer items-center justify-center rounded-2xl bg-boton font-titulo text-[18px] font-medium text-white shadow-[0_8px_20px_-10px_rgba(248,160,29,0.9)] transition-colors hover:bg-boton-encima"
                 >
                   {t.pagar}
                 </button>
-                <button type="button" onClick={cerrar} className="flex min-h-12 w-full cursor-pointer items-center justify-center rounded-2xl border-2 border-marino font-titulo text-[17px] font-bold text-marino">
+                <button type="button" onClick={cerrar} className="flex min-h-12 w-full cursor-pointer items-center justify-center rounded-2xl border-2 border-marino font-titulo text-[17px] font-medium text-marino">
                   {t.seguir}
                 </button>
               </div>

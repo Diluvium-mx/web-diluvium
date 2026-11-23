@@ -49,7 +49,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </div>
         <address className="not-italic">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{formato(tx(a, "contact_heading", "Contacto"))}</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-medium tracking-wide uppercase">{formato(tx(a, "contact_heading", "Contacto"))}</p>
           <ul className="m-0 grid list-none gap-2 p-0 text-[15px] leading-[1.5] text-white/85">
             {renglones.map((r) =>
               /@/.test(r) ? (
@@ -67,7 +67,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </address>
         <nav aria-label="Pie de página">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{formato(tx(a, "store_heading", "Tienda"))}</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-medium tracking-wide uppercase">{formato(tx(a, "store_heading", "Tienda"))}</p>
           <ul className="m-0 grid list-none gap-1 p-0 text-[15px] text-white/85">
             {[...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")].map((e) => (
               <li key={e.url}>

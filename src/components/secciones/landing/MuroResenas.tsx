@@ -161,7 +161,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO
             type="button"
             onClick={verMas}
             data-evento="ver_mas_resenas"
-            className="flex min-h-13 w-full max-w-[340px] cursor-pointer items-center justify-center rounded-2xl border-[2.5px] border-marino bg-white px-6 font-titulo text-[17px] font-bold text-marino transition-colors hover:bg-marino hover:text-white"
+            className="flex min-h-13 w-full max-w-[340px] cursor-pointer items-center justify-center rounded-2xl border-[2.5px] border-marino bg-white px-6 font-titulo text-[17px] font-medium text-marino transition-colors hover:bg-marino hover:text-white"
           >
             {textos.verMas}
           </button>
@@ -192,7 +192,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO
             }}
           >
             <div className="flex items-center gap-2 border-b border-linea px-4 py-2.5">
-              <strong className="flex-1 font-titulo text-[16px] text-marino">
+              <strong className="flex-1 font-titulo font-medium text-[16px] text-marino">
                 {conValores(textos.resena, { n: abierta + 1, total })}
               </strong>
               <button type="button" onClick={() => setAbierta(null)} aria-label="Cerrar" className="flex size-10 cursor-pointer items-center justify-center rounded-full text-[24px] leading-none hover:bg-niebla">
@@ -214,7 +214,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO
               </div>
             </div>
             <div className="flex items-center gap-2 border-t border-linea px-3 py-2.5">
-              <button type="button" onClick={() => ir(abierta - 1)} disabled={abierta === 0} className="h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold text-marino disabled:cursor-not-allowed disabled:opacity-30">
+              <button type="button" onClick={() => ir(abierta - 1)} disabled={abierta === 0} className="h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-medium text-marino disabled:cursor-not-allowed disabled:opacity-30">
                 ← {textos.anterior}
               </button>
               <span className="w-16 text-center text-[14px] font-semibold text-texto-suave tabular-nums">
@@ -224,7 +224,7 @@ export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO
                 type="button"
                 onClick={() => ir(abierta + 1)}
                 disabled={abierta === total - 1}
-                className={`h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-bold disabled:cursor-not-allowed disabled:opacity-30 ${siguienteAgrega ? "bg-marino text-white" : "text-marino"}`}
+                className={`h-11 flex-1 cursor-pointer rounded-xl border-2 border-marino font-titulo text-[15px] font-medium disabled:cursor-not-allowed disabled:opacity-30 ${siguienteAgrega ? "bg-marino text-white" : "text-marino"}`}
               >
                 {siguienteAgrega ? textos.verSeisMas : textos.siguiente} →
               </button>

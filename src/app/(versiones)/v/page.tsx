@@ -16,7 +16,7 @@ export default function ListaVersiones() {
         </div>
       </header>
       <main className="marco-version py-8 md:py-12">
-        <h1 className="titulo-ancho m-0 text-[32px] md:text-[44px]">Versiones de la página</h1>
+        <h1 className="titulo-version m-0 text-[32px] md:text-[44px]">Versiones de la página</h1>
         <ul className="m-0 mt-6 grid list-none gap-4 p-0 lg:grid-cols-2 md:mt-8">
           {VERSIONES.map((v) => (
             <li
@@ -25,7 +25,7 @@ export default function ListaVersiones() {
             >
               <div className="min-w-0">
                 <p className="m-0 flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <span className="titulo-ancho text-[28px]">{v.etiqueta}</span>
+                  <span className="titulo-version text-[28px]">{v.etiqueta}</span>
                   <span className="font-titulo text-[19px] font-bold">{v.nombre}</span>
                   {v.recomendada && <span className="text-[14px] font-semibold text-texto-suave">(recomendada)</span>}
                 </p>

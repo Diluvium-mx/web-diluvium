@@ -31,7 +31,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
     return (
       <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
         <div className="marco-version max-w-[560px]">
-          <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
+          <h2 id="titulo-pasos" className="titulo-version m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
             {formato(textoVersion(seccion.ajustes, "heading"))}
           </h2>
           <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} />
@@ -43,7 +43,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                 nota={tx(seccion.ajustes, "table_note", "Mide el ancho de tu entrada de marco a marco.")}
                 columnas={columnas}
                 texto={boton}
-                className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-bold text-marino transition-colors hover:bg-marino hover:text-white"
+                className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-medium text-marino transition-colors hover:bg-marino hover:text-white"
               />
             </div>
           )}
@@ -54,7 +54,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
   return (
     <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
       <div className="marco-version">
-        <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
+        <h2 id="titulo-pasos" className="titulo-version m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
           {formato(textoVersion(seccion.ajustes, "heading"))}
         </h2>
         <ol className="m-0 grid list-none gap-4 p-0 md:grid-cols-3 lg:gap-6">
@@ -74,10 +74,10 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                 </div>
               )}
               <div>
-                <span className="titulo-ancho mb-1 block text-[15px] text-marino-2" aria-hidden="true">
+                <span className="titulo-version mb-1 block text-[15px] text-marino-2" aria-hidden="true">
                   Paso {i + 1}
                 </span>
-                <h3 className="m-0 mb-1.5 font-titulo text-[19px] leading-tight font-bold md:text-[21px]">
+                <h3 className="m-0 mb-1.5 font-titulo text-[19px] leading-tight font-medium md:text-[21px]">
                   <span className="sr-only">Paso {i + 1}: </span>
                   {formato(textoVersion(p.ajustes, "heading"))}
                 </h3>
@@ -90,7 +90,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
           <div className="mt-6 flex justify-center md:mt-8">
             <TablaMedidas
               texto={boton}
-              className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-bold text-marino transition-colors hover:bg-marino hover:text-white"
+              className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-medium text-marino transition-colors hover:bg-marino hover:text-white"
             />
           </div>
         )}

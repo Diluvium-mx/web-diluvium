@@ -55,7 +55,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <h2 id="titulo-preguntas" className="titulo-ancho m-0 text-[28px] md:text-[38px]">
+          <h2 id="titulo-preguntas" className="titulo-version m-0 text-[28px] md:text-[38px]">
             {formato(textoVersion(a, "heading"))}
           </h2>
           {texto(a, "text") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{formato(textoVersion(a, "text"))}</p>}
@@ -88,7 +88,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
           <div className="border-t border-linea">
           {preguntas.map((p) => (
             <details key={p.id} data-pieza={p.id} name="preguntas-version" className="group border-b border-linea">
-              <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-4 font-titulo text-[18px] leading-snug font-bold md:text-[19px]">
+              <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-4 font-titulo text-[18px] leading-snug font-medium md:text-[19px]">
                 {formato(textoVersion(p.ajustes, "heading"))}
                 <svg viewBox="0 0 24 24" className="giro size-6 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true" focusable="false">
                   <path d="M12 5v14M5 12h14" />

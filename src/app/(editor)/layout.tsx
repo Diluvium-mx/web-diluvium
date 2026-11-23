@@ -7,7 +7,7 @@ import "../(versiones)/versiones.css";
 
 const instrumentSans = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument-sans", display: "swap" });
 // La letra de los títulos de B1 (para ver las propuestas como en la página).
-const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo", display: "swap" });
+const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Editor de la página – Diluvium",

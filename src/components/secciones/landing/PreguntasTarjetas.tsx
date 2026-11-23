@@ -54,7 +54,7 @@ function Tarjeta({ e }: { e: EntradaBanco }) {
   const [abierta, setAbierta] = useState(false);
   return (
     <details data-pieza={e.pieza} className={`group rounded-xl bg-white ${SOMBRA}`} onToggle={(ev) => setAbierta(ev.currentTarget.open)}>
-      <summary className="flex min-h-14 cursor-pointer list-none items-center gap-2.5 px-4 py-3 font-titulo text-[17px] leading-snug font-bold text-marino [&::-webkit-details-marker]:hidden">
+      <summary className="flex min-h-14 cursor-pointer list-none items-center gap-2.5 px-4 py-3 font-titulo text-[17px] leading-snug font-medium text-marino [&::-webkit-details-marker]:hidden">
         <Chispa />
         <span className="flex-1">{formato(e.pregunta)}</span>
         <svg viewBox="0 0 24 24" className="size-5 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden="true" focusable="false">
@@ -150,7 +150,7 @@ export function PreguntasTarjetas({
 
       {hechas.map((h) => (
         <div key={h.id} className={`rounded-xl bg-white px-4 py-3.5 ${SOMBRA}`}>
-          <p className="m-0 flex items-start gap-2.5 font-titulo text-[17px] leading-snug font-bold text-marino">
+          <p className="m-0 flex items-start gap-2.5 font-titulo text-[17px] leading-snug font-medium text-marino">
             <Chispa />
             <span className="flex-1 break-words">{h.q}</span>
           </p>
@@ -188,7 +188,7 @@ export function PreguntasTarjetas({
           preguntar();
         }}
       >
-        <label htmlFor="pregunta-libre" className="mb-2 block font-titulo text-[17px] leading-snug font-bold text-marino">
+        <label htmlFor="pregunta-libre" className="mb-2 block font-titulo text-[17px] leading-snug font-medium text-marino">
           {formato(titulo)}
         </label>
         <div className="flex gap-2">
@@ -220,7 +220,7 @@ export function PreguntasTarjetas({
               </span>
             )}
           </div>
-          <button type="submit" className="h-13 shrink-0 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[16px] font-bold text-white">
+          <button type="submit" className="h-13 shrink-0 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[16px] font-medium text-white">
             {textoBoton}
           </button>
         </div>

@@ -37,7 +37,7 @@ export function VentanaTabla({
         className="version m-auto w-[min(94vw,420px)] max-w-none rounded-2xl bg-white p-0 text-marino backdrop:bg-tinta/70"
       >
         <div className="flex items-center justify-between border-b border-linea py-2.5 pr-2 pl-5">
-          <h2 className="titulo-ancho m-0 text-[20px]">{formato(titulo)}</h2>
+          <h2 className="titulo-version m-0 text-[20px]">{formato(titulo)}</h2>
           <button type="button" onClick={cerrar} aria-label="Cerrar" className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-niebla">
             <IconoTache className="size-6" />
           </button>

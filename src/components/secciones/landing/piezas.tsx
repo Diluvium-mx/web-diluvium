@@ -6,7 +6,7 @@ import { formato } from "./formato";
 
 /** Botón principal: naranja de la tienda de hoy con letra blanca, como en la tienda en vivo. */
 export const CLASE_BOTON =
-  "inline-flex min-h-14 cursor-pointer items-center justify-center gap-2 rounded-xl bg-boton px-7 py-3 text-center font-titulo text-[17px] leading-tight font-bold text-white [font-stretch:110%] shadow-[0_8px_20px_-10px_rgba(248,160,29,0.9)] transition-[background-color,transform] duration-200 hover:bg-boton-encima active:translate-y-px disabled:cursor-not-allowed disabled:opacity-60";
+  "inline-flex min-h-14 cursor-pointer items-center justify-center gap-2 rounded-xl bg-boton px-7 py-3 text-center font-titulo text-[17px] leading-tight font-medium text-white shadow-[0_8px_20px_-10px_rgba(248,160,29,0.9)] transition-[background-color,transform] duration-200 hover:bg-boton-encima active:translate-y-px disabled:cursor-not-allowed disabled:opacity-60";
 
 /** Enlace de texto (WhatsApp, «¿Cómo medir?»…): subrayado y con área de toque de 44 px. */
 export const CLASE_ENLACE =

@@ -174,13 +174,13 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               )}
             </p>
           )}
-          <h1 id="titulo-ficha" className="titulo-ancho m-0 mt-1.5 text-[26px] md:text-[36px] lg:text-[40px]">
+          <h1 id="titulo-ficha" className="titulo-version m-0 mt-1.5 text-[26px] md:text-[36px] lg:text-[40px]">
             {titulo}
           </h1>
           {r("subheading") && <p className="m-0 mt-2 hidden text-[17px] leading-[1.5] text-texto-suave md:block">{formato(r("subheading"))}</p>}
 
           <div className="mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1" data-precio="">
-            <span className="titulo-ancho text-[30px] md:text-[34px]">{precio}</span>
+            <span className="text-[30px] leading-[1.1] font-bold md:text-[34px]">{precio}</span>
             {precioAntes && (
               <span className="text-[17px] text-texto-suave">
                 <span className="sr-only">Antes</span>
@@ -233,7 +233,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
 
           {tituloConfianza ? (
             <div className="mt-5 rounded-2xl border-2 border-marino/15 bg-niebla p-4">
-              <p className="m-0 mb-3 font-titulo text-[17px] font-bold">{tituloConfianza}</p>
+              <p className="m-0 mb-3 font-titulo text-[17px] font-medium">{tituloConfianza}</p>
               {listaConfianza}
             </div>
           ) : (
@@ -254,7 +254,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
           {tiendas.length > 0 && (
             // Logos grandes, siempre (dueño, 18-nov-2026): se reconocen de un vistazo.
             <div className="mt-5 border-t border-linea pt-4">
-              {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-bold">{formato(r("marketplace_text"))}</p>}
+              {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-medium">{formato(r("marketplace_text"))}</p>}
               <ul className="m-0 mt-2.5 grid list-none grid-cols-2 gap-2.5 p-0">
                 {tiendas.map((t) => (
                   <li key={t.id} data-pieza={t.id}>

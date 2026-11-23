@@ -107,7 +107,7 @@ export function CompraFicha({
     <div>
       {textoAyuda && !unico && (
         <div className="mb-3 rounded-xl bg-niebla px-3.5 py-3">
-          <label htmlFor={idAyuda} className="block font-titulo text-[16px] leading-5 font-bold">
+          <label htmlFor={idAyuda} className="block font-titulo text-[16px] leading-5 font-medium">
             {formato(textoAyuda)}
           </label>
           <div className="mt-1.5 flex items-center gap-2">
@@ -167,7 +167,7 @@ export function CompraFicha({
 
       {!unico && (
         <fieldset id="tamanos" className="m-0 scroll-mt-28 border-0 p-0" aria-describedby={aviso ? idAviso : undefined}>
-          <legend className="float-left flex min-h-9 items-center p-0 font-titulo text-[17px] font-bold">
+          <legend className="float-left flex min-h-9 items-center p-0 font-titulo text-[17px] font-medium">
             {formato(titulo)}
             {actual && <span className="ml-2 font-sans text-[15px] font-semibold text-texto-suave">· {actual.nombre}</span>}
           </legend>
@@ -270,7 +270,7 @@ export function CompraFicha({
           target="_blank"
           rel="noopener noreferrer"
           data-evento="toca_whatsapp"
-          className="mt-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1a7f37] px-4 text-center font-titulo text-[16px] font-bold text-[#14632b] hover:bg-[#1a7f37]/5"
+          className="mt-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1a7f37] px-4 text-center font-titulo text-[16px] font-medium text-[#14632b] hover:bg-[#1a7f37]/5"
         >
           <IconoWhatsapp className="size-5 text-[#1a7f37]" />
           {textos.whatsapp}
