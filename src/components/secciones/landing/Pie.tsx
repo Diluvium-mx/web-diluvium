@@ -9,6 +9,7 @@ import type { PropsSeccion } from "../registro";
 import { plantilla, texto } from "@/lib/contenido";
 import { IconoFacebook, IconoInstagram, IconoLinkedin, IconoYoutube } from "@/components/comunes/Iconos";
 import { textoVersion, tx } from "./datos";
+import { formato } from "./formato";
 
 const REDES: Record<string, { nombre: string; Icono: typeof IconoFacebook }> = {
   facebook: { nombre: "Facebook", Icono: IconoFacebook },
@@ -32,7 +33,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
       <div className="marco-version grid gap-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
           {logo && <Image src={logo} alt="Diluvium" width={742} height={181} sizes="168px" className="mb-4 h-auto w-[168px]" />}
-          {texto(seccion.ajustes, "text") && <p className="m-0 max-w-[26rem] text-[15px] leading-[1.6] text-white/85">{textoVersion(seccion.ajustes, "text")}</p>}
+          {texto(seccion.ajustes, "text") && <p className="m-0 max-w-[26rem] text-[15px] leading-[1.6] text-white/85">{formato(textoVersion(seccion.ajustes, "text"))}</p>}
           <ul className="m-0 mt-5 flex list-none gap-1 p-0">
             {menus.redes.map((r) => {
               const red = REDES[r.red];
@@ -48,7 +49,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </div>
         <address className="not-italic">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{tx(a, "contact_heading", "Contacto")}</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{formato(tx(a, "contact_heading", "Contacto"))}</p>
           <ul className="m-0 grid list-none gap-2 p-0 text-[15px] leading-[1.5] text-white/85">
             {renglones.map((r) =>
               /@/.test(r) ? (
@@ -66,7 +67,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
           </ul>
         </address>
         <nav aria-label="Pie de página">
-          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{tx(a, "store_heading", "Tienda")}</p>
+          <p className="m-0 mb-3 font-titulo text-[15px] font-bold tracking-wide uppercase">{formato(tx(a, "store_heading", "Tienda"))}</p>
           <ul className="m-0 grid list-none gap-1 p-0 text-[15px] text-white/85">
             {[...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")].map((e) => (
               <li key={e.url}>

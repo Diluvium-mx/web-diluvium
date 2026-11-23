@@ -113,3 +113,6 @@ html:focus-within { scroll-behavior: smooth; }
    el movimiento pase a la página. */
 html:has(.version dialog[open]) { overflow: hidden; }
 .version dialog { overscroll-behavior: contain; }
+
+/* Ejemplos que cambian dentro de la caja de preguntas (Producto 347). */
+@keyframes ejemplo-entra { from { opacity: 0; transform: translateY(60%); } to { opacity: 1; transform: translateY(0); } }

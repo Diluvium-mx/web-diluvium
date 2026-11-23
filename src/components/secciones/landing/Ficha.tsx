@@ -25,6 +25,7 @@ import { BarraCompra } from "./BarraCompra";
 import { CompraFicha } from "./CompraFicha";
 import { Galeria, type MedioGaleria } from "./Galeria";
 import { calificacion, datosVenta, pesos, rellenar, tx, PRODUCTO_PRINCIPAL } from "./datos";
+import { formato } from "./formato";
 import { TEXTOS_COMO_MEDIR, TEXTOS_COMPRA } from "./textos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
@@ -163,7 +164,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               <Estrellas className="size-4" marca={{ "data-el": "Ícono@div1>div2>p1>span1" }} />
               {r("rating_text") && (
                 <a href="#resenas" className="underline decoration-linea decoration-2 underline-offset-4 hover:decoration-marino">
-                  {r("rating_text")}
+                  {formato(r("rating_text"))}
                 </a>
               )}
               {vendidas && (
@@ -176,7 +177,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
           <h1 id="titulo-ficha" className="titulo-ancho m-0 mt-1.5 text-[26px] md:text-[36px] lg:text-[40px]">
             {titulo}
           </h1>
-          {r("subheading") && <p className="m-0 mt-2 hidden text-[17px] leading-[1.5] text-texto-suave md:block">{r("subheading")}</p>}
+          {r("subheading") && <p className="m-0 mt-2 hidden text-[17px] leading-[1.5] text-texto-suave md:block">{formato(r("subheading"))}</p>}
 
           <div className="mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1" data-precio="">
             <span className="titulo-ancho text-[30px] md:text-[34px]">{precio}</span>
@@ -188,11 +189,11 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
             )}
             {ahorro && (
               <span className="rounded-md bg-[#fdf1dd] px-2 py-0.5 text-[14px] font-bold text-[#8a4b00]">
-                {tx(a, "savings_text", "Ahorras")} {ahorro}
+                {formato(tx(a, "savings_text", "Ahorras"))} {ahorro}
               </span>
             )}
           </div>
-          {r("price_note") && <p className="m-0 mt-0.5 text-[15px] text-texto-suave">{r("price_note")}</p>}
+          {r("price_note") && <p className="m-0 mt-0.5 text-[15px] text-texto-suave">{formato(r("price_note"))}</p>}
 
           {resena && <ResenaCorta foto={texto(resena.ajustes, "image")} />}
 
@@ -244,7 +245,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               {puntos.map((p) => (
                 <li key={p.id} data-pieza={p.id} className="flex items-start gap-2">
                   <IconoPalomita className="mt-0.5 size-5 shrink-0 text-marino" />
-                  {rellenar(texto(p.ajustes, "text"), venta)}
+                  {formato(rellenar(texto(p.ajustes, "text"), venta))}
                 </li>
               ))}
             </ul>
@@ -253,7 +254,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
           {tiendas.length > 0 && (
             // Logos grandes, siempre (dueño, 18-nov-2026): se reconocen de un vistazo.
             <div className="mt-5 border-t border-linea pt-4">
-              {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-bold">{r("marketplace_text")}</p>}
+              {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-bold">{formato(r("marketplace_text"))}</p>}
               <ul className="m-0 mt-2.5 grid list-none grid-cols-2 gap-2.5 p-0">
                 {tiendas.map((t) => (
                   <li key={t.id} data-pieza={t.id}>

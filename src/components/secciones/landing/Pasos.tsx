@@ -8,6 +8,7 @@ import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { datosVenta, textoVersion, tx } from "./datos";
+import { formato } from "./formato";
 import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
 import { VentanaTabla } from "./VentanaTabla";
@@ -31,7 +32,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
       <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
         <div className="marco-version max-w-[560px]">
           <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
-            {textoVersion(seccion.ajustes, "heading")}
+            {formato(textoVersion(seccion.ajustes, "heading"))}
           </h2>
           <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} />
           {boton && (
@@ -54,7 +55,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
       <div className="marco-version">
         <h2 id="titulo-pasos" className="titulo-ancho m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
-          {textoVersion(seccion.ajustes, "heading")}
+          {formato(textoVersion(seccion.ajustes, "heading"))}
         </h2>
         <ol className="m-0 grid list-none gap-4 p-0 md:grid-cols-3 lg:gap-6">
           {pasos.map((p, i) => (
@@ -78,9 +79,9 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                 </span>
                 <h3 className="m-0 mb-1.5 font-titulo text-[19px] leading-tight font-bold md:text-[21px]">
                   <span className="sr-only">Paso {i + 1}: </span>
-                  {textoVersion(p.ajustes, "heading")}
+                  {formato(textoVersion(p.ajustes, "heading"))}
                 </h3>
-                <p className="m-0 text-[16px] leading-[1.5] text-texto-suave">{textoVersion(p.ajustes, "text")}</p>
+                <p className="m-0 text-[16px] leading-[1.5] text-texto-suave">{formato(textoVersion(p.ajustes, "text"))}</p>
               </div>
             </li>
           ))}

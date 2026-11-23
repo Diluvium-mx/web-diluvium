@@ -4,6 +4,7 @@
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { textoVersion } from "./datos";
+import { formato } from "./formato";
 import { CLASE_BOTON, CLASE_ENLACE, Calificacion, IconoFlecha, IconoPalomita, IconoWhatsapp } from "./piezas";
 
 export function CierreVersion({ seccion }: PropsSeccion) {
@@ -16,9 +17,9 @@ export function CierreVersion({ seccion }: PropsSeccion) {
       <div className="marco-version flex flex-col items-start gap-6 md:items-center md:text-center">
         <Calificacion texto={textoVersion(a, "rating_text")} />
         <h2 id="titulo-cierre" className="titulo-ancho m-0 max-w-[44rem] text-[32px] md:text-[48px]">
-          {textoVersion(a, "heading")}
+          {formato(textoVersion(a, "heading"))}
         </h2>
-        {texto(a, "text") && <p className="m-0 text-[18px] text-white/85">{textoVersion(a, "text")}</p>}
+        {texto(a, "text") && <p className="m-0 text-[18px] text-white/85">{formato(textoVersion(a, "text"))}</p>}
         {puntos.length > 0 && (
           <ul className="m-0 grid list-none gap-3 p-0 md:flex md:flex-wrap md:justify-center md:gap-x-8">
             {puntos.map((t) => (
@@ -43,13 +44,13 @@ export function CierreVersion({ seccion }: PropsSeccion) {
                 línea que la última palabra (aunque el texto ocupe dos renglones). */}
             {a.whatsapp_icon_end === true ? (
               <span>
-                {textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp"}
+                {formato(textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp")}
                 <IconoWhatsapp className="ml-1.5 inline size-5 align-[-4px]" />
               </span>
             ) : (
               <>
                 <IconoWhatsapp className="size-5" />
-                {textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp"}
+                {formato(textoVersion(a, "whatsapp_text") || "Escríbenos por WhatsApp")}
               </>
             )}
           </a>

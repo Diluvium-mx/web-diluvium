@@ -6,6 +6,7 @@ import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
+import { formato } from "./formato";
 import { IconoPalomita, IconoTache } from "./piezas";
 
 const TAMANO = "(min-width: 1200px) 600px, (min-width: 768px) 46vw, calc(100vw - 32px)";
@@ -19,7 +20,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-comparacion" aria-labelledby="titulo-comparacion" className="bg-niebla py-14 text-marino md:py-20">
       <div className="marco-version">
         <h2 id="titulo-comparacion" className="titulo-ancho m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
-          {textoVersion(a, "heading")}
+          {formato(textoVersion(a, "heading"))}
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:gap-6">
           <div className="overflow-hidden rounded-2xl border border-linea bg-white">
@@ -29,7 +30,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
               </div>
             )}
             <div className="p-6 md:p-8">
-              <h3 className="m-0 mb-4 font-titulo text-xl font-bold text-texto-suave md:text-2xl">{textoVersion(a, "heading_before")}</h3>
+              <h3 className="m-0 mb-4 font-titulo text-xl font-bold text-texto-suave md:text-2xl">{formato(textoVersion(a, "heading_before"))}</h3>
               <ul className="m-0 grid list-none gap-3 p-0">
                 {antes.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-[17px] text-tinta">
@@ -49,7 +50,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
               </div>
             )}
             <div className="p-6 md:p-8">
-              <h3 className="m-0 mb-4 font-titulo text-xl font-bold md:text-2xl">{textoVersion(a, "heading_after")}</h3>
+              <h3 className="m-0 mb-4 font-titulo text-xl font-bold md:text-2xl">{formato(textoVersion(a, "heading_after"))}</h3>
               <ul className="m-0 grid list-none gap-3 p-0">
                 {despues.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-[17px] font-semibold">

@@ -11,6 +11,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { buscar, indexar, medidaEscrita, tamanoPara, type EntradaBanco, type TamanoBuscador } from "./buscarPregunta";
 import { IconoWhatsapp } from "./piezas";
+import { formato } from "./formato";
 
 function medir(nombre: string) {
   document.dispatchEvent(new CustomEvent("dlv-evento", { detail: nombre }));
@@ -55,7 +56,7 @@ function Tarjeta({ e }: { e: EntradaBanco }) {
     <details data-pieza={e.pieza} className={`group rounded-xl bg-white ${SOMBRA}`} onToggle={(ev) => setAbierta(ev.currentTarget.open)}>
       <summary className="flex min-h-14 cursor-pointer list-none items-center gap-2.5 px-4 py-3 font-titulo text-[17px] leading-snug font-bold text-marino [&::-webkit-details-marker]:hidden">
         <Chispa />
-        <span className="flex-1">{e.pregunta}</span>
+        <span className="flex-1">{formato(e.pregunta)}</span>
         <svg viewBox="0 0 24 24" className="size-5 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden="true" focusable="false">
           <path d="M6 9l6 6 6-6" />
         </svg>
@@ -84,6 +85,7 @@ export function PreguntasTarjetas({
   placeholder = "Ej. ¿Llega a Monterrey?",
   textoBoton = "Preguntar",
   textoSinRespuesta = "Mándanos tu pregunta por WhatsApp y te contestamos.",
+  ejemplos = [],
 }: {
   faqs: EntradaBanco[];
   banco: EntradaBanco[];
@@ -96,10 +98,20 @@ export function PreguntasTarjetas({
   placeholder?: string;
   textoBoton?: string;
   textoSinRespuesta?: string;
+  /** Ejemplos que van cambiando dentro del campo (Producto 347): preguntas que no están en las de arriba. */
+  ejemplos?: string[];
 }) {
   const indice = useMemo(() => indexar(banco), [banco]);
   const [hechas, setHechas] = useState<Hecha[]>([]);
   const [valor, setValor] = useState("");
+  const [enfocado, setEnfocado] = useState(false);
+  const [ejemplo, setEjemplo] = useState(0);
+  // Los ejemplos van cambiando mientras nadie escribe ni está en el campo.
+  useEffect(() => {
+    if (ejemplos.length < 2 || enfocado || valor) return;
+    const t = setInterval(() => setEjemplo((i) => i + 1), 2800);
+    return () => clearInterval(t);
+  }, [ejemplos.length, enfocado, valor]);
   const contador = useRef(0);
   const telefono = whatsapp.match(/phone=(\d+)/)?.[1] ?? "526682419579";
 
@@ -177,19 +189,37 @@ export function PreguntasTarjetas({
         }}
       >
         <label htmlFor="pregunta-libre" className="mb-2 block font-titulo text-[17px] leading-snug font-bold text-marino">
-          {titulo}
+          {formato(titulo)}
         </label>
         <div className="flex gap-2">
-          <input
-            id="pregunta-libre"
-            value={valor}
-            onChange={(e) => setValor(e.target.value)}
-            maxLength={200}
-            enterKeyHint="send"
-            autoComplete="off"
-            placeholder={placeholder}
-            className="h-13 min-w-0 flex-1 rounded-xl border-2 border-linea bg-white px-3.5 text-[17px] text-tinta placeholder:text-[15.5px] placeholder:text-texto-suave focus:border-marino focus:outline-none"
-          />
+          <div className="relative min-w-0 flex-1">
+            <input
+              id="pregunta-libre"
+              value={valor}
+              onChange={(e) => setValor(e.target.value)}
+              onFocus={() => setEnfocado(true)}
+              onBlur={() => setEnfocado(false)}
+              maxLength={200}
+              enterKeyHint="send"
+              autoComplete="off"
+              placeholder={ejemplos.length ? "" : placeholder}
+              aria-describedby={ejemplos.length ? "pregunta-libre-ejemplos" : undefined}
+              className="h-13 w-full rounded-xl border-2 border-linea bg-white px-3.5 text-[17px] text-tinta placeholder:text-[15.5px] placeholder:text-texto-suave focus:border-marino focus:outline-none"
+            />
+            {ejemplos.length > 0 && (
+              <span id="pregunta-libre-ejemplos" className="sr-only">
+                Por ejemplo: {ejemplos.join(", ")}
+              </span>
+            )}
+            {ejemplos.length > 0 && !valor && (
+              // Ejemplo que cambia cada 2.8 s (entra deslizándose); se queda quieto mientras la persona está en el campo.
+              <span aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-3.5 left-[16px] flex items-center overflow-hidden text-[15.5px] text-texto-suave">
+                <span key={ejemplo} className="animate-[ejemplo-entra_450ms_ease-out] truncate motion-reduce:animate-none">
+                  Ej. {ejemplos[ejemplo % ejemplos.length]}
+                </span>
+              </span>
+            )}
+          </div>
           <button type="submit" className="h-13 shrink-0 cursor-pointer rounded-xl bg-marino px-4 font-titulo text-[16px] font-bold text-white">
             {textoBoton}
           </button>

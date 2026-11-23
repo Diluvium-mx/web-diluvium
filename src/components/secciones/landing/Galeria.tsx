@@ -13,6 +13,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 import { Comparador } from "./Comparador";
 import { VideoGaleria } from "./VideoGaleria";
+import { formato } from "./formato";
 
 /** estilo: encuadre y acercamiento elegidos en el editor · marca: para que el editor sepa de qué campo es la foto. */
 type Ajuste = { estilo?: CSSProperties; marca?: Record<string, string> };
@@ -169,7 +170,7 @@ export function Galeria({
           </>
         )}
       </div>
-      {pie && <p className="m-0 mt-2 text-[14px] leading-5 text-texto-suave">{pie}</p>}
+      {pie && <p className="m-0 mt-2 text-[14px] leading-5 text-texto-suave">{formato(pie)}</p>}
       {medios.length > 1 && (
         <ul className="m-0 mt-3 hidden list-none grid-cols-6 gap-2 p-0 lg:grid">
           {medios.slice(0, 12).map((m, i) => {

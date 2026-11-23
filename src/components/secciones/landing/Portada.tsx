@@ -17,6 +17,7 @@ import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { SelectorTamano } from "./SelectorTamano";
 import { BarraCompra } from "./BarraCompra";
 import { datosVenta, pesos, rellenar } from "./datos";
+import { formato } from "./formato";
 import { CLASE_BOTON, Calificacion, Foto, IconoFlecha } from "./piezas";
 
 const TAMANO_MEDIO = "(min-width: 1200px) 600px, (min-width: 1024px) 46vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)";
@@ -158,11 +159,11 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
         <div className="flex flex-col gap-3 [grid-area:cabeza] md:gap-4 lg:self-end">
           <Calificacion texto={r("rating_text")} className={`entrar ${marino ? "text-white" : ""}`} />
           <h1 id="titulo-portada" className={`titulo-ancho entrar m-0 text-[34px] md:text-[48px] ${tamanos ? "" : "xl:text-[56px]"}`} style={retraso(60)}>
-            {r("heading")}
+            {formato(r("heading"))}
           </h1>
           {texto(a, "subheading") && (
             <p className={`entrar m-0 max-w-[36rem] text-[17px] leading-[1.5] md:text-[19px] ${tonoSuave}`} style={retraso(140)}>
-              {r("subheading")}
+              {formato(r("subheading"))}
             </p>
           )}
         </div>
@@ -201,7 +202,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
                   <s>{precioAntes}</s>
                 </span>
               )}
-              {texto(a, "price_note") && <span className={`basis-full text-[15px] ${tonoSuave}`}>{r("price_note")}</span>}
+              {texto(a, "price_note") && <span className={`basis-full text-[15px] ${tonoSuave}`}>{formato(r("price_note"))}</span>}
             </p>
           )}
 
@@ -213,7 +214,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
           )}
           {tamanos && <span id="boton-principal" aria-hidden="true" className="-mt-4 h-0" />}
 
-          {texto(a, "guarantees") && <p className={`m-0 text-[15px] font-medium ${tonoSuave} ${tamanos ? "" : "sm:-mt-1"}`}>{r("guarantees")}</p>}
+          {texto(a, "guarantees") && <p className={`m-0 text-[15px] font-medium ${tonoSuave} ${tamanos ? "" : "sm:-mt-1"}`}>{formato(r("guarantees"))}</p>}
         </div>
       </div>
 

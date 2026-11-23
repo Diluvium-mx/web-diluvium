@@ -5161,7 +5161,7 @@
     {
      "clave": "search_placeholder",
      "tipo": "texto",
-     "etiqueta": "Caja de preguntas: ejemplo dentro",
+     "etiqueta": "Caja de preguntas: ejemplo dentro (si no hay lista de ejemplos)",
      "diseno": false
     },
     {
@@ -5174,6 +5174,12 @@
      "clave": "no_answer_text",
      "tipo": "texto",
      "etiqueta": "Caja de preguntas: si no hay respuesta",
+     "diseno": false
+    },
+    {
+     "clave": "search_examples",
+     "tipo": "textoLargo",
+     "etiqueta": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)",
      "diseno": false
     }
    ],

@@ -16,6 +16,7 @@ import { TEXTOS_COMPRA, type TextosComoMedir, type TextosCompra } from "./textos
 
 
 import { CLASE_BOTON, IconoWhatsapp } from "./piezas";
+import { formato } from "./formato";
 
 /** Avisa a la medición de algo que no es un clic (escribir la medida). */
 function medir(nombre: string) {
@@ -107,7 +108,7 @@ export function CompraFicha({
       {textoAyuda && !unico && (
         <div className="mb-3 rounded-xl bg-niebla px-3.5 py-3">
           <label htmlFor={idAyuda} className="block font-titulo text-[16px] leading-5 font-bold">
-            {textoAyuda}
+            {formato(textoAyuda)}
           </label>
           <div className="mt-1.5 flex items-center gap-2">
             <div className="relative w-32">
@@ -167,7 +168,7 @@ export function CompraFicha({
       {!unico && (
         <fieldset id="tamanos" className="m-0 scroll-mt-28 border-0 p-0" aria-describedby={aviso ? idAviso : undefined}>
           <legend className="float-left flex min-h-9 items-center p-0 font-titulo text-[17px] font-bold">
-            {titulo}
+            {formato(titulo)}
             {actual && <span className="ml-2 font-sans text-[15px] font-semibold text-texto-suave">· {actual.nombre}</span>}
           </legend>
           {textoMedir && !textoAyuda && (
@@ -221,15 +222,15 @@ export function CompraFicha({
         <p className="m-0 mt-1 text-[15px] text-texto-suave">
           {textoEnlaceMedida ? (
             <>
-              {textoMedida}{" "}
+              {formato(textoMedida)}{" "}
               <a href={enlaceMedida} className="inline-flex min-h-11 items-center font-semibold text-marino underline decoration-2 underline-offset-4">
-                {textoEnlaceMedida}
+                {formato(textoEnlaceMedida)}
               </a>
             </>
           ) : (
             // Sin texto de enlace aparte, la pregunta completa es el enlace (Producto 80, 21-nov-2026).
             <a href={enlaceMedida} className="inline-flex min-h-11 items-center font-semibold text-marino underline decoration-2 underline-offset-4">
-              {textoMedida}
+              {formato(textoMedida)}
             </a>
           )}
         </p>

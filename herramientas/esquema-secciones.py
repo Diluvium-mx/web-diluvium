@@ -176,7 +176,8 @@ FIJAS = {
     "read_more_text": "Texto para leer la reseña completa", "viewer_title": "Reseña en grande: título ({n} de {total})",
     "prev_button": "Reseña en grande: anterior", "next_button": "Reseña en grande: siguiente",
     "more_six_button": "Reseña en grande: ver más", "search_heading": "Caja de preguntas: título",
-    "search_placeholder": "Caja de preguntas: ejemplo dentro", "search_button": "Caja de preguntas: botón",
+    "search_placeholder": "Caja de preguntas: ejemplo dentro (si no hay lista de ejemplos)",
+    "search_examples": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)", "search_button": "Caja de preguntas: botón",
     "no_answer_text": "Caja de preguntas: si no hay respuesta", "contact_heading": "Título de contacto",
     "store_heading": "Título de la tienda",
 }

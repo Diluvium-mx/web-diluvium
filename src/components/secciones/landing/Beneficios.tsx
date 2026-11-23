@@ -6,6 +6,7 @@ import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
+import { formato } from "./formato";
 
 export function BeneficiosVersion({ seccion }: PropsSeccion) {
   const items = seccion.bloques.filter((b) => b.tipo === "benefit");
@@ -13,7 +14,7 @@ export function BeneficiosVersion({ seccion }: PropsSeccion) {
     <section data-seccion="landing-beneficios" aria-labelledby="titulo-beneficios" className="bg-white py-14 text-marino md:py-20">
       <div className="marco-version">
         <h2 id="titulo-beneficios" className="titulo-ancho m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
-          {textoVersion(seccion.ajustes, "heading")}
+          {formato(textoVersion(seccion.ajustes, "heading"))}
         </h2>
         <ul className="m-0 grid list-none gap-x-6 gap-y-10 p-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-12">
           {items.map((b) => (
@@ -31,8 +32,8 @@ export function BeneficiosVersion({ seccion }: PropsSeccion) {
                   />
                 </div>
               )}
-              <h3 className="m-0 mb-2 font-titulo text-[21px] leading-tight font-bold md:text-[22px]">{textoVersion(b.ajustes, "heading")}</h3>
-              <p className="m-0 text-[16.5px] leading-[1.55] text-texto-suave">{textoVersion(b.ajustes, "text")}</p>
+              <h3 className="m-0 mb-2 font-titulo text-[21px] leading-tight font-bold md:text-[22px]">{formato(textoVersion(b.ajustes, "heading"))}</h3>
+              <p className="m-0 text-[16.5px] leading-[1.55] text-texto-suave">{formato(textoVersion(b.ajustes, "text"))}</p>
             </li>
           ))}
         </ul>

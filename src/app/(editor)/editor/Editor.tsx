@@ -23,6 +23,7 @@ import {
 } from "@/lib/mapa";
 import type { MedioBiblioteca } from "@/lib/editor/archivos";
 import { MapaElementos, precargarNumeros } from "./MapaElementos";
+import { formato } from "@/components/secciones/landing/formato";
 
 type Props = { plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
 type Seleccion = { seccionId: string; piezaId: string; clave: string };
@@ -132,6 +133,84 @@ function Biblioteca({
 
 // ───────────────────────── Un campo de texto (pestaña Textos) ─────────────────────────
 
+/** Campos que no llevan formato: enlaces, direcciones, nombres de producto y textos alternativos de fotos. */
+const SIN_FORMATO = /(^alt|link|url|^producto$|^logo$|poster|^layout$|^gallery_style$|^sticky_bar$)/;
+
+/**
+ * Caja de un texto con formato (23-nov-2026, dueño): crece con el texto, acepta Enter y Shift+Enter (salto de línea) y
+ * trae una barrita: Negrita (**así**), Naranja (==así==) y Salto de línea. Debajo se ve cómo queda en la página.
+ * Ctrl/⌘+B también pone negrita. La página lo pinta con formato() (src/components/secciones/landing/formato.tsx).
+ */
+function CampoTexto({ id, valor, alCambiar }: { id: string; valor: string; alCambiar: (v: string) => void }) {
+  const caja = useRef<HTMLTextAreaElement>(null);
+  useEffect(() => {
+    const t = caja.current;
+    if (!t) return;
+    t.style.height = "auto";
+    t.style.height = `${t.scrollHeight + 2}px`;
+  }, [valor]);
+
+  /** Pone la marca antes y después de lo seleccionado (o de «texto» si no hay nada seleccionado). */
+  function envolver(marca: string) {
+    const t = caja.current;
+    if (!t) return;
+    const [a, b] = [t.selectionStart, t.selectionEnd];
+    const elegido = valor.slice(a, b) || "texto";
+    alCambiar(valor.slice(0, a) + marca + elegido + marca + valor.slice(b));
+    requestAnimationFrame(() => {
+      t.focus();
+      t.setSelectionRange(a + marca.length, a + marca.length + elegido.length);
+    });
+  }
+  function salto() {
+    const t = caja.current;
+    if (!t) return;
+    const [a, b] = [t.selectionStart, t.selectionEnd];
+    alCambiar(`${valor.slice(0, a)}\n${valor.slice(b)}`);
+    requestAnimationFrame(() => {
+      t.focus();
+      t.setSelectionRange(a + 1, a + 1);
+    });
+  }
+  const BOTON = "h-7 cursor-pointer rounded-md border border-linea bg-white px-2 text-[12.5px] hover:bg-niebla";
+  return (
+    <div>
+      <div className="mb-1 flex flex-wrap items-center gap-1">
+        <button type="button" onClick={() => envolver("**")} className={`${BOTON} font-bold`} title="Negrita (⌘B)">
+          Negrita
+        </button>
+        <button type="button" onClick={() => envolver("==")} className={`${BOTON} font-semibold text-boton`} title="Palabras en naranja">
+          Naranja
+        </button>
+        <button type="button" onClick={salto} className={BOTON} title="Salto de línea (Enter o Shift+Enter)">
+          ↵ Salto de línea
+        </button>
+        <span className="text-[11.5px] text-texto-suave">Enter o Shift+Enter: otro renglón</span>
+      </div>
+      <textarea
+        ref={caja}
+        id={id}
+        value={valor}
+        rows={1}
+        onChange={(e) => alCambiar(e.target.value)}
+        onKeyDown={(e) => {
+          if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "b") {
+            e.preventDefault();
+            envolver("**");
+          }
+        }}
+        className="block w-full resize-none overflow-hidden rounded-lg border border-linea px-3 py-2 text-[14px] leading-snug"
+      />
+      {/[\n]|\*\*|==/.test(valor) && (
+        <div className="mt-1 rounded-lg bg-niebla px-3 py-2 text-[14px] leading-snug text-tinta">
+          <span className="mr-1 text-[11px] font-semibold text-texto-suave uppercase">Así se ve:</span>
+          {formato(valor)}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown) => void }) {
   const id = `campo-${campo.codigo}`;
   const valor = campo.valor;
@@ -140,8 +219,10 @@ function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown)
     control = <input id={id} type="checkbox" checked={valor === true} onChange={(e) => alCambiar(e.target.checked)} className="size-5" />;
   } else if (campo.tipo === "numero") {
     control = <input id={id} type="number" value={typeof valor === "number" ? valor : ""} onChange={(e) => alCambiar(Number(e.target.value))} className="h-10 w-32 rounded-lg border border-linea px-3" />;
-  } else if (campo.tipo === "html" || campo.tipo === "textoLargo") {
-    control = <textarea id={id} value={typeof valor === "string" ? valor : ""} onChange={(e) => alCambiar(e.target.value)} rows={campo.tipo === "html" ? 4 : 3} className="w-full rounded-lg border border-linea p-2 text-[14px] leading-snug" />;
+  } else if (campo.tipo === "html") {
+    control = <textarea id={id} value={typeof valor === "string" ? valor : ""} onChange={(e) => alCambiar(e.target.value)} rows={4} className="w-full rounded-lg border border-linea p-2 text-[14px] leading-snug" />;
+  } else if ((campo.tipo === "texto" || campo.tipo === "textoLargo") && !SIN_FORMATO.test(campo.clave) && !/^(https?:|#|\/|mailto:)/.test(String(valor ?? ""))) {
+    control = <CampoTexto id={id} valor={typeof valor === "string" ? valor : String(valor ?? "")} alCambiar={(v) => alCambiar(v)} />;
   } else {
     control = <input id={id} value={typeof valor === "string" ? valor : String(valor ?? "")} onChange={(e) => alCambiar(e.target.value)} className="h-10 w-full rounded-lg border border-linea px-3 text-[14px]" />;
   }

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { medidasImagen } from "../ImagenBanner";
+import { formato } from "./formato";
 
 /** Botón principal: naranja de la tienda de hoy con letra blanca, como en la tienda en vivo. */
 export const CLASE_BOTON =
@@ -29,7 +30,7 @@ export function Calificacion({ texto, className = "" }: { texto: string; classNa
   return (
     <p className={`m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-5 font-semibold ${className}`}>
       <Estrellas />
-      <span>{texto}</span>
+      <span>{formato(texto)}</span>
     </p>
   );
 }

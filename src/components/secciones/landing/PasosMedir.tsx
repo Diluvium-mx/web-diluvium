@@ -8,6 +8,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { formato } from "./formato";
 
 export type TamanoPaso = { nombre: string; medidas: string };
 export type VariantePasos = "a" | "b" | "c";
@@ -133,7 +134,7 @@ function Tarjetas({ pasos, tamanos, columnas }: { pasos: PasoMedir[]; tamanos: T
         <li key={i} data-pieza={p.pieza} className="rounded-2xl border border-linea bg-white p-4">
           <div className="flex items-center gap-3">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-marino font-titulo text-[20px] font-bold text-white">{i + 1}</span>
-            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{p.titulo}</h3>
+            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
           </div>
           <div className="mt-3">
             <Visual paso={p} tamanos={tamanos} columnas={columnas} />
@@ -155,7 +156,7 @@ function Linea({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPaso[] }
             {i + 1}
           </span>
           <div className="min-w-0 pt-1.5">
-            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{p.titulo}</h3>
+            <h3 className="m-0 font-titulo text-[20px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
             <div className="mt-3">
               <Visual paso={p} tamanos={tamanos} />
             </div>
@@ -188,7 +189,7 @@ function Deslizable({ pasos, tamanos }: { pasos: PasoMedir[]; tamanos: TamanoPas
               <p className="m-0 font-titulo text-[15px] font-bold text-boton">
                 Paso {i + 1} de {pasos.length}
               </p>
-              <h3 className="m-0 mt-1 font-titulo text-[22px] leading-tight font-bold text-marino">{p.titulo}</h3>
+              <h3 className="m-0 mt-1 font-titulo text-[22px] leading-tight font-bold text-marino">{formato(p.titulo)}</h3>
               <div className="mt-3 flex min-h-[270px] items-center">
                 <Visual paso={p} tamanos={tamanos} />
               </div>

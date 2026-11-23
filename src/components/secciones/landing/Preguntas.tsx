@@ -9,12 +9,15 @@ import { texto, type Bloque } from "@/lib/contenido";
 import type { EntradaBanco } from "./buscarPregunta";
 import { TextoRico } from "@/components/comunes/Texto";
 import { datosVenta, pesos, textoVersion, rellenar, tx } from "./datos";
+import { formato, sinFormato } from "./formato";
 import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
 import { PreguntasTarjetas } from "./PreguntasTarjetas";
 import { BANCO_EXTRA } from "./preguntas-banco";
 import { producto as buscarProducto } from "@/components/producto/catalogo";
 
 const ENLACE_MEDIDA = "/products/compuerta-anti-inundaciones-hecha-a-la-medida";
+// Ejemplos que van cambiando dentro de la caja (preguntas que no están en las de arriba y que el banco contesta).
+const EJEMPLOS = ["¿Llega a Monterrey?", "¿Cuánto pesa?", "¿Hay para cochera?", "¿Puedo pagar a meses?", "Mi puerta mide 95 cm", "¿Hacen más altas?", "¿Algo para la coladera?", "¿Qué horario tienen?", "¿Tienen tienda física?"].join("\n");
 
 /** Texto plano de una respuesta con formato («<p>Sí. …</p>» → «Sí. …»). */
 const plano = (html: string) =>
@@ -53,9 +56,9 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <h2 id="titulo-preguntas" className="titulo-ancho m-0 text-[28px] md:text-[38px]">
-            {textoVersion(a, "heading")}
+            {formato(textoVersion(a, "heading"))}
           </h2>
-          {texto(a, "text") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{textoVersion(a, "text")}</p>}
+          {texto(a, "text") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{formato(textoVersion(a, "text"))}</p>}
           {/* El enlace acompaña al texto: sin texto, no se pone (Producto: el WhatsApp va al final, en 193). */}
           {whatsapp && texto(a, "text") && (
             <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={`${CLASE_ENLACE} mt-2 text-marino`}>
@@ -75,6 +78,10 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             placeholder={tx(a, "search_placeholder", "Ej. ¿Llega a Monterrey?")}
             textoBoton={tx(a, "search_button", "Preguntar")}
             textoSinRespuesta={tx(a, "no_answer_text", "Mándanos tu pregunta por WhatsApp y te contestamos.")}
+            ejemplos={tx(a, "search_examples", EJEMPLOS)
+              .split("\n")
+              .map((e) => sinFormato(e).replace(/^Ej\.\s*/i, ""))
+              .filter(Boolean)}
           />
         ) : (
         <div>
@@ -82,7 +89,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
           {preguntas.map((p) => (
             <details key={p.id} data-pieza={p.id} name="preguntas-version" className="group border-b border-linea">
               <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 py-4 font-titulo text-[18px] leading-snug font-bold md:text-[19px]">
-                {textoVersion(p.ajustes, "heading")}
+                {formato(textoVersion(p.ajustes, "heading"))}
                 <svg viewBox="0 0 24 24" className="giro size-6 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true" focusable="false">
                   <path d="M12 5v14M5 12h14" />
                 </svg>

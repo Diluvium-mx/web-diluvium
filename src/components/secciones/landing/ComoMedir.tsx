@@ -13,6 +13,7 @@ import { TEXTOS_COMO_MEDIR, type TextosComoMedir } from "./textos";
 
 
 import { VideoControles } from "./VideoControles";
+import { formato, sinFormato } from "./formato";
 
 /** Botón azul de la ventana (propuesta 1 que eligió el dueño, 21-nov-2026): el texto y, debajo, una flecha dibujada
  *  (no es una letra del texto) que se mueve suave hacia donde lleva. */
@@ -23,7 +24,7 @@ function BotonVentana({ texto, lado, alTocar }: { texto: string; lado?: "derecha
       onClick={alTocar}
       className="mt-4 flex min-h-[64px] w-full cursor-pointer flex-col items-center justify-center gap-0.5 rounded-2xl bg-marino px-5 py-2.5 font-titulo text-[18px] font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,85,154,0.8)] transition-colors hover:bg-marino-hondo"
     >
-      {texto}
+      <span>{formato(texto)}</span>
       {lado && (
       <svg
         viewBox="0 0 24 24"
@@ -129,13 +130,13 @@ export function ComoMedir({
       </button>
       <dialog
         ref={ventana}
-        aria-label={textos.tituloVideo}
+        aria-label={sinFormato(textos.tituloVideo)}
         onClose={() => setAbierta(false)}
         onClick={(e) => e.target === e.currentTarget && cerrar()}
         className="version m-auto max-h-[94dvh] w-[min(94vw,560px)] max-w-none overflow-y-auto rounded-2xl bg-white p-0 text-marino backdrop:bg-tinta/70"
       >
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-linea bg-white py-2.5 pr-2 pl-5">
-          <h2 className="titulo-ancho m-0 text-[20px]">{vista === "video" ? textos.tituloVideo : textos.tituloPasos}</h2>
+          <h2 className="titulo-ancho m-0 text-[20px]">{formato(vista === "video" ? textos.tituloVideo : textos.tituloPasos)}</h2>
           <button type="button" onClick={cerrar} aria-label="Cerrar" className="flex size-11 cursor-pointer items-center justify-center rounded-full hover:bg-niebla">
             <IconoTache className="size-6" />
           </button>

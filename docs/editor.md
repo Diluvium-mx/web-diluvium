@@ -52,7 +52,12 @@ página de la derecha al guardar. Desde el 21-nov-2026 también los que estaban 
 medir?» (títulos, botones y pasos), la tabla de tamaños, el resultado de la medida, «Ahorras», «Agotado», la pista del
 antes y después, las reseñas («Ver más», el contador y la reseña en grande), la caja de preguntas, el carrito, el
 menú y el pie. En algunos van datos que se llenan solos: {n} y {total} (reseñas), {tamano} y {medidas} (resultado de
-la medida), además de {precio}, {calificacion}, etc. Las respuestas que da la caja de preguntas (el banco, que trae la
+la medida), además de {precio}, {calificacion}, etc.
+- **Formato (23-nov-2026):** cada texto trae una barrita: **Negrita** (se guarda como `**así**`), **Naranja**
+  (`==así==`, el naranja de la marca, como las palabras resaltadas de la tienda de hoy) y **Salto de línea**. En la
+  caja, Enter o Shift+Enter también hacen otro renglón y ⌘B pone negrita. Debajo se ve «Así se ve». Los enlaces,
+  direcciones y textos alternativos de fotos no llevan formato. La página lo pinta con `formato()`
+  (`src/components/secciones/landing/formato.tsx`); un texto sin marcas se ve igual que siempre. Las respuestas que da la caja de preguntas (el banco, que trae la
 guía de Angela) todavía viven en el código: `src/components/secciones/landing/preguntas-banco.ts`.
 
 ### Mapa (números de cada elemento)

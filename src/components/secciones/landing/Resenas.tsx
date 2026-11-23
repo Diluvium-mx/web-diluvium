@@ -10,6 +10,7 @@ import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
+import { formato } from "./formato";
 import { medidasImagen } from "../ImagenBanner";
 import { MuroResenas } from "./MuroResenas";
 import { TEXTOS_MURO } from "./textos";
@@ -59,9 +60,9 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
       <div className="marco-version">
         <div className="mb-8 max-w-[44rem] md:mb-10">
           <h2 id="titulo-resenas" className="titulo-ancho m-0 text-[28px] md:text-[38px]">
-            {textoVersion(a, "heading")}
+            {formato(textoVersion(a, "heading"))}
           </h2>
-          {texto(a, "subheading") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{textoVersion(a, "subheading")}</p>}
+          {texto(a, "subheading") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{formato(textoVersion(a, "subheading"))}</p>}
         </div>
         {texto(a, "layout") === "dos_columnas" ? (
           <MuroResenas

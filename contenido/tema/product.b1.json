@@ -497,13 +497,14 @@
    "id": "landing_preguntas_producto_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
-    "heading": "Antes de comprar",
+    "heading": "Antes de comprar, responde tus dudas 👇🏻",
     "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
-    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos."
+    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
+    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?"
    },
    "bloques": [
     {

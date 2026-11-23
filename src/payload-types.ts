@@ -3291,6 +3291,7 @@ export interface Plantilla {
             search_placeholder?: string | null;
             search_button?: string | null;
             no_answer_text?: string | null;
+            search_examples?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -5858,6 +5859,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               search_placeholder?: T;
               search_button?: T;
               no_answer_text?: T;
+              search_examples?: T;
               bloques?:
                 | T
                 | {
