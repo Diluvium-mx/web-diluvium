@@ -109,7 +109,7 @@ export function PreguntasTarjetas({
   // Los ejemplos van cambiando mientras nadie escribe ni está en el campo.
   useEffect(() => {
     if (ejemplos.length < 2 || enfocado || valor) return;
-    const t = setInterval(() => setEjemplo((i) => i + 1), 2800);
+    const t = setInterval(() => setEjemplo((i) => i + 1), 2000);
     return () => clearInterval(t);
   }, [ejemplos.length, enfocado, valor]);
   const contador = useRef(0);
@@ -212,7 +212,7 @@ export function PreguntasTarjetas({
               </span>
             )}
             {ejemplos.length > 0 && !valor && (
-              // Ejemplo que cambia cada 2.8 s (entra deslizándose); se queda quieto mientras la persona está en el campo.
+              // Ejemplo que cambia cada 2 s (entra deslizándose); se queda quieto mientras la persona está en el campo.
               <span aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-3.5 left-[16px] flex items-center overflow-hidden text-[15.5px] text-texto-suave">
                 <span key={ejemplo} className="animate-[ejemplo-entra_450ms_ease-out] truncate motion-reduce:animate-none">
                   Ej. {ejemplos[ejemplo % ejemplos.length]}
