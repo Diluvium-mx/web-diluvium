@@ -92,12 +92,18 @@ function Gota({ izquierda, arriba }: { izquierda: string; arriba: number }) {
   );
 }
 
-export function Ola({ arriba, abajo, forma }: { arriba: Fondo; abajo: Fondo; forma: FormaOla }) {
+/** «espejo»: la misma ola volteada de izquierda a derecha (23-nov-2026, dueño: con 4 diseños, que no se vean repetidos). */
+export function Ola({ arriba, abajo, forma, espejo = false }: { arriba: Fondo; abajo: Fondo; forma: FormaOla; espejo?: boolean }) {
   const t = DIBUJO[forma];
   const cerrar = (d: string) => `${d} L1440,${t.alto} L0,${t.alto} Z`;
   return (
     <div data-ola={forma} aria-hidden="true" className="relative" style={{ background: COLOR[arriba] }}>
-      <svg viewBox={`0 0 1440 ${t.alto}`} preserveAspectRatio="none" className={`block w-full ${t.alturas}`} focusable="false">
+      <svg
+        viewBox={`0 0 1440 ${t.alto}`}
+        preserveAspectRatio="none"
+        className={`block w-full ${t.alturas} ${espejo ? "-scale-x-100" : ""}`}
+        focusable="false"
+      >
         {t.capa && <path d={cerrar(t.capa)} fill="var(--color-marino)" opacity="0.16" />}
         <path d={cerrar(t.d)} fill={COLOR[abajo]} />
         {t.filo ? (
