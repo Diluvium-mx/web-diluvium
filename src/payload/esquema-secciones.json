@@ -5136,7 +5136,7 @@
    "campos": [
     {
      "clave": "heading",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Título",
      "diseno": false
     },

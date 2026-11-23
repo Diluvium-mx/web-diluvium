@@ -71,14 +71,14 @@
      "id": "before_after",
      "tipo": "before_after",
      "ajustes": {
-      "image_before": "/media/files/Antes_2.jpg",
-      "alt_before": "Entrada con costales de arena amontonados frente a la puerta",
+      "image_before": "/media/files/Antes_1.jpg",
+      "alt_before": "Entrada tapada con costales de arena y una tabla",
       "label_before": "Antes: costales",
-      "image_after": "/media/files/Despues_2.jpg",
-      "alt_after": "La misma entrada con la compuerta Diluvium puesta",
+      "image_after": "/media/files/Despues_1.jpg",
+      "alt_after": "La misma entrada protegida con la compuerta Diluvium",
       "label_after": "Después: Diluvium",
-      "focal_before": "50% 50%",
-      "focal_after": "50% 50%",
+      "focal_before": "50% 100%",
+      "focal_after": "50% 100%",
       "zoom_before": 1,
       "zoom_after": 1
      }
@@ -120,7 +120,15 @@
    "tipo": "landing-resenas",
    "ajustes": {
     "heading": "{calificacion} de 5 en más de 200 reseñas",
-    "subheading": "Fotos reales de clientes con su compuerta puesta."
+    "subheading": "Fotos reales de clientes con su compuerta puesta.",
+    "layout": "dos_columnas",
+    "more_button": "Ver más",
+    "count_text": "Viendo {n} de {total} reseñas",
+    "read_more_text": "...Mostrar reseña completa",
+    "viewer_title": "Reseña {n} de {total}",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "more_six_button": "Ver 6 más"
    },
    "bloques": [
     {
@@ -339,20 +347,25 @@
    "id": "landing_pasos_b1",
    "tipo": "landing-pasos",
    "ajustes": {
-    "heading": "Protegida en 3 pasos, sin albañiles",
-    "button_text": "Ver tabla de medidas"
+    "heading": "3 pasos clave",
+    "button_text": "Ver tabla de medidas",
+    "layout": "tarjetas",
+    "table_heading": "Tabla de tamaños",
+    "table_note": "Mide el ancho de tu entrada de marco a marco.",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada"
    },
    "bloques": [
     {
      "id": "step_1",
      "tipo": "step",
      "ajustes": {
-      "image": "/media/files/Frame_601.jpg",
-      "alt": "Dibujo de una puerta con la flecha del ancho",
+      "image": "/media/files/puerta_buena.jpg",
+      "alt": "Puerta con una flecha que marca el ancho, de marco a marco",
       "heading": "Mide el ancho de tu entrada",
       "text": "De marco a marco o de pared a pared, con una cinta métrica.",
       "focal": "50% 50%",
-      "zoom": 1
+      "zoom": 1.3
      }
     },
     {
@@ -375,8 +388,8 @@
       "alt": "Dibujo de una puerta con la compuerta puesta",
       "heading": "Recíbela y colócala",
       "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos.",
-      "focal": "50% 50%",
-      "zoom": 1
+      "focal": "50% 53%",
+      "zoom": 1.22
      }
     }
    ]
@@ -385,9 +398,14 @@
    "id": "landing_preguntas_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
-    "heading": "Preguntas frecuentes",
-    "text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+    "heading": "Antes de comprar, \nresponde tus dudas 👇🏻",
+    "text": "",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "search_heading": "¿No está tu pregunta? Escríbela aquí",
+    "search_placeholder": "Ej. ¿Llega a Monterrey?",
+    "search_button": "Preguntar",
+    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
+    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?"
    },
    "bloques": [
     {
@@ -431,6 +449,22 @@
      }
     },
     {
+     "id": "question_envio",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuándo llega y si no me convence?",
+      "description": "<p>Llega en 3 a 5 días hábiles a cualquier parte de México (puede variar en zona extendida) y el envío es gratis. Si no estás satisfecho, tienes 1 año para devolverla en su estado original y sin daños: escríbenos y te decimos cómo.</p>"
+     }
+    },
+    {
+     "id": "question_factura",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me dan factura?",
+      "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>"
+     }
+    },
+    {
      "id": "question_6",
      "tipo": "question",
      "ajustes": {
@@ -457,8 +491,9 @@
     "rating_text": "{calificacion} · más de 200 reseñas",
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
-    "whatsapp_text": "¿Dudas con tu medida? Escríbenos por WhatsApp",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida"
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
    },
    "bloques": [
     {
