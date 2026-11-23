@@ -1,0 +1,112 @@
+{
+ "fuente": "Ficha de los repuestos y accesorios (funda, tira de hule y plastilina) en la versión B1 (23-nov-2026)",
+ "secciones": [
+  {
+   "id": "landing_ficha_accesorio_b1",
+   "tipo": "landing-ficha",
+   "ajustes": {
+    "producto": "",
+    "rating_text": "",
+    "sold_text": "",
+    "heading": "",
+    "subheading": "",
+    "price_note": "",
+    "size_heading": "Elige tu tamaño",
+    "measure_text": "",
+    "helper_text": "",
+    "custom_text": "",
+    "custom_link_text": "",
+    "custom_link": "",
+    "button_text": "Añadir al carrito",
+    "error_text": "Elige el tamaño de tu entrada para continuar.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20un%20repuesto%20-%20Diluvium",
+    "trust_heading": "",
+    "marketplace_text": "Encuéntranos en:",
+    "media_caption": "",
+    "gallery_style": "normal",
+    "include_product_media": true,
+    "sticky_bar": "al_bajar",
+    "sticky_text": "Comprar",
+    "savings_text": "Ahorras",
+    "measure_placeholder": "Ej. 95",
+    "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
+    "wider_text": "Tu entrada es más ancha:",
+    "wider_link_text": "la hacemos a la medida",
+    "narrower_text": "Tu entrada es más angosta.",
+    "narrower_link_text": "Escríbenos y vemos tu caso",
+    "sold_out_text": "Agotado",
+    "whatsapp_button_text": "Pregúntanos por WhatsApp",
+    "drag_hint": "← Arrastra la línea →",
+    "sound_hint": "Toca para oír",
+    "video_heading": "¿Cómo medir tu entrada?",
+    "steps_button": "Ver pasos clave",
+    "steps_heading": "3 pasos clave",
+    "back_button": "Volver al video",
+    "step_1": "Mide el ancho de tu entrada",
+    "step_2": "Elige tu tamaño",
+    "step_3": "Recíbela y colócala",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada",
+    "show_description": true,
+    "description_heading": "Qué es"
+   },
+   "bloques": [
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "envio",
+      "heading": "Envío gratis",
+      "text": "En pedidos desde $499"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "pago",
+      "heading": "Pago seguro",
+      "text": "Tarjeta con Mercado Pago o PayPal"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cierre_accesorio_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "button_text": "Ver la compuerta",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

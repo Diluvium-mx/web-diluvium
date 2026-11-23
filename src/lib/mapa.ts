@@ -27,6 +27,16 @@ export type Esquema = {
 export const PAGINAS_MAPA = {
   "index.b1": { version: "B1", letra: "I", nombre: "Portada", ruta: "/v/b1" },
   "product.b1": { version: "B1", letra: "P", nombre: "Producto", ruta: "/v/b1/products/compuerta-anti-inundaciones" },
+  // Las demás páginas de B1 (23-nov-2026).
+  "collection.b1": { version: "B1", letra: "L", nombre: "Productos", ruta: "/v/b1/collections/all-products" },
+  "product.b1.mini-compuerta": { version: "B1", letra: "M", nombre: "Mini", ruta: "/v/b1/products/mini-compuerta" },
+  "product.b1.medida-especial": { version: "B1", letra: "X", nombre: "XXL", ruta: "/v/b1/products/compuerta-anti-inundaciones-hecha-a-la-medida" },
+  "product.b1.tapon-inflable": { version: "B1", letra: "T", nombre: "Tapón", ruta: "/v/b1/products/tapon-inflable-anti-inundaciones" },
+  "product.b1.accesorio": { version: "B1", letra: "R", nombre: "Repuestos", ruta: "/v/b1/products/funda-de-repuesto-compuerta-anti-inundaciones" },
+  "page.contact.b1": { version: "B1", letra: "C", nombre: "Contacto", ruta: "/v/b1/pages/contact" },
+  "page.nosotros.b1": { version: "B1", letra: "N", nombre: "Nosotros", ruta: "/v/b1/pages/nosotros" },
+  "blog.b1": { version: "B1", letra: "B", nombre: "Blog", ruta: "/v/b1/blogs/blog" },
+  "article.b1": { version: "B1", letra: "A", nombre: "Artículo", ruta: "/v/b1/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades" },
 } as const;
 export type ArchivoMapa = keyof typeof PAGINAS_MAPA;
 

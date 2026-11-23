@@ -9,6 +9,16 @@ import portada from "@contenido/tema/index.json";
 import portadaB1 from "@contenido/tema/index.b1.json";
 // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/<producto>; mapa de calor del 11-nov-2026).
 import productoB1 from "@contenido/tema/product.b1.json";
+// Las demás páginas de B1 (23-nov-2026): Contacto, Nosotros, Blog, artículo, Productos y las fichas de los demás productos.
+import contactoB1 from "@contenido/tema/page.contact.b1.json";
+import nosotrosB1 from "@contenido/tema/page.nosotros.b1.json";
+import blogB1 from "@contenido/tema/blog.b1.json";
+import articuloB1 from "@contenido/tema/article.b1.json";
+import coleccionB1 from "@contenido/tema/collection.b1.json";
+import miniB1 from "@contenido/tema/product.b1.mini-compuerta.json";
+import medidaB1 from "@contenido/tema/product.b1.medida-especial.json";
+import taponB1 from "@contenido/tema/product.b1.tapon-inflable.json";
+import accesorioB1 from "@contenido/tema/product.b1.accesorio.json";
 import productoGeneral from "@contenido/tema/product.json";
 import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
 import productoMedida from "@contenido/tema/product.medida-especial.json";
@@ -36,6 +46,15 @@ const PLANTILLAS = {
   portada: portada as Plantilla,
   "portada.b1": portadaB1 as Plantilla,
   "producto.b1": productoB1 as Plantilla,
+  "contacto.b1": contactoB1 as Plantilla,
+  "nosotros.b1": nosotrosB1 as Plantilla,
+  "blog.b1": blogB1 as Plantilla,
+  "articulo.b1": articuloB1 as Plantilla,
+  "coleccion.b1": coleccionB1 as Plantilla,
+  "producto.b1.mini": miniB1 as Plantilla,
+  "producto.b1.medida": medidaB1 as Plantilla,
+  "producto.b1.tapon": taponB1 as Plantilla,
+  "producto.b1.accesorio": accesorioB1 as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
   product: productoGeneral as Plantilla,

@@ -5181,6 +5181,18 @@
      "tipo": "textoLargo",
      "etiqueta": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)",
      "diseno": false
+    },
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -5559,6 +5571,18 @@
      "tipo": "texto",
      "etiqueta": "Tabla: columna del ancho",
      "diseno": true
+    },
+    {
+     "clave": "show_description",
+     "tipo": "siNo",
+     "etiqueta": "Mostrar la descripción del producto",
+     "diseno": false
+    },
+    {
+     "clave": "description_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de la descripción",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -5767,6 +5791,570 @@
      ]
     }
    ]
+  },
+  {
+   "tipo": "landing-articulo",
+   "slug": "landing-articulo",
+   "dbName": "s49",
+   "etiqueta": "Versión: artículo del blog",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "back_text",
+     "tipo": "texto",
+     "etiqueta": "Texto para volver al blog",
+     "diseno": false
+    },
+    {
+     "clave": "author_prefix",
+     "tipo": "texto",
+     "etiqueta": "Texto antes del autor",
+     "diseno": false
+    },
+    {
+     "clave": "related_heading",
+     "tipo": "texto",
+     "etiqueta": "Título de los otros artículos",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "landing-blog",
+   "slug": "landing-blog",
+   "dbName": "s50",
+   "etiqueta": "Versión: artículos del blog",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "read_more",
+     "tipo": "texto",
+     "etiqueta": "Texto para leer el artículo",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "landing-cita",
+   "slug": "landing-cita",
+   "dbName": "s51",
+   "etiqueta": "Versión: mensaje con firma",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
+    },
+    {
+     "clave": "ola_espejo",
+     "tipo": "siNo",
+     "etiqueta": "Ola volteada",
+     "diseno": false
+    },
+    {
+     "clave": "image",
+     "tipo": "imagen",
+     "etiqueta": "Imagen",
+     "diseno": false
+    },
+    {
+     "clave": "alt",
+     "tipo": "texto",
+     "etiqueta": "Texto alternativo (para quien no ve la foto)",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "textoLargo",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "textoLargo",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "signature",
+     "tipo": "textoLargo",
+     "etiqueta": "Firma",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "landing-contacto",
+   "slug": "landing-contacto",
+   "dbName": "s52",
+   "etiqueta": "Versión: formas de contacto y formulario",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "texto",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "faq_link_text",
+     "tipo": "texto",
+     "etiqueta": "Enlace a las preguntas",
+     "diseno": false
+    },
+    {
+     "clave": "form_heading",
+     "tipo": "texto",
+     "etiqueta": "Formulario: título",
+     "diseno": false
+    },
+    {
+     "clave": "form_text",
+     "tipo": "texto",
+     "etiqueta": "Formulario: texto",
+     "diseno": false
+    },
+    {
+     "clave": "name_label",
+     "tipo": "texto",
+     "etiqueta": "Formulario: nombre",
+     "diseno": false
+    },
+    {
+     "clave": "email_label",
+     "tipo": "texto",
+     "etiqueta": "Formulario: correo",
+     "diseno": false
+    },
+    {
+     "clave": "message_label",
+     "tipo": "texto",
+     "etiqueta": "Formulario: mensaje",
+     "diseno": false
+    },
+    {
+     "clave": "button_label",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "sending_text",
+     "tipo": "texto",
+     "etiqueta": "Formulario: mientras se envía",
+     "diseno": false
+    },
+    {
+     "clave": "thanks_text",
+     "tipo": "texto",
+     "etiqueta": "Formulario: aviso de gracias",
+     "diseno": false
+    },
+    {
+     "clave": "required_text",
+     "tipo": "texto",
+     "etiqueta": "Formulario: aviso de campos obligatorios",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "channel",
+     "slug": "s52-b00",
+     "dbName": "s52b00",
+     "etiqueta": "Forma de contacto (ícono: whatsapp, telefono, correo, ubicacion u horario)",
+     "campos": [
+      {
+       "clave": "icon",
+       "tipo": "texto",
+       "etiqueta": "Ícono",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      },
+      {
+       "clave": "url",
+       "tipo": "texto",
+       "etiqueta": "Dirección",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-historia",
+   "slug": "landing-historia",
+   "dbName": "s53",
+   "etiqueta": "Versión: historia por capítulos",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "chapter",
+     "slug": "s53-b00",
+     "dbName": "s53b00",
+     "etiqueta": "Capítulo",
+     "campos": [
+      {
+       "clave": "subheading",
+       "tipo": "texto",
+       "etiqueta": "Subtítulo",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "textoLargo",
+       "etiqueta": "Texto",
+       "diseno": false
+      },
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "video",
+       "tipo": "video",
+       "etiqueta": "Video",
+       "diseno": false
+      },
+      {
+       "clave": "link_text",
+       "tipo": "texto",
+       "etiqueta": "Texto del enlace",
+       "diseno": false
+      },
+      {
+       "clave": "link",
+       "tipo": "texto",
+       "etiqueta": "Enlace",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-premios",
+   "slug": "landing-premios",
+   "dbName": "s54",
+   "etiqueta": "Versión: reconocimientos y premios",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
+    },
+    {
+     "clave": "ola_espejo",
+     "tipo": "siNo",
+     "etiqueta": "Ola volteada",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "textoLargo",
+     "etiqueta": "Texto",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "award",
+     "slug": "s54-b00",
+     "dbName": "s54b00",
+     "etiqueta": "Premio",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "focal",
+       "tipo": "texto",
+       "etiqueta": "Encuadre de la foto (x% y%)",
+       "diseno": false
+      },
+      {
+       "clave": "alt",
+       "tipo": "texto",
+       "etiqueta": "Texto alternativo (para quien no ve la foto)",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-productos",
+   "slug": "landing-productos",
+   "dbName": "s55",
+   "etiqueta": "Versión: productos en tarjetas",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "from_text",
+     "tipo": "texto",
+     "etiqueta": "Texto antes del precio («Desde»)",
+     "diseno": false
+    },
+    {
+     "clave": "reviews_text",
+     "tipo": "texto",
+     "etiqueta": "Texto después del número de reseñas",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "product",
+     "slug": "s55-b00",
+     "dbName": "s55b00",
+     "etiqueta": "Producto",
+     "campos": [
+      {
+       "clave": "producto",
+       "tipo": "texto",
+       "etiqueta": "Producto (su dirección, sin /products/)",
+       "diseno": false
+      },
+      {
+       "clave": "badge",
+       "tipo": "texto",
+       "etiqueta": "Etiqueta sobre la foto",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "landing-titulo",
+   "slug": "landing-titulo",
+   "dbName": "s56",
+   "etiqueta": "Versión: título de la página",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "textoLargo",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "button_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del botón",
+     "diseno": false
+    },
+    {
+     "clave": "button_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace del botón",
+     "diseno": false
+    },
+    {
+     "clave": "image",
+     "tipo": "imagen",
+     "etiqueta": "Imagen",
+     "diseno": false
+    },
+    {
+     "clave": "alt",
+     "tipo": "texto",
+     "etiqueta": "Texto alternativo (para quien no ve la foto)",
+     "diseno": false
+    },
+    {
+     "clave": "focal",
+     "tipo": "texto",
+     "etiqueta": "Encuadre de la foto (x% y%)",
+     "diseno": false
+    },
+    {
+     "clave": "zoom",
+     "tipo": "numero",
+     "etiqueta": "Zoom",
+     "diseno": false
+    }
+   ],
+   "bloques": []
   }
  ],
  "ajustesTema": [

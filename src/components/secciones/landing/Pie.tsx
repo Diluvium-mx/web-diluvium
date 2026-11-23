@@ -3,7 +3,6 @@
 // y de los menús (contenido/menus.json).
 
 import Image from "next/image";
-import Link from "next/link";
 import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
 import { plantilla, texto } from "@/lib/contenido";
@@ -71,9 +70,9 @@ export function PieVersion({ seccion }: PropsSeccion) {
           <ul className="m-0 grid list-none gap-1 p-0 text-[15px] text-white/85">
             {[...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")].map((e) => (
               <li key={e.url}>
-                <Link href={e.url} className="inline-flex min-h-8 items-center underline-offset-4 hover:underline">
+                <a href={e.url} className="inline-flex min-h-8 items-center underline-offset-4 hover:underline">
                   {e.texto}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

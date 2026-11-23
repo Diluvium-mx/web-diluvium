@@ -45,9 +45,18 @@ import { PreguntasVersion } from "./landing/Preguntas";
 import { CierreVersion } from "./landing/Cierre";
 import { PieVersion } from "./landing/Pie";
 import { FichaVersion } from "./landing/Ficha";
+import { TituloVersion } from "./landing/TituloPagina";
+import { ProductosVersion } from "./landing/Productos";
+import { ContactoVersion } from "./landing/Contacto";
+import { HistoriaVersion } from "./landing/Historia";
+import { PremiosVersion } from "./landing/Premios";
+import { CitaVersion } from "./landing/Cita";
+import { BlogVersion } from "./landing/Blog";
+import { ArticuloVersion } from "./landing/ArticuloVersion";
 
 // `producto` llega en las páginas de producto (el de esa página); en las demás páginas no viene.
-export type PropsSeccion = { seccion: Seccion; producto?: Producto };
+/** «slugArticulo»: el artículo del blog de la página (/v/<versión>/blogs/blog/<artículo>), para «landing-articulo». */
+export type PropsSeccion = { seccion: Seccion; producto?: Producto; slugArticulo?: string };
 type PiezaSeccion = ComponentType<PropsSeccion>;
 
 const PIEZAS: Record<string, PiezaSeccion> = {
@@ -92,6 +101,15 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "landing-cierre": CierreVersion,
   "landing-pie": PieVersion,
   "landing-ficha": FichaVersion,
+  // Páginas nuevas de B1 (23-nov-2026): Contacto, Nosotros, Blog, artículo y Productos.
+  "landing-titulo": TituloVersion,
+  "landing-productos": ProductosVersion,
+  "landing-contacto": ContactoVersion,
+  "landing-historia": HistoriaVersion,
+  "landing-premios": PremiosVersion,
+  "landing-cita": CitaVersion,
+  "landing-blog": BlogVersion,
+  "landing-articulo": ArticuloVersion,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {
@@ -105,9 +123,9 @@ function Pendiente({ seccion }: { seccion: Seccion }) {
   );
 }
 
-export function Secciones({ secciones, producto }: { secciones: Seccion[]; producto?: Producto }) {
+export function Secciones({ secciones, producto, slugArticulo }: { secciones: Seccion[]; producto?: Producto; slugArticulo?: string }) {
   return secciones.map((s) => {
     const Pieza = PIEZAS[s.tipo] ?? Pendiente;
-    return <Pieza key={s.id} seccion={s} producto={producto} />;
+    return <Pieza key={s.id} seccion={s} producto={producto} slugArticulo={slugArticulo} />;
   });
 }

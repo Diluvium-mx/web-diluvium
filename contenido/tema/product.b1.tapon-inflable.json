@@ -1,0 +1,198 @@
+{
+ "fuente": "Ficha del tapón inflable en la versión B1 (23-nov-2026), con los textos de su página en la tienda",
+ "secciones": [
+  {
+   "id": "landing_ficha_tapon_b1",
+   "tipo": "landing-ficha",
+   "ajustes": {
+    "producto": "tapon-inflable-anti-inundaciones",
+    "rating_text": "",
+    "sold_text": "",
+    "heading": "",
+    "subheading": "Cuando el drenaje se satura, el agua puede salir por las coladeras. El tapón se mete en la tubería y, al inflarlo, bloquea el paso del agua.",
+    "price_note": "",
+    "size_heading": "Elige la medida de tu tubería",
+    "measure_text": "",
+    "helper_text": "",
+    "custom_text": "",
+    "custom_link_text": "",
+    "custom_link": "",
+    "button_text": "Añadir al carrito",
+    "error_text": "Elige el tamaño de tu entrada para continuar.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20el%20tapón%20inflable%20-%20Diluvium",
+    "trust_heading": "",
+    "marketplace_text": "Encuéntranos en:",
+    "media_caption": "",
+    "gallery_style": "normal",
+    "include_product_media": true,
+    "sticky_bar": "al_bajar",
+    "sticky_text": "Elegir mi medida",
+    "savings_text": "Ahorras",
+    "measure_placeholder": "Ej. 95",
+    "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
+    "wider_text": "Tu entrada es más ancha:",
+    "wider_link_text": "la hacemos a la medida",
+    "narrower_text": "Tu entrada es más angosta.",
+    "narrower_link_text": "Escríbenos y vemos tu caso",
+    "sold_out_text": "Agotado",
+    "whatsapp_button_text": "Pregúntanos por WhatsApp",
+    "drag_hint": "← Arrastra la línea →",
+    "sound_hint": "Toca para oír",
+    "video_heading": "¿Cómo medir tu entrada?",
+    "steps_button": "Ver pasos clave",
+    "steps_heading": "3 pasos clave",
+    "back_button": "Volver al video",
+    "step_1": "Mide el ancho de tu entrada",
+    "step_2": "Elige tu tamaño",
+    "step_3": "Recíbela y colócala",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada"
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se infla hasta sellar el contorno de la tubería"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Para coladeras de regaderas o inodoros"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable y de rápida colocación"
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "envio",
+      "heading": "Envío gratis",
+      "text": "En pedidos desde $499"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "garantia",
+      "heading": "3 meses de garantía",
+      "text": "Por defecto de fábrica"
+     }
+    },
+    {
+     "id": "trust_3",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "pago",
+      "heading": "Pago seguro",
+      "text": "Tarjeta con Mercado Pago o PayPal"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_preguntas_tapon_b1",
+   "tipo": "landing-preguntas",
+   "ajustes": {
+    "heading": "Preguntas frecuentes",
+    "text": "",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20el%20tapón%20inflable%20-%20Diluvium",
+    "search_heading": "¿No está tu pregunta? Escríbela aquí",
+    "search_placeholder": "Ej. ¿Llega a Monterrey?",
+    "search_button": "Preguntar",
+    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
+    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
+    "fondo": "niebla",
+    "ola": "larga"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo se pone?",
+      "description": "<p>Retira la rejilla o tapadera de la coladera y limpia la tubería. Mete el tapón, conéctale una bomba de aire convencional e ínflalo hasta que selle firme el contorno. Si al moverlo no se desplaza, quedó bien.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué medida necesito?",
+      "description": "<p>La del diámetro de tu tubería: hay de 2, 3 y 4 pulgadas (5, 7.5 y 10 cm). Mide el hueco de la tubería sin la rejilla.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecho?",
+      "description": "<p>De goma de alta resistencia, que se adhiere fuerte a la tubería para soportar la presión del agua cuando el drenaje se satura.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué tanto detiene?",
+      "description": "<p>En nuestras pruebas, en condiciones óptimas, con superficies rectas y lisas, retiene hasta el 100 % del flujo de agua.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>3 meses por defecto de fábrica. Se acepta devolución en 30 días solo si no se ha usado.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cierre_tapon_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "",
+    "button_text": "Comprar",
+    "button_link": "#tamanos",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Sella la tubería al inflarlo"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se pone en minutos"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable"
+     }
+    }
+   ]
+  }
+ ]
+}

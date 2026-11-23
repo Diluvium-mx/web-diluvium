@@ -1,0 +1,53 @@
+{
+ "fuente": "Artículo del blog en la versión B1 (23-nov-2026): el artículo sale de contenido/blog.json",
+ "secciones": [
+  {
+   "id": "landing_articulo_b1",
+   "tipo": "landing-articulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "back_text": "Volver al blog",
+    "author_prefix": "Por",
+    "related_heading": "Sigue leyendo"
+   },
+   "bloques": []
+  },
+  {
+   "id": "landing_cierre_articulo_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

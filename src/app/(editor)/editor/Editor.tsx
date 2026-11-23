@@ -528,7 +528,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
       {/* ── Barra de arriba ── */}
       <header className="flex flex-wrap items-center gap-2 border-b border-linea bg-white px-4 py-2.5">
         <strong className="mr-1 text-[17px] text-marino">Editor · B1</strong>
-        <div className="flex rounded-lg bg-niebla p-1">
+        <div className="flex flex-wrap rounded-lg bg-niebla p-1">
           {archivos.map((a) => (
             <button
               key={a}

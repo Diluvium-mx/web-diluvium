@@ -1,0 +1,263 @@
+{
+ "fuente": "Página Nosotros de la versión B1 (23-nov-2026), con los textos y fotos de la página Nosotros de la tienda",
+ "secciones": [
+  {
+   "id": "landing_titulo_nosotros_b1",
+   "tipo": "landing-titulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Nuestra historia",
+    "heading": "Protegiendo hogares, ==un desafío a la vez==",
+    "text": "El problema era evidente: cada año, miles de hogares y negocios sufrían por inundaciones. Viviendo en México, es imposible ignorar el daño que causan las lluvias intensas.",
+    "image": "/media/files/Frame_700.jpg",
+    "alt": "Una sala inundada, con los muebles flotando",
+    "focal": "50% 50%",
+    "zoom": 1
+   },
+   "bloques": []
+  },
+  {
+   "id": "landing_historia_nosotros_b1",
+   "tipo": "landing-historia",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "larga",
+    "heading": "Cómo empezó"
+   },
+   "bloques": [
+    {
+     "id": "chapter_problema",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "El problema",
+      "heading": "En una inundación no solo se pierden cosas",
+      "text": "Cuando una tormenta inunda una casa, no solo se pierden objetos: se pierden años de esfuerzo, tranquilidad y recuerdos que no se reemplazan con dinero. **Las pérdidas materiales son evidentes, pero el impacto emocional que sufren las familias es aún mayor.**\n\nLo que más nos impresionó es que **hay familias que sufren de esto cada año**, una realidad que nos motivó a buscar una solución.",
+      "image": "/media/files/Frame_720.jpg",
+      "alt": "Una cocina inundada"
+     }
+    },
+    {
+     "id": "chapter_idea",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "La idea",
+      "heading": "Nuestra propia versión, pensada para México",
+      "text": "Encontramos soluciones efectivas en otros países, pero con costo muy elevado para el mercado mexicano.\n\nFue entonces que **decidimos crear nuestra propia versión: más económica, más práctica, y pensada para las necesidades reales en México.**\n\nComo buenos emprendedores pusimos manos a la obra y después de meses de prueba y error, finalmente llegamos a un prototipo funcional.",
+      "image": "/media/files/7453CB00-0FC6-43F1-967E-293CC2D0D04F.jpg",
+      "alt": "Fabricando una compuerta en el taller",
+      "focal": "50% 40%"
+     }
+    },
+    {
+     "id": "chapter_reto",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "El reto",
+      "heading": "Desarrollar el producto fue solo el comienzo",
+      "text": "**Llevarlo a quienes más lo necesitan fue el verdadero reto.**\n\nLuego vino la tarea de construir una línea de producción y hacer que esta solución llegara a quienes más la necesitaban.",
+      "video": "/media/videos/5fbf311e67eb42f7a351fe743b6a8699.SD-480p-0.9Mbps-46396031.mp4",
+      "image": "/media/files/IMG_0665.jpg",
+      "alt": "Video de Diluvium: probando la compuerta con agua"
+     }
+    },
+    {
+     "id": "chapter_camino",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "El camino",
+      "heading": "Aprendimos en el camino",
+      "text": "Nos enfrentamos a retos de diseño y producción, dificultades para explicar el producto sin imágenes ni videos de calidad, limitaciones económicas, temas logísticos… La lista sigue.\n\nPero nunca nos detuvimos. **Aprendimos en el camino y seguimos adelante.**",
+      "image": "/media/files/IMG_2103.jpg",
+      "alt": "Prueba de la compuerta con agua de un lado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_mision_nosotros_b1",
+   "tipo": "landing-historia",
+   "ajustes": {
+    "fondo": "blanco",
+    "ola": "capas",
+    "heading": "Más que un negocio, ==una misión=="
+   },
+   "bloques": [
+    {
+     "id": "chapter_mision",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "Por qué lo hacemos",
+      "heading": "Cada hogar protegido cuenta",
+      "text": "Desde el principio, este proyecto significó mucho más que vender un producto. Nos motivaba la idea de ayudar a las personas a protegerse de un problema que afecta miles de hogares y negocios cada año.\n\nLas inundaciones son el desastre natural que más pérdidas económicas genera a nivel mundial, y sabemos que no podemos resolver el problema de la noche a la mañana.\n\nPero cada hogar protegido es una familia que duerme tranquila cuando llueve. Cada negocio que se salva de una inundación es un emprendedor que protege su inversión. **Y eso, para nosotros, ya es hacer una diferencia.**",
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta Diluvium puesta en una entrada mientras el agua sube afuera"
+     }
+    },
+    {
+     "id": "chapter_clientes",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "Lo que nos mueve",
+      "heading": "Familias que por fin duermen tranquilas",
+      "text": "Lo que más nos llena el corazón es escuchar a quienes, tras años de preocupación, por fin encontraron tranquilidad.\n\nCuando nos dicen que ahora pueden dormir sin miedo a la lluvia, que ya no viven con el miedo de perderlo todo en cada temporada de lluvias.\n\nEsos comentarios **nos recuerdan por qué hacemos lo que hacemos.**",
+      "image": "/media/files/Frame_719.jpg",
+      "alt": "Luis, de Diluvium, con una compuerta"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_premios_nosotros_b1",
+   "tipo": "landing-premios",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "larga",
+    "ola_espejo": true,
+    "subheading": "También hemos tenido",
+    "heading": "🏆 Reconocimientos y premios",
+    "text": "Nuestro esfuerzo ha sido reconocido en varias ocasiones, lo que nos motiva a seguir creciendo:"
+   },
+   "bloques": [
+    {
+     "id": "award_shark",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/Frame_864.jpg",
+      "focal": "50% 15%",
+      "alt": "Luis en el set de Shark Tank México",
+      "heading": "Temporada 10 Shark Tank México",
+      "text": "Nadando con tiburones, sin dejar pasar el agua."
+     }
+    },
+    {
+     "id": "award_calidad",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/efa26da4-9212-47bd-9505-e11b44a1a765_1.jpg",
+      "focal": "50% 20%",
+      "alt": "Luis con el premio a la calidad",
+      "heading": "Premio Oro y Plata a la Calidad",
+      "text": "Galardonados a nivel nacional en la Ciudad de México"
+     }
+    },
+    {
+     "id": "award_acelera",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/480881100_1042952801187486_2810394445159684620_n_1.jpg",
+      "alt": "Premio Acelera y Envía 2023, primer lugar: Diluvium",
+      "heading": "Ganador del premio «Acelera y Envía»",
+      "text": "Elaborado por Wortev y Estafeta"
+     }
+    },
+    {
+     "id": "award_innovacion",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/Frame_718.jpg",
+      "alt": "Luis presentando el proyecto Control de Inundaciones",
+      "heading": "Primer lugar en Innovación Estatal",
+      "text": "Instituto Sinaloense de la Juventud",
+      "focal": "50% 30%"
+     }
+    },
+    {
+     "id": "award_posible",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/IMG_3514_2.jpg",
+      "alt": "Cartel del campamento POSiBLE",
+      "heading": "Seleccionados campamento nacional POSiBLE",
+      "text": "Programa nacional de emprendimiento y networking"
+     }
+    },
+    {
+     "id": "award_municipal",
+     "tipo": "award",
+     "ajustes": {
+      "image": "/media/files/Frame_721.jpg",
+      "alt": "Entrega de un reconocimiento a Luis",
+      "heading": "Ganador en emprendimiento, premio municipal de la juventud",
+      "text": "Otorgado por el Instituto Municipal de la Juventud",
+      "focal": "50% 35%"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_entrevista_nosotros_b1",
+   "tipo": "landing-historia",
+   "ajustes": {
+    "fondo": "blanco",
+    "ola": "corta"
+   },
+   "bloques": [
+    {
+     "id": "chapter_entrevista",
+     "tipo": "chapter",
+     "ajustes": {
+      "subheading": "Aquí puedes ver nuestra",
+      "heading": "Entrevista con ==Wortev==",
+      "text": "En su podcast «The talk para emprender».",
+      "image": "/media/files/Captura_de_pantalla_2025-05-09_a_la_s_11.49.55_a.m..jpg",
+      "alt": "Luis en el podcast The talk para emprender",
+      "link_text": "Ver la entrevista en YouTube",
+      "link": "https://www.youtube.com/watch?v=D19U6eHKky8"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cita_nosotros_b1",
+   "tipo": "landing-cita",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "capas",
+    "ola_espejo": true,
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina",
+    "text": "Sabemos que esto es solo el comienzo. Queremos seguir mejorando y expandiendo nuestro alcance para ayudar a más personas en México y en otros países afectados por las inundaciones.",
+    "heading": "Porque al final, no se trata solo de vender un producto. ==Se trata de proteger hogares, negocios y sueños.==",
+    "signature": "Con cariño,\nEquipo Diluvium"
+   },
+   "bloques": []
+  },
+  {
+   "id": "landing_cierre_nosotros_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

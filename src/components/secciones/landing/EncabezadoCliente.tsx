@@ -5,7 +5,6 @@
 // Esc); el carrito es el mismo carrito lateral de la tienda.
 
 import Image from "next/image";
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
 import { IconoBolsa } from "@/components/comunes/Iconos";
@@ -75,7 +74,9 @@ export function EncabezadoCliente({
       }`}
     >
       <div className="marco-version flex h-16 items-center gap-1 md:h-[76px] md:gap-3">
-        <Link href="/" className="mr-auto flex shrink-0 items-center" aria-label="Diluvium, ir a la tienda">
+        {/* Enlace normal y no <Link>: EnlacesVersion lo cambia por la portada de la versión y <Link> iría a la tienda. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a href="/" className="mr-auto flex shrink-0 items-center" aria-label="Diluvium, ir a la tienda">
           {logo && (
             <Image
               src={logo}
@@ -87,7 +88,7 @@ export function EncabezadoCliente({
               className="h-auto w-[104px] min-[400px]:w-[112px] md:w-[168px]"
             />
           )}
-        </Link>
+        </a>
 
         {whatsapp && (
           <a
@@ -157,26 +158,29 @@ export function EncabezadoCliente({
             <IconoTache className="size-6" />
           </button>
         </div>
-        <nav aria-label="En esta página" className="px-6 pt-4">
-          <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">{textoEnPagina}</p>
-          <ul className="m-0 list-none p-0">
-            {enPagina.map((e) => (
-              <li key={e.url}>
-                <a href={e.url} onClick={cerrarMenu} className="block border-b border-linea py-3.5 font-titulo text-lg font-medium">
-                  {e.texto}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <nav aria-label="Tienda" className="px-6 pt-6">
+        {/* Las páginas nuevas de B1 (Contacto, Nosotros…) no llevan «En esta página». */}
+        {enPagina.length > 0 && (
+          <nav aria-label="En esta página" className="px-6 pt-4">
+            <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">{textoEnPagina}</p>
+            <ul className="m-0 list-none p-0">
+              {enPagina.map((e) => (
+                <li key={e.url}>
+                  <a href={e.url} onClick={cerrarMenu} className="block border-b border-linea py-3.5 font-titulo text-lg font-medium">
+                    {e.texto}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+        <nav aria-label="Tienda" className={`px-6 ${enPagina.length > 0 ? "pt-6" : "pt-4"}`}>
           <p className="m-0 mb-1 text-[13px] font-semibold tracking-wide text-texto-suave uppercase">{textoTienda}</p>
           <ul className="m-0 list-none p-0">
             {tienda.map((e) => (
               <li key={e.url}>
-                <Link href={e.url} className="block border-b border-linea py-3.5 text-[17px]">
+                <a href={e.url} className="block border-b border-linea py-3.5 text-[17px]">
                   {e.texto}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

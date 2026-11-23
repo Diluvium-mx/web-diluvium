@@ -29,6 +29,7 @@ import { formato } from "./formato";
 import { TEXTOS_COMO_MEDIR, TEXTOS_COMPRA } from "./textos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
+import { limpiarHtml } from "@/components/comunes/Texto";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -249,6 +250,15 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                 </li>
               ))}
             </ul>
+          )}
+
+          {/* «show_description» (23-nov-2026): la descripción del producto del catálogo, para los repuestos y accesorios,
+              que no tienen otra parte que diga qué son. */}
+          {a.show_description === true && (buscarProducto(nombre)?.descripcionHtml ?? "").trim() && (
+            <div className="mt-5 border-t border-linea pt-4">
+              {r("description_heading") && <p className="m-0 mb-2 font-titulo text-[17px] font-medium">{formato(r("description_heading"))}</p>}
+              <div className="descripcion-version" dangerouslySetInnerHTML={{ __html: limpiarHtml(buscarProducto(nombre)?.descripcionHtml ?? "") }} />
+            </div>
           )}
 
           {tiendas.length > 0 && (

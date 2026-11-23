@@ -11,6 +11,15 @@ import { mapaPlantilla, PAGINAS_MAPA, type ArchivoMapa, type CampoMapa, type Esq
 const CARGAR: Record<ArchivoMapa, () => Promise<{ default: unknown }>> = {
   "index.b1": () => import("@contenido/tema/index.b1.json"),
   "product.b1": () => import("@contenido/tema/product.b1.json"),
+  "collection.b1": () => import("@contenido/tema/collection.b1.json"),
+  "product.b1.mini-compuerta": () => import("@contenido/tema/product.b1.mini-compuerta.json"),
+  "product.b1.medida-especial": () => import("@contenido/tema/product.b1.medida-especial.json"),
+  "product.b1.tapon-inflable": () => import("@contenido/tema/product.b1.tapon-inflable.json"),
+  "product.b1.accesorio": () => import("@contenido/tema/product.b1.accesorio.json"),
+  "page.contact.b1": () => import("@contenido/tema/page.contact.b1.json"),
+  "page.nosotros.b1": () => import("@contenido/tema/page.nosotros.b1.json"),
+  "blog.b1": () => import("@contenido/tema/blog.b1.json"),
+  "article.b1": () => import("@contenido/tema/article.b1.json"),
 };
 
 type Caja = { top: number; left: number; width: number; height: number };

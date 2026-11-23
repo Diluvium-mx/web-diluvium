@@ -1,0 +1,137 @@
+{
+ "fuente": "Página Productos de la versión B1 (23-nov-2026): /collections/all-products",
+ "secciones": [
+  {
+   "id": "landing_titulo_productos_b1",
+   "tipo": "landing-titulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Productos",
+    "heading": "Todo para que el agua no entre a tu casa",
+    "text": "La compuerta para tu puerta, la mini para filtraciones ligeras, la XXL para entradas anchas, el tapón para las coladeras y los repuestos de tu compuerta."
+   },
+   "bloques": []
+  },
+  {
+   "id": "landing_productos_b1",
+   "tipo": "landing-productos",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "capas",
+    "heading": "",
+    "button_text": "Ver producto",
+    "from_text": "Desde",
+    "reviews_text": "reseñas"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "badge": "La más vendida",
+      "heading": "Compuerta Anti-Inundaciones",
+      "text": "Detiene hasta 50 cm de agua. Se pone en 10 minutos, sin obras ni perforar."
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "badge": "A tu medida",
+      "heading": "Compuerta XXL a la medida",
+      "text": "Para entradas más anchas: hasta 2.5 m de ancho por 60 cm de alto."
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "badge": "",
+      "heading": "Mini Compuerta (30 cm de altura)",
+      "text": "Para encharcamientos y filtraciones ligeras que se meten por la puerta."
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "badge": "",
+      "heading": "Tapón inflable para coladeras",
+      "text": "Evita que el agua del drenaje salga por las coladeras de regaderas o inodoros."
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "badge": "Repuesto",
+      "heading": "Funda de repuesto",
+      "text": "Elástica e impermeable, para reponer la de tu compuerta. En 5 tamaños."
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "badge": "Repuesto",
+      "heading": "Tira de hule de repuesto",
+      "text": "Va al contorno de la compuerta para crear el sello que impide el paso del agua."
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "badge": "Accesorio",
+      "heading": "Plastilina de secado rápido",
+      "text": "Sella las esquinas de abajo al poner la compuerta. Alcanza para 2 instalaciones."
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cierre_productos_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "{calificacion} · más de 200 reseñas",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

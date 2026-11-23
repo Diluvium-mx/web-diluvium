@@ -57,6 +57,17 @@ export const PLANTILLAS: Record<string, string> = {
   "index.b1": "Portada · versión B1 (prueba)",
   // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/compuerta-anti-inundaciones).
   "product.b1": "Producto · versión B1 (prueba)",
+  // Las demás páginas de B1 (/v/b1/pages/contact, /pages/nosotros, /blogs/blog, /collections/all-products y los demás
+  // productos; 23-nov-2026).
+  "page.contact.b1": "Contacto · versión B1 (prueba)",
+  "page.nosotros.b1": "Nosotros · versión B1 (prueba)",
+  "blog.b1": "Blog · versión B1 (prueba)",
+  "article.b1": "Artículo del blog · versión B1 (prueba)",
+  "collection.b1": "Productos · versión B1 (prueba)",
+  "product.b1.mini-compuerta": "Mini compuerta · versión B1 (prueba)",
+  "product.b1.medida-especial": "Compuerta a la medida · versión B1 (prueba)",
+  "product.b1.tapon-inflable": "Tapón inflable · versión B1 (prueba)",
+  "product.b1.accesorio": "Repuestos y accesorios · versión B1 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));

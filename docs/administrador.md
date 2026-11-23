@@ -156,6 +156,16 @@ negocio).
   en `/v/<versión>/products/compuerta-anti-inundaciones` (la A es la ficha de hoy). Nunca se indexan: `noindex` en
   cada página, `/v/` bloqueado en robots.txt y `X-Robots-Tag` (`next.config.ts`). Tienen su propio diseño raíz
   (`src/app/(versiones)/`), sin las 2 barras de arriba de la tienda.
+- **Las demás páginas de B1 (23-nov-2026):** Contacto (`/v/b1/pages/contact`, `page.contact.b1.json`), Nosotros
+  (`/v/b1/pages/nosotros`, `page.nosotros.b1.json`), Blog (`/v/b1/blogs/blog`, `blog.b1.json`) y cada artículo
+  (`article.b1.json`), Productos (`/v/b1/collections/all-products`, `collection.b1.json`) y la ficha de los demás
+  productos (`product.b1.mini-compuerta`, `product.b1.medida-especial`, `product.b1.tapon-inflable` y
+  `product.b1.accesorio` para funda, tira de hule y plastilina). No traen encabezado ni pie: usan los de la portada B1
+  (`MarcoVersionB.tsx`). Secciones nuevas: `landing-titulo`, `landing-productos`, `landing-contacto` (el formulario hace
+  lo mismo que el de la tienda), `landing-historia`, `landing-premios`, `landing-cita`, `landing-blog` y
+  `landing-articulo`. Cada sección puede llevar `fondo` (blanco, niebla, cielo o marino) y `ola` (la ola de arriba:
+  corta, larga, capas o pie; `ola_espejo` la voltea). Las plantillas se arman con los textos reales de la tienda; se
+  editan en el administrador y en el editor local como la portada y el producto.
 - **Contenido:** portada en `contenido/tema/index.b1.json` («Portada · versión B1 (prueba)») y ficha en
   `product.b1.json` («Producto · versión B1 (prueba)»…). Las secciones son de tipo
   `landing-*` (`src/components/secciones/landing/`); la ficha es `landing-ficha` (`Ficha.tsx`, `Galeria.tsx`,

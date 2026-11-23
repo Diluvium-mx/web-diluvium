@@ -20,6 +20,7 @@ y **su nombre se copia** para pegarlo en el chat. «Ocultar» quita los recuadro
 |---|---|
 | `B1-P2` | Versión B1 › **P**roducto › parte 2 contando desde arriba (el encabezado es la 1) |
 | `B1-I3` | Versión B1 › **I**nicio (la portada) › parte 3 |
+| `B1-C2`, `B1-N3`… | Las demás páginas de B1 (23-nov-2026): **C**ontacto, **N**osotros, **B**log, **A**rtículo, **L**ista de productos, **M**ini compuerta, compuerta **X**XL, **T**apón y **R**epuestos |
 | `B1-P2.4` | El campo 4 de esa parte (un texto, una foto, un enlace…) |
 | `B1-P2.b5` | La pieza 5 de esa parte (una foto de la galería, una reseña, un beneficio, un paso…) |
 | `B1-P2.b5.1` | El campo 1 de esa pieza |

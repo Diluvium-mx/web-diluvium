@@ -98,6 +98,11 @@ SECCIONES = {
     "landing-beneficios": "Versión: beneficios", "landing-pasos": "Versión: cómo funciona (pasos)",
     "landing-preguntas": "Versión: preguntas frecuentes", "landing-cierre": "Versión: cierre",
     "landing-pie": "Versión: pie de página", "landing-ficha": "Versión: ficha del producto",
+    # Páginas nuevas de B1 (Contacto, Nosotros, Blog, artículo y Productos; 23-nov-2026).
+    "landing-titulo": "Versión: título de la página", "landing-productos": "Versión: productos en tarjetas",
+    "landing-contacto": "Versión: formas de contacto y formulario", "landing-historia": "Versión: historia por capítulos",
+    "landing-premios": "Versión: reconocimientos y premios", "landing-cita": "Versión: mensaje con firma",
+    "landing-blog": "Versión: artículos del blog", "landing-articulo": "Versión: artículo del blog",
 }
 
 BLOQUES = {
@@ -114,6 +119,8 @@ BLOQUES = {
     "before": "Punto de «lo de siempre»", "after": "Punto de «con Diluvium»", "benefit": "Beneficio", "step": "Paso",
     "question": "Pregunta", "point": "Viñeta", "trust": "Confianza (ícono: envio, garantia, pago, meses, devolucion o factura)",
     "marketplace": "Otra tienda (Mercado Libre, Amazon)",
+    "product": "Producto", "channel": "Forma de contacto (ícono: whatsapp, telefono, correo, ubicacion u horario)",
+    "chapter": "Capítulo", "award": "Premio",
 }
 
 
@@ -172,6 +179,16 @@ FIJAS = {
     "step_2": "Ventana «¿Cómo medir?»: paso 2", "step_3": "Ventana «¿Cómo medir?»: paso 3",
     "table_size": "Tabla: columna del tamaño", "table_width": "Tabla: columna del ancho",
     "table_heading": "Ventana de la tabla: título", "table_note": "Ventana de la tabla: nota",
+    # Páginas nuevas de B1 (23-nov-2026).
+    "fondo": "Fondo (blanco, niebla, cielo o marino)", "ola": "Ola de arriba (corta, larga, capas o pie)",
+    "ola_espejo": "Ola volteada", "badge": "Etiqueta sobre la foto", "from_text": "Texto antes del precio («Desde»)",
+    "reviews_text": "Texto después del número de reseñas", "faq_link_text": "Enlace a las preguntas",
+    "form_heading": "Formulario: título", "form_text": "Formulario: texto", "name_label": "Formulario: nombre",
+    "email_label": "Formulario: correo", "message_label": "Formulario: mensaje", "sending_text": "Formulario: mientras se envía",
+    "thanks_text": "Formulario: aviso de gracias", "required_text": "Formulario: aviso de campos obligatorios",
+    "show_description": "Mostrar la descripción del producto", "description_heading": "Título de la descripción",
+    "signature": "Firma", "link_text": "Texto del enlace", "read_more": "Texto para leer el artículo",
+    "back_text": "Texto para volver al blog", "author_prefix": "Texto antes del autor", "related_heading": "Título de los otros artículos",
     "more_button": "Botón «Ver más»", "count_text": "Cuántas se ven ({n} de {total})",
     "read_more_text": "Texto para leer la reseña completa", "viewer_title": "Reseña en grande: título ({n} de {total})",
     "prev_button": "Reseña en grande: anterior", "next_button": "Reseña en grande: siguiente",

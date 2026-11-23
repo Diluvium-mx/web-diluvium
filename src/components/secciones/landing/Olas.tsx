@@ -21,8 +21,25 @@ export type FormaOla = "linea" | "corta" | "larga" | "pie" | "capas" | "rizos" |
 export const COLOR: Record<Fondo, string> = { blanco: "#ffffff", niebla: "var(--color-niebla)", cielo: "#e6f0fb", marino: "var(--color-marino)" };
 const LINEA = "var(--color-marino-hondo)";
 
-/** Color de fondo de cada parte de las versiones B (lo que no está aquí no lleva ola). */
+const FONDOS: Fondo[] = ["blanco", "niebla", "cielo", "marino"];
+const FORMAS = Object.keys({ linea: 1, corta: 1, larga: 1, pie: 1, capas: 1, rizos: 1, curva: 1, inclinada: 1, espuma: 1, lluvia: 1 } satisfies Record<FormaOla, 1>) as FormaOla[];
+
+/** Clases del fondo de una parte (las secciones que aceptan «fondo» en su plantilla). */
+export function claseFondo(f: Fondo): string {
+  return { blanco: "bg-white", niebla: "bg-niebla", cielo: "bg-[#e6f0fb]", marino: "fondo-oscuro bg-marino text-white" }[f];
+}
+
+/** «fondo» escrito en la plantilla (blanco, niebla, cielo o marino), o el de siempre si no trae. */
+export function fondoPropio(ajustes: Seccion["ajustes"], porDefecto: Fondo): Fondo {
+  const f = texto(ajustes, "fondo") as Fondo;
+  return FONDOS.includes(f) ? f : porDefecto;
+}
+
+/** Color de fondo de cada parte de las versiones B (lo que no está aquí no lleva ola). Si la plantilla trae «fondo»,
+ *  manda ese (23-nov-2026: cada parte con su fondo para que cada cambio de parte se note). */
 function fondoDe(s: Seccion): Fondo | null {
+  const propio = texto(s.ajustes, "fondo") as Fondo;
+  if (FONDOS.includes(propio)) return propio;
   switch (s.tipo) {
     case "landing-portada":
       return texto(s.ajustes, "color_scheme") === "marino" ? "marino" : "blanco";
@@ -36,6 +53,17 @@ function fondoDe(s: Seccion): Fondo | null {
       return "niebla";
     case "landing-cierre":
       return "marino";
+    // Páginas nuevas de B1 (contacto, nosotros, blog, productos; 23-nov-2026).
+    case "landing-titulo":
+    case "landing-historia":
+    case "landing-cita":
+    case "landing-articulo":
+      return "blanco";
+    case "landing-productos":
+    case "landing-contacto":
+    case "landing-premios":
+    case "landing-blog":
+      return "niebla";
     default:
       return null;
   }
@@ -126,15 +154,17 @@ export function Ola({ arriba, abajo, forma, espejo = false }: { arriba: Fondo; a
 }
 
 /** Las partes de una versión B con su ola entre cada dos (según sus colores de fondo). */
-export function SeccionesConOlas({ secciones, producto }: { secciones: Seccion[]; producto?: Producto }) {
+export function SeccionesConOlas({ secciones, producto, slugArticulo }: { secciones: Seccion[]; producto?: Producto; slugArticulo?: string }) {
   return secciones.map((s, i) => {
     const antes = i > 0 ? fondoDe(secciones[i - 1]) : null;
     const ahora = fondoDe(s);
-    const forma = antes && ahora ? formaEntre(antes, ahora) : null;
+    // «ola» en la plantilla: qué ola va arriba de esta parte (y «ola_espejo» si va volteada); si no, la de siempre.
+    const propia = texto(s.ajustes, "ola") as FormaOla;
+    const forma = antes && ahora && antes !== "marino" ? (FORMAS.includes(propia) ? propia : formaEntre(antes, ahora)) : null;
     return (
       <Fragment key={s.id}>
-        {forma && antes && ahora && <Ola arriba={antes} abajo={ahora} forma={forma} />}
-        <Secciones secciones={[s]} producto={producto} />
+        {forma && antes && ahora && <Ola arriba={antes} abajo={ahora} forma={forma} espejo={s.ajustes.ola_espejo === true} />}
+        <Secciones secciones={[s]} producto={producto} slugArticulo={slugArticulo} />
       </Fragment>
     );
   });

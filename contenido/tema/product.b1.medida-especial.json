@@ -1,0 +1,207 @@
+{
+ "fuente": "Ficha de la compuerta XXL hecha a la medida en la versión B1 (23-nov-2026), con los textos de su página en la tienda",
+ "secciones": [
+  {
+   "id": "landing_ficha_medida_b1",
+   "tipo": "landing-ficha",
+   "ajustes": {
+    "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "rating_text": "",
+    "sold_text": "",
+    "heading": "",
+    "subheading": "Para entradas más anchas de lo normal: la hacemos a tu medida, hasta 2.5 m de ancho por 60 cm de alto, con un sello firme en todo el contorno.",
+    "price_note": "Hasta 6 meses sin intereses con tarjeta de crédito",
+    "size_heading": "Elige tu tamaño",
+    "measure_text": "",
+    "helper_text": "",
+    "custom_text": "",
+    "custom_link_text": "",
+    "custom_link": "",
+    "button_text": "Añadir al carrito",
+    "error_text": "Elige el tamaño de tu entrada para continuar.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20compuerta%20hecha%20a%20la%20medida%20-%20Diluvium",
+    "trust_heading": "",
+    "marketplace_text": "Encuéntranos en:",
+    "media_caption": "",
+    "gallery_style": "normal",
+    "include_product_media": true,
+    "sticky_bar": "al_bajar",
+    "sticky_text": "Pedir la mía",
+    "savings_text": "Ahorras",
+    "measure_placeholder": "Ej. 95",
+    "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
+    "wider_text": "Tu entrada es más ancha:",
+    "wider_link_text": "la hacemos a la medida",
+    "narrower_text": "Tu entrada es más angosta.",
+    "narrower_link_text": "Escríbenos y vemos tu caso",
+    "sold_out_text": "Agotado",
+    "whatsapp_button_text": "Pregúntanos por WhatsApp",
+    "drag_hint": "← Arrastra la línea →",
+    "sound_hint": "Toca para oír",
+    "video_heading": "¿Cómo medir tu entrada?",
+    "steps_button": "Ver pasos clave",
+    "steps_heading": "3 pasos clave",
+    "back_button": "Volver al video",
+    "step_1": "Mide el ancho de tu entrada",
+    "step_2": "Elige tu tamaño",
+    "step_3": "Recíbela y colócala",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada"
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Hasta 2.5 m de ancho por 60 cm de alto"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos y se retira en 5"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en unas 3 semanas, con 50 % de anticipo"
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "garantia",
+      "heading": "Hecha a tu medida",
+      "text": "Mándanos foto y medida de tu entrada"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "envio",
+      "heading": "Envío en 3 a 5 días",
+      "text": "Cuando está lista"
+     }
+    },
+    {
+     "id": "trust_3",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "devolucion",
+      "heading": "30 días de garantía",
+      "text": "Por defectos de fábrica"
+     }
+    },
+    {
+     "id": "trust_4",
+     "tipo": "trust",
+     "ajustes": {
+      "icon": "pago",
+      "heading": "Pago seguro",
+      "text": "Tarjeta, PayPal o transferencia"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_preguntas_medida_b1",
+   "tipo": "landing-preguntas",
+   "ajustes": {
+    "heading": "Preguntas frecuentes",
+    "text": "",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20compuerta%20hecha%20a%20la%20medida%20-%20Diluvium",
+    "search_heading": "¿No está tu pregunta? Escríbela aquí",
+    "search_placeholder": "Ej. ¿Llega a Monterrey?",
+    "search_button": "Preguntar",
+    "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
+    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
+    "fondo": "niebla",
+    "ola": "larga"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo la pido?",
+      "description": "<p>Mándanos por WhatsApp una foto de tu entrada por dentro y por fuera y la medida exacta de ancho, de marco a marco. Revisamos que se pueda instalar y te confirmamos.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuánto tarda?",
+      "description": "<p>Se fabrica bajo pedido en unas tres semanas a partir de la confirmación. Para empezarla pedimos un anticipo del 50 %; el resto se liquida cuando está lista para enviarse. Te avisamos cuando esté terminada y te la mandamos a la dirección que nos indiques.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>Una compuerta de acero expandible, su funda hecha a la medida, una tira de hule que va al contorno para el sello hermético, una llave para girar todos los tornillos y plastilina de secado rápido para las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecha?",
+      "description": "<p>De acero, para resistir fuertes impactos de olas y altas presiones de agua. Va forrada con una funda de neopreno, un material muy resistente y 100 % impermeable.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>30 días por defectos de fabricación, por ser hecha a la medida. Su vida útil puede llegar a los 5 a 7 años.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "landing_cierre_medida_b1",
+   "tipo": "landing-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "rating_text": "",
+    "button_text": "Comprar",
+    "button_link": "#tamanos",
+    "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_icon_end": true
+   },
+   "bloques": [
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Hecha a tu medida"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se guarda y se vuelve a usar"
+     }
+    }
+   ]
+  }
+ ]
+}

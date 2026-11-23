@@ -16,6 +16,11 @@ export type Version = {
   plantilla: NombrePlantilla;
   /** Ficha nueva de la compuerta de esta versión (/v/<clave>/products/compuerta-anti-inundaciones). La A usa la de hoy. */
   ficha?: NombrePlantilla;
+  /** Ficha de cada uno de los demás productos en esta versión (23-nov-2026). Los que no están aquí usan «ficha». */
+  fichas?: Partial<Record<string, NombrePlantilla>>;
+  /** Las demás páginas de la versión (23-nov-2026): /v/<clave>/pages/contact, /pages/nosotros, /blogs/blog,
+   *  /blogs/blog/<artículo> y /collections/all-products. La A no las tiene: sus enlaces van a la tienda de hoy. */
+  paginas?: { contacto: NombrePlantilla; nosotros: NombrePlantilla; blog: NombrePlantilla; articulo: NombrePlantilla; coleccion: NombrePlantilla };
   /** Qué cambia en la ficha del producto (para la página /v). */
   cambiaFicha: string;
   recomendada?: boolean;
@@ -26,8 +31,25 @@ export type Version = {
   enContra: string;
 };
 
-/** Productos que tienen ficha propia en las versiones. Los enlaces a ellos dentro de una versión se quedan en la versión. */
-export const PRODUCTOS_VERSION = ["compuerta-anti-inundaciones"];
+/** Productos que tienen ficha propia en las versiones. Los enlaces a ellos dentro de una versión se quedan en la versión.
+ *  La compuerta va primero (es la ficha que se prueba); los demás se agregaron el 23-nov-2026 con sus páginas de B1. */
+export const PRODUCTOS_VERSION = [
+  "compuerta-anti-inundaciones",
+  "compuerta-anti-inundaciones-hecha-a-la-medida",
+  "mini-compuerta",
+  "tapon-inflable-anti-inundaciones",
+  "funda-de-repuesto-compuerta-anti-inundaciones",
+  "accesorio-tira-de-hule-de-repuesto",
+  "accesorio-plastilina-de-secado-rapido",
+];
+
+/** Páginas de la tienda que tienen su versión en las versiones con «paginas» (para que los enlaces no se salgan). */
+export const PAGINAS_VERSION: Record<string, keyof NonNullable<Version["paginas"]>> = {
+  "/pages/contact": "contacto",
+  "/pages/nosotros": "nosotros",
+  "/blogs/blog": "blog",
+  "/collections/all-products": "coleccion",
+};
 
 /** Nombre del experimento en Clarity («experiment»). */
 export const EXPERIMENTO = "landing-b";
@@ -51,6 +73,15 @@ export const VERSIONES: Version[] = [
     plantilla: "portada.b1",
     recomendada: true,
     ficha: "producto.b1",
+    fichas: {
+      "compuerta-anti-inundaciones-hecha-a-la-medida": "producto.b1.medida",
+      "mini-compuerta": "producto.b1.mini",
+      "tapon-inflable-anti-inundaciones": "producto.b1.tapon",
+      "funda-de-repuesto-compuerta-anti-inundaciones": "producto.b1.accesorio",
+      "accesorio-tira-de-hule-de-repuesto": "producto.b1.accesorio",
+      "accesorio-plastilina-de-secado-rapido": "producto.b1.accesorio",
+    },
+    paginas: { contacto: "contacto.b1", nosotros: "nosotros.b1", blog: "blog.b1", articulo: "articulo.b1", coleccion: "coleccion.b1" },
     cambiaFicha: "Página de producto nueva. La primera foto de la galería es el antes y después que se arrastra.",
     cambia: "Una foto que se desliza con el dedo: de un lado la entrada con costales y del otro la misma entrada con la compuerta.",
     prueba: "Que ver el resultado real, y tocarlo, convence más que leerlo.",
@@ -61,4 +92,9 @@ export const VERSIONES: Version[] = [
 
 export function version(clave: string): Version | undefined {
   return VERSIONES.find((v) => v.clave === clave);
+}
+
+/** Ficha de un producto dentro de una versión B (la propia del producto o, si no tiene, la de la compuerta). */
+export function fichaDe(v: Version, producto: string): NombrePlantilla | undefined {
+  return v.fichas?.[producto] ?? v.ficha;
 }

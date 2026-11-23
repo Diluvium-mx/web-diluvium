@@ -116,3 +116,34 @@ html:has(.version dialog[open]) { overflow: hidden; }
 
 /* Ejemplos que cambian dentro de la caja de preguntas (Producto 347). */
 @keyframes ejemplo-entra { from { opacity: 0; transform: translateY(60%); } to { opacity: 1; transform: translateY(0); } }
+
+/* Texto de los artículos del blog en B1 (landing-articulo): 18 px con interlineado cómodo, títulos con la letra de los
+   títulos, listas con su viñeta y fotos redondeadas. El HTML viene limpio (limpiarCuerpo). */
+.articulo-version { font-size: 18px; line-height: 1.7; overflow-wrap: break-word; }
+.articulo-version :is(p, ul, ol, blockquote) { margin: 0 0 24px; }
+.articulo-version :is(h1, h2, h3, h4, h5, h6) {
+  margin: 40px 0 14px;
+  font-family: var(--font-titulo);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--color-marino);
+}
+.articulo-version h2 { font-size: 27px; }
+.articulo-version :is(h3, h4, h5, h6) { font-size: 22px; }
+.articulo-version > :first-child { margin-top: 0; }
+.articulo-version > :last-child { margin-bottom: 0; }
+.articulo-version :is(ul, ol) { padding-left: 22px; }
+.articulo-version ul { list-style-type: disc; }
+.articulo-version ol { list-style-type: decimal; }
+.articulo-version li + li { margin-top: 8px; }
+.articulo-version a { color: var(--color-marino); text-decoration: underline; text-underline-offset: 3px; }
+.articulo-version strong { color: var(--color-marino); }
+.articulo-version blockquote { padding-left: 16px; border-left: 3px solid var(--color-boton); }
+.articulo-version img { display: block; max-width: 100%; height: auto; margin: 8px 0; border-radius: 16px; }
+
+/* Descripción del producto en la ficha de B1 (repuestos y accesorios, «show_description»). */
+.descripcion-version { font-size: 15.5px; line-height: 1.6; color: var(--color-tinta); }
+.descripcion-version :is(p, ul, ol) { margin: 0 0 10px; }
+.descripcion-version > :last-child { margin-bottom: 0; }
+.descripcion-version :is(ul, ol) { padding-left: 20px; list-style-type: disc; }
+.descripcion-version strong { color: var(--color-marino); }
