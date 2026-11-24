@@ -3356,6 +3356,7 @@ export interface Plantilla {
             more_six_button?: string | null;
             photo_blur?: number | null;
             layout?: string | null;
+            product_filter?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -6241,6 +6242,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               more_six_button?: T;
               photo_blur?: T;
               layout?: T;
+              product_filter?: T;
               bloques?:
                 | T
                 | {

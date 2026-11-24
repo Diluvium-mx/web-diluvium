@@ -73,7 +73,7 @@ PALABRAS = {
 DISENO = re.compile(
     r"align|aligment|position|ordering|scheme|ratio|padding|margin|radius|thickness|opacity|direction|layout|"
     r"width|height|columns|column|size|style|color|gradient|overlay|speed|mask|corner|font|bg|background|spacing|"
-    r"carousel|per_row|alignment"
+    r"carousel|per_row|alignment|product_filter"
 )
 
 SECCIONES = {

@@ -11,6 +11,7 @@ import { esArchivoMapa } from "@/lib/mapa";
 import { EXPERIMENTO } from "@/lib/versiones";
 import { PastillaVersion } from "./PastillaVersion";
 import { AlejarFotos } from "@/components/AlejarFotos";
+import { FotosNitidas } from "@/components/FotosNitidas";
 
 // Marco de toda página de una versión B (portada, fichas y, desde el 23-nov-2026, Contacto, Nosotros, Blog, artículo y
 // Productos): «Saltar al contenido», encabezado, el cuerpo con sus olas, pie, la pastilla de la versión, la medición y
@@ -76,6 +77,8 @@ export function MarcoVersionB({
       <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
       <EnlacesVersion clave={v.clave} conPaginas={Boolean(v.paginas)} />
       <AlejarFotos />
+      {/* Cada foto baja la copia del tamaño con que se ve (forma del marco y acercamiento): sin esto, borrosas. */}
+      <FotosNitidas />
       {/* Mapa con los nombres de cada parte: solo con «?mapa» en la dirección. */}
       {archivoMapa && esArchivoMapa(archivoMapa) && <MapaVersion archivo={archivoMapa} />}
     </div>

@@ -169,6 +169,70 @@
    ]
   },
   {
+   "id": "landing_resenas_medida_b1",
+   "tipo": "landing-resenas",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "capas",
+    "product_filter": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+    "heading": "{calificacion} de 5 en {total} reseñas",
+    "subheading": "¿Qué opinan nuestros clientes de la compuerta hecha a la medida?",
+    "layout": "dos_columnas",
+    "more_button": "Ver más",
+    "count_text": "{n} de {total} reseñas",
+    "read_more_text": "… Mostrar más",
+    "viewer_title": "Reseña {n} de {total}",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "more_six_button": "Ver 6 más",
+    "photo_blur": 35
+   },
+   "bloques": [
+    {
+     "id": "review_1",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/8GTZEi8aQp-card-small.jpeg"
+     }
+    },
+    {
+     "id": "review_2",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/8xMKixCWeX-card-small.jpeg"
+     }
+    },
+    {
+     "id": "review_3",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/FWbFrXAxdQ-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_4",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/fGEWjtz7Cm-card-small.jpg"
+     }
+    },
+    {
+     "id": "review_5",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/TNE24anmk3-card-small.jpeg"
+     }
+    },
+    {
+     "id": "review_6",
+     "tipo": "review",
+     "ajustes": {
+      "image": "/media/resenas/MJSHiT6TpQ-card-small.jpeg"
+     }
+    }
+   ]
+  },
+  {
    "id": "landing_preguntas_medida_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
@@ -180,7 +244,7 @@
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
     "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
-    "fondo": "niebla",
+    "fondo": "blanco",
     "ola": "larga",
     "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
     "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"

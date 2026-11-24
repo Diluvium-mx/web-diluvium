@@ -5373,6 +5373,12 @@
      "tipo": "numero",
      "etiqueta": "Difuminado de las fotos en la reseña en grande (%)",
      "diseno": false
+    },
+    {
+     "clave": "product_filter",
+     "tipo": "texto",
+     "etiqueta": "Producto filtro",
+     "diseno": true
     }
    ],
    "bloques": [

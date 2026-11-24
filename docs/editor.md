@@ -152,6 +152,11 @@ y carrito 2 (hoja desde abajo con ×).
   (slug) del artículo como id; en `article_photos`, `image` es la de arriba e `image_1`, `image_2`… las del texto en
   orden (`fotosDelCuerpo` en `ArticuloVersion.tsx` les pone foto, encuadre, marca y un `<picture>` que recorta). No se
   quitan, agregan ni mueven (`PIEZAS_FIJAS` en `Editor.tsx`). Artículo nuevo en el blog → agregarle sus dos piezas.
+- Fotos nítidas (24-nov-2026, Contacto 5 borrosa): `src/components/FotosNitidas.tsx` mide qué tan ancha se ve cada
+  foto (forma del marco con `object-cover` y acercamiento) y, si es bastante más que su marco, cambia su `sizes` para
+  que el navegador baje una copia de ese tamaño. Va en `MarcoVersionB` junto a `AlejarFotos`.
+- Muro de reseñas de un solo producto (XXL): ajuste `product_filter` de `landing-resenas` con la dirección del
+  producto; {calificacion} y {total} del título salen de esas reseñas.
 - Encabezado y pie que una página toma de la portada (`MarcoVersionB`): van dentro de `data-prestada` y el editor no
   deja tocar sus fotos (su marca es de otra plantilla). Los marcos nuevos alrededor de una foto van como `<picture>`
   cuando hay `<span>` al lado, para no mover los números del mapa de esos textos.
