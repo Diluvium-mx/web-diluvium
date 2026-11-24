@@ -188,6 +188,7 @@ FIJAS = {
     "email_label": "Formulario: correo", "message_label": "Formulario: mensaje", "sending_text": "Formulario: mientras se envía",
     "thanks_text": "Formulario: aviso de gracias", "required_text": "Formulario: aviso de campos obligatorios",
     "show_description": "Mostrar la descripción del producto", "description_heading": "Título de la descripción",
+    "photo_blur": "Difuminado de las fotos en la reseña en grande (%)", "button_action": "Qué abre el botón (tabla o video)",
     "signature": "Firma", "link_text": "Texto del enlace", "read_more": "Texto para leer el artículo",
     "back_text": "Texto para volver al blog", "author_prefix": "Texto antes del autor", "related_heading": "Título de los otros artículos",
     "more_button": "Botón «Ver más»", "count_text": "Cuántas se ven ({n} de {total})",
