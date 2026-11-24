@@ -123,7 +123,7 @@ export function MuroResenas({
   textos?: TextosMuro;
   difuminado?: number;
   /** Tarjeta «¿Ya tienes tu compuerta?» para escribir una reseña (24-nov-2026): va en el hueco de la columna más corta. */
-  invitar?: { producto: ProductoResena; textos: TextosResenaNueva };
+  invitar?: { producto: ProductoResena; textos: TextosResenaNueva; prueba?: boolean };
 }) {
   const [abierta, setAbierta] = useState<number | null>(null);
   const [cuantas, setCuantas] = useState(elegidas.length);
@@ -218,7 +218,7 @@ export function MuroResenas({
             {col.map((x) => (
               <Tarjeta key={x.id} t={x} leerMas={textos.leerMas} alAbrir={() => setAbierta(tarjetas.indexOf(x))} />
             ))}
-            {invitar && c === dondeInvitar && <TarjetaInvitar producto={invitar.producto} textos={invitar.textos} />}
+            {invitar && c === dondeInvitar && <TarjetaInvitar producto={invitar.producto} textos={invitar.textos} prueba={invitar.prueba} />}
           </ul>
         ))}
       </div>

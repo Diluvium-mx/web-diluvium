@@ -81,6 +81,8 @@ export function ResenasVersion({ seccion, producto }: PropsSeccion) {
   const invitar = prod
     ? {
         producto: { nombre: prod.nombre, titulo: prod.titulo, imagen: prod.imagenes[0]?.src ?? null },
+        // Copia de prueba (SITIO_PRUEBA=1 al construir): la ventana avisa que ahí no se guardan.
+        prueba: process.env.SITIO_PRUEBA === "1",
         textos: {
           invitarTitulo: tx(a, "invite_heading", R.invitarTitulo),
           invitarTexto: tx(a, "invite_text", R.invitarTexto),

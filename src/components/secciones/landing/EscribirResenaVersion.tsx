@@ -37,7 +37,7 @@ function Estrella({ llena, tamano = 32 }: { llena: boolean; tamano?: number }) {
 }
 
 /** La tarjeta del hueco del muro. */
-export function TarjetaInvitar({ producto, textos }: { producto: ProductoResena; textos: TextosResenaNueva }) {
+export function TarjetaInvitar({ producto, textos, prueba = false }: { producto: ProductoResena; textos: TextosResenaNueva; prueba?: boolean }) {
   const [abierta, setAbierta] = useState(false);
   return (
     // data-pieza fija: los números del mapa de sus textos no cambian aunque se mueva de columna.
@@ -58,12 +58,12 @@ export function TarjetaInvitar({ producto, textos }: { producto: ProductoResena;
       >
         {textos.invitarBoton}
       </button>
-      {abierta && <VentanaResenaVersion producto={producto} textos={textos} cerrar={() => setAbierta(false)} />}
+      {abierta && <VentanaResenaVersion producto={producto} textos={textos} prueba={prueba} cerrar={() => setAbierta(false)} />}
     </li>
   );
 }
 
-function VentanaResenaVersion({ producto, textos, cerrar }: { producto: ProductoResena; textos: TextosResenaNueva; cerrar: () => void }) {
+function VentanaResenaVersion({ producto, textos, prueba, cerrar }: { producto: ProductoResena; textos: TextosResenaNueva; prueba: boolean; cerrar: () => void }) {
   const [estrellas, setEstrellas] = useState(0);
   const [encima, setEncima] = useState(0);
   const [texto, setTexto] = useState("");
@@ -101,6 +101,11 @@ function VentanaResenaVersion({ producto, textos, cerrar }: { producto: Producto
 
   const enviar = () => {
     if (!lista || enviando) return;
+    // En la copia de prueba las páginas de B son archivos fijos: no hay a dónde mandar la reseña (docs/despliegue.md).
+    if (prueba) {
+      setError("Esta es la copia de prueba de la página: aquí las reseñas no se guardan.");
+      return;
+    }
     setError("");
     const f = new FormData();
     f.set("calificacion", String(estrellas));
@@ -112,9 +117,13 @@ function VentanaResenaVersion({ producto, textos, cerrar }: { producto: Producto
     if (t.abierto) f.set("abierto", String(t.abierto));
     fotos.forEach((x) => f.append("fotos", x.archivo));
     iniciar(async () => {
-      const r = await enviarResena(f);
-      if (r.ok) setEnviada(true);
-      else setError(r.error);
+      try {
+        const r = await enviarResena(f);
+        if (r.ok) setEnviada(true);
+        else setError(r.error);
+      } catch {
+        setError("No se pudo enviar tu reseña. Revisa tu conexión e inténtalo de nuevo.");
+      }
     });
   };
 
