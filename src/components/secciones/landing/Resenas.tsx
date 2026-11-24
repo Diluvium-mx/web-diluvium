@@ -40,6 +40,12 @@ function EstrellasResena({ n }: { n: number }) {
   );
 }
 
+/** Todas las fotos de una reseña con sus medidas, empezando por la que se ve en la tarjeta (24-nov-2026: en la reseña
+ *  en grande se pasan con flechas). */
+function fotosDe(r: Resena, primera: string) {
+  return [primera, ...r.fotos.filter((f) => f !== primera)].filter(Boolean).map((src) => ({ src, ...medidasImagen(src) }));
+}
+
 /** Las demás reseñas publicadas, sin las que ya eligió la sección. Para «Ver más»: primero todas las que traen foto
  *  y al final las de puro texto (dueño, 21-nov-2026), cada grupo en el orden de la tienda. */
 function restantes(elegidas: string[], publicadas: Resena[]) {
@@ -47,7 +53,7 @@ function restantes(elegidas: string[], publicadas: Resena[]) {
     if (r.fotos.some((f) => elegidas.includes(f))) return [];
     const foto = r.fotos[0] ?? "";
     const { ancho, alto } = foto ? medidasImagen(foto) : { ancho: 0, alto: 0 };
-    return [{ id: `resena-${i + 1}`, nombre: r.nombre, calificacion: r.calificacion, texto: r.texto.trim(), foto, ancho, alto }];
+    return [{ id: `resena-${i + 1}`, nombre: r.nombre, calificacion: r.calificacion, texto: r.texto.trim(), foto, ancho, alto, fotos: fotosDe(r, foto) }];
   });
   return [...todas.filter((r) => r.foto), ...todas.filter((r) => !r.foto)];
 }
@@ -113,7 +119,7 @@ export function ResenasVersion({ seccion, producto }: PropsSeccion) {
           <MuroResenas
             tarjetas={tarjetas.map((t) => {
               const { ancho, alto } = medidasImagen(t.foto);
-              return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
+              return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, fotos: fotosDe(t, t.foto), estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
             })}
             mas={restantes(tarjetas.map((t) => t.foto), publicadas)}
             difuminado={typeof a.photo_blur === "number" ? a.photo_blur : undefined}

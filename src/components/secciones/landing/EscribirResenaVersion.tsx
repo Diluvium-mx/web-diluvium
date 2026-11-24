@@ -44,7 +44,7 @@ export function TarjetaInvitar({ producto, textos, prueba = false }: { producto:
     <li data-invitar="" data-pieza="invitar" className="rounded-xl border-2 border-dashed border-marino/25 bg-white px-4 pt-4 pb-4 text-center md:px-5 md:pt-5">
       <span className="flex justify-center gap-0.5" aria-hidden="true">
         {[1, 2, 3, 4, 5].map((n) => (
-          <Estrella key={n} llena={false} tamano={22} />
+          <Estrella key={n} llena tamano={22} />
         ))}
       </span>
       <p className="titulo-version m-0 mt-2.5 text-[17px] text-marino md:text-[19px]">{textos.invitarTitulo}</p>

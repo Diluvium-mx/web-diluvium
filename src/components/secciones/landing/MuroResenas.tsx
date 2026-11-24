@@ -20,6 +20,10 @@
 //     La foto se ve completa en un cuadro fijo y lo que sobra se llena con la misma foto difuminada, sin oscurecer y
 //     con el difuminado que se elige en el editor (solo CSS: es la
 //     misma imagen, no baja nada de más ni pesa en Cloudflare).
+//
+// Reseñas con varias fotos (dueño, 24-nov-2026; la ventana para escribir una deja subir hasta 5): la tarjeta lleva
+// arriba a la derecha cuántas fotos son y, en la reseña en grande, las fotos se pasan con flechas (o deslizando sobre
+// la foto) y arriba a la derecha dice cuál es («2/5»). Deslizar fuera de la foto sigue pasando de reseña.
 
 import Image from "next/image";
 import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties } from "react";
@@ -39,6 +43,18 @@ const suscribirCompu = (avisar: () => void) => {
 
 
 
+export type FotoResena = { src: string; ancho: number; alto: number };
+
+/** Ícono de «varias fotos» (dos cuadros encimados), como el de la app de reseñas de la tienda de hoy. */
+function IconoFotos({ className = "size-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      <rect x="7.5" y="3.5" width="13" height="13" rx="2.5" />
+      <path d="M16.5 20.5h-10a3 3 0 0 1-3-3v-10" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export type TarjetaMuro = {
   id: string;
   nombre: string;
@@ -48,6 +64,8 @@ export type TarjetaMuro = {
   foto: string;
   ancho: number;
   alto: number;
+  /** Todas las fotos de la reseña, la de la tarjeta primero (para pasarlas con flechas en la reseña en grande). */
+  fotos?: FotoResena[];
   estilo?: CSSProperties;
   marca?: Record<string, string>;
 };
@@ -87,6 +105,13 @@ function Tarjeta({ t, alAbrir, leerMas }: { t: TarjetaMuro; alAbrir: () => void;
       {t.foto && (
         <div className="relative overflow-hidden bg-niebla">
           <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} width={t.ancho} height={t.alto} sizes="(min-width: 768px) 360px, 50vw" className="block h-auto w-full" style={t.estilo} {...t.marca} />
+          {(t.fotos?.length ?? 0) > 1 && (
+            <span data-sin-numero="" className="absolute top-2 right-2 flex items-center gap-1 rounded-full bg-tinta/70 px-2 py-1 text-[12.5px] leading-none font-semibold text-white tabular-nums">
+              <IconoFotos className="size-3.5" />
+              {t.fotos!.length}
+              <span className="sr-only"> fotos</span>
+            </span>
+          )}
         </div>
       )}
       <div className="px-3.5 pt-3.5 pb-4">
@@ -161,13 +186,20 @@ export function MuroResenas({
     window.scrollTo({ top: siguiente.getBoundingClientRect().top + window.scrollY - cabeza, behavior: "smooth" });
   }
 
+  const [fotoDe, setFotoDe] = useState({ resena: -1, i: 0 });
   const ir = (i: number) => {
     const n = Math.min(total - 1, Math.max(0, i));
     // Pasar de la última a la vista agrega las siguientes 6 al muro.
     if (n >= cuantas) setCuantas((c) => Math.min(total, Math.max(c + DE_A, n + 1)));
     setAbierta(n);
+    setFotoDe({ resena: -1, i: 0 });
   };
   const t = abierta === null ? null : todas[abierta];
+  // Fotos de la reseña abierta y cuál se ve (cada vez que se abre o se pasa a una reseña, empieza en la primera).
+  const fotosT: FotoResena[] = t ? (t.fotos?.length ? t.fotos : t.foto ? [{ src: t.foto, ancho: t.ancho, alto: t.alto }] : []) : [];
+  const fi = abierta !== null && fotoDe.resena === abierta ? Math.min(fotoDe.i, fotosT.length - 1) : 0;
+  const irFoto = (i: number) => abierta !== null && setFotoDe({ resena: abierta, i: Math.max(0, Math.min(fotosT.length - 1, i)) });
+  const inicioDedoFoto = useRef<number | null>(null);
   const siguienteAgrega = abierta !== null && abierta === cuantas - 1 && cuantas < total;
   const enCompu = useSyncExternalStore(suscribirCompu, () => window.matchMedia(COMPU).matches, () => false);
   const n = enCompu ? 3 : 2;
@@ -216,7 +248,10 @@ export function MuroResenas({
             className="m-0 grid list-none gap-3 p-0 md:gap-4"
           >
             {col.map((x) => (
-              <Tarjeta key={x.id} t={x} leerMas={textos.leerMas} alAbrir={() => setAbierta(tarjetas.indexOf(x))} />
+              <Tarjeta key={x.id} t={x} leerMas={textos.leerMas} alAbrir={() => {
+                  setAbierta(tarjetas.indexOf(x));
+                  setFotoDe({ resena: -1, i: 0 });
+                }} />
             ))}
             {invitar && c === dondeInvitar && <TarjetaInvitar producto={invitar.producto} textos={invitar.textos} prueba={invitar.prueba} />}
           </ul>
@@ -279,13 +314,28 @@ export function MuroResenas({
               </button>
             </div>
             <div className="min-h-0 flex-1 overflow-y-auto">
-              {t.foto && (
+              {fotosT.length > 0 && (
                 // Cuadro fijo: la foto completa encima y la misma foto difuminada de fondo, entera (sin oscurecer) y un poco
                 // más grande para que la orilla del desenfoque no deje ver otro color (dueño, 24-nov-2026: el fondo casi
-                // del mismo color que la foto, sin franjas oscuras).
-                <div key={t.id} className="relative h-[42dvh] max-h-[380px] overflow-hidden bg-niebla">
+                // del mismo color que la foto, sin franjas oscuras). Con varias fotos: flechas, deslizar y «2/5».
+                <div
+                  key={`${t.id}-${fi}`}
+                  className="relative h-[42dvh] max-h-[380px] overflow-hidden bg-niebla"
+                  onPointerDown={(e) => {
+                    if (fotosT.length < 2) return;
+                    e.stopPropagation();
+                    inicioDedoFoto.current = e.clientX;
+                  }}
+                  onPointerUp={(e) => {
+                    if (fotosT.length < 2) return;
+                    e.stopPropagation();
+                    const d = inicioDedoFoto.current === null ? 0 : e.clientX - inicioDedoFoto.current;
+                    inicioDedoFoto.current = null;
+                    if (Math.abs(d) > 40) irFoto(fi + (d < 0 ? 1 : -1));
+                  }}
+                >
                   <Image
-                    src={t.foto}
+                    src={fotosT[fi].src}
                     alt=""
                     aria-hidden="true"
                     fill
@@ -293,7 +343,46 @@ export function MuroResenas({
                     className="scale-125 object-cover"
                     style={{ filter: `blur(${Math.round((Math.min(100, Math.max(0, difuminado)) / 100) * 40)}px)` }}
                   />
-                  <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="560px" className="object-contain" />
+                  <Image
+                    src={fotosT[fi].src}
+                    alt={fotosT.length > 1 ? `Foto ${fi + 1} de ${fotosT.length} de la compuerta de ${t.nombre}` : `Compuerta de ${t.nombre} puesta en su entrada`}
+                    fill
+                    sizes="560px"
+                    className="object-contain"
+                  />
+                  {fotosT.length > 1 && (
+                    <>
+                      <span className="absolute top-3 right-3 flex items-center gap-1.5 rounded-full bg-tinta/75 px-2.5 py-1.5 text-[13.5px] leading-none font-semibold text-white tabular-nums" aria-live="polite">
+                        <IconoFotos className="size-4" />
+                        {fi + 1}/{fotosT.length}
+                      </span>
+                      {[
+                        { dir: -1, etiqueta: "Foto anterior", lado: "left-2.5", trazo: "M15 5l-7 7 7 7" },
+                        { dir: 1, etiqueta: "Foto siguiente", lado: "right-2.5", trazo: "M9 5l7 7-7 7" },
+                      ].map((f) => {
+                        const fin = f.dir < 0 ? fi === 0 : fi === fotosT.length - 1;
+                        return (
+                          <button
+                            key={f.dir}
+                            type="button"
+                            aria-label={f.etiqueta}
+                            onClick={() => irFoto(fi + f.dir)}
+                            disabled={fin}
+                            className={`absolute top-1/2 ${f.lado} flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-marino shadow-[0_4px_14px_-4px_rgba(12,30,51,0.5)] transition-opacity disabled:pointer-events-none disabled:opacity-0`}
+                          >
+                            <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+                              <path d={f.trazo} />
+                            </svg>
+                          </button>
+                        );
+                      })}
+                      <span className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5" aria-hidden="true">
+                        {fotosT.map((_, i) => (
+                          <span key={i} className={`size-2 rounded-full ${i === fi ? "bg-white" : "bg-white/50"} shadow-[0_0_3px_rgba(0,0,0,0.4)]`} />
+                        ))}
+                      </span>
+                    </>
+                  )}
                 </div>
               )}
               <div className="px-5 pt-4 pb-5">

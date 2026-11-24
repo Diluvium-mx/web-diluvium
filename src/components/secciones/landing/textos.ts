@@ -64,13 +64,13 @@ export type TextosResenaNueva = {
 
 export const TEXTOS_RESENA_NUEVA: TextosResenaNueva = {
   invitarTitulo: "¿Ya tienes tu compuerta Diluvium?",
-  invitarTexto: "Cuéntanos cómo te fue: tu reseña ayuda a otras familias.",
+  invitarTexto: "Cuéntanos cómo te fue, tu reseña ayuda a otras familias.",
   invitarBoton: "Escribir mi reseña",
   titulo: "Escribe tu reseña",
   calificacion: "Tu calificación",
   comentario: "Tu comentario",
-  comentarioEjemplo: "¿Cómo te fue con tu compuerta? ¿En qué entrada la pusiste?",
-  fotos: "Agrega fotos de tu compuerta puesta (opcional)",
+  comentarioEjemplo: "¿Cómo te fue con tu compuerta?",
+  fotos: "Agrega fotos de tu compuerta instalada",
   nombre: "Tu nombre",
   enviar: "Enviar mi reseña",
   gracias: "¡Gracias por tu reseña!",
