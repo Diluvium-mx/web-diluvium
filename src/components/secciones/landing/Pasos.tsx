@@ -44,7 +44,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
           {boton && (
             <div className="mt-6 flex justify-center md:mt-8">
               {/* «button_action» = video (Portada 117, dueño 24-nov-2026): el botón abre el video «¿Cómo medir?» del producto
-                  en lugar de la tabla de medidas. */}
+                  en lugar de la tabla de medidas, sin «Ver pasos clave» (los pasos ya están en esta parte). */}
               {texto(seccion.ajustes, "button_action") === "video" ? (
                 <ComoMedir
                   texto={boton}
@@ -59,6 +59,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                     tocaParaOir: tx(seccion.ajustes, "sound_hint", TEXTOS_COMO_MEDIR.tocaParaOir),
                   }}
                   className={CLASE_BOTON_SECUNDARIO}
+                  conPasos={false}
                 />
               ) : (
                 <VentanaTabla

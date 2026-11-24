@@ -19,7 +19,7 @@
     "custom_link": "",
     "button_text": "Añadir al carrito",
     "error_text": "Elige el tamaño de tu entrada para continuar.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20un%20repuesto%20-%20Diluvium",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20me%20interesa%20este%20repuesto%3A%20%7Bproducto%7D.%20%C2%BFMe%20ayudan%3F",
     "trust_heading": "",
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
@@ -81,7 +81,7 @@
     "button_text": "Ver la compuerta",
     "button_link": "/products/compuerta-anti-inundaciones",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20su%20p%C3%A1gina%20y%20todav%C3%ADa%20tengo%20una%20duda%20sobre%20la%20compuerta%3A%20",
     "whatsapp_icon_end": true
    },
    "bloques": [

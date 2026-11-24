@@ -19,7 +19,7 @@
     "custom_link": "",
     "button_text": "Añadir al carrito",
     "error_text": "Elige el tamaño de tu entrada para continuar.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20el%20tapón%20inflable%20-%20Diluvium",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20me%20interesa%20el%20tap%C3%B3n%20inflable%20para%20coladeras%20y%20quiero%20saber%20qu%C3%A9%20medida%20necesito.",
     "trust_heading": "",
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
@@ -105,14 +105,16 @@
    "ajustes": {
     "heading": "Preguntas frecuentes",
     "text": "",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20el%20tapón%20inflable%20-%20Diluvium",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20sobre%20el%20tap%C3%B3n%20inflable.",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
     "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
     "fondo": "niebla",
-    "ola": "larga"
+    "ola": "larga",
+    "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
+    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
    },
    "bloques": [
     {
@@ -167,7 +169,7 @@
     "button_text": "Comprar",
     "button_link": "#tamanos",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20la%20p%C3%A1gina%20del%20tap%C3%B3n%20inflable%20y%20tengo%20una%20duda%3A%20",
     "whatsapp_icon_end": true
    },
    "bloques": [

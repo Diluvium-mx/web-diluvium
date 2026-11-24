@@ -5241,6 +5241,18 @@
      "tipo": "textoLargo",
      "etiqueta": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)",
      "diseno": false
+    },
+    {
+     "clave": "no_answer_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp si no hay respuesta ({pregunta} = lo que escribió)",
+     "diseno": false
+    },
+    {
+     "clave": "narrow_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp si la entrada es más angosta ({cm} = su medida)",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -5260,6 +5272,12 @@
        "clave": "description",
        "tipo": "html",
        "etiqueta": "Descripción",
+       "diseno": false
+      },
+      {
+       "clave": "whatsapp_message",
+       "tipo": "textoLargo",
+       "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
        "diseno": false
       }
      ]
@@ -5648,6 +5666,12 @@
      "clave": "discount_text",
      "tipo": "texto",
      "etiqueta": "Descuento junto al precio ({porcentaje} = el % real de descuento)",
+     "diseno": false
+    },
+    {
+     "clave": "narrow_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp si la entrada es más angosta ({cm} = su medida)",
      "diseno": false
     }
    ],
@@ -6093,7 +6117,7 @@
       },
       {
        "clave": "url",
-       "tipo": "texto",
+       "tipo": "textoLargo",
        "etiqueta": "Dirección",
        "diseno": false
       }
@@ -6391,7 +6415,7 @@
     },
     {
      "clave": "button_link",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Enlace del botón",
      "diseno": false
     },

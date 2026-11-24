@@ -10,7 +10,7 @@
     "heading": "¿Tienes dudas? Aquí las respuestas y formas de contacto",
     "text": "Llámanos, escríbenos por WhatsApp o déjanos un mensaje. Estamos en Los Mochis, Sinaloa, y enviamos a todo México.",
     "button_text": "Escríbenos por WhatsApp",
-    "button_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda",
+    "button_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium.",
     "image": "/media/files/oficina.jpg",
     "alt": "El equipo de Diluvium en su oficina de Los Mochis",
     "focal": "50% 60%",
@@ -44,7 +44,7 @@
       "icon": "whatsapp",
       "heading": "WhatsApp",
       "text": "(668) 241 9579",
-      "url": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda"
+      "url": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium."
      }
     },
     {
@@ -85,14 +85,16 @@
    "ajustes": {
     "heading": "Preguntas frecuentes",
     "text": "",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta.",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
     "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
     "fondo": "blanco",
-    "ola": "capas"
+    "ola": "capas",
+    "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
+    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
    },
    "bloques": [
     {
@@ -100,7 +102,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Mandan fuera de México?",
-      "description": "<p>Regularmente no realizamos envíos fuera de México, ya que los costos de transporte internacional suelen ser muy elevados, en algunos casos incluso mayores que el valor de la propia compuerta. Sin embargo, si estás interesado, te invitamos a ponerte en contacto con nosotros vía WhatsApp para revisar tu caso específico y evaluar opciones disponibles.</p>"
+      "description": "<p>Regularmente no realizamos envíos fuera de México, ya que los costos de transporte internacional suelen ser muy elevados, en algunos casos incluso mayores que el valor de la propia compuerta. Sin embargo, si estás interesado, te invitamos a ponerte en contacto con nosotros vía WhatsApp para revisar tu caso específico y evaluar opciones disponibles.</p>",
+      "whatsapp_message": "Hola, quiero saber si pueden enviar una compuerta fuera de México. Estoy en: "
      }
     },
     {
@@ -132,7 +135,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Puedo pedir factura de mi compra?",
-      "description": "<p>Sí, puedes solicitar tu factura sin problema. Para ello, necesitaríamos que nos envíes tu constancia de situación fiscal o los datos correspondientes para generar la factura. Puedes enviarnos esta información al número de WhatsApp (668) 241 9579 o al correo electrónico contacto@diluvium.com.mx. Ten en cuenta que la solicitud de factura solo es válida hasta 30 días después de la compra. En caso de que falte algún dato, te notificaremos para completar la información.</p>"
+      "description": "<p>Sí, puedes solicitar tu factura sin problema. Para ello, necesitaríamos que nos envíes tu constancia de situación fiscal o los datos correspondientes para generar la factura. Puedes enviarnos esta información al número de WhatsApp (668) 241 9579 o al correo electrónico contacto@diluvium.com.mx. Ten en cuenta que la solicitud de factura solo es válida hasta 30 días después de la compra. En caso de que falte algún dato, te notificaremos para completar la información.</p>",
+      "whatsapp_message": "Hola, quiero factura de mi compra. Les mando mi constancia de situación fiscal."
      }
     },
     {
@@ -140,7 +144,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Cómo puedo modificar o cancelar un pedido ya realizado?",
-      "description": "<p>Si necesitas modificar o cancelar tu pedido, te recomendamos hacerlo lo antes posible, preferentemente antes de que el producto sea enviado. En caso de que ya haya sido enviado, no podremos emitir un reembolso hasta que el producto sea devuelto a nuestro inventario. Si la cancelación se realiza a tiempo, podemos proceder con el reembolso completo de tu inversión sin inconvenientes. Para cualquier modificación o cancelación, contáctanos lo antes posible al número (668) 241 9579.</p>"
+      "description": "<p>Si necesitas modificar o cancelar tu pedido, te recomendamos hacerlo lo antes posible, preferentemente antes de que el producto sea enviado. En caso de que ya haya sido enviado, no podremos emitir un reembolso hasta que el producto sea devuelto a nuestro inventario. Si la cancelación se realiza a tiempo, podemos proceder con el reembolso completo de tu inversión sin inconvenientes. Para cualquier modificación o cancelación, contáctanos lo antes posible al número (668) 241 9579.</p>",
+      "whatsapp_message": "Hola, quiero cambiar o cancelar mi pedido. Mi número de pedido es: "
      }
     },
     {
@@ -148,7 +153,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Tienen tienda física o solo venta en línea?",
-      "description": "<p>Actualmente, nuestra tienda es en línea, pero sí ofrecemos la opción de entrega directa en nuestras oficinas para quienes se encuentren en la ciudad. Sin embargo, la gran mayoría de los pedidos se envían a través de paquetería a diversas ciudades de todo el país. Si prefieres recoger el producto directamente, por favor, contáctanos para coordinar la entrega en nuestra oficina.</p>"
+      "description": "<p>Actualmente, nuestra tienda es en línea, pero sí ofrecemos la opción de entrega directa en nuestras oficinas para quienes se encuentren en la ciudad. Sin embargo, la gran mayoría de los pedidos se envían a través de paquetería a diversas ciudades de todo el país. Si prefieres recoger el producto directamente, por favor, contáctanos para coordinar la entrega en nuestra oficina.</p>",
+      "whatsapp_message": "Hola, estoy en Los Mochis y quiero recoger mi compuerta en su oficina."
      }
     }
    ]
@@ -163,7 +169,7 @@
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20compuerta%3A%20",
     "whatsapp_icon_end": true
    },
    "bloques": [

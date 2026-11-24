@@ -50,7 +50,17 @@ const Chispa = () => (
 
 const SOMBRA = "shadow-[0_1px_3px_rgba(12,30,51,0.12),0_0_0_1px_rgba(12,30,51,0.07)]";
 
-function Tarjeta({ e }: { e: EntradaBanco }) {
+/** «Escríbenos por WhatsApp» con el mensaje de esa respuesta ya escrito. */
+function EnlaceWhatsapp({ href, texto }: { href: string; texto: string }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className="mt-1.5 inline-flex min-h-10 items-center font-semibold text-[#14532d] underline decoration-2 underline-offset-4">
+      {texto}
+      <IconoWhatsapp className="ml-1.5 inline size-5 text-[#1a7f37]" />
+    </a>
+  );
+}
+
+function Tarjeta({ e, wa, textoWhatsapp }: { e: EntradaBanco; wa: (mensaje: string) => string; textoWhatsapp: string }) {
   const [abierta, setAbierta] = useState(false);
   return (
     <details data-pieza={e.pieza} className={`group rounded-xl bg-white ${SOMBRA}`} onToggle={(ev) => setAbierta(ev.currentTarget.open)}>
@@ -68,6 +78,7 @@ function Tarjeta({ e }: { e: EntradaBanco }) {
             {e.enlace.texto}
           </a>
         )}
+        {e.whatsapp && <EnlaceWhatsapp href={wa(e.whatsapp)} texto={textoWhatsapp} />}
       </div>
     </details>
   );
@@ -86,6 +97,9 @@ export function PreguntasTarjetas({
   textoBoton = "Preguntar",
   textoSinRespuesta = "Mándanos tu pregunta por WhatsApp y te contestamos.",
   ejemplos = [],
+  textoWhatsapp = "Escríbenos por WhatsApp",
+  mensajeSinRespuesta = "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
+  mensajeAngosta = "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?",
 }: {
   faqs: EntradaBanco[];
   banco: EntradaBanco[];
@@ -100,6 +114,12 @@ export function PreguntasTarjetas({
   textoSinRespuesta?: string;
   /** Ejemplos que van cambiando dentro del campo (Producto 347): preguntas que no están en las de arriba. */
   ejemplos?: string[];
+  /** Texto del enlace de WhatsApp en las respuestas que piden escribir. */
+  textoWhatsapp?: string;
+  /** Mensaje ya escrito cuando no hay respuesta ({pregunta} = lo que escribió). */
+  mensajeSinRespuesta?: string;
+  /** Mensaje ya escrito cuando la entrada es más angosta que el tamaño más chico ({cm} = su medida). */
+  mensajeAngosta?: string;
 }) {
   const indice = useMemo(() => indexar(banco), [banco]);
   const [hechas, setHechas] = useState<Hecha[]>([]);
@@ -114,6 +134,7 @@ export function PreguntasTarjetas({
   }, [ejemplos.length, enfocado, valor]);
   const contador = useRef(0);
   const telefono = whatsapp.match(/phone=(\d+)/)?.[1] ?? "526682419579";
+  const wa = (mensaje: string) => `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
 
   function responder(q: string): EntradaBanco | null {
     const cm = medidaEscrita(q);
@@ -128,6 +149,7 @@ export function PreguntasTarjetas({
               ? `Una entrada de ${cm} cm es más ancha que los tamaños estándar: la hacemos a la medida.`
               : `Una entrada de ${cm} cm es más angosta que el tamaño más chico: escríbenos por WhatsApp y vemos tu caso.`,
         enlace: "fuera" in m && m.fuera === "grande" ? { texto: "Ver la compuerta hecha a la medida", href: enlaceMedida } : undefined,
+        whatsapp: "fuera" in m && m.fuera === "chica" ? mensajeAngosta.replace("{cm}", String(cm)) : undefined,
       };
     }
     return buscar(indice, q)[0] ?? null;
@@ -145,7 +167,7 @@ export function PreguntasTarjetas({
   return (
     <div className="grid gap-2.5">
       {faqs.map((e) => (
-        <Tarjeta key={e.pregunta} e={e} />
+        <Tarjeta key={e.pregunta} e={e} wa={wa} textoWhatsapp={textoWhatsapp} />
       ))}
 
       {hechas.map((h) => (
@@ -164,10 +186,11 @@ export function PreguntasTarjetas({
                     {h.r.enlace.texto}
                   </a>
                 )}
+                {h.r.whatsapp && <EnlaceWhatsapp href={wa(h.r.whatsapp)} texto={textoWhatsapp} />}
               </>
             ) : (
               <a
-                href={`https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(`Hola, tengo una pregunta: ${h.q}`)}`}
+                href={wa(mensajeSinRespuesta.replace("{pregunta}", h.q))}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-evento="toca_whatsapp"

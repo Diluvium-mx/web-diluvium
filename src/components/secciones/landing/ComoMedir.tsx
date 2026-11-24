@@ -50,12 +50,15 @@ export function ComoMedir({
   tamanos,
   variante = "a",
   textos = TEXTOS_COMO_MEDIR,
+  conPasos = true,
 }: {
   texto: string;
   className: string;
   tamanos: TamanoPaso[];
   variante?: VariantePasos;
   textos?: TextosComoMedir;
+  /** Sin «Ver pasos clave» debajo del video (Portada 215, dueño 24-nov-2026: ahí los pasos ya se ven en la página). */
+  conPasos?: boolean;
 }) {
   const ventana = useRef<HTMLDialogElement>(null);
   const boton = useRef<HTMLButtonElement>(null);
@@ -154,7 +157,7 @@ export function ComoMedir({
             />
           </div>
           {/* 217: solo el texto, al centro (dueño, 21-nov-2026); 224 conserva su flecha. */}
-          <BotonVentana texto={textos.botonPasos} alTocar={() => cambiarVista("pasos")} />
+          {conPasos && <BotonVentana texto={textos.botonPasos} alTocar={() => cambiarVista("pasos")} />}
         </div>
         {vista === "pasos" && (
           <div className="p-4">

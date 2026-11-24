@@ -17,6 +17,9 @@ export type EntradaBanco = {
   respuesta: string;
   claves?: string;
   enlace?: { texto: string; href: string };
+  /** Mensaje ya escrito para WhatsApp cuando la respuesta pide escribir (dueño, 24-nov-2026: cada botón de WhatsApp con
+   *  el mensaje de lo que la persona quiere hacer ahí). */
+  whatsapp?: string;
   /** Id de la pieza en la plantilla (las preguntas de la sección): conserva sus números en el mapa. */
   pieza?: string;
 };

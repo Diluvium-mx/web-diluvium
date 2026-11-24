@@ -232,7 +232,7 @@
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20le%C3%AD%20su%20historia%20en%20la%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20compuerta.",
     "whatsapp_icon_end": true
    },
    "bloques": [

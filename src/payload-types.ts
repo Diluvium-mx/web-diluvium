@@ -3302,6 +3302,8 @@ export interface Plantilla {
             search_button?: string | null;
             no_answer_text?: string | null;
             search_examples?: string | null;
+            no_answer_message?: string | null;
+            narrow_message?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3319,6 +3321,7 @@ export interface Plantilla {
                    * Texto con formato (HTML): <p>párrafo</p>, <strong>negritas</strong>, <a href="…">enlace</a>.
                    */
                   description?: string | null;
+                  whatsapp_message?: string | null;
                   id?: string | null;
                   blockName?: string | null;
                   blockType: 's46-b00';
@@ -3427,6 +3430,7 @@ export interface Plantilla {
             show_description?: boolean | null;
             description_heading?: string | null;
             discount_text?: string | null;
+            narrow_message?: string | null;
             size_heading?: string | null;
             gallery_style?: string | null;
             table_size?: string | null;
@@ -6149,6 +6153,8 @@ export interface PlantillasSelect<T extends boolean = true> {
               search_button?: T;
               no_answer_text?: T;
               search_examples?: T;
+              no_answer_message?: T;
+              narrow_message?: T;
               bloques?:
                 | T
                 | {
@@ -6159,6 +6165,7 @@ export interface PlantillasSelect<T extends boolean = true> {
                           claves?: T;
                           heading?: T;
                           description?: T;
+                          whatsapp_message?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -6247,6 +6254,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               show_description?: T;
               description_heading?: T;
               discount_text?: T;
+              narrow_message?: T;
               size_heading?: T;
               gallery_style?: T;
               table_size?: T;

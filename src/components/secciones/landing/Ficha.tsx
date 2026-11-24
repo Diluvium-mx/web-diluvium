@@ -123,6 +123,9 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
   const precioAntes = venta.precioAntes ? pesos(venta.precioAntes) : null;
   // «-8% en descuento» (Producto 61, dueño 24-nov-2026): el porcentaje real de descuento contra el precio de antes,
   // redondeado como la tienda. {porcentaje} se cambia por el número.
+  // El WhatsApp de la ficha: «{producto}» en su mensaje se cambia por el nombre del producto (una misma ficha sirve para
+  // la funda, la tira de hule y la plastilina).
+  const whatsappFicha = texto(a, "whatsapp_link").replace(/%7Bproducto%7D|\{producto\}/gi, encodeURIComponent(venta.nombre));
   const porcentaje = venta.precioAntes ? Math.round(((venta.precioAntes - venta.precio) / venta.precioAntes) * 100) : 0;
   const titulo = r("heading") || venta.nombre;
   const vendidas = r("sold_text");
@@ -213,7 +216,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
               enlaceMedida={texto(a, "custom_link")}
               textoBoton={r("button_text") || "Añadir al carrito"}
               textoError={r("error_text")}
-              whatsapp={texto(a, "whatsapp_link")}
+              whatsapp={whatsappFicha}
               textos={{
                 placeholder: tx(a, "measure_placeholder", TEXTOS_COMPRA.placeholder),
                 teQueda: tx(a, "fit_text", TEXTOS_COMPRA.teQueda),
@@ -223,6 +226,7 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                 masAngostaEnlace: tx(a, "narrower_link_text", TEXTOS_COMPRA.masAngostaEnlace),
                 agotado: tx(a, "sold_out_text", TEXTOS_COMPRA.agotado),
                 whatsapp: tx(a, "whatsapp_button_text", TEXTOS_COMPRA.whatsapp),
+                mensajeAngosta: tx(a, "narrow_message", TEXTOS_COMPRA.mensajeAngosta),
               }}
               textosComoMedir={{
                 tituloVideo: tx(a, "video_heading", TEXTOS_COMO_MEDIR.tituloVideo),

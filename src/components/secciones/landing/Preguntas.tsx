@@ -36,7 +36,13 @@ export function armarBanco(preguntas: Bloque[]): EntradaBanco[] {
   const medida = buscarProducto(ENLACE_MEDIDA.split("/").pop() ?? "");
   const precioMedida = medida?.variantes[0] ? pesos(medida.variantes[0].precio) : "un precio según la medida";
   return [
-    ...preguntas.map((p) => ({ pregunta: textoVersion(p.ajustes, "heading"), respuesta: plano(rellenar(texto(p.ajustes, "description"))), pieza: p.id })),
+    ...preguntas.map((p) => ({
+      pregunta: textoVersion(p.ajustes, "heading"),
+      respuesta: plano(rellenar(texto(p.ajustes, "description"))),
+      pieza: p.id,
+      // «whatsapp_message»: el mensaje ya escrito del enlace de WhatsApp debajo de la respuesta (solo si la respuesta pide escribir).
+      whatsapp: texto(p.ajustes, "whatsapp_message") || undefined,
+    })),
     ...BANCO_EXTRA.map((e) => ({ ...e, respuesta: rellenar(e.respuesta).replace("{precio_medida}", precioMedida) })),
   ];
 }
@@ -79,6 +85,9 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             placeholder={tx(a, "search_placeholder", "Ej. ¿Llega a Monterrey?")}
             textoBoton={tx(a, "search_button", "Preguntar")}
             textoSinRespuesta={tx(a, "no_answer_text", "Mándanos tu pregunta por WhatsApp y te contestamos.")}
+            textoWhatsapp={tx(a, "whatsapp_answer_text", "Escríbenos por WhatsApp")}
+            mensajeSinRespuesta={tx(a, "no_answer_message", "Hola, tengo una pregunta que no encontré en su página: {pregunta}")}
+            mensajeAngosta={tx(a, "narrow_message", "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?")}
             ejemplos={tx(a, "search_examples", EJEMPLOS)
               .split("\n")
               .map((e) => sinFormato(e).replace(/^Ej\.\s*/i, ""))

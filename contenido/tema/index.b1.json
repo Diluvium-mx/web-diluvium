@@ -9,7 +9,7 @@
     "button_text": "Comprar",
     "button_link": "/products/compuerta-anti-inundaciones",
     "menu_text": "Menú",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20compuerta%20anti-inundaciones.",
     "cart_title": "Tu carrito",
     "cart_added": "Se agregó a tu carrito",
     "cart_shipping": "Envío",
@@ -413,12 +413,14 @@
     "ola": "larga",
     "heading": "Antes de comprar, \nresponde tus dudas 👇🏻",
     "text": "",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20antes%20de%20comprar%20mi%20compuerta.",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
-    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?"
+    "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
+    "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
+    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
    },
    "bloques": [
     {
@@ -474,7 +476,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Me dan factura?",
-      "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>"
+      "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>",
+      "whatsapp_message": "Hola, quiero factura de mi compra. Les mando mi constancia de situación fiscal."
      }
     },
     {
@@ -482,7 +485,8 @@
      "tipo": "question",
      "ajustes": {
       "heading": "¿Cómo pago?",
-      "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>"
+      "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>",
+      "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito."
      }
     },
     {
@@ -505,7 +509,7 @@
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20su%20p%C3%A1gina%20y%20todav%C3%ADa%20tengo%20una%20duda%20sobre%20la%20compuerta%3A%20",
     "whatsapp_icon_end": true
    },
    "bloques": [

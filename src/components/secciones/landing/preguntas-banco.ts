@@ -125,6 +125,7 @@ export const BANCO_EXTRA: EntradaBanco[] = [
     pregunta: "¿En qué entradas se puede instalar?",
     respuesta:
       "En entradas con un marco firme y plano de al menos 4 cm; si hay zoclo, conviene retirarlo. En rejas, escalones, rampas, ventanales, puertas corredizas, de seguridad o de dos hojas depende de cada caso: mándanos por WhatsApp una foto de frente donde se vean el piso y los dos lados, y te decimos.",
+    whatsapp: "Hola, quiero saber si la compuerta se puede poner en mi entrada. Les mando una foto de frente donde se ven el piso y los dos lados.",
     claves: "reja escalón rampa ventanal ventana corrediza dos hojas zoclo vidrio",
   },
   {
@@ -225,12 +226,14 @@ export const BANCO_EXTRA: EntradaBanco[] = [
   {
     pregunta: "¿Dónde la compro?",
     respuesta: "Aquí mismo: elige tu tamaño arriba y toca «Añadir al carrito». También nos encuentras en Mercado Libre y Amazon, o cómprala por WhatsApp.",
+    whatsapp: "Hola, quiero comprar una compuerta por WhatsApp.",
     claves: "comprar compro compra pedir dónde la consigo mercado libre amazon",
   },
   {
     pregunta: "¿Dónde están? ¿Tienen tienda física?",
     respuesta:
       "Estamos en la calle José María Morelos y Pavón #254, colonia Centro, en Los Mochis, Sinaloa, donde se fabrican. Vendemos en línea a todo el país; si estás en la ciudad, puedes recogerla en la oficina: escríbenos para coordinar.",
+    whatsapp: "Hola, estoy en Los Mochis y quiero recoger mi compuerta en su oficina.",
     claves: "tienda física oficina recoger dirección ubicación sucursal dónde están",
   },
   {
@@ -241,11 +244,13 @@ export const BANCO_EXTRA: EntradaBanco[] = [
   {
     pregunta: "¿Cómo cambio o cancelo mi pedido?",
     respuesta: "Escríbenos lo antes posible, de preferencia antes de que se envíe: si se cancela a tiempo, te devolvemos todo. Si ya salió, el reembolso se hace cuando la compuerta regresa a nuestro almacén.",
+    whatsapp: "Hola, quiero cambiar o cancelar mi pedido. Mi número de pedido es: ",
     claves: "cancelar modificar pedido orden cambiar",
   },
   {
     pregunta: "¿Cómo los contacto?",
     respuesta: "Por WhatsApp al (668) 241 9579 o al correo contacto@diluvium.com.mx.",
+    whatsapp: "Hola, quiero hablar con alguien de Diluvium.",
     claves: "whatsapp teléfono número correo contacto hablar asesor",
   },
 ];

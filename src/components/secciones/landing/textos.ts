@@ -55,6 +55,8 @@ export type TextosCompra = {
   masAngostaEnlace: string;
   agotado: string;
   whatsapp: string;
+  /** Mensaje ya escrito de «Escríbenos y vemos tu caso» ({cm} = la medida que escribió). */
+  mensajeAngosta: string;
 };
 export const TEXTOS_COMPRA: TextosCompra = {
   placeholder: "Ej. 95",
@@ -65,6 +67,7 @@ export const TEXTOS_COMPRA: TextosCompra = {
   masAngostaEnlace: "Escríbenos y vemos tu caso",
   agotado: "Agotado",
   whatsapp: "Pregúntanos por WhatsApp",
+  mensajeAngosta: "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?",
 };
 
 export type TextosComoMedir = {

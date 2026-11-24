@@ -9,7 +9,7 @@
 // El tamaño elegido lo comparten la barra de compra del celular y este bloque (eleccion.ts).
 
 import { useId, useState } from "react";
-import type { Tamano } from "./datos";
+import { conMensaje, type Tamano } from "./datos";
 import { agregarElegido, elegir, useElegido } from "./eleccion";
 import { ComoMedir } from "./ComoMedir";
 import { TEXTOS_COMPRA, type TextosComoMedir, type TextosCompra } from "./textos";
@@ -155,7 +155,14 @@ export function CompraFicha({
             {resultado && "fuera" in resultado && resultado.fuera === "chica" && (
               <>
                 {textos.masAngosta}{" "}
-                <a href={whatsapp} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className="font-semibold text-marino underline decoration-2 underline-offset-4">
+                {/* Con su medida ya escrita en el mensaje (dueño, 24-nov-2026: cada WhatsApp con lo que la persona quiere). */}
+                <a
+                  href={conMensaje(whatsapp, textos.mensajeAngosta.replace("{cm}", medida.replace(",", ".")))}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-evento="toca_whatsapp"
+                  className="font-semibold text-marino underline decoration-2 underline-offset-4"
+                >
                   {textos.masAngostaEnlace}
                 </a>
                 .

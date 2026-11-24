@@ -98,3 +98,9 @@ export function textoVersion(ajustes: Ajustes, clave: string, venta?: DatosVenta
 export function tx(ajustes: Ajustes, clave: string, porDefecto: string): string {
   return texto(ajustes, clave) ? textoVersion(ajustes, clave) : porDefecto;
 }
+
+/** El mismo enlace de WhatsApp (mismo número) con otro mensaje ya escrito. */
+export function conMensaje(enlace: string, mensaje: string): string {
+  const telefono = enlace.match(/phone=(\d+)/)?.[1] ?? "526682419579";
+  return `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
+}
