@@ -191,8 +191,9 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                 <s>{precioAntes}</s>
               </span>
             )}
+            {/* Verde de descuento, claro como el fondo que tenía (Producto 61, dueño 24-nov-2026). */}
             {porcentaje >= 1 && (
-              <span className="rounded-md bg-[#fdf1dd] px-2 py-0.5 text-[14px] font-bold text-[#8a4b00]">
+              <span className="rounded-md bg-[#e3f5e8] px-2 py-0.5 text-[14px] font-bold text-[#1a7f37]">
                 {formato(tx(a, "discount_text", "-{porcentaje}% en descuento").replace("{porcentaje}", String(porcentaje)))}
               </span>
             )}

@@ -289,7 +289,8 @@
     "viewer_title": "Reseña {n} de {total}",
     "prev_button": "Anterior",
     "next_button": "Siguiente",
-    "more_six_button": "Ver 6 más"
+    "more_six_button": "Ver 6 más",
+    "photo_blur": 35
    },
    "bloques": [
     {

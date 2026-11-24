@@ -17,7 +17,8 @@
 //   - con 18 o más reseñas abiertas aparece una flecha flotante que lleva a la siguiente parte (B1-P4), para no bajar
 //     todas a mano;
 //   - la reseña en grande siempre mide lo mismo: «Anterior» y «Siguiente» no se mueven de lugar aunque cambie la foto.
-//     La foto se ve completa en un cuadro fijo y lo que sobra se llena con la misma foto difuminada (solo CSS: es la
+//     La foto se ve completa en un cuadro fijo y lo que sobra se llena con la misma foto difuminada, sin oscurecer y
+//     con el difuminado que se elige en el editor (solo CSS: es la
 //     misma imagen, no baja nada de más ni pesa en Cloudflare).
 
 import Image from "next/image";
@@ -96,7 +97,21 @@ function Tarjeta({ t, alAbrir, leerMas }: { t: TarjetaMuro; alAbrir: () => void;
   );
 }
 
-export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO }: { tarjetas: TarjetaMuro[]; mas?: TarjetaMuro[]; textos?: TextosMuro }) {
+/** Difuminado del fondo de la reseña en grande, de 0 a 100 % (100 % = 40 px de desenfoque). Se cambia en el editor
+ *  («Difuminado de las fotos», dueño 24-nov-2026). */
+export const DIFUMINADO_INICIAL = 35;
+
+export function MuroResenas({
+  tarjetas: elegidas,
+  mas = [],
+  textos = TEXTOS_MURO,
+  difuminado = DIFUMINADO_INICIAL,
+}: {
+  tarjetas: TarjetaMuro[];
+  mas?: TarjetaMuro[];
+  textos?: TextosMuro;
+  difuminado?: number;
+}) {
   const [abierta, setAbierta] = useState<number | null>(null);
   const [cuantas, setCuantas] = useState(elegidas.length);
   const ventana = useRef<HTMLDialogElement>(null);
@@ -212,9 +227,19 @@ export function MuroResenas({ tarjetas: elegidas, mas = [], textos = TEXTOS_MURO
             </div>
             <div className="min-h-0 flex-1 overflow-y-auto">
               {t.foto && (
-                // Cuadro fijo: la foto completa encima y la misma foto difuminada de fondo.
-                <div key={t.id} className="relative h-[42dvh] max-h-[380px] overflow-hidden bg-tinta">
-                  <Image src={t.foto} alt="" aria-hidden="true" fill sizes="560px" className="scale-110 object-cover opacity-60 blur-2xl" />
+                // Cuadro fijo: la foto completa encima y la misma foto difuminada de fondo, entera (sin oscurecer) y un poco
+                // más grande para que la orilla del desenfoque no deje ver otro color (dueño, 24-nov-2026: el fondo casi
+                // del mismo color que la foto, sin franjas oscuras).
+                <div key={t.id} className="relative h-[42dvh] max-h-[380px] overflow-hidden bg-niebla">
+                  <Image
+                    src={t.foto}
+                    alt=""
+                    aria-hidden="true"
+                    fill
+                    sizes="560px"
+                    className="scale-125 object-cover"
+                    style={{ filter: `blur(${Math.round((Math.min(100, Math.max(0, difuminado)) / 100) * 40)}px)` }}
+                  />
                   <Image src={t.foto} alt={`Compuerta de ${t.nombre} puesta en su entrada`} fill sizes="560px" className="object-contain" />
                 </div>
               )}

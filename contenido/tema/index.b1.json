@@ -130,7 +130,8 @@
     "viewer_title": "Reseña {n} de {total}",
     "prev_button": "Anterior",
     "next_button": "Siguiente",
-    "more_six_button": "Ver 6 más"
+    "more_six_button": "Ver 6 más",
+    "photo_blur": 35
    },
    "bloques": [
     {
@@ -357,12 +358,13 @@
     "ola": "capas",
     "ola_espejo": true,
     "heading": "3 pasos clave",
-    "button_text": "Ver tabla de medidas",
+    "button_text": "Ver video",
     "layout": "tarjetas",
     "table_heading": "Tabla de tamaños",
     "table_note": "Mide el ancho de tu entrada de marco a marco.",
     "table_size": "Tamaño",
-    "table_width": "Ancho de entrada"
+    "table_width": "Ancho de entrada",
+    "button_action": "video"
    },
    "bloques": [
     {
@@ -431,7 +433,7 @@
      "id": "question_2",
      "tipo": "question",
      "ajustes": {
-      "heading": "¿Hay que perforar o hacer obra?",
+      "heading": "¿Hay que perforar o modificar mi entrada?",
       "description": "<p>No. La entrada se queda tal como está: la compuerta se ajusta a presión con su gato mecánico. Se coloca en unos 10 minutos y la puedes quitar cuando quieras o dejarla puesta por meses.</p>"
      }
     },

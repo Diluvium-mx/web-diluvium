@@ -15,6 +15,7 @@ import {
   leerFocal,
   mapaPlantilla,
   PAGINAS_MAPA,
+  ZOOM_MINIMO,
   type Ajustes,
   type ArchivoMapa,
   type CampoMapa,
@@ -211,12 +212,24 @@ function CampoTexto({ id, valor, alCambiar }: { id: string; valor: string; alCam
   );
 }
 
+/** Campos numéricos que son un porcentaje de 0 a 100 (se editan con una barra). */
+const PORCENTAJES = new Set(["photo_blur"]);
+
 function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown) => void }) {
   const id = `campo-${campo.codigo}`;
   const valor = campo.valor;
   let control: React.ReactNode;
   if (campo.tipo === "siNo") {
     control = <input id={id} type="checkbox" checked={valor === true} onChange={(e) => alCambiar(e.target.checked)} className="size-5" />;
+  } else if (campo.tipo === "numero" && PORCENTAJES.has(campo.clave)) {
+    // Porcentajes (p. ej. el difuminado de las fotos de las reseñas): una barra de 0 a 100 %.
+    const n = typeof valor === "number" ? valor : 0;
+    control = (
+      <span className="flex items-center gap-3">
+        <input id={id} type="range" min={0} max={100} step={5} value={n} onChange={(e) => alCambiar(Number(e.target.value))} className="w-full" />
+        <span className="w-12 text-right text-[14px] tabular-nums">{n} %</span>
+      </span>
+    );
   } else if (campo.tipo === "numero") {
     control = <input id={id} type="number" value={typeof valor === "number" ? valor : ""} onChange={(e) => alCambiar(Number(e.target.value))} className="h-10 w-32 rounded-lg border border-linea px-3" />;
   } else if (campo.tipo === "html") {
@@ -358,8 +371,12 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         el.style.opacity = "0.15";
         continue;
       }
-      const estilo = estiloFoto(ahora.ajustes, s.clave) ?? {};
+      const estilo = (estiloFoto(ahora.ajustes, s.clave) ?? {}) as Record<string, unknown>;
       el.style.objectPosition = String(estilo.objectPosition ?? "");
+      // Alejada (acercamiento abajo de 1): foto completa; la página calcula cuánto con «--alejar» (AlejarFotos.tsx).
+      el.style.objectFit = String(estilo.objectFit ?? "");
+      if (estilo["--alejar"]) el.style.setProperty("--alejar", String(estilo["--alejar"]));
+      else el.style.removeProperty("--alejar");
       el.style.transform = String(estilo.transform ?? "");
       el.style.transformOrigin = String(estilo.transformOrigin ?? "");
       el.style.opacity = "";
@@ -435,6 +452,8 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     const nh = el instanceof HTMLVideoElement ? el.videoHeight : (el as HTMLImageElement).naturalHeight;
     if (!nw || !nh) return { ox: caja.width * 0.5, oy: caja.height * 0.5 };
     const escala = Math.max(caja.width / nw, caja.height / nh);
+    // Alejada: lo que se puede mover es poco; se usa medio marco para que arrastrar se sienta parejo.
+    if (zoom < 1) return { ox: caja.width * 0.5, oy: caja.height * 0.5 };
     return {
       ox: (nw * escala - caja.width) * zoom + caja.width * (zoom - 1),
       oy: (nh * escala - caja.height) * zoom + caja.height * (zoom - 1),
@@ -752,10 +771,13 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                       Listo
                     </button>
                   </div>
-                  <label className="flex items-center gap-2 text-[13px]">
-                    <span className="w-14 shrink-0 font-semibold">Acercar</span>
-                    <input type="range" min={1} max={3} step={0.05} value={zoom} onChange={(e) => claves && ponerEnSel({ [claves.zoom]: Number(e.target.value) })} className="w-full" />
-                    <span className="w-9 text-right tabular-nums">{zoom.toFixed(1)}×</span>
+                  {/* A la izquierda se aleja (se ve más de la foto, hasta completa); a la derecha se acerca. 1× = como llena
+                      su marco. (Portada 92, dueño 24-nov-2026.) */}
+                  <label className="flex items-center gap-1.5 text-[12.5px]">
+                    <span className="shrink-0 font-semibold">Alejar</span>
+                    <input type="range" min={ZOOM_MINIMO} max={3} step={0.05} value={zoom} onChange={(e) => claves && ponerEnSel({ [claves.zoom]: Number(e.target.value) })} className="w-full" />
+                    <span className="shrink-0 font-semibold">Acercar</span>
+                    <span className="w-9 text-right tabular-nums">{zoom.toFixed(2).replace(/0$/, "")}×</span>
                   </label>
                   <div className="flex flex-wrap gap-1.5">
                     <button type="button" onClick={() => setPedido({ agregar: false })} className="h-8 cursor-pointer rounded-lg bg-marino px-2.5 text-[12.5px] font-semibold text-white">

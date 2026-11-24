@@ -12,6 +12,11 @@ import { formato } from "./formato";
 import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
 import { VentanaTabla } from "./VentanaTabla";
+import { ComoMedir } from "./ComoMedir";
+import { TEXTOS_COMO_MEDIR } from "./textos";
+
+const CLASE_BOTON_SECUNDARIO =
+  "inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-medium text-marino transition-colors hover:bg-marino hover:text-white";
 import { claseFondo, fondoPropio } from "./Olas";
 
 export function PasosVersion({ seccion }: PropsSeccion) {
@@ -38,14 +43,33 @@ export function PasosVersion({ seccion }: PropsSeccion) {
           <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} />
           {boton && (
             <div className="mt-6 flex justify-center md:mt-8">
-              <VentanaTabla
-                tamanos={tamanos}
-                titulo={tx(seccion.ajustes, "table_heading", "Tabla de tamaños")}
-                nota={tx(seccion.ajustes, "table_note", "Mide el ancho de tu entrada de marco a marco.")}
-                columnas={columnas}
-                texto={boton}
-                className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-medium text-marino transition-colors hover:bg-marino hover:text-white"
-              />
+              {/* «button_action» = video (Portada 117, dueño 24-nov-2026): el botón abre el video «¿Cómo medir?» del producto
+                  en lugar de la tabla de medidas. */}
+              {texto(seccion.ajustes, "button_action") === "video" ? (
+                <ComoMedir
+                  texto={boton}
+                  tamanos={tamanos}
+                  textos={{
+                    tituloVideo: tx(seccion.ajustes, "video_heading", TEXTOS_COMO_MEDIR.tituloVideo),
+                    botonPasos: tx(seccion.ajustes, "steps_button", TEXTOS_COMO_MEDIR.botonPasos),
+                    tituloPasos: tx(seccion.ajustes, "steps_heading", TEXTOS_COMO_MEDIR.tituloPasos),
+                    botonVolver: tx(seccion.ajustes, "back_button", TEXTOS_COMO_MEDIR.botonVolver),
+                    pasos: TEXTOS_COMO_MEDIR.pasos,
+                    columnas,
+                    tocaParaOir: tx(seccion.ajustes, "sound_hint", TEXTOS_COMO_MEDIR.tocaParaOir),
+                  }}
+                  className={CLASE_BOTON_SECUNDARIO}
+                />
+              ) : (
+                <VentanaTabla
+                  tamanos={tamanos}
+                  titulo={tx(seccion.ajustes, "table_heading", "Tabla de tamaños")}
+                  nota={tx(seccion.ajustes, "table_note", "Mide el ancho de tu entrada de marco a marco.")}
+                  columnas={columnas}
+                  texto={boton}
+                  className={CLASE_BOTON_SECUNDARIO}
+                />
+              )}
             </div>
           )}
         </div>

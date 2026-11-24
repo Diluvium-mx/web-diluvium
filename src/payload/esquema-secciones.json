@@ -4924,6 +4924,12 @@
      "tipo": "texto",
      "etiqueta": "Tabla: columna del ancho",
      "diseno": true
+    },
+    {
+     "clave": "button_action",
+     "tipo": "texto",
+     "etiqueta": "Botón acción",
+     "diseno": false
     }
    ],
    "bloques": [
@@ -5336,6 +5342,12 @@
      "clave": "more_six_button",
      "tipo": "texto",
      "etiqueta": "Reseña en grande: ver más",
+     "diseno": false
+    },
+    {
+     "clave": "photo_blur",
+     "tipo": "numero",
+     "etiqueta": "Photo blur",
      "diseno": false
     }
    ],

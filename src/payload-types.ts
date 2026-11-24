@@ -3159,6 +3159,7 @@ export interface Plantilla {
             button_text?: string | null;
             table_heading?: string | null;
             table_note?: string | null;
+            button_action?: string | null;
             layout?: string | null;
             table_size?: string | null;
             table_width?: string | null;
@@ -3349,6 +3350,7 @@ export interface Plantilla {
             prev_button?: string | null;
             next_button?: string | null;
             more_six_button?: string | null;
+            photo_blur?: number | null;
             layout?: string | null;
             bloques?:
               | {
@@ -6044,6 +6046,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               button_text?: T;
               table_heading?: T;
               table_note?: T;
+              button_action?: T;
               layout?: T;
               table_size?: T;
               table_width?: T;
@@ -6179,6 +6182,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               prev_button?: T;
               next_button?: T;
               more_six_button?: T;
+              photo_blur?: T;
               layout?: T;
               bloques?:
                 | T

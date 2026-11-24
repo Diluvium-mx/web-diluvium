@@ -72,6 +72,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
               return { id: t.id, nombre: t.nombre, calificacion: t.calificacion, texto: t.texto, foto: t.foto, ancho, alto, estilo: estiloFoto(t.ajustes), marca: marcaEditar(seccion.id, t.id, "image") };
             })}
             mas={restantes(tarjetas.map((t) => t.foto))}
+            difuminado={typeof a.photo_blur === "number" ? a.photo_blur : undefined}
             textos={{
               verMas: tx(a, "more_button", TEXTOS_MURO.verMas),
               viendo: tx(a, "count_text", TEXTOS_MURO.viendo),

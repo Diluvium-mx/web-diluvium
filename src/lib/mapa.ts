@@ -152,13 +152,28 @@ export function clavesEncuadre(clave: string): { focal: string; zoom: string } {
   return { focal: `focal${sufijo}`, zoom: `zoom${sufijo}` };
 }
 
-/** Estilo de una foto con su encuadre («x% y%») y acercamiento (1 a 3), elegidos en el editor. El marco de la foto
- *  debe recortar lo que sobra (overflow-hidden). Sin ajustes: nada (la foto queda centrada, como siempre). */
+/** Lo menos que se puede alejar una foto (0.5 = la foto completa dentro de su marco). */
+export const ZOOM_MINIMO = 0.5;
+
+/** Estilo de una foto con su encuadre («x% y%») y acercamiento (0.5 a 3), elegidos en el editor. El marco de la foto
+ *  debe recortar lo que sobra (overflow-hidden). Sin ajustes: nada (la foto queda centrada, como siempre).
+ *  Abajo de 1 la foto se aleja (Portada 92, dueño 24-nov-2026): se ve más de ella, hasta completa en 0.5. Como cuánto
+ *  hay que achicarla depende del tamaño del marco en cada pantalla, la página lo calcula al verla (AlejarFotos.tsx) con
+ *  «--alejar»; lo que queda libre se llena con el color de la orilla de la foto. */
 export function estiloFoto(ajustes: Record<string, unknown>, clave = "image"): CSSProperties | undefined {
   const { focal, zoom } = clavesEncuadre(clave);
   const posicion = posicionFoto(ajustes[focal]);
-  const z = typeof ajustes[zoom] === "number" ? Math.min(3, Math.max(1, ajustes[zoom] as number)) : 1;
+  const z = typeof ajustes[zoom] === "number" ? Math.min(3, Math.max(ZOOM_MINIMO, ajustes[zoom] as number)) : 1;
   if (!posicion && z === 1) return undefined;
+  if (z < 1) {
+    return {
+      objectPosition: posicion ?? "50% 50%",
+      objectFit: "contain",
+      transform: "scale(var(--alejar-escala, 1))",
+      transformOrigin: posicion ?? "50% 50%",
+      ["--alejar" as string]: String(z),
+    } as CSSProperties;
+  }
   return {
     objectPosition: posicion,
     ...(z > 1 ? { transform: `scale(${z})`, transformOrigin: posicion ?? "50% 50%" } : {}),
