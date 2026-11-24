@@ -31,7 +31,7 @@ export function ProductosVersion({ seccion }: PropsSeccion) {
           </h2>
         )}
         {texto(a, "text") && <p className="m-0 mt-3 max-w-[40rem] text-[17px] leading-[1.55] text-tinta">{formato(textoVersion(a, "text"))}</p>}
-        <ul className={`m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3 ${titulo ? "mt-8 md:mt-10" : ""}`}>
+        <ul className={`m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${titulo ? "mt-8 md:mt-10" : ""}`}>
           {tarjetas.map(({ b, p }) => {
             const ba = b.ajustes;
             const foto = texto(ba, "image") || p.imagenes[0]?.src || "";

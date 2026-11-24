@@ -59,7 +59,7 @@ function FilaConfianza({ logos, seccionId }: { logos: Bloque[]; seccionId: strin
   }
   return (
     <div className="border-y border-linea bg-niebla text-marino">
-      <ul className="marco-version m-0 flex list-none flex-wrap items-center justify-center gap-x-8 gap-y-3 py-3.5 text-[15px] font-semibold md:gap-x-12 md:py-4">
+      <ul className="marco-version my-0 flex list-none flex-wrap items-center justify-center gap-x-8 gap-y-3 py-3.5 text-[15px] font-semibold md:gap-x-12 md:py-4">
         {grupos.map((g) => (
           <li key={g[0].id} className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
             {/* Con varios logos (Amazon y Mercado Libre), en el celular el texto va arriba y los logos juntos abajo. */}

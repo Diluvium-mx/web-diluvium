@@ -253,7 +253,7 @@
       "D (89cm a 97cm)",
       "E (98cm a 106cm)",
       "F (107cm a 115cm)",
-      "G (116cm a 123cm)"
+      "G (116cm a 124cm)"
      ]
     }
    ],
@@ -326,10 +326,10 @@
     },
     {
      "id": 52262791741660,
-     "titulo": "G (116cm a 123cm)",
+     "titulo": "G (116cm a 124cm)",
      "precio": 3000,
      "precioAntes": 3499,
-     "opcion1": "G (116cm a 123cm)",
+     "opcion1": "G (116cm a 124cm)",
      "sku": null,
      "codigoBarras": "",
      "imagen": null,

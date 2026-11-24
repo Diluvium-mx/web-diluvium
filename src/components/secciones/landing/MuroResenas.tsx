@@ -22,10 +22,19 @@
 //     misma imagen, no baja nada de más ni pesa en Cloudflare).
 
 import Image from "next/image";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties } from "react";
 import { conValores, TEXTOS_MURO, type TextosMuro } from "./textos";
 
 const PARA_FLECHA = 18;
+
+// En computadora el muro va en 3 columnas a lo ancho (24-nov-2026: en 2 columnas de 760 px quedaba media pantalla
+// vacía). Las tarjetas se reparten en orden (1, 2, 3 arriba; 4, 5, 6 abajo…), igual que en 2 columnas en celular.
+const COMPU = "(min-width: 1024px)";
+const suscribirCompu = (avisar: () => void) => {
+  const m = window.matchMedia(COMPU);
+  m.addEventListener("change", avisar);
+  return () => m.removeEventListener("change", avisar);
+};
 
 
 
@@ -156,11 +165,13 @@ export function MuroResenas({
   };
   const t = abierta === null ? null : todas[abierta];
   const siguienteAgrega = abierta !== null && abierta === cuantas - 1 && cuantas < total;
-  const columnas = [tarjetas.filter((_, i) => i % 2 === 0), tarjetas.filter((_, i) => i % 2 === 1)];
+  const enCompu = useSyncExternalStore(suscribirCompu, () => window.matchMedia(COMPU).matches, () => false);
+  const n = enCompu ? 3 : 2;
+  const columnas = Array.from({ length: n }, (_, c) => tarjetas.filter((_, i) => i % n === c));
 
   return (
     <>
-      <div ref={muro} className="grid max-w-[760px] grid-cols-2 items-start gap-3 md:gap-4">
+      <div ref={muro} className="grid max-w-[760px] grid-cols-2 items-start gap-3 md:gap-4 lg:max-w-none lg:grid-cols-3 lg:gap-5">
         {columnas.map((col, c) => (
           <ul key={c} className="m-0 grid list-none gap-3 p-0 md:gap-4">
             {col.map((x) => (
@@ -182,7 +193,7 @@ export function MuroResenas({
         </button>
       )}
       {cuantas < total && (
-        <div className="mt-6 flex max-w-[760px] flex-col items-center gap-2">
+        <div className="mt-6 flex max-w-[760px] flex-col items-center gap-2 lg:mt-8 lg:max-w-none">
           <button
             type="button"
             onClick={verMas}

@@ -30,6 +30,9 @@ ahí no hay fotos ni números que editar.
    beneficios, pasos). Se marca con un **marco rojo**. Los botones chicos encima de una foto (flechas de la galería, la
    línea del antes y después) siguen funcionando; el botón que cubre todo el video, en cambio, elige el video.
 2. **Arrastra la foto dentro del marco** hasta que quede bien acomodada; **«Acercar»** la agranda. Se ve al momento.
+   **«Alejar»** deja ver más de la foto; si ya se ve completa (una foto cuadrada en un marco cuadrado, la tabla de Mini,
+   las fotos de los artículos), la achica dentro de su marco (hasta 80 %) y el espacio alrededor toma el color de su
+   orilla si es claro (blanco en las fotos de producto).
 3. Sus botones:
    - **Cambiar foto / Cambiar video:** biblioteca con todo lo que ya tiene la página, o **«Subir desde la
      computadora»** (JPG, PNG o WebP de hasta 8 MB; MP4 de hasta 24 MB). Lo que se sube queda en
@@ -44,8 +47,7 @@ ahí no hay fotos ni números que editar.
      artículo y las de dentro de su texto, en **Artículo** (para ir a otro artículo, toca su título en el Blog o en
      «Sigue leyendo»: el editor se queda en la pestaña Artículo). Son independientes: cambiar la foto del artículo no
      cambia la de su tarjeta. «Sigue leyendo» muestra la foto de arriba de cada artículo. Estas fotos se cambian o
-     acomodan, no se quitan ni se agregan. En las fotos que ya se ven completas (las del artículo), «Alejar» no cambia
-     nada; «Acercar» sí.
+     acomodan, no se quitan ni se agregan.
    - **Logos:** el de arriba y el de abajo se cambian en **Portada** (y en **Producto**, que tiene los suyos); las demás
      páginas usan los de la Portada. También se cambian ahí los de «Visto en» y «Encuéntranos en», y en cada producto
      los de Mercado Libre y Amazon.
@@ -160,6 +162,12 @@ y carrito 2 (hoja desde abajo con ×).
 - Pasos clave con la tabla como foto (Mini): ajuste `table_image` de `landing-pasos` (sale en el paso 2 y en «Ver tabla
   de medidas», y se cambia en el editor); `producto` hace que tamaños y precio sean los de ese producto. Los muros de
   reseñas no muestran las de 1 estrella (`MINIMO_ESTRELLAS` en `Resenas.tsx`).
+- Computadora (24-nov-2026): `.marco-version` va en `@layer components` para que las clases de cada parte (por
+  ejemplo `max-w-[50rem]` del artículo) le ganen; y en `versiones.css` todos los cortes van en px (`sm` venía en rem y
+  sus reglas quedaban después de las de `lg`). Lo de computadora va con `lg:`; para revisar que el celular no se movió:
+  comparar lugar y tamaño de cada elemento a 390 px antes y después.
+- Un editor abierto desde antes de que se agregara una parte: esa parte no se atenúa como «quitada»; al tocarla pide
+  volver a cargar, y guardar no se niega por las secciones nuevas (se quedan como están en el archivo).
 - Encabezado y pie que una página toma de la portada (`MarcoVersionB`): van dentro de `data-prestada` y el editor no
   deja tocar sus fotos (su marca es de otra plantilla). Los marcos nuevos alrededor de una foto van como `<picture>`
   cuando hay `<span>` al lado, para no mover los números del mapa de esos textos.

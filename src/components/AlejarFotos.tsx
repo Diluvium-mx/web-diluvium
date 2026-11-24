@@ -40,6 +40,20 @@ function colorOrilla(img: HTMLImageElement): string | null {
   }
 }
 
+/** ¿Color claro? (la orilla blanca de las fotos de producto): con ese se llena el marco alrededor de la foto achicada. */
+const claro = (color: string) => (color.match(/\d+/g) ?? []).slice(0, 3).every((c) => Number(c) >= 200);
+
+/** El marco que recorta la foto (donde se ve el espacio libre cuando se achica). */
+const marcoDe = (img: HTMLImageElement) => img.parentElement?.closest<HTMLElement>(".overflow-hidden") ?? img.parentElement;
+
+function quitarFondoMarco(img: HTMLImageElement) {
+  const marco = marcoDe(img);
+  if (marco?.dataset.fondoAlejar) {
+    marco.style.removeProperty("background-color");
+    delete marco.dataset.fondoAlejar;
+  }
+}
+
 function ajustar(img: HTMLImageElement) {
   const z = parseFloat(img.style.getPropertyValue("--alejar"));
   if (!(z >= MINIMO && z < 1)) {
@@ -47,6 +61,7 @@ function ajustar(img: HTMLImageElement) {
       img.style.removeProperty("--alejar-escala");
       img.style.removeProperty("background-color");
       delete img.dataset.alejada;
+      quitarFondoMarco(img);
     }
     return;
   }
@@ -57,13 +72,23 @@ function ajustar(img: HTMLImageElement) {
   if (!W || !H || !w || !h) return;
   // Cuánto más grande es «llenar el marco» que «foto completa» en este marco.
   const llenar = Math.max(W / w, H / h) / Math.min(W / w, H / h);
-  const escala = (1 + (llenar - 1) * ((z - MINIMO) / (1 - MINIMO))).toFixed(4);
+  // Si el marco tiene la misma forma que la foto (la tabla de Mini, las fotos de los artículos), ya se ve completa:
+  // alejar la achica dentro del marco (en 0.5, al 80 %); si su orilla es clara, el marco se llena de ese color para que
+  // no se vea una franja gris alrededor (dueño, 24-nov-2026).
+  const escala = (llenar < 1.02 ? 0.6 + 0.4 * z : 1 + (llenar - 1) * ((z - MINIMO) / (1 - MINIMO))).toFixed(4);
   if (img.style.getPropertyValue("--alejar-escala") !== escala) img.style.setProperty("--alejar-escala", escala);
   if (!img.dataset.alejada) {
     img.dataset.alejada = "1";
     const color = colorOrilla(img);
     if (color) img.style.backgroundColor = color;
+    img.dataset.colorOrilla = color ?? "";
   }
+  const marco = marcoDe(img);
+  const color = img.dataset.colorOrilla ?? "";
+  if (marco && Number(escala) < 1 && color && claro(color)) {
+    marco.style.backgroundColor = color;
+    marco.dataset.fondoAlejar = "1";
+  } else quitarFondoMarco(img);
 }
 
 export function AlejarFotos() {

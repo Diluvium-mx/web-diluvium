@@ -22,17 +22,18 @@ export function leerEsquema(): Esquema {
 
 const PERMITIDO = /^[\w\-.À-ſ ]+$/;
 
-/** Revisa que lo que manda el editor tenga la misma forma que la plantilla de hoy: las mismas secciones (no se agregan
- * ni se quitan desde el editor), piezas de tipos que existen en esa sección y valores simples (texto, número, sí/no). */
+/** Revisa que lo que manda el editor tenga la misma forma que la plantilla de hoy: secciones que existen en el archivo
+ * (no se agregan desde el editor; si el archivo tiene una nueva que el editor abierto desde antes no conoce, se queda
+ * como está: combinarConBase), piezas de tipos que existen en esa sección y valores simples (texto, número, sí/no). */
 export function revisarPlantilla(archivo: ArchivoMapa, nueva: unknown, esquema: Esquema): string | null {
   const actual = leerPlantilla(archivo);
   const n = nueva as PlantillaTema;
-  if (!n || !Array.isArray(n.secciones) || n.secciones.length !== actual.secciones.length) return "Las secciones no coinciden.";
+  if (!n || !Array.isArray(n.secciones) || n.secciones.length > actual.secciones.length) return "Las secciones no coinciden.";
   for (const [i, s] of n.secciones.entries()) {
     // Los nombres de las piezas no se repiten dentro de una sección (entre secciones sí pueden, como «point_1»).
     const ids = new Set<string>();
-    const a = actual.secciones[i];
-    if (s.id !== a.id || s.tipo !== a.tipo) return `La sección ${i + 1} no coincide.`;
+    const a = actual.secciones.find((x) => x.id === s.id);
+    if (!a || s.tipo !== a.tipo) return `La sección ${i + 1} no coincide: vuelve a cargar el editor.`;
     const permitidas = new Set(esquema.secciones.find((x) => x.tipo === s.tipo)?.bloques.map((b) => b.tipo) ?? []);
     for (const pieza of [s, ...s.bloques]) {
       if (!pieza.ajustes || typeof pieza.ajustes !== "object") return "Falta el contenido de una pieza.";

@@ -290,6 +290,11 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const arrastre = useRef<{ px: number; py: number; x: number; y: number; ox: number; oy: number } | null>(null);
 
   const plantilla = borradores[archivo];
+  // La plantilla de ahora, para el toque en la página (que se arma una sola vez por carga).
+  const plantillaActual = useRef(plantilla);
+  useEffect(() => {
+    plantillaActual.current = plantilla;
+  }, [plantilla]);
   const mapa = useMemo(() => mapaPlantilla(archivo, plantilla, esquema), [archivo, plantilla, esquema]);
   const pendientes = archivos.filter((a) => JSON.stringify(borradores[a]) !== JSON.stringify(guardadas[a]));
   const doc = () => marco.current?.contentDocument ?? null;
@@ -379,6 +384,8 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
       const ahora = ubicar(plantilla, s);
       const antes = ubicar(guardadas[archivo], s);
       if (!ahora) {
+        // Parte nueva en el archivo (se agregó después de abrir el editor): no está quitada, solo falta volver a cargar.
+        if (!antes) continue;
         // Quitada (se va al guardar).
         el.style.opacity = "0.15";
         continue;
@@ -414,7 +421,12 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
       if (control && !control.contains(marcada) && area(control) < area(marcada) * 0.6) return;
       e.preventDefault();
       e.stopPropagation();
-      setSel(leerMarca(marcada.dataset.editar ?? ""));
+      const elegida = leerMarca(marcada.dataset.editar ?? "");
+      if (!ubicar(plantillaActual.current, elegida)) {
+        setMensaje("Esta parte es nueva: vuelve a cargar el editor (⌘R) para editarla. Guarda antes lo que tengas pendiente.");
+        return;
+      }
+      setSel(elegida);
     };
     d.addEventListener("click", alTocar, true);
     return () => d.removeEventListener("click", alTocar, true);

@@ -172,7 +172,12 @@ export function Galeria({
       </div>
       {pie && <p className="m-0 mt-2 text-[14px] leading-5 text-texto-suave">{formato(pie)}</p>}
       {medios.length > 1 && (
-        <ul className="m-0 mt-3 hidden list-none grid-cols-6 gap-2 p-0 lg:grid">
+        // Miniaturas (solo computadora): todas en un renglón hasta 8 (24-nov-2026: con 7 u 8 fotos la última quedaba
+        // sola abajo); con menos de 6, del tamaño de 6 por renglón.
+        <ul
+          className="m-0 mt-3 hidden list-none gap-2 p-0 lg:grid"
+          style={{ gridTemplateColumns: `repeat(${Math.min(8, Math.max(6, Math.min(12, medios.length)))}, minmax(0, 1fr))` }}
+        >
           {medios.slice(0, 12).map((m, i) => {
             const t = miniatura(m);
             return (

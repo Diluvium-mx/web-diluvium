@@ -4,6 +4,7 @@
 // ver la respuesta ahí mismo (PreguntasTarjetas.tsx, propuesta 1 que eligió el dueño), con las de la sección más
 // preguntas-banco.ts (incluye la guía de Angela del CRM).
 
+import { Fragment } from "react";
 import type { PropsSeccion } from "../registro";
 import { texto, type Bloque } from "@/lib/contenido";
 import type { EntradaBanco } from "./buscarPregunta";
@@ -30,6 +31,24 @@ const plano = (html: string) =>
     .replace(/&#39;/g, "'")
     .replace(/\s+/g, " ")
     .trim();
+
+/** Título con la mano 👇 (las preguntas van abajo): en computadora las preguntas van a la derecha y la mano apunta
+ *  hacia ellas 👉 (24-nov-2026). Es adorno: los lectores de pantalla no la leen. */
+function conMano(titulo: string) {
+  const partes = titulo.split("👇");
+  if (partes.length === 1) return formato(titulo);
+  return partes.map((p, i) => (
+    <Fragment key={i}>
+      {i > 0 && (
+        <span aria-hidden="true">
+          <span className="lg:hidden">👇</span>
+          <span className="hidden lg:inline">👉</span>
+        </span>
+      )}
+      {formato(p)}
+    </Fragment>
+  ));
+}
 
 /** Las preguntas de la sección (con su respuesta en texto plano) más las del banco, con los precios del catálogo. */
 export function armarBanco(preguntas: Bloque[]): EntradaBanco[] {
@@ -63,7 +82,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <h2 id="titulo-preguntas" className="titulo-version m-0 text-[28px] md:text-[38px]">
-            {formato(textoVersion(a, "heading"))}
+            {conMano(textoVersion(a, "heading"))}
           </h2>
           {texto(a, "text") && <p className="m-0 mt-3 text-[17px] text-texto-suave">{formato(textoVersion(a, "text"))}</p>}
           {/* El enlace acompaña al texto: sin texto, no se pone (Producto: el WhatsApp va al final, en 193). */}

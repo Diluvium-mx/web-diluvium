@@ -51,11 +51,12 @@ export function PasosVersion({ seccion }: PropsSeccion) {
     }));
     return (
       <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className={`${claseFondo(fondoPropio(seccion.ajustes, "niebla"))} py-14 text-marino md:py-20`}>
-        <div className="marco-version max-w-[560px]">
-          <h2 id="titulo-pasos" className="titulo-version m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
+        {/* Angosta en celular y tableta; en computadora, a lo ancho con los tres pasos en fila. */}
+        <div className="marco-version max-w-[560px] lg:max-w-[1352px]">
+          <h2 id="titulo-pasos" className="titulo-version m-0 mb-6 text-[28px] md:mb-8 md:text-[38px] lg:mb-10">
             {formato(textoVersion(seccion.ajustes, "heading"))}
           </h2>
-          <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} />
+          <PasosMedir variante="a" tamanos={tamanos} pasos={tarjetas} columnas={columnas} enFila />
           {boton && (
             <div className="mt-6 flex justify-center md:mt-8">
               {/* «button_action» = video (Portada 117, dueño 24-nov-2026): el botón abre el video «¿Cómo medir?» del producto

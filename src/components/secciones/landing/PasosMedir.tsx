@@ -126,10 +126,11 @@ function Dibujo({ paso }: { paso: PasoMedir }) {
   );
 }
 
-/** La tabla de tamaños hecha foto, completa y a lo ancho (en su marco, para el acercamiento del editor). */
+/** La tabla de tamaños hecha foto, completa y a lo ancho (en su marco, para el acercamiento del editor). Sin esquinas
+ *  redondeadas: la tabla trae sus orillas cuadradas y el redondeo se comía las de abajo (dueño, 24-nov-2026). */
 export function TablaFoto({ foto }: { foto: FotoTabla }) {
   return (
-    <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-xl">
+    <div className="mx-auto w-full max-w-[360px] overflow-hidden">
       <Image src={foto.src} alt={foto.alt} width={foto.ancho} height={foto.alto} sizes="360px" className="h-auto w-full" style={foto.estilo} {...foto.marca} />
     </div>
   );
@@ -140,17 +141,18 @@ function Visual({ paso, tamanos, columnas }: { paso: PasoMedir; tamanos: TamanoP
   return <Dibujo paso={paso} />;
 }
 
-/** «a» · Tarjetas: cada paso en su tarjeta, número grande, título y dibujo. */
-function Tarjetas({ pasos, tamanos, columnas }: { pasos: PasoMedir[]; tamanos: TamanoPaso[]; columnas?: [string, string] }) {
+/** «a» · Tarjetas: cada paso en su tarjeta, número grande, título y dibujo. Con «enFila» (la parte de pasos en
+ *  computadora, 24-nov-2026) las tres van una junto a otra y del mismo alto; en la ventana y en celular, una abajo de otra. */
+function Tarjetas({ pasos, tamanos, columnas, enFila }: { pasos: PasoMedir[]; tamanos: TamanoPaso[]; columnas?: [string, string]; enFila?: boolean }) {
   return (
-    <ol className="m-0 grid list-none gap-3 p-0">
+    <ol className={`m-0 grid list-none gap-3 p-0 ${enFila ? "lg:grid-cols-3 lg:gap-5" : ""}`}>
       {pasos.map((p, i) => (
-        <li key={i} data-pieza={p.pieza} className="rounded-2xl border border-linea bg-white p-4">
+        <li key={i} data-pieza={p.pieza} className={`rounded-2xl border border-linea bg-white p-4 ${enFila ? "lg:flex lg:flex-col lg:p-6" : ""}`}>
           <div className="flex items-center gap-3">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-marino font-titulo text-[20px] font-medium text-white">{i + 1}</span>
             <h3 className="m-0 font-titulo text-[20px] leading-tight font-medium text-marino">{formato(p.titulo)}</h3>
           </div>
-          <div className="mt-3">
+          <div className={`mt-3 ${enFila ? "lg:mt-5 lg:flex lg:w-full lg:flex-1 lg:items-center" : ""}`}>
             <Visual paso={p} tamanos={tamanos} columnas={columnas} />
           </div>
         </li>
@@ -233,14 +235,17 @@ export function PasosMedir({
   tamanos,
   pasos = PASOS_MEDIR,
   columnas,
+  enFila,
 }: {
   variante?: VariantePasos;
   tamanos: TamanoPaso[];
   pasos?: PasoMedir[];
   /** Encabezados de la tabla de tamaños. */
   columnas?: [string, string];
+  /** En computadora, las tarjetas una junto a otra (solo la parte de pasos, no la ventana). */
+  enFila?: boolean;
 }) {
   if (variante === "b") return <Linea pasos={pasos} tamanos={tamanos} />;
   if (variante === "c") return <Deslizable pasos={pasos} tamanos={tamanos} />;
-  return <Tarjetas pasos={pasos} tamanos={tamanos} columnas={columnas} />;
+  return <Tarjetas pasos={pasos} tamanos={tamanos} columnas={columnas} enFila={enFila} />;
 }

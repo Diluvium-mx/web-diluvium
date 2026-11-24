@@ -17,6 +17,11 @@
   --color-linea: #d9e2ec;
   --color-texto-suave: #45566a;
   --color-estrella: #f2b01e;
+  /* Todos los cortes de pantalla en px (24-nov-2026): «sm» venía en rem (40rem) y los demás en px, y Tailwind ponía
+     las reglas de «sm» después de las de «lg»; en computadora ganaba la de celular grande (Productos y Premios se
+     quedaban en 2 columnas aunque decían 3). Mismo valor, solo la unidad. */
+  --breakpoint-sm: 640px;
+  --breakpoint-2xl: 1536px;
 }
 
 /* Títulos: la misma letra de la tienda de hoy (Archivo, grosor 500, ancho normal, interlineado 1.25). Antes era
@@ -28,20 +33,24 @@
   text-wrap: balance;
 }
 
-/* Contenedor de las versiones: 16 px de margen en celular, 32 en tableta y 56 en computadora; 1240 px de contenido. */
-.marco-version {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: calc(1240px + 2 * var(--margen-version));
-  margin-inline: auto;
-  padding-inline: var(--margen-version);
-  --margen-version: 16px;
-}
-@media (min-width: 768px) {
-  .marco-version { --margen-version: 32px; }
-}
-@media (min-width: 1200px) {
-  .marco-version { --margen-version: 56px; }
+/* Contenedor de las versiones: 16 px de margen en celular, 32 en tableta y 56 en computadora; 1240 px de contenido.
+   En la capa «components» (24-nov-2026): fuera de capa le ganaba a las clases de cada parte, y un «max-w-[50rem]»
+   (texto del artículo) o «max-w-[560px]» (pasos clave) no hacía nada en computadora: todo se estiraba a 1240 px. */
+@layer components {
+  .marco-version {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: calc(1240px + 2 * var(--margen-version));
+    margin-inline: auto;
+    padding-inline: var(--margen-version);
+    --margen-version: 16px;
+  }
+  @media (min-width: 768px) {
+    .marco-version { --margen-version: 32px; }
+  }
+  @media (min-width: 1200px) {
+    .marco-version { --margen-version: 56px; }
+  }
 }
 
 /* Foco visible en todo (teclado). En fondos oscuros el anillo es blanco. */
