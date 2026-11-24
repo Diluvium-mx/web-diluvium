@@ -51,7 +51,7 @@ export function HistoriaVersion({ seccion }: PropsSeccion) {
                   <div className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-niebla ${i % 2 === 1 ? "md:order-2" : ""}`}>
                     {video ? (
                       // «Video automático»: corre solo y sin sonido al llegar a él, como el de la galería de la compuerta.
-                      <VideoAutomatico src={video} poster={foto} alt={texto(ba, "alt")} estilo={estiloFoto(ba)} tocaParaOir={tx(a, "sound_hint", "Toca para oír")} sinSonido={!tieneSonido(video)} />
+                      <VideoAutomatico src={video} poster={foto} alt={texto(ba, "alt")} estilo={estiloFoto(ba, "video")} marca={marcaEditar(seccion.id, b.id, "video")} tocaParaOir={tx(a, "sound_hint", "Toca para oír")} sinSonido={!tieneSonido(video)} />
                     ) : (
                       <Image
                         src={foto}

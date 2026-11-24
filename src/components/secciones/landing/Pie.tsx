@@ -6,6 +6,8 @@ import Image from "next/image";
 import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
 import { plantilla, texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
+import { medidasImagen } from "../ImagenBanner";
 import { IconoFacebook, IconoInstagram, IconoLinkedin, IconoYoutube } from "@/components/comunes/Iconos";
 import { textoVersion, tx } from "./datos";
 import { formato } from "./formato";
@@ -20,7 +22,9 @@ const REDES: Record<string, { nombre: string; Icono: typeof IconoFacebook }> = {
 export function PieVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
   const tienda = plantilla("pie").secciones.find((s) => s.tipo === "footer")?.bloques.find((b) => b.tipo === "store_information");
-  const logo = tienda ? texto(tienda.ajustes, "footer_image") : "";
+  // El logo de la sección («logo», se cambia en el editor; 24-nov-2026) o, sin él, el del pie de la tienda.
+  const logo = texto(a, "logo") || (tienda ? texto(tienda.ajustes, "footer_image") : "");
+  const medidas = logo ? medidasImagen(logo) : null;
   // La dirección, el teléfono y el correo vienen como renglones (<h5>) en el pie de la tienda.
   const renglones = tienda
     ? [...texto(tienda.ajustes, "description").matchAll(/<h5>(.*?)<\/h5>/g)].map((m) => m[1].replace(/<[^>]+>/g, "").trim()).filter(Boolean)
@@ -32,7 +36,20 @@ export function PieVersion({ seccion }: PropsSeccion) {
     <footer data-seccion="landing-pie" className="fondo-oscuro bg-marino-hondo pt-12 pb-8 text-white md:pt-16 md:pb-12">
       <div className="marco-version grid gap-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
-          {logo && <Image src={logo} alt="Diluvium" width={742} height={181} sizes="168px" className="mb-4 h-auto w-[168px]" />}
+          {logo && medidas && (
+            <span className="mb-4 block w-[168px] overflow-hidden">
+              <Image
+                src={logo}
+                alt="Diluvium"
+                width={medidas.ancho}
+                height={medidas.alto}
+                sizes="168px"
+                className="h-auto w-full"
+                style={estiloFoto(a, "logo")}
+                {...("logo" in a ? marcaEditar(seccion.id, "", "logo") : {})}
+              />
+            </span>
+          )}
           {texto(seccion.ajustes, "text") && <p className="m-0 max-w-[26rem] text-[15px] leading-[1.6] text-white/85">{formato(textoVersion(seccion.ajustes, "text"))}</p>}
           <ul className="m-0 mt-5 flex list-none gap-1 p-0">
             {menus.redes.map((r) => {

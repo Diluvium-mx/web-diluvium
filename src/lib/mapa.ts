@@ -46,6 +46,16 @@ export function esArchivoMapa(x: unknown): x is ArchivoMapa {
   return typeof x === "string" && Object.hasOwn(PAGINAS_MAPA, x);
 }
 
+/** Páginas que usan una sola plantilla para varias direcciones: cada artículo del blog (24-nov-2026). */
+const PREFIJOS: Partial<Record<ArchivoMapa, string>> = { "article.b1": "/v/b1/blogs/blog/" };
+
+/** ¿De qué plantilla es una dirección? La de la pestaña o, para los artículos, cualquiera de ellos. */
+export function archivoDeRuta(ruta: string | null): ArchivoMapa | undefined {
+  if (!ruta) return undefined;
+  const archivos = Object.keys(PAGINAS_MAPA) as ArchivoMapa[];
+  return archivos.find((a) => PAGINAS_MAPA[a].ruta === ruta) ?? archivos.find((a) => PREFIJOS[a] && ruta.startsWith(PREFIJOS[a]!) && ruta.length > PREFIJOS[a]!.length);
+}
+
 export type CampoMapa = {
   codigo: string;
   clave: string;

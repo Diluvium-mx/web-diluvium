@@ -40,6 +40,17 @@ ahí no hay fotos ni números que editar.
      igual con esa foto, para luego cambiar su texto en Textos).
    - **Quitar** y **◀ Antes / Después ▶** (mover de lugar).
    - Las fotos fijas del diseño (por ejemplo, la comparación) se pueden cambiar o acomodar, pero no quitar.
+   - **Blog (24-nov-2026):** la foto de cada tarjeta se cambia en la pestaña **Blog**; la foto de arriba de cada
+     artículo y las de dentro de su texto, en **Artículo** (para ir a otro artículo, toca su título en el Blog o en
+     «Sigue leyendo»: el editor se queda en la pestaña Artículo). Son independientes: cambiar la foto del artículo no
+     cambia la de su tarjeta. «Sigue leyendo» muestra la foto de arriba de cada artículo. Estas fotos se cambian o
+     acomodan, no se quitan ni se agregan. En las fotos que ya se ven completas (las del artículo), «Alejar» no cambia
+     nada; «Acercar» sí.
+   - **Logos:** el de arriba y el de abajo se cambian en **Portada** (y en **Producto**, que tiene los suyos); las demás
+     páginas usan los de la Portada. También se cambian ahí los de «Visto en» y «Encuéntranos en», y en cada producto
+     los de Mercado Libre y Amazon.
+   - Lo que todavía no se cambia en el editor: la ventana «¿Cómo medir?» (su video, la foto de la puerta y la tabla de
+     tamaños son los mismos en todas las páginas) y las miniaturas de la galería, que repiten la foto grande.
 4. **Listo** (o doble clic en el marco) suelta la foto. Se puede bajar la página y deslizar la galería como siempre:
    el marco sigue a la foto.
 
@@ -135,6 +146,15 @@ y carrito 2 (hoja desde abajo con ×).
   buscar `"n": 37` en `product.b1`. **Al rehacer una pieza, abrir la pestaña Mapa y comparar que los números sigan
   en su lugar** (si cambió el texto y la firma a la vez, devolver el número a mano en ese archivo).
 - Las páginas que se editan están en `PAGINAS_MAPA` (`src/lib/mapa.ts`). Para C1 y D1: agregarlas ahí.
+  Una plantilla para varias direcciones (los artículos del blog: `article.b1`) va en `PREFIJOS` y `archivoDeRuta` la
+  reconoce; `recargar` vuelve a cargar la misma dirección si es de esa pestaña.
+- Fotos del blog (24-nov-2026): piezas `article_card` en `blog.b1` y `article_photos` en `article.b1`, con el nombre
+  (slug) del artículo como id; en `article_photos`, `image` es la de arriba e `image_1`, `image_2`… las del texto en
+  orden (`fotosDelCuerpo` en `ArticuloVersion.tsx` les pone foto, encuadre, marca y un `<picture>` que recorta). No se
+  quitan, agregan ni mueven (`PIEZAS_FIJAS` en `Editor.tsx`). Artículo nuevo en el blog → agregarle sus dos piezas.
+- Encabezado y pie que una página toma de la portada (`MarcoVersionB`): van dentro de `data-prestada` y el editor no
+  deja tocar sus fotos (su marca es de otra plantilla). Los marcos nuevos alrededor de una foto van como `<picture>`
+  cuando hay `<span>` al lado, para no mover los números del mapa de esos textos.
 - Cada foto de la página lleva `data-editar="sección|pieza|campo"` (`marcaEditar` en `src/lib/mapa.ts`): así el
   editor sabe qué campo tocaste. El encuadre se guarda como `focal` («x% y%») y el acercamiento como `zoom` (1 a 3);
   para `image_before` son `focal_before` / `zoom_before`, para `video` son `focal_video` / `zoom_video`

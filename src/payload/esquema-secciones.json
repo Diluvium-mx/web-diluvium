@@ -4986,6 +4986,12 @@
    "etiqueta": "Versión: pie de página",
    "campos": [
     {
+     "clave": "logo",
+     "tipo": "imagen",
+     "etiqueta": "Logo",
+     "diseno": false
+    },
+    {
      "clave": "text",
      "tipo": "texto",
      "etiqueta": "Texto",
@@ -5913,7 +5919,88 @@
      "diseno": false
     }
    ],
-   "bloques": []
+   "bloques": [
+    {
+     "tipo": "article_photos",
+     "slug": "s49-b00",
+     "dbName": "s49b00",
+     "etiqueta": "Fotos de un artículo",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Foto de arriba",
+       "diseno": false
+      },
+      {
+       "clave": "image_1",
+       "tipo": "imagen",
+       "etiqueta": "Foto 1 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_2",
+       "tipo": "imagen",
+       "etiqueta": "Foto 2 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_3",
+       "tipo": "imagen",
+       "etiqueta": "Foto 3 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_4",
+       "tipo": "imagen",
+       "etiqueta": "Foto 4 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_5",
+       "tipo": "imagen",
+       "etiqueta": "Foto 5 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_6",
+       "tipo": "imagen",
+       "etiqueta": "Foto 6 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_7",
+       "tipo": "imagen",
+       "etiqueta": "Foto 7 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_8",
+       "tipo": "imagen",
+       "etiqueta": "Foto 8 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_9",
+       "tipo": "imagen",
+       "etiqueta": "Foto 9 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_10",
+       "tipo": "imagen",
+       "etiqueta": "Foto 10 del texto",
+       "diseno": false
+      },
+      {
+       "clave": "image_11",
+       "tipo": "imagen",
+       "etiqueta": "Foto 11 del texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
   },
   {
    "tipo": "landing-blog",
@@ -5946,7 +6033,22 @@
      "diseno": false
     }
    ],
-   "bloques": []
+   "bloques": [
+    {
+     "tipo": "article_card",
+     "slug": "s50-b00",
+     "dbName": "s50b00",
+     "etiqueta": "Foto de la tarjeta de un artículo",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      }
+     ]
+    }
+   ]
   },
   {
    "tipo": "landing-cita",

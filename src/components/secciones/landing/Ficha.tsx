@@ -285,7 +285,9 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                       className="flex min-h-[68px] items-center justify-center gap-2.5 rounded-xl border-2 border-linea bg-white px-3 text-[16px] font-bold text-tinta hover:border-marino"
                     >
                       {texto(t.ajustes, "image") && (
-                        <Foto src={texto(t.ajustes, "image")} alt="" sizes="96px" className="size-12 shrink-0 object-contain" />
+                        <picture className="block size-12 shrink-0 overflow-hidden">
+                          <Foto src={texto(t.ajustes, "image")} alt="" sizes="96px" className="size-12 object-contain" style={estiloFoto(t.ajustes)} marca={marcaEditar(seccion.id, t.id, "image")} />
+                        </picture>
                       )}
                       <span className="leading-tight">{texto(t.ajustes, "name")}</span>
                     </a>

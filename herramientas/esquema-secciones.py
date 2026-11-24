@@ -121,7 +121,19 @@ BLOQUES = {
     "marketplace": "Otra tienda (Mercado Libre, Amazon)",
     "product": "Producto", "channel": "Forma de contacto (ícono: whatsapp, telefono, correo, ubicacion u horario)",
     "chapter": "Capítulo", "award": "Premio",
+    "article_card": "Foto de la tarjeta de un artículo", "article_photos": "Fotos de un artículo",
 }
+
+# Nombres de campos que dependen de la pieza (24-nov-2026): en «Fotos de un artículo», «image» es la de arriba e
+# «image_3» la tercera foto de dentro del texto.
+def etiqueta_en_pieza(tipo: str, clave: str) -> str | None:
+    if tipo == "article_photos":
+        if clave == "image":
+            return "Foto de arriba"
+        m = re.fullmatch(r"image_(\d+)", clave)
+        if m:
+            return f"Foto {m.group(1)} del texto"
+    return None
 
 
 def etiqueta_bloque(tipo: str) -> str:
@@ -300,7 +312,7 @@ def main() -> None:
             "campos": campos(sec["muestras"]),
             "bloques": [
                 {"tipo": bt, "slug": f"s{n:02d}-b{m:02d}", "dbName": f"s{n:02d}b{m:02d}", "etiqueta": etiqueta_bloque(bt),
-                 "campos": campos(sec["bloques"][bt])}
+                 "campos": [{**c, "etiqueta": etiqueta_en_pieza(bt, c["clave"]) or c["etiqueta"]} for c in campos(sec["bloques"][bt])]}
                 for bt, m in sorted(numeros_bloques.items(), key=lambda x: x[1])
             ],
         })

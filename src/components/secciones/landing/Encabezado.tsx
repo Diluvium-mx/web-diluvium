@@ -4,6 +4,8 @@
 import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
+import { estiloFoto, marcaEditar } from "@/lib/mapa";
+import { medidasImagen } from "../ImagenBanner";
 import { TEXTOS_CARRITO, type TextosCarrito } from "./textos";
 import { tx } from "./datos";
 import { EncabezadoCliente } from "./EncabezadoCliente";
@@ -31,6 +33,9 @@ export function EncabezadoVersion({ seccion }: PropsSeccion) {
   return (
     <EncabezadoCliente
       logo={texto(a, "logo")}
+      logoMedidas={texto(a, "logo") ? medidasImagen(texto(a, "logo")) : undefined}
+      logoEstilo={estiloFoto(a, "logo")}
+      logoMarca={marcaEditar(seccion.id, "", "logo")}
       botonTexto={texto(a, "button_text")}
       botonEnlace={texto(a, "button_link")}
       menuTexto={texto(a, "menu_text")}

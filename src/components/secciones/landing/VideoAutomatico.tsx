@@ -18,6 +18,7 @@ export function VideoAutomatico({
   estilo,
   tocaParaOir,
   sinSonido,
+  marca,
 }: {
   src: string;
   poster: string;
@@ -26,6 +27,8 @@ export function VideoAutomatico({
   tocaParaOir?: string;
   /** El video no tiene sonido (herramientas/videos-sonido.mjs): sin botón de sonido. */
   sinSonido?: boolean;
+  /** Marca del editor local (marcaEditar), para cambiar el video ahí. */
+  marca?: Record<string, string>;
 }) {
   const caja = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -41,7 +44,7 @@ export function VideoAutomatico({
 
   return (
     <div ref={caja} className="absolute inset-0">
-      <VideoGaleria src={src} poster={poster} alt={alt} activo={visible} estilo={estilo} tocaParaOir={tocaParaOir} sinSonido={sinSonido} />
+      <VideoGaleria src={src} poster={poster} alt={alt} activo={visible} estilo={estilo} marca={marca} tocaParaOir={tocaParaOir} sinSonido={sinSonido} />
     </div>
   );
 }

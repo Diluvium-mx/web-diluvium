@@ -3201,6 +3201,7 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            logo?: (number | null) | Medio;
             text?: string | null;
             contact_heading?: string | null;
             store_heading?: string | null;
@@ -3574,6 +3575,35 @@ export interface Plantilla {
             back_text?: string | null;
             author_prefix?: string | null;
             related_heading?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  image_1?: (number | null) | Medio;
+                  image_2?: (number | null) | Medio;
+                  image_3?: (number | null) | Medio;
+                  image_4?: (number | null) | Medio;
+                  image_5?: (number | null) | Medio;
+                  image_6?: (number | null) | Medio;
+                  image_7?: (number | null) | Medio;
+                  image_8?: (number | null) | Medio;
+                  image_9?: (number | null) | Medio;
+                  image_10?: (number | null) | Medio;
+                  image_11?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's49-b00';
+                }[]
+              | null;
             id?: string | null;
             blockName?: string | null;
             blockType: 'landing-articulo';
@@ -3593,6 +3623,24 @@ export interface Plantilla {
             ola?: string | null;
             heading?: string | null;
             read_more?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's50-b00';
+                }[]
+              | null;
             id?: string | null;
             blockName?: string | null;
             blockType: 'landing-blog';
@@ -6081,6 +6129,7 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              logo?: T;
               text?: T;
               contact_heading?: T;
               store_heading?: T;
@@ -6350,6 +6399,30 @@ export interface PlantillasSelect<T extends boolean = true> {
               back_text?: T;
               author_prefix?: T;
               related_heading?: T;
+              bloques?:
+                | T
+                | {
+                    's49-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          image_1?: T;
+                          image_2?: T;
+                          image_3?: T;
+                          image_4?: T;
+                          image_5?: T;
+                          image_6?: T;
+                          image_7?: T;
+                          image_8?: T;
+                          image_9?: T;
+                          image_10?: T;
+                          image_11?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -6362,6 +6435,19 @@ export interface PlantillasSelect<T extends boolean = true> {
               ola?: T;
               heading?: T;
               read_more?: T;
+              bloques?:
+                | T
+                | {
+                    's50-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };

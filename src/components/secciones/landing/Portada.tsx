@@ -48,7 +48,7 @@ function Mosaico({ fotos, seccionId }: { fotos: Bloque[]; seccionId: string }) {
   );
 }
 
-function FilaConfianza({ logos }: { logos: Bloque[] }) {
+function FilaConfianza({ logos, seccionId }: { logos: Bloque[]; seccionId: string }) {
   if (!logos.length) return null;
   // Cada texto («Visto en», «Encuéntranos en:») va junto con los logos que le siguen, en un mismo renglón: así en el
   // celular Mercado Libre no se queda solo en otra línea, lejos de Amazon.
@@ -72,12 +72,18 @@ function FilaConfianza({ logos }: { logos: Bloque[] }) {
                 <span key={l.id} data-pieza={l.id} className="flex items-center gap-2">
                   {etiqueta && <span className="text-texto-suave">{etiqueta}</span>}
                   {imagen && (
-                    <Foto
-                      src={imagen}
-                      alt={texto(l.ajustes, "alt")}
-                      sizes="96px"
-                      className={/shark/i.test(imagen) ? "h-9 w-auto md:h-10" : "size-11 rounded-md object-contain md:size-12"}
-                    />
+                    // En su marco para que el acercamiento del editor no se salga (<picture> y no <span>: así el texto de
+                    // al lado conserva su número del mapa).
+                    <picture className="block shrink-0 overflow-hidden rounded-md">
+                      <Foto
+                        src={imagen}
+                        alt={texto(l.ajustes, "alt")}
+                        sizes="96px"
+                        className={/shark/i.test(imagen) ? "h-9 w-auto md:h-10" : "size-11 object-contain md:size-12"}
+                        style={estiloFoto(l.ajustes)}
+                        marca={marcaEditar(seccionId, l.id, "image")}
+                      />
+                    </picture>
                   )}
                   {nombre && <span>{nombre}</span>}
                 </span>
@@ -248,7 +254,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
         </div>
       </div>
 
-      <FilaConfianza logos={logos} />
+      <FilaConfianza logos={logos} seccionId={seccion.id} />
 
       {venta && (
         <BarraCompra

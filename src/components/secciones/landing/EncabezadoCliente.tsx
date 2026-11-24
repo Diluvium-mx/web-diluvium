@@ -5,7 +5,7 @@
 // Esc); el carrito es el mismo carrito lateral de la tienda.
 
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
 import { IconoBolsa } from "@/components/comunes/Iconos";
 import { CarritoHoja } from "./CarritoHoja";
@@ -25,6 +25,9 @@ function IconoMenu() {
 
 export function EncabezadoCliente({
   logo,
+  logoMedidas,
+  logoEstilo,
+  logoMarca,
   botonTexto,
   botonEnlace,
   menuTexto,
@@ -36,6 +39,11 @@ export function EncabezadoCliente({
   textoTienda = "Tienda",
 }: {
   logo: string;
+  /** Ancho y alto de la foto del logo (para reservar su espacio si se cambia en el editor). */
+  logoMedidas?: { ancho: number; alto: number };
+  logoEstilo?: CSSProperties;
+  /** Marca del editor local (marcaEditar). */
+  logoMarca?: Record<string, string>;
   botonTexto: string;
   botonEnlace: string;
   menuTexto: string;
@@ -78,15 +86,20 @@ export function EncabezadoCliente({
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <a href="/" className="mr-auto flex shrink-0 items-center" aria-label="Diluvium, ir a la tienda">
           {logo && (
-            <Image
-              src={logo}
-              alt="Diluvium"
-              width={1572}
-              height={413}
-              preload
-              sizes="(min-width: 768px) 168px, 104px"
-              className="h-auto w-[104px] min-[400px]:w-[112px] md:w-[168px]"
-            />
+            // En su marco para que el acercamiento del editor no se salga.
+            <span className="block overflow-hidden">
+              <Image
+                src={logo}
+                alt="Diluvium"
+                width={logoMedidas?.ancho ?? 1572}
+                height={logoMedidas?.alto ?? 413}
+                preload
+                sizes="(min-width: 768px) 168px, 104px"
+                className="h-auto w-[104px] min-[400px]:w-[112px] md:w-[168px]"
+                style={logoEstilo}
+                {...logoMarca}
+              />
+            </span>
           )}
         </a>
 

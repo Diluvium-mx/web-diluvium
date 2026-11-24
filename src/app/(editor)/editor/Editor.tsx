@@ -10,6 +10,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  archivoDeRuta,
   clavesEncuadre,
   estiloFoto,
   leerFocal,
@@ -252,6 +253,8 @@ function Campo({ campo, alCambiar }: { campo: CampoMapa; alCambiar: (v: unknown)
 }
 
 const ES_DE_FOTO = new Set(["imagen", "video", "focal", "zoom"]);
+/** Piezas de foto que no se quitan, agregan ni mueven: las de los artículos del blog (24-nov-2026). */
+const PIEZAS_FIJAS = new Set(["article_card", "article_photos"]);
 
 /** Controles de la página (botones, enlaces, la línea del antes y después…): en Fotos siguen funcionando. */
 const CONTROLES = "a,button,[role=button],[role=slider],[role=tab],input,select,textarea,label,summary";
@@ -301,10 +304,17 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     return () => removeEventListener("beforeunload", avisar);
   }, [pendientes.length]);
 
-  /** Vuelve a cargar la página de en medio (la de la pestaña elegida). */
+  /** Vuelve a cargar la página de en medio (la de la pestaña elegida). Si ya se ve una de esa pestaña (otro artículo del
+   *  blog), esa misma. */
   const recargar = (a: ArchivoMapa = archivo) => {
+    let actual: string | null = null;
+    try {
+      actual = marco.current?.contentWindow?.location.pathname ?? null;
+    } catch {
+      actual = null;
+    }
     setFuera(null);
-    setCarga((c) => ({ ruta: PAGINAS_MAPA[a].ruta, n: c.n + 1 }));
+    setCarga((c) => ({ ruta: actual && archivoDeRuta(actual) === a ? actual : PAGINAS_MAPA[a].ruta, n: c.n + 1 }));
   };
 
   // Al abrir el editor: los números del Mapa y las dos páginas quedan listos (la primera vez tardan en prepararse).
@@ -325,7 +335,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
       ruta = null;
     }
     if (ruta === "about:blank" || ruta === "blank") return;
-    const de = (Object.keys(PAGINAS_MAPA) as ArchivoMapa[]).find((a) => PAGINAS_MAPA[a].ruta === ruta);
+    const de = archivoDeRuta(ruta);
     if (de) {
       setFuera(null);
       if (de !== archivo) {
@@ -363,6 +373,8 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     const d = doc();
     if (!d || modo !== "fotos" || fuera) return;
     for (const el of d.querySelectorAll<HTMLImageElement | HTMLVideoElement>("[data-editar]")) {
+      // El encabezado y el pie que una página toma de la portada: sus fotos se cambian en la portada.
+      if (el.closest("[data-prestada]")) continue;
       const s = leerMarca(el.dataset.editar ?? "");
       const ahora = ubicar(plantilla, s);
       const antes = ubicar(guardadas[archivo], s);
@@ -395,7 +407,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     const d = doc();
     if (!d || modo !== "fotos" || fuera) return;
     const alTocar = (e: MouseEvent) => {
-      const marcada = d.elementsFromPoint(e.clientX, e.clientY).find((x) => (x as HTMLElement).dataset?.editar) as HTMLElement | undefined;
+      const marcada = d.elementsFromPoint(e.clientX, e.clientY).find((x) => (x as HTMLElement).dataset?.editar && !x.closest("[data-prestada]")) as HTMLElement | undefined;
       if (!marcada) return;
       const control = (e.target as Element | null)?.closest?.(CONTROLES);
       // Un botón chico encima de la foto funciona; uno que la cubre toda (el del video) o que la envuelve, la elige.
@@ -440,8 +452,11 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const seccionSel = u ? mapa[u.s] : null;
   const piezaSel = u && u.b !== null && seccionSel ? seccionSel.bloques[u.b] : null;
   const campoSel = sel && seccionSel ? (piezaSel ?? seccionSel).campos.find((c) => c.clave === sel.clave) : null;
-  const esPieza = Boolean(u && u.b !== null);
   const tipoPieza = u && u.b !== null ? plantilla.secciones[u.s].bloques[u.b].tipo : null;
+  // Piezas que se pueden quitar, agregar y mover. Las fotos de los artículos del blog no: cada artículo tiene las suyas.
+  const esPieza = Boolean(u && u.b !== null) && !PIEZAS_FIJAS.has(tipoPieza ?? "");
+  // Si la pieza tiene varias fotos (un artículo: la de arriba y las del texto), se dice cuál es.
+  const variasFotos = (piezaSel?.campos.filter((c) => c.tipo === "imagen").length ?? 0) > 1;
   const esVideo = sel?.clave === "video";
 
   /** Cuánto se mueve el encuadre al arrastrar: lo que la foto sobra fuera de su marco (en px). */
@@ -766,7 +781,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                 >
                   <div className="flex items-center gap-2 text-[12px]">
                     {campoSel && <code className="rounded bg-[#e11d48] px-1.5 py-0.5 font-mono text-[11px] font-bold text-white">{campoSel.codigo}</code>}
-                    <span className="min-w-0 flex-1 truncate font-semibold">{piezaSel?.etiqueta ?? campoSel?.etiqueta}</span>
+                    <span className="min-w-0 flex-1 truncate font-semibold">{variasFotos && campoSel ? `${piezaSel?.etiqueta} · ${campoSel.etiqueta}` : (piezaSel?.etiqueta ?? campoSel?.etiqueta)}</span>
                     <button type="button" onClick={() => setSel(null)} className="h-7 cursor-pointer rounded-md bg-niebla px-2 font-semibold">
                       Listo
                     </button>
@@ -807,7 +822,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
                       </>
                     )}
                   </div>
-                  {!esPieza && <p className="m-0 text-[11.5px] text-texto-suave">Esta foto es fija en el diseño: se puede cambiar o acomodar, no quitar.</p>}
+                  {!esPieza && <p className="m-0 text-[11.5px] text-texto-suave">{PIEZAS_FIJAS.has(tipoPieza ?? "") ? "Foto del artículo: se puede cambiar o acomodar, no quitar." : "Esta foto es fija en el diseño: se puede cambiar o acomodar, no quitar."}</p>}
                 </div>
               </div>
             )}

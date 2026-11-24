@@ -146,6 +146,11 @@ html:has(.version dialog[open]) { overflow: hidden; }
 .articulo-version strong { color: var(--color-marino); }
 .articulo-version blockquote { padding-left: 16px; border-left: 3px solid var(--color-boton); }
 .articulo-version img { display: block; max-width: 100%; height: auto; margin: 8px 0; border-radius: 16px; }
+/* Cada foto del texto va en su marco (fotosDelCuerpo, ArticuloVersion.tsx) para que el acercamiento del editor no se
+   salga: el marco lleva la separación y las esquinas; «centrada» si la foto venía centrada. */
+.articulo-version .foto-texto { display: block; width: fit-content; max-width: 100%; margin: 8px 0; border-radius: 16px; }
+.articulo-version .foto-texto.centrada { margin-inline: auto; }
+.articulo-version .foto-texto > img { margin: 0; border-radius: 0; }
 
 /* Descripción del producto en la ficha de B1 (repuestos y accesorios, «show_description»). */
 .descripcion-version { font-size: 15.5px; line-height: 1.6; color: var(--color-tinta); }

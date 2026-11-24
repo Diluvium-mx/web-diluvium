@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { plantilla, type Seccion } from "@/lib/contenido";
 import type { Version } from "@/lib/versiones";
 import type { Producto } from "@/components/producto/catalogo";
@@ -14,12 +15,24 @@ import { AlejarFotos } from "@/components/AlejarFotos";
 // Marco de toda página de una versión B (portada, fichas y, desde el 23-nov-2026, Contacto, Nosotros, Blog, artículo y
 // Productos): «Saltar al contenido», encabezado, el cuerpo con sus olas, pie, la pastilla de la versión, la medición y
 // los enlaces que se quedan en la versión. Las páginas nuevas no traen encabezado ni pie en su plantilla: usan los de la
-// portada de la versión (así se editan en un solo lugar), sin los enlaces «En esta página».
+// portada de la versión (así se editan en un solo lugar), sin los enlaces «En esta página». Esos van dentro de
+// «data-prestada»: el editor local no deja tocar ahí sus fotos (los logos), que se cambian en la portada.
 
 function marcoDePortada(v: Version, tipo: "landing-encabezado" | "landing-pie"): Seccion[] {
   return plantilla(v.plantilla)
     .secciones.filter((s) => s.tipo === tipo)
     .map((s) => (tipo === "landing-encabezado" ? { ...s, bloques: [] } : s));
+}
+
+/** Encabezado o pie que viene de la portada: el editor no deja cambiar ahí sus fotos (el logo se cambia en la portada). */
+function Prestada({ si, children }: { si: boolean; children: ReactNode }) {
+  return si ? (
+    <div data-prestada="" className="contents">
+      {children}
+    </div>
+  ) : (
+    children
+  );
 }
 
 export function MarcoVersionB({
@@ -50,11 +63,15 @@ export function MarcoVersionB({
       >
         Saltar al contenido
       </a>
-      <Secciones secciones={encabezado} producto={producto} />
+      <Prestada si={!propioEncabezado.length}>
+        <Secciones secciones={encabezado} producto={producto} />
+      </Prestada>
       <main id="contenido">
         <SeccionesConOlas secciones={cuerpo} producto={producto} slugArticulo={slugArticulo} />
       </main>
-      <Secciones secciones={pie} producto={producto} />
+      <Prestada si={!propioPie.length}>
+        <Secciones secciones={pie} producto={producto} />
+      </Prestada>
       <PastillaVersion etiqueta={v.etiqueta} />
       <Medicion experimento={EXPERIMENTO} version={v.etiqueta} />
       <EnlacesVersion clave={v.clave} conPaginas={Boolean(v.paginas)} />

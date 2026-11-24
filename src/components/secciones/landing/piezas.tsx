@@ -1,5 +1,6 @@
 // Piezas chicas que comparten las secciones de las versiones: botón principal, estrellas e íconos.
 
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import { medidasImagen } from "../ImagenBanner";
 import { formato } from "./formato";
@@ -82,11 +83,16 @@ export function Foto({
   alt,
   sizes,
   className,
+  style,
+  marca,
 }: {
   src: string;
   alt: string;
   sizes: string;
   className?: string;
+  style?: CSSProperties;
+  /** Marca del editor local (marcaEditar). */
+  marca?: Record<string, string>;
 }) {
   if (!src) return null;
   const { ancho, alto } = medidasImagen(src);
@@ -100,6 +106,8 @@ export function Foto({
       sizes={sizes}
       unoptimized={svg}
       className={className}
+      style={style}
+      {...marca}
     />
   );
 }

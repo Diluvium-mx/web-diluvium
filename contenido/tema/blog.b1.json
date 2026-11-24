@@ -21,7 +21,29 @@
     "heading": "",
     "read_more": "Leer artículo"
    },
-   "bloques": []
+   "bloques": [
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Mochila_2.png"
+     }
+    },
+    {
+     "id": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg"
+     }
+    },
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Frame_frame.png"
+     }
+    }
+   ]
   },
   {
    "id": "landing_cierre_blog_b1",
