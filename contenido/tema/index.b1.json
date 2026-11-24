@@ -119,6 +119,7 @@
    "id": "landing_resenas_b1",
    "tipo": "landing-resenas",
    "ajustes": {
+    "ola": "ninguna",
     "heading": "{calificacion} de 5 en más de 200 reseñas",
     "subheading": "Fotos reales de clientes con su compuerta puesta.",
     "layout": "dos_columnas",

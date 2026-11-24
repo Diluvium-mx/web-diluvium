@@ -180,7 +180,7 @@ FIJAS = {
     "table_size": "Tabla: columna del tamaño", "table_width": "Tabla: columna del ancho",
     "table_heading": "Ventana de la tabla: título", "table_note": "Ventana de la tabla: nota",
     # Páginas nuevas de B1 (23-nov-2026).
-    "fondo": "Fondo (blanco, niebla, cielo o marino)", "ola": "Ola de arriba (corta, larga, capas o pie)",
+    "fondo": "Fondo (blanco, niebla, cielo o marino)", "ola": "Ola de arriba (corta, larga, capas, pie o ninguna)",
     "ola_espejo": "Ola volteada", "badge": "Etiqueta sobre la foto", "from_text": "Texto antes del precio («Desde»)",
     "reviews_text": "Texto después del número de reseñas", "faq_link_text": "Enlace a las preguntas",
     "form_heading": "Formulario: título", "form_text": "Formulario: texto", "name_label": "Formulario: nombre",

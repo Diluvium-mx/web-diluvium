@@ -5191,7 +5191,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     }
    ],
@@ -5224,6 +5224,12 @@
    "dbName": "s47",
    "etiqueta": "Versión: muro de reseñas",
    "campos": [
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
+     "diseno": false
+    },
     {
      "clave": "heading",
      "tipo": "texto",
@@ -5840,7 +5846,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     },
     {
@@ -5873,7 +5879,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     },
     {
@@ -6050,7 +6056,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     },
     {
@@ -6140,7 +6146,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     },
     {
@@ -6224,7 +6230,7 @@
     {
      "clave": "ola",
      "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas o pie)",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
      "diseno": false
     },
     {

@@ -3331,6 +3331,7 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            ola?: string | null;
             heading?: string | null;
             subheading?: string | null;
             more_button?: string | null;
@@ -6152,6 +6153,7 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              ola?: T;
               heading?: T;
               subheading?: T;
               more_button?: T;

@@ -158,12 +158,16 @@ export function SeccionesConOlas({ secciones, producto, slugArticulo }: { seccio
   return secciones.map((s, i) => {
     const antes = i > 0 ? fondoDe(secciones[i - 1]) : null;
     const ahora = fondoDe(s);
-    // «ola» en la plantilla: qué ola va arriba de esta parte (y «ola_espejo» si va volteada); si no, la de siempre.
-    const propia = texto(s.ajustes, "ola") as FormaOla;
-    const forma = antes && ahora && antes !== "marino" ? (FORMAS.includes(propia) ? propia : formaEntre(antes, ahora)) : null;
+    // «ola» en la plantilla: qué ola va arriba de esta parte (y «ola_espejo» si va volteada); «ninguna» la quita (dueño,
+    // 23-nov-2026: debajo de los logos de las tiendas ya se nota la división); si no trae, la de siempre.
+    const propia = texto(s.ajustes, "ola") as FormaOla | "ninguna";
+    const forma =
+      antes && ahora && antes !== "marino" && propia !== "ninguna" ? (FORMAS.includes(propia as FormaOla) ? (propia as FormaOla) : formaEntre(antes, ahora)) : null;
     return (
       <Fragment key={s.id}>
         {forma && antes && ahora && <Ola arriba={antes} abajo={ahora} forma={forma} espejo={s.ajustes.ola_espejo === true} />}
+        {/* Sin ola («ninguna»): una marca sin alto, para que las dos partes queden con el mismo aire que junto a una ola. */}
+        {propia === "ninguna" && i > 0 && <div data-ola="ninguna" aria-hidden="true" />}
         <Secciones secciones={[s]} producto={producto} slugArticulo={slugArticulo} />
       </Fragment>
     );

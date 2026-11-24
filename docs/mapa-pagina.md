@@ -40,3 +40,11 @@ Los números se recalculan si se agrega o se quita una parte: usa siempre el map
 `B1-P2.b5.1` → `contenido/tema/product.b1.json` › `secciones[1]` › `bloques[4]` › la 1.ª clave de `ajustes`
 (en el orden del archivo). `I` = `index.b1.json`. Lo calcula `src/lib/mapa.ts` (`mapaPlantilla`); la superposición
 está en `src/components/mapa/`. Solo se carga con `?mapa`: la página normal no pesa más.
+
+## Los 2 tipos de video (nombres del dueño, 23-nov-2026)
+Para pedir un video basta con decir cuál de los dos:
+
+| Nombre | Cómo se comporta | Dónde está hoy | Código |
+|---|---|---|---|
+| **Video automático** | Corre solo y sin sonido al llegar a él, se repite; un toque lo pausa, el botón de abajo le pone sonido («Toca para oír») y una barra fina muestra el avance. Al salir de la pantalla se pausa. Para videos que se ven de pasada. | El 3.º de la galería de la compuerta y el video de Nosotros (B1) | `VideoGaleria.tsx` (`VideoAutomatico.tsx` fuera de la galería) |
+| **Video con controles** | Empieza con sonido al abrirlo; regresar y adelantar 10 s, pantalla completa y la barra azul; los controles salen al pausar. Para videos que se siguen paso a paso. | «¿Cómo medir?» del producto | `VideoControles.tsx` |

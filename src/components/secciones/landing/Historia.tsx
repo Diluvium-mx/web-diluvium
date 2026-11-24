@@ -1,16 +1,18 @@
 // Sección «landing-historia»: la historia de Diluvium por capítulos (página Nosotros de B1). Cada pieza «chapter» lleva
 // una línea chica, su título, el texto (con **negritas** y ==naranja==) y una foto; en computadora la foto va a un lado y
-// al otro en cada capítulo, y en el celular arriba del texto. Puede llevar un video propio en lugar de la foto y un enlace
+// al otro en cada capítulo, y en el celular arriba del texto. Puede llevar un «video automático» en lugar de la foto (corre
+// solo y sin sonido, como el de la galería de la compuerta; la foto queda de portada) y un enlace
 // al final («link_text» y «link»; si sale de la página, se abre en otra pestaña).
 
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
-import { textoVersion } from "./datos";
+import { textoVersion, tx } from "./datos";
 import { formato } from "./formato";
 import { claseFondo, fondoPropio } from "./Olas";
 import { IconoFlecha } from "./piezas";
+import { VideoAutomatico } from "./VideoAutomatico";
 
 /** Párrafos separados por una línea en blanco; dentro de cada uno, los saltos de línea se respetan. */
 function Parrafos({ valor }: { valor: string }) {
@@ -47,15 +49,8 @@ export function HistoriaVersion({ seccion }: PropsSeccion) {
                 {(foto || video) && (
                   <div className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-niebla ${i % 2 === 1 ? "md:order-2" : ""}`}>
                     {video ? (
-                      <video
-                        src={video}
-                        poster={foto || undefined}
-                        controls
-                        playsInline
-                        preload="none"
-                        aria-label={texto(ba, "alt")}
-                        className="absolute inset-0 size-full object-cover"
-                      />
+                      // «Video automático»: corre solo y sin sonido al llegar a él, como el de la galería de la compuerta.
+                      <VideoAutomatico src={video} poster={foto} alt={texto(ba, "alt")} estilo={estiloFoto(ba)} tocaParaOir={tx(a, "sound_hint", "Toca para oír")} />
                     ) : (
                       <Image
                         src={foto}
