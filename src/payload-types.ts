@@ -3358,6 +3358,18 @@ export interface Plantilla {
             next_button?: string | null;
             more_six_button?: string | null;
             photo_blur?: number | null;
+            invite_heading?: string | null;
+            invite_text?: string | null;
+            invite_button?: string | null;
+            form_heading?: string | null;
+            form_rating?: string | null;
+            form_comment?: string | null;
+            form_comment_placeholder?: string | null;
+            form_photos?: string | null;
+            form_name?: string | null;
+            form_submit?: string | null;
+            form_thanks?: string | null;
+            form_thanks_text?: string | null;
             layout?: string | null;
             product_filter?: string | null;
             bloques?:
@@ -6247,6 +6259,18 @@ export interface PlantillasSelect<T extends boolean = true> {
               next_button?: T;
               more_six_button?: T;
               photo_blur?: T;
+              invite_heading?: T;
+              invite_text?: T;
+              invite_button?: T;
+              form_heading?: T;
+              form_rating?: T;
+              form_comment?: T;
+              form_comment_placeholder?: T;
+              form_photos?: T;
+              form_name?: T;
+              form_submit?: T;
+              form_thanks?: T;
+              form_thanks_text?: T;
               layout?: T;
               product_filter?: T;
               bloques?:

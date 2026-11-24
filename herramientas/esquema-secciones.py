@@ -215,6 +215,12 @@ FIJAS = {
     "search_examples": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)", "search_button": "Caja de preguntas: botón",
     "no_answer_text": "Caja de preguntas: si no hay respuesta", "contact_heading": "Título de contacto",
     "store_heading": "Título de la tienda",
+    "invite_heading": "Tarjeta para escribir reseña: título", "invite_text": "Tarjeta para escribir reseña: texto",
+    "invite_button": "Tarjeta para escribir reseña: botón", "form_heading": "Ventana de reseña: título",
+    "form_rating": "Ventana de reseña: calificación", "form_comment": "Ventana de reseña: comentario",
+    "form_comment_placeholder": "Ventana de reseña: ejemplo del comentario", "form_photos": "Ventana de reseña: fotos",
+    "form_name": "Ventana de reseña: nombre", "form_submit": "Ventana de reseña: botón de enviar",
+    "form_thanks": "Ventana de reseña: gracias", "form_thanks_text": "Ventana de reseña: texto de gracias",
     "table_image": "Tabla de tamaños (foto)", "table_image_alt": "Descripción de la tabla (para lectores de pantalla)",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».

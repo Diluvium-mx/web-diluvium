@@ -185,7 +185,19 @@
     "prev_button": "Anterior",
     "next_button": "Siguiente",
     "more_six_button": "Ver 6 más",
-    "photo_blur": 35
+    "photo_blur": 35,
+    "invite_heading": "¿Ya tienes tu compuerta Diluvium?",
+    "invite_text": "Cuéntanos cómo te fue: tu reseña ayuda a otras familias.",
+    "invite_button": "Escribir mi reseña",
+    "form_heading": "Escribe tu reseña",
+    "form_rating": "Tu calificación",
+    "form_comment": "Tu comentario",
+    "form_comment_placeholder": "¿Cómo te fue con tu compuerta? ¿En qué entrada la pusiste?",
+    "form_photos": "Agrega fotos de tu compuerta puesta (opcional)",
+    "form_name": "Tu nombre",
+    "form_submit": "Enviar mi reseña",
+    "form_thanks": "¡Gracias por tu reseña!",
+    "form_thanks_text": "La revisamos y aparecerá en la página muy pronto."
    },
    "bloques": [
     {

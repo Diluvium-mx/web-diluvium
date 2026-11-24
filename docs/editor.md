@@ -168,6 +168,10 @@ y carrito 2 (hoja desde abajo con ×).
   comparar lugar y tamaño de cada elemento a 390 px antes y después.
 - Un editor abierto desde antes de que se agregara una parte: esa parte no se atenúa como «quitada»; al tocarla pide
   volver a cargar, y guardar no se niega por las secciones nuevas (se quedan como están en el archivo).
+- Muro de reseñas: la tarjeta «¿Ya tienes tu compuerta Diluvium?» (`EscribirResenaVersion.tsx`) va al final de la
+  columna que termina más arriba (`MuroResenas.tsx` la mide sin contarla, con ResizeObserver) y abre la ventana para
+  escribir una reseña: misma acción que la tienda (`enviarResena`), la reseña llega oculta a Reseñas. Producto de la
+  página; en la portada, la compuerta estándar. Sus textos: claves `invite_*` y `form_*` de `landing-resenas`.
 - Encabezado y pie que una página toma de la portada (`MarcoVersionB`): van dentro de `data-prestada` y el editor no
   deja tocar sus fotos (su marca es de otra plantilla). Los marcos nuevos alrededor de una foto van como `<picture>`
   cuando hay `<span>` al lado, para no mover los números del mapa de esos textos.

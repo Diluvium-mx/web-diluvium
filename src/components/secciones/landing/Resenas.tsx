@@ -15,7 +15,9 @@ import { rellenar, textoVersion } from "./datos";
 import { formato } from "./formato";
 import { medidasImagen } from "../ImagenBanner";
 import { MuroResenas } from "./MuroResenas";
-import { TEXTOS_MURO } from "./textos";
+import { TEXTOS_MURO, TEXTOS_RESENA_NUEVA } from "./textos";
+import { producto as buscarProducto } from "@/components/producto/catalogo";
+import { PRODUCTO_PRINCIPAL } from "./datos";
 import { tx } from "./datos";
 import { claseFondo, fondoPropio } from "./Olas";
 import { redondear } from "@/components/resenas/calificaciones";
@@ -50,7 +52,7 @@ function restantes(elegidas: string[], publicadas: Resena[]) {
   return [...todas.filter((r) => r.foto), ...todas.filter((r) => !r.foto)];
 }
 
-export function ResenasVersion({ seccion }: PropsSeccion) {
+export function ResenasVersion({ seccion, producto }: PropsSeccion) {
   const a = seccion.ajustes;
   const filtro = texto(a, "product_filter");
   const publicadas = filtro ? PUBLICADAS.filter((r) => r.producto?.url === filtro) : PUBLICADAS;
@@ -72,6 +74,30 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
     .filter((x): x is NonNullable<typeof x> => x !== null);
   if (!tarjetas.length) return null;
 
+  // Tarjeta para escribir una reseña (24-nov-2026): la reseña queda del producto de la página (XXL: el del filtro) y,
+  // en la portada, de la compuerta estándar (dueño).
+  const prod = (filtro ? buscarProducto(filtro) : undefined) ?? producto ?? buscarProducto(PRODUCTO_PRINCIPAL);
+  const R = TEXTOS_RESENA_NUEVA;
+  const invitar = prod
+    ? {
+        producto: { nombre: prod.nombre, titulo: prod.titulo, imagen: prod.imagenes[0]?.src ?? null },
+        textos: {
+          invitarTitulo: tx(a, "invite_heading", R.invitarTitulo),
+          invitarTexto: tx(a, "invite_text", R.invitarTexto),
+          invitarBoton: tx(a, "invite_button", R.invitarBoton),
+          titulo: tx(a, "form_heading", R.titulo),
+          calificacion: tx(a, "form_rating", R.calificacion),
+          comentario: tx(a, "form_comment", R.comentario),
+          comentarioEjemplo: tx(a, "form_comment_placeholder", R.comentarioEjemplo),
+          fotos: tx(a, "form_photos", R.fotos),
+          nombre: tx(a, "form_name", R.nombre),
+          enviar: tx(a, "form_submit", R.enviar),
+          gracias: tx(a, "form_thanks", R.gracias),
+          graciasTexto: tx(a, "form_thanks_text", R.graciasTexto),
+        },
+      }
+    : undefined;
+
   return (
     <section data-seccion="landing-resenas" id="resenas" aria-labelledby="titulo-resenas" className={`${claseFondo(fondoPropio(seccion.ajustes, "blanco"))} py-14 text-marino md:py-20`}>
       <div className="marco-version">
@@ -89,6 +115,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
             })}
             mas={restantes(tarjetas.map((t) => t.foto), publicadas)}
             difuminado={typeof a.photo_blur === "number" ? a.photo_blur : undefined}
+            invitar={invitar}
             textos={{
               verMas: tx(a, "more_button", TEXTOS_MURO.verMas),
               viendo: tx(a, "count_text", TEXTOS_MURO.viendo),

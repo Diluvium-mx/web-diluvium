@@ -45,6 +45,38 @@ export const TEXTOS_MURO: TextosMuro = {
   verSeisMas: "Ver 6 más",
 };
 
+/** Tarjeta «¿Ya tienes tu compuerta?» del muro de reseñas y su ventana para escribir una (24-nov-2026). Cada texto se
+ *  edita en la pestaña Textos (clave entre paréntesis en Resenas.tsx). */
+export type TextosResenaNueva = {
+  invitarTitulo: string;
+  invitarTexto: string;
+  invitarBoton: string;
+  titulo: string;
+  calificacion: string;
+  comentario: string;
+  comentarioEjemplo: string;
+  fotos: string;
+  nombre: string;
+  enviar: string;
+  gracias: string;
+  graciasTexto: string;
+};
+
+export const TEXTOS_RESENA_NUEVA: TextosResenaNueva = {
+  invitarTitulo: "¿Ya tienes tu compuerta Diluvium?",
+  invitarTexto: "Cuéntanos cómo te fue: tu reseña ayuda a otras familias.",
+  invitarBoton: "Escribir mi reseña",
+  titulo: "Escribe tu reseña",
+  calificacion: "Tu calificación",
+  comentario: "Tu comentario",
+  comentarioEjemplo: "¿Cómo te fue con tu compuerta? ¿En qué entrada la pusiste?",
+  fotos: "Agrega fotos de tu compuerta puesta (opcional)",
+  nombre: "Tu nombre",
+  enviar: "Enviar mi reseña",
+  gracias: "¡Gracias por tu reseña!",
+  graciasTexto: "La revisamos y aparecerá en la página muy pronto.",
+};
+
 /** Textos fijos de la compra que se editan en la pestaña Textos (con su valor de siempre). */
 export type TextosCompra = {
   placeholder: string;

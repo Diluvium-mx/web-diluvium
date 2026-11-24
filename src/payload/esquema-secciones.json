@@ -5393,6 +5393,78 @@
      "diseno": false
     },
     {
+     "clave": "invite_heading",
+     "tipo": "texto",
+     "etiqueta": "Tarjeta para escribir reseña: título",
+     "diseno": false
+    },
+    {
+     "clave": "invite_text",
+     "tipo": "texto",
+     "etiqueta": "Tarjeta para escribir reseña: texto",
+     "diseno": false
+    },
+    {
+     "clave": "invite_button",
+     "tipo": "texto",
+     "etiqueta": "Tarjeta para escribir reseña: botón",
+     "diseno": false
+    },
+    {
+     "clave": "form_heading",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: título",
+     "diseno": false
+    },
+    {
+     "clave": "form_rating",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: calificación",
+     "diseno": false
+    },
+    {
+     "clave": "form_comment",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: comentario",
+     "diseno": false
+    },
+    {
+     "clave": "form_comment_placeholder",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: ejemplo del comentario",
+     "diseno": false
+    },
+    {
+     "clave": "form_photos",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: fotos",
+     "diseno": false
+    },
+    {
+     "clave": "form_name",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: nombre",
+     "diseno": false
+    },
+    {
+     "clave": "form_submit",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: botón de enviar",
+     "diseno": false
+    },
+    {
+     "clave": "form_thanks",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: gracias",
+     "diseno": false
+    },
+    {
+     "clave": "form_thanks_text",
+     "tipo": "texto",
+     "etiqueta": "Ventana de reseña: texto de gracias",
+     "diseno": false
+    },
+    {
      "clave": "product_filter",
      "tipo": "texto",
      "etiqueta": "Producto filtro",
@@ -6164,7 +6236,7 @@
     {
      "clave": "form_heading",
      "tipo": "texto",
-     "etiqueta": "Formulario: título",
+     "etiqueta": "Ventana de reseña: título",
      "diseno": false
     },
     {

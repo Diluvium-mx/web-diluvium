@@ -23,7 +23,8 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties } from "react";
-import { conValores, TEXTOS_MURO, type TextosMuro } from "./textos";
+import { conValores, TEXTOS_MURO, type TextosMuro, type TextosResenaNueva } from "./textos";
+import { TarjetaInvitar, type ProductoResena } from "./EscribirResenaVersion";
 
 const PARA_FLECHA = 18;
 
@@ -115,11 +116,14 @@ export function MuroResenas({
   mas = [],
   textos = TEXTOS_MURO,
   difuminado = DIFUMINADO_INICIAL,
+  invitar,
 }: {
   tarjetas: TarjetaMuro[];
   mas?: TarjetaMuro[];
   textos?: TextosMuro;
   difuminado?: number;
+  /** Tarjeta «¿Ya tienes tu compuerta?» para escribir una reseña (24-nov-2026): va en el hueco de la columna más corta. */
+  invitar?: { producto: ProductoResena; textos: TextosResenaNueva };
 }) {
   const [abierta, setAbierta] = useState<number | null>(null);
   const [cuantas, setCuantas] = useState(elegidas.length);
@@ -169,14 +173,52 @@ export function MuroResenas({
   const n = enCompu ? 3 : 2;
   const columnas = Array.from({ length: n }, (_, c) => tarjetas.filter((_, i) => i % n === c));
 
+  // La tarjeta para escribir una reseña va al final de la columna que termina más arriba (el hueco que dejan las fotos
+  // y los textos de distinto largo). Se vuelve a medir al cargar las fotos, al abrir «Ver más» y al cambiar el ancho;
+  // se mide sin contarla a ella, así no brinca de una columna a otra.
+  const columnasEl = useRef<(HTMLUListElement | null)[]>([]);
+  const [colInvitar, setColInvitar] = useState<number | null>(null);
+  useEffect(() => {
+    if (!invitar) return;
+    const medir = () => {
+      const fines = columnasEl.current.slice(0, n).map((ul) => {
+        if (!ul) return Infinity;
+        let fin = 0;
+        for (const li of ul.children) {
+          const e = li as HTMLElement;
+          if (e.dataset.invitar === undefined) fin = Math.max(fin, e.offsetTop + e.offsetHeight);
+        }
+        return fin;
+      });
+      // La más corta; si dos terminan casi igual, la de más a la derecha.
+      let elegida = 0;
+      fines.forEach((f, i) => {
+        if (f <= fines[elegida] + 2) elegida = i;
+      });
+      setColInvitar((antes) => (antes === elegida ? antes : elegida));
+    };
+    medir();
+    const vigia = new ResizeObserver(medir);
+    columnasEl.current.slice(0, n).forEach((ul) => ul && vigia.observe(ul));
+    return () => vigia.disconnect();
+  }, [invitar, n, cuantas]);
+  const dondeInvitar = Math.min(colInvitar ?? n - 1, n - 1);
+
   return (
     <>
       <div ref={muro} className="grid max-w-[760px] grid-cols-2 items-start gap-3 md:gap-4 lg:max-w-none lg:grid-cols-3 lg:gap-5">
         {columnas.map((col, c) => (
-          <ul key={c} className="m-0 grid list-none gap-3 p-0 md:gap-4">
+          <ul
+            key={c}
+            ref={(el) => {
+              columnasEl.current[c] = el;
+            }}
+            className="m-0 grid list-none gap-3 p-0 md:gap-4"
+          >
             {col.map((x) => (
               <Tarjeta key={x.id} t={x} leerMas={textos.leerMas} alAbrir={() => setAbierta(tarjetas.indexOf(x))} />
             ))}
+            {invitar && c === dondeInvitar && <TarjetaInvitar producto={invitar.producto} textos={invitar.textos} />}
           </ul>
         ))}
       </div>
