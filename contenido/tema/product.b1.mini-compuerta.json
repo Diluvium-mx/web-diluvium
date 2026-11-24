@@ -190,6 +190,59 @@
    ]
   },
   {
+   "id": "landing_pasos_mini_b1",
+   "tipo": "landing-pasos",
+   "ajustes": {
+    "fondo": "niebla",
+    "ola": "capas",
+    "producto": "mini-compuerta",
+    "heading": "3 pasos clave",
+    "button_text": "Ver tabla de medidas",
+    "layout": "tarjetas",
+    "table_heading": "Tabla de tamaños",
+    "table_note": "Mide el ancho de tu entrada de marco a marco.",
+    "table_size": "Tamaño",
+    "table_width": "Ancho de entrada",
+    "table_image": "/media/files/tabla-tamanos-mini.png",
+    "table_image_alt": "Tabla de tamaños de la Mini Compuerta: A de 62 a 70 cm, B de 71 a 79, C de 80 a 88, D de 89 a 97, E de 98 a 106, F de 107 a 115 y G de 116 a 124 cm de ancho"
+   },
+   "bloques": [
+    {
+     "id": "step_1",
+     "tipo": "step",
+     "ajustes": {
+      "image": "/media/files/puerta_buena.jpg",
+      "alt": "Puerta con una flecha que marca el ancho, de marco a marco",
+      "heading": "Mide el ancho de tu entrada",
+      "text": "De marco a marco o de pared a pared, con una cinta métrica.",
+      "focal": "50% 50%",
+      "zoom": 1.3
+     }
+    },
+    {
+     "id": "step_2",
+     "tipo": "step",
+     "ajustes": {
+      "alt": "Tabla de tamaños de la Mini Compuerta",
+      "heading": "Elige tu tamaño",
+      "text": "Todos cuestan {precio}, con envío gratis."
+     }
+    },
+    {
+     "id": "step_3",
+     "tipo": "step",
+     "ajustes": {
+      "image": "/media/files/Frame_603.jpg",
+      "alt": "Dibujo de una puerta con la compuerta puesta",
+      "heading": "Recíbela y colócala",
+      "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos.",
+      "focal": "50% 53%",
+      "zoom": 1.22
+     }
+    }
+   ]
+  },
+  {
    "id": "landing_preguntas_mini_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
@@ -201,7 +254,7 @@
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
     "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
-    "fondo": "niebla",
+    "fondo": "blanco",
     "ola": "larga",
     "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
     "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"

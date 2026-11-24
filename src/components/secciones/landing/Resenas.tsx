@@ -21,7 +21,10 @@ import { claseFondo, fondoPropio } from "./Olas";
 import { redondear } from "@/components/resenas/calificaciones";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[]; producto?: { url?: string } | null };
-const PUBLICADAS = resenas.pagina as Resena[];
+// Sin las de 1 estrella (dueño, 24-nov-2026: la única es de una puerta de 3.90 m, más grande de lo que se hace). La
+// calificación de la tienda ({calificacion} sin filtro) sigue siendo la de todas las publicadas, como en la tienda.
+const MINIMO_ESTRELLAS = 2;
+const PUBLICADAS = (resenas.pagina as Resena[]).filter((r) => Number(r.calificacion) >= MINIMO_ESTRELLAS);
 
 function EstrellasResena({ n }: { n: number }) {
   return (

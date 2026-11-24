@@ -5,7 +5,7 @@
 
 import { useRef } from "react";
 import { IconoTache } from "./piezas";
-import { TablaAnimada, type TamanoPaso } from "./PasosMedir";
+import { TablaAnimada, TablaFoto, type FotoTabla, type TamanoPaso } from "./PasosMedir";
 import { formato, sinFormato } from "./formato";
 
 export function VentanaTabla({
@@ -15,6 +15,7 @@ export function VentanaTabla({
   titulo = "Tabla de tamaños",
   nota = "Mide el ancho de tu entrada de marco a marco.",
   columnas,
+  foto,
 }: {
   texto: string;
   className: string;
@@ -22,6 +23,8 @@ export function VentanaTabla({
   titulo?: string;
   nota?: string;
   columnas?: [string, string];
+  /** La tabla como foto (Mini): se muestra esa en lugar de la tabla con la flecha. */
+  foto?: FotoTabla;
 }) {
   const ventana = useRef<HTMLDialogElement>(null);
   const cerrar = () => ventana.current?.close();
@@ -43,7 +46,7 @@ export function VentanaTabla({
           </button>
         </div>
         <div className="px-4 pt-4 pb-5">
-          <TablaAnimada tamanos={tamanos} columnas={columnas} />
+          {foto ? <TablaFoto foto={{ ...foto, marca: undefined }} /> : <TablaAnimada tamanos={tamanos} columnas={columnas} />}
           {nota && <p className="m-0 mt-3 text-center text-[15px] text-texto-suave">{formato(nota)}</p>}
         </div>
       </dialog>

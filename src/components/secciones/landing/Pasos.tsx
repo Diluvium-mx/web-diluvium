@@ -2,6 +2,8 @@
 // abajo, el botón que abre la tabla de medidas (cuenta como «abre_tabla»).
 // Con «layout» = tarjetas (Producto de B1, 21-nov-2026, propuesta A que eligió el dueño): los mismos pasos clave de la
 // ventana «¿Cómo medir?», sin los textos grises; el paso 2 es la tabla de tamaños con la flecha que la recorre.
+// Con «table_image» (Mini de B1, 24-nov-2026) la tabla del paso 2 y la de «Ver tabla de medidas» es esa foto; con
+// «producto», los tamaños y el precio son los de ese producto (si no, los de la compuerta estándar).
 
 import Image from "next/image";
 import type { PropsSeccion } from "../registro";
@@ -18,16 +20,29 @@ import { TEXTOS_COMO_MEDIR } from "./textos";
 const CLASE_BOTON_SECUNDARIO =
   "inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border-2 border-marino bg-white px-6 font-titulo font-medium text-marino transition-colors hover:bg-marino hover:text-white";
 import { claseFondo, fondoPropio } from "./Olas";
+import { medidasImagen } from "../ImagenBanner";
+import type { FotoTabla } from "./PasosMedir";
 
 export function PasosVersion({ seccion }: PropsSeccion) {
   const pasos = seccion.bloques.filter((b) => b.tipo === "step");
   const boton = texto(seccion.ajustes, "button_text");
   if (texto(seccion.ajustes, "layout") === "tarjetas") {
-    const tamanos = (datosVenta()?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
+    const venta = datosVenta(texto(seccion.ajustes, "producto") || undefined);
+    const tamanos = (venta?.tamanos ?? []).filter((t) => t.medidas).map((t) => ({ nombre: t.nombre, medidas: t.medidas }));
+    const fotoTabla: FotoTabla | undefined = texto(seccion.ajustes, "table_image")
+      ? {
+          src: texto(seccion.ajustes, "table_image"),
+          alt: tx(seccion.ajustes, "table_image_alt", "Tabla de tamaños"),
+          ...medidasImagen(texto(seccion.ajustes, "table_image")),
+          estilo: estiloFoto(seccion.ajustes, "table_image"),
+          marca: marcaEditar(seccion.id, "", "table_image"),
+        }
+      : undefined;
     const columnas: [string, string] = [tx(seccion.ajustes, "table_size", "Tamaño"), tx(seccion.ajustes, "table_width", "Ancho de entrada")];
     const tarjetas: PasoMedir[] = pasos.map((p, i) => ({
-      titulo: textoVersion(p.ajustes, "heading"),
+      titulo: textoVersion(p.ajustes, "heading", venta),
       tabla: i === 1,
+      fotoTabla: i === 1 ? fotoTabla : undefined,
       imagen: texto(p.ajustes, "image") || undefined,
       alt: texto(p.ajustes, "alt"),
       estilo: estiloFoto(p.ajustes),
@@ -69,6 +84,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
                   columnas={columnas}
                   texto={boton}
                   className={CLASE_BOTON_SECUNDARIO}
+                  foto={fotoTabla}
                 />
               )}
             </div>

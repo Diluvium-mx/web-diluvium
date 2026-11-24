@@ -3160,6 +3160,9 @@ export interface Plantilla {
             table_heading?: string | null;
             table_note?: string | null;
             button_action?: string | null;
+            producto?: string | null;
+            table_image?: (number | null) | Medio;
+            table_image_alt?: string | null;
             layout?: string | null;
             table_size?: string | null;
             table_width?: string | null;
@@ -6101,6 +6104,9 @@ export interface PlantillasSelect<T extends boolean = true> {
               table_heading?: T;
               table_note?: T;
               button_action?: T;
+              producto?: T;
+              table_image?: T;
+              table_image_alt?: T;
               layout?: T;
               table_size?: T;
               table_width?: T;

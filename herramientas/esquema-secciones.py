@@ -215,6 +215,7 @@ FIJAS = {
     "search_examples": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)", "search_button": "Caja de preguntas: botón",
     "no_answer_text": "Caja de preguntas: si no hay respuesta", "contact_heading": "Título de contacto",
     "store_heading": "Título de la tienda",
+    "table_image": "Tabla de tamaños (foto)", "table_image_alt": "Descripción de la tabla (para lectores de pantalla)",
 }
 # Lo que dice en qué pantalla aplica va al final: «Imagen (celular)».
 PANTALLAS = {"desktop": "computadora", "mobile": "celular", "md": "computadora", "xs": "celular"}

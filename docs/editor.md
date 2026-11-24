@@ -157,6 +157,9 @@ y carrito 2 (hoja desde abajo con ×).
   que el navegador baje una copia de ese tamaño. Va en `MarcoVersionB` junto a `AlejarFotos`.
 - Muro de reseñas de un solo producto (XXL): ajuste `product_filter` de `landing-resenas` con la dirección del
   producto; {calificacion} y {total} del título salen de esas reseñas.
+- Pasos clave con la tabla como foto (Mini): ajuste `table_image` de `landing-pasos` (sale en el paso 2 y en «Ver tabla
+  de medidas», y se cambia en el editor); `producto` hace que tamaños y precio sean los de ese producto. Los muros de
+  reseñas no muestran las de 1 estrella (`MINIMO_ESTRELLAS` en `Resenas.tsx`).
 - Encabezado y pie que una página toma de la portada (`MarcoVersionB`): van dentro de `data-prestada` y el editor no
   deja tocar sus fotos (su marca es de otra plantilla). Los marcos nuevos alrededor de una foto van como `<picture>`
   cuando hay `<span>` al lado, para no mover los números del mapa de esos textos.

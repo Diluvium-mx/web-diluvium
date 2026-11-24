@@ -4930,6 +4930,24 @@
      "tipo": "texto",
      "etiqueta": "Qué abre el botón (tabla o video)",
      "diseno": false
+    },
+    {
+     "clave": "producto",
+     "tipo": "texto",
+     "etiqueta": "Producto (su dirección, sin /products/)",
+     "diseno": false
+    },
+    {
+     "clave": "table_image",
+     "tipo": "imagen",
+     "etiqueta": "Tabla de tamaños (foto)",
+     "diseno": false
+    },
+    {
+     "clave": "table_image_alt",
+     "tipo": "textoLargo",
+     "etiqueta": "Descripción de la tabla (para lectores de pantalla)",
+     "diseno": false
     }
    ],
    "bloques": [

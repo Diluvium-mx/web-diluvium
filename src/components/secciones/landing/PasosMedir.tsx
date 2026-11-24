@@ -11,6 +11,8 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { formato } from "./formato";
 
 export type TamanoPaso = { nombre: string; medidas: string };
+/** La tabla de tamaños como foto (Mini de B1, 24-nov-2026: su tabla A–G), en lugar de la tabla con la flecha. */
+export type FotoTabla = { src: string; alt: string; ancho: number; alto: number; estilo?: CSSProperties; marca?: Record<string, string> };
 export type VariantePasos = "a" | "b" | "c";
 /** Un paso: su título y su dibujo (o la tabla de tamaños). En la página (B1-P5) salen de la plantilla. */
 export type PasoMedir = {
@@ -18,6 +20,8 @@ export type PasoMedir = {
   imagen?: string;
   alt?: string;
   tabla?: boolean;
+  /** Con foto, la tabla es esa foto. */
+  fotoTabla?: FotoTabla;
   estilo?: CSSProperties;
   marca?: Record<string, string>;
   /** Id de la pieza en la plantilla (para el mapa y el editor). */
@@ -122,8 +126,18 @@ function Dibujo({ paso }: { paso: PasoMedir }) {
   );
 }
 
+/** La tabla de tamaños hecha foto, completa y a lo ancho (en su marco, para el acercamiento del editor). */
+export function TablaFoto({ foto }: { foto: FotoTabla }) {
+  return (
+    <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-xl">
+      <Image src={foto.src} alt={foto.alt} width={foto.ancho} height={foto.alto} sizes="360px" className="h-auto w-full" style={foto.estilo} {...foto.marca} />
+    </div>
+  );
+}
+
 function Visual({ paso, tamanos, columnas }: { paso: PasoMedir; tamanos: TamanoPaso[]; columnas?: [string, string] }) {
-  return paso.tabla ? <TablaAnimada tamanos={tamanos} columnas={columnas} /> : <Dibujo paso={paso} />;
+  if (paso.tabla) return paso.fotoTabla ? <TablaFoto foto={paso.fotoTabla} /> : <TablaAnimada tamanos={tamanos} columnas={columnas} />;
+  return <Dibujo paso={paso} />;
 }
 
 /** «a» · Tarjetas: cada paso en su tarjeta, número grande, título y dibujo. */
