@@ -18,7 +18,9 @@ import coleccionB1 from "@contenido/tema/collection.b1.json";
 import miniB1 from "@contenido/tema/product.b1.mini-compuerta.json";
 import medidaB1 from "@contenido/tema/product.b1.medida-especial.json";
 import taponB1 from "@contenido/tema/product.b1.tapon-inflable.json";
-import accesorioB1 from "@contenido/tema/product.b1.accesorio.json";
+import fundaB1 from "@contenido/tema/product.b1.funda.json";
+import tiraB1 from "@contenido/tema/product.b1.tira.json";
+import plastilinaB1 from "@contenido/tema/product.b1.plastilina.json";
 import productoGeneral from "@contenido/tema/product.json";
 import productoCompuerta from "@contenido/tema/product.compuerta-estandar-2.json";
 import productoMedida from "@contenido/tema/product.medida-especial.json";
@@ -54,7 +56,9 @@ const PLANTILLAS = {
   "producto.b1.mini": miniB1 as Plantilla,
   "producto.b1.medida": medidaB1 as Plantilla,
   "producto.b1.tapon": taponB1 as Plantilla,
-  "producto.b1.accesorio": accesorioB1 as Plantilla,
+  "producto.b1.funda": fundaB1 as Plantilla,
+  "producto.b1.tira": tiraB1 as Plantilla,
+  "producto.b1.plastilina": plastilinaB1 as Plantilla,
   encabezado: encabezado as Plantilla,
   pie: pie as Plantilla,
   product: productoGeneral as Plantilla,

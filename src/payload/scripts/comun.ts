@@ -67,7 +67,9 @@ export const PLANTILLAS: Record<string, string> = {
   "product.b1.mini-compuerta": "Mini compuerta · versión B1 (prueba)",
   "product.b1.medida-especial": "Compuerta a la medida · versión B1 (prueba)",
   "product.b1.tapon-inflable": "Tapón inflable · versión B1 (prueba)",
-  "product.b1.accesorio": "Repuestos y accesorios · versión B1 (prueba)",
+  "product.b1.funda": "Funda de repuesto · versión B1 (prueba)",
+  "product.b1.tira": "Tira de hule · versión B1 (prueba)",
+  "product.b1.plastilina": "Plastilina de secado rápido · versión B1 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));

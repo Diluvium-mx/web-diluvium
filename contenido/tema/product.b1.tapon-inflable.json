@@ -24,7 +24,7 @@
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
     "gallery_style": "normal",
-    "include_product_media": true,
+    "include_product_media": false,
     "sticky_bar": "al_bajar",
     "sticky_text": "Elegir mi medida",
     "measure_placeholder": "Ej. 95",
@@ -49,6 +49,76 @@
     "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame2352.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frametaponbueno.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon1.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon3.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon2.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Medidastaponesinflables_ec99b8c3-0bf9-46f4-a78d-60ef08ba6d32.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
     {
      "id": "point_1",
      "tipo": "point",

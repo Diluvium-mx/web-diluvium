@@ -160,7 +160,8 @@ negocio).
   (`/v/b1/pages/nosotros`, `page.nosotros.b1.json`), Blog (`/v/b1/blogs/blog`, `blog.b1.json`) y cada artículo
   (`article.b1.json`), Productos (`/v/b1/collections/all-products`, `collection.b1.json`) y la ficha de los demás
   productos (`product.b1.mini-compuerta`, `product.b1.medida-especial`, `product.b1.tapon-inflable` y
-  `product.b1.accesorio` para funda, tira de hule y plastilina). No traen encabezado ni pie: usan los de la portada B1
+  una ficha para cada repuesto: `product.b1.funda`, `product.b1.tira` y `product.b1.plastilina`). Las fotos de cada
+  ficha son piezas de su plantilla (se acomodan en el editor). No traen encabezado ni pie: usan los de la portada B1
   (`MarcoVersionB.tsx`). Secciones nuevas: `landing-titulo`, `landing-productos`, `landing-contacto` (el formulario hace
   lo mismo que el de la tienda), `landing-historia`, `landing-premios`, `landing-cita`, `landing-blog` y
   `landing-articulo`. Cada sección puede llevar `fondo` (blanco, niebla, cielo o marino) y `ola` (la ola de arriba:

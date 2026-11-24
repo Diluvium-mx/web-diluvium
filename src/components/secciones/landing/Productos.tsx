@@ -71,10 +71,19 @@ export function ProductosVersion({ seccion }: PropsSeccion) {
                         </span>
                       </p>
                     )}
-                    <p className="m-0 mt-auto flex flex-wrap items-baseline gap-x-2 pt-3 sm:pt-4">
+                    <p className="m-0 mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-3 sm:pt-4">
                       {precio.desde && <span className="text-[15px] text-texto-suave">{tx(a, "from_text", "Desde")}</span>}
                       <span className="text-[21px] leading-none font-bold sm:text-[24px]">{pesos(precio.precio)}</span>
                       {precio.antes && <span className="text-[15px] text-texto-suave line-through sm:text-[16px]">{pesos(precio.antes)}</span>}
+                      {/* El mismo descuento que la ficha del producto (Producto 61; Productos 4, 6, 8 y 9, dueño 24-nov-2026). */}
+                      {precio.antes && precio.antes > precio.precio && (
+                        <span className="rounded-md bg-[#e3f5e8] px-2 py-0.5 text-[13px] font-bold text-[#1a7f37] sm:text-[14px]">
+                          {tx(a, "discount_text", "-{porcentaje}% en descuento").replace(
+                            "{porcentaje}",
+                            String(Math.round(((precio.antes - precio.precio) / precio.antes) * 100)),
+                          )}
+                        </span>
+                      )}
                     </p>
                     <span className="mt-4 hidden min-h-12 items-center sm:inline-flex justify-center gap-2 rounded-xl border-2 border-marino px-5 font-titulo text-[16px] font-medium transition-colors group-hover:bg-marino group-hover:text-white">
                       {tx(a, "button_text", "Ver producto")}

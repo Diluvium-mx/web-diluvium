@@ -1,11 +1,11 @@
 {
- "fuente": "Ficha de los repuestos y accesorios (funda, tira de hule y plastilina) en la versión B1 (23-nov-2026)",
+ "fuente": "Ficha de tira de hule de repuesto en la versión B1 (24-nov-2026, antes compartida con los demás repuestos)",
  "secciones": [
   {
-   "id": "landing_ficha_accesorio_b1",
+   "id": "landing_ficha_tira_b1",
    "tipo": "landing-ficha",
    "ajustes": {
-    "producto": "",
+    "producto": "accesorio-tira-de-hule-de-repuesto",
     "rating_text": "",
     "sold_text": "",
     "heading": "",
@@ -24,7 +24,7 @@
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
     "gallery_style": "normal",
-    "include_product_media": true,
+    "include_product_media": false,
     "sticky_bar": "al_bajar",
     "sticky_text": "Comprar",
     "measure_placeholder": "Ej. 95",
@@ -52,6 +52,16 @@
    },
    "bloques": [
     {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto (accesorio)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
      "id": "trust_1",
      "tipo": "trust",
      "ajustes": {
@@ -72,7 +82,7 @@
    ]
   },
   {
-   "id": "landing_cierre_accesorio_b1",
+   "id": "landing_cierre_tira_b1",
    "tipo": "landing-cierre",
    "ajustes": {
     "heading": "La temporada de lluvias no espera",

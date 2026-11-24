@@ -24,7 +24,7 @@
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
     "gallery_style": "normal",
-    "include_product_media": true,
+    "include_product_media": false,
     "sticky_bar": "al_bajar",
     "sticky_text": "Pedir la mía",
     "measure_placeholder": "Ej. 95",
@@ -49,6 +49,66 @@
     "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/6_3b8c0ccf-3412-4dc9-83dc-470da79ca652.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/1.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/3_e2c0623e-a5e2-442a-9126-61b08b856e29.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/4_e2544b69-40cf-4121-a2c9-1757f50fda5b.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/METrasera.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
     {
      "id": "point_1",
      "tipo": "point",

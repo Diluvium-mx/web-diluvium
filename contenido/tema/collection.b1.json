@@ -8,7 +8,7 @@
     "fondo": "blanco",
     "subheading": "Productos",
     "heading": "Todo para que el agua no entre a tu casa",
-    "text": "La compuerta para tu puerta, la mini para filtraciones ligeras, la XXL para entradas anchas, el tapón para las coladeras y los repuestos de tu compuerta."
+    "text": ""
    },
    "bloques": []
   },
@@ -21,7 +21,8 @@
     "heading": "",
     "button_text": "Ver producto",
     "from_text": "Desde",
-    "reviews_text": "reseñas"
+    "reviews_text": "reseñas",
+    "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
     {

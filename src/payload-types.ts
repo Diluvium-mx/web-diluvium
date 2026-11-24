@@ -3773,6 +3773,7 @@ export interface Plantilla {
             button_text?: string | null;
             from_text?: string | null;
             reviews_text?: string | null;
+            discount_text?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -6491,6 +6492,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               button_text?: T;
               from_text?: T;
               reviews_text?: T;
+              discount_text?: T;
               bloques?:
                 | T
                 | {

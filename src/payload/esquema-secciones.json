@@ -6340,6 +6340,12 @@
      "tipo": "texto",
      "etiqueta": "Texto después del número de reseñas",
      "diseno": false
+    },
+    {
+     "clave": "discount_text",
+     "tipo": "texto",
+     "etiqueta": "Descuento junto al precio ({porcentaje} = el % real de descuento)",
+     "diseno": false
     }
    ],
    "bloques": [

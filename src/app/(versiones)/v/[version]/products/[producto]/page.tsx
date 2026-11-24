@@ -22,7 +22,9 @@ const ARCHIVO_FICHA: Partial<Record<string, string>> = {
   "producto.b1.mini": "product.b1.mini-compuerta",
   "producto.b1.medida": "product.b1.medida-especial",
   "producto.b1.tapon": "product.b1.tapon-inflable",
-  "producto.b1.accesorio": "product.b1.accesorio",
+  "producto.b1.funda": "product.b1.funda",
+  "producto.b1.tira": "product.b1.tira",
+  "producto.b1.plastilina": "product.b1.plastilina",
 };
 
 export function generateStaticParams() {
