@@ -14,6 +14,7 @@ import { CLASE_ENLACE, IconoWhatsapp } from "./piezas";
 import { PreguntasTarjetas } from "./PreguntasTarjetas";
 import { BANCO_EXTRA } from "./preguntas-banco";
 import { producto as buscarProducto } from "@/components/producto/catalogo";
+import { claseFondo, fondoPropio } from "./Olas";
 
 const ENLACE_MEDIDA = "/products/compuerta-anti-inundaciones-hecha-a-la-medida";
 // Ejemplos que van cambiando dentro de la caja (preguntas que no están en las de arriba y que el banco contesta).
@@ -52,7 +53,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
   const tituloBuscador = texto(a, "search_heading");
   const banco = tituloBuscador ? armarBanco(preguntas) : [];
   return (
-    <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className="bg-white py-14 text-marino md:py-20">
+    <section data-seccion="landing-preguntas" id="preguntas" aria-labelledby="titulo-preguntas" className={`${claseFondo(fondoPropio(seccion.ajustes, "blanco"))} py-14 text-marino md:py-20`}>
       <div className="marco-version grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <h2 id="titulo-preguntas" className="titulo-version m-0 text-[28px] md:text-[38px]">

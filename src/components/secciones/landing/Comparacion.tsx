@@ -8,6 +8,7 @@ import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 import { formato } from "./formato";
 import { IconoPalomita, IconoTache } from "./piezas";
+import { claseFondo, fondoPropio } from "./Olas";
 
 const TAMANO = "(min-width: 1200px) 600px, (min-width: 768px) 46vw, calc(100vw - 32px)";
 
@@ -17,7 +18,7 @@ export function ComparacionVersion({ seccion }: PropsSeccion) {
   const despues = seccion.bloques.filter((b) => b.tipo === "after").map((b) => textoVersion(b.ajustes, "text")).filter(Boolean);
 
   return (
-    <section data-seccion="landing-comparacion" aria-labelledby="titulo-comparacion" className="bg-niebla py-14 text-marino md:py-20">
+    <section data-seccion="landing-comparacion" aria-labelledby="titulo-comparacion" className={`${claseFondo(fondoPropio(seccion.ajustes, "niebla"))} py-14 text-marino md:py-20`}>
       <div className="marco-version">
         <h2 id="titulo-comparacion" className="titulo-version m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
           {formato(textoVersion(a, "heading"))}

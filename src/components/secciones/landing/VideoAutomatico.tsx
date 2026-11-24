@@ -2,8 +2,8 @@
 
 // «Video automático» (nombre del dueño, 23-nov-2026): el mismo reproductor del video de la galería de la compuerta
 // (VideoGaleria.tsx, el 3.º de sus fotos). Al llegar a él en la pantalla se reproduce solo, sin sonido y se repite;
-// tocarlo lo pausa, el botón de abajo le pone sonido («Toca para oír») y una barra fina muestra el avance. Al salir de
-// la pantalla se pausa. Es para videos que se ven de pasada, no para regresar ni adelantar.
+// tocarlo lo pausa, el botón de abajo le pone sonido («Toca para oír»; no sale si el video no tiene sonido) y una barra
+// fina muestra el avance. Al salir de la pantalla se pausa. Es para videos que se ven de pasada, no para regresar ni adelantar.
 // El otro sistema es el «video con controles» (VideoControles.tsx, el de «¿Cómo medir?»): empieza con sonido al
 // abrirlo, con regresar y adelantar 10 s, pantalla completa y la barra azul.
 // Va dentro de un cuadro con «relative» y su proporción (llena el cuadro como las fotos).
@@ -17,12 +17,15 @@ export function VideoAutomatico({
   alt,
   estilo,
   tocaParaOir,
+  sinSonido,
 }: {
   src: string;
   poster: string;
   alt: string;
   estilo?: CSSProperties;
   tocaParaOir?: string;
+  /** El video no tiene sonido (herramientas/videos-sonido.mjs): sin botón de sonido. */
+  sinSonido?: boolean;
 }) {
   const caja = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -38,7 +41,7 @@ export function VideoAutomatico({
 
   return (
     <div ref={caja} className="absolute inset-0">
-      <VideoGaleria src={src} poster={poster} alt={alt} activo={visible} estilo={estilo} tocaParaOir={tocaParaOir} />
+      <VideoGaleria src={src} poster={poster} alt={alt} activo={visible} estilo={estilo} tocaParaOir={tocaParaOir} sinSonido={sinSonido} />
     </div>
   );
 }

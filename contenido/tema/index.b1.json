@@ -119,6 +119,7 @@
    "id": "landing_resenas_b1",
    "tipo": "landing-resenas",
    "ajustes": {
+    "fondo": "blanco",
     "ola": "ninguna",
     "heading": "{calificacion} de 5 en más de 200 reseñas",
     "subheading": "Fotos reales de clientes con su compuerta puesta.",
@@ -192,6 +193,8 @@
    "id": "landing_comparacion_b1",
    "tipo": "landing-comparacion",
    "ajustes": {
+    "fondo": "cielo",
+    "ola": "capas",
     "heading": "Lo de siempre contra Diluvium",
     "heading_before": "Lo de siempre",
     "image_before": "/media/files/Antes_1.jpg",
@@ -267,6 +270,8 @@
    "id": "landing_beneficios_b1",
    "tipo": "landing-beneficios",
    "ajustes": {
+    "fondo": "blanco",
+    "ola": "corta",
     "heading": "Hecha para que el agua no pase"
    },
    "bloques": [
@@ -348,6 +353,9 @@
    "id": "landing_pasos_b1",
    "tipo": "landing-pasos",
    "ajustes": {
+    "fondo": "cielo",
+    "ola": "capas",
+    "ola_espejo": true,
     "heading": "3 pasos clave",
     "button_text": "Ver tabla de medidas",
     "layout": "tarjetas",
@@ -399,6 +407,8 @@
    "id": "landing_preguntas_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
+    "fondo": "blanco",
+    "ola": "larga",
     "heading": "Antes de comprar, \nresponde tus dudas 👇🏻",
     "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Tengo%20una%20duda%20sobre%20mi%20medida",

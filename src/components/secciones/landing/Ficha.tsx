@@ -30,6 +30,7 @@ import { TEXTOS_COMO_MEDIR, TEXTOS_COMPRA } from "./textos";
 import { Estrellas, Foto, IconoPalomita } from "./piezas";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { limpiarHtml } from "@/components/comunes/Texto";
+import { tieneSonido } from "@/lib/videos";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -66,7 +67,7 @@ function medios(seccionId: string, bloques: Bloque[], incluirProducto: boolean, 
     } else if (b.tipo === "image" && texto(a, "image")) {
       propios.push({ tipo: "imagen", src: texto(a, "image"), alt: texto(a, "alt") || alt, estilo: estiloFoto(a), marca: marcaEditar(seccionId, b.id, "image") });
     } else if (b.tipo === "video" && texto(a, "video")) {
-      propios.push({ tipo: "video", src: texto(a, "video"), poster: texto(a, "poster"), alt: texto(a, "alt") || alt, estilo: estiloFoto(a, "video"), marca: marcaEditar(seccionId, b.id, "video") });
+      propios.push({ tipo: "video", src: texto(a, "video"), poster: texto(a, "poster"), alt: texto(a, "alt") || alt, estilo: estiloFoto(a, "video"), marca: marcaEditar(seccionId, b.id, "video"), sinSonido: !tieneSonido(texto(a, "video")) });
     }
   }
   if (!incluirProducto) return propios;
@@ -78,7 +79,7 @@ function medios(seccionId: string, bloques: Bloque[], incluirProducto: boolean, 
     .filter((m) => !usadas.has(m.src))
     .map((m) =>
       m.tipo === "video"
-        ? { tipo: "video", src: m.src, poster: m.poster, alt: `Video de la ${p.titulo.toLowerCase()} frenando el agua` }
+        ? { tipo: "video", src: m.src, poster: m.poster, alt: `Video de la ${p.titulo.toLowerCase()} frenando el agua`, sinSonido: !tieneSonido(m.src) }
         : { tipo: "imagen", src: m.src, alt: m.alt },
     );
   return [...propios, ...delProducto];

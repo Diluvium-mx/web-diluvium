@@ -118,6 +118,12 @@ export async function medirFotos() {
   await correr(process.execPath, [path.join(RAIZ, "herramientas/medidas-imagenes.mjs")], { cwd: RAIZ, timeout: 60_000 });
 }
 
+/** ¿Los videos nuevos tienen sonido? (contenido/videos-sonido.json): al «video automático» sin sonido no le sale el
+ *  botón de sonido. */
+export async function medirVideos() {
+  await correr(process.execPath, [path.join(RAIZ, "herramientas/videos-sonido.mjs")], { cwd: RAIZ, timeout: 120_000 });
+}
+
 export type MedioBiblioteca = { src: string; carpeta: string; nombre: string; video: boolean; fecha: number };
 
 // «resenas»: las fotos de las reseñas publicadas (el muro de reseñas solo acepta esas).

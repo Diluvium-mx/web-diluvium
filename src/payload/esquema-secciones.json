@@ -4468,6 +4468,18 @@
    "etiqueta": "Versión: beneficios",
    "campos": [
     {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
+     "diseno": false
+    },
+    {
      "clave": "heading",
      "tipo": "texto",
      "etiqueta": "Título",
@@ -4599,6 +4611,18 @@
    "dbName": "s41",
    "etiqueta": "Versión: lo de siempre contra Diluvium",
    "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
+     "diseno": false
+    },
     {
      "clave": "heading",
      "tipo": "texto",
@@ -4841,6 +4865,24 @@
    "dbName": "s43",
    "etiqueta": "Versión: cómo funciona (pasos)",
    "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
+     "diseno": false
+    },
+    {
+     "clave": "ola_espejo",
+     "tipo": "siNo",
+     "etiqueta": "Ola volteada",
+     "diseno": false
+    },
     {
      "clave": "heading",
      "tipo": "texto",
@@ -5135,6 +5177,18 @@
    "etiqueta": "Versión: preguntas frecuentes",
    "campos": [
     {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "ola",
+     "tipo": "texto",
+     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
+     "diseno": false
+    },
+    {
      "clave": "heading",
      "tipo": "textoLargo",
      "etiqueta": "Título",
@@ -5181,18 +5235,6 @@
      "tipo": "textoLargo",
      "etiqueta": "Caja de preguntas: ejemplos que van cambiando (uno por renglón)",
      "diseno": false
-    },
-    {
-     "clave": "fondo",
-     "tipo": "texto",
-     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
-     "diseno": false
-    },
-    {
-     "clave": "ola",
-     "tipo": "texto",
-     "etiqueta": "Ola de arriba (corta, larga, capas, pie o ninguna)",
-     "diseno": false
     }
    ],
    "bloques": [
@@ -5224,6 +5266,12 @@
    "dbName": "s47",
    "etiqueta": "Versión: muro de reseñas",
    "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
     {
      "clave": "ola",
      "tipo": "texto",

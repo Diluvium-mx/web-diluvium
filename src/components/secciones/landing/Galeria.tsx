@@ -19,7 +19,7 @@ import { formato } from "./formato";
 type Ajuste = { estilo?: CSSProperties; marca?: Record<string, string> };
 export type MedioGaleria =
   | ({ tipo: "imagen"; src: string; alt: string } & Ajuste)
-  | ({ tipo: "video"; src: string; poster: string; alt: string } & Ajuste)
+  | ({ tipo: "video"; src: string; poster: string; alt: string; sinSonido?: boolean } & Ajuste)
   | {
       tipo: "antesDespues";
       antes: { src: string; alt: string; etiqueta: string } & Ajuste;
@@ -152,7 +152,7 @@ export function Galeria({
                   className="object-cover"
                 />
               )}
-              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} tocaParaOir={tocaParaOir} />}
+              {m.tipo === "video" && <VideoGaleria src={m.src} poster={m.poster} alt={m.alt} activo={i === actual} estilo={m.estilo} marca={m.marca} tocaParaOir={tocaParaOir} sinSonido={m.sinSonido} />}
               {m.tipo === "antesDespues" && <Comparador antes={m.antes} despues={m.despues} sizes={TAMANO} forma="size-full" arrastre="linea" desvanecerEtiquetas repetirCada={6000} pista={pista} />}
             </div>
           ))}

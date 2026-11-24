@@ -25,6 +25,9 @@ type Props = {
   ajuste?: "cover" | "contain";
   /** «Toca para oír» (editable). */
   tocaParaOir?: string;
+  /** El video no tiene sonido de verdad (herramientas/videos-sonido.mjs): sin botón de sonido ni «Toca para oír»
+   *  (dueño, 23-nov-2026: no hay motivo para ofrecerlo). */
+  sinSonido?: boolean;
 };
 
 function Icono({ d, className = "size-8" }: { d: string; className?: string }) {
@@ -40,7 +43,7 @@ const PAUSA = "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z";
 const SIN_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm12.6 3l2.7-2.7-1.1-1.1-2.7 2.7-2.7-2.7-1.1 1.1 2.7 2.7-2.7 2.7 1.1 1.1 2.7-2.7 2.7 2.7 1.1-1.1z";
 const CON_SONIDO = "M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
 
-export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonido = false, ajuste = "cover", tocaParaOir = "Toca para oír" }: Props) {
+export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonido = false, ajuste = "cover", tocaParaOir = "Toca para oír", sinSonido = false }: Props) {
   const video = useRef<HTMLVideoElement>(null);
   const barra = useRef<HTMLDivElement>(null);
   const [andando, setAndando] = useState(false);
@@ -160,20 +163,24 @@ export function VideoGaleria({ src, poster, alt, activo, estilo, marca, conSonid
         )}
       </button>
 
-      <button
-        type="button"
-        onClick={sonido}
-        data-evento="mira_video"
-        aria-label={mudo ? "Activar el sonido" : "Quitar el sonido"}
-        aria-pressed={!mudo}
-        className="absolute right-3 bottom-4 z-[3] flex size-11 cursor-pointer items-center justify-center rounded-full bg-tinta/70 text-white"
-      >
-        <Icono d={mudo ? SIN_SONIDO : CON_SONIDO} className="size-6" />
-      </button>
-      {mudo && andando && (
-        <span className="pointer-events-none absolute right-16 bottom-6 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">
-          {tocaParaOir}
-        </span>
+      {!sinSonido && (
+        <>
+          <button
+            type="button"
+            onClick={sonido}
+            data-evento="mira_video"
+            aria-label={mudo ? "Activar el sonido" : "Quitar el sonido"}
+            aria-pressed={!mudo}
+            className="absolute right-3 bottom-4 z-[3] flex size-11 cursor-pointer items-center justify-center rounded-full bg-tinta/70 text-white"
+          >
+            <Icono d={mudo ? SIN_SONIDO : CON_SONIDO} className="size-6" />
+          </button>
+          {mudo && andando && (
+            <span className="pointer-events-none absolute right-16 bottom-6 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">
+              {tocaParaOir}
+            </span>
+          )}
+        </>
       )}
 
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 z-[2] h-1 bg-white/30">

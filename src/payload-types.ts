@@ -2954,6 +2954,8 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            fondo?: string | null;
+            ola?: string | null;
             heading?: string | null;
             bloques?:
               | {
@@ -3034,6 +3036,8 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            fondo?: string | null;
+            ola?: string | null;
             heading?: string | null;
             heading_before?: string | null;
             image_before?: (number | null) | Medio;
@@ -3148,6 +3152,9 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            fondo?: string | null;
+            ola?: string | null;
+            ola_espejo?: boolean | null;
             heading?: string | null;
             button_text?: string | null;
             table_heading?: string | null;
@@ -3284,6 +3291,8 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            fondo?: string | null;
+            ola?: string | null;
             heading?: string | null;
             text?: string | null;
             whatsapp_link?: string | null;
@@ -3292,8 +3301,6 @@ export interface Plantilla {
             search_button?: string | null;
             no_answer_text?: string | null;
             search_examples?: string | null;
-            fondo?: string | null;
-            ola?: string | null;
             bloques?:
               | {
                   idTema?: string | null;
@@ -3331,6 +3338,7 @@ export interface Plantilla {
               | number
               | boolean
               | null;
+            fondo?: string | null;
             ola?: string | null;
             heading?: string | null;
             subheading?: string | null;
@@ -5888,6 +5896,8 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              fondo?: T;
+              ola?: T;
               heading?: T;
               bloques?:
                 | T
@@ -5944,6 +5954,8 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              fondo?: T;
+              ola?: T;
               heading?: T;
               heading_before?: T;
               image_before?: T;
@@ -6025,6 +6037,9 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              fondo?: T;
+              ola?: T;
+              ola_espejo?: T;
               heading?: T;
               button_text?: T;
               table_heading?: T;
@@ -6121,6 +6136,8 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              fondo?: T;
+              ola?: T;
               heading?: T;
               text?: T;
               whatsapp_link?: T;
@@ -6129,8 +6146,6 @@ export interface PlantillasSelect<T extends boolean = true> {
               search_button?: T;
               no_answer_text?: T;
               search_examples?: T;
-              fondo?: T;
-              ola?: T;
               bloques?:
                 | T
                 | {
@@ -6153,6 +6168,7 @@ export interface PlantillasSelect<T extends boolean = true> {
           | {
               idTema?: T;
               claves?: T;
+              fondo?: T;
               ola?: T;
               heading?: T;
               subheading?: T;

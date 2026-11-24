@@ -166,8 +166,8 @@ export function SeccionesConOlas({ secciones, producto, slugArticulo }: { seccio
     return (
       <Fragment key={s.id}>
         {forma && antes && ahora && <Ola arriba={antes} abajo={ahora} forma={forma} espejo={s.ajustes.ola_espejo === true} />}
-        {/* Sin ola («ninguna»): una marca sin alto, para que las dos partes queden con el mismo aire que junto a una ola. */}
-        {propia === "ninguna" && i > 0 && <div data-ola="ninguna" aria-hidden="true" />}
+        {/* Sin ola («ninguna»): una marca sin alto para que la parte de abajo empiece con poco aire (versiones.css). */}
+        {propia === "ninguna" && i > 0 && <div data-sin-ola="" aria-hidden="true" />}
         <Secciones secciones={[s]} producto={producto} slugArticulo={slugArticulo} />
       </Fragment>
     );

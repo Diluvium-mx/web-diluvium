@@ -4,7 +4,7 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { revisarPedido } from "@/lib/editor/guardia";
-import { medirFotos, RAIZ } from "@/lib/editor/archivos";
+import { medirFotos, medirVideos, RAIZ } from "@/lib/editor/archivos";
 
 export const dynamic = "force-dynamic";
 
@@ -45,5 +45,6 @@ export async function POST(request: Request) {
   const nombre = `${new Date().toISOString().slice(0, 10)}-${nombreSeguro(archivo.name)}-${Date.now().toString(36).slice(-4)}.${tipo.ext}`;
   writeFileSync(path.join(carpeta, nombre), Buffer.from(await archivo.arrayBuffer()));
   if (tipo.ext !== "mp4") await medirFotos();
+  else await medirVideos();
   return Response.json({ ok: true, src: `/media/editor/${nombre}`, nombre, video: tipo.ext === "mp4" });
 }

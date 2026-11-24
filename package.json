@@ -23,7 +23,7 @@
     "admin:exportar": "tsx --env-file=.env src/payload/scripts/exportar.ts",
     "admin:agregar-plantillas": "tsx --env-file=.env src/payload/scripts/agregar-plantillas.ts",
     "admin:generar": "tsx --env-file=.env --tsconfig tsconfig.json src/payload/scripts/generar.ts",
-    "prebuild": "node herramientas/medidas-imagenes.mjs",
+    "prebuild": "node herramientas/medidas-imagenes.mjs && node herramientas/videos-sonido.mjs",
     "cf:construir": "opennextjs-cloudflare build",
     "cf:probar": "opennextjs-cloudflare preview",
     "cf:tipos": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",

@@ -48,3 +48,7 @@ Para pedir un video basta con decir cuál de los dos:
 |---|---|---|---|
 | **Video automático** | Corre solo y sin sonido al llegar a él, se repite; un toque lo pausa, el botón de abajo le pone sonido («Toca para oír») y una barra fina muestra el avance. Al salir de la pantalla se pausa. Para videos que se ven de pasada. | El 3.º de la galería de la compuerta y el video de Nosotros (B1) | `VideoGaleria.tsx` (`VideoAutomatico.tsx` fuera de la galería) |
 | **Video con controles** | Empieza con sonido al abrirlo; regresar y adelantar 10 s, pantalla completa y la barra azul; los controles salen al pausar. Para videos que se siguen paso a paso. | «¿Cómo medir?» del producto | `VideoControles.tsx` |
+
+Si el video no tiene sonido de verdad, el video automático no muestra el botón de sonido ni «Toca para oír». Lo mide
+`herramientas/videos-sonido.mjs` (volumen más alto abajo de -45 dB = sin sonido; casi todos traen una pista callada) en
+`contenido/videos-sonido.json`; corre antes de construir y al subir un video en el editor.

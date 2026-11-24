@@ -12,6 +12,7 @@ import { formato } from "./formato";
 import { PasosMedir, type PasoMedir } from "./PasosMedir";
 import { TablaMedidas } from "./TablaMedidas";
 import { VentanaTabla } from "./VentanaTabla";
+import { claseFondo, fondoPropio } from "./Olas";
 
 export function PasosVersion({ seccion }: PropsSeccion) {
   const pasos = seccion.bloques.filter((b) => b.tipo === "step");
@@ -29,7 +30,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
       pieza: p.id,
     }));
     return (
-      <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
+      <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className={`${claseFondo(fondoPropio(seccion.ajustes, "niebla"))} py-14 text-marino md:py-20`}>
         <div className="marco-version max-w-[560px]">
           <h2 id="titulo-pasos" className="titulo-version m-0 mb-6 text-[28px] md:mb-8 md:text-[38px]">
             {formato(textoVersion(seccion.ajustes, "heading"))}
@@ -52,7 +53,7 @@ export function PasosVersion({ seccion }: PropsSeccion) {
     );
   }
   return (
-    <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className="bg-niebla py-14 text-marino md:py-20">
+    <section data-seccion="landing-pasos" id="como-funciona" aria-labelledby="titulo-pasos" className={`${claseFondo(fondoPropio(seccion.ajustes, "niebla"))} py-14 text-marino md:py-20`}>
       <div className="marco-version">
         <h2 id="titulo-pasos" className="titulo-version m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
           {formato(textoVersion(seccion.ajustes, "heading"))}

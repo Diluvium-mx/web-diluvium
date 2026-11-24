@@ -7,11 +7,12 @@ import { texto } from "@/lib/contenido";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { textoVersion } from "./datos";
 import { formato } from "./formato";
+import { claseFondo, fondoPropio } from "./Olas";
 
 export function BeneficiosVersion({ seccion }: PropsSeccion) {
   const items = seccion.bloques.filter((b) => b.tipo === "benefit");
   return (
-    <section data-seccion="landing-beneficios" aria-labelledby="titulo-beneficios" className="bg-white py-14 text-marino md:py-20">
+    <section data-seccion="landing-beneficios" aria-labelledby="titulo-beneficios" className={`${claseFondo(fondoPropio(seccion.ajustes, "blanco"))} py-14 text-marino md:py-20`}>
       <div className="marco-version">
         <h2 id="titulo-beneficios" className="titulo-version m-0 mb-8 max-w-[40rem] text-[28px] md:mb-10 md:text-[38px]">
           {formato(textoVersion(seccion.ajustes, "heading"))}

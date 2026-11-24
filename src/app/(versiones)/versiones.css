@@ -96,6 +96,12 @@ html:focus-within { scroll-behavior: smooth; }
 
 /* Olas entre partes (landing/Olas.tsx): junto a una ola, las partes pierden aire para que no quede un hueco blanco
    (dueño, 21-nov-2026: «unirlo lo más posible»). Fuera de capa: gana a las clases de Tailwind de cada parte. */
+/* Sin ola («ola»: «ninguna», p. ej. debajo de los logos de las tiendas en la portada; dueño, 23-nov-2026): la parte de
+   abajo empieza con poco aire y la de arriba no agrega nada. */
+.version [data-sin-ola] + [data-seccion] { padding-top: 1.5rem; }
+@media (min-width: 768px) {
+  .version [data-sin-ola] + [data-seccion] { padding-top: 2.5rem; }
+}
 .version [data-ola] + [data-seccion] { padding-top: 1.75rem; }
 .version [data-seccion]:has(+ [data-ola]) { padding-bottom: 1.75rem; }
 @media (min-width: 768px) {

@@ -95,14 +95,14 @@
      "id": "before_after_1",
      "tipo": "before_after",
      "ajustes": {
-      "image_before": "/media/files/Antes_2.jpg",
+      "image_before": "/media/files/Antes_producto_b1_v3.jpg",
       "alt_before": "Entrada con costales de arena amontonados frente a la puerta",
       "label_before": "Antes: costales",
-      "image_after": "/media/files/Despues_2.jpg",
+      "image_after": "/media/files/Despues_producto_b1_v2.jpg",
       "alt_after": "La misma entrada con la compuerta Diluvium puesta",
       "label_after": "Después: Diluvium",
-      "focal_before": "50% 50%",
-      "focal_after": "50% 50%",
+      "focal_before": "50% 75%",
+      "focal_after": "50% 75%",
       "zoom_before": 1,
       "zoom_after": 1
      }
@@ -299,7 +299,8 @@
    "id": "landing_resenas_b1_producto",
    "tipo": "landing-resenas",
    "ajustes": {
-    "ola": "ninguna",
+    "fondo": "niebla",
+    "ola": "capas",
     "heading": "{calificacion} de 5 en más de 200 reseñas",
     "subheading": "Fotos reales de clientes con su compuerta puesta.",
     "layout": "dos_columnas",
@@ -372,6 +373,8 @@
    "id": "landing_comparacion_b1_producto",
    "tipo": "landing-comparacion",
    "ajustes": {
+    "fondo": "blanco",
+    "ola": "corta",
     "heading": "Lo de siempre contra Diluvium",
     "heading_before": "Lo de siempre",
     "image_before": "/media/files/Antes_1.jpg",
@@ -447,6 +450,9 @@
    "id": "landing_pasos_b1_producto",
    "tipo": "landing-pasos",
    "ajustes": {
+    "fondo": "niebla",
+    "ola": "capas",
+    "ola_espejo": true,
     "heading": "3 pasos clave",
     "button_text": "Ver tabla de medidas",
     "layout": "tarjetas",
@@ -498,6 +504,8 @@
    "id": "landing_preguntas_producto_b1",
    "tipo": "landing-preguntas",
    "ajustes": {
+    "fondo": "blanco",
+    "ola": "larga",
     "heading": "Antes de comprar, responde tus dudas 👇🏻",
     "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola!%20Me%20interesa%20una%20Compuerta%20Anti%20Inundaciones%20-%20Diluvium",

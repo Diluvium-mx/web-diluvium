@@ -15,6 +15,7 @@ import { medidasImagen } from "../ImagenBanner";
 import { MuroResenas } from "./MuroResenas";
 import { TEXTOS_MURO } from "./textos";
 import { tx } from "./datos";
+import { claseFondo, fondoPropio } from "./Olas";
 
 type Resena = { nombre: string; calificacion: number; texto: string; fotos: string[] };
 const PUBLICADAS = resenas.pagina as Resena[];
@@ -56,7 +57,7 @@ export function ResenasVersion({ seccion }: PropsSeccion) {
   if (!tarjetas.length) return null;
 
   return (
-    <section data-seccion="landing-resenas" id="resenas" aria-labelledby="titulo-resenas" className="bg-white py-14 text-marino md:py-20">
+    <section data-seccion="landing-resenas" id="resenas" aria-labelledby="titulo-resenas" className={`${claseFondo(fondoPropio(seccion.ajustes, "blanco"))} py-14 text-marino md:py-20`}>
       <div className="marco-version">
         <div className="mb-8 max-w-[44rem] md:mb-10">
           <h2 id="titulo-resenas" className="titulo-version m-0 text-[28px] md:text-[38px]">
