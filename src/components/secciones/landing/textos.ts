@@ -37,8 +37,8 @@ export const TEXTOS_CARRITO: TextosCarrito = {
 export type TextosMuro = { verMas: string; viendo: string; leerMas: string; resena: string; anterior: string; siguiente: string; verSeisMas: string };
 export const TEXTOS_MURO: TextosMuro = {
   verMas: "Ver más",
-  viendo: "Viendo {n} de {total} reseñas",
-  leerMas: "...Mostrar reseña completa",
+  viendo: "{n} de {total} reseñas",
+  leerMas: "… Mostrar más",
   resena: "Reseña {n} de {total}",
   anterior: "Anterior",
   siguiente: "Siguiente",

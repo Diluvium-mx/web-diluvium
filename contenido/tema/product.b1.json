@@ -69,7 +69,6 @@
     "include_product_media": false,
     "sticky_bar": "al_bajar",
     "sticky_text": "Elegir mi tamaño",
-    "savings_text": "Ahorras",
     "measure_placeholder": "Ej. 95",
     "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
     "wider_text": "Tu entrada es más ancha:",
@@ -88,14 +87,15 @@
     "step_2": "Elige tu tamaño",
     "step_3": "Recíbela y colócala",
     "table_size": "Tamaño",
-    "table_width": "Ancho de entrada"
+    "table_width": "Ancho de entrada",
+    "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
     {
      "id": "before_after_1",
      "tipo": "before_after",
      "ajustes": {
-      "image_before": "/media/files/Antes_producto_b1_v3.jpg",
+      "image_before": "/media/files/Antes_producto_b1_v4.jpg",
       "alt_before": "Entrada con costales de arena amontonados frente a la puerta",
       "label_before": "Antes: costales",
       "image_after": "/media/files/Despues_producto_b1_v2.jpg",
@@ -219,27 +219,6 @@
      }
     },
     {
-     "id": "point_1",
-     "tipo": "point",
-     "ajustes": {
-      "text": "Detiene hasta 50 cm de agua"
-     }
-    },
-    {
-     "id": "point_2",
-     "tipo": "point",
-     "ajustes": {
-      "text": "Lista en 10 minutos, sin obras ni perforar"
-     }
-    },
-    {
-     "id": "point_3",
-     "tipo": "point",
-     "ajustes": {
-      "text": "Reutilizable de 5 a 7 años"
-     }
-    },
-    {
      "id": "marketplace_ml",
      "tipo": "marketplace",
      "ajustes": {
@@ -302,11 +281,11 @@
     "fondo": "niebla",
     "ola": "capas",
     "heading": "{calificacion} de 5 en más de 200 reseñas",
-    "subheading": "Fotos reales de clientes con su compuerta puesta.",
+    "subheading": "¿Qué opinan nuestros clientes de Diluvium?",
     "layout": "dos_columnas",
     "more_button": "Ver más",
-    "count_text": "Viendo {n} de {total} reseñas",
-    "read_more_text": "...Mostrar reseña completa",
+    "count_text": "{n} de {total} reseñas",
+    "read_more_text": "… Mostrar más",
     "viewer_title": "Reseña {n} de {total}",
     "prev_button": "Anterior",
     "next_button": "Siguiente",
@@ -375,7 +354,7 @@
    "ajustes": {
     "fondo": "blanco",
     "ola": "corta",
-    "heading": "Lo de siempre contra Diluvium",
+    "heading": "La solución definitiva\nContra inundaciones",
     "heading_before": "Lo de siempre",
     "image_before": "/media/files/Antes_1.jpg",
     "alt_before": "Entrada tapada con costales de arena y una tabla",
@@ -596,7 +575,7 @@
    "ajustes": {
     "heading": "La temporada de lluvias no espera",
     "text": "Protege tu entrada antes de la próxima tormenta.",
-    "rating_text": "{calificacion} · más de 200 reseñas",
+    "rating_text": "más de 200 reseñas",
     "button_text": "Elegir mi tamaño",
     "button_link": "#tamanos",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",

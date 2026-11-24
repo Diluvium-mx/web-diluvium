@@ -27,6 +27,7 @@ export function PieVersion({ seccion }: PropsSeccion) {
     : [];
   const anio = new Date().getFullYear();
 
+  const enlacesPie = [...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")];
   return (
     <footer data-seccion="landing-pie" className="fondo-oscuro bg-marino-hondo pt-12 pb-8 text-white md:pt-16 md:pb-12">
       <div className="marco-version grid gap-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1fr)]">
@@ -67,8 +68,13 @@ export function PieVersion({ seccion }: PropsSeccion) {
         </address>
         <nav aria-label="Pie de página">
           <p className="m-0 mb-3 font-titulo text-[15px] font-medium tracking-wide uppercase">{formato(tx(a, "store_heading", "Tienda"))}</p>
-          <ul className="m-0 grid list-none gap-1 p-0 text-[15px] text-white/85">
-            {[...menus.principal.enlaces, ...menus.pie.enlaces.filter((e) => e.url !== "/search")].map((e) => (
+          {/* Dos columnas (Producto 205-212, dueño 24-nov-2026): la tienda a la izquierda y el blog con las políticas a la
+              derecha, para que no sea una lista larga y el pie quede más corto. Se llenan de arriba abajo, columna por columna. */}
+          <ul
+            className="m-0 grid list-none grid-flow-col grid-cols-2 gap-x-6 gap-y-1 p-0 text-[15px] text-white/85"
+            style={{ gridTemplateRows: `repeat(${Math.ceil(enlacesPie.length / 2)}, auto)` }}
+          >
+            {enlacesPie.map((e) => (
               <li key={e.url}>
                 <a href={e.url} className="inline-flex min-h-8 items-center underline-offset-4 hover:underline">
                   {e.texto}

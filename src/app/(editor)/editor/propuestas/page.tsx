@@ -62,7 +62,7 @@ const FOTOS = [
     idea:
       "Las dos fotos reales de esa entrada se tomaron desde lugares distintos. Ahora el «antes» va enderezado sobre el «después» y las dos usan la misma franja de la izquierda, así la ventana, la pared y el marco no se mueven al arrastrar: solo cambian los costales por la compuerta. Arcads hizo la franja y la orilla de los costales, con las fotos reales de modelo.",
     // 23-nov-2026: el antes enderezado sobre el después (misma escala de la pared) y con la franja del después.
-    antes: "/media/files/Antes_producto_b1_v3.jpg",
+    antes: "/media/files/Antes_producto_b1_v4.jpg",
     despues: "/media/files/Despues_producto_b1_v2.jpg",
     // Encuadre que llevaría en la ficha: un poco más abajo, para que se vean los costales completos.
     foco: "50% 75%",

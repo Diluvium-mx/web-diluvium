@@ -9,7 +9,7 @@
 // - Controles: regresar 10 s, pausa/reproducir, adelantar 10 s; abajo la barra azul (se toca o se arrastra) con los
 //   tiempos y el botón de pantalla completa. Sonido arriba a la derecha.
 // - Empieza solo y con sonido al abrir la ventana (la persona lo pidió con un toque); si el teléfono no deja, empieza
-//   sin sonido con el botón para activarlo. Al cerrar la ventana se pausa y al volver sigue donde iba.
+//   sin sonido y el botón para activarlo sale al pausar, con los demás controles (nada encima mientras corre). Al cerrar la ventana se pausa y al volver sigue donde iba.
 
 import { useEffect, useRef, useState } from "react";
 
@@ -31,7 +31,7 @@ function Icono({ d, className }: { d: string; className: string }) {
   );
 }
 
-export function VideoControles({ src, poster, alt, activo, tocaParaOir = "Toca para oír" }: { src: string; poster: string; alt: string; activo: boolean; tocaParaOir?: string }) {
+export function VideoControles({ src, poster, alt, activo }: { src: string; poster: string; alt: string; activo: boolean; /** Ya no se usa: el botón de sonido sale solo en pausa. */ tocaParaOir?: string }) {
   const caja = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const pista = useRef<HTMLDivElement>(null);
@@ -148,22 +148,22 @@ export function VideoControles({ src, poster, alt, activo, tocaParaOir = "Toca p
         onSeeked={(e) => setT(e.currentTarget.currentTime)}
       />
 
-      {/* Sonido: siempre a la vista. */}
-      <button
-        type="button"
-        onClick={(e) => {
-          parar(e);
-          sonido();
-        }}
-        data-evento="mira_video"
-        aria-label={mudo ? "Activar el sonido" : "Quitar el sonido"}
-        aria-pressed={!mudo}
-        className="absolute top-3 right-3 z-[3] flex size-11 cursor-pointer items-center justify-center rounded-full bg-tinta/65 text-white"
-      >
-        <Icono d={mudo ? SIN_SONIDO : CON_SONIDO} className="size-6" />
-      </button>
-      {mudo && andando && (
-        <span className="pointer-events-none absolute top-5 right-16 z-[3] rounded-full bg-tinta/70 px-2.5 py-1 text-[13px] leading-4 font-semibold text-white">{tocaParaOir}</span>
+      {/* Sonido (Producto 215): solo en pausa, junto con los demás controles (dueño, 24-nov-2026: mientras corre no debe
+          tapar nada del video). */}
+      {visibles && (
+        <button
+          type="button"
+          onClick={(e) => {
+            parar(e);
+            sonido();
+          }}
+          data-evento="mira_video"
+          aria-label={mudo ? "Activar el sonido" : "Quitar el sonido"}
+          aria-pressed={!mudo}
+          className="absolute top-3 right-3 z-[3] flex size-11 cursor-pointer items-center justify-center rounded-full bg-tinta/65 text-white"
+        >
+          <Icono d={mudo ? SIN_SONIDO : CON_SONIDO} className="size-6" />
+        </button>
       )}
 
       {visibles ? (

@@ -121,7 +121,9 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
 
   const precio = pesos(venta.precio);
   const precioAntes = venta.precioAntes ? pesos(venta.precioAntes) : null;
-  const ahorro = venta.precioAntes ? pesos(venta.precioAntes - venta.precio) : null;
+  // «-8% en descuento» (Producto 61, dueño 24-nov-2026): el porcentaje real de descuento contra el precio de antes,
+  // redondeado como la tienda. {porcentaje} se cambia por el número.
+  const porcentaje = venta.precioAntes ? Math.round(((venta.precioAntes - venta.precio) / venta.precioAntes) * 100) : 0;
   const titulo = r("heading") || venta.nombre;
   const vendidas = r("sold_text");
 
@@ -189,9 +191,9 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
                 <s>{precioAntes}</s>
               </span>
             )}
-            {ahorro && (
+            {porcentaje >= 1 && (
               <span className="rounded-md bg-[#fdf1dd] px-2 py-0.5 text-[14px] font-bold text-[#8a4b00]">
-                {formato(tx(a, "savings_text", "Ahorras"))} {ahorro}
+                {formato(tx(a, "discount_text", "-{porcentaje}% en descuento").replace("{porcentaje}", String(porcentaje)))}
               </span>
             )}
           </div>
@@ -264,7 +266,8 @@ export function FichaVersion({ seccion, producto }: PropsSeccion) {
 
           {tiendas.length > 0 && (
             // Logos grandes, siempre (dueño, 18-nov-2026): se reconocen de un vistazo.
-            <div className="mt-5 border-t border-linea pt-4">
+            // Pegado a la confianza (Producto 98, dueño 24-nov-2026: sin las viñetas, el menor espacio posible).
+            <div className="mt-4 border-t border-linea pt-3">
               {r("marketplace_text") && <p className="m-0 font-titulo text-[16px] font-medium">{formato(r("marketplace_text"))}</p>}
               <ul className="m-0 mt-2.5 grid list-none grid-cols-2 gap-2.5 p-0">
                 {tiendas.map((t) => (

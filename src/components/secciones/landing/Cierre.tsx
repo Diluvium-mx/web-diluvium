@@ -3,7 +3,7 @@
 
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
-import { textoVersion } from "./datos";
+import { calificacion, textoVersion } from "./datos";
 import { formato } from "./formato";
 import { CLASE_BOTON, CLASE_ENLACE, Calificacion, IconoFlecha, IconoPalomita, IconoWhatsapp } from "./piezas";
 
@@ -15,7 +15,7 @@ export function CierreVersion({ seccion }: PropsSeccion) {
   return (
     <section data-seccion="landing-cierre" aria-labelledby="titulo-cierre" className="fondo-oscuro bg-marino py-16 text-white md:py-24">
       <div className="marco-version flex flex-col items-start gap-6 md:items-center md:text-center">
-        <Calificacion texto={textoVersion(a, "rating_text")} />
+        <Calificacion texto={textoVersion(a, "rating_text")} numero={calificacion()} />
         <h2 id="titulo-cierre" className="titulo-version m-0 max-w-[44rem] text-[32px] md:text-[48px]">
           {formato(textoVersion(a, "heading"))}
         </h2>

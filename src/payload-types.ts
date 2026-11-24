@@ -3405,7 +3405,6 @@ export interface Plantilla {
             include_product_media?: boolean | null;
             sticky_bar?: string | null;
             sticky_text?: string | null;
-            savings_text?: string | null;
             measure_placeholder?: string | null;
             fit_text?: string | null;
             wider_text?: string | null;
@@ -3425,6 +3424,7 @@ export interface Plantilla {
             step_3?: string | null;
             show_description?: boolean | null;
             description_heading?: string | null;
+            discount_text?: string | null;
             size_heading?: string | null;
             gallery_style?: string | null;
             table_size?: string | null;
@@ -6223,7 +6223,6 @@ export interface PlantillasSelect<T extends boolean = true> {
               include_product_media?: T;
               sticky_bar?: T;
               sticky_text?: T;
-              savings_text?: T;
               measure_placeholder?: T;
               fit_text?: T;
               wider_text?: T;
@@ -6243,6 +6242,7 @@ export interface PlantillasSelect<T extends boolean = true> {
               step_3?: T;
               show_description?: T;
               description_heading?: T;
+              discount_text?: T;
               size_heading?: T;
               gallery_style?: T;
               table_size?: T;

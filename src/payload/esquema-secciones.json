@@ -4625,7 +4625,7 @@
     },
     {
      "clave": "heading",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Título",
      "diseno": false
     },
@@ -5026,7 +5026,7 @@
     },
     {
      "clave": "subheading",
-     "tipo": "textoLargo",
+     "tipo": "texto",
      "etiqueta": "Subtítulo",
      "diseno": false
     },
@@ -5507,12 +5507,6 @@
      "diseno": false
     },
     {
-     "clave": "savings_text",
-     "tipo": "texto",
-     "etiqueta": "Texto antes del ahorro («Ahorras»)",
-     "diseno": false
-    },
-    {
      "clave": "measure_placeholder",
      "tipo": "texto",
      "etiqueta": "Ejemplo dentro del campo de la medida",
@@ -5636,6 +5630,12 @@
      "clave": "description_heading",
      "tipo": "texto",
      "etiqueta": "Título de la descripción",
+     "diseno": false
+    },
+    {
+     "clave": "discount_text",
+     "tipo": "texto",
+     "etiqueta": "Descuento junto al precio ({porcentaje} = el % real de descuento)",
      "diseno": false
     }
    ],

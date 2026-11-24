@@ -16,7 +16,7 @@ import { Comparador } from "./Comparador";
 import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { SelectorTamano } from "./SelectorTamano";
 import { BarraCompra } from "./BarraCompra";
-import { datosVenta, pesos, rellenar } from "./datos";
+import { calificacion, datosVenta, pesos, rellenar } from "./datos";
 import { formato } from "./formato";
 import { CLASE_BOTON, Calificacion, Foto, IconoFlecha } from "./piezas";
 
@@ -90,6 +90,36 @@ function FilaConfianza({ logos }: { logos: Bloque[] }) {
   );
 }
 
+// Ícono de cada garantía según lo que dice (Portada 35, dueño 24-nov-2026: íconos en lugar del punto, en el mismo
+// renglón): envío → camión, garantía → escudo, meses/MSI → tarjeta, pago → candado, devolución → flecha.
+const TRAZOS_GARANTIA: [RegExp, string][] = [
+  [/env[ií]o/i, "M3 6h11v9H3zM14 9h4l3 3v3h-7zM6.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"],
+  [/garant/i, "M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3zM8.5 12l2.5 2.5 4.5-5"],
+  [/msi|meses/i, "M3 6h18v12H3zM3 10h18M7 15h4"],
+  [/pago|segur/i, "M6 11V8a6 6 0 0 1 12 0v3M5 11h14v10H5zM12 15v2"],
+  [/devoluc/i, "M4 12a8 8 0 1 0 2.3-5.7M4 4v4h4"],
+];
+
+/** «Envío gratis · Garantía de 1 año · Hasta 6 MSI» con un ícono antes de cada una en vez del punto, en un renglón. */
+function Garantias({ texto: valor, className = "" }: { texto: string; className?: string }) {
+  const partes = valor
+    .split("·")
+    .map((t) => t.trim())
+    .filter(Boolean);
+  return (
+    <p className={`m-0 flex flex-nowrap items-center justify-between gap-x-2 text-[13.5px] leading-5 font-medium min-[400px]:justify-start min-[400px]:gap-x-4 min-[400px]:text-[15px] ${className}`}>
+      {partes.map((t, i) => (
+        <span key={i} className="inline-flex items-center gap-1 whitespace-nowrap">
+          <svg viewBox="0 0 24 24" className="size-4 shrink-0 min-[400px]:size-[18px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+            <path d={(TRAZOS_GARANTIA.find(([re]) => re.test(t)) ?? TRAZOS_GARANTIA[1])[1]} />
+          </svg>
+          {formato(t)}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 export function PortadaVersion({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
   const venta = datosVenta(texto(a, "producto"));
@@ -157,7 +187,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
         }`}
       >
         <div className="flex flex-col gap-3 [grid-area:cabeza] md:gap-4 lg:self-end">
-          <Calificacion texto={r("rating_text")} className={`entrar ${marino ? "text-white" : ""}`} />
+          <Calificacion texto={r("rating_text")} numero={calificacion()} className={`entrar ${marino ? "text-white" : ""}`} />
           <h1 id="titulo-portada" className={`titulo-version entrar m-0 text-[34px] md:text-[48px] ${tamanos ? "" : "xl:text-[56px]"}`} style={retraso(60)}>
             {formato(r("heading"))}
           </h1>
@@ -214,7 +244,7 @@ export function PortadaVersion({ seccion }: PropsSeccion) {
           )}
           {tamanos && <span id="boton-principal" aria-hidden="true" className="-mt-4 h-0" />}
 
-          {texto(a, "guarantees") && <p className={`m-0 text-[15px] font-medium ${tonoSuave} ${tamanos ? "" : "sm:-mt-1"}`}>{formato(r("guarantees"))}</p>}
+          {texto(a, "guarantees") && <Garantias texto={r("guarantees")} className={`${tonoSuave} ${tamanos ? "" : "sm:-mt-1"}`} />}
         </div>
       </div>
 

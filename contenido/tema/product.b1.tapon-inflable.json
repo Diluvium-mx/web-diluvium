@@ -27,7 +27,6 @@
     "include_product_media": true,
     "sticky_bar": "al_bajar",
     "sticky_text": "Elegir mi medida",
-    "savings_text": "Ahorras",
     "measure_placeholder": "Ej. 95",
     "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
     "wider_text": "Tu entrada es más ancha:",
@@ -46,7 +45,8 @@
     "step_2": "Elige tu tamaño",
     "step_3": "Recíbela y colócala",
     "table_size": "Tamaño",
-    "table_width": "Ancho de entrada"
+    "table_width": "Ancho de entrada",
+    "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
     {

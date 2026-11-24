@@ -1,7 +1,7 @@
 "use client";
 
 // Muro de reseñas en dos columnas, como en la tienda de hoy (Producto › B1-P3, 21-nov-2026): foto completa arriba,
-// estrellas, nombre y el texto cortado con «...Mostrar reseña completa». Al tocar una reseña se abre en grande con su
+// estrellas, nombre y el texto (cortado con «… Mostrar más» solo si es muy largo). Al tocar una reseña se abre en grande con su
 // número («Reseña 3 de 6») y flechas (o deslizar, o ← →) para pasar a la anterior o a la siguiente, en el orden en
 // que están puestas en la sección.
 //
@@ -41,8 +41,19 @@ export type TarjetaMuro = {
   marca?: Record<string, string>;
 };
 
-const CORTE = 75;
+// Cuándo se corta el texto (Producto/Portada B1-P3, dueño 24-nov-2026): las reseñas de hasta 200 letras se ven
+// completas (9 de cada 10: la mitad mide 121 o menos); solo las más largas se cortan en una palabra cerca de las 150
+// letras, con «… Mostrar más».
+const COMPLETA_HASTA = 200;
+const CORTE = 150;
 const DE_A = 6;
+
+/** El texto cortado en la última palabra completa antes de CORTE, sin puntuación colgando. */
+function cortar(texto: string): string {
+  const pedazo = texto.slice(0, CORTE);
+  const espacio = pedazo.lastIndexOf(" ");
+  return (espacio > CORTE * 0.6 ? pedazo.slice(0, espacio) : pedazo).replace(/[\s,;:.\-–—]+$/, "");
+}
 
 function Estrellas({ n, tamano = "size-4" }: { n: number; tamano?: string }) {
   return (
@@ -58,7 +69,7 @@ function Estrellas({ n, tamano = "size-4" }: { n: number; tamano?: string }) {
 
 function Tarjeta({ t, alAbrir, leerMas }: { t: TarjetaMuro; alAbrir: () => void; leerMas: string }) {
   const texto = t.texto.trim();
-  const cortado = texto.length > CORTE + 25;
+  const cortado = texto.length > COMPLETA_HASTA;
   return (
     // Las que llegan con «Ver más» no llevan número en el mapa (serían cientos): solo las 6 elegidas de la sección.
     <li data-pieza={t.id} data-sin-numero={t.marca ? undefined : ""} onClick={alAbrir} className="cursor-pointer overflow-hidden rounded-xl bg-white shadow-[1px_1px_8px_rgb(0_0_0/0.12)]">
@@ -73,8 +84,8 @@ function Tarjeta({ t, alAbrir, leerMas }: { t: TarjetaMuro; alAbrir: () => void;
           {t.nombre}
         </p>
         <p className="m-0 mt-2 text-[15px] leading-[1.45] break-words text-tinta" data-el="Texto:1">
-          {cortado ? texto.slice(0, CORTE) : texto}
-          {cortado && <span className="text-texto-suave">{leerMas}</span>}
+          {cortado ? cortar(texto) : texto}
+          {cortado && <span className="font-semibold text-texto-suave">{leerMas}</span>}
         </p>
         {/* Para teclado y lectores de pantalla (la tarjeta completa se toca con el dedo). */}
         <button type="button" onClick={alAbrir} className="sr-only">

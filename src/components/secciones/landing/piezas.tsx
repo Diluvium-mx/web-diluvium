@@ -24,13 +24,22 @@ export function Estrellas({ className = "size-[18px]", marca }: { className?: st
   );
 }
 
-/** «★★★★★ 4.9 · más de 200 reseñas»: las estrellas son adorno, el texto lo dice todo. */
-export function Calificacion({ texto, className = "" }: { texto: string; className?: string }) {
+/** «4.9 ★★★★★ más de 200 reseñas»: el número a la izquierda de las estrellas, como en la ficha del producto (Portada
+ *  19/20 y 142/143, dueño 24-nov-2026). Si el texto todavía empieza con el número («4.9 · …»), no se repite. El número
+ *  va en <strong> para que las estrellas y el texto conserven sus números del mapa. */
+export function Calificacion({ texto, numero, className = "" }: { texto: string; numero?: string; className?: string }) {
   if (!texto) return null;
+  const resto = numero ? texto.replace(/^\s*\d+(?:\.\d+)?\s*·\s*/, "") : texto;
   return (
     <p className={`m-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-5 font-semibold ${className}`}>
+      {numero && (
+        <strong className="font-bold">
+          {numero}
+          <span className="sr-only"> de 5 estrellas</span>
+        </strong>
+      )}
       <Estrellas />
-      <span>{formato(texto)}</span>
+      <span>{formato(resto)}</span>
     </p>
   );
 }

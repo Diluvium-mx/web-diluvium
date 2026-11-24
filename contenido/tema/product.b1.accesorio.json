@@ -27,7 +27,6 @@
     "include_product_media": true,
     "sticky_bar": "al_bajar",
     "sticky_text": "Comprar",
-    "savings_text": "Ahorras",
     "measure_placeholder": "Ej. 95",
     "fit_text": "Te queda la {tamano} ({medidas}). Ya está elegida.",
     "wider_text": "Tu entrada es más ancha:",
@@ -48,7 +47,8 @@
     "table_size": "Tamaño",
     "table_width": "Ancho de entrada",
     "show_description": true,
-    "description_heading": "Qué es"
+    "description_heading": "Qué es",
+    "discount_text": "-{porcentaje}% en descuento"
    },
    "bloques": [
     {
@@ -77,7 +77,7 @@
    "ajustes": {
     "heading": "La temporada de lluvias no espera",
     "text": "Protege tu entrada antes de la próxima tormenta.",
-    "rating_text": "{calificacion} · más de 200 reseñas",
+    "rating_text": "más de 200 reseñas",
     "button_text": "Ver la compuerta",
     "button_link": "/products/compuerta-anti-inundaciones",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
