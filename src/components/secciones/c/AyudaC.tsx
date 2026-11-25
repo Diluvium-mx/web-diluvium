@@ -32,7 +32,7 @@ export function AyudaC({ seccion }: PropsSeccion) {
           {texto(a, "text") && <p className="m-0 mt-3 text-[19px] leading-[1.6]">{formato(textoVersion(a, "text"))}</p>}
           <div className="mt-6 grid gap-3">
             {whatsapp && (
-              <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, quiero hablar con alguien de Diluvium."))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={BOTON_WHATSAPP_C}>
+              <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?"))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={BOTON_WHATSAPP_C}>
                 <IconoWhatsapp className="size-6" />
                 {tx(a, "whatsapp_text", "Escríbenos por WhatsApp")}
               </a>

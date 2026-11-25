@@ -1,5 +1,5 @@
-// Sección «c-tamanos» (portada de C): «Elige tu tamaño». A un lado la foto de la compuerta puesta; al otro, escribir
-// cuánto mide la entrada y la lista de tamaños con su precio (ElegirTamanoC), para comprar ahí mismo. Abajo, la ayuda:
+// Sección «c-tamanos» (portada de C): «Elige tu tamaño». A un lado la foto de la compuerta puesta; al otro, las puertas
+// dibujadas a su tamaño con su precio (ElegirTamanoC, propuesta T3), para comprar ahí mismo. Abajo, la ayuda:
 // «¿No sabes cómo medir? Te ayudamos por WhatsApp».
 
 import Image from "next/image";
@@ -14,23 +14,34 @@ import { ElegirTamanoC, type TextosTamano } from "./ElegirTamanoC";
 
 export function textosTamano(a: Record<string, unknown>): TextosTamano {
   return {
-    pregunta: tx(a, "size_question", "¿Cuánto mide tu entrada?"),
-    ayuda: tx(a, "size_help", "Mide el ancho de marco a marco, en centímetros."),
-    teQueda: tx(a, "size_result", "Te queda la"),
-    lista: tx(a, "size_list", "Elige tu tamaño"),
+    pregunta: tx(a, "size_question", "¿Cuál se parece a tu entrada?"),
+    ayuda: tx(a, "size_help", "Cada puerta está dibujada a su tamaño real. Mide de marco a marco."),
+    elegida: tx(a, "chosen_text", "Elegida"),
+    teQueda: tx(a, "size_result", "Elegiste la"),
+    lista: tx(a, "size_list", "Primero elige tu tamaño"),
     anadir: tx(a, "add_button", "Añadir al carrito"),
     agotado: tx(a, "sold_out", "Agotado"),
-    masAncha: tx(a, "wider_text", "Tu entrada mide más de 120 cm."),
-    masAnchaEnlace: tx(a, "wider_link_text", "Mira la compuerta XXL a tu medida"),
-    masAngosta: tx(a, "narrower_text", "Tu entrada es más angosta que el tamaño más chico."),
-    masAngostaEnlace: tx(a, "narrower_link_text", "Escríbenos y te decimos qué hacer"),
+    masAncha: texto(a, "wider_text") ? textoVersion(a, "wider_text") : "",
+    masAngosta: tx(a, "narrower_text", "¿Tu entrada mide menos de {desde} cm?"),
+    masAngostaEnlace: tx(a, "narrower_link_text", "Escríbenos por WhatsApp"),
   };
 }
 
 /** WhatsApp para entradas más angostas que el tamaño más chico. */
 export function whatsappAngosta(a: Record<string, unknown>) {
   const w = texto(a, "whatsapp_link");
-  return w ? conMensaje(w, tx(a, "narrower_message", "Hola, mi entrada es más angosta que el tamaño más chico. ¿Qué opción tengo?")) : undefined;
+  return w ? conMensaje(w, tx(a, "narrower_message", "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?")) : undefined;
+}
+
+/** WhatsApp para entradas más anchas que el tamaño más grande (el cuadro «¿Más de 120cm?…»; sin texto, no sale). */
+export function whatsappAncha(a: Record<string, unknown>) {
+  const w = texto(a, "whatsapp_link");
+  return w && texto(a, "wider_text") ? conMensaje(w, tx(a, "wider_message", "Hola, mi entrada mide más de 120 cm, ¿qué compuerta me recomiendan?")) : undefined;
+}
+
+/** Logo blanco que va sobre la compuerta de cada puerta dibujada. */
+export function logoPuerta(a: Record<string, unknown>) {
+  return texto(a, "door_logo") || "/media/files/logo-compuerta-blanco.png";
 }
 
 export function TamanosC({ seccion }: PropsSeccion) {
@@ -49,11 +60,11 @@ export function TamanosC({ seccion }: PropsSeccion) {
           </h2>
           {texto(a, "text") && <p className="m-0 mt-3 text-[18px] leading-[1.6]">{formato(textoVersion(a, "text", venta))}</p>}
           <div className="mt-6 rounded-3xl bg-white p-5 shadow-[0_14px_40px_-30px_rgba(6,24,47,0.6)] md:p-6">
-            {venta && <ElegirTamanoC tamanos={venta.tamanos} textos={textosTamano(a)} enlaceMasAncha={texto(a, "wider_link") || undefined} enlaceWhatsapp={whatsappAngosta(a)} />}
+            {venta && <ElegirTamanoC tamanos={venta.tamanos} textos={textosTamano(a)} enlaceMasAncha={whatsappAncha(a)} enlaceWhatsapp={whatsappAngosta(a)} logo={logoPuerta(a)} altoCompuerta={Number(a.gate_height) || 60} />}
           </div>
           {whatsapp && (
             <a
-              href={conMensaje(whatsapp, tx(a, "measure_message", "Hola, no sé cómo medir mi entrada. ¿Me ayudan?"))}
+              href={conMensaje(whatsapp, tx(a, "measure_message", "Hola, ¿me ayudan a medir mi entrada para elegir el tamaño de la compuerta?"))}
               target="_blank"
               rel="noopener noreferrer"
               data-evento="toca_whatsapp"

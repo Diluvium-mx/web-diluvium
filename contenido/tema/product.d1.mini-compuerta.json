@@ -1,0 +1,458 @@
+{
+ "fuente": "Versión D1 (25-nov-2026): Mini Compuerta (30 cm de alto).",
+ "secciones": [
+  {
+   "id": "d_ficha_mini",
+   "tipo": "d-ficha",
+   "ajustes": {
+    "producto": "mini-compuerta",
+    "badge": "Para filtraciones ligeras",
+    "rating_text": "",
+    "heading": "",
+    "text": "No toda filtración de agua es una inundación. La Mini Compuerta detiene encharcamientos y filtraciones ligeras: lluvia que se mete por la puerta sin que sea una emergencia.",
+    "photo_text": "Foto {n} de {total}",
+    "zoom_text": "Ampliar",
+    "close_text": "Cerrar",
+    "size_question": "¿Qué tan ancha es tu entrada?",
+    "size_help": "Mídela de marco a marco y toca la que corresponda.",
+    "wider_text": "Más de 124 cm",
+    "wider_subtext": "Escríbenos y vemos tu caso",
+    "wider_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20mi%20entrada%20mide%20m%C3%A1s%20de%20124%20cm%2C%20%C2%BFqu%C3%A9%20compuerta%20me%20recomiendan%3F",
+    "chosen_text": "Elegiste la",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "missing_text": "Primero elige tu tamaño.",
+    "other_text": "¿Necesitas detener más agua?",
+    "other_link": "/products/compuerta-anti-inundaciones",
+    "other_link_text": "Ve la compuerta estándar (50 cm)",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, me interesa la Mini Compuerta, ¿me ayudan con una duda antes de comprarla?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG2.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.7
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG3.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG4.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "43% 98%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG5.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.65
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG6.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "foto_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG8.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_8",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG9.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis, llega en 3 a 5 días hábiles"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía por defectos de fábrica"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro con tarjeta o PayPal"
+     }
+    },
+    {
+     "id": "fact_1",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "30 cm",
+      "text": "de alto"
+     }
+    },
+    {
+     "id": "fact_2",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "10 min",
+      "text": "para ponerla"
+     }
+    },
+    {
+     "id": "fact_3",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "5 a 7",
+      "text": "años de vida útil"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Sistema de sellado único"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable, con vida útil de 5 a 7 años"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_especificaciones_mini",
+   "tipo": "d-especificaciones",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Ficha técnica",
+    "heading": "Medidas y materiales",
+    "note": "¿Tu entrada es diferente? Mándanos una foto por WhatsApp y te decimos si se puede."
+   },
+   "bloques": [
+    {
+     "id": "spec_1",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Para entradas de",
+      "value": "{desde} a {hasta} cm de ancho, en {tamanos} tamaños"
+     }
+    },
+    {
+     "id": "spec_2",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Alto",
+      "value": "30 cm"
+     }
+    },
+    {
+     "id": "spec_3",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Para qué sirve",
+      "value": "Encharcamientos y filtraciones ligeras de agua"
+     }
+    },
+    {
+     "id": "spec_4",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Material",
+      "value": "Acero, con funda de neopreno impermeable y tira de hule en el contorno"
+     }
+    },
+    {
+     "id": "spec_5",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Marco que necesita",
+      "value": "De 4 cm, sin perforar ni modificar la entrada"
+     }
+    },
+    {
+     "id": "spec_6",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Colocación",
+      "value": "En unos 10 minutos; la quitas cuando quieras o la dejas puesta por meses"
+     }
+    },
+    {
+     "id": "spec_7",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Vida útil",
+      "value": "De 5 a 7 años, reutilizable"
+     }
+    },
+    {
+     "id": "spec_8",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Garantía",
+      "value": "1 año por defectos de fabricación"
+     }
+    },
+    {
+     "id": "spec_9",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Incluye",
+      "value": "La Mini Compuerta de acero expandible, su funda hecha a la medida, la tira de hule, una llave y un dado para los tornillos, y plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_dudas_mini",
+   "tipo": "d-dudas",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Antes de comprar",
+    "heading": "Las {n} dudas más comunes",
+    "text": "Toca una pregunta para ver la respuesta.",
+    "open_all": "Abrir todas",
+    "close_all": "Cerrar todas",
+    "other_question": "¿No está tu duda?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la Mini Compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿La instalación es permanente o puedo retirarla cuando quiera?",
+      "description": "<p>La instalación es muy simple, tarda alrededor de 10 minutos. La compuerta se puede retirar cuando quiera o puede dejarla instalada por meses sin ningún problema.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>Todo lo necesario para instalarla: la Mini Compuerta de acero expandible, su funda hecha a la medida, una tira de hule que va al contorno para el sello hermético, una llave y un dado para ajustar los tornillos, y plastilina de secado rápido para sellar las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué pasa si mi puerta tiene un marco irregular o desniveles?",
+      "description": "<p>La tira de hule que va al contorno de la compuerta absorbe imperfecciones como pequeñas grietas y ligeros desniveles. Si el marco es muy irregular, habría que modificarlo antes de colocar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Necesito hacer perforaciones o modificar mi puerta?",
+      "description": "<p>No es necesario, la entrada puede quedarse tal y como está. Solo se necesita un marco de 4 cm para que se pueda instalar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué material está hecha?",
+      "description": "<p>Está hecha de acero, lleva una tira de hule y una funda de neopreno impermeable que hace que el agua no pase. Es reutilizable.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>1 año de garantía por defectos de fabricación. Su vida útil puede llegar a los 5 a 7 años.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_otros_mini",
+   "tipo": "d-otros",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "También te puede servir",
+    "heading": "Otros productos",
+    "from_text": "Desde",
+    "button_text": "Ver producto"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "heading": "Compuerta anti-inundaciones",
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta anti-inundaciones"
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "heading": "Mini compuerta (30 cm)",
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini compuerta (30 cm)"
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "heading": "Compuerta XXL a tu medida",
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta XXL a tu medida"
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "heading": "Tapón para coladera",
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón para coladera"
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "heading": "Funda de repuesto",
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto"
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "heading": "Tira de hule de repuesto",
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto"
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "heading": "Plastilina de secado rápido",
+      "image": "/media/products/Accesorio3.png",
+      "alt": "Plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_mini",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "button_text": "Elegir mi tamaño",
+    "button_link": "#comprar",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, revisé la página de la Mini Compuerta y tengo una duda, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "gota",
+      "text": "Para filtraciones ligeras"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "reloj",
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

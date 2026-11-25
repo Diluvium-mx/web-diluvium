@@ -1,4 +1,4 @@
-// Sección «c-cierre»: el último empujón. Una tarjeta azul marino (letra blanca: contraste alto) con un sello («1 año de garantía · envío gratis»,
+// Sección «c-cierre»: el último empujón. Una tarjeta azul marino (letra blanca: contraste alto) con un sello («1 año de garantía, envío gratis»,
 // dibujado con texto en círculo), el título, el botón de comprar y el WhatsApp.
 
 import type { PropsSeccion } from "../registro";

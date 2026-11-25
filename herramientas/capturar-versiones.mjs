@@ -12,7 +12,7 @@ import { abrirChrome, BLOQUEAR_ANALITICA } from "./cdp.mjs";
 
 const BASE = (process.argv[2] ?? "https://diluvium-prueba.web-diluvium.workers.dev").replace(/\/$/, "");
 const SALIDA = "public/media/versiones";
-const VERSIONES = process.argv[3]?.split(",") ?? ["a", "b1", "c1"];
+const VERSIONES = process.argv[3]?.split(",") ?? ["a", "b1", "c1", "d1"];
 mkdirSync(SALIDA, { recursive: true });
 
 const chrome = await abrirChrome();

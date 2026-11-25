@@ -1,0 +1,259 @@
+{
+ "fuente": "Versión D1 (25-nov-2026): funda de repuesto.",
+ "secciones": [
+  {
+   "id": "d_ficha_funda",
+   "tipo": "d-ficha",
+   "ajustes": {
+    "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+    "badge": "",
+    "rating_text": "",
+    "heading": "",
+    "text": "Repuesto para tu compuerta, por si se rompe o se desgasta. Es elástica para que se expanda junto con la compuerta e impermeable para que no pase el agua. Incluye solo la funda, no la compuerta.",
+    "photo_text": "Foto {n} de {total}",
+    "zoom_text": "Ampliar",
+    "close_text": "Cerrar",
+    "size_question": "Elige el tamaño de tu compuerta",
+    "size_help": "El mismo tamaño de tu compuerta, de Extra Chica a Extra Grande.",
+    "chosen_text": "Elegiste la",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "missing_text": "Primero elige tu tamaño.",
+    "other_text": "¿Aún no tienes la compuerta?",
+    "other_link": "/products/compuerta-anti-inundaciones",
+    "other_link_text": "Ver la compuerta",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, me interesa este repuesto: {producto}. ¿Me ayudan?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+      "focal": "50% 50%",
+      "zoom": 0.9
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Funda2.jpg",
+      "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+      "focal": "50% 50%",
+      "zoom": 0.8
+     }
+    },
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis en pedidos desde $499"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro con tarjeta o PayPal"
+     }
+    },
+    {
+     "id": "fact_1",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "5",
+      "text": "tamaños"
+     }
+    },
+    {
+     "id": "fact_2",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "4 a 5",
+      "text": "años antes de cambiarla"
+     }
+    },
+    {
+     "id": "fact_3",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "Elástica",
+      "text": "e impermeable"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_especificaciones_funda",
+   "tipo": "d-especificaciones",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Ficha técnica",
+    "heading": "Medidas y material",
+    "note": "¿Dudas sobre cuál necesitas? Escríbenos por WhatsApp y te ayudamos."
+   },
+   "bloques": [
+    {
+     "id": "spec_1",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Para",
+      "value": "La compuerta anti-inundaciones Diluvium, en sus 5 tamaños"
+     }
+    },
+    {
+     "id": "spec_2",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Material",
+      "value": "Elástico e impermeable"
+     }
+    },
+    {
+     "id": "spec_3",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Cada cuándo cambiarla",
+      "value": "Cada 4 a 5 años, según el uso"
+     }
+    },
+    {
+     "id": "spec_4",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Incluye",
+      "value": "Solo la funda, no la compuerta"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_otros_funda",
+   "tipo": "d-otros",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "También te puede servir",
+    "heading": "Otros productos",
+    "from_text": "Desde",
+    "button_text": "Ver producto"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "heading": "Compuerta anti-inundaciones",
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta anti-inundaciones"
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "heading": "Mini compuerta (30 cm)",
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini compuerta (30 cm)"
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "heading": "Compuerta XXL a tu medida",
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta XXL a tu medida"
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "heading": "Tapón para coladera",
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón para coladera"
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "heading": "Funda de repuesto",
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto"
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "heading": "Tira de hule de repuesto",
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto"
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "heading": "Plastilina de secado rápido",
+      "image": "/media/products/Accesorio3.png",
+      "alt": "Plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_funda",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "button_text": "Ver la compuerta",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, revisé su página y todavía tengo una duda sobre la compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "agua",
+      "text": "Detiene hasta 50 cm de agua en tu puerta"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "reloj",
+      "text": "Lista en 10 minutos, sin obras"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "Garantía de 1 año"
+     }
+    }
+   ]
+  }
+ ]
+}

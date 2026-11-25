@@ -1,0 +1,96 @@
+{
+ "fuente": "Versión C1: ficha de tira (25-nov-2026), con las fotos y textos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_ficha_tira",
+   "tipo": "c-ficha",
+   "ajustes": {
+    "producto": "accesorio-tira-de-hule-de-repuesto",
+    "heading": "",
+    "text": "",
+    "rating_text": "más de 200 reseñas",
+    "shipping_text": "Envío gratis en pedidos desde $499",
+    "months_text": "",
+    "delivery_text": "Si la pides hoy, llega entre el",
+    "delivery_and": "y el",
+    "size_question": "¿Cuál se parece a tu entrada?",
+    "size_help": "Cada puerta está dibujada a su tamaño real. Mide de marco a marco.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "wider_text": "",
+    "narrower_text": "",
+    "narrower_link_text": "",
+    "narrower_message": "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero una tira de hule de repuesto para mi compuerta, ¿me ayudan con mi pedido?",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "show_delivery": true,
+    "show_description": true,
+    "description_heading": "Qué es y para qué sirve"
+   },
+   "bloques": [
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto (accesorio)",
+      "focal": "50% 50%",
+      "zoom": 0.8
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Envío gratis",
+      "subtext": "En pedidos desde $499"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Pago seguro",
+      "subtext": "Tarjeta con Mercado Pago o PayPal"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_tira",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_cierre_tira",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Pago seguro y envío gratis en pedidos desde $499.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "PAGO SEGURO • ENVÍO GRATIS DESDE $499 • "
+   },
+   "bloques": []
+  }
+ ]
+}

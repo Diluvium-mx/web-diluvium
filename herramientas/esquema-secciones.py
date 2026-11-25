@@ -109,6 +109,22 @@ SECCIONES = {
     "c-preguntas": "C: preguntas frecuentes", "c-cierre": "C: cierre con sello", "c-pie": "C: pie de página",
     "c-ficha": "C: ficha del producto", "c-ayuda": "C: te atiende una persona", "c-confianza": "C: compra con confianza",
     "c-pagos": "C: formas de pago", "c-barra": "C: barra de WhatsApp y teléfono (celular)",
+    # Páginas secundarias de C y D (25-nov-2026): la misma pieza con el aspecto de cada versión.
+    "c-titulo": "C: título de la página", "c-productos": "C: productos en tarjetas",
+    "c-contacto": "C: formas de contacto y formulario", "c-historia": "C: historia por capítulos",
+    "c-premios": "C: reconocimientos y premios", "c-cita": "C: mensaje con firma", "c-blog": "C: artículos del blog",
+    "c-articulo": "C: artículo del blog",
+    "d-titulo": "D: título de la página", "d-productos": "D: productos en tarjetas",
+    "d-contacto": "D: formas de contacto y formulario", "d-historia": "D: historia (línea de tiempo)",
+    "d-premios": "D: reconocimientos y premios", "d-cita": "D: mensaje con firma", "d-blog": "D: artículos del blog",
+    "d-articulo": "D: artículo del blog",
+    # Versión D (25-nov-2026).
+    "d-encabezado": "D: franja de avisos y encabezado", "d-portada": "D: primera pantalla",
+    "d-asistente": "D: asistente para elegir el tamaño", "d-ficha": "D: ficha del producto",
+    "d-resenas": "D: todas las reseñas por páginas", "d-dudas": "D: las dudas más comunes",
+    "d-confianza": "D: Shark Tank, dónde más nos encuentras y garantía", "d-especificaciones": "D: ficha técnica",
+    "d-otros": "D: otros productos", "d-pagos": "D: formas de pago", "d-cierre": "D: cierre", "d-pie": "D: pie de página",
+    "d-barra": "D: botón flotante de WhatsApp",
 }
 
 BLOQUES = {
@@ -129,6 +145,9 @@ BLOQUES = {
     "chapter": "Capítulo", "award": "Premio",
     "stat": "Cifra", "slide": "Paso (foto y texto)", "contact": "Botón de contacto", "reason": "Razón para confiar", "method": "Forma de pago",
     "article_card": "Foto de la tarjeta de un artículo", "article_photos": "Fotos de un artículo",
+    "topic": "Tema de las reseñas (nombre y palabras que lo cuentan)",
+    "notice": "Aviso de la franja (ícono y texto)", "chip": "Dato con ícono", "fact": "Dato grande (valor y texto)",
+    "option": "Respuesta del asistente (lleva a un producto o a otra página)", "spec": "Dato de la ficha técnica",
 }
 
 # Nombres de campos que dependen de la pieza (24-nov-2026): en «Fotos de un artículo», «image» es la de arriba e
@@ -140,6 +159,15 @@ def etiqueta_en_pieza(tipo: str, clave: str) -> str | None:
         m = re.fullmatch(r"image_(\d+)", clave)
         if m:
             return f"Foto {m.group(1)} del texto"
+    return None
+
+
+# Nombres de campos que dependen de la versión (25-nov-2026): el fondo de C y D tiene otras opciones que el de B.
+def etiqueta_en_seccion(tipo: str, clave: str) -> str | None:
+    if clave == "fondo" and tipo.startswith("c-"):
+        return "Fondo (claro, blanco o noche)"
+    if clave == "fondo" and tipo.startswith("d-"):
+        return "Fondo (blanco, gris o marino)"
     return None
 
 
@@ -155,6 +183,65 @@ def etiqueta_bloque(tipo: str) -> str:
 
 # Nombres armados a mano para los ajustes más comunes.
 FIJAS = {
+    # Versión D (25-nov-2026).
+    "image_shark": "Foto de Shark Tank",
+    "alt_shark": "Texto alternativo de la foto de Shark Tank",
+    "focal_shark": "Encuadre de la foto de Shark Tank (x% y%)",
+    "shark_logo": "Logo de Shark Tank",
+    "shark_heading": "Shark Tank: título",
+    "shark_text": "Shark Tank: texto",
+    "shark_link": "Shark Tank: enlace",
+    "shark_link_text": "Shark Tank: texto del enlace",
+    "stores_heading": "Título de «dónde más nos encuentras»",
+    "guarantee_heading": "Garantía: título",
+    "guarantee_text": "Garantía: texto",
+    "price_prefix": "Texto antes del precio",
+    "help_link": "Botón del asistente: enlace",
+    "other_link": "Enlace a otro producto",
+    "other_link_text": "Texto del enlace a otro producto",
+    "photo_text": "Galería: «Foto {n} de {total}»",
+    "zoom_text": "Galería: botón «Ampliar»",
+    "close_text": "Galería: botón «Cerrar»",
+    "step_text": "Asistente: «Paso {n} de 3»",
+    "question_1": "Asistente: primera pregunta",
+    "wider_subtext": "Asistente: nota de «más ancha»",
+    "result_heading": "Asistente: título del resultado",
+    "result_text": "Asistente: texto del resultado",
+    "missing_text": "Aviso si no eligen tamaño",
+    "restart_text": "Asistente: «Volver a empezar»",
+    "total_text": "Reseñas: cuántas hay ({n})",
+    "five_text": "Reseñas: cuántas de 5 estrellas ({n})",
+    "filter_all": "Reseñas: filtro «Todas»",
+    "filter_photo": "Reseñas: filtro «Con foto»",
+    "filter_five": "Reseñas: filtro «5 estrellas»",
+    "page_text": "Reseñas: «{n} de {total}»",
+    "open_all": "Botón «Abrir todas»",
+    "close_all": "Botón «Cerrar todas»",
+    "other_question": "¿No está tu duda?: título",
+    "whatsapp_menu_text": "Menú: texto de WhatsApp",
+    "products_heading": "Menú: título de productos",
+    "pages_heading": "Menú: título de las demás páginas",
+    "note": "Nota",
+    "value": "Valor (el dato grande)",
+    "group": "Grupo del menú (productos, principal o ayuda)",
+    "subtext": "Texto chico",
+
+    # Versiones C y D (25-nov-2026): tabla de tamaños, reseñas por tema, ficha y páginas secundarias.
+    "size_question": "Elegir tamaño: pregunta arriba", "size_help": "Elegir tamaño: ayuda para medir",
+    "size_result": "Elegir tamaño: texto al elegir («Elegiste la»)", "size_list": "Botón antes de elegir tamaño",
+    "wider_message": "Mensaje de WhatsApp si la entrada es más ancha", "door_logo": "Logo sobre la compuerta de cada puerta dibujada", "gate_height": "Alto de la compuerta en cm (para el dibujo)",
+    "table_price": "Tabla: columna del precio", "choose_text": "Tabla: botón «Elegir»", "chosen_text": "Marca del tamaño elegido",
+    "wider_note": "Tabla: nota del renglón de más ancha", "wider_link": "Enlace si la entrada es más ancha",
+    "narrower_message": "Mensaje de WhatsApp si es más angosta", "add_button": "Botón de comprar", "sold_out": "Tamaño agotado",
+    "show_delivery": "Mostrar la fecha en que llegaría", "shipping_text": "Renglón del envío (vacío: no se muestra)",
+    "months_text": "Renglón de los meses sin intereses (vacío: no se muestra)", "delivery_text": "Fecha de llegada: texto antes",
+    "delivery_and": "Fecha de llegada: «y el»", "measure_message": "Mensaje de WhatsApp para ayudar a medir",
+    "seal_text": "Texto del sello que gira", "topics_text": "Reseñas: texto antes de los temas", "all_text": "Reseñas: botón «Todas»",
+    "left_text": "Reseñas: cuántas faltan ({n})", "words": "Palabras que cuentan para el tema (separadas por comas)",
+    "breadcrumb_label": "Migas de pan: nombre para lectores de pantalla", "home_text": "Migas de pan: «Inicio»",
+    "breadcrumb_text": "Migas de pan: nombre de esta página", "form_band": "Franja arriba del formulario",
+    "help_heading": "Recuadro de dudas: título", "help_text": "Recuadro de dudas: texto",
+
     "color_scheme": "Esquema de color", "heading": "Título", "subheading": "Subtítulo", "description": "Descripción",
     "heading_size": "Tamaño del título", "button_text": "Texto del botón", "button_label": "Texto del botón",
     "button_link": "Enlace del botón", "link": "Enlace", "text": "Texto", "title": "Título", "image": "Imagen",
@@ -323,7 +410,7 @@ def main() -> None:
             "slug": tipo,
             "dbName": f"s{n:02d}",
             "etiqueta": SECCIONES.get(tipo, tipo),
-            "campos": campos(sec["muestras"]),
+            "campos": [{**c, "etiqueta": etiqueta_en_seccion(tipo, c["clave"]) or c["etiqueta"]} for c in campos(sec["muestras"])],
             "bloques": [
                 {"tipo": bt, "slug": f"s{n:02d}-b{m:02d}", "dbName": f"s{n:02d}b{m:02d}", "etiqueta": etiqueta_bloque(bt),
                  "campos": [{**c, "etiqueta": etiqueta_en_pieza(bt, c["clave"]) or c["etiqueta"]} for c in campos(sec["bloques"][bt])]}

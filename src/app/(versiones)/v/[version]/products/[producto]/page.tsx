@@ -10,8 +10,7 @@ import { ResenasProducto } from "@/components/resenas/ResenasProducto";
 import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../../../PastillaVersion";
-import { MarcoVersionB } from "../../../../MarcoVersionB";
-import { MarcoVersionC } from "../../../../MarcoVersionC";
+import { MarcoVersion } from "../../../../MarcoVersion";
 
 // La ficha del producto dentro de una versión: /v/a/products/<producto> es la ficha de hoy con el marco de la tienda;
 // /v/b1/products/<producto>… es la ficha nueva de cada versión (contenido/tema/product.<versión>.json), que nace del
@@ -27,6 +26,19 @@ const ARCHIVO_FICHA: Partial<Record<string, string>> = {
   "producto.b1.tira": "product.b1.tira",
   "producto.b1.plastilina": "product.b1.plastilina",
   "producto.c1": "product.c1",
+  "producto.c1.mini": "product.c1.mini-compuerta",
+  "producto.c1.medida": "product.c1.medida-especial",
+  "producto.c1.tapon": "product.c1.tapon-inflable",
+  "producto.c1.funda": "product.c1.funda",
+  "producto.c1.tira": "product.c1.tira",
+  "producto.c1.plastilina": "product.c1.plastilina",
+  "producto.d1": "product.d1",
+  "producto.d1.mini": "product.d1.mini-compuerta",
+  "producto.d1.medida": "product.d1.medida-especial",
+  "producto.d1.tapon": "product.d1.tapon-inflable",
+  "producto.d1.funda": "product.d1.funda",
+  "producto.d1.tira": "product.d1.tira",
+  "producto.d1.plastilina": "product.d1.plastilina",
 };
 
 export function generateStaticParams() {
@@ -39,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ version: 
   const { version: clave, producto } = await params;
   const v = version(clave);
   const p = buscarProducto(producto);
-  return v && p ? { title: `${p.titulo} · versión ${v.etiqueta}` } : {};
+  return v && p ? { title: `${p.titulo} | versión ${v.etiqueta}` } : {};
 }
 
 export default async function FichaVersion({ params }: { params: Promise<{ version: string; producto: string }> }) {
@@ -69,9 +81,5 @@ export default async function FichaVersion({ params }: { params: Promise<{ versi
 
   const ficha = fichaDe(v, producto);
   if (!ficha) notFound();
-  if (v.clave.startsWith("c")) {
-    // En C todos los productos usan la misma ficha; el mapa y el editor solo son de la compuerta.
-    return <MarcoVersionC v={v} secciones={plantilla(ficha).secciones} producto={p} archivoMapa={producto === "compuerta-anti-inundaciones" ? ARCHIVO_FICHA[ficha] : undefined} />;
-  }
-  return <MarcoVersionB v={v} secciones={plantilla(ficha).secciones} producto={p} archivoMapa={ARCHIVO_FICHA[ficha]} />;
+  return <MarcoVersion v={v} secciones={plantilla(ficha).secciones} producto={p} archivoMapa={ARCHIVO_FICHA[ficha]} />;
 }

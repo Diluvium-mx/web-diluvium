@@ -9,6 +9,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { alAbrirCarrito, useCarrito } from "@/components/carrito/estado";
 import { IconoBolsa } from "@/components/comunes/Iconos";
 import { CarritoHoja } from "../landing/CarritoHoja";
+import { TEXTOS_CARRITO_CD } from "./comun";
 import { IconoTache, IconoWhatsapp } from "../landing/piezas";
 import { BOTON_C_SEC, BOTON_WHATSAPP_C, IconoTelefono } from "./comun";
 
@@ -103,7 +104,7 @@ export function EncabezadoCCliente({
           </div>
         </nav>
       </dialog>
-      {carrito && <CarritoHoja cerrar={cerrarCarrito} anadido={carrito.anadido} />}
+      {carrito && <CarritoHoja cerrar={cerrarCarrito} anadido={carrito.anadido} textos={TEXTOS_CARRITO_CD} />}
     </header>
   );
 }

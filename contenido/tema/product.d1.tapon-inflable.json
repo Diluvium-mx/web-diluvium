@@ -1,0 +1,432 @@
+{
+ "fuente": "Versión D1 (25-nov-2026): tapón inflable para coladeras.",
+ "secciones": [
+  {
+   "id": "d_ficha_tapon",
+   "tipo": "d-ficha",
+   "ajustes": {
+    "producto": "tapon-inflable-anti-inundaciones",
+    "badge": "",
+    "rating_text": "",
+    "heading": "",
+    "text": "Cuando el drenaje se satura, el agua puede salir por las coladeras. El tapón se mete en la tubería y, al inflarlo, bloquea el paso del agua.",
+    "photo_text": "Foto {n} de {total}",
+    "zoom_text": "Ampliar",
+    "close_text": "Cerrar",
+    "size_question": "Elige la medida de tu tubería",
+    "size_help": "Mide el hueco de la tubería sin la rejilla.",
+    "chosen_text": "Elegiste la",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "missing_text": "Primero elige tu tamaño.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, me interesa el tapón inflable para coladeras, ¿qué medida necesito?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 87%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame2352.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frametaponbueno.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.95
+     }
+    },
+    {
+     "id": "foto_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon1.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon3.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "62% 100%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon2.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Medidastaponesinflables_ec99b8c3-0bf9-46f4-a78d-60ef08ba6d32.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis en pedidos desde $499"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "3 meses de garantía por defecto de fábrica"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro con tarjeta o PayPal"
+     }
+    },
+    {
+     "id": "fact_1",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "2, 3 y 4",
+      "text": "pulgadas de tubería"
+     }
+    },
+    {
+     "id": "fact_2",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "Goma",
+      "text": "de alta resistencia"
+     }
+    },
+    {
+     "id": "fact_3",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "3 meses",
+      "text": "de garantía"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se infla hasta sellar el contorno de la tubería"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Para coladeras de regaderas o inodoros"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable y de rápida colocación"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_especificaciones_tapon",
+   "tipo": "d-especificaciones",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Ficha técnica",
+    "heading": "Medidas y material",
+    "note": "¿No sabes qué medida es tu tubería? Mándanos una foto por WhatsApp y te ayudamos."
+   },
+   "bloques": [
+    {
+     "id": "spec_1",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Medidas",
+      "value": "2, 3 y 4 pulgadas (5, 7.5 y 10 cm)"
+     }
+    },
+    {
+     "id": "spec_2",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Material",
+      "value": "Goma de alta resistencia"
+     }
+    },
+    {
+     "id": "spec_3",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Para",
+      "value": "Coladeras de regaderas o inodoros"
+     }
+    },
+    {
+     "id": "spec_4",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Cómo se infla",
+      "value": "Con una bomba de aire convencional"
+     }
+    },
+    {
+     "id": "spec_5",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Uso",
+      "value": "Reutilizable y de rápida colocación"
+     }
+    },
+    {
+     "id": "spec_6",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Garantía",
+      "value": "3 meses por defecto de fábrica; devolución en 30 días solo si no se ha usado"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_resenas_tapon",
+   "tipo": "d-resenas",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Reseñas de clientes",
+    "heading": "Lo que dicen del tapón",
+    "text": "",
+    "product_filter": "/products/tapon-inflable-anti-inundaciones",
+    "total_text": "{n} reseñas publicadas",
+    "five_text": "{n} de 5 estrellas",
+    "filter_all": "Todas",
+    "filter_photo": "Con foto",
+    "filter_five": "5 estrellas",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "page_text": "{n} de {total}",
+    "read_more_text": "Leer completa",
+    "close_text": "Cerrar"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_dudas_tapon",
+   "tipo": "d-dudas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Antes de comprar",
+    "heading": "Las {n} dudas más comunes",
+    "text": "Toca una pregunta para ver la respuesta.",
+    "open_all": "Abrir todas",
+    "close_all": "Cerrar todas",
+    "other_question": "¿No está tu duda?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre el tapón inflable, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo se pone?",
+      "description": "<p>Retira la rejilla o tapadera de la coladera y limpia la tubería. Mete el tapón, conéctale una bomba de aire convencional e ínflalo hasta que selle firme el contorno. Si al moverlo no se desplaza, quedó bien.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué medida necesito?",
+      "description": "<p>La del diámetro de tu tubería: hay de 2, 3 y 4 pulgadas (5, 7.5 y 10 cm). Mide el hueco de la tubería sin la rejilla.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecho?",
+      "description": "<p>De goma de alta resistencia, que se adhiere fuerte a la tubería para soportar la presión del agua cuando el drenaje se satura.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué tanto detiene?",
+      "description": "<p>En nuestras pruebas, en condiciones óptimas, con superficies rectas y lisas, retiene hasta el 100 % del flujo de agua.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>3 meses por defecto de fábrica. Se acepta devolución en 30 días solo si no se ha usado.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_otros_tapon",
+   "tipo": "d-otros",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "También te puede servir",
+    "heading": "Otros productos",
+    "from_text": "Desde",
+    "button_text": "Ver producto"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "heading": "Compuerta anti-inundaciones",
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta anti-inundaciones"
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "heading": "Mini compuerta (30 cm)",
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini compuerta (30 cm)"
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "heading": "Compuerta XXL a tu medida",
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta XXL a tu medida"
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "heading": "Tapón para coladera",
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón para coladera"
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "heading": "Funda de repuesto",
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto"
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "heading": "Tira de hule de repuesto",
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto"
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "heading": "Plastilina de secado rápido",
+      "image": "/media/products/Accesorio3.png",
+      "alt": "Plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_tapon",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "button_text": "Elegir mi medida",
+    "button_link": "#comprar",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, revisé la página del tapón inflable y tengo una duda, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "coladera",
+      "text": "Sella la tubería al inflarlo"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "reloj",
+      "text": "Se pone en minutos"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "palomita",
+      "text": "Reutilizable"
+     }
+    }
+   ]
+  }
+ ]
+}

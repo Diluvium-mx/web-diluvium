@@ -106,7 +106,7 @@ export function PreguntasVersion({ seccion }: PropsSeccion) {
             textoSinRespuesta={tx(a, "no_answer_text", "Mándanos tu pregunta por WhatsApp y te contestamos.")}
             textoWhatsapp={tx(a, "whatsapp_answer_text", "Escríbenos por WhatsApp")}
             mensajeSinRespuesta={tx(a, "no_answer_message", "Hola, tengo una pregunta que no encontré en su página: {pregunta}")}
-            mensajeAngosta={tx(a, "narrow_message", "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?")}
+            mensajeAngosta={tx(a, "narrow_message", "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?")}
             ejemplos={tx(a, "search_examples", EJEMPLOS)
               .split("\n")
               .map((e) => sinFormato(e).replace(/^Ej\.\s*/i, ""))

@@ -1,0 +1,106 @@
+{
+ "fuente": "Versión C1: ficha de funda (25-nov-2026), con las fotos y textos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_ficha_funda",
+   "tipo": "c-ficha",
+   "ajustes": {
+    "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+    "heading": "",
+    "text": "",
+    "rating_text": "más de 200 reseñas",
+    "shipping_text": "Envío gratis en pedidos desde $499",
+    "months_text": "",
+    "delivery_text": "Si la pides hoy, llega entre el",
+    "delivery_and": "y el",
+    "size_question": "Elige el tamaño de tu compuerta.",
+    "size_help": "Es el mismo tamaño que tu compuerta.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "wider_text": "",
+    "narrower_text": "",
+    "narrower_link_text": "",
+    "narrower_message": "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero una funda de repuesto para mi compuerta, ¿qué tamaño necesito?",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "show_delivery": true,
+    "show_description": true,
+    "description_heading": "Qué es y para qué sirve"
+   },
+   "bloques": [
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+      "focal": "50% 50%",
+      "zoom": 0.9
+     }
+    },
+    {
+     "id": "image_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Funda2.jpg",
+      "alt": "Funda de repuesto Compuerta Anti-Inundaciones",
+      "focal": "50% 50%",
+      "zoom": 0.8
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Envío gratis",
+      "subtext": "En pedidos desde $499"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Pago seguro",
+      "subtext": "Tarjeta con Mercado Pago o PayPal"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_funda",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_cierre_funda",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Pago seguro y envío gratis en pedidos desde $499.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "PAGO SEGURO • ENVÍO GRATIS DESDE $499 • "
+   },
+   "bloques": []
+  }
+ ]
+}

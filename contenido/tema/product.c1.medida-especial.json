@@ -1,0 +1,342 @@
+{
+ "fuente": "Versión C1: ficha de medida-especial (25-nov-2026), con las fotos y textos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_ficha_medida-especial",
+   "tipo": "c-ficha",
+   "ajustes": {
+    "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "heading": "",
+    "text": "Para entradas más anchas de lo normal: la hacemos a tu medida, hasta 2.5 m de ancho por 60 cm de alto, con un sello firme en todo el contorno.",
+    "rating_text": "más de 200 reseñas",
+    "shipping_text": "Envío gratis a todo México",
+    "months_text": "",
+    "delivery_text": "Si la pides hoy, llega entre el",
+    "delivery_and": "y el",
+    "size_question": "¿Cuál se parece a tu entrada?",
+    "size_help": "Cada puerta está dibujada a su tamaño real. Mide de marco a marco.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "wider_text": "",
+    "narrower_text": "",
+    "narrower_link_text": "",
+    "narrower_message": "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero una compuerta hecha a la medida para mi entrada, ¿qué medidas y fotos les mando para cotizarla?",
+    "whatsapp_text": "Mándanos foto y medida por WhatsApp",
+    "show_delivery": false
+   },
+   "bloques": [
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "31% 100%",
+      "zoom": 1.1
+     }
+    },
+    {
+     "id": "image_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/6_3b8c0ccf-3412-4dc9-83dc-470da79ca652.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "71% 83%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/1.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 100%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/3_e2c0623e-a5e2-442a-9126-61b08b856e29.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 0.8
+     }
+    },
+    {
+     "id": "image_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/4_e2544b69-40cf-4121-a2c9-1757f50fda5b.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/METrasera.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Hecha a tu medida",
+      "subtext": "Mándanos foto y medida de tu entrada"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Envío en 3 a 5 días",
+      "subtext": "Cuando está lista"
+     }
+    },
+    {
+     "id": "trust_3",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "30 días de garantía",
+      "subtext": "Por defectos de fábrica"
+     }
+    },
+    {
+     "id": "trust_4",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Pago seguro",
+      "subtext": "Tarjeta, PayPal o transferencia"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Hasta 2.5 m de ancho por 60 cm de alto"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos y se retira en 5"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en unas 3 semanas, con 50 % de anticipo"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_resenas_medida-especial",
+   "tipo": "c-resenas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Reseñas de clientes",
+    "heading": "Lo que dicen quienes la pidieron a su medida",
+    "rating_text": "{total} reseñas publicadas",
+    "topics_text": "Lo que más dicen:",
+    "all_text": "Todas",
+    "more_button": "Ver 10 reseñas más",
+    "left_text": "faltan {n}",
+    "read_more_text": "Leer completa",
+    "product_filter": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+   },
+   "bloques": [
+    {
+     "id": "tema_1",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Fácil de poner",
+      "words": "facil, sencill, se pone, se coloca, se instala, instalacion, instalar"
+     }
+    },
+    {
+     "id": "tema_2",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Buena calidad",
+      "words": "calidad, resistente, solid, firme, reforzad, fuerte, durader"
+     }
+    },
+    {
+     "id": "tema_3",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Llegó rápido",
+      "words": "llego, envio, entrega, rapido"
+     }
+    },
+    {
+     "id": "tema_4",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Tranquilidad",
+      "words": "tranquil, paz, duerm, dormir, preocup"
+     }
+    },
+    {
+     "id": "tema_5",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "No pasa el agua",
+      "words": "no paso, no entro, no se metio, no entra, no pasa, ni una gota, sellad, sella, funciona, detiene, aguant"
+     }
+    },
+    {
+     "id": "tema_6",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Buen servicio",
+      "words": "atencion, servicio, atendi, whatsapp, asesor, respond"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_medida-especial",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_pagos_medida-especial",
+   "tipo": "c-pagos",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Formas de pago",
+    "heading": "Paga como prefieras",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero pagar mi pedido por transferencia o depósito, ¿me pasan los datos?",
+    "whatsapp_text": "Pagar por transferencia o depósito",
+    "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
+   },
+   "bloques": [
+    {
+     "id": "method_tarjeta",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Tarjeta de crédito o débito",
+      "text": "Con Mercado Pago."
+     }
+    },
+    {
+     "id": "method_paypal",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "PayPal",
+      "text": "Paga con tu cuenta de PayPal."
+     }
+    },
+    {
+     "id": "method_transferencia",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Transferencia o depósito",
+      "text": "Escríbenos por WhatsApp y te mandamos los datos para pagar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_preguntas_medida-especial",
+   "tipo": "c-preguntas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Preguntas frecuentes",
+    "heading": "Lo que más nos preguntan",
+    "other_question": "¿Tienes otra pregunta?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo la pido?",
+      "description": "<p>Mándanos por WhatsApp una foto de tu entrada por dentro y por fuera y la medida exacta de ancho, de marco a marco. Revisamos que se pueda instalar y te confirmamos.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuánto tarda?",
+      "description": "<p>Se fabrica bajo pedido en unas tres semanas a partir de la confirmación. Para empezarla pedimos un anticipo del 50 %; el resto se liquida cuando está lista para enviarse. Te avisamos cuando esté terminada y te la mandamos a la dirección que nos indiques.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>Una compuerta de acero expandible, su funda hecha a la medida, una tira de hule que va al contorno para el sello hermético, una llave para girar todos los tornillos y plastilina de secado rápido para las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecha?",
+      "description": "<p>De acero, para resistir fuertes impactos de olas y altas presiones de agua. Va forrada con una funda de neopreno, un material muy resistente y 100 % impermeable.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>30 días por defectos de fabricación, por ser hecha a la medida. Su vida útil puede llegar a los 5 a 7 años.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cierre_medida-especial",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Hecha a la medida de tu entrada, con pago seguro y 30 días de garantía.",
+    "button_text": "Pedir la mía",
+    "button_link": "#titulo-ficha-c",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "HECHA A TU MEDIDA • PAGO SEGURO • 30 DÍAS DE GARANTÍA • "
+   },
+   "bloques": []
+  }
+ ]
+}

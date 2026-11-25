@@ -41,7 +41,7 @@ export function PagosC({ seccion }: PropsSeccion) {
         </ul>
         {whatsapp && (
           <a
-            href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, quiero pagar mi compuerta por transferencia o depósito."))}
+            href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, quiero pagar mi compuerta por transferencia o depósito, ¿me pasan los datos?"))}
             target="_blank"
             rel="noopener noreferrer"
             data-evento="toca_whatsapp"

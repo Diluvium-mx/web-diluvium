@@ -4,7 +4,7 @@ import { plantilla } from "@/lib/contenido";
 import { Secciones } from "@/components/secciones/registro";
 import { Articulo, articuloBlog, articulosBlog } from "@/components/secciones/Articulo";
 import { MigasDePan } from "@/components/secciones/MigasDePan";
-import { DatosEstructurados, datosArticulo, metadatos } from "@/lib/seo";
+import { DatosEstructurados, datosArticulo, datosMigas, metadatos } from "@/lib/seo";
 
 // Cada artículo del blog con la misma dirección que en Shopify: /blogs/blog/<artículo>.
 
@@ -34,6 +34,13 @@ export default async function PaginaArticulo({ params }: Props) {
   return (
     <>
       {datos && <DatosEstructurados datos={datos} />}
+      <DatosEstructurados
+        datos={datosMigas([
+          { nombre: "Inicio", ruta: "/" },
+          { nombre: "Blog", ruta: "/blogs/blog" },
+          { nombre: a.titulo, ruta: `/blogs/blog/${a.slug}` },
+        ])}
+      />
       {secciones}
     </>
   );

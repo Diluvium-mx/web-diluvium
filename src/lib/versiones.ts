@@ -96,11 +96,44 @@ VERSIONES.push({
   nombre: "Clara y con ayuda",
   plantilla: "portada.c1",
   ficha: "producto.c1",
-  cambiaFicha: "Ficha para 40-60 años: fotos grandes con flechas, escribir la medida y elegir el tamaño de una lista grande, la fecha en que llegaría y WhatsApp o llamar siempre a la mano.",
+  fichas: {
+    "compuerta-anti-inundaciones-hecha-a-la-medida": "producto.c1.medida",
+    "mini-compuerta": "producto.c1.mini",
+    "tapon-inflable-anti-inundaciones": "producto.c1.tapon",
+    "funda-de-repuesto-compuerta-anti-inundaciones": "producto.c1.funda",
+    "accesorio-tira-de-hule-de-repuesto": "producto.c1.tira",
+    "accesorio-plastilina-de-secado-rapido": "producto.c1.plastilina",
+  },
+  paginas: { contacto: "contacto.c1", nosotros: "nosotros.c1", blog: "blog.c1", articulo: "articulo.c1", coleccion: "coleccion.c1" },
+  cambiaFicha: "Ficha para 40-60 años: fotos grandes con flechas, las puertas dibujadas a su tamaño para elegir el tuyo, la fecha en que llegaría y WhatsApp o llamar siempre a la mano.",
   cambia: "Pensada para el cliente ideal (40 a 60 años, en el celular): fondo claro, letra y botones grandes, nada que se mueva solo, «Te atiende una persona», confianza (Shark Tank, Mercado Libre, Amazon) y barra fija de WhatsApp y teléfono.",
   prueba: "Que una página fácil de leer y con ayuda humana a la mano convenza más a quien de verdad compra.",
   aFavor: "Se lee sin lentes, se compra desde la portada y siempre hay a quién preguntar.",
   enContra: "Es más larga; está en revisión.",
+});
+
+// Versión D (25-nov-2026): basada en cómo vende andafacil.com (docs/estudio-andafacil.md), sin el recuadro «Lo que ves es
+// lo que pagas» ni la calculadora de pagos (dueño). Se le habla de «tú».
+VERSIONES.push({
+  clave: "d1",
+  etiqueta: "D1",
+  nombre: "Te guía paso a paso",
+  plantilla: "portada.d1",
+  ficha: "producto.d1",
+  fichas: {
+    "compuerta-anti-inundaciones-hecha-a-la-medida": "producto.d1.medida",
+    "mini-compuerta": "producto.d1.mini",
+    "tapon-inflable-anti-inundaciones": "producto.d1.tapon",
+    "funda-de-repuesto-compuerta-anti-inundaciones": "producto.d1.funda",
+    "accesorio-tira-de-hule-de-repuesto": "producto.d1.tira",
+    "accesorio-plastilina-de-secado-rapido": "producto.d1.plastilina",
+  },
+  paginas: { contacto: "contacto.d1", nosotros: "nosotros.d1", blog: "blog.d1", articulo: "articulo.d1", coleccion: "coleccion.d1" },
+  cambiaFicha: "Ficha tipo tienda grande: precio enorme, asistente de 3 pasos para elegir el tamaño, galería con «Ampliar», ficha técnica, «Las 12 dudas más comunes» y todas las reseñas por páginas.",
+  cambia: "Una tienda que te guía: franja de avisos arriba, asistente para elegir el tamaño, Shark Tank, dónde más nos encuentras (Mercado Libre y Amazon), todas las reseñas con filtros y WhatsApp flotante en todas las páginas.",
+  prueba: "Que guiar paso a paso y mostrar toda la confianza de una tienda grande convenza más que una página corta.",
+  aFavor: "Resuelve las dudas sin salir de la página y elige el tamaño por ti.",
+  enContra: "Tiene mucho contenido; está en revisión.",
 });
 
 export function version(clave: string): Version | undefined {

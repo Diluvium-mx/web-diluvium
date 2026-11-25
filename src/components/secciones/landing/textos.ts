@@ -99,7 +99,7 @@ export const TEXTOS_COMPRA: TextosCompra = {
   masAngostaEnlace: "Escríbenos y vemos tu caso",
   agotado: "Agotado",
   whatsapp: "Pregúntanos por WhatsApp",
-  mensajeAngosta: "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?",
+  mensajeAngosta: "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?",
 };
 
 export type TextosComoMedir = {

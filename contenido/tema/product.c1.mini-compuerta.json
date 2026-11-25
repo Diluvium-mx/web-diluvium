@@ -1,0 +1,344 @@
+{
+ "fuente": "Versión C1: ficha de mini-compuerta (25-nov-2026), con las fotos y textos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_ficha_mini-compuerta",
+   "tipo": "c-ficha",
+   "ajustes": {
+    "producto": "mini-compuerta",
+    "heading": "",
+    "text": "No toda filtración de agua es una inundación. La Mini Compuerta detiene encharcamientos y filtraciones ligeras: lluvia que se mete por la puerta sin que sea una emergencia.",
+    "rating_text": "más de 200 reseñas",
+    "shipping_text": "Envío gratis a todo México",
+    "months_text": "",
+    "delivery_text": "Si la pides hoy, llega entre el",
+    "delivery_and": "y el",
+    "size_question": "¿Cuál se parece a tu entrada?",
+    "size_help": "Cada puerta está dibujada a su tamaño real. Mide de marco a marco.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "wider_text": "¿Más de 124cm? Cuéntanos más sobre el ancho de tu acceso por WhatsApp.",
+    "narrower_text": "¿Tu entrada mide menos de {desde} cm?",
+    "narrower_link_text": "Escríbenos por WhatsApp",
+    "narrower_message": "Hola, mi entrada mide menos de 62 cm, ¿qué compuerta me recomiendan?",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, me interesa la Mini Compuerta, ¿me ayudan con una duda antes de comprarla?",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "wider_message": "Hola, mi entrada mide más de 124 cm, ¿qué compuerta me recomiendan?",
+    "door_logo": "/media/files/logo-compuerta-blanco.png",
+    "gate_height": 30
+   },
+   "bloques": [
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG2.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.7
+     }
+    },
+    {
+     "id": "image_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG3.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG4.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "43% 98%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "image_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG5.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.65
+     }
+    },
+    {
+     "id": "image_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG6.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "image_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG8.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_8",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/IMG9.jpg",
+      "alt": "Mini Compuerta Anti-Inundaciones (30cm altura)",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Envío gratis",
+      "subtext": "Llega en 3 a 5 días hábiles"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "1 año de garantía",
+      "subtext": "Por defectos de fábrica"
+     }
+    },
+    {
+     "id": "trust_4",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Pago seguro",
+      "subtext": "Tarjeta con Mercado Pago o PayPal"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Sistema de sellado único"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable, con vida útil de 5 a 7 años"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_historias_mini-compuerta",
+   "tipo": "c-historias",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Así de fácil",
+    "heading": "3 pasos clave",
+    "text": ""
+   },
+   "bloques": [
+    {
+     "id": "slide_1",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/puerta_buena.jpg",
+      "alt": "Puerta con una flecha que marca el ancho, de marco a marco",
+      "heading": "Mide el ancho de tu entrada",
+      "text": "De marco a marco o de pared a pared, con una cinta métrica.",
+      "focal": "50% 50%",
+      "zoom": 1.3
+     }
+    },
+    {
+     "id": "slide_2",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/tabla-tamanos-mini.png",
+      "alt": "Tabla de tamaños de la Mini Compuerta",
+      "heading": "Elige tu tamaño",
+      "text": "Todos cuestan {precio}, con envío gratis."
+     }
+    },
+    {
+     "id": "slide_3",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/Frame_603.jpg",
+      "alt": "Dibujo de una puerta con la compuerta puesta",
+      "heading": "Recíbela y colócala",
+      "text": "Llega en 3 a 5 días hábiles y la colocas en 10 minutos.",
+      "focal": "50% 53%",
+      "zoom": 1.22
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_mini-compuerta",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_pagos_mini-compuerta",
+   "tipo": "c-pagos",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Formas de pago",
+    "heading": "Paga como prefieras",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero pagar mi pedido por transferencia o depósito, ¿me pasan los datos?",
+    "whatsapp_text": "Pagar por transferencia o depósito",
+    "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
+   },
+   "bloques": [
+    {
+     "id": "method_tarjeta",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Tarjeta de crédito o débito",
+      "text": "Con Mercado Pago."
+     }
+    },
+    {
+     "id": "method_paypal",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "PayPal",
+      "text": "Paga con tu cuenta de PayPal."
+     }
+    },
+    {
+     "id": "method_transferencia",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Transferencia o depósito",
+      "text": "Escríbenos por WhatsApp y te mandamos los datos para pagar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_preguntas_mini-compuerta",
+   "tipo": "c-preguntas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Preguntas frecuentes",
+    "heading": "Lo que más nos preguntan",
+    "other_question": "¿Tienes otra pregunta?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿La instalación es permanente o puedo retirarla cuando quiera?",
+      "description": "<p>La instalación es muy simple, tarda alrededor de 10 minutos. La compuerta se puede retirar cuando quiera o puede dejarla instalada por meses sin ningún problema.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>Todo lo necesario para instalarla: la Mini Compuerta de acero expandible, su funda hecha a la medida, una tira de hule que va al contorno para el sello hermético, una llave y un dado para ajustar los tornillos, y plastilina de secado rápido para sellar las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué pasa si mi puerta tiene un marco irregular o desniveles?",
+      "description": "<p>La tira de hule que va al contorno de la compuerta absorbe imperfecciones como pequeñas grietas y ligeros desniveles. Si el marco es muy irregular, habría que modificarlo antes de colocar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Necesito hacer perforaciones o modificar mi puerta?",
+      "description": "<p>No es necesario, la entrada puede quedarse tal y como está. Solo se necesita un marco de 4 cm para que se pueda instalar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué material está hecha?",
+      "description": "<p>Está hecha de acero, lleva una tira de hule y una funda de neopreno impermeable que hace que el agua no pase. Es reutilizable.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>1 año de garantía por defectos de fabricación. Su vida útil puede llegar a los 5 a 7 años.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cierre_mini-compuerta",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Envío gratis a todo México, pago seguro y 1 año de garantía.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • "
+   },
+   "bloques": []
+  }
+ ]
+}

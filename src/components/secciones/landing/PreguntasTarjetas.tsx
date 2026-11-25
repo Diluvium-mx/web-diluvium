@@ -99,7 +99,7 @@ export function PreguntasTarjetas({
   ejemplos = [],
   textoWhatsapp = "Escríbenos por WhatsApp",
   mensajeSinRespuesta = "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
-  mensajeAngosta = "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?",
+  mensajeAngosta = "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?",
 }: {
   faqs: EntradaBanco[];
   banco: EntradaBanco[];

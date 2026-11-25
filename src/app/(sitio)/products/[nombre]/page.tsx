@@ -5,7 +5,7 @@ import { plantillaProducto } from "@/lib/contenido";
 import { producto } from "@/components/producto/catalogo";
 import { Secciones } from "@/components/secciones/registro";
 import { ResenasProducto } from "@/components/resenas/ResenasProducto";
-import { DatosEstructurados, MetaProducto, datosProducto, metadatos } from "@/lib/seo";
+import { DatosEstructurados, MetaProducto, datosMigas, datosPreguntas, datosProducto, metadatos } from "@/lib/seo";
 
 // Páginas de producto con las mismas direcciones que en Shopify: /products/<nombre>.
 
@@ -27,10 +27,19 @@ export default async function PaginaProducto({ params }: { params: Promise<{ nom
   // Las reseñas (hoy las pone la app Trustoo) van justo después de la ficha principal, fuera de las secciones del tema.
   const secciones = plantillaProducto(datos.plantilla).secciones;
   const corte = secciones.findIndex((s) => s.tipo === "main-product") + 1;
+  const preguntas = datosPreguntas(secciones);
   return (
     <>
       <MetaProducto producto={p} />
       <DatosEstructurados datos={datosProducto(p)} />
+      <DatosEstructurados
+        datos={datosMigas([
+          { nombre: "Inicio", ruta: "/" },
+          { nombre: "Productos", ruta: "/collections/all-products" },
+          { nombre: p.titulo, ruta: `/products/${p.nombre}` },
+        ])}
+      />
+      {preguntas && <DatosEstructurados datos={preguntas} />}
       <Secciones secciones={secciones.slice(0, corte)} producto={p} />
       <ResenasProducto producto={p} />
       <Secciones secciones={secciones.slice(corte)} producto={p} />

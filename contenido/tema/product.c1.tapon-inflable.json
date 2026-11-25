@@ -1,0 +1,277 @@
+{
+ "fuente": "Versión C1: ficha de tapon-inflable (25-nov-2026), con las fotos y textos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_ficha_tapon-inflable",
+   "tipo": "c-ficha",
+   "ajustes": {
+    "producto": "tapon-inflable-anti-inundaciones",
+    "heading": "",
+    "text": "Cuando el drenaje se satura, el agua puede salir por las coladeras. El tapón se mete en la tubería y, al inflarlo, bloquea el paso del agua.",
+    "rating_text": "más de 200 reseñas",
+    "shipping_text": "Envío gratis en pedidos desde $499",
+    "months_text": "",
+    "delivery_text": "Si la pides hoy, llega entre el",
+    "delivery_and": "y el",
+    "size_question": "Elige la medida de tu tubería.",
+    "size_help": "Es el diámetro del tubo de tu coladera.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "wider_text": "",
+    "narrower_text": "",
+    "narrower_link_text": "",
+    "narrower_message": "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, me interesa el tapón inflable para coladeras, ¿qué medida necesito?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "image_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 87%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frame2352.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "image_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Frametaponbueno.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.95
+     }
+    },
+    {
+     "id": "image_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon1.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "image_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon3.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "62% 100%",
+      "zoom": 0.5
+     }
+    },
+    {
+     "id": "image_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Tapon2.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "image_7",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/products/Medidastaponesinflables_ec99b8c3-0bf9-46f4-a78d-60ef08ba6d32.png",
+      "alt": "Tapón Inflable Anti-Inundaciones - Bomba de goma inflable para tapar coladeras",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "trust_1",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Envío gratis",
+      "subtext": "En pedidos desde $499"
+     }
+    },
+    {
+     "id": "trust_2",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "3 meses de garantía",
+      "subtext": "Por defecto de fábrica"
+     }
+    },
+    {
+     "id": "trust_3",
+     "tipo": "trust",
+     "ajustes": {
+      "text": "Pago seguro",
+      "subtext": "Tarjeta con Mercado Pago o PayPal"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se infla hasta sellar el contorno de la tubería"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Para coladeras de regaderas o inodoros"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Reutilizable y de rápida colocación"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_tapon-inflable",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_pagos_tapon-inflable",
+   "tipo": "c-pagos",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Formas de pago",
+    "heading": "Paga como prefieras",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero pagar mi pedido por transferencia o depósito, ¿me pasan los datos?",
+    "whatsapp_text": "Pagar por transferencia o depósito",
+    "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
+   },
+   "bloques": [
+    {
+     "id": "method_tarjeta",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Tarjeta de crédito o débito",
+      "text": "Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta de crédito."
+     }
+    },
+    {
+     "id": "method_paypal",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "PayPal",
+      "text": "Paga con tu cuenta de PayPal."
+     }
+    },
+    {
+     "id": "method_transferencia",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Transferencia o depósito",
+      "text": "Escríbenos por WhatsApp y te mandamos los datos para pagar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_preguntas_tapon-inflable",
+   "tipo": "c-preguntas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Preguntas frecuentes",
+    "heading": "Lo que más nos preguntan",
+    "other_question": "¿Tienes otra pregunta?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo se pone?",
+      "description": "<p>Retira la rejilla o tapadera de la coladera y limpia la tubería. Mete el tapón, conéctale una bomba de aire convencional e ínflalo hasta que selle firme el contorno. Si al moverlo no se desplaza, quedó bien.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué medida necesito?",
+      "description": "<p>La del diámetro de tu tubería: hay de 2, 3 y 4 pulgadas (5, 7.5 y 10 cm). Mide el hueco de la tubería sin la rejilla.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecho?",
+      "description": "<p>De goma de alta resistencia, que se adhiere fuerte a la tubería para soportar la presión del agua cuando el drenaje se satura.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué tanto detiene?",
+      "description": "<p>En nuestras pruebas, en condiciones óptimas, con superficies rectas y lisas, retiene hasta el 100 % del flujo de agua.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>3 meses por defecto de fábrica. Se acepta devolución en 30 días solo si no se ha usado.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cierre_tapon-inflable",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Pago seguro y 3 meses de garantía. Envío gratis en pedidos desde $499.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "3 MESES DE GARANTÍA • PAGO SEGURO • ENVÍO GRATIS DESDE $499 • "
+   },
+   "bloques": []
+  }
+ ]
+}

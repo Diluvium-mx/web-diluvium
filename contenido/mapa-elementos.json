@@ -5581,5 +5581,4045 @@
     "visto": "2026-11-24"
    }
   }
+ },
+ "index.c1": {
+  "siguiente": 210,
+  "elementos": {
+   "c_portada||Texto@div1>div1>p1": {
+    "n": 1,
+    "nombre": "Texto «Compuerta anti-inundaciones Diluvium»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Título@div1>div1>h11": {
+    "n": 2,
+    "nombre": "Título «Que el agua de la lluvia no entre a tu casa»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div1>p2": {
+    "n": 3,
+    "nombre": "Texto «La pones en tu puerta en 10 minutos, sin obras ni taladro. …»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div1>p3": {
+    "n": 4,
+    "nombre": "Texto «La pones en tu puerta en 10 minutos, sin obras ni taladro. …»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||foto:|image": {
+    "n": 5,
+    "nombre": "Foto «IMG_2103.jpg · La compuerta Diluvium deteniendo el agua en la entrada »",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div3>div1>p1": {
+    "n": 6,
+    "nombre": "Texto «Cualquier tamaño, desde»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div3>div1>p2": {
+    "n": 7,
+    "nombre": "Texto «$5,500$5,999»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div3>div1>p3": {
+    "n": 8,
+    "nombre": "Texto «Envío gratis a todo México · hasta 6 meses sin intereses»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada|point_1|Texto@": {
+    "n": 9,
+    "nombre": "Texto «Detiene hasta 50 cm de agua»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada|point_2|Texto@": {
+    "n": 10,
+    "nombre": "Texto «Se pone en 10 minutos, sin obras»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada|point_3|Texto@": {
+    "n": 11,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Enlace@div1>div3>div2>a1": {
+    "n": 12,
+    "nombre": "Enlace «Ver tamaños y precios»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Enlace@div1>div3>div2>a2": {
+    "n": 13,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada||Texto@div1>p1": {
+    "n": 14,
+    "nombre": "Texto «Compra con confianza»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada||Título@div1>h21": {
+    "n": 15,
+    "nombre": "Título «Más de 2,000 familias ya la tienen»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_shark|foto:reason_shark|image": {
+    "n": 16,
+    "nombre": "Foto «SHARK_TANK_LOGO.png»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_shark|Texto@div1>span2>span1": {
+    "n": 17,
+    "nombre": "Texto «Salimos en Shark Tank México»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_shark|Texto@div1>span2>span2": {
+    "n": 18,
+    "nombre": "Texto «Presentamos nuestra compuerta en el programa.»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_meli|Enlace@a1": {
+    "n": 19,
+    "nombre": "Enlace «También estamos en Mercado LibreCon reseñas de compradores …»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_amazon|Enlace@a1": {
+    "n": 20,
+    "nombre": "Enlace «Y en AmazonSi prefieres comprar ahí, también nos encuentras.»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_garantia|Ícono@div1>span1>svg1": {
+    "n": 21,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_garantia|Texto@div1>span2>span1": {
+    "n": 22,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_portada|reason_garantia|Texto@div1>span2>span2": {
+    "n": 23,
+    "nombre": "Texto «Por defectos de fábrica. Si algo falla, te ayudamos.»",
+    "parte": "C1-I3 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada||Texto@div1>p1": {
+    "n": 24,
+    "nombre": "Texto «Así funciona»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada||Título@div1>h21": {
+    "n": 25,
+    "nombre": "Título «Protege tu casa en 4 pasos sencillos»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada||Texto@div1>p2": {
+    "n": 26,
+    "nombre": "Texto «No necesitas herramientas ni a un albañil.»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_1|foto:slide_1|image": {
+    "n": 27,
+    "nombre": "Foto «Frame_643.jpg · Un hombre lleva la compuerta a su puerta»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_1|Texto@div2>span1": {
+    "n": 28,
+    "nombre": "Texto «1»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_1|Título@div2>div1>h31": {
+    "n": 29,
+    "nombre": "Título «Paso 1: Avisan tormenta»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_1|Texto@div2>div1>p1": {
+    "n": 30,
+    "nombre": "Texto «Sacas la compuerta y la llevas a tu puerta.»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_2|foto:slide_2|image": {
+    "n": 31,
+    "nombre": "Foto «IMG_1499.jpg · Un hombre coloca la compuerta en una puerta»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_2|Texto@div2>span1": {
+    "n": 32,
+    "nombre": "Texto «2»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_2|Título@div2>div1>h31": {
+    "n": 33,
+    "nombre": "Título «Paso 2: La pones en 10 minutos»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_2|Texto@div2>div1>p1": {
+    "n": 34,
+    "nombre": "Texto «Giras el gato y se ajusta a presión contra tu marco. Sin ta…»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_3|foto:slide_3|image": {
+    "n": 35,
+    "nombre": "Foto «IMG_2103.jpg · La compuerta detiene el agua en la entrada»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_3|Texto@div2>span1": {
+    "n": 36,
+    "nombre": "Texto «3»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_3|Título@div2>div1>h31": {
+    "n": 37,
+    "nombre": "Título «Paso 3: El agua se queda afuera»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_3|Texto@div2>div1>p1": {
+    "n": 38,
+    "nombre": "Texto «La funda y la tira de hule sellan todo el contorno, hasta 5…»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_4|foto:slide_4|image": {
+    "n": 39,
+    "nombre": "Foto «Frame_629.jpg · La compuerta lista para guardarse»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_4|Texto@div2>span1": {
+    "n": 40,
+    "nombre": "Texto «4»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_4|Título@div2>div1>h31": {
+    "n": 41,
+    "nombre": "Título «Paso 4: Pasa la lluvia y la guardas»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_portada|slide_4|Texto@div2>div1>p1": {
+    "n": 42,
+    "nombre": "Texto «La quitas en un minuto y la guardas para la próxima. Dura d…»",
+    "parte": "C1-I4 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>p1": {
+    "n": 43,
+    "nombre": "Texto «Tamaños y precios»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Título@div1>div1>h21": {
+    "n": 44,
+    "nombre": "Título «Elige tu tamaño»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>p2": {
+    "n": 45,
+    "nombre": "Texto «Todos los tamaños cuestan $5,500 y el envío es gratis.»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>label1": {
+    "n": 46,
+    "nombre": "Texto «¿Cuánto mide tu entrada?»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>p1": {
+    "n": 47,
+    "nombre": "Texto «Busca el ancho de tu entrada y toca «Elegir».»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Campo@div1>div1>div1>div1>div1>input1": {
+    "n": 48,
+    "nombre": "Campo «Ej. 95»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>div1>span1": {
+    "n": 49,
+    "nombre": "Texto «cm»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>p2": {
+    "n": 50,
+    "nombre": "Texto «Mide de marco a marco, en centímetros.»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>div2>button1": {
+    "n": 51,
+    "nombre": "Botón «Extra Chica69–78 cm$5,500»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>div2>button2": {
+    "n": 52,
+    "nombre": "Botón «Chica79–90 cm$5,500»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>div2>button3": {
+    "n": 53,
+    "nombre": "Botón «Mediana91–100 cm$5,500»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>div2>button4": {
+    "n": 54,
+    "nombre": "Botón «Grande101–110 cm$5,500»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>div2>button5": {
+    "n": 55,
+    "nombre": "Botón «Extra Grande111–120 cm$5,500»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Botón@div1>div1>div1>div1>button1": {
+    "n": 56,
+    "nombre": "Botón «Primero elige tu tamaño»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Enlace@div1>div1>a1": {
+    "n": 57,
+    "nombre": "Enlace «¿No sabes cómo medir? Te ayudamos por WhatsApp»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||foto:|image": {
+    "n": 58,
+    "nombre": "Foto «Frame_734.jpg · Compuerta Diluvium puesta en una entrada»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>p1": {
+    "n": 59,
+    "nombre": "Texto «Reseñas de clientes»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Título@div1>h21": {
+    "n": 60,
+    "nombre": "Título «Lo que dicen quienes ya la usan»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>p2>span1": {
+    "n": 61,
+    "nombre": "Texto «4.9»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>p2>span2": {
+    "n": 62,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>p2>span3": {
+    "n": 63,
+    "nombre": "Texto «237 reseñas publicadas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li1>div1>img1": {
+    "n": 64,
+    "nombre": "Foto «XfRn45zB5W-card-small.jpg · Compuerta de Carmela C. puesta en su entra»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li1>figure1>span1": {
+    "n": 65,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li1>figure1>blockquote1": {
+    "n": 66,
+    "nombre": "Texto ««Tiene un exelente ajuste y fácil de instalar»»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li1>figure1>figcaption1": {
+    "n": 67,
+    "nombre": "Texto «Carmela C.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li2>div1>img1": {
+    "n": 68,
+    "nombre": "Foto «ZSpiewKZJt-card-small.jpeg · Compuerta de Juan C. A. puesta en su entr»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li2>figure1>span1": {
+    "n": 69,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li2>figure1>blockquote1": {
+    "n": 70,
+    "nombre": "Texto ««Soy Juan Carlos Ávila quiero contarles que con el paso del…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li2>figure1>figcaption1": {
+    "n": 72,
+    "nombre": "Texto «Juan C. A.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li3>div1>img1": {
+    "n": 73,
+    "nombre": "Foto «EzTBWf8m2N-card-small.jpeg · Compuerta de Blanca T. puesta en su entra»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li3>figure1>span1": {
+    "n": 74,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li3>figure1>blockquote1": {
+    "n": 75,
+    "nombre": "Texto ««En el 2021 compré una medidna y me funcionó excelente, est…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li3>figure1>figcaption1": {
+    "n": 76,
+    "nombre": "Texto «Blanca T.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button1": {
+    "n": 77,
+    "nombre": "Botón «Todas (237)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||foto:|image": {
+    "n": 78,
+    "nombre": "Foto «oficina.jpg · El equipo de Diluvium en su oficina de Los Mochis»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||Texto@div1>div2>p1": {
+    "n": 79,
+    "nombre": "Texto «Estamos para ayudarte»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||Título@div1>div2>h21": {
+    "n": 80,
+    "nombre": "Título «Te atiende una persona, no un robot»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||Texto@div1>div2>p2": {
+    "n": 81,
+    "nombre": "Texto «Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbe…»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||Enlace@div1>div2>div1>a1": {
+    "n": 82,
+    "nombre": "Enlace «Escríbenos por WhatsApp»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_portada||Enlace@div1>div2>div1>a2": {
+    "n": 83,
+    "nombre": "Enlace «Llámanos al (668) 241 9579»",
+    "parte": "C1-I7 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Texto@div1>p1": {
+    "n": 84,
+    "nombre": "Texto «Formas de pago»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Título@div1>h21": {
+    "n": 85,
+    "nombre": "Título «Paga como prefieras»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Ícono@div1>div1>svg1": {
+    "n": 86,
+    "nombre": "Ícono «Visa»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Ícono@div1>div1>svg2": {
+    "n": 87,
+    "nombre": "Ícono «Mastercard»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Ícono@div1>div1>svg3": {
+    "n": 88,
+    "nombre": "Ícono «Mercado Pago»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Ícono@div1>div1>span1": {
+    "n": 89,
+    "nombre": "Ícono «PayPal»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_tarjeta|Ícono@span1>svg1": {
+    "n": 90,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_tarjeta|Texto@span2>span1": {
+    "n": 91,
+    "nombre": "Texto «Tarjeta de crédito o débito»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_tarjeta|Texto@span2>span2": {
+    "n": 92,
+    "nombre": "Texto «Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta d…»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_paypal|Ícono@span1>svg1": {
+    "n": 93,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_paypal|Texto@span2>span1": {
+    "n": 94,
+    "nombre": "Texto «PayPal»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_paypal|Texto@span2>span2": {
+    "n": 95,
+    "nombre": "Texto «Paga con tu cuenta de PayPal.»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_transferencia|Ícono@span1>svg1": {
+    "n": 96,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_transferencia|Texto@span2>span1": {
+    "n": 97,
+    "nombre": "Texto «Transferencia o depósito»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada|method_transferencia|Texto@span2>span2": {
+    "n": 98,
+    "nombre": "Texto «Escríbenos por WhatsApp y te mandamos los datos para pagar.»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Enlace@div1>a1": {
+    "n": 99,
+    "nombre": "Enlace «Pagar por transferencia o depósito»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_portada||Texto@div1>p2": {
+    "n": 100,
+    "nombre": "Texto «¿Necesitas factura? Mándanos tu constancia de situación fis…»",
+    "parte": "C1-I8 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada||Texto@div1>p1": {
+    "n": 101,
+    "nombre": "Texto «Preguntas frecuentes»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada||Título@div1>h21": {
+    "n": 102,
+    "nombre": "Título «Lo que más nos preguntan»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_1|Botón@summary1": {
+    "n": 103,
+    "nombre": "Botón «¿Me va a quedar en mi puerta?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_1|Texto@div1>p1": {
+    "n": 104,
+    "nombre": "Texto «Mide el ancho de tu entrada de marco a marco o de pared a p…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_2|Botón@summary1": {
+    "n": 105,
+    "nombre": "Botón «¿Hay que perforar o modificar mi entrada?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_2|Texto@div1>p1": {
+    "n": 106,
+    "nombre": "Texto «No. La entrada se queda tal como está: la compuerta se ajus…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_3|Botón@summary1": {
+    "n": 107,
+    "nombre": "Botón «¿De verdad no pasa el agua? ¿Hasta qué altura?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_3|Texto@div1>p1": {
+    "n": 108,
+    "nombre": "Texto «Soporta hasta 50 cm de agua. Lleva una funda de neopreno im…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_4|Botón@summary1": {
+    "n": 109,
+    "nombre": "Botón «¿Y si mi piso o mi marco están chuecos?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_4|Texto@div1>p1": {
+    "n": 110,
+    "nombre": "Texto «La tira de hule absorbe imperfecciones como pequeñas grieta…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_5|Botón@summary1": {
+    "n": 111,
+    "nombre": "Botón «¿Qué garantía tiene?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_5|Texto@div1>p1": {
+    "n": 112,
+    "nombre": "Texto «1 año de garantía: si quieres cambiar de tamaño o pedir un …»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_envio|Botón@summary1": {
+    "n": 113,
+    "nombre": "Botón «¿Cuándo llega y si no me convence?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_envio|Texto@div1>p1": {
+    "n": 114,
+    "nombre": "Texto «Llega en 3 a 5 días hábiles a cualquier parte de México (pu…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_factura|Botón@summary1": {
+    "n": 115,
+    "nombre": "Botón «¿Me dan factura?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_factura|Texto@div1>p1": {
+    "n": 116,
+    "nombre": "Texto «Sí. Mándanos tus datos fiscales y tu constancia de situació…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_6|Botón@summary1": {
+    "n": 117,
+    "nombre": "Botón «¿Cómo pago?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_6|Texto@div1>p1": {
+    "n": 118,
+    "nombre": "Texto «Con tarjeta de crédito o débito (hasta 6 meses sin interese…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_7|Botón@summary1": {
+    "n": 119,
+    "nombre": "Botón «¿Qué incluye?+−»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada|question_7|Texto@div1>p1": {
+    "n": 120,
+    "nombre": "Texto «La compuerta de acero expandible, su funda hecha a la medid…»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada||Texto@div1>div2>p1": {
+    "n": 121,
+    "nombre": "Texto «¿Tienes otra pregunta?»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada||Texto@div1>div2>p2": {
+    "n": 122,
+    "nombre": "Texto «Escríbenos: te contesta una persona del equipo.»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_portada||Enlace@div1>div2>a1": {
+    "n": 123,
+    "nombre": "Enlace «Preguntar por WhatsApp»",
+    "parte": "C1-I9 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_portada||Ícono@div1>svg1": {
+    "n": 124,
+    "nombre": "Ícono «1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • 🛡️»",
+    "parte": "C1-I10 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_portada||Título@div1>div1>h21": {
+    "n": 125,
+    "nombre": "Título «Que la próxima lluvia no te tome por sorpresa»",
+    "parte": "C1-I10 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_portada||Texto@div1>div1>p1": {
+    "n": 126,
+    "nombre": "Texto «Envío gratis a todo México, pago seguro y 1 año de garantía.»",
+    "parte": "C1-I10 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_portada||Enlace@div1>div1>div1>a1": {
+    "n": 127,
+    "nombre": "Enlace «Proteger mi casa →»",
+    "parte": "C1-I10 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_portada||Enlace@div1>div1>div1>a2": {
+    "n": 128,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "C1-I10 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||foto:|logo": {
+    "n": 129,
+    "nombre": "Foto «Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png · Diluvium»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Texto@div1>p1": {
+    "n": 130,
+    "nombre": "Texto «Compuertas contra inundaciones hechas en Los Mochis, Sinalo…»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada|contact_whatsapp|Enlace@a1": {
+    "n": 131,
+    "nombre": "Enlace «WhatsApp (668) 241 9579»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada|contact_telefono|Enlace@a1": {
+    "n": 132,
+    "nombre": "Enlace «Llamar»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada|contact_correo|Enlace@a1": {
+    "n": 133,
+    "nombre": "Enlace «contacto@diluvium.com.mx»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li1>a1": {
+    "n": 134,
+    "nombre": "Enlace «Inicio»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li2>a1": {
+    "n": 135,
+    "nombre": "Enlace «Productos»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li3>a1": {
+    "n": 136,
+    "nombre": "Enlace «Contacto»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li4>a1": {
+    "n": 137,
+    "nombre": "Enlace «Nosotros»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li5>a1": {
+    "n": 138,
+    "nombre": "Enlace «Blog»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li6>a1": {
+    "n": 139,
+    "nombre": "Enlace «Términos del servicio»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li7>a1": {
+    "n": 140,
+    "nombre": "Enlace «Política de reembolso»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>nav1>ul1>li8>a1": {
+    "n": 141,
+    "nombre": "Enlace «Política de privacidad»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>ul2>li1>a1": {
+    "n": 142,
+    "nombre": "Enlace «Facebook (se abre en otra pestaña)»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>ul2>li2>a1": {
+    "n": 143,
+    "nombre": "Enlace «YouTube (se abre en otra pestaña)»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>ul2>li3>a1": {
+    "n": 144,
+    "nombre": "Enlace «Instagram (se abre en otra pestaña)»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Enlace@div1>ul2>li4>a1": {
+    "n": 145,
+    "nombre": "Enlace «LinkedIn (se abre en otra pestaña)»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_portada||Texto@div1>p2": {
+    "n": 146,
+    "nombre": "Texto «© 2026 Diluvium»",
+    "parte": "C1-I11 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div1>div1>p1>strong1": {
+    "n": 147,
+    "nombre": "Texto «4.9»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Ícono@div1>div1>div1>p1>span1": {
+    "n": 148,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div1>div1>p1>span2": {
+    "n": 149,
+    "nombre": "Texto «más de 200 reseñas»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div3>div1>ul1>li1": {
+    "n": 150,
+    "nombre": "Texto «Envío gratis a todo México»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_portada||Texto@div1>div3>div1>ul1>li2": {
+    "n": 151,
+    "nombre": "Texto «Hasta 6 meses sin intereses»",
+    "parte": "C1-I2 · C: primera pantalla",
+    "visto": "2026-11-25"
+   },
+   "c_barra_portada||Enlace@div1>a1": {
+    "n": 152,
+    "nombre": "Enlace «WhatsApp»",
+    "parte": "C1-I12 · C: barra de WhatsApp y teléfono (celular)",
+    "visto": "2026-11-25"
+   },
+   "c_barra_portada||Enlace@div1>a2": {
+    "n": 153,
+    "nombre": "Enlace «Llamar»",
+    "parte": "C1-I12 · C: barra de WhatsApp y teléfono (celular)",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Tabla@div1>div1>div1>div1>table1": {
+    "n": 154,
+    "nombre": "Tabla «AnchoPrecioElegir69–78 cmExtra Chica$5,500Elegir79–90 cmChi…»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>p3": {
+    "n": 155,
+    "nombre": "Texto «¿Tu entrada mide menos de 69 cm? Escríbenos por WhatsApp»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>p1": {
+    "n": 156,
+    "nombre": "Texto «Lo que más dicen:»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button2": {
+    "n": 157,
+    "nombre": "Botón «Fácil de poner (54)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button3": {
+    "n": 158,
+    "nombre": "Botón «Buena calidad (48)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button4": {
+    "n": 159,
+    "nombre": "Botón «Llegó rápido (38)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button5": {
+    "n": 160,
+    "nombre": "Botón «Tranquilidad (29)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button6": {
+    "n": 161,
+    "nombre": "Botón «No pasa el agua (28)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div1>button7": {
+    "n": 162,
+    "nombre": "Botón «Buen servicio (20)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li4>div1>img1": {
+    "n": 163,
+    "nombre": "Foto «wNjmk4rTZY-card-small.jpeg · Compuerta de Marco E. puesta en su entrad»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li4>figure1>span1": {
+    "n": 164,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li4>figure1>blockquote1": {
+    "n": 165,
+    "nombre": "Texto ««Decidí adquirir mi compuerta anti inundaciones por el ries…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>ul1>li4>figure1>button1": {
+    "n": 166,
+    "nombre": "Botón «Leer completa»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li4>figure1>figcaption1": {
+    "n": 167,
+    "nombre": "Texto «Marco E.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li5>div1>img1": {
+    "n": 168,
+    "nombre": "Foto «3jC3xcijGp-card-small.jpg · Compuerta de Elías N. puesta en su entrada»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li5>figure1>span1": {
+    "n": 169,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li5>figure1>blockquote1": {
+    "n": 170,
+    "nombre": "Texto ««Lo compré como prevención, sin embargo no lo he necesitado…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li5>figure1>figcaption1": {
+    "n": 171,
+    "nombre": "Texto «Elías N.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>div2>button1": {
+    "n": 172,
+    "nombre": "Botón «Ver 10 reseñas más(faltan 232)»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>div1>p1": {
+    "n": 173,
+    "nombre": "Texto «Elegiste la Extra Grande (111–120 cm)»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_tamanos||Texto@div1>div1>div1>div1>div1>p2": {
+    "n": 174,
+    "nombre": "Texto «$5,500$5,999-8%»",
+    "parte": "C1-I5 · C: elegir tamaño",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Botón@div1>div1>div1>ul1>li2>figure1>button1": {
+    "n": 71,
+    "nombre": "Botón «Leer completa»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li6>div1>img1": {
+    "n": 175,
+    "nombre": "Foto «3e4b7c7f-9741-4351-b1a1-f419281bb567-card-small.jpg · Compuerta de Lui»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li6>figure1>span1": {
+    "n": 176,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li6>figure1>blockquote1": {
+    "n": 177,
+    "nombre": "Texto ««Llegó en perfecto estado y antes del tiempo estimado de en…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li6>figure1>figcaption1": {
+    "n": 178,
+    "nombre": "Texto «Luis C.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li7>div1>img1": {
+    "n": 179,
+    "nombre": "Foto «8bd4b952-58ea-4ffd-b582-b2765607241a-card-small.jpg · Compuerta de Fer»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li7>figure1>span1": {
+    "n": 180,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li7>figure1>blockquote1": {
+    "n": 181,
+    "nombre": "Texto ««Excelente producto! Fácil de instalar y queda bien firme, …»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li7>figure1>figcaption1": {
+    "n": 182,
+    "nombre": "Texto «Fer Z.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li8>div1>img1": {
+    "n": 183,
+    "nombre": "Foto «ab4b2b4f-4ccc-494b-95e5-f2878408aff9-card-small.jpg · Compuerta de Mar»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li8>figure1>span1": {
+    "n": 184,
+    "nombre": "Ícono «4 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li8>figure1>blockquote1": {
+    "n": 185,
+    "nombre": "Texto ««NO SUPE COMO INSTALARLA PERO LOS MUCHACHOS ME AYUDARON, SI…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li8>figure1>figcaption1": {
+    "n": 186,
+    "nombre": "Texto «Maria E. S.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li9>div1>img1": {
+    "n": 187,
+    "nombre": "Foto «f366cdba-4e6a-445b-a864-c6275a5cbc69-card-small.jpg · Compuerta de Alb»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li9>figure1>span1": {
+    "n": 188,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li9>figure1>blockquote1": {
+    "n": 189,
+    "nombre": "Texto ««Es muy facil de poner y se ve bonita, si la recomiendo»»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li9>figure1>figcaption1": {
+    "n": 190,
+    "nombre": "Texto «Alberto F.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Foto@div1>div1>div1>ul1>li10>div1>img1": {
+    "n": 191,
+    "nombre": "Foto «bafd1fcd-c438-48ea-84d3-de4b1899da94-card-small.jpg · Compuerta de Jes»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li10>figure1>span1": {
+    "n": 192,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li10>figure1>blockquote1": {
+    "n": 193,
+    "nombre": "Texto ««Me encantó porque se pone rápido»»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li10>figure1>figcaption1": {
+    "n": 194,
+    "nombre": "Texto «Jesús R.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li11>figure1>span1": {
+    "n": 195,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li11>figure1>blockquote1": {
+    "n": 196,
+    "nombre": "Texto ««Estaba cansado de improvisar cuando llovía. Esta barrera h…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li11>figure1>figcaption1": {
+    "n": 197,
+    "nombre": "Texto «Antonio»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li12>figure1>span1": {
+    "n": 198,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li12>figure1>blockquote1": {
+    "n": 199,
+    "nombre": "Texto ««esta compuerta fue súper fácil de montar ahora sí que pued…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li12>figure1>figcaption1": {
+    "n": 200,
+    "nombre": "Texto «Fran T.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li13>figure1>span1": {
+    "n": 201,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li13>figure1>blockquote1": {
+    "n": 202,
+    "nombre": "Texto ««Fácil de instalar y una solución práctica para mantener el…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li13>figure1>figcaption1": {
+    "n": 203,
+    "nombre": "Texto «José T.»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li14>figure1>span1": {
+    "n": 204,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li14>figure1>blockquote1": {
+    "n": 205,
+    "nombre": "Texto ««Esta barrera me ha dado paz mental. Fácil de poner y una m…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li14>figure1>figcaption1": {
+    "n": 206,
+    "nombre": "Texto «Manuel»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Ícono@div1>div1>div1>ul1>li15>figure1>span1": {
+    "n": 207,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li15>figure1>blockquote1": {
+    "n": 208,
+    "nombre": "Texto ««No soy muy habilidoso con las herramientas, pero esta comp…»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_portada||Texto@div1>div1>div1>ul1>li15>figure1>figcaption1": {
+    "n": 209,
+    "nombre": "Texto «CarlosGomez»",
+    "parte": "C1-I6 · C: reseñas",
+    "visto": "2026-11-25"
+   }
+  }
+ },
+ "product.c1": {
+  "siguiente": 193,
+  "elementos": {
+   "c_ficha||foto:foto_1|image": {
+    "n": 1,
+    "nombre": "Foto «Frame697.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||foto:foto_2|image": {
+    "n": 2,
+    "nombre": "Foto «2026-11-23-img-6626-ihxe.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||foto:foto_3|image": {
+    "n": 3,
+    "nombre": "Foto «2026-11-23-whatsapp-image-2025-09-25-at-11-13-16-a-m-7cyk.jpg · Compue»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||foto:foto_4|image": {
+    "n": 4,
+    "nombre": "Foto «6_61bbe95a-a71d-493a-9e88-6d6ad41c5b39.jpg · Compuerta Anti-Inundacion»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||foto:foto_5|image": {
+    "n": 5,
+    "nombre": "Foto «1.Compuertarecta.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div1>div1>p1": {
+    "n": 6,
+    "nombre": "Texto «Foto 1 de 5»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div1>div1>button1": {
+    "n": 7,
+    "nombre": "Botón «Foto anterior»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div1>div1>button2": {
+    "n": 8,
+    "nombre": "Botón «Foto siguiente»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p1": {
+    "n": 9,
+    "nombre": "Texto «4.9 de 5 · más de 200 reseñas»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Título@div1>div2>h11": {
+    "n": 10,
+    "nombre": "Título «Compuerta Anti-Inundaciones»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p2": {
+    "n": 11,
+    "nombre": "Texto «Detiene hasta 50 cm de agua y la pones en 10 minutos, sin o…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p3": {
+    "n": 12,
+    "nombre": "Texto «Envío gratis a todo México · hasta 6 meses sin intereses»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>label1": {
+    "n": 13,
+    "nombre": "Texto «¿Cuánto mide tu entrada?»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>p1": {
+    "n": 14,
+    "nombre": "Texto «¿Cuál se parece a tu entrada?»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Campo@div1>div2>div1>div1>div1>input1": {
+    "n": 15,
+    "nombre": "Campo «Ej. 95»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>div1>span1": {
+    "n": 16,
+    "nombre": "Texto «cm»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>p2": {
+    "n": 17,
+    "nombre": "Texto «Cada puerta está dibujada a su tamaño real. Mide de marco a…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div2>button1": {
+    "n": 18,
+    "nombre": "Botón «Añadir al carrito»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div2>button2": {
+    "n": 19,
+    "nombre": "Botón «Chica79–90 cm$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div2>button3": {
+    "n": 20,
+    "nombre": "Botón «Mediana91–100 cm$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div2>button4": {
+    "n": 21,
+    "nombre": "Botón «Grande101–110 cm$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div2>button5": {
+    "n": 22,
+    "nombre": "Botón «Extra Grande111–120 cm$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>button1": {
+    "n": 23,
+    "nombre": "Botón «Primero elige tu tamaño»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Enlace@div1>div2>a1": {
+    "n": 24,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_envio|Ícono@span1>svg1": {
+    "n": 25,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_envio|Texto@span2>span1": {
+    "n": 26,
+    "nombre": "Texto «Envío gratis»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_envio|Texto@span2>span2": {
+    "n": 27,
+    "nombre": "Texto «Llega en 3 a 5 días hábiles»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_garantia|Ícono@span1>svg1": {
+    "n": 28,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_garantia|Texto@span2>span1": {
+    "n": 29,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_garantia|Texto@span2>span2": {
+    "n": 30,
+    "nombre": "Texto «Por defectos de fábrica»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_meses|Ícono@span1>svg1": {
+    "n": 31,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_meses|Texto@span2>span1": {
+    "n": 32,
+    "nombre": "Texto «Hasta 6 meses sin intereses»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_meses|Texto@span2>span2": {
+    "n": 33,
+    "nombre": "Texto «Con tarjeta de crédito»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_pago|Ícono@span1>svg1": {
+    "n": 34,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_pago|Texto@span2>span1": {
+    "n": 35,
+    "nombre": "Texto «Pago seguro»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|trust_pago|Texto@span2>span2": {
+    "n": 36,
+    "nombre": "Texto «Tarjeta con Mercado Pago o PayPal»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|point_1|Texto@": {
+    "n": 37,
+    "nombre": "Texto «Funda de neopreno impermeable y tira de hule en todo el con…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|point_2|Texto@": {
+    "n": 38,
+    "nombre": "Texto «Marco de acero de alta resistencia que se ajusta a presión»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha|point_3|Texto@": {
+    "n": 39,
+    "nombre": "Texto «Reutilizable, con vida útil de 5 a 7 años»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto||Texto@div1>p1": {
+    "n": 40,
+    "nombre": "Texto «Así funciona»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto||Título@div1>h21": {
+    "n": 41,
+    "nombre": "Título «Protege tu casa en 4 pasos sencillos»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto||Texto@div1>p2": {
+    "n": 42,
+    "nombre": "Texto «No necesitas herramientas ni a un albañil.»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_1|foto:slide_1|image": {
+    "n": 43,
+    "nombre": "Foto «Frame_643.jpg · Un hombre lleva la compuerta a su puerta»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_1|Texto@div2>span1": {
+    "n": 44,
+    "nombre": "Texto «1»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_1|Título@div2>div1>h31": {
+    "n": 45,
+    "nombre": "Título «Paso 1: Avisan tormenta»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_1|Texto@div2>div1>p1": {
+    "n": 46,
+    "nombre": "Texto «Sacas la compuerta y la llevas a tu puerta.»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_2|foto:slide_2|image": {
+    "n": 47,
+    "nombre": "Foto «IMG_1499.jpg · Un hombre coloca la compuerta en una puerta»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_2|Texto@div2>span1": {
+    "n": 48,
+    "nombre": "Texto «2»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_2|Título@div2>div1>h31": {
+    "n": 49,
+    "nombre": "Título «Paso 2: La pones en 10 minutos»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_2|Texto@div2>div1>p1": {
+    "n": 50,
+    "nombre": "Texto «Giras el gato y se ajusta a presión contra tu marco. Sin ta…»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_3|foto:slide_3|image": {
+    "n": 51,
+    "nombre": "Foto «IMG_2103.jpg · La compuerta detiene el agua en la entrada»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_3|Texto@div2>span1": {
+    "n": 52,
+    "nombre": "Texto «3»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_3|Título@div2>div1>h31": {
+    "n": 53,
+    "nombre": "Título «Paso 3: El agua se queda afuera»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_3|Texto@div2>div1>p1": {
+    "n": 54,
+    "nombre": "Texto «La funda y la tira de hule sellan todo el contorno, hasta 5…»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_4|foto:slide_4|image": {
+    "n": 55,
+    "nombre": "Foto «Frame_629.jpg · La compuerta lista para guardarse»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_4|Texto@div2>span1": {
+    "n": 56,
+    "nombre": "Texto «4»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_4|Título@div2>div1>h31": {
+    "n": 57,
+    "nombre": "Título «Paso 4: Pasa la lluvia y la guardas»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_historias_producto|slide_4|Texto@div2>div1>p1": {
+    "n": 58,
+    "nombre": "Texto «La quitas en un minuto y la guardas para la próxima. Dura d…»",
+    "parte": "C1-P3 · C: así funciona (paso a paso)",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>p1": {
+    "n": 59,
+    "nombre": "Texto «Reseñas de clientes»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Título@div1>h21": {
+    "n": 60,
+    "nombre": "Título «Lo que dicen quienes ya la usan»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>p2>span1": {
+    "n": 61,
+    "nombre": "Texto «4.9»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>p2>span2": {
+    "n": 62,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>p2>span3": {
+    "n": 63,
+    "nombre": "Texto «237 reseñas publicadas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Foto@div1>div1>div1>ul1>li1>div1>img1": {
+    "n": 64,
+    "nombre": "Foto «XfRn45zB5W-card-small.jpg · Compuerta de Carmela C. puesta en su entra»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>div1>div1>ul1>li1>figure1>span1": {
+    "n": 65,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li1>figure1>blockquote1": {
+    "n": 66,
+    "nombre": "Texto ««Tiene un exelente ajuste y fácil de instalar»»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li1>figure1>figcaption1": {
+    "n": 67,
+    "nombre": "Texto «Carmela C.»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Foto@div1>div1>div1>ul1>li2>div1>img1": {
+    "n": 68,
+    "nombre": "Foto «ZSpiewKZJt-card-small.jpeg · Compuerta de Juan C. A. puesta en su entr»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>div1>div1>ul1>li2>figure1>span1": {
+    "n": 69,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li2>figure1>blockquote1": {
+    "n": 70,
+    "nombre": "Texto ««Soy Juan Carlos Ávila quiero contarles que con el paso del…»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>ul1>li2>figure1>button1": {
+    "n": 71,
+    "nombre": "Botón «Leer completa»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li2>figure1>figcaption1": {
+    "n": 72,
+    "nombre": "Texto «Juan C. A.»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Foto@div1>div1>div1>ul1>li3>div1>img1": {
+    "n": 73,
+    "nombre": "Foto «EzTBWf8m2N-card-small.jpeg · Compuerta de Blanca T. puesta en su entra»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>div1>div1>ul1>li3>figure1>span1": {
+    "n": 74,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li3>figure1>blockquote1": {
+    "n": 75,
+    "nombre": "Texto ««En el 2021 compré una medidna y me funcionó excelente, est…»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li3>figure1>figcaption1": {
+    "n": 76,
+    "nombre": "Texto «Blanca T.»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button1": {
+    "n": 77,
+    "nombre": "Botón «Todas (237)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto||Texto@div1>p1": {
+    "n": 78,
+    "nombre": "Texto «Compra con confianza»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto||Título@div1>h21": {
+    "n": 79,
+    "nombre": "Título «Más de 2,000 familias ya la tienen»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_shark|foto:reason_shark|image": {
+    "n": 80,
+    "nombre": "Foto «SHARK_TANK_LOGO.png»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_shark|Texto@div1>span2>span1": {
+    "n": 81,
+    "nombre": "Texto «Salimos en Shark Tank México»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_shark|Texto@div1>span2>span2": {
+    "n": 82,
+    "nombre": "Texto «Presentamos nuestra compuerta en el programa.»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_meli|Enlace@a1": {
+    "n": 83,
+    "nombre": "Enlace «También estamos en Mercado LibreCon reseñas de compradores …»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_amazon|Enlace@a1": {
+    "n": 84,
+    "nombre": "Enlace «Y en AmazonSi prefieres comprar ahí, también nos encuentras.»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_garantia|Ícono@div1>span1>svg1": {
+    "n": 85,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_garantia|Texto@div1>span2>span1": {
+    "n": 86,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_confianza_producto|reason_garantia|Texto@div1>span2>span2": {
+    "n": 87,
+    "nombre": "Texto «Por defectos de fábrica. Si algo falla, te ayudamos.»",
+    "parte": "C1-P5 · C: compra con confianza",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||foto:|image": {
+    "n": 88,
+    "nombre": "Foto «oficina.jpg · El equipo de Diluvium en su oficina de Los Mochis»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||Texto@div1>div2>p1": {
+    "n": 89,
+    "nombre": "Texto «Estamos para ayudarte»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||Título@div1>div2>h21": {
+    "n": 90,
+    "nombre": "Título «Te atiende una persona, no un robot»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||Texto@div1>div2>p2": {
+    "n": 91,
+    "nombre": "Texto «Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbe…»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||Enlace@div1>div2>div1>a1": {
+    "n": 92,
+    "nombre": "Enlace «Escríbenos por WhatsApp»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_ayuda_producto||Enlace@div1>div2>div1>a2": {
+    "n": 93,
+    "nombre": "Enlace «Llámanos al (668) 241 9579»",
+    "parte": "C1-P6 · C: te atiende una persona",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Texto@div1>p1": {
+    "n": 94,
+    "nombre": "Texto «Formas de pago»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Título@div1>h21": {
+    "n": 95,
+    "nombre": "Título «Paga como prefieras»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Ícono@div1>div1>svg1": {
+    "n": 96,
+    "nombre": "Ícono «Visa»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Ícono@div1>div1>svg2": {
+    "n": 97,
+    "nombre": "Ícono «Mastercard»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Ícono@div1>div1>svg3": {
+    "n": 98,
+    "nombre": "Ícono «Mercado Pago»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Ícono@div1>div1>span1": {
+    "n": 99,
+    "nombre": "Ícono «PayPal»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_tarjeta|Ícono@span1>svg1": {
+    "n": 100,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_tarjeta|Texto@span2>span1": {
+    "n": 101,
+    "nombre": "Texto «Tarjeta de crédito o débito»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_tarjeta|Texto@span2>span2": {
+    "n": 102,
+    "nombre": "Texto «Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta d…»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_paypal|Ícono@span1>svg1": {
+    "n": 103,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_paypal|Texto@span2>span1": {
+    "n": 104,
+    "nombre": "Texto «PayPal»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_paypal|Texto@span2>span2": {
+    "n": 105,
+    "nombre": "Texto «Paga con tu cuenta de PayPal.»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_transferencia|Ícono@span1>svg1": {
+    "n": 106,
+    "nombre": "Ícono «adorno»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_transferencia|Texto@span2>span1": {
+    "n": 107,
+    "nombre": "Texto «Transferencia o depósito»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto|method_transferencia|Texto@span2>span2": {
+    "n": 108,
+    "nombre": "Texto «Escríbenos por WhatsApp y te mandamos los datos para pagar.»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Enlace@div1>a1": {
+    "n": 109,
+    "nombre": "Enlace «Pagar por transferencia o depósito»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_pagos_producto||Texto@div1>p2": {
+    "n": 110,
+    "nombre": "Texto «¿Necesitas factura? Mándanos tu constancia de situación fis…»",
+    "parte": "C1-P7 · C: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto||Texto@div1>p1": {
+    "n": 111,
+    "nombre": "Texto «Preguntas frecuentes»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto||Título@div1>h21": {
+    "n": 112,
+    "nombre": "Título «Lo que más nos preguntan»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_1|Botón@summary1": {
+    "n": 113,
+    "nombre": "Botón «¿Me va a quedar en mi puerta?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_1|Texto@div1>p1": {
+    "n": 114,
+    "nombre": "Texto «Mide el ancho de tu entrada de marco a marco o de pared a p…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_2|Botón@summary1": {
+    "n": 115,
+    "nombre": "Botón «¿Hay que perforar o hacer obra?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_2|Texto@div1>p1": {
+    "n": 116,
+    "nombre": "Texto «No. La entrada se queda tal como está: la compuerta se ajus…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_3|Botón@summary1": {
+    "n": 117,
+    "nombre": "Botón «¿De verdad no pasa el agua? ¿Hasta qué altura?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_3|Texto@div1>p1": {
+    "n": 118,
+    "nombre": "Texto «Soporta hasta 50 cm de agua. Lleva una funda de neopreno im…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_4|Botón@summary1": {
+    "n": 119,
+    "nombre": "Botón «¿Y si mi piso o mi marco están chuecos?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_4|Texto@div1>p1": {
+    "n": 120,
+    "nombre": "Texto «La tira de hule absorbe imperfecciones como pequeñas grieta…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_5|Botón@summary1": {
+    "n": 121,
+    "nombre": "Botón «¿Qué garantía tiene?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_5|Texto@div1>p1": {
+    "n": 122,
+    "nombre": "Texto «1 año de garantía: si quieres cambiar de tamaño o pedir un …»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_envio|Botón@summary1": {
+    "n": 123,
+    "nombre": "Botón «¿Cuándo llega y si no me convence?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_envio|Texto@div1>p1": {
+    "n": 124,
+    "nombre": "Texto «Llega en 3 a 5 días hábiles a cualquier parte de México (pu…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_factura|Botón@summary1": {
+    "n": 125,
+    "nombre": "Botón «¿Me dan factura?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_factura|Texto@div1>p1": {
+    "n": 126,
+    "nombre": "Texto «Sí. Mándanos tus datos fiscales y tu constancia de situació…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_6|Botón@summary1": {
+    "n": 127,
+    "nombre": "Botón «¿Cómo pago?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_6|Texto@div1>p1": {
+    "n": 128,
+    "nombre": "Texto «Con tarjeta de crédito o débito (hasta 6 meses sin interese…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_7|Botón@summary1": {
+    "n": 129,
+    "nombre": "Botón «¿Qué incluye?+−»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto|question_7|Texto@div1>p1": {
+    "n": 130,
+    "nombre": "Texto «La compuerta de acero expandible, su funda hecha a la medid…»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto||Texto@div1>div2>p1": {
+    "n": 131,
+    "nombre": "Texto «¿Tienes otra pregunta?»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto||Texto@div1>div2>p2": {
+    "n": 132,
+    "nombre": "Texto «Escríbenos: te contesta una persona del equipo.»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_producto||Enlace@div1>div2>a1": {
+    "n": 133,
+    "nombre": "Enlace «Preguntar por WhatsApp»",
+    "parte": "C1-P8 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_producto||Ícono@div1>svg1": {
+    "n": 134,
+    "nombre": "Ícono «1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • 🛡️»",
+    "parte": "C1-P9 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_producto||Título@div1>div1>h21": {
+    "n": 135,
+    "nombre": "Título «Que la próxima lluvia no te tome por sorpresa»",
+    "parte": "C1-P9 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_producto||Texto@div1>div1>p1": {
+    "n": 136,
+    "nombre": "Texto «Envío gratis a todo México, pago seguro y 1 año de garantía.»",
+    "parte": "C1-P9 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_producto||Enlace@div1>div1>div1>a1": {
+    "n": 137,
+    "nombre": "Enlace «Proteger mi casa →»",
+    "parte": "C1-P9 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_producto||Enlace@div1>div1>div1>a2": {
+    "n": 138,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "C1-P9 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||foto:|logo": {
+    "n": 139,
+    "nombre": "Foto «Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png · Diluvium»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Texto@div1>p1": {
+    "n": 140,
+    "nombre": "Texto «Compuertas contra inundaciones hechas en Los Mochis, Sinalo…»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto|contact_whatsapp|Enlace@a1": {
+    "n": 141,
+    "nombre": "Enlace «WhatsApp (668) 241 9579»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto|contact_telefono|Enlace@a1": {
+    "n": 142,
+    "nombre": "Enlace «Llamar»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto|contact_correo|Enlace@a1": {
+    "n": 143,
+    "nombre": "Enlace «contacto@diluvium.com.mx»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li1>a1": {
+    "n": 144,
+    "nombre": "Enlace «Inicio»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li2>a1": {
+    "n": 145,
+    "nombre": "Enlace «Productos»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li3>a1": {
+    "n": 146,
+    "nombre": "Enlace «Contacto»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li4>a1": {
+    "n": 147,
+    "nombre": "Enlace «Nosotros»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li5>a1": {
+    "n": 148,
+    "nombre": "Enlace «Blog»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li6>a1": {
+    "n": 149,
+    "nombre": "Enlace «Términos del servicio»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li7>a1": {
+    "n": 150,
+    "nombre": "Enlace «Política de reembolso»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>nav1>ul1>li8>a1": {
+    "n": 151,
+    "nombre": "Enlace «Política de privacidad»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>ul2>li1>a1": {
+    "n": 152,
+    "nombre": "Enlace «Facebook (se abre en otra pestaña)»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>ul2>li2>a1": {
+    "n": 153,
+    "nombre": "Enlace «YouTube (se abre en otra pestaña)»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>ul2>li3>a1": {
+    "n": 154,
+    "nombre": "Enlace «Instagram (se abre en otra pestaña)»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Enlace@div1>ul2>li4>a1": {
+    "n": 155,
+    "nombre": "Enlace «LinkedIn (se abre en otra pestaña)»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_pie_producto||Texto@div1>p2": {
+    "n": 156,
+    "nombre": "Texto «© 2026 Diluvium»",
+    "parte": "C1-P10 · C: pie de página",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>p3": {
+    "n": 159,
+    "nombre": "Texto «¿Tu entrada mide menos de 69 cm? Escríbenos por WhatsApp»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p1>strong1": {
+    "n": 161,
+    "nombre": "Texto «4.9»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Ícono@div1>div2>p1>span1": {
+    "n": 162,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p1>span2": {
+    "n": 163,
+    "nombre": "Texto «más de 200 reseñas»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>ul1>li1": {
+    "n": 164,
+    "nombre": "Texto «Envío gratis a todo México»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>ul1>li2": {
+    "n": 165,
+    "nombre": "Texto «Hasta 6 meses sin intereses»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Ícono@div1>div2>p3>svg1": {
+    "n": 157,
+    "nombre": "Ícono «junto a \"Si la pides hoy, llega entre el lun 30 d\"»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>p3>span1": {
+    "n": 158,
+    "nombre": "Texto «Si la pides hoy, llega entre el lun 30 de nov y el mié 2 de…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Tabla@div1>div2>div1>div1>table1": {
+    "n": 166,
+    "nombre": "Tabla «AnchoPrecioElegir69–78 cmExtra Chica$5,500Elegir79–90 cmChi…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>p1": {
+    "n": 167,
+    "nombre": "Texto «Lo que más dicen:»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button2": {
+    "n": 168,
+    "nombre": "Botón «Fácil de poner (54)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button3": {
+    "n": 169,
+    "nombre": "Botón «Buena calidad (48)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button4": {
+    "n": 170,
+    "nombre": "Botón «Llegó rápido (38)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button5": {
+    "n": 171,
+    "nombre": "Botón «Tranquilidad (29)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button6": {
+    "n": 172,
+    "nombre": "Botón «No pasa el agua (28)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div1>button7": {
+    "n": 173,
+    "nombre": "Botón «Buen servicio (20)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Foto@div1>div1>div1>ul1>li4>div1>img1": {
+    "n": 174,
+    "nombre": "Foto «wNjmk4rTZY-card-small.jpeg · Compuerta de Marco E. puesta en su entrad»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>div1>div1>ul1>li4>figure1>span1": {
+    "n": 175,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li4>figure1>blockquote1": {
+    "n": 176,
+    "nombre": "Texto ««Decidí adquirir mi compuerta anti inundaciones por el ries…»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>ul1>li4>figure1>button1": {
+    "n": 177,
+    "nombre": "Botón «Leer completa»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li4>figure1>figcaption1": {
+    "n": 178,
+    "nombre": "Texto «Marco E.»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Foto@div1>div1>div1>ul1>li5>div1>img1": {
+    "n": 179,
+    "nombre": "Foto «3jC3xcijGp-card-small.jpg · Compuerta de Elías N. puesta en su entrada»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Ícono@div1>div1>div1>ul1>li5>figure1>span1": {
+    "n": 180,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li5>figure1>blockquote1": {
+    "n": 181,
+    "nombre": "Texto ««Lo compré como prevención, sin embargo no lo he necesitado…»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Texto@div1>div1>div1>ul1>li5>figure1>figcaption1": {
+    "n": 182,
+    "nombre": "Texto «Elías N.»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_resenas_producto||Botón@div1>div1>div1>div2>button1": {
+    "n": 183,
+    "nombre": "Botón «Ver 10 reseñas más(faltan 232)»",
+    "parte": "C1-P4 · C: reseñas",
+    "visto": "2026-11-25"
+   },
+   "c_barra_producto||Enlace@div1>a1": {
+    "n": 184,
+    "nombre": "Enlace «WhatsApp»",
+    "parte": "C1-P11 · C: barra de WhatsApp y teléfono (celular)",
+    "visto": "2026-11-25"
+   },
+   "c_barra_producto||Enlace@div1>a2": {
+    "n": 185,
+    "nombre": "Enlace «Llamar»",
+    "parte": "C1-P11 · C: barra de WhatsApp y teléfono (celular)",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div1>button1": {
+    "n": 186,
+    "nombre": "Botón «69–78 cmExtra Chica$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div1>button2": {
+    "n": 187,
+    "nombre": "Botón «79–90 cmChica$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div1>button3": {
+    "n": 188,
+    "nombre": "Botón «Elegida91–100 cmMediana$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div1>button4": {
+    "n": 189,
+    "nombre": "Botón «101–110 cmGrande$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Botón@div1>div2>div1>div1>div1>button5": {
+    "n": 190,
+    "nombre": "Botón «111–120 cmExtra Grande$5,500»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Enlace@div1>div2>div1>div1>div1>a1": {
+    "n": 191,
+    "nombre": "Enlace «¿Más de 120cm? Cuéntanos más sobre el ancho de tu acceso po…»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>div2>div1>p1": {
+    "n": 192,
+    "nombre": "Texto «Elegiste la Mediana (91–100 cm)»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "c_ficha||Texto@div1>div2>div1>div1>div2>div1>p2": {
+    "n": 160,
+    "nombre": "Texto «$5,500$5,999-8%»",
+    "parte": "C1-P2 · C: ficha del producto",
+    "visto": "2026-11-25"
+   }
+  }
+ },
+ "page.contact.c1": {
+  "siguiente": 47,
+  "elementos": {
+   "c_titulo_contacto_c1||Texto@div1>div1>p1": {
+    "n": 1,
+    "nombre": "Texto «Contacto»",
+    "parte": "C1-C1 · C: título de la página",
+    "visto": "2026-11-25"
+   },
+   "c_titulo_contacto_c1||Título@div1>div1>h11": {
+    "n": 2,
+    "nombre": "Título «¿Tienes dudas? Aquí las respuestas y formas de contacto»",
+    "parte": "C1-C1 · C: título de la página",
+    "visto": "2026-11-25"
+   },
+   "c_titulo_contacto_c1||Texto@div1>div1>p2": {
+    "n": 3,
+    "nombre": "Texto «Llámanos, escríbenos por WhatsApp o déjanos un mensaje. Est…»",
+    "parte": "C1-C1 · C: título de la página",
+    "visto": "2026-11-25"
+   },
+   "c_titulo_contacto_c1||Enlace@div1>div1>a1": {
+    "n": 4,
+    "nombre": "Enlace «Escríbenos por WhatsApp»",
+    "parte": "C1-C1 · C: título de la página",
+    "visto": "2026-11-25"
+   },
+   "c_titulo_contacto_c1||foto:|image": {
+    "n": 5,
+    "nombre": "Foto «oficina.jpg · El equipo de Diluvium en su oficina de Los Mochis»",
+    "parte": "C1-C1 · C: título de la página",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Título@div1>div1>h21": {
+    "n": 6,
+    "nombre": "Título «Formas de contacto»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div1>p1": {
+    "n": 7,
+    "nombre": "Texto «Toca la que prefieras.»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1|channel_whatsapp|Enlace@a1": {
+    "n": 8,
+    "nombre": "Enlace «WhatsApp(668) 241 9579»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1|channel_telefono|Enlace@a1": {
+    "n": 9,
+    "nombre": "Enlace «Llámanos(668) 241 9579»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1|channel_correo|Enlace@a1": {
+    "n": 10,
+    "nombre": "Enlace «Correocontacto@diluvium.com.mx»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1|channel_direccion|Enlace@a1": {
+    "n": 11,
+    "nombre": "Enlace «DirecciónCalle Morelos #254, Los Mochis, Sinaloa, México»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Enlace@div1>div1>a1": {
+    "n": 12,
+    "nombre": "Enlace «Ver las preguntas frecuentes»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Título@div1>div2>div1>h31": {
+    "n": 13,
+    "nombre": "Título «Contáctanos»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div2>div1>p1": {
+    "n": 14,
+    "nombre": "Texto «Llena el siguiente formato con tus datos y te atenderemos l…»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div2>div1>form1>div1>label1": {
+    "n": 15,
+    "nombre": "Texto «No llenar»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div2>div1>form1>div2>label1": {
+    "n": 16,
+    "nombre": "Texto «Tu nombre *»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Campo@div1>div2>div1>form1>div2>input1": {
+    "n": 17,
+    "nombre": "Campo «»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div2>div1>form1>div3>label1": {
+    "n": 18,
+    "nombre": "Texto «Tu correo *»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Campo@div1>div2>div1>form1>div3>input1": {
+    "n": 19,
+    "nombre": "Campo «»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Texto@div1>div2>div1>form1>div4>label1": {
+    "n": 20,
+    "nombre": "Texto «Tu mensaje *»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Campo@div1>div2>div1>form1>div4>textarea1": {
+    "n": 21,
+    "nombre": "Campo «»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_contacto_c1||Botón@div1>div2>div1>form1>button1": {
+    "n": 22,
+    "nombre": "Botón «Enviar»",
+    "parte": "C1-C2 · C: formas de contacto y formulario",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto||Texto@div1>p1": {
+    "n": 23,
+    "nombre": "Texto «Preguntas frecuentes»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto||Título@div1>h21": {
+    "n": 24,
+    "nombre": "Título «Preguntas frecuentes»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_1|Botón@summary1": {
+    "n": 25,
+    "nombre": "Botón «¿Mandan fuera de México?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_1|Texto@div1>p1": {
+    "n": 26,
+    "nombre": "Texto «Regularmente no realizamos envíos fuera de México, ya que l…»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_2|Botón@summary1": {
+    "n": 27,
+    "nombre": "Botón «¿Hacen compuertas más altas?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_2|Texto@div1>p1": {
+    "n": 28,
+    "nombre": "Texto «Actualmente, no ofrecemos compuertas más altas, ya que nos …»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_3|Botón@summary1": {
+    "n": 29,
+    "nombre": "Botón «¿Hacen compuertas más bajas?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_3|Texto@div1>p1": {
+    "n": 30,
+    "nombre": "Texto «Estamos evaluando opciones para crear compuertas más bajas …»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_4|Botón@summary1": {
+    "n": 31,
+    "nombre": "Botón «¿Realizan envíos a todo México?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_4|Texto@div1>p1": {
+    "n": 32,
+    "nombre": "Texto «Sí, realizamos envíos a todo el país a través de paquetería…»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_5|Botón@summary1": {
+    "n": 33,
+    "nombre": "Botón «¿Puedo pedir factura de mi compra?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_5|Texto@div1>p1": {
+    "n": 34,
+    "nombre": "Texto «Sí, puedes solicitar tu factura sin problema. Para ello, ne…»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_6|Botón@summary1": {
+    "n": 35,
+    "nombre": "Botón «¿Cómo puedo modificar o cancelar un pedido ya realizado?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_6|Texto@div1>p1": {
+    "n": 36,
+    "nombre": "Texto «Si necesitas modificar o cancelar tu pedido, te recomendamo…»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_7|Botón@summary1": {
+    "n": 37,
+    "nombre": "Botón «¿Tienen tienda física o solo venta en línea?+−»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto|question_7|Texto@div1>p1": {
+    "n": 38,
+    "nombre": "Texto «Actualmente, nuestra tienda es en línea, pero sí ofrecemos …»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto||Texto@div1>div2>p1": {
+    "n": 39,
+    "nombre": "Texto «¿Tienes otra pregunta?»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto||Texto@div1>div2>p2": {
+    "n": 40,
+    "nombre": "Texto «Escríbenos: te contesta una persona del equipo.»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_preguntas_contacto||Enlace@div1>div2>a1": {
+    "n": 41,
+    "nombre": "Enlace «Preguntar por WhatsApp»",
+    "parte": "C1-C3 · C: preguntas frecuentes",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_contacto||Ícono@div1>svg1": {
+    "n": 42,
+    "nombre": "Ícono «1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • 🛡️»",
+    "parte": "C1-C4 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_contacto||Título@div1>div1>h21": {
+    "n": 43,
+    "nombre": "Título «Que la próxima lluvia no te tome por sorpresa»",
+    "parte": "C1-C4 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_contacto||Texto@div1>div1>p1": {
+    "n": 44,
+    "nombre": "Texto «Envío gratis a todo México, pago seguro y 1 año de garantía.»",
+    "parte": "C1-C4 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_contacto||Enlace@div1>div1>div1>a1": {
+    "n": 45,
+    "nombre": "Enlace «Proteger mi casa →»",
+    "parte": "C1-C4 · C: cierre con sello",
+    "visto": "2026-11-25"
+   },
+   "c_cierre_contacto||Enlace@div1>div1>div1>a2": {
+    "n": 46,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "C1-C4 · C: cierre con sello",
+    "visto": "2026-11-25"
+   }
+  }
+ },
+ "product.d1": {
+  "siguiente": 224,
+  "elementos": {
+   "d_encabezado_producto||Enlace@div1>a1": {
+    "n": 1,
+    "nombre": "Enlace «Diluvium, ir al inicio»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>nav1>ul1>li1>a1": {
+    "n": 2,
+    "nombre": "Enlace «Inicio»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>nav1>ul1>li2>a1": {
+    "n": 3,
+    "nombre": "Enlace «Productos»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>nav1>ul1>li3>a1": {
+    "n": 4,
+    "nombre": "Enlace «Contacto»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>nav1>ul1>li4>a1": {
+    "n": 5,
+    "nombre": "Enlace «Nosotros»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>nav1>ul1>li5>a1": {
+    "n": 6,
+    "nombre": "Enlace «Blog»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@div1>a2": {
+    "n": 7,
+    "nombre": "Enlace «WhatsApp»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Botón@div1>button1": {
+    "n": 8,
+    "nombre": "Botón «Carrito, 10 artículos»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Botón@div1>button2": {
+    "n": 9,
+    "nombre": "Botón «Menú»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Texto@dialog1>div1>p1": {
+    "n": 10,
+    "nombre": "Texto «Menú»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Botón@dialog1>div1>button1": {
+    "n": 11,
+    "nombre": "Botón «Cerrar»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Texto@dialog1>nav1>p1": {
+    "n": 12,
+    "nombre": "Texto «Productos»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li1>a1": {
+    "n": 13,
+    "nombre": "Enlace «Todos los productos›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li2>a1": {
+    "n": 14,
+    "nombre": "Enlace «Compuerta anti-inundaciones›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li3>a1": {
+    "n": 15,
+    "nombre": "Enlace «Mini compuerta (30 cm de alto)›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li4>a1": {
+    "n": 16,
+    "nombre": "Enlace «Compuerta XXL a tu medida›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li5>a1": {
+    "n": 17,
+    "nombre": "Enlace «Tapón para coladera›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li6>a1": {
+    "n": 18,
+    "nombre": "Enlace «Funda de repuesto›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li7>a1": {
+    "n": 19,
+    "nombre": "Enlace «Tira de hule de repuesto›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul1>li8>a1": {
+    "n": 20,
+    "nombre": "Enlace «Plastilina de secado rápido›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Texto@dialog1>nav1>p2": {
+    "n": 21,
+    "nombre": "Texto «Diluvium»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul2>li1>a1": {
+    "n": 22,
+    "nombre": "Enlace «Inicio›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul2>li2>a1": {
+    "n": 23,
+    "nombre": "Enlace «Contacto›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul2>li3>a1": {
+    "n": 24,
+    "nombre": "Enlace «Nosotros›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>ul2>li4>a1": {
+    "n": 25,
+    "nombre": "Enlace «Blog›»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_encabezado_producto||Enlace@dialog1>nav1>a1": {
+    "n": 26,
+    "nombre": "Enlace «Escríbenos por WhatsApp»",
+    "parte": "D1-P1 · D: franja de avisos y encabezado",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||foto:foto_1|image": {
+    "n": 27,
+    "nombre": "Foto «Frame697.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||foto:foto_2|image": {
+    "n": 28,
+    "nombre": "Foto «2026-11-23-img-6626-ihxe.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||foto:foto_3|image": {
+    "n": 29,
+    "nombre": "Foto «2026-11-23-whatsapp-image-2025-09-25-at-11-13-16-a-m-7cyk.jpg · Compue»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||foto:foto_4|image": {
+    "n": 30,
+    "nombre": "Foto «6_61bbe95a-a71d-493a-9e88-6d6ad41c5b39.jpg · Compuerta Anti-Inundacion»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||foto:foto_5|image": {
+    "n": 31,
+    "nombre": "Foto «1.Compuertarecta.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div1>div1>div1>p1": {
+    "n": 32,
+    "nombre": "Texto «Foto 1 de 5»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div1>button1": {
+    "n": 33,
+    "nombre": "Botón «Foto anterior»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div1>button2": {
+    "n": 34,
+    "nombre": "Botón «Foto siguiente»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div1>button3": {
+    "n": 35,
+    "nombre": "Botón «Ampliar»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div2>button1": {
+    "n": 36,
+    "nombre": "Botón «Ver la foto 1»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div2>button2": {
+    "n": 37,
+    "nombre": "Botón «Ver la foto 2»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div2>button3": {
+    "n": 38,
+    "nombre": "Botón «Ver la foto 3»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div2>button4": {
+    "n": 39,
+    "nombre": "Botón «Ver la foto 4»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>div2>button5": {
+    "n": 40,
+    "nombre": "Botón «Ver la foto 5»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div1>div1>dialog1>div1>p1": {
+    "n": 41,
+    "nombre": "Texto «Foto 1 de 5»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>dialog1>div1>button1": {
+    "n": 42,
+    "nombre": "Botón «Cerrar»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Foto@div1>div1>div1>dialog1>div2>img1": {
+    "n": 43,
+    "nombre": "Foto «Frame697.jpg · Compuerta Anti-Inundaciones»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>dialog1>div2>button1": {
+    "n": 44,
+    "nombre": "Botón «Foto anterior»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div1>div1>dialog1>div2>button2": {
+    "n": 45,
+    "nombre": "Botón «Foto siguiente»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>p1": {
+    "n": 46,
+    "nombre": "Texto «Más de 2,000 vendidas»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>p2>strong1": {
+    "n": 47,
+    "nombre": "Texto «4.9»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Ícono@div1>div2>p2>span1": {
+    "n": 48,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>p2>span2": {
+    "n": 49,
+    "nombre": "Texto «más de 200 reseñas»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Título@div1>div2>h11": {
+    "n": 50,
+    "nombre": "Título «Compuerta Anti-Inundaciones»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>p3": {
+    "n": 51,
+    "nombre": "Texto «Detiene hasta 50 cm de agua y la colocas tu mismo en minuto…»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|chip_1|Texto@": {
+    "n": 52,
+    "nombre": "Texto «Envío gratis, llega en 3 a 5 días hábiles»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|chip_2|Texto@": {
+    "n": 53,
+    "nombre": "Texto «Hasta 6 meses sin intereses con tarjeta de crédito»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|chip_3|Texto@": {
+    "n": 54,
+    "nombre": "Texto «1 año de garantía por defectos de fábrica»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>div1>div1>div1>p1": {
+    "n": 55,
+    "nombre": "Texto «¿Qué tan ancha es tu entrada?»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>div1>div1>div1>p2": {
+    "n": 56,
+    "nombre": "Texto «Mídela de marco a marco y toca la que corresponda.»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>div1>div1>button1": {
+    "n": 57,
+    "nombre": "Botón «69–78 cmExtra Chica»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>div1>div1>button2": {
+    "n": 58,
+    "nombre": "Botón «79–90 cmChica»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>div1>div1>button3": {
+    "n": 59,
+    "nombre": "Botón «91–100 cmMediana»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>div1>div1>button4": {
+    "n": 60,
+    "nombre": "Botón «101–110 cmGrande»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>div1>div1>button5": {
+    "n": 61,
+    "nombre": "Botón «111–120 cmExtra Grande»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Enlace@div1>div2>div1>div1>div1>div1>a1": {
+    "n": 62,
+    "nombre": "Enlace «Más de 120 cmTe la hacemos a la medida»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>div1>div1>div2>p1": {
+    "n": 63,
+    "nombre": "Texto «$5,500$5,999-8%»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Botón@div1>div2>div1>div1>button1": {
+    "n": 64,
+    "nombre": "Botón «Añadir al carrito»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Enlace@div1>div2>a1": {
+    "n": 65,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_1|Texto@span1": {
+    "n": 66,
+    "nombre": "Texto «50 cm»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_1|Texto@span2": {
+    "n": 67,
+    "nombre": "Texto «de agua detenida»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_2|Texto@span1": {
+    "n": 68,
+    "nombre": "Texto «13 kg»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_2|Texto@span2": {
+    "n": 69,
+    "nombre": "Texto «de peso, más o menos»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_3|Texto@span1": {
+    "n": 70,
+    "nombre": "Texto «10 min»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|fact_3|Texto@span2": {
+    "n": 71,
+    "nombre": "Texto «para ponerla»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|point_1|Texto@": {
+    "n": 72,
+    "nombre": "Texto «Funda de neopreno impermeable y tira de hule en todo el con…»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|point_2|Texto@": {
+    "n": 73,
+    "nombre": "Texto «Marco de acero de alta resistencia que se ajusta a presión»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_ficha|point_3|Texto@": {
+    "n": 74,
+    "nombre": "Texto «Reutilizable, con vida útil de 5 a 7 años»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   },
+   "d_especificaciones||Texto@div1>p1": {
+    "n": 75,
+    "nombre": "Texto «Ficha técnica»",
+    "parte": "D1-P3 · D: ficha técnica",
+    "visto": "2026-11-25"
+   },
+   "d_especificaciones||Título@div1>h21": {
+    "n": 76,
+    "nombre": "Título «Medidas y materiales»",
+    "parte": "D1-P3 · D: ficha técnica",
+    "visto": "2026-11-25"
+   },
+   "d_especificaciones||Tabla@div1>table1": {
+    "n": 77,
+    "nombre": "Tabla «Para entradas de69 a 120 cm de ancho, en 5 tamañosDetieneHa…»",
+    "parte": "D1-P3 · D: ficha técnica",
+    "visto": "2026-11-25"
+   },
+   "d_especificaciones||Texto@div1>p2": {
+    "n": 78,
+    "nombre": "Texto «¿Tu entrada es diferente? Mándanos una foto por WhatsApp y …»",
+    "parte": "D1-P3 · D: ficha técnica",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>p1": {
+    "n": 79,
+    "nombre": "Texto «Reseñas de clientes»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Título@div1>h21": {
+    "n": 80,
+    "nombre": "Título «Lo que dicen quienes ya la tienen»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>div1>span1": {
+    "n": 81,
+    "nombre": "Texto «4.9»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>div1>div1>span1": {
+    "n": 82,
+    "nombre": "Ícono «4.9 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>div1>div1>p1": {
+    "n": 83,
+    "nombre": "Texto «237 reseñas publicadas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>div1>div1>p2": {
+    "n": 84,
+    "nombre": "Texto «224 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>div2>button1": {
+    "n": 85,
+    "nombre": "Botón «Todas(237)»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>div2>button2": {
+    "n": 86,
+    "nombre": "Botón «Con foto(92)»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>div2>button3": {
+    "n": 87,
+    "nombre": "Botón «5 estrellas(224)»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li1>button1": {
+    "n": 88,
+    "nombre": "Botón «Ver en grande la foto de Carmela C.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li1>figure1>span1": {
+    "n": 89,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li1>figure1>blockquote1": {
+    "n": 90,
+    "nombre": "Texto ««Tiene un exelente ajuste y fácil de instalar»»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li1>figure1>figcaption1": {
+    "n": 91,
+    "nombre": "Texto «Carmela C.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li2>button1": {
+    "n": 92,
+    "nombre": "Botón «Ver en grande la foto de Juan C. A.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li2>figure1>span1": {
+    "n": 93,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li2>figure1>blockquote1": {
+    "n": 94,
+    "nombre": "Texto ««Soy Juan Carlos Ávila quiero contarles que con el paso del…»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li2>figure1>button1": {
+    "n": 95,
+    "nombre": "Botón «Leer completa»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li2>figure1>figcaption1": {
+    "n": 96,
+    "nombre": "Texto «Juan C. A.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li3>button1": {
+    "n": 97,
+    "nombre": "Botón «Ver en grande la foto de Blanca T.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li3>figure1>span1": {
+    "n": 98,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li3>figure1>blockquote1": {
+    "n": 99,
+    "nombre": "Texto ««En el 2021 compré una medidna y me funcionó excelente, est…»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li3>figure1>figcaption1": {
+    "n": 100,
+    "nombre": "Texto «Blanca T.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li4>button1": {
+    "n": 101,
+    "nombre": "Botón «Ver en grande la foto de Marco E.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li4>figure1>span1": {
+    "n": 102,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li4>figure1>blockquote1": {
+    "n": 103,
+    "nombre": "Texto ««Decidí adquirir mi compuerta anti inundaciones por el ries…»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li4>figure1>button1": {
+    "n": 104,
+    "nombre": "Botón «Leer completa»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li4>figure1>figcaption1": {
+    "n": 105,
+    "nombre": "Texto «Marco E.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li5>button1": {
+    "n": 106,
+    "nombre": "Botón «Ver en grande la foto de Elías N.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li5>figure1>span1": {
+    "n": 107,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li5>figure1>blockquote1": {
+    "n": 108,
+    "nombre": "Texto ««Lo compré como prevención, sin embargo no lo he necesitado…»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li5>figure1>figcaption1": {
+    "n": 109,
+    "nombre": "Texto «Elías N.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>ul1>li6>button1": {
+    "n": 110,
+    "nombre": "Botón «Ver en grande la foto de Horacio R.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Ícono@div1>div1>div1>ul1>li6>figure1>span1": {
+    "n": 111,
+    "nombre": "Ícono «5 de 5 estrellas»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li6>figure1>blockquote1": {
+    "n": 112,
+    "nombre": "Texto ««Estoy muy satisfecho con la compuerta que compre para prot…»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>ul1>li6>figure1>figcaption1": {
+    "n": 113,
+    "nombre": "Texto «Horacio R.»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>div3>button1": {
+    "n": 114,
+    "nombre": "Botón «← Anterior»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Texto@div1>div1>div1>div3>span1": {
+    "n": 115,
+    "nombre": "Texto «1 de 40»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>div3>button2": {
+    "n": 116,
+    "nombre": "Botón «Siguiente →»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_resenas_producto||Botón@div1>div1>div1>dialog1>div1>button1": {
+    "n": 117,
+    "nombre": "Botón «Cerrar»",
+    "parte": "D1-P4 · D: todas las reseñas por páginas",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Texto@div1>p1": {
+    "n": 118,
+    "nombre": "Texto «Antes de comprar»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Título@div1>h21": {
+    "n": 119,
+    "nombre": "Título «Las 12 dudas más comunes»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Texto@div1>div1>p1": {
+    "n": 120,
+    "nombre": "Texto «Toca una pregunta para ver la respuesta.»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Botón@div1>div1>button1": {
+    "n": 121,
+    "nombre": "Botón «+Abrir todas»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_1|Botón@summary1": {
+    "n": 122,
+    "nombre": "Botón «1¿Me va a quedar en mi puerta?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_1|Texto@div1>p1": {
+    "n": 123,
+    "nombre": "Texto «Mide el ancho de tu entrada de marco a marco o de pared a p…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_2|Botón@summary1": {
+    "n": 124,
+    "nombre": "Botón «2¿Hay que perforar o hacer obra?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_2|Texto@div1>p1": {
+    "n": 125,
+    "nombre": "Texto «No. La entrada se queda tal como está: la compuerta se ajus…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_3|Botón@summary1": {
+    "n": 126,
+    "nombre": "Botón «3¿De verdad no pasa el agua? ¿Hasta qué altura?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_3|Texto@div1>p1": {
+    "n": 127,
+    "nombre": "Texto «Soporta hasta 50 cm de agua. Lleva una funda de neopreno im…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_4|Botón@summary1": {
+    "n": 128,
+    "nombre": "Botón «4¿Y si mi piso o mi marco están chuecos?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_4|Texto@div1>p1": {
+    "n": 129,
+    "nombre": "Texto «La tira de hule absorbe imperfecciones como pequeñas grieta…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_5|Botón@summary1": {
+    "n": 130,
+    "nombre": "Botón «5¿Qué garantía tiene?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_5|Texto@div1>p1": {
+    "n": 131,
+    "nombre": "Texto «1 año de garantía: si quieres cambiar de tamaño o pedir un …»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_envio|Botón@summary1": {
+    "n": 132,
+    "nombre": "Botón «6¿Cuándo llega y si no me convence?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_envio|Texto@div1>p1": {
+    "n": 133,
+    "nombre": "Texto «Llega en 3 a 5 días hábiles a cualquier parte de México (pu…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_factura|Botón@summary1": {
+    "n": 134,
+    "nombre": "Botón «7¿Me dan factura?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_factura|Texto@div1>p1": {
+    "n": 135,
+    "nombre": "Texto «Sí. Mándanos tus datos fiscales y tu constancia de situació…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_6|Botón@summary1": {
+    "n": 136,
+    "nombre": "Botón «8¿Cómo pago?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_6|Texto@div1>p1": {
+    "n": 137,
+    "nombre": "Texto «Con tarjeta de crédito o débito (hasta 6 meses sin interese…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_7|Botón@summary1": {
+    "n": 138,
+    "nombre": "Botón «9¿Qué incluye?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_7|Texto@div1>p1": {
+    "n": 139,
+    "nombre": "Texto «La compuerta de acero expandible, su funda hecha a la medid…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_peso|Botón@summary1": {
+    "n": 140,
+    "nombre": "Botón «10¿Cuánto pesa?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_peso|Texto@div1>p1": {
+    "n": 141,
+    "nombre": "Texto «Las estándar pesan alrededor de 13 kg; las hechas a la medi…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_instalan|Botón@summary1": {
+    "n": 142,
+    "nombre": "Botón «11¿Ustedes la instalan?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_instalan|Texto@div1>p1": {
+    "n": 143,
+    "nombre": "Texto «No la instalamos nosotros, pero es muy fácil: está hecha pa…»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_varias|Botón@summary1": {
+    "n": 144,
+    "nombre": "Botón «12Tengo varias entradas, ¿cuántas necesito?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto|question_varias|Texto@div1>p1": {
+    "n": 145,
+    "nombre": "Texto «Una por cada entrada. Mide cada una, agrega cada tamaño al …»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Texto@div1>div3>div1>p1": {
+    "n": 146,
+    "nombre": "Texto «¿No está tu duda?»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Texto@div1>div3>div1>p2": {
+    "n": 147,
+    "nombre": "Texto «Escríbenos: te contesta una persona del equipo.»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_dudas_producto||Enlace@div1>div3>a1": {
+    "n": 148,
+    "nombre": "Enlace «Preguntar por WhatsApp»",
+    "parte": "D1-P5 · D: las dudas más comunes",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>p1": {
+    "n": 149,
+    "nombre": "Texto «Compra con confianza»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Título@div1>h21": {
+    "n": 150,
+    "nombre": "Título «Más de 2,000 familias ya la tienen»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>p2": {
+    "n": 151,
+    "nombre": "Texto «Somos una empresa mexicana: fabricamos cada compuerta en Lo…»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||foto:|image_shark": {
+    "n": 152,
+    "nombre": "Foto «Frame_864.jpg · Luis en el set de Shark Tank México»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||foto:|shark_logo": {
+    "n": 153,
+    "nombre": "Foto «SHARK_TANK_LOGO.png · Shark Tank México»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>div1>div2>p1": {
+    "n": 154,
+    "nombre": "Texto «Salimos en Shark Tank México»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>div1>div2>p2": {
+    "n": 155,
+    "nombre": "Texto «En la temporada 10 presentamos nuestra compuerta frente a l…»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Enlace@div1>div1>div2>a1": {
+    "n": 156,
+    "nombre": "Enlace «Ver el video en YouTube»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>p3": {
+    "n": 157,
+    "nombre": "Texto «Dónde más nos encuentras»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto|marketplace_ml|Enlace@a1": {
+    "n": 158,
+    "nombre": "Enlace «Mercado LibreCon reseñas de compradores reales.›»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto|marketplace_amazon|Enlace@a1": {
+    "n": 159,
+    "nombre": "Enlace «AmazonSi prefieres comprar ahí, también nos encuentras.›»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Ícono@div1>div2>span1>svg1": {
+    "n": 160,
+    "nombre": "Ícono «adorno»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>div2>div1>p1": {
+    "n": 161,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_confianza_producto||Texto@div1>div2>div1>p2": {
+    "n": 162,
+    "nombre": "Texto «Por defectos de fábrica: si algo falla, te ayudamos. Y si n…»",
+    "parte": "D1-P6 · D: Shark Tank, dónde más nos encuentras y garantía",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto||Texto@div1>p1": {
+    "n": 163,
+    "nombre": "Texto «También te puede servir»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto||Título@div1>h21": {
+    "n": 164,
+    "nombre": "Título «Otros productos»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_2|Enlace@a1": {
+    "n": 165,
+    "nombre": "Enlace «Mini compuerta (30 cm) $3,000Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_3|Enlace@a1": {
+    "n": 166,
+    "nombre": "Enlace «Compuerta XXL a tu medida $7,000Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_4|Enlace@a1": {
+    "n": 167,
+    "nombre": "Enlace «Tapón para coladeraDesde$749Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_5|Enlace@a1": {
+    "n": 168,
+    "nombre": "Enlace «Funda de repuesto $699Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_6|Enlace@a1": {
+    "n": 169,
+    "nombre": "Enlace «Tira de hule de repuesto $559Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_otros_producto|product_7|Enlace@a1": {
+    "n": 170,
+    "nombre": "Enlace «Plastilina de secado rápido $49Ver producto»",
+    "parte": "D1-P7 · D: otros productos",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Texto@div1>p1": {
+    "n": 171,
+    "nombre": "Texto «Formas de pago»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Título@div1>h21": {
+    "n": 172,
+    "nombre": "Título «Paga como prefieras»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Ícono@div1>div1>svg1": {
+    "n": 173,
+    "nombre": "Ícono «Visa»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Ícono@div1>div1>svg2": {
+    "n": 174,
+    "nombre": "Ícono «Mastercard»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Ícono@div1>div1>svg3": {
+    "n": 175,
+    "nombre": "Ícono «Mercado Pago»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Ícono@div1>div1>span1": {
+    "n": 176,
+    "nombre": "Ícono «PayPal»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_tarjeta|Ícono@span1>svg1": {
+    "n": 177,
+    "nombre": "Ícono «adorno»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_tarjeta|Texto@span2": {
+    "n": 178,
+    "nombre": "Texto «Tarjeta de crédito o débito»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_tarjeta|Texto@span3": {
+    "n": 179,
+    "nombre": "Texto «Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta d…»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_paypal|Ícono@span1>svg1": {
+    "n": 180,
+    "nombre": "Ícono «adorno»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_paypal|Texto@span2": {
+    "n": 181,
+    "nombre": "Texto «PayPal»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_paypal|Texto@span3": {
+    "n": 182,
+    "nombre": "Texto «Paga con tu cuenta de PayPal.»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_transferencia|Ícono@span1>svg1": {
+    "n": 183,
+    "nombre": "Ícono «adorno»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_transferencia|Texto@span2": {
+    "n": 184,
+    "nombre": "Texto «Transferencia o depósito»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto|method_transferencia|Texto@span3": {
+    "n": 185,
+    "nombre": "Texto «Escríbenos por WhatsApp y te mandamos los datos para pagar.»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Enlace@div1>a1": {
+    "n": 186,
+    "nombre": "Enlace «Pagar por transferencia o depósito»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_pagos_producto||Texto@div1>p2": {
+    "n": 187,
+    "nombre": "Texto «¿Necesitas factura? Mándanos tu constancia de situación fis…»",
+    "parte": "D1-P8 · D: formas de pago",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto||foto:|image": {
+    "n": 188,
+    "nombre": "Foto «IMG_1499.jpg · Un hombre coloca la compuerta en la puerta de su casa»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto||Título@div1>div2>h21": {
+    "n": 189,
+    "nombre": "Título «Protege tu casa antes de la próxima lluvia»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto||Texto@div1>div2>p1": {
+    "n": 190,
+    "nombre": "Texto «Elige tu tamaño, paga como prefieras y recíbela en 3 a 5 dí…»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto|chip_1|Texto@": {
+    "n": 191,
+    "nombre": "Texto «Envío gratis a todo México»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto|chip_2|Texto@": {
+    "n": 192,
+    "nombre": "Texto «1 año de garantía»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto|chip_3|Texto@": {
+    "n": 193,
+    "nombre": "Texto «Pago seguro»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto||Enlace@div1>div2>div1>a1": {
+    "n": 194,
+    "nombre": "Enlace «Elegir mi tamaño»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_cierre_producto||Enlace@div1>div2>div1>a2": {
+    "n": 195,
+    "nombre": "Enlace «Pregúntanos por WhatsApp»",
+    "parte": "D1-P9 · D: cierre",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||foto:|logo": {
+    "n": 196,
+    "nombre": "Foto «Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png · Diluvium»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Texto@div1>div1>p1": {
+    "n": 197,
+    "nombre": "Texto «Compuertas contra inundaciones hechas en Los Mochis, Sinalo…»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|contact_whatsapp|Enlace@a1": {
+    "n": 198,
+    "nombre": "Enlace «WhatsApp (668) 241 9579»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|contact_telefono|Enlace@a1": {
+    "n": 199,
+    "nombre": "Enlace «Llámanos al (668) 241 9579»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|contact_correo|Enlace@a1": {
+    "n": 200,
+    "nombre": "Enlace «contacto@diluvium.com.mx»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Texto@div1>nav1>p1": {
+    "n": 201,
+    "nombre": "Texto «Productos»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_1|Enlace@a1": {
+    "n": 202,
+    "nombre": "Enlace «Compuerta anti-inundaciones»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_2|Enlace@a1": {
+    "n": 203,
+    "nombre": "Enlace «Mini compuerta (30 cm de alto)»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_3|Enlace@a1": {
+    "n": 204,
+    "nombre": "Enlace «Compuerta XXL a tu medida»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_4|Enlace@a1": {
+    "n": 205,
+    "nombre": "Enlace «Tapón para coladera»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_5|Enlace@a1": {
+    "n": 206,
+    "nombre": "Enlace «Funda de repuesto»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_6|Enlace@a1": {
+    "n": 207,
+    "nombre": "Enlace «Tira de hule de repuesto»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_producto_7|Enlace@a1": {
+    "n": 208,
+    "nombre": "Enlace «Plastilina de secado rápido»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Texto@div1>nav2>p1": {
+    "n": 209,
+    "nombre": "Texto «Diluvium»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_pagina_1|Enlace@a1": {
+    "n": 210,
+    "nombre": "Enlace «Productos»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_pagina_2|Enlace@a1": {
+    "n": 211,
+    "nombre": "Enlace «Contacto»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_pagina_3|Enlace@a1": {
+    "n": 212,
+    "nombre": "Enlace «Nosotros»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto|link_pagina_4|Enlace@a1": {
+    "n": 213,
+    "nombre": "Enlace «Blog»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul1>li1>a1": {
+    "n": 214,
+    "nombre": "Enlace «Facebook (se abre en otra pestaña)»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul1>li2>a1": {
+    "n": 215,
+    "nombre": "Enlace «YouTube (se abre en otra pestaña)»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul1>li3>a1": {
+    "n": 216,
+    "nombre": "Enlace «Instagram (se abre en otra pestaña)»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul1>li4>a1": {
+    "n": 217,
+    "nombre": "Enlace «LinkedIn (se abre en otra pestaña)»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul2>li1>a1": {
+    "n": 218,
+    "nombre": "Enlace «Términos del servicio»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul2>li2>a1": {
+    "n": 219,
+    "nombre": "Enlace «Política de reembolso»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Enlace@div2>ul2>li3>a1": {
+    "n": 220,
+    "nombre": "Enlace «Política de privacidad»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_pie_producto||Texto@div2>ul2>li4": {
+    "n": 221,
+    "nombre": "Texto «© 2026 Diluvium»",
+    "parte": "D1-P10 · D: pie de página",
+    "visto": "2026-11-25"
+   },
+   "d_barra_producto||Ícono@svg1": {
+    "n": 222,
+    "nombre": "Ícono «junto a \"¿Dudas? Escríbenos\"»",
+    "parte": "D1-P11 · D: botón flotante de WhatsApp",
+    "visto": "2026-11-25"
+   },
+   "d_ficha||Texto@div1>div2>div1>div1>div2>p2": {
+    "n": 223,
+    "nombre": "Texto «$5,500$5,999-8%»",
+    "parte": "D1-P2 · D: ficha del producto",
+    "visto": "2026-11-25"
+   }
+  }
  }
 }

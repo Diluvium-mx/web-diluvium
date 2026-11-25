@@ -40,7 +40,7 @@ export function PreguntasC({ seccion }: PropsSeccion) {
           <div className="mt-8 rounded-3xl bg-[#f3f8fd] p-5 text-center md:p-7">
             <p className="m-0 font-titulo text-[21px] font-medium text-[#06182f]">{tx(a, "other_question", "¿Tienes otra pregunta?")}</p>
             <p className="m-0 mt-1 text-[17px]">{tx(a, "other_text", "Escríbenos: te contesta una persona del equipo.")}</p>
-            <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, tengo una pregunta sobre la compuerta: "))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={`${BOTON_WHATSAPP_C} mt-4`}>
+            <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?"))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={`${BOTON_WHATSAPP_C} mt-4`}>
               <IconoWhatsapp className="size-6" />
               {tx(a, "whatsapp_text", "Preguntar por WhatsApp")}
             </a>

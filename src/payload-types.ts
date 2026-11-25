@@ -3945,24 +3945,30 @@ export interface Plantilla {
             heading?: string | null;
             text?: string | null;
             rating_text?: string | null;
-            price_note?: string | null;
+            shipping_text?: string | null;
+            months_text?: string | null;
             delivery_text?: string | null;
             delivery_and?: string | null;
+            chosen_text?: string | null;
             add_button?: string | null;
             sold_out?: string | null;
             wider_text?: string | null;
-            wider_link_text?: string | null;
-            wider_link?: string | null;
             narrower_text?: string | null;
             narrower_link_text?: string | null;
             narrower_message?: string | null;
             whatsapp_link?: string | null;
             whatsapp_message?: string | null;
             whatsapp_text?: string | null;
+            show_delivery?: boolean | null;
+            show_description?: boolean | null;
+            description_heading?: string | null;
+            wider_message?: string | null;
+            door_logo?: (number | null) | Medio;
             size_question?: string | null;
             size_help?: string | null;
             size_result?: string | null;
             size_list?: string | null;
+            gate_height?: number | null;
             bloques?:
               | (
                   | {
@@ -3978,6 +3984,8 @@ export interface Plantilla {
                         | null;
                       image?: (number | null) | Medio;
                       alt?: string | null;
+                      focal?: string | null;
+                      zoom?: number | null;
                       id?: string | null;
                       blockName?: string | null;
                       blockType: 's60-b00';
@@ -4052,6 +4060,8 @@ export interface Plantilla {
                   alt?: string | null;
                   heading?: string | null;
                   text?: string | null;
+                  focal?: string | null;
+                  zoom?: number | null;
                   id?: string | null;
                   blockName?: string | null;
                   blockType: 's61-b00';
@@ -4115,7 +4125,8 @@ export interface Plantilla {
             image?: (number | null) | Medio;
             alt?: string | null;
             price_prefix?: string | null;
-            price_note?: string | null;
+            shipping_text?: string | null;
+            months_text?: string | null;
             button_text?: string | null;
             button_link?: string | null;
             whatsapp_link?: string | null;
@@ -4203,8 +4214,31 @@ export interface Plantilla {
             subheading?: string | null;
             heading?: string | null;
             rating_text?: string | null;
+            topics_text?: string | null;
+            all_text?: string | null;
             more_button?: string | null;
+            left_text?: string | null;
             read_more_text?: string | null;
+            product_filter?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  text?: string | null;
+                  words?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's65-b00';
+                }[]
+              | null;
             id?: string | null;
             blockName?: string | null;
             blockType: 'c-resenas';
@@ -4226,17 +4260,19 @@ export interface Plantilla {
             text?: string | null;
             image?: (number | null) | Medio;
             alt?: string | null;
+            chosen_text?: string | null;
             add_button?: string | null;
             sold_out?: string | null;
             wider_text?: string | null;
-            wider_link_text?: string | null;
-            wider_link?: string | null;
             narrower_text?: string | null;
             narrower_link_text?: string | null;
             narrower_message?: string | null;
             whatsapp_link?: string | null;
             measure_message?: string | null;
             measure_text?: string | null;
+            focal?: string | null;
+            wider_message?: string | null;
+            door_logo?: (number | null) | Medio;
             size_question?: string | null;
             size_help?: string | null;
             size_result?: string | null;
@@ -4370,6 +4406,1298 @@ export interface Plantilla {
             id?: string | null;
             blockName?: string | null;
             blockType: 'c-pagos';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            back_text?: string | null;
+            author_prefix?: string | null;
+            related_heading?: string | null;
+            whatsapp_link?: string | null;
+            help_heading?: string | null;
+            help_text?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  image_1?: (number | null) | Medio;
+                  image_2?: (number | null) | Medio;
+                  image_3?: (number | null) | Medio;
+                  image_4?: (number | null) | Medio;
+                  image_5?: (number | null) | Medio;
+                  image_6?: (number | null) | Medio;
+                  image_7?: (number | null) | Medio;
+                  image_8?: (number | null) | Medio;
+                  image_9?: (number | null) | Medio;
+                  image_10?: (number | null) | Medio;
+                  image_11?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's71-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-articulo';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            read_more?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's72-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-blog';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            text?: string | null;
+            heading?: string | null;
+            signature?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-cita';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            faq_link_text?: string | null;
+            form_heading?: string | null;
+            form_text?: string | null;
+            name_label?: string | null;
+            email_label?: string | null;
+            message_label?: string | null;
+            button_label?: string | null;
+            sending_text?: string | null;
+            thanks_text?: string | null;
+            required_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  icon?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  url?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's74-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-contacto';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  subheading?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  image?: (number | null) | Medio;
+                  alt?: string | null;
+                  focal?: string | null;
+                  video?: (number | null) | Medio;
+                  link_text?: string | null;
+                  link?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's75-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-historia';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  focal?: string | null;
+                  alt?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's76-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-premios';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            button_text?: string | null;
+            from_text?: string | null;
+            reviews_text?: string | null;
+            discount_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  producto?: string | null;
+                  badge?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's77-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-productos';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            focal?: string | null;
+            zoom?: number | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'c-titulo';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            back_text?: string | null;
+            author_prefix?: string | null;
+            related_heading?: string | null;
+            whatsapp_link?: string | null;
+            help_heading?: string | null;
+            help_text?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  image_1?: (number | null) | Medio;
+                  image_2?: (number | null) | Medio;
+                  image_3?: (number | null) | Medio;
+                  image_4?: (number | null) | Medio;
+                  image_5?: (number | null) | Medio;
+                  image_6?: (number | null) | Medio;
+                  image_7?: (number | null) | Medio;
+                  image_8?: (number | null) | Medio;
+                  image_9?: (number | null) | Medio;
+                  image_10?: (number | null) | Medio;
+                  image_11?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's79-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-articulo';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            focal?: string | null;
+            step_text?: string | null;
+            question_1?: string | null;
+            wider_text?: string | null;
+            wider_subtext?: string | null;
+            wider_link?: string | null;
+            result_heading?: string | null;
+            result_text?: string | null;
+            chosen_text?: string | null;
+            add_button?: string | null;
+            sold_out?: string | null;
+            missing_text?: string | null;
+            restart_text?: string | null;
+            back_text?: string | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            size_question?: string | null;
+            size_help?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  icon?: string | null;
+                  text?: string | null;
+                  subtext?: string | null;
+                  producto?: string | null;
+                  link?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's80-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-asistente';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-barra';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            read_more?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's82-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-blog';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            heading?: string | null;
+            text?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  icon?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's83-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-cierre';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            text?: string | null;
+            heading?: string | null;
+            signature?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-cita';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            image_shark?: (number | null) | Medio;
+            alt_shark?: string | null;
+            focal_shark?: string | null;
+            shark_logo?: (number | null) | Medio;
+            shark_heading?: string | null;
+            shark_text?: string | null;
+            shark_link?: string | null;
+            shark_link_text?: string | null;
+            stores_heading?: string | null;
+            guarantee_heading?: string | null;
+            guarantee_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  name?: string | null;
+                  image?: (number | null) | Medio;
+                  text?: string | null;
+                  link?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's85-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-confianza';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            faq_link_text?: string | null;
+            form_heading?: string | null;
+            form_text?: string | null;
+            name_label?: string | null;
+            email_label?: string | null;
+            message_label?: string | null;
+            button_label?: string | null;
+            sending_text?: string | null;
+            thanks_text?: string | null;
+            required_text?: string | null;
+            form_band?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  icon?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  url?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's86-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-contacto';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            open_all?: string | null;
+            close_all?: string | null;
+            other_question?: string | null;
+            other_text?: string | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  heading?: string | null;
+                  /**
+                   * Texto con formato (HTML): <p>párrafo</p>, <strong>negritas</strong>, <a href="…">enlace</a>.
+                   */
+                  description?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's87-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-dudas';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            logo?: (number | null) | Medio;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            whatsapp_menu_text?: string | null;
+            menu_text?: string | null;
+            close_text?: string | null;
+            products_heading?: string | null;
+            pages_heading?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      url?: string | null;
+                      group?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's88-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      icon?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's88-b01';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-encabezado';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            note?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  label?: string | null;
+                  value?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's89-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-especificaciones';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            producto?: string | null;
+            badge?: string | null;
+            rating_text?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            photo_text?: string | null;
+            zoom_text?: string | null;
+            close_text?: string | null;
+            chosen_text?: string | null;
+            add_button?: string | null;
+            sold_out?: string | null;
+            missing_text?: string | null;
+            other_text?: string | null;
+            other_link?: string | null;
+            other_link_text?: string | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            wider_text?: string | null;
+            wider_subtext?: string | null;
+            wider_link?: string | null;
+            size_question?: string | null;
+            size_help?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      icon?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's90-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      value?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's90-b01';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      image?: (number | null) | Medio;
+                      alt?: string | null;
+                      focal?: string | null;
+                      zoom?: number | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's90-b02';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's90-b03';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-ficha';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  subheading?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  image?: (number | null) | Medio;
+                  alt?: string | null;
+                  focal?: string | null;
+                  video?: (number | null) | Medio;
+                  link_text?: string | null;
+                  link?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's91-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-historia';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            from_text?: string | null;
+            button_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  producto?: string | null;
+                  heading?: string | null;
+                  image?: (number | null) | Medio;
+                  alt?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's92-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-otros';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            whatsapp_link?: string | null;
+            whatsapp_message?: string | null;
+            whatsapp_text?: string | null;
+            invoice_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  icon?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's93-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-pagos';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            logo?: (number | null) | Medio;
+            text?: string | null;
+            products_heading?: string | null;
+            pages_heading?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      link?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's94-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      text?: string | null;
+                      url?: string | null;
+                      group?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's94-b01';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-pie';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            badge?: string | null;
+            heading?: string | null;
+            rating_text?: string | null;
+            text?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            focal?: string | null;
+            price_prefix?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            help_text?: string | null;
+            help_link?: string | null;
+            bloques?:
+              | (
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      icon?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's95-b00';
+                    }
+                  | {
+                      idTema?: string | null;
+                      claves?:
+                        | {
+                            [k: string]: unknown;
+                          }
+                        | unknown[]
+                        | string
+                        | number
+                        | boolean
+                        | null;
+                      value?: string | null;
+                      text?: string | null;
+                      id?: string | null;
+                      blockName?: string | null;
+                      blockType: 's95-b01';
+                    }
+                )[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-portada';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  image?: (number | null) | Medio;
+                  focal?: string | null;
+                  alt?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's96-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-premios';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            heading?: string | null;
+            button_text?: string | null;
+            from_text?: string | null;
+            reviews_text?: string | null;
+            discount_text?: string | null;
+            bloques?:
+              | {
+                  idTema?: string | null;
+                  claves?:
+                    | {
+                        [k: string]: unknown;
+                      }
+                    | unknown[]
+                    | string
+                    | number
+                    | boolean
+                    | null;
+                  producto?: string | null;
+                  badge?: string | null;
+                  heading?: string | null;
+                  text?: string | null;
+                  id?: string | null;
+                  blockName?: string | null;
+                  blockType: 's97-b00';
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-productos';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            total_text?: string | null;
+            five_text?: string | null;
+            filter_all?: string | null;
+            filter_photo?: string | null;
+            filter_five?: string | null;
+            prev_button?: string | null;
+            next_button?: string | null;
+            page_text?: string | null;
+            read_more_text?: string | null;
+            close_text?: string | null;
+            product_filter?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-resenas';
+          }
+        | {
+            idTema?: string | null;
+            claves?:
+              | {
+                  [k: string]: unknown;
+                }
+              | unknown[]
+              | string
+              | number
+              | boolean
+              | null;
+            fondo?: string | null;
+            subheading?: string | null;
+            heading?: string | null;
+            text?: string | null;
+            breadcrumb_text?: string | null;
+            button_text?: string | null;
+            button_link?: string | null;
+            image?: (number | null) | Medio;
+            alt?: string | null;
+            focal?: string | null;
+            zoom?: number | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'd-titulo';
           }
       )[]
     | null;
@@ -7168,24 +8496,30 @@ export interface PlantillasSelect<T extends boolean = true> {
               heading?: T;
               text?: T;
               rating_text?: T;
-              price_note?: T;
+              shipping_text?: T;
+              months_text?: T;
               delivery_text?: T;
               delivery_and?: T;
+              chosen_text?: T;
               add_button?: T;
               sold_out?: T;
               wider_text?: T;
-              wider_link_text?: T;
-              wider_link?: T;
               narrower_text?: T;
               narrower_link_text?: T;
               narrower_message?: T;
               whatsapp_link?: T;
               whatsapp_message?: T;
               whatsapp_text?: T;
+              show_delivery?: T;
+              show_description?: T;
+              description_heading?: T;
+              wider_message?: T;
+              door_logo?: T;
               size_question?: T;
               size_help?: T;
               size_result?: T;
               size_list?: T;
+              gate_height?: T;
               bloques?:
                 | T
                 | {
@@ -7196,6 +8530,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           claves?: T;
                           image?: T;
                           alt?: T;
+                          focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -7243,6 +8579,8 @@ export interface PlantillasSelect<T extends boolean = true> {
                           alt?: T;
                           heading?: T;
                           text?: T;
+                          focal?: T;
+                          zoom?: T;
                           id?: T;
                           blockName?: T;
                         };
@@ -7286,7 +8624,8 @@ export interface PlantillasSelect<T extends boolean = true> {
               image?: T;
               alt?: T;
               price_prefix?: T;
-              price_note?: T;
+              shipping_text?: T;
+              months_text?: T;
               button_text?: T;
               button_link?: T;
               whatsapp_link?: T;
@@ -7347,8 +8686,26 @@ export interface PlantillasSelect<T extends boolean = true> {
               subheading?: T;
               heading?: T;
               rating_text?: T;
+              topics_text?: T;
+              all_text?: T;
               more_button?: T;
+              left_text?: T;
               read_more_text?: T;
+              product_filter?: T;
+              bloques?:
+                | T
+                | {
+                    's65-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          words?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -7363,17 +8720,19 @@ export interface PlantillasSelect<T extends boolean = true> {
               text?: T;
               image?: T;
               alt?: T;
+              chosen_text?: T;
               add_button?: T;
               sold_out?: T;
               wider_text?: T;
-              wider_link_text?: T;
-              wider_link?: T;
               narrower_text?: T;
               narrower_link_text?: T;
               narrower_message?: T;
               whatsapp_link?: T;
               measure_message?: T;
               measure_text?: T;
+              focal?: T;
+              wider_message?: T;
+              door_logo?: T;
               size_question?: T;
               size_help?: T;
               size_result?: T;
@@ -7466,6 +8825,927 @@ export interface PlantillasSelect<T extends boolean = true> {
                           blockName?: T;
                         };
                   };
+              id?: T;
+              blockName?: T;
+            };
+        'c-articulo'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              back_text?: T;
+              author_prefix?: T;
+              related_heading?: T;
+              whatsapp_link?: T;
+              help_heading?: T;
+              help_text?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              bloques?:
+                | T
+                | {
+                    's71-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          image_1?: T;
+                          image_2?: T;
+                          image_3?: T;
+                          image_4?: T;
+                          image_5?: T;
+                          image_6?: T;
+                          image_7?: T;
+                          image_8?: T;
+                          image_9?: T;
+                          image_10?: T;
+                          image_11?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-blog'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              read_more?: T;
+              bloques?:
+                | T
+                | {
+                    's72-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-cita'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              image?: T;
+              alt?: T;
+              text?: T;
+              heading?: T;
+              signature?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'c-contacto'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              text?: T;
+              faq_link_text?: T;
+              form_heading?: T;
+              form_text?: T;
+              name_label?: T;
+              email_label?: T;
+              message_label?: T;
+              button_label?: T;
+              sending_text?: T;
+              thanks_text?: T;
+              required_text?: T;
+              bloques?:
+                | T
+                | {
+                    's74-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          heading?: T;
+                          text?: T;
+                          url?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-historia'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              bloques?:
+                | T
+                | {
+                    's75-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          subheading?: T;
+                          heading?: T;
+                          text?: T;
+                          image?: T;
+                          alt?: T;
+                          focal?: T;
+                          video?: T;
+                          link_text?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-premios'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              bloques?:
+                | T
+                | {
+                    's76-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          focal?: T;
+                          alt?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-productos'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              button_text?: T;
+              from_text?: T;
+              reviews_text?: T;
+              discount_text?: T;
+              bloques?:
+                | T
+                | {
+                    's77-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          producto?: T;
+                          badge?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'c-titulo'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              button_text?: T;
+              button_link?: T;
+              image?: T;
+              alt?: T;
+              focal?: T;
+              zoom?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'd-articulo'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              back_text?: T;
+              author_prefix?: T;
+              related_heading?: T;
+              whatsapp_link?: T;
+              help_heading?: T;
+              help_text?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              bloques?:
+                | T
+                | {
+                    's79-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          image_1?: T;
+                          image_2?: T;
+                          image_3?: T;
+                          image_4?: T;
+                          image_5?: T;
+                          image_6?: T;
+                          image_7?: T;
+                          image_8?: T;
+                          image_9?: T;
+                          image_10?: T;
+                          image_11?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-asistente'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              image?: T;
+              alt?: T;
+              focal?: T;
+              step_text?: T;
+              question_1?: T;
+              wider_text?: T;
+              wider_subtext?: T;
+              wider_link?: T;
+              result_heading?: T;
+              result_text?: T;
+              chosen_text?: T;
+              add_button?: T;
+              sold_out?: T;
+              missing_text?: T;
+              restart_text?: T;
+              back_text?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              size_question?: T;
+              size_help?: T;
+              bloques?:
+                | T
+                | {
+                    's80-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          text?: T;
+                          subtext?: T;
+                          producto?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-barra'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'd-blog'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              read_more?: T;
+              bloques?:
+                | T
+                | {
+                    's82-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-cierre'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              heading?: T;
+              text?: T;
+              image?: T;
+              alt?: T;
+              button_text?: T;
+              button_link?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              bloques?:
+                | T
+                | {
+                    's83-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-cita'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              image?: T;
+              alt?: T;
+              text?: T;
+              heading?: T;
+              signature?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'd-confianza'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              image_shark?: T;
+              alt_shark?: T;
+              focal_shark?: T;
+              shark_logo?: T;
+              shark_heading?: T;
+              shark_text?: T;
+              shark_link?: T;
+              shark_link_text?: T;
+              stores_heading?: T;
+              guarantee_heading?: T;
+              guarantee_text?: T;
+              bloques?:
+                | T
+                | {
+                    's85-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          name?: T;
+                          image?: T;
+                          text?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-contacto'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              text?: T;
+              faq_link_text?: T;
+              form_heading?: T;
+              form_text?: T;
+              name_label?: T;
+              email_label?: T;
+              message_label?: T;
+              button_label?: T;
+              sending_text?: T;
+              thanks_text?: T;
+              required_text?: T;
+              form_band?: T;
+              bloques?:
+                | T
+                | {
+                    's86-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          heading?: T;
+                          text?: T;
+                          url?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-dudas'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              open_all?: T;
+              close_all?: T;
+              other_question?: T;
+              other_text?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              bloques?:
+                | T
+                | {
+                    's87-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          heading?: T;
+                          description?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-encabezado'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              logo?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              whatsapp_menu_text?: T;
+              menu_text?: T;
+              close_text?: T;
+              products_heading?: T;
+              pages_heading?: T;
+              bloques?:
+                | T
+                | {
+                    's88-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          url?: T;
+                          group?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's88-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-especificaciones'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              note?: T;
+              bloques?:
+                | T
+                | {
+                    's89-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          label?: T;
+                          value?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-ficha'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              producto?: T;
+              badge?: T;
+              rating_text?: T;
+              heading?: T;
+              text?: T;
+              photo_text?: T;
+              zoom_text?: T;
+              close_text?: T;
+              chosen_text?: T;
+              add_button?: T;
+              sold_out?: T;
+              missing_text?: T;
+              other_text?: T;
+              other_link?: T;
+              other_link_text?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              wider_text?: T;
+              wider_subtext?: T;
+              wider_link?: T;
+              size_question?: T;
+              size_help?: T;
+              bloques?:
+                | T
+                | {
+                    's90-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's90-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          value?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's90-b02'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          alt?: T;
+                          focal?: T;
+                          zoom?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's90-b03'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-historia'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              bloques?:
+                | T
+                | {
+                    's91-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          subheading?: T;
+                          heading?: T;
+                          text?: T;
+                          image?: T;
+                          alt?: T;
+                          focal?: T;
+                          video?: T;
+                          link_text?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-otros'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              from_text?: T;
+              button_text?: T;
+              bloques?:
+                | T
+                | {
+                    's92-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          producto?: T;
+                          heading?: T;
+                          image?: T;
+                          alt?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-pagos'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              whatsapp_link?: T;
+              whatsapp_message?: T;
+              whatsapp_text?: T;
+              invoice_text?: T;
+              bloques?:
+                | T
+                | {
+                    's93-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-pie'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              logo?: T;
+              text?: T;
+              products_heading?: T;
+              pages_heading?: T;
+              bloques?:
+                | T
+                | {
+                    's94-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          link?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's94-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          text?: T;
+                          url?: T;
+                          group?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-portada'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              badge?: T;
+              heading?: T;
+              rating_text?: T;
+              text?: T;
+              image?: T;
+              alt?: T;
+              focal?: T;
+              price_prefix?: T;
+              button_text?: T;
+              button_link?: T;
+              help_text?: T;
+              help_link?: T;
+              bloques?:
+                | T
+                | {
+                    's95-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          icon?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                    's95-b01'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          value?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-premios'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              bloques?:
+                | T
+                | {
+                    's96-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          image?: T;
+                          focal?: T;
+                          alt?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-productos'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              heading?: T;
+              button_text?: T;
+              from_text?: T;
+              reviews_text?: T;
+              discount_text?: T;
+              bloques?:
+                | T
+                | {
+                    's97-b00'?:
+                      | T
+                      | {
+                          idTema?: T;
+                          claves?: T;
+                          producto?: T;
+                          badge?: T;
+                          heading?: T;
+                          text?: T;
+                          id?: T;
+                          blockName?: T;
+                        };
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'd-resenas'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              total_text?: T;
+              five_text?: T;
+              filter_all?: T;
+              filter_photo?: T;
+              filter_five?: T;
+              prev_button?: T;
+              next_button?: T;
+              page_text?: T;
+              read_more_text?: T;
+              close_text?: T;
+              product_filter?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'd-titulo'?:
+          | T
+          | {
+              idTema?: T;
+              claves?: T;
+              fondo?: T;
+              subheading?: T;
+              heading?: T;
+              text?: T;
+              breadcrumb_text?: T;
+              button_text?: T;
+              button_link?: T;
+              image?: T;
+              alt?: T;
+              focal?: T;
+              zoom?: T;
               id?: T;
               blockName?: T;
             };

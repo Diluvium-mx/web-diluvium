@@ -167,3 +167,12 @@ html:has(.version dialog[open]) { overflow: hidden; }
 .descripcion-version > :last-child { margin-bottom: 0; }
 .descripcion-version :is(ul, ol) { padding-left: 20px; list-style-type: disc; }
 .descripcion-version strong { color: var(--color-marino); }
+
+/* Artículo del blog de C y D (25-nov-2026): letra más grande para 40-60 años; en D los subtítulos llevan la raya
+   amarilla a la izquierda. */
+.articulo-grande { font-size: 19px; line-height: 1.7; }
+.articulo-grande h2 { font-size: 28px; }
+.articulo-d :is(h2, h3) { padding-left: 14px; border-left: 5px solid #ffc83d; }
+.articulo-d a { text-decoration-color: #ffc83d; text-decoration-thickness: 3px; }
+/* Descripción del producto en C y D (repuestos y accesorios): letra grande. */
+.descripcion-grande { font-size: 18px; color: #1f2d3d; }

@@ -1,0 +1,69 @@
+{
+ "fuente": "Versión C1: articulo (25-nov-2026), con los textos y fotos de B1 y el aspecto de C.",
+ "secciones": [
+  {
+   "id": "c_articulo_c1",
+   "tipo": "c-articulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "back_text": "Volver al blog",
+    "author_prefix": "Por",
+    "related_heading": "Sigue leyendo",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "help_heading": "¿Tienes dudas sobre cómo proteger tu casa?",
+    "help_text": "Te atiende una persona por WhatsApp, sin compromiso.",
+    "whatsapp_message": "Hola, leí el artículo «{articulo}» y quiero proteger mi casa, ¿qué me recomiendan?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+     "tipo": "article_photos",
+     "ajustes": {
+      "image": "/media/articles/Mochila_2.png",
+      "image_1": "/media/articles/Mochila_emergencia_480x480.png"
+     }
+    },
+    {
+     "id": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+     "tipo": "article_photos",
+     "ajustes": {
+      "image": "/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg"
+     }
+    },
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+     "tipo": "article_photos",
+     "ajustes": {
+      "image": "/media/articles/Frame_frame.png",
+      "image_1": "/media/articles/Gotera_techo_2_480x480.jpg",
+      "image_2": "/media/articles/18f26f99-1686-418a-b568-f6f23f868bec_480x480.png",
+      "image_3": "/media/articles/Frame_241_8fb38218-1e99-474f-8e93-eac0a064f911_480x480.png",
+      "image_4": "/media/articles/SAI_480x480.png",
+      "image_5": "/media/articles/Sacos_arena_480x480.png",
+      "image_6": "/media/articles/tabla_madera_480x480.png",
+      "image_7": "/media/articles/Frame_tapon_bueno_480x480.png",
+      "image_8": "/media/articles/Frame_241_8fb38218-1e99-474f-8e93-eac0a064f911_480x480.png",
+      "image_9": "/media/articles/Valvula_check_480x480.png",
+      "image_10": "/media/articles/enjarre_480x480.png",
+      "image_11": "/media/articles/Frame_242_c1c14dd3-133c-427a-a72f-10d9c5aa1947_480x480.png"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cierre_articulo",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
+    "text": "Envío gratis a todo México, pago seguro y 1 año de garantía.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • "
+   },
+   "bloques": []
+  }
+ ]
+}

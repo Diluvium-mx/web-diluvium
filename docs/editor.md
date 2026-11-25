@@ -14,6 +14,24 @@ del plan): vive en esta Mac, igual que el administrador.
 
 Desde otra computadora o celular de la casa **no abre** (a propósito): solo funciona en esta Mac.
 
+### Mensajes de WhatsApp (regla del dueño, 25-nov-2026)
+Cada botón o enlace de WhatsApp, en todas las versiones, abre WhatsApp con un mensaje ya escrito según lo que la persona
+quiere en ese lugar (más de 120 cm, cómo medir, pagar por transferencia, una duda de ese producto…), **completo y
+terminado en pregunta**, listo para mandar: «Hola, mi entrada mide más de 120 cm, ¿qué compuerta me recomiendan?». Nunca
+termina en «:» ni deja espacios por llenar. Se cambia en Textos (campos «Mensaje de WhatsApp…» o el `text=` del enlace).
+
+### Un editor por versión (25-nov-2026)
+| Editor | Dirección | Páginas |
+|---|---|---|
+| Editor · B | `http://localhost:3100/editor` | las 13 de B1 |
+| Editor · C | `http://localhost:3100/editor/c` | las 13 de C1 (portada, producto, productos, Mini, XXL, Tapón, Funda, Tira de hule, Plastilina, Contacto, Nosotros, Blog y Artículo) |
+| Editor · D | `http://localhost:3100/editor/d` | las mismas 13 de D1 |
+
+Cada uno funciona igual (Fotos, Mapa y Textos) y solo muestra las páginas de su versión; si un enlace lleva a una
+página de otra versión, sale el aviso «Estás viendo otra página». Los números del mapa van con su versión: C1-I3,
+D1-P9… En C y D, el encabezado, el pie y la barra o botón de WhatsApp de las páginas secundarias son los de su
+portada: se cambian ahí (en las demás páginas no se dejan tocar).
+
 ## Qué se puede hacer
 Arriba: **Portada / Producto** de B1 (un punto • avisa que hay cambios sin guardar) y **Fotos / Mapa / Textos** (en ese
 orden, pedido del dueño el 21-nov-2026). Las tres pestañas usan **la misma página de en medio**: cambiar de pestaña no

@@ -17,7 +17,7 @@ export function BarraAyudaC({ seccion }: PropsSeccion) {
       <div className="mx-auto flex max-w-[560px] gap-2.5">
         {whatsapp && (
           <a
-            href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, vi su página y quiero información sobre la compuerta."))}
+            href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?"))}
             target="_blank"
             rel="noopener noreferrer"
             data-evento="toca_whatsapp"

@@ -11,6 +11,31 @@ import portadaB1 from "@contenido/tema/index.b1.json";
 import productoB1 from "@contenido/tema/product.b1.json";
 import portadaC1 from "@contenido/tema/index.c1.json";
 import productoC1 from "@contenido/tema/product.c1.json";
+// Las demás páginas de C1 y todas las de D1 (25-nov-2026).
+import t_coleccion_c1 from "@contenido/tema/collection.c1.json";
+import t_producto_c1_mini from "@contenido/tema/product.c1.mini-compuerta.json";
+import t_producto_c1_medida from "@contenido/tema/product.c1.medida-especial.json";
+import t_producto_c1_tapon from "@contenido/tema/product.c1.tapon-inflable.json";
+import t_producto_c1_funda from "@contenido/tema/product.c1.funda.json";
+import t_producto_c1_tira from "@contenido/tema/product.c1.tira.json";
+import t_producto_c1_plastilina from "@contenido/tema/product.c1.plastilina.json";
+import t_contacto_c1 from "@contenido/tema/page.contact.c1.json";
+import t_nosotros_c1 from "@contenido/tema/page.nosotros.c1.json";
+import t_blog_c1 from "@contenido/tema/blog.c1.json";
+import t_articulo_c1 from "@contenido/tema/article.c1.json";
+import t_portada_d1 from "@contenido/tema/index.d1.json";
+import t_producto_d1 from "@contenido/tema/product.d1.json";
+import t_coleccion_d1 from "@contenido/tema/collection.d1.json";
+import t_producto_d1_mini from "@contenido/tema/product.d1.mini-compuerta.json";
+import t_producto_d1_medida from "@contenido/tema/product.d1.medida-especial.json";
+import t_producto_d1_tapon from "@contenido/tema/product.d1.tapon-inflable.json";
+import t_producto_d1_funda from "@contenido/tema/product.d1.funda.json";
+import t_producto_d1_tira from "@contenido/tema/product.d1.tira.json";
+import t_producto_d1_plastilina from "@contenido/tema/product.d1.plastilina.json";
+import t_contacto_d1 from "@contenido/tema/page.contact.d1.json";
+import t_nosotros_d1 from "@contenido/tema/page.nosotros.d1.json";
+import t_blog_d1 from "@contenido/tema/blog.d1.json";
+import t_articulo_d1 from "@contenido/tema/article.d1.json";
 // Las demás páginas de B1 (23-nov-2026): Contacto, Nosotros, Blog, artículo, Productos y las fichas de los demás productos.
 import contactoB1 from "@contenido/tema/page.contact.b1.json";
 import nosotrosB1 from "@contenido/tema/page.nosotros.b1.json";
@@ -52,6 +77,30 @@ const PLANTILLAS = {
   "producto.b1": productoB1 as Plantilla,
   "portada.c1": portadaC1 as Plantilla,
   "producto.c1": productoC1 as Plantilla,
+  "coleccion.c1": t_coleccion_c1 as Plantilla,
+  "producto.c1.mini": t_producto_c1_mini as Plantilla,
+  "producto.c1.medida": t_producto_c1_medida as Plantilla,
+  "producto.c1.tapon": t_producto_c1_tapon as Plantilla,
+  "producto.c1.funda": t_producto_c1_funda as Plantilla,
+  "producto.c1.tira": t_producto_c1_tira as Plantilla,
+  "producto.c1.plastilina": t_producto_c1_plastilina as Plantilla,
+  "contacto.c1": t_contacto_c1 as Plantilla,
+  "nosotros.c1": t_nosotros_c1 as Plantilla,
+  "blog.c1": t_blog_c1 as Plantilla,
+  "articulo.c1": t_articulo_c1 as Plantilla,
+  "portada.d1": t_portada_d1 as Plantilla,
+  "producto.d1": t_producto_d1 as Plantilla,
+  "coleccion.d1": t_coleccion_d1 as Plantilla,
+  "producto.d1.mini": t_producto_d1_mini as Plantilla,
+  "producto.d1.medida": t_producto_d1_medida as Plantilla,
+  "producto.d1.tapon": t_producto_d1_tapon as Plantilla,
+  "producto.d1.funda": t_producto_d1_funda as Plantilla,
+  "producto.d1.tira": t_producto_d1_tira as Plantilla,
+  "producto.d1.plastilina": t_producto_d1_plastilina as Plantilla,
+  "contacto.d1": t_contacto_d1 as Plantilla,
+  "nosotros.d1": t_nosotros_d1 as Plantilla,
+  "blog.d1": t_blog_d1 as Plantilla,
+  "articulo.d1": t_articulo_d1 as Plantilla,
   "contacto.b1": contactoB1 as Plantilla,
   "nosotros.b1": nosotrosB1 as Plantilla,
   "blog.b1": blogB1 as Plantilla,

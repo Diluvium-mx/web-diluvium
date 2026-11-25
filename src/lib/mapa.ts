@@ -39,9 +39,33 @@ export const PAGINAS_MAPA = {
   "page.nosotros.b1": { version: "B1", letra: "N", nombre: "Nosotros", ruta: "/v/b1/pages/nosotros" },
   "blog.b1": { version: "B1", letra: "B", nombre: "Blog", ruta: "/v/b1/blogs/blog" },
   "article.b1": { version: "B1", letra: "A", nombre: "Artículo", ruta: "/v/b1/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades" },
-  // Versión C (24-nov-2026).
-  "index.c1": { version: "C1", letra: "I", nombre: "C · Portada", ruta: "/v/c1" },
-  "product.c1": { version: "C1", letra: "P", nombre: "C · Producto", ruta: "/v/c1/products/compuerta-anti-inundaciones" },
+  // Versión C (24-nov-2026) y D (25-nov-2026): cada una con todas las páginas; cada una tiene su editor (/editor/c, /editor/d).
+  "index.c1": { version: "C1", letra: "I", nombre: "Portada", ruta: "/v/c1" },
+  "product.c1": { version: "C1", letra: "P", nombre: "Producto", ruta: "/v/c1/products/compuerta-anti-inundaciones" },
+  "collection.c1": { version: "C1", letra: "L", nombre: "Productos", ruta: "/v/c1/collections/all-products" },
+  "product.c1.mini-compuerta": { version: "C1", letra: "M", nombre: "Mini", ruta: "/v/c1/products/mini-compuerta" },
+  "product.c1.medida-especial": { version: "C1", letra: "X", nombre: "XXL", ruta: "/v/c1/products/compuerta-anti-inundaciones-hecha-a-la-medida" },
+  "product.c1.tapon-inflable": { version: "C1", letra: "T", nombre: "Tapón", ruta: "/v/c1/products/tapon-inflable-anti-inundaciones" },
+  "product.c1.funda": { version: "C1", letra: "F", nombre: "Funda", ruta: "/v/c1/products/funda-de-repuesto-compuerta-anti-inundaciones" },
+  "product.c1.tira": { version: "C1", letra: "H", nombre: "Tira de hule", ruta: "/v/c1/products/accesorio-tira-de-hule-de-repuesto" },
+  "product.c1.plastilina": { version: "C1", letra: "S", nombre: "Plastilina", ruta: "/v/c1/products/accesorio-plastilina-de-secado-rapido" },
+  "page.contact.c1": { version: "C1", letra: "C", nombre: "Contacto", ruta: "/v/c1/pages/contact" },
+  "page.nosotros.c1": { version: "C1", letra: "N", nombre: "Nosotros", ruta: "/v/c1/pages/nosotros" },
+  "blog.c1": { version: "C1", letra: "B", nombre: "Blog", ruta: "/v/c1/blogs/blog" },
+  "article.c1": { version: "C1", letra: "A", nombre: "Artículo", ruta: "/v/c1/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades" },
+  "index.d1": { version: "D1", letra: "I", nombre: "Portada", ruta: "/v/d1" },
+  "product.d1": { version: "D1", letra: "P", nombre: "Producto", ruta: "/v/d1/products/compuerta-anti-inundaciones" },
+  "collection.d1": { version: "D1", letra: "L", nombre: "Productos", ruta: "/v/d1/collections/all-products" },
+  "product.d1.mini-compuerta": { version: "D1", letra: "M", nombre: "Mini", ruta: "/v/d1/products/mini-compuerta" },
+  "product.d1.medida-especial": { version: "D1", letra: "X", nombre: "XXL", ruta: "/v/d1/products/compuerta-anti-inundaciones-hecha-a-la-medida" },
+  "product.d1.tapon-inflable": { version: "D1", letra: "T", nombre: "Tapón", ruta: "/v/d1/products/tapon-inflable-anti-inundaciones" },
+  "product.d1.funda": { version: "D1", letra: "F", nombre: "Funda", ruta: "/v/d1/products/funda-de-repuesto-compuerta-anti-inundaciones" },
+  "product.d1.tira": { version: "D1", letra: "H", nombre: "Tira de hule", ruta: "/v/d1/products/accesorio-tira-de-hule-de-repuesto" },
+  "product.d1.plastilina": { version: "D1", letra: "S", nombre: "Plastilina", ruta: "/v/d1/products/accesorio-plastilina-de-secado-rapido" },
+  "page.contact.d1": { version: "D1", letra: "C", nombre: "Contacto", ruta: "/v/d1/pages/contact" },
+  "page.nosotros.d1": { version: "D1", letra: "N", nombre: "Nosotros", ruta: "/v/d1/pages/nosotros" },
+  "blog.d1": { version: "D1", letra: "B", nombre: "Blog", ruta: "/v/d1/blogs/blog" },
+  "article.d1": { version: "D1", letra: "A", nombre: "Artículo", ruta: "/v/d1/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades" },
 } as const;
 export type ArchivoMapa = keyof typeof PAGINAS_MAPA;
 
@@ -50,7 +74,7 @@ export function esArchivoMapa(x: unknown): x is ArchivoMapa {
 }
 
 /** Páginas que usan una sola plantilla para varias direcciones: cada artículo del blog (24-nov-2026). */
-const PREFIJOS: Partial<Record<ArchivoMapa, string>> = { "article.b1": "/v/b1/blogs/blog/" };
+const PREFIJOS: Partial<Record<ArchivoMapa, string>> = { "article.b1": "/v/b1/blogs/blog/", "article.c1": "/v/c1/blogs/blog/", "article.d1": "/v/d1/blogs/blog/" };
 
 /** ¿De qué plantilla es una dirección? La de la pestaña o, para los artículos, cualquiera de ellos. */
 export function archivoDeRuta(ruta: string | null): ArchivoMapa | undefined {

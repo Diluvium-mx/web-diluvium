@@ -22,6 +22,7 @@ Todo lo de este proyecto vive en esta carpeta (`~/Documents/web-diluvium`).
 | **Administrador** (Payload: qué se edita, cómo llega a la página, comandos) | `docs/administrador.md` |
 | **Mapa de la página** (nombres B1-P2.4 para pedir cambios; `?mapa`) · **Editor local** de fotos y textos (`localhost:3100/editor`) | `docs/mapa-pagina.md` · `docs/editor.md` |
 | **Publicar en Cloudflare** (dirección de prueba sin indexar, pasos del dueño y comandos) | `docs/despliegue.md` |
+| **SEO y chats de IA** (datos de Google Analytics y plan; fuera de git) | `docs/seo-y-chats-ia.md` |
 | Qué tiene la tienda actual (páginas, productos, apps, pagos) | `docs/sitio-actual/inventario.md` |
 
 ## Código (paso 1 terminado el 4-nov-2026 · paso 2, administrador, funcionando en esta Mac el 5-nov-2026)

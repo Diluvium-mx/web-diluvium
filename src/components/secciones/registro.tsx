@@ -1,6 +1,8 @@
 // Qué pieza dibuja cada tipo de sección del tema. Cada tipo se construye una vez y se reutiliza en todas las páginas.
 
 import type { ComponentType } from "react";
+import { PIEZAS_CD } from "./cd/registro";
+import { PIEZAS_D } from "./d/registro";
 import type { Seccion } from "@/lib/contenido";
 import type { Producto } from "@/components/producto/catalogo";
 import { Espaciador } from "./Espaciador";
@@ -139,6 +141,8 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "c-confianza": ConfianzaC,
   "c-pagos": PagosC,
   "c-barra": BarraAyudaC,
+  ...PIEZAS_CD,
+  ...PIEZAS_D,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

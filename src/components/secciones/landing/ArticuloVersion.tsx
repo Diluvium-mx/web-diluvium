@@ -17,7 +17,7 @@ import { claseFondo, fondoPropio } from "./Olas";
 import { IconoFlecha } from "./piezas";
 
 /** Quita los párrafos vacíos del principio («<p>&nbsp;</p>», que traen algunos artículos y dejan un hueco). */
-function sinVaciosArriba(html: string): string {
+export function sinVaciosArriba(html: string): string {
   return html.replace(/^(\s*<p[^>]*>(\s|&nbsp;|<br>)*<\/p>)+/, "");
 }
 
@@ -33,7 +33,7 @@ function estiloEnTexto(e: CSSProperties | undefined): string {
 
 /** Las fotos de dentro del texto con la foto, el encuadre y la marca del editor de su pieza («image_1», «image_2»…).
  *  Cada una va en un marco que recorta lo que sobra al acercarla. */
-function fotosDelCuerpo(html: string, seccionId: string, pieza: Bloque | undefined): string {
+export function fotosDelCuerpo(html: string, seccionId: string, pieza: Bloque | undefined): string {
   if (!pieza) return html;
   let n = 0;
   return html.replace(/<img\b([^>]*)>/g, (_todo, resto: string) => {
@@ -62,7 +62,7 @@ function fotosDelCuerpo(html: string, seccionId: string, pieza: Bloque | undefin
 
 /** Enlaces escritos sin «https://» en el artículo («www.diluvium.com.mx»): el navegador los toma como una página dentro
  *  del blog que no existe (404). Los de Diluvium van al inicio; los de otros sitios, con https://. */
-function enlacesSinProtocolo(html: string): string {
+export function enlacesSinProtocolo(html: string): string {
   return html.replace(/href="(www\.[^"]+)"/g, (_todo, dir: string) =>
     /^www\.diluvium\.com\.mx(\/|$)/.test(dir) ? `href="${dir.replace(/^www\.diluvium\.com\.mx/, "") || "/"}"` : `href="https://${dir}"`,
   );
@@ -70,7 +70,7 @@ function enlacesSinProtocolo(html: string): string {
 
 /** Enlaces del texto que solo traen una foto sin descripción (los botones dibujados del artículo): se nombran por a
  *  dónde llevan, para los lectores de pantalla. Si ya tienen título, ese les da el nombre. */
-function nombrarEnlacesDeFoto(html: string): string {
+export function nombrarEnlacesDeFoto(html: string): string {
   return html.replace(/<a ([^>]*)>(\s*<picture[^>]*>\s*<img[^>]*alt=""[^>]*>\s*<\/picture>\s*)<\/a>/g, (todo, attrs: string, dentro: string) => {
     if (/\b(title|aria-label)=/.test(attrs)) return todo;
     const href = /href="([^"]*)"/.exec(attrs)?.[1] ?? "";
@@ -80,7 +80,7 @@ function nombrarEnlacesDeFoto(html: string): string {
 }
 
 /** La foto de arriba de un artículo: la de su pieza o, si no tiene, la del artículo. */
-function fotoDe(art: ArticuloBlog, piezas: Bloque[]): { src: string; ancho: number; alto: number; pieza?: Bloque } | null {
+export function fotoDe(art: ArticuloBlog, piezas: Bloque[]): { src: string; ancho: number; alto: number; pieza?: Bloque } | null {
   const pieza = piezas.find((b) => b.tipo === "article_photos" && b.id === art.slug);
   const src = (pieza && texto(pieza.ajustes, "image")) || art.imagen?.src;
   if (!src) return null;

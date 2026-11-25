@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { plantilla } from "@/lib/contenido";
 import { VERSIONES, version, type Version } from "@/lib/versiones";
-import { MarcoVersionB } from "../../../../MarcoVersionB";
+import { MarcoVersion } from "../../../../MarcoVersion";
 
 // Contacto y Nosotros de una versión B (/v/b1/pages/contact y /v/b1/pages/nosotros; 23-nov-2026). Misma dirección que
 // en la tienda, dentro de la versión. Solo las versiones con «paginas»; nunca se indexan.
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { version: clave, pagina } = await params;
   const v = version(clave);
   const d = datos(v, pagina);
-  return v && d ? { title: `${d.titulo} · versión ${v.etiqueta}` } : {};
+  return v && d ? { title: `${d.titulo} | versión ${v.etiqueta}` } : {};
 }
 
 export default async function PaginaVersion({ params }: Props) {
@@ -38,5 +38,5 @@ export default async function PaginaVersion({ params }: Props) {
   const v = version(clave);
   const d = datos(v, pagina);
   if (!v || !d) notFound();
-  return <MarcoVersionB v={v} secciones={plantilla(d.plantilla).secciones} archivoMapa={`page.${pagina}.${v.clave}`} />;
+  return <MarcoVersion v={v} secciones={plantilla(d.plantilla).secciones} archivoMapa={`page.${pagina}.${v.clave}`} />;
 }

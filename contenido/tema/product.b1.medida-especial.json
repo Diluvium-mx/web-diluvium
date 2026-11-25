@@ -19,7 +19,7 @@
     "custom_link": "",
     "button_text": "Añadir al carrito",
     "error_text": "Elige el tamaño de tu entrada para continuar.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20una%20compuerta%20hecha%20a%20la%20medida.%20Mi%20entrada%20mide%20__%20cm%20de%20ancho%20y%20les%20mando%20fotos%20por%20dentro%20y%20por%20fuera.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20una%20compuerta%20hecha%20a%20la%20medida%20para%20mi%20entrada%2C%20%C2%BFqu%C3%A9%20medidas%20y%20fotos%20les%20mando%20para%20cotizarla%3F",
     "trust_heading": "",
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
@@ -250,7 +250,7 @@
    "ajustes": {
     "heading": "Preguntas frecuentes",
     "text": "",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20sobre%20la%20compuerta%20hecha%20a%20la%20medida.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20sobre%20la%20compuerta%20hecha%20a%20la%20medida%2C%20%C2%BFme%20pueden%20ayudar%3F",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
@@ -259,7 +259,7 @@
     "fondo": "blanco",
     "ola": "larga",
     "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
-    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
+    "narrow_message": "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?"
    },
    "bloques": [
     {
@@ -268,7 +268,7 @@
      "ajustes": {
       "heading": "¿Cómo la pido?",
       "description": "<p>Mándanos por WhatsApp una foto de tu entrada por dentro y por fuera y la medida exacta de ancho, de marco a marco. Revisamos que se pueda instalar y te confirmamos.</p>",
-      "whatsapp_message": "Hola, quiero una compuerta hecha a la medida. Mi entrada mide __ cm de ancho y les mando fotos por dentro y por fuera."
+      "whatsapp_message": "Hola, quiero una compuerta hecha a la medida para mi entrada, ¿qué medidas y fotos les mando para cotizarla?"
      }
     },
     {
@@ -315,7 +315,7 @@
     "button_text": "Comprar",
     "button_link": "#tamanos",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20la%20p%C3%A1gina%20de%20la%20compuerta%20a%20la%20medida%20y%20tengo%20una%20duda%3A%20",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20la%20p%C3%A1gina%20de%20la%20compuerta%20a%20la%20medida%20y%20tengo%20una%20duda%2C%20%C2%BFme%20pueden%20ayudar%3F",
     "whatsapp_icon_end": true
    },
    "bloques": [

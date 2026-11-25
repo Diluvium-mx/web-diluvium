@@ -9,7 +9,7 @@
     "button_text": "Comprar",
     "button_link": "#tamanos",
     "menu_text": "Menú",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20estoy%20viendo%20la%20Compuerta%20Anti-Inundaciones%20en%20su%20p%C3%A1gina%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20estoy%20viendo%20la%20Compuerta%20Anti-Inundaciones%20en%20su%20p%C3%A1gina%2C%20%C2%BFme%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F",
     "cart_title": "Tu carrito",
     "cart_added": "Se agregó a tu carrito",
     "cart_shipping": "Envío",
@@ -61,7 +61,7 @@
     "custom_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
     "button_text": "Añadir al carrito",
     "error_text": "Elige el tamaño de tu entrada para continuar.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20me%20interesa%20la%20Compuerta%20Anti-Inundaciones%20y%20tengo%20una%20pregunta%20antes%20de%20comprarla.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20me%20interesa%20la%20Compuerta%20Anti-Inundaciones%2C%20%C2%BFme%20ayudan%20con%20una%20duda%20antes%20de%20comprarla%3F",
     "trust_heading": "",
     "marketplace_text": "Encuéntranos en:",
     "media_caption": "",
@@ -89,7 +89,7 @@
     "table_size": "Tamaño",
     "table_width": "Ancho de entrada",
     "discount_text": "-{porcentaje}% en descuento",
-    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
+    "narrow_message": "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?"
    },
    "bloques": [
     {
@@ -451,14 +451,14 @@
     "ola": "larga",
     "heading": "Antes de comprar, \nresponde tus dudas 👇🏻",
     "text": "",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20antes%20de%20comprar%20mi%20compuerta.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20antes%20de%20comprar%20mi%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
     "search_placeholder": "Ej. ¿Llega a Monterrey?",
     "search_button": "Preguntar",
     "no_answer_text": "Mándanos tu pregunta por WhatsApp y te contestamos.",
     "search_examples": "¿Llega a Monterrey?\n¿Cuánto pesa?\n¿Hay para cochera?\n¿Puedo pagar a meses?\nMi puerta mide 95 cm\n¿Hacen más altas?\n¿Algo para la coladera?\n¿Qué horario tienen?\n¿Tienen tienda física?",
     "no_answer_message": "Hola, tengo una pregunta que no encontré en su página: {pregunta}",
-    "narrow_message": "Hola, mi entrada mide {cm} cm y es más angosta que el tamaño más chico. ¿Qué opción tengo?"
+    "narrow_message": "Hola, mi entrada mide {cm} cm, ¿qué compuerta me recomiendan?"
    },
    "bloques": [
     {
@@ -515,7 +515,7 @@
      "ajustes": {
       "heading": "¿Me dan factura?",
       "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>",
-      "whatsapp_message": "Hola, quiero factura de mi compra. Les mando mi constancia de situación fiscal."
+      "whatsapp_message": "Hola, necesito factura de mi compra, ¿qué datos les mando?"
      }
     },
     {
@@ -524,7 +524,7 @@
      "ajustes": {
       "heading": "¿Cómo pago?",
       "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>",
-      "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito."
+      "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito, ¿me pasan los datos?"
      }
     },
     {
@@ -547,7 +547,7 @@
     "button_text": "Elegir mi tamaño",
     "button_link": "#tamanos",
     "whatsapp_text": "¿Tienes otra duda? Te contestamos por WhatsApp.",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20la%20p%C3%A1gina%20de%20la%20compuerta%20y%20todav%C3%ADa%20tengo%20una%20duda%3A%20",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20revis%C3%A9%20la%20p%C3%A1gina%20de%20la%20compuerta%20y%20todav%C3%ADa%20tengo%20una%20duda%2C%20%C2%BFme%20pueden%20ayudar%3F",
     "whatsapp_icon_end": true
    },
    "bloques": [

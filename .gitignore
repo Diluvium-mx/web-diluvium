@@ -21,6 +21,8 @@ comparaciones/
 
 # datos del negocio (ventas reales): el repositorio es público; viven solo en esta Mac
 docs/costos-y-comparacion.md
+# Análisis de Google Analytics para SEO (números del negocio; 25-nov-2026)
+docs/seo-y-chats-ia.md
 
 # administrador: copias locales de la base (D1) y las fotos (R2) que crea wrangler; se regeneran con
 # npm run admin:sembrar -- --desde-cero

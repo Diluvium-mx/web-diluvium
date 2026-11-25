@@ -27,7 +27,8 @@ import type { MedioBiblioteca } from "@/lib/editor/archivos";
 import { MapaElementos, precargarNumeros } from "./MapaElementos";
 import { formato } from "@/components/secciones/landing/formato";
 
-type Props = { plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
+/** «version»: de qué versión es este editor (B1 en /editor, C1 en /editor/c y D1 en /editor/d; 25-nov-2026). */
+type Props = { version: string; plantillas: Record<ArchivoMapa, PlantillaTema>; esquema: Esquema; biblioteca: MedioBiblioteca[] };
 type Seleccion = { seccionId: string; piezaId: string; clave: string };
 type Caja = { top: number; left: number; width: number; height: number };
 type EstadoPublicar = { corriendo: boolean; ok: boolean | null; peso: string | null; direccion: string | null; ultimas: string[] };
@@ -265,9 +266,10 @@ const area = (el: Element) => {
 
 // ───────────────────────── Editor ─────────────────────────
 
-export function Editor({ plantillas, esquema, biblioteca }: Props) {
-  const archivos = Object.keys(PAGINAS_MAPA) as ArchivoMapa[];
-  const [archivo, setArchivo] = useState<ArchivoMapa>("product.b1");
+export function Editor({ version, plantillas, esquema, biblioteca }: Props) {
+  const archivos = (Object.keys(PAGINAS_MAPA) as ArchivoMapa[]).filter((a) => PAGINAS_MAPA[a].version === version);
+  const inicial = archivos.find((a) => PAGINAS_MAPA[a].letra === "P") ?? archivos[0];
+  const [archivo, setArchivo] = useState<ArchivoMapa>(inicial);
   const [modo, setModo] = useState<"fotos" | "mapa" | "textos">("fotos");
   const [borradores, setBorradores] = useState(() => copia(plantillas));
   const [guardadas, setGuardadas] = useState(() => copia(plantillas));
@@ -280,7 +282,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
   const [guardando, setGuardando] = useState(false);
   // La página de en medio es una sola para Fotos, Mapa y Textos: cambiar de pestaña no la vuelve a cargar.
   // «carga» cambia solo al elegir Portada/Producto, al guardar o al descartar (vuelve a cargar la página).
-  const [carga, setCarga] = useState<{ ruta: string; n: number }>({ ruta: PAGINAS_MAPA["product.b1"].ruta, n: 0 });
+  const [carga, setCarga] = useState<{ ruta: string; n: number }>({ ruta: PAGINAS_MAPA[inicial].ruta, n: 0 });
   const [cargada, setCargada] = useState(0);
   // Dirección de la página de en medio cuando no es una de B1 (se llegó por un enlace): sin fotos ni números.
   const [fuera, setFuera] = useState<string | null>(null);
@@ -341,7 +343,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     }
     if (ruta === "about:blank" || ruta === "blank") return;
     const de = archivoDeRuta(ruta);
-    if (de) {
+    if (de && PAGINAS_MAPA[de].version === version) {
       setFuera(null);
       if (de !== archivo) {
         setArchivo(de);
@@ -349,7 +351,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
         setAbierta(null);
       }
     } else setFuera(ruta ?? "otra página");
-  }, [archivo]);
+  }, [archivo, version]);
 
   // Los enlaces que cambian de página sin recargar (los del menú) también se notan.
   useEffect(() => {
@@ -573,7 +575,7 @@ export function Editor({ plantillas, esquema, biblioteca }: Props) {
     <div className="flex h-dvh flex-col">
       {/* ── Barra de arriba ── */}
       <header className="flex flex-wrap items-center gap-2 border-b border-linea bg-white px-4 py-2.5">
-        <strong className="mr-1 text-[17px] text-marino">Editor · B1</strong>
+        <strong className="mr-1 text-[17px] text-marino">Editor · {version.charAt(0)}</strong>
         <div className="flex flex-wrap rounded-lg bg-niebla p-1">
           {archivos.map((a) => (
             <button

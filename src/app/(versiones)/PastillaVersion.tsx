@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-/** «Versión B1 · cambiar»: lleva a la lista de versiones. Solo para revisar; no forma parte de la versión. En
+/** «Versión B1 | cambiar» (sin «·», dueño 25-nov-2026): lleva a la lista de versiones. Solo para revisar; no forma parte de la versión. En
  * computadora flota abajo a la izquierda; en celular y tableta va al final, para no tapar el botón ni la barra. */
 export function PastillaVersion({ etiqueta }: { etiqueta: string }) {
   const contenido = (
     <>
       Versión {etiqueta}
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true" className="opacity-60">|</span>
       <span className="underline underline-offset-2">cambiar</span>
     </>
   );

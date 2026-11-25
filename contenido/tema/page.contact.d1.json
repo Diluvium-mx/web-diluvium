@@ -1,0 +1,201 @@
+{
+ "fuente": "Versión D1: contacto (25-nov-2026), con los textos y fotos de B1 y el aspecto de D.",
+ "secciones": [
+  {
+   "id": "d_titulo_contacto_d1",
+   "tipo": "d-titulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Contacto",
+    "heading": "¿Tienes dudas? Aquí las respuestas y formas de contacto",
+    "text": "Llámanos, escríbenos por WhatsApp o déjanos un mensaje. Estamos en Los Mochis, Sinaloa, y enviamos a todo México.",
+    "button_text": "Escríbenos por WhatsApp",
+    "button_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium%2C%20%C2%BFme%20pueden%20atender%3F",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "focal": "35% 100%",
+    "zoom": 1.1,
+    "breadcrumb_text": "Contacto"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_contacto_d1",
+   "tipo": "d-contacto",
+   "ajustes": {
+    "fondo": "gris",
+    "heading": "Formas de contacto",
+    "text": "Toca la que prefieras.",
+    "faq_link_text": "Ver las preguntas frecuentes",
+    "form_heading": "Contáctanos",
+    "form_text": "Llena el siguiente formato con tus datos y te atenderemos lo antes posible.",
+    "name_label": "Tu nombre",
+    "email_label": "Tu correo",
+    "message_label": "Tu mensaje",
+    "button_label": "Enviar",
+    "sending_text": "Enviando…",
+    "thanks_text": "Gracias por escribirnos. Te contestamos lo antes posible.",
+    "required_text": "Por favor, llena los campos obligatorios",
+    "form_band": "Escríbenos"
+   },
+   "bloques": [
+    {
+     "id": "channel_whatsapp",
+     "tipo": "channel",
+     "ajustes": {
+      "icon": "whatsapp",
+      "heading": "WhatsApp",
+      "text": "(668) 241 9579",
+      "url": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium%2C%20%C2%BFme%20pueden%20atender%3F"
+     }
+    },
+    {
+     "id": "channel_telefono",
+     "tipo": "channel",
+     "ajustes": {
+      "icon": "telefono",
+      "heading": "Llámanos",
+      "text": "(668) 241 9579",
+      "url": "tel:+526682419579"
+     }
+    },
+    {
+     "id": "channel_correo",
+     "tipo": "channel",
+     "ajustes": {
+      "icon": "correo",
+      "heading": "Correo",
+      "text": "contacto@diluvium.com.mx",
+      "url": "mailto:contacto@diluvium.com.mx"
+     }
+    },
+    {
+     "id": "channel_direccion",
+     "tipo": "channel",
+     "ajustes": {
+      "icon": "ubicacion",
+      "heading": "Dirección",
+      "text": "Calle Morelos #254, Los Mochis, Sinaloa, México",
+      "url": "https://www.google.com/maps/search/?api=1&query=Calle+Morelos+254+Los+Mochis+Sinaloa"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_dudas_contacto",
+   "tipo": "d-dudas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Antes de comprar",
+    "heading": "Preguntas frecuentes",
+    "text": "Toca una pregunta para ver la respuesta.",
+    "open_all": "Abrir todas",
+    "close_all": "Cerrar todas",
+    "other_question": "¿No está tu duda?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Mandan fuera de México?",
+      "description": "<p>Regularmente no realizamos envíos fuera de México, ya que los costos de transporte internacional suelen ser muy elevados, en algunos casos incluso mayores que el valor de la propia compuerta. Sin embargo, si estás interesado, te invitamos a ponerte en contacto con nosotros vía WhatsApp para revisar tu caso específico y evaluar opciones disponibles.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Hacen compuertas más altas?",
+      "description": "<p>Actualmente, no ofrecemos compuertas más altas, ya que nos encontramos en fase de pruebas con este tipo de medidas. La presión del agua aumenta considerablemente con alturas mayores, y preferimos no ofrecer soluciones que no podamos garantizar como 100% funcionales. Por el momento, el único tamaño disponible es el que hemos probado exhaustivamente para asegurar su eficacia y seguridad.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Hacen compuertas más bajas?",
+      "description": "<p>Estamos evaluando opciones para crear compuertas más bajas que se adapten a necesidades específicas de prevención a inundaciones de menor magnitud. Aunque no están disponibles aún, estamos comprometidos en ofrecer soluciones cada vez más completas, por lo que podrás contar con esta opción en el futuro cercano.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Realizan envíos a todo México?",
+      "description": "<p>Sí, realizamos envíos a todo el país a través de paqueterías de confianza. Dependiendo de la ubicación, el tiempo de entrega varía entre 2 y 5 días hábiles. También ofrecemos opciones de envío express en algunas ciudades cercanas.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Puedo pedir factura de mi compra?",
+      "description": "<p>Sí, puedes solicitar tu factura sin problema. Para ello, necesitaríamos que nos envíes tu constancia de situación fiscal o los datos correspondientes para generar la factura. Puedes enviarnos esta información al número de WhatsApp (668) 241 9579 o al correo electrónico contacto@diluvium.com.mx. Ten en cuenta que la solicitud de factura solo es válida hasta 30 días después de la compra. En caso de que falte algún dato, te notificaremos para completar la información.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo puedo modificar o cancelar un pedido ya realizado?",
+      "description": "<p>Si necesitas modificar o cancelar tu pedido, te recomendamos hacerlo lo antes posible, preferentemente antes de que el producto sea enviado. En caso de que ya haya sido enviado, no podremos emitir un reembolso hasta que el producto sea devuelto a nuestro inventario. Si la cancelación se realiza a tiempo, podemos proceder con el reembolso completo de tu inversión sin inconvenientes. Para cualquier modificación o cancelación, contáctanos lo antes posible al número (668) 241 9579.</p>"
+     }
+    },
+    {
+     "id": "question_7",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Tienen tienda física o solo venta en línea?",
+      "description": "<p>Actualmente, nuestra tienda es en línea, pero sí ofrecemos la opción de entrega directa en nuestras oficinas para quienes se encuentren en la ciudad. Sin embargo, la gran mayoría de los pedidos se envían a través de paquetería a diversas ciudades de todo el país. Si prefieres recoger el producto directamente, por favor, contáctanos para coordinar la entrega en nuestra oficina.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_contacto",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "Protege tu casa antes de la próxima lluvia",
+    "text": "Elige tu tamaño, paga como prefieras y recíbela en 3 a 5 días hábiles.",
+    "image": "/media/files/IMG_1499.jpg",
+    "alt": "Un hombre coloca la compuerta en la puerta de su casa",
+    "button_text": "Comprar ahora",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una duda antes de comprar la compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro"
+     }
+    }
+   ]
+  }
+ ]
+}

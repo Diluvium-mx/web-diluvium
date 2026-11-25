@@ -1,0 +1,142 @@
+{
+ "fuente": "Versión D1: productos (25-nov-2026), con los textos y fotos de B1 y el aspecto de D.",
+ "secciones": [
+  {
+   "id": "d_titulo_productos_d1",
+   "tipo": "d-titulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Productos",
+    "heading": "Todo para que el agua no entre a tu casa",
+    "text": "",
+    "breadcrumb_text": "Productos"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_productos_d1",
+   "tipo": "d-productos",
+   "ajustes": {
+    "fondo": "gris",
+    "heading": "",
+    "button_text": "Ver producto",
+    "from_text": "Desde",
+    "reviews_text": "reseñas",
+    "discount_text": "-{porcentaje}%"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "badge": "La más vendida",
+      "heading": "Compuerta Anti-Inundaciones",
+      "text": "Detiene hasta 50 cm de agua. Se pone en 10 minutos, sin obras ni perforar."
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "badge": "A tu medida",
+      "heading": "Compuerta XXL a la medida",
+      "text": "Para entradas más anchas: hasta 2.5 m de ancho por 60 cm de alto."
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "badge": "",
+      "heading": "Mini Compuerta (30 cm de altura)",
+      "text": "Para encharcamientos y filtraciones ligeras que se meten por la puerta."
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "badge": "",
+      "heading": "Tapón inflable para coladeras",
+      "text": "Evita que el agua del drenaje salga por las coladeras de regaderas o inodoros."
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "badge": "Repuesto",
+      "heading": "Funda de repuesto",
+      "text": "Elástica e impermeable, para reponer la de tu compuerta. En 5 tamaños."
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "badge": "Repuesto",
+      "heading": "Tira de hule de repuesto",
+      "text": "Va al contorno de la compuerta para crear el sello que impide el paso del agua."
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "badge": "Accesorio",
+      "heading": "Plastilina de secado rápido",
+      "text": "Sella las esquinas de abajo al poner la compuerta. Alcanza para 2 instalaciones."
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_productos",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "Protege tu casa antes de la próxima lluvia",
+    "text": "Elige tu tamaño, paga como prefieras y recíbela en 3 a 5 días hábiles.",
+    "image": "/media/files/IMG_1499.jpg",
+    "alt": "Un hombre coloca la compuerta en la puerta de su casa",
+    "button_text": "Comprar ahora",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una duda antes de comprar la compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro"
+     }
+    }
+   ]
+  }
+ ]
+}

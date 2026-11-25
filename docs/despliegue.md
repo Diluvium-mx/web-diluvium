@@ -71,3 +71,7 @@ pasos están abajo.
 - **Proteger `/admin` con Cloudflare Access** (código por correo, gratis hasta 50 usuarios).
 - **Publicación automática** al guardar en el administrador.
 - **Dominio:** pasar el DNS a Cloudflare para usar `nueva.diluvium.com.mx` y, al final, `www.diluvium.com.mx`.
+- **Robots de IA (obligatorio al pasar el dominio, 25-nov-2026):** Cloudflare bloquea a los robots de IA en dominios
+  nuevos. En Seguridad › Bots (o «AI Crawl Control») hay que dejar pasar a los de búsqueda: OAI-SearchBot y
+  ChatGPT-User (ChatGPT), Claude-SearchBot y Claude-User (Claude), PerplexityBot, Googlebot y Bingbot. Si se quedan
+  bloqueados, los chats de IA dejan de recomendar la tienda (`docs/seo-y-chats-ia.md`).

@@ -1,0 +1,450 @@
+{
+ "fuente": "Versión D1 (25-nov-2026): compuerta XXL hecha a la medida.",
+ "secciones": [
+  {
+   "id": "d_ficha_medida",
+   "tipo": "d-ficha",
+   "ajustes": {
+    "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+    "badge": "Hecha a tu medida",
+    "rating_text": "",
+    "heading": "",
+    "text": "Para entradas más anchas de lo normal: la hacemos a tu medida, hasta 2.5 m de ancho por 60 cm de alto, con un sello firme en todo el contorno.",
+    "photo_text": "Foto {n} de {total}",
+    "zoom_text": "Ampliar",
+    "close_text": "Cerrar",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero una compuerta hecha a la medida para mi entrada, ¿qué medidas y fotos les mando para cotizarla?",
+    "whatsapp_text": "Mandar mi medida por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "foto_1",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "31% 100%",
+      "zoom": 1.1
+     }
+    },
+    {
+     "id": "foto_2",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/6_3b8c0ccf-3412-4dc9-83dc-470da79ca652.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "71% 83%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_3",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/1.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 100%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_4",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/3_e2c0623e-a5e2-442a-9126-61b08b856e29.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 0.8
+     }
+    },
+    {
+     "id": "foto_5",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/4_e2544b69-40cf-4121-a2c9-1757f50fda5b.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "foto_6",
+     "tipo": "image",
+     "ajustes": {
+      "image": "/media/files/METrasera.jpg",
+      "alt": "Compuerta Anti-Inundaciones XXL - Hecha a la medida",
+      "focal": "50% 50%",
+      "zoom": 1
+     }
+    },
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "medida",
+      "text": "Hecha a tu medida: mándanos foto y medida de tu entrada"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío en 3 a 5 días cuando está lista"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "devolucion",
+      "text": "30 días de garantía por defectos de fábrica"
+     }
+    },
+    {
+     "id": "chip_4",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro con tarjeta, PayPal o transferencia"
+     }
+    },
+    {
+     "id": "fact_1",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "2.5 m",
+      "text": "de ancho, máximo"
+     }
+    },
+    {
+     "id": "fact_2",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "60 cm",
+      "text": "de alto"
+     }
+    },
+    {
+     "id": "fact_3",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "3 sem.",
+      "text": "para hacerla"
+     }
+    },
+    {
+     "id": "point_1",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Hasta 2.5 m de ancho por 60 cm de alto"
+     }
+    },
+    {
+     "id": "point_2",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Se coloca en 10 minutos y se retira en 5"
+     }
+    },
+    {
+     "id": "point_3",
+     "tipo": "point",
+     "ajustes": {
+      "text": "Lista en unas 3 semanas, con 50 % de anticipo"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_especificaciones_medida",
+   "tipo": "d-especificaciones",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Ficha técnica",
+    "heading": "Medidas y materiales",
+    "note": "Para pedirla, mándanos por WhatsApp una foto de tu entrada por dentro y por fuera y la medida exacta de ancho, de marco a marco."
+   },
+   "bloques": [
+    {
+     "id": "spec_1",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Ancho",
+      "value": "Hasta 2.5 m, a la medida de tu entrada"
+     }
+    },
+    {
+     "id": "spec_2",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Alto",
+      "value": "60 cm"
+     }
+    },
+    {
+     "id": "spec_3",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Material",
+      "value": "Acero, forrado con una funda de neopreno 100 % impermeable"
+     }
+    },
+    {
+     "id": "spec_4",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Peso",
+      "value": "De 16 a 17 kg, según qué tan ancha sea"
+     }
+    },
+    {
+     "id": "spec_5",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Colocación",
+      "value": "En unos 10 minutos; se retira en 5"
+     }
+    },
+    {
+     "id": "spec_6",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Tiempo para hacerla",
+      "value": "Unas 3 semanas, con 50 % de anticipo"
+     }
+    },
+    {
+     "id": "spec_7",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Vida útil",
+      "value": "De 5 a 7 años, reutilizable"
+     }
+    },
+    {
+     "id": "spec_8",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Garantía",
+      "value": "30 días por defectos de fabricación"
+     }
+    },
+    {
+     "id": "spec_9",
+     "tipo": "spec",
+     "ajustes": {
+      "label": "Incluye",
+      "value": "La compuerta de acero expandible, su funda hecha a la medida, la tira de hule, una llave para los tornillos y plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_resenas_medida",
+   "tipo": "d-resenas",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Reseñas de clientes",
+    "heading": "Lo que dicen de la compuerta a la medida",
+    "text": "",
+    "product_filter": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+    "total_text": "{n} reseñas publicadas",
+    "five_text": "{n} de 5 estrellas",
+    "filter_all": "Todas",
+    "filter_photo": "Con foto",
+    "filter_five": "5 estrellas",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "page_text": "{n} de {total}",
+    "read_more_text": "Leer completa",
+    "close_text": "Cerrar"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_dudas_medida",
+   "tipo": "d-dudas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Antes de comprar",
+    "heading": "Las {n} dudas más comunes",
+    "text": "Toca una pregunta para ver la respuesta.",
+    "open_all": "Abrir todas",
+    "close_all": "Cerrar todas",
+    "other_question": "¿No está tu duda?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta hecha a la medida, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo la pido?",
+      "description": "<p>Mándanos por WhatsApp una foto de tu entrada por dentro y por fuera y la medida exacta de ancho, de marco a marco. Revisamos que se pueda instalar y te confirmamos.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuánto tarda?",
+      "description": "<p>Se fabrica bajo pedido en unas tres semanas a partir de la confirmación. Para empezarla pedimos un anticipo del 50 %; el resto se liquida cuando está lista para enviarse. Te avisamos cuando esté terminada y te la mandamos a la dirección que nos indiques.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>Una compuerta de acero expandible, su funda hecha a la medida, una tira de hule que va al contorno para el sello hermético, una llave para girar todos los tornillos y plastilina de secado rápido para las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De qué está hecha?",
+      "description": "<p>De acero, para resistir fuertes impactos de olas y altas presiones de agua. Va forrada con una funda de neopreno, un material muy resistente y 100 % impermeable.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>30 días por defectos de fabricación, por ser hecha a la medida. Su vida útil puede llegar a los 5 a 7 años.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_otros_medida",
+   "tipo": "d-otros",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "También te puede servir",
+    "heading": "Otros productos",
+    "from_text": "Desde",
+    "button_text": "Ver producto"
+   },
+   "bloques": [
+    {
+     "id": "product_1",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones",
+      "heading": "Compuerta anti-inundaciones",
+      "image": "/media/files/Frame697.jpg",
+      "alt": "Compuerta anti-inundaciones"
+     }
+    },
+    {
+     "id": "product_2",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "mini-compuerta",
+      "heading": "Mini compuerta (30 cm)",
+      "image": "/media/files/IMG1.jpg",
+      "alt": "Mini compuerta (30 cm)"
+     }
+    },
+    {
+     "id": "product_3",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "compuerta-anti-inundaciones-hecha-a-la-medida",
+      "heading": "Compuerta XXL a tu medida",
+      "image": "/media/files/2_4f413d03-91a1-40c5-b618-e2b3a9a01200.jpg",
+      "alt": "Compuerta XXL a tu medida"
+     }
+    },
+    {
+     "id": "product_4",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "tapon-inflable-anti-inundaciones",
+      "heading": "Tapón para coladera",
+      "image": "/media/products/Frame237.png",
+      "alt": "Tapón para coladera"
+     }
+    },
+    {
+     "id": "product_5",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "funda-de-repuesto-compuerta-anti-inundaciones",
+      "heading": "Funda de repuesto",
+      "image": "/media/products/6.Funda1.1_451c30d4-4312-433a-9e38-636f215c6816.png",
+      "alt": "Funda de repuesto"
+     }
+    },
+    {
+     "id": "product_6",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-tira-de-hule-de-repuesto",
+      "heading": "Tira de hule de repuesto",
+      "image": "/media/products/Tiradehule.png",
+      "alt": "Tira de hule de repuesto"
+     }
+    },
+    {
+     "id": "product_7",
+     "tipo": "product",
+     "ajustes": {
+      "producto": "accesorio-plastilina-de-secado-rapido",
+      "heading": "Plastilina de secado rápido",
+      "image": "/media/products/Accesorio3.png",
+      "alt": "Plastilina de secado rápido"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_medida",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "La temporada de lluvias no espera",
+    "text": "Protege tu entrada antes de la próxima tormenta.",
+    "button_text": "Pedir la mía",
+    "button_link": "#comprar",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, revisé la página de la compuerta a la medida y tengo una duda, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "medida",
+      "text": "Hecha a tu medida"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "reloj",
+      "text": "Se coloca en 10 minutos"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "Se guarda y se vuelve a usar"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -235,3 +235,21 @@ de WhatsApp y teléfono en el celular. Se le habla de «tú». Letra de 18 px o 
 `src/app/(versiones)/MarcoVersionC.tsx`. En el editor local: «C · Portada» y «C · Producto». Los demás productos usan
 la misma ficha con sus fotos del catálogo. Las propuestas extra (quiz, simulador, piezas, mapa, costo, temporada) están
 en `/editor/propuestas-c` y no se han puesto.
+
+
+### Todas las páginas de C1 y D1 (25-nov-2026)
+- Plantillas: `index`, `product`, `collection`, `page.contact`, `page.nosotros`, `blog`, `article` y
+  `product.<v>.mini-compuerta`, `.medida-especial`, `.tapon-inflable`, `.funda`, `.tira`, `.plastilina` (con `<v>` =
+  `c1` o `d1`). Se registran en `src/lib/contenido.ts`, `src/lib/mapa.ts`, `src/components/mapa/Superposicion.tsx`,
+  `src/payload/scripts/comun.ts` y `src/lib/versiones.ts` (`fichas` y `paginas`).
+- Marco: `MarcoVersion` elige el de B (con olas) o el de C y D (`MarcoVersionC`), que toma de la portada el
+  encabezado, el pie y la barra (`<letra>-encabezado`, `-pie`, `-barra`) si la página no los trae.
+- Piezas: las de C en `src/components/secciones/c/`, las de D en `src/components/secciones/d/` y las de las páginas
+  secundarias (título, productos, contacto, historia, premios, mensaje, blog y artículo) en
+  `src/components/secciones/cd/`, una sola pieza con dos estilos (`c-titulo` y `d-titulo`…).
+- C elige el tamaño con las **puertas dibujadas a su tamaño** (propuesta T3, elegida por el dueño; cada compuerta lleva
+  el logo `door_logo`, y el cuadro «¿Más de 120cm?…» lleva a WhatsApp) y muestra las reseñas **por tema** (propuesta R2;
+  los temas son piezas «topic» con sus palabras). Escribir la medida quedó solo para B (dueño). La Mini y la XXL no
+  tienen meses sin intereses (dueño, 25-nov-2026).
+- D elige el tamaño con el **asistente de 3 pasos** (T2) y muestra **todas las reseñas por páginas** (R3).
+- Propuestas de tamaño y reseñas para C y D: `/editor/propuestas-cd` (imágenes en `docs/version-cd/propuestas/`).

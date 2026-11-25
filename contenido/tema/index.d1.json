@@ -1,0 +1,701 @@
+{
+ "fuente": "Versión D1 (25-nov-2026): portada que te guía paso a paso, basada en cómo vende andafacil.com (docs/estudio-andafacil.md), sin el recuadro «Lo que ves es lo que pagas» ni calculadora de pagos.",
+ "secciones": [
+  {
+   "id": "d_encabezado_portada",
+   "tipo": "d-encabezado",
+   "ajustes": {
+    "logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?",
+    "whatsapp_text": "WhatsApp",
+    "whatsapp_menu_text": "Escríbenos por WhatsApp",
+    "menu_text": "Menú",
+    "close_text": "Cerrar",
+    "products_heading": "Productos",
+    "pages_heading": "Diluvium"
+   },
+   "bloques": [
+    {
+     "id": "notice_envio",
+     "tipo": "notice",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "notice_meses",
+     "tipo": "notice",
+     "ajustes": {
+      "icon": "meses",
+      "text": "Hasta 6 meses sin intereses con tarjeta de crédito"
+     }
+    },
+    {
+     "id": "notice_garantia",
+     "tipo": "notice",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "link_producto_1",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Todos los productos",
+      "url": "/collections/all-products",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_2",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Compuerta anti-inundaciones",
+      "url": "/products/compuerta-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_3",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Mini compuerta (30 cm de alto)",
+      "url": "/products/mini-compuerta",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_4",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Compuerta XXL a tu medida",
+      "url": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_5",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Tapón para coladera",
+      "url": "/products/tapon-inflable-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_6",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Funda de repuesto",
+      "url": "/products/funda-de-repuesto-compuerta-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_7",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Tira de hule de repuesto",
+      "url": "/products/accesorio-tira-de-hule-de-repuesto",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_8",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Plastilina de secado rápido",
+      "url": "/products/accesorio-plastilina-de-secado-rapido",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_pagina_1",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Inicio",
+      "url": "/",
+      "group": "principal"
+     }
+    },
+    {
+     "id": "link_pagina_2",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Productos",
+      "url": "/collections/all-products",
+      "group": "principal"
+     }
+    },
+    {
+     "id": "link_pagina_3",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Contacto",
+      "url": "/pages/contact",
+      "group": "principal"
+     }
+    },
+    {
+     "id": "link_pagina_4",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Nosotros",
+      "url": "/pages/nosotros",
+      "group": "principal"
+     }
+    },
+    {
+     "id": "link_pagina_5",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Blog",
+      "url": "/blogs/blog",
+      "group": "principal"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_portada",
+   "tipo": "d-portada",
+   "ajustes": {
+    "badge": "Salimos en Shark Tank México",
+    "heading": "Detén el agua en tu puerta en 10 minutos",
+    "rating_text": "más de 200 reseñas",
+    "text": "Compuerta anti-inundaciones de acero: se ajusta a presión en tu entrada, sin obras ni taladro. Cuando pasa la lluvia, la quitas y la guardas.",
+    "image": "/media/files/Despues_producto_b1_v2.jpg",
+    "alt": "La compuerta Diluvium puesta en la entrada de una casa",
+    "focal": "50% 75%",
+    "price_prefix": "Todos los tamaños, mismo precio",
+    "button_text": "Comprar ahora",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "help_text": "Ayúdame a elegir mi tamaño",
+    "help_link": "#asistente"
+   },
+   "bloques": [
+    {
+     "id": "chip_envio",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "chip_meses",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "meses",
+      "text": "Hasta 6 meses sin intereses"
+     }
+    },
+    {
+     "id": "chip_garantia",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "fact_agua",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "50 cm",
+      "text": "de agua detenida"
+     }
+    },
+    {
+     "id": "fact_tiempo",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "10 min",
+      "text": "para ponerla"
+     }
+    },
+    {
+     "id": "fact_vida",
+     "tipo": "fact",
+     "ajustes": {
+      "value": "5 a 7",
+      "text": "años de vida útil"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_asistente",
+   "tipo": "d-asistente",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Te ayudamos a elegir",
+    "heading": "¿Qué compuerta y qué tamaño necesitas?",
+    "text": "Contesta 2 preguntas sencillas y te decimos cuál es la tuya, con su precio.",
+    "image": "/media/files/Frame_734.jpg",
+    "alt": "Compuerta Diluvium puesta en una entrada",
+    "focal": "50% 100%",
+    "step_text": "Paso {n} de 3",
+    "question_1": "¿Qué pasa en tu casa cuando llueve fuerte?",
+    "size_question": "¿Qué tan ancha es tu entrada?",
+    "size_help": "Mídela de marco a marco, en centímetros. Toca la que corresponda.",
+    "wider_text": "Más de {hasta} cm",
+    "wider_subtext": "Te la hacemos a la medida",
+    "wider_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+    "result_heading": "¡Listo! Esta es la tuya",
+    "result_text": "Te recomendamos la",
+    "chosen_text": "Tamaño:",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado",
+    "missing_text": "Primero elige tu tamaño.",
+    "restart_text": "Volver a empezar",
+    "back_text": "Atrás",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, ¿me ayudan a medir mi entrada para elegir el tamaño de la compuerta?",
+    "whatsapp_text": "¿No sabes cómo medir? Te ayudamos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "option_inundacion",
+     "tipo": "option",
+     "ajustes": {
+      "icon": "agua",
+      "text": "Entra mucha agua a mi casa",
+      "subtext": "Compuerta estándar: detiene hasta 50 cm de agua",
+      "producto": "compuerta-anti-inundaciones"
+     }
+    },
+    {
+     "id": "option_filtracion",
+     "tipo": "option",
+     "ajustes": {
+      "icon": "gota",
+      "text": "Se mete un poco de agua o se encharca",
+      "subtext": "Mini compuerta de 30 cm de alto, para filtraciones ligeras",
+      "producto": "mini-compuerta"
+     }
+    },
+    {
+     "id": "option_coladera",
+     "tipo": "option",
+     "ajustes": {
+      "icon": "coladera",
+      "text": "El agua sale por la coladera",
+      "subtext": "Tapón inflable que se mete en la tubería",
+      "link": "/products/tapon-inflable-anti-inundaciones"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_confianza_portada",
+   "tipo": "d-confianza",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Compra con confianza",
+    "heading": "Más de 2,000 familias ya la tienen",
+    "text": "Somos una empresa mexicana: fabricamos cada compuerta en Los Mochis, Sinaloa, y te atiende una persona, no un robot.",
+    "image_shark": "/media/files/Frame_864.jpg",
+    "alt_shark": "Luis en el set de Shark Tank México",
+    "focal_shark": "50% 15%",
+    "shark_logo": "/media/files/SHARK_TANK_LOGO.png",
+    "shark_heading": "Salimos en Shark Tank México",
+    "shark_text": "En la temporada 10 presentamos nuestra compuerta frente a los tiburones. Así fue presentar una solución contra inundaciones frente a expertos.",
+    "shark_link": "https://www.youtube.com/watch?v=BZDYqZTzlzo",
+    "shark_link_text": "Ver el video en YouTube",
+    "stores_heading": "Dónde más nos encuentras",
+    "guarantee_heading": "1 año de garantía",
+    "guarantee_text": "Por defectos de fábrica: si algo falla, te ayudamos. Y si no te convence, tienes 1 año para devolverla en su estado original y sin daños."
+   },
+   "bloques": [
+    {
+     "id": "marketplace_ml",
+     "tipo": "marketplace",
+     "ajustes": {
+      "name": "Mercado Libre",
+      "image": "/media/files/idS7VeI30G_1772158270429.jpg",
+      "text": "Con reseñas de compradores reales.",
+      "link": "https://articulo.mercadolibre.com.mx/MLM-1966051269-compuerta-anti-inundaciones-defensa-proteccion-contra-agua-_JM"
+     }
+    },
+    {
+     "id": "marketplace_amazon",
+     "tipo": "marketplace",
+     "ajustes": {
+      "name": "Amazon",
+      "image": "/media/files/Amazon_icon-icons.com_66787.svg",
+      "text": "Si prefieres comprar ahí, también nos encuentras.",
+      "link": "https://a.co/d/02c3Uywk"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_resenas_portada",
+   "tipo": "d-resenas",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Reseñas de clientes",
+    "heading": "Lo que dicen quienes ya la tienen",
+    "text": "",
+    "total_text": "{n} reseñas publicadas",
+    "five_text": "{n} de 5 estrellas",
+    "filter_all": "Todas",
+    "filter_photo": "Con foto",
+    "filter_five": "5 estrellas",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "page_text": "{n} de {total}",
+    "read_more_text": "Leer completa",
+    "close_text": "Cerrar"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_dudas_portada",
+   "tipo": "d-dudas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Antes de comprar",
+    "heading": "Las {n} dudas más comunes",
+    "text": "Toca una pregunta para ver la respuesta.",
+    "open_all": "Abrir todas",
+    "close_all": "Cerrar todas",
+    "other_question": "¿No está tu duda?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
+    "whatsapp_text": "Preguntar por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me va a quedar en mi puerta?",
+      "description": "<p>Mide el ancho de tu entrada de marco a marco o de pared a pared. Si mide de {desde} a {hasta} cm hay un tamaño estándar; si es más ancha, la hacemos a la medida (hasta 2.5 m). Necesitas un marco firme de 4 cm donde la compuerta haga presión.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Hay que perforar o hacer obra?",
+      "description": "<p>No. La entrada se queda tal como está: la compuerta se ajusta a presión con su gato mecánico. Se coloca en unos 10 minutos y la puedes quitar cuando quieras o dejarla puesta por meses.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De verdad no pasa el agua? ¿Hasta qué altura?",
+      "description": "<p>Soporta hasta 50 cm de agua. Lleva una funda de neopreno impermeable y una tira de hule en todo el contorno, y trae plastilina de secado rápido para sellar cualquier filtración en las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Y si mi piso o mi marco están chuecos?",
+      "description": "<p>La tira de hule absorbe imperfecciones como pequeñas grietas y ligeros desniveles. Si el marco es muy irregular, habría que arreglarlo antes de colocar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>1 año de garantía: si quieres cambiar de tamaño o pedir un reembolso, te ayudamos. Su vida útil es de 5 a 7 años.</p>"
+     }
+    },
+    {
+     "id": "question_envio",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuándo llega y si no me convence?",
+      "description": "<p>Llega en 3 a 5 días hábiles a cualquier parte de México (puede variar en zona extendida) y el envío es gratis. Si no estás satisfecho, tienes 1 año para devolverla en su estado original y sin daños: escríbenos y te decimos cómo.</p>"
+     }
+    },
+    {
+     "id": "question_factura",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me dan factura?",
+      "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo pago?",
+      "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>"
+     }
+    },
+    {
+     "id": "question_7",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>La compuerta de acero expandible, su funda hecha a la medida, la tira de hule para el contorno, una llave para girar los tornillos de abajo y plastilina de secado rápido.</p>"
+     }
+    },
+    {
+     "id": "question_peso",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuánto pesa?",
+      "description": "<p>Las estándar pesan alrededor de 13 kg; las hechas a la medida pueden llegar a 16 o 17 kg, según qué tan anchas sean.</p>"
+     }
+    },
+    {
+     "id": "question_instalan",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Ustedes la instalan?",
+      "description": "<p>No la instalamos nosotros, pero es muy fácil: está hecha para colocarse en unos 10 minutos cuando va a llover y quitarse en 5 cuando pasa la lluvia.</p>"
+     }
+    },
+    {
+     "id": "question_varias",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "Tengo varias entradas, ¿cuántas necesito?",
+      "description": "<p>Una por cada entrada. Mide cada una, agrega cada tamaño al carrito y el envío sigue siendo gratis.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_pagos_portada",
+   "tipo": "d-pagos",
+   "ajustes": {
+    "fondo": "gris",
+    "subheading": "Formas de pago",
+    "heading": "Paga como prefieras",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito, ¿me pasan los datos?",
+    "whatsapp_text": "Pagar por transferencia o depósito",
+    "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
+   },
+   "bloques": [
+    {
+     "id": "method_tarjeta",
+     "tipo": "method",
+     "ajustes": {
+      "icon": "meses",
+      "heading": "Tarjeta de crédito o débito",
+      "text": "Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta de crédito."
+     }
+    },
+    {
+     "id": "method_paypal",
+     "tipo": "method",
+     "ajustes": {
+      "icon": "pago",
+      "heading": "PayPal",
+      "text": "Paga con tu cuenta de PayPal."
+     }
+    },
+    {
+     "id": "method_transferencia",
+     "tipo": "method",
+     "ajustes": {
+      "icon": "banco",
+      "heading": "Transferencia o depósito",
+      "text": "Escríbenos por WhatsApp y te mandamos los datos para pagar."
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_portada",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "Protege tu casa antes de la próxima lluvia",
+    "text": "Elige tu tamaño, paga como prefieras y recíbela en 3 a 5 días hábiles.",
+    "image": "/media/files/IMG_1499.jpg",
+    "alt": "Un hombre coloca la compuerta en la puerta de su casa",
+    "button_text": "Comprar ahora",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una duda antes de comprar la compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_pie_portada",
+   "tipo": "d-pie",
+   "ajustes": {
+    "logo": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México.",
+    "products_heading": "Productos",
+    "pages_heading": "Diluvium"
+   },
+   "bloques": [
+    {
+     "id": "contact_whatsapp",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "WhatsApp (668) 241 9579",
+      "link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium%2C%20%C2%BFme%20pueden%20atender%3F"
+     }
+    },
+    {
+     "id": "contact_telefono",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "Llámanos al (668) 241 9579",
+      "link": "tel:+526682419579"
+     }
+    },
+    {
+     "id": "contact_correo",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "contacto@diluvium.com.mx",
+      "link": "mailto:contacto@diluvium.com.mx"
+     }
+    },
+    {
+     "id": "link_producto_1",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Compuerta anti-inundaciones",
+      "url": "/products/compuerta-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_2",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Mini compuerta (30 cm de alto)",
+      "url": "/products/mini-compuerta",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_3",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Compuerta XXL a tu medida",
+      "url": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_4",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Tapón para coladera",
+      "url": "/products/tapon-inflable-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_5",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Funda de repuesto",
+      "url": "/products/funda-de-repuesto-compuerta-anti-inundaciones",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_6",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Tira de hule de repuesto",
+      "url": "/products/accesorio-tira-de-hule-de-repuesto",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_producto_7",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Plastilina de secado rápido",
+      "url": "/products/accesorio-plastilina-de-secado-rapido",
+      "group": "productos"
+     }
+    },
+    {
+     "id": "link_pagina_1",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Productos",
+      "url": "/collections/all-products",
+      "group": "ayuda"
+     }
+    },
+    {
+     "id": "link_pagina_2",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Contacto",
+      "url": "/pages/contact",
+      "group": "ayuda"
+     }
+    },
+    {
+     "id": "link_pagina_3",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Nosotros",
+      "url": "/pages/nosotros",
+      "group": "ayuda"
+     }
+    },
+    {
+     "id": "link_pagina_4",
+     "tipo": "link",
+     "ajustes": {
+      "text": "Blog",
+      "url": "/blogs/blog",
+      "group": "ayuda"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_barra_portada",
+   "tipo": "d-barra",
+   "ajustes": {
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?",
+    "whatsapp_text": "¿Dudas? Escríbenos"
+   },
+   "bloques": []
+  }
+ ]
+}

@@ -23,10 +23,10 @@ export type TextosFormulario = {
 const CAMPO =
   "block w-full rounded-xl border border-linea bg-white px-4 text-[17px] text-marino placeholder:text-texto-suave/70 focus:border-marino focus:outline-2 focus:outline-offset-1 focus:outline-marino";
 
-function Campo({ id, texto, children }: { id: string; texto: string; children: React.ReactNode }) {
+function Campo({ id, texto, children, clase }: { id: string; texto: string; children: React.ReactNode; clase?: string }) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block text-[15px] font-semibold">
+      <label htmlFor={id} className={clase ?? "mb-1.5 block text-[15px] font-semibold"}>
         {texto} <span aria-hidden="true" className="text-boton">*</span>
       </label>
       {children}
@@ -34,7 +34,10 @@ function Campo({ id, texto, children }: { id: string; texto: string; children: R
   );
 }
 
-export function FormularioVersion({ textos, prueba = false }: { textos: TextosFormulario; prueba?: boolean }) {
+/** «clases»: el aspecto de C y D (25-nov-2026): campos, etiquetas y botón más grandes. Sin «clases», el de B. */
+export type ClasesFormulario = { campo: string; etiqueta: string; boton: string };
+
+export function FormularioVersion({ textos, prueba = false, clases }: { textos: TextosFormulario; prueba?: boolean; clases?: ClasesFormulario }) {
   const [estado, setEstado] = useState<"" | "ok" | "error">("");
   const [mensajeError, setMensajeError] = useState("");
   const [enviando, iniciar] = useTransition();
@@ -91,16 +94,16 @@ export function FormularioVersion({ textos, prueba = false }: { textos: TextosFo
           {mensajeError}
         </p>
       )}
-      <Campo id="contacto-b-nombre" texto={textos.nombre}>
-        <input id="contacto-b-nombre" name="nombre" type="text" autoComplete="name" required className={`${CAMPO} min-h-13`} />
+      <Campo id="contacto-b-nombre" texto={textos.nombre} clase={clases?.etiqueta}>
+        <input id="contacto-b-nombre" name="nombre" type="text" autoComplete="name" required className={clases ? `${clases.campo} min-h-14` : `${CAMPO} min-h-13`} />
       </Campo>
-      <Campo id="contacto-b-correo" texto={textos.correo}>
-        <input id="contacto-b-correo" name="correo" type="email" autoComplete="email" inputMode="email" required className={`${CAMPO} min-h-13`} />
+      <Campo id="contacto-b-correo" texto={textos.correo} clase={clases?.etiqueta}>
+        <input id="contacto-b-correo" name="correo" type="email" autoComplete="email" inputMode="email" required className={clases ? `${clases.campo} min-h-14` : `${CAMPO} min-h-13`} />
       </Campo>
-      <Campo id="contacto-b-mensaje" texto={textos.mensaje}>
-        <textarea id="contacto-b-mensaje" name="mensaje" rows={5} required className={`${CAMPO} py-3`} />
+      <Campo id="contacto-b-mensaje" texto={textos.mensaje} clase={clases?.etiqueta}>
+        <textarea id="contacto-b-mensaje" name="mensaje" rows={5} required className={clases ? `${clases.campo} py-3` : `${CAMPO} py-3`} />
       </Campo>
-      <button type="submit" disabled={enviando} className={`${CLASE_BOTON} mt-1 w-full`}>
+      <button type="submit" disabled={enviando} className={clases ? `${clases.boton} mt-1 w-full sm:w-full` : `${CLASE_BOTON} mt-1 w-full`}>
         {enviando ? textos.enviando : textos.boton}
       </button>
     </form>

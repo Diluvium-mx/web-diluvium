@@ -8,7 +8,13 @@
 // Se le habla de «tú» (dueño, 25-nov-2026). Formas de pago: las mismas de B (tarjeta de crédito o débito con hasta 6
 // meses sin intereses, PayPal, y transferencia o depósito por WhatsApp); no hay pago contra entrega.
 
+import { TEXTOS_CARRITO, type TextosCarrito } from "../landing/textos";
+
 export const TINTA_C = "#06182f";
+
+/** Textos del carrito en C y D (25-nov-2026): sin «·»; los meses sin intereses son solo de las compuertas estándar
+ *  (preguntas-banco.ts: la Mini y la XXL no tienen). */
+export const TEXTOS_CARRITO_CD: TextosCarrito = { ...TEXTOS_CARRITO, nota: "IVA incluido. Hasta 6 meses sin intereses en las compuertas estándar." };
 
 /** Botón principal (comprar): naranja de la marca, grande, a todo lo ancho en el celular. */
 export const BOTON_C =
@@ -41,6 +47,45 @@ export function EstrellaC({ className = "size-5" }: { className?: string }) {
     <svg viewBox="0 0 20 20" className={className} fill="currentColor" aria-hidden="true" focusable="false">
       <path d="M10 1.5l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L10 14.8 4.7 17.7l1.2-5.9L1.4 7.7l6-.7L10 1.5z" />
     </svg>
+  );
+}
+
+/** Calificación de C (dueño, 25-nov-2026): el número primero, luego las estrellas y el texto; sin «·». */
+export function CalificacionC({ numero, texto, grande = false }: { numero: string; texto: string; grande?: boolean }) {
+  return (
+    <p className={`m-0 flex flex-wrap items-center gap-x-2.5 gap-y-1 font-semibold text-[#06182f] ${grande ? "text-[18px]" : "text-[17px]"}`}>
+      <strong className={`font-titulo leading-none ${grande ? "text-[26px]" : "text-[22px]"}`}>{numero}</strong>
+      <span className="flex text-estrella" role="img" aria-label={`${numero} de 5 estrellas`}>
+        {[0, 1, 2, 3, 4].map((i) => (
+          <EstrellaC key={i} className={grande ? "size-6" : "size-5"} />
+        ))}
+      </span>
+      <span>{texto}</span>
+    </p>
+  );
+}
+
+/** Dos o más datos cortos, cada uno con su ícono en su renglón (en lugar de separarlos con «·»). */
+export function DatosConIcono({ datos, className = "" }: { datos: { icono: "envio" | "meses" | "garantia" | "pago"; texto: string }[]; className?: string }) {
+  const TRAZOS = {
+    envio: "M3 6h11v9H3zM14 9h4l3 3v3h-7zM6.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z",
+    meses: "M3 6h18v12H3zM3 10h18M7 15h4",
+    garantia: "M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3zM8.5 12l2.5 2.5 4.5-5",
+    pago: "M6 11V8a6 6 0 0 1 12 0v3M5 11h14v10H5zM12 15v2",
+  };
+  const lista = datos.filter((d) => d.texto);
+  if (!lista.length) return null;
+  return (
+    <ul className={`m-0 grid list-none gap-2 p-0 ${className}`}>
+      {lista.map((d) => (
+        <li key={d.texto} className="flex items-center gap-2.5 text-[17px] font-semibold text-[#14632f]">
+          <svg viewBox="0 0 24 24" className="size-6 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+            <path d={TRAZOS[d.icono]} />
+          </svg>
+          {d.texto}
+        </li>
+      ))}
+    </ul>
   );
 }
 

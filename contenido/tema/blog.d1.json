@@ -1,0 +1,90 @@
+{
+ "fuente": "Versión D1: blog (25-nov-2026), con los textos y fotos de B1 y el aspecto de D.",
+ "secciones": [
+  {
+   "id": "d_titulo_blog_d1",
+   "tipo": "d-titulo",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Blog",
+    "heading": "Consejos contra las inundaciones",
+    "text": "Cómo prepararte para la temporada de lluvias, qué tener listo si hay que salir de casa y por qué cada vez se inunda más.",
+    "breadcrumb_text": "Blog"
+   },
+   "bloques": []
+  },
+  {
+   "id": "d_blog_d1",
+   "tipo": "d-blog",
+   "ajustes": {
+    "fondo": "gris",
+    "heading": "",
+    "read_more": "Leer artículo"
+   },
+   "bloques": [
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias-parte-4",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Mochila_2.png"
+     }
+    },
+    {
+     "id": "por-que-aumentan-las-inundaciones-en-nuestras-ciudades",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Sacos-Arena_3c1a0389-be85-4266-a14e-33b4826e3923.jpg"
+     }
+    },
+    {
+     "id": "como-prepararse-para-una-inundacion-en-temporada-de-lluvias",
+     "tipo": "article_card",
+     "ajustes": {
+      "image": "/media/articles/Frame_frame.png"
+     }
+    }
+   ]
+  },
+  {
+   "id": "d_cierre_blog",
+   "tipo": "d-cierre",
+   "ajustes": {
+    "heading": "Protege tu casa antes de la próxima lluvia",
+    "text": "Elige tu tamaño, paga como prefieras y recíbela en 3 a 5 días hábiles.",
+    "image": "/media/files/IMG_1499.jpg",
+    "alt": "Un hombre coloca la compuerta en la puerta de su casa",
+    "button_text": "Comprar ahora",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una duda antes de comprar la compuerta, ¿me pueden ayudar?",
+    "whatsapp_text": "Pregúntanos por WhatsApp"
+   },
+   "bloques": [
+    {
+     "id": "chip_1",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "envio",
+      "text": "Envío gratis a todo México"
+     }
+    },
+    {
+     "id": "chip_2",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "garantia",
+      "text": "1 año de garantía"
+     }
+    },
+    {
+     "id": "chip_3",
+     "tipo": "chip",
+     "ajustes": {
+      "icon": "pago",
+      "text": "Pago seguro"
+     }
+    }
+   ]
+  }
+ ]
+}

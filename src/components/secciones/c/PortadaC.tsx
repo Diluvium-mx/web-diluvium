@@ -10,7 +10,7 @@ import { estiloFoto, marcaEditar } from "@/lib/mapa";
 import { calificacion, conMensaje, datosVenta, pesos, textoVersion, tx } from "../landing/datos";
 import { formato } from "../landing/formato";
 import { IconoWhatsapp } from "../landing/piezas";
-import { BOTON_C, BOTON_WHATSAPP_C, EstrellaC, Etiqueta, PalomitaC } from "./comun";
+import { BOTON_C, BOTON_WHATSAPP_C, CalificacionC, DatosConIcono, Etiqueta, PalomitaC } from "./comun";
 
 export function PortadaC({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
@@ -26,14 +26,9 @@ export function PortadaC({ seccion }: PropsSeccion) {
           <h1 id="titulo-portada-c" className="titulo-version m-0 mt-2 text-[36px] leading-[1.1] text-[#06182f] md:text-[54px]">
             {formato(textoVersion(a, "heading"))}
           </h1>
-          <p className="m-0 mt-3 flex flex-wrap items-center gap-2 text-[17px] font-semibold text-[#06182f]">
-            <span className="flex text-estrella">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <EstrellaC key={i} />
-              ))}
-            </span>
-            {calificacion()} de 5 · {tx(a, "rating_text", "más de 200 reseñas")}
-          </p>
+          <div className="mt-3">
+            <CalificacionC numero={calificacion()} texto={tx(a, "rating_text", "más de 200 reseñas")} />
+          </div>
           {texto(a, "text") && <p className="m-0 mt-3 text-[19px] leading-[1.55]">{formato(textoVersion(a, "text"))}</p>}
         </div>
         {foto && (
@@ -49,7 +44,13 @@ export function PortadaC({ seccion }: PropsSeccion) {
                 {pesos(venta.precio)}
                 {venta.precioAntes && <s className="text-[20px] font-normal text-[#45566a]">{pesos(venta.precioAntes)}</s>}
               </p>
-              <p className="m-0 mt-2 text-[17px] font-semibold text-[#1a7f37]">{tx(a, "price_note", "Envío gratis a todo México · hasta 6 meses sin intereses")}</p>
+              <DatosConIcono
+                className="mt-3"
+                datos={[
+                  { icono: "envio", texto: tx(a, "shipping_text", "Envío gratis a todo México") },
+                  { icono: "meses", texto: tx(a, "months_text", "Hasta 6 meses sin intereses") },
+                ]}
+              />
             </div>
           )}
           {puntos.length > 0 && (
@@ -67,7 +68,7 @@ export function PortadaC({ seccion }: PropsSeccion) {
               {tx(a, "button_text", "Ver tamaños y precios")}
             </a>
             {whatsapp && (
-              <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, vi su página y quiero información sobre la compuerta."))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={BOTON_WHATSAPP_C}>
+              <a href={conMensaje(whatsapp, tx(a, "whatsapp_message", "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?"))} target="_blank" rel="noopener noreferrer" data-evento="toca_whatsapp" className={BOTON_WHATSAPP_C}>
                 <IconoWhatsapp className="size-6" />
                 {tx(a, "whatsapp_text", "Pregúntanos por WhatsApp")}
               </a>

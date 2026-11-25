@@ -6,7 +6,7 @@
    "tipo": "c-encabezado",
    "ajustes": {
     "logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20compuerta.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20vi%20su%20p%C3%A1gina%2C%20%C2%BFme%20pueden%20dar%20informaci%C3%B3n%20sobre%20la%20compuerta%20anti-inundaciones%3F",
     "phone_link": "tel:+526682419579",
     "phone_text": "Llámanos al (668) 241 9579",
     "menu_text": "Menú"
@@ -24,11 +24,12 @@
     "image": "/media/files/IMG_2103.jpg",
     "alt": "La compuerta Diluvium deteniendo el agua en la entrada de una casa",
     "price_prefix": "Cualquier tamaño, desde",
-    "price_note": "Envío gratis a todo México · hasta 6 meses sin intereses",
+    "shipping_text": "Envío gratis a todo México",
+    "months_text": "Hasta 6 meses sin intereses",
     "button_text": "Ver tamaños y precios",
     "button_link": "#tamanos",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, vi su página y quiero información sobre la compuerta.",
+    "whatsapp_message": "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?",
     "whatsapp_text": "Pregúntanos por WhatsApp"
    },
    "bloques": [
@@ -165,21 +166,23 @@
     "text": "Todos los tamaños cuestan {precio} y el envío es gratis.",
     "image": "/media/files/Frame_734.jpg",
     "alt": "Compuerta Diluvium puesta en una entrada",
-    "size_question": "¿Cuánto mide tu entrada?",
-    "size_help": "Mide el ancho de marco a marco, en centímetros.",
-    "size_result": "Te queda la",
-    "size_list": "Elige tu tamaño",
+    "size_question": "¿Cuál se parece a tu entrada?",
+    "size_help": "Cada puerta está dibujada a su tamaño real. Mide de marco a marco.",
+    "chosen_text": "Elegida",
+    "size_result": "Elegiste la",
+    "size_list": "Primero elige tu tamaño",
     "add_button": "Añadir al carrito",
     "sold_out": "Agotado",
-    "wider_text": "Tu entrada mide más de 120 cm.",
-    "wider_link_text": "Mira la compuerta XXL a tu medida",
-    "wider_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
-    "narrower_text": "Tu entrada es más angosta que el tamaño más chico.",
-    "narrower_link_text": "Escríbenos y te decimos qué hacer",
-    "narrower_message": "Hola, mi entrada es más angosta que el tamaño más chico. ¿Qué opción tengo?",
+    "wider_text": "¿Más de 120cm? Cuéntanos más sobre el ancho de tu acceso por WhatsApp.",
+    "narrower_text": "¿Tu entrada mide menos de {desde} cm?",
+    "narrower_link_text": "Escríbenos por WhatsApp",
+    "narrower_message": "Hola, mi entrada mide menos de 69 cm, ¿qué compuerta me recomiendan?",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "measure_message": "Hola, no sé cómo medir mi entrada. ¿Me ayudan?",
-    "measure_text": "¿No sabes cómo medir? Te ayudamos por WhatsApp"
+    "measure_message": "Hola, ¿me ayudan a medir mi entrada para elegir el tamaño de la compuerta?",
+    "measure_text": "¿No sabes cómo medir? Te ayudamos por WhatsApp",
+    "focal": "50% 100%",
+    "wider_message": "Hola, mi entrada mide más de 120 cm, ¿qué compuerta me recomiendan?",
+    "door_logo": "/media/files/logo-compuerta-blanco.png"
    },
    "bloques": []
   },
@@ -190,11 +193,63 @@
     "fondo": "claro",
     "subheading": "Reseñas de clientes",
     "heading": "Lo que dicen quienes ya la usan",
-    "rating_text": "de 5, con más de 200 reseñas publicadas",
-    "more_button": "Ver 3 reseñas más",
+    "rating_text": "{total} reseñas publicadas",
+    "topics_text": "Lo que más dicen:",
+    "all_text": "Todas",
+    "more_button": "Ver 10 reseñas más",
+    "left_text": "faltan {n}",
     "read_more_text": "Leer completa"
    },
-   "bloques": []
+   "bloques": [
+    {
+     "id": "tema_1",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Fácil de poner",
+      "words": "facil, sencill, se pone, se coloca, se instala, instalacion, instalar"
+     }
+    },
+    {
+     "id": "tema_2",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Buena calidad",
+      "words": "calidad, resistente, solid, firme, reforzad, fuerte, durader"
+     }
+    },
+    {
+     "id": "tema_3",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Llegó rápido",
+      "words": "llego, envio, entrega, rapido"
+     }
+    },
+    {
+     "id": "tema_4",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Tranquilidad",
+      "words": "tranquil, paz, duerm, dormir, preocup"
+     }
+    },
+    {
+     "id": "tema_5",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "No pasa el agua",
+      "words": "no paso, no entro, no se metio, no entra, no pasa, ni una gota, sellad, sella, funciona, detiene, aguant"
+     }
+    },
+    {
+     "id": "tema_6",
+     "tipo": "topic",
+     "ajustes": {
+      "text": "Buen servicio",
+      "words": "atencion, servicio, atendi, whatsapp, asesor, respond"
+     }
+    }
+   ]
   },
   {
    "id": "c_ayuda_portada",
@@ -207,7 +262,7 @@
     "heading": "Te atiende una persona, no un robot",
     "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium.",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium, ¿me pueden atender?",
     "whatsapp_text": "Escríbenos por WhatsApp",
     "phone_link": "tel:+526682419579",
     "phone_text": "Llámanos al (668) 241 9579"
@@ -222,7 +277,7 @@
     "subheading": "Formas de pago",
     "heading": "Paga como prefieras",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito.",
+    "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito, ¿me pasan los datos?",
     "whatsapp_text": "Pagar por transferencia o depósito",
     "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
    },
@@ -263,7 +318,7 @@
     "other_question": "¿Tienes otra pregunta?",
     "other_text": "Escríbenos: te contesta una persona del equipo.",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta: ",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta que no encontré en su página, ¿me pueden ayudar?",
     "whatsapp_text": "Preguntar por WhatsApp"
    },
    "bloques": [
@@ -349,7 +404,7 @@
     "text": "Envío gratis a todo México, pago seguro y 1 año de garantía.",
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
-    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta%2C%20%C2%BFme%20pueden%20ayudar%3F",
     "whatsapp_text": "Pregúntanos por WhatsApp",
     "seal_text": "1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • "
    },
@@ -368,7 +423,7 @@
      "tipo": "contact",
      "ajustes": {
       "text": "WhatsApp (668) 241 9579",
-      "link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium."
+      "link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium%2C%20%C2%BFme%20pueden%20atender%3F"
      }
     },
     {
@@ -394,7 +449,7 @@
    "tipo": "c-barra",
    "ajustes": {
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, vi su página y quiero información sobre la compuerta.",
+    "whatsapp_message": "Hola, vi su página, ¿me pueden dar información sobre la compuerta anti-inundaciones?",
     "whatsapp_text": "WhatsApp",
     "phone_link": "tel:+526682419579",
     "phone_text": "Llamar"

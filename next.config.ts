@@ -26,6 +26,17 @@ const nextConfig: NextConfig = {
   },
   // Dos diseños raíz (tienda y administrador): la página 404 general va en app/global-not-found.tsx.
   experimental: { globalNotFound: true },
+  // Direcciones rotas que todavía reciben visitas según Google Analytics (plan de SEO, 25-nov-2026): un enlace mal
+  // copiado (Y29tcHVlcn), la dirección de la compuerta con un carácter invisible al final (U+FFFC) y un producto que ya
+  // no está en el catálogo. Redirección permanente (301) para no perder esas visitas ni lo que Google ya conoce.
+  async redirects() {
+    return [
+      { source: "/products/Y29tcHVlcn", destination: "/products/compuerta-anti-inundaciones", permanent: true },
+      { source: "/products/compuerta-anti-inundaciones%EF%BF%BC", destination: "/products/compuerta-anti-inundaciones", permanent: true },
+      { source: "/products/compuerta-anti-inundaciones\uFFFC", destination: "/products/compuerta-anti-inundaciones", permanent: true },
+      { source: "/products/accesorio-llave-de-matraca", destination: "/collections/all-products", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: SECURITY_HEADERS },
