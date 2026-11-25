@@ -63,8 +63,8 @@ export function AsistenteDCliente({ opciones, textos, enlaceMasAncha }: { opcion
           {opciones.map((o) => {
             const dentro = (
               <>
-                <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#fff4d1] text-[#7a5200]">
-                  <IconoD nombre={o.icono} className="size-7" />
+                <span className="flex size-14 shrink-0 items-center justify-center rounded-xl bg-[#fff4d1] text-[#0b2545]">
+                  <IconoD nombre={o.icono} className="size-9" />
                 </span>
                 <span className="flex-1">
                   <span className="block text-[19px] leading-snug font-bold">{o.texto}</span>

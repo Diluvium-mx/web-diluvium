@@ -1,5 +1,5 @@
-// Sección «d-resenas»: todas las reseñas publicadas (de 2 estrellas para arriba, como en B), por páginas y con
-// filtros (ResenasDCliente). Con «product_filter» (p. ej. la XXL), solo las de ese producto, y el número de arriba es
+// Sección «d-resenas»: todas las reseñas publicadas (de 2 estrellas para arriba, como en B), en un mazo de páginas
+// que se desliza y da la vuelta (ResenasDCliente). Con «product_filter» (p. ej. la XXL), solo las de ese producto, y el número de arriba es
 // el de esas reseñas; sin filtro, el de la tienda.
 
 import resenas from "@contenido/resenas.json";
@@ -34,14 +34,9 @@ export function ResenasD({ seccion }: PropsSeccion) {
             numero={numero}
             textos={{
               total: tx(a, "total_text", "{n} reseñas publicadas"),
-              cinco: tx(a, "five_text", "{n} de 5 estrellas"),
-              todas: tx(a, "filter_all", "Todas"),
-              conFoto: tx(a, "filter_photo", "Con foto"),
-              cincoFiltro: tx(a, "filter_five", "5 estrellas"),
-              anterior: tx(a, "prev_button", "Anterior"),
-              siguiente: tx(a, "next_button", "Siguiente"),
-              pagina: tx(a, "page_text", "{n} de {total}"),
-              leer: tx(a, "read_more_text", "Leer completa"),
+              anterior: tx(a, "prev_button", "Página anterior"),
+              siguiente: tx(a, "next_button", "Página siguiente"),
+              pagina: tx(a, "page_text", "Página {n} de {total}"),
               cerrar: tx(a, "close_text", "Cerrar"),
             }}
           />

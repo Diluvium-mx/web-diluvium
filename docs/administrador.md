@@ -251,5 +251,14 @@ en `/editor/propuestas-c` y no se han puesto.
   el logo `door_logo`, y el cuadro «¿Más de 120cm?…» lleva a WhatsApp) y muestra las reseñas **por tema** (propuesta R2;
   los temas son piezas «topic» con sus palabras). Escribir la medida quedó solo para B (dueño). La Mini y la XXL no
   tienen meses sin intereses (dueño, 25-nov-2026).
-- D elige el tamaño con el **asistente de 3 pasos** (T2) y muestra **todas las reseñas por páginas** (R3).
+- D elige el tamaño con el **asistente de 3 pasos** (T2). Las reseñas (dueño, 25-nov-2026: propuesta S1 con el
+  efecto E3) van en un **mazo de páginas**: arriba solo la barra del 4.9 (sin filtros), 6 por página, primero las que
+  traen foto (en la computadora 9 por página, en 3 columnas por 3 filas); la página de arriba se va con el dedo, el mouse, dos dedos de lado en
+  el trackpad o las flechas, y las demás asoman detrás, a los lados y al fondo; da la vuelta, la página nunca salta y abajo dice «Página 3 de 40» con su barra de avance. Los otros efectos
+  (E1 a los lados, E2 en 3D) siguen en `/editor/propuestas-d` (imágenes en `docs/version-d/propuestas/`).
+- Dudas de D sin botón «Abrir todas» (dueño): la flecha de la primera pregunta se mueve hasta que abren alguna.
+- Portada de D: la etiqueta de arriba puede ser enlace con logo a un lado (`badge_link` y `badge_logo`); hoy lleva a
+  Shark Tank en Nosotros (`/pages/nosotros#award-shark`; cada premio tiene su ancla con su nombre).
+- En C y D no se usa «sin obras ni taladro» (dueño): textos cortos y directos como en B, p. ej. «sin modificaciones
+  costosas» o «se ajusta a presión».
 - Propuestas de tamaño y reseñas para C y D: `/editor/propuestas-cd` (imágenes en `docs/version-cd/propuestas/`).

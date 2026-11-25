@@ -20,7 +20,7 @@
     "subheading": "Compuerta anti-inundaciones Diluvium",
     "heading": "Que el agua de la lluvia no entre a tu casa",
     "rating_text": "más de 200 reseñas",
-    "text": "La pones en tu puerta en 10 minutos, sin obras ni taladro. Cuando pasa la lluvia, la quitas y la guardas.",
+    "text": "La pones en tu puerta en 10 minutos y se ajusta a presión, sin modificaciones costosas. Cuando pasa la lluvia, la quitas y la guardas.",
     "image": "/media/files/IMG_2103.jpg",
     "alt": "La compuerta Diluvium deteniendo el agua en la entrada de una casa",
     "price_prefix": "Cualquier tamaño, desde",
@@ -44,7 +44,7 @@
      "id": "point_2",
      "tipo": "point",
      "ajustes": {
-      "text": "Se pone en 10 minutos, sin obras"
+      "text": "Se ajusta a presión en 10 minutos"
      }
     },
     {
@@ -131,7 +131,7 @@
       "image": "/media/files/IMG_1499.jpg",
       "alt": "Un hombre coloca la compuerta en una puerta",
       "heading": "La pones en 10 minutos",
-      "text": "Giras el gato y se ajusta a presión contra tu marco. Sin taladro ni obras."
+      "text": "Giras el gato y se ajusta a presión contra tu marco. Tu entrada queda tal como está."
      }
     },
     {

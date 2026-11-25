@@ -14,7 +14,7 @@ import { SITIO } from "@/lib/seo";
 export const dynamic = "force-static";
 
 const PRODUCTOS: { nombre: string; para: string }[] = [
-  { nombre: "compuerta-anti-inundaciones", para: "Para puertas de casa o negocio de 69 a 120 cm de ancho. Detiene hasta 50 cm de agua, se pone en 10 minutos sin herramientas ni obras y se guarda cuando pasa la lluvia." },
+  { nombre: "compuerta-anti-inundaciones", para: "Para puertas de casa o negocio de 69 a 120 cm de ancho. Detiene hasta 50 cm de agua, se ajusta a presión en 10 minutos sin modificaciones costosas a la entrada y se guarda cuando pasa la lluvia." },
   { nombre: "compuerta-anti-inundaciones-hecha-a-la-medida", para: "Para entradas de más de 120 cm de ancho: se fabrica a la medida, hasta 2.5 m de ancho y 60 cm de alto. Se pide por WhatsApp con foto y medida de la entrada." },
   { nombre: "mini-compuerta", para: "Compuerta de 30 cm de alto para encharcamientos y filtraciones ligeras, en entradas de 62 a 124 cm." },
   { nombre: "tapon-inflable-anti-inundaciones", para: "Tapón de goma que se infla dentro de la tubería para que el drenaje no regrese el agua por coladeras de regaderas o inodoros." },
@@ -38,7 +38,7 @@ function texto(): string {
   const preguntas = BANCO_EXTRA.map((e) => `### ${e.pregunta}\n${rellenar(e.respuesta).replace("{precio_medida}", precioMedida)}`).join("\n\n");
   return `# Diluvium: compuertas anti-inundaciones para puertas (México)
 
-> Diluvium fabrica en Los Mochis, Sinaloa, compuertas anti-inundaciones que se ponen en la puerta de una casa o negocio para que no entre el agua de la lluvia: detienen hasta 50 cm de agua, se colocan en 10 minutos sin obras ni taladro (se ajustan a presión contra el marco) y se guardan cuando pasa la lluvia. Envío gratis a todo México. Calificación de los clientes: ${redondear(tienda.promedio, 1)} de 5 con ${tienda.total} reseñas publicadas.
+> Diluvium fabrica en Los Mochis, Sinaloa, compuertas anti-inundaciones que se ponen en la puerta de una casa o negocio para que no entre el agua de la lluvia: detienen hasta 50 cm de agua, se colocan en 10 minutos y se ajustan a presión contra el marco, sin modificaciones costosas a la entrada, y se guardan cuando pasa la lluvia. Envío gratis a todo México. Calificación de los clientes: ${redondear(tienda.promedio, 1)} de 5 con ${tienda.total} reseñas publicadas.
 
 ## Productos y precios (MXN, IVA incluido)
 ${PRODUCTOS.map(lineaProducto).filter(Boolean).join("\n")}

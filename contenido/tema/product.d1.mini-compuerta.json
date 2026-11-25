@@ -228,7 +228,7 @@
      "tipo": "spec",
      "ajustes": {
       "label": "Marco que necesita",
-      "value": "De 4 cm, sin perforar ni modificar la entrada"
+      "value": "De 4 cm; tu entrada queda tal como está"
      }
     },
     {
@@ -273,8 +273,6 @@
     "subheading": "Antes de comprar",
     "heading": "Las {n} dudas más comunes",
     "text": "Toca una pregunta para ver la respuesta.",
-    "open_all": "Abrir todas",
-    "close_all": "Cerrar todas",
     "other_question": "¿No está tu duda?",
     "other_text": "Escríbenos: te contesta una persona del equipo.",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
@@ -441,7 +439,7 @@
      "tipo": "chip",
      "ajustes": {
       "icon": "reloj",
-      "text": "Lista en 10 minutos, sin obras"
+      "text": "Lista en 10 minutos, a presión"
      }
     },
     {

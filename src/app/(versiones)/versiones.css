@@ -176,3 +176,14 @@ html:has(.version dialog[open]) { overflow: hidden; }
 .articulo-d a { text-decoration-color: #ffc83d; text-decoration-thickness: 3px; }
 /* Descripción del producto en C y D (repuestos y accesorios): letra grande. */
 .descripcion-grande { font-size: 18px; color: #1f2d3d; }
+
+/* Dudas de D (25-nov-2026): la flecha de la primera pregunta baja y sube (apunta a donde sale la respuesta) para que se
+   note que se abre; deja de moverse en cuanto la persona abre cualquier pregunta. */
+@keyframes duda-asoma {
+  0%, 55%, 100% { transform: translateY(0); }
+  25% { transform: translateY(5px); }
+  40% { transform: translateY(1px); }
+}
+.dudas-d .flecha-duda { animation: duda-asoma 1.8s ease-in-out infinite; }
+.dudas-d:has(details[open]) .flecha-duda { animation: none; }
+@media (prefers-reduced-motion: reduce) { .dudas-d .flecha-duda { animation: none; } }

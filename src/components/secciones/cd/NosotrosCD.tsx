@@ -2,7 +2,8 @@
 //   «c-historia» / «d-historia»: la historia por capítulos (piezas «chapter»: línea chica, título, texto con **negritas**,
 //     foto o «video automático» y enlace opcional). C: foto arriba y texto grande, alternando lados en computadora.
 //     D: línea de tiempo con un punto amarillo por capítulo.
-//   «c-premios» / «d-premios»: reconocimientos (piezas «award»: foto, título y de quién es). C: renglones con la foto a
+//   «c-premios» / «d-premios»: reconocimientos (piezas «award»: foto, título y de quién es; cada uno con su ancla,
+//   p. ej. #award-shark, a donde lleva la etiqueta de Shark Tank de la portada de D). C: renglones con la foto a
 //     la izquierda. D: tarjetas con borde.
 //   «c-cita» / «d-cita»: un mensaje grande con firma. C: tarjeta azul muy clara. D: banda azul marino con comillas
 //     amarillas.
@@ -112,7 +113,7 @@ export function PremiosCD({ seccion, estilo }: PropsSeccion & { estilo: Estilo }
             const ba = b.ajustes;
             const foto = texto(ba, "image");
             return (
-              <li key={b.id} data-pieza={b.id} className={`overflow-hidden ${d ? e.tarjeta : `${e.tarjeta} flex items-center gap-4 p-4`}`}>
+              <li key={b.id} id={b.id.replace(/_/g, "-")} data-pieza={b.id} className={`scroll-mt-28 overflow-hidden ${d ? e.tarjeta : `${e.tarjeta} flex items-center gap-4 p-4`}`}>
                 {foto && (
                   <div className={`relative shrink-0 overflow-hidden bg-[#f3f8fd] ${d ? "aspect-[4/3]" : "size-28 rounded-2xl"}`}>
                     <Image src={foto} alt={texto(ba, "alt")} fill sizes={d ? "(min-width: 1024px) 400px, (min-width: 640px) 50vw, calc(100vw - 32px)" : "112px"} style={estiloFoto(ba)} {...marcaEditar(seccion.id, b.id, "image")} className="object-cover" />

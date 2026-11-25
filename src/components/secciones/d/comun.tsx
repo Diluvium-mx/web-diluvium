@@ -9,6 +9,8 @@
 // de la marca para comprar y el verde para WhatsApp. Nunca el carácter «·»: si se dicen dos cosas, cada una en su
 // renglón con su ícono.
 
+import type { ReactNode } from "react";
+
 export const MARINO_D = "#0b2545";
 
 /** Botón para comprar: naranja de la marca, grande, a todo lo ancho en el celular. */
@@ -96,12 +98,83 @@ const TRAZOS: Record<string, string> = {
   palomita: "M5 12.5l4.5 4.5L19 7.5",
 };
 
-/** Ícono de línea de D por su nombre (envio, meses, garantia, pago, reloj, agua, gota, coladera, ancho, herramienta,
- *  casa, medida, devolucion, factura, banco o palomita). */
+/** Relleno suave para los íconos de dos tonos (la forma llena en el mismo color, más clara). */
+const SUAVE = { fill: "currentColor", fillOpacity: 0.24 } as const;
+const OLA = "M2 16c1.25 0 1.25-1 2.5-1s1.25 1 2.5 1 1.25-1 2.5-1 1.25 1 2.5 1 1.25-1 2.5-1 1.25 1 2.5 1 1.25-1 2.5-1 1.25 1 2.5 1";
+
+/** Íconos dibujados de dos tonos (dueño, 25-nov-2026: los de línea se veían feos en la franja de avisos y el asistente):
+ *  cada uno dice algo concreto (el camión con sus llantas, el calendario con el 6, la casa con el agua adentro, la
+ *  puerta con el charco, la coladera con el agua que sube). */
+const DIBUJOS: Record<string, ReactNode> = {
+  envio: (
+    <>
+      <path d="M2.5 7.2c0-.94.76-1.7 1.7-1.7h8.6c.94 0 1.7.76 1.7 1.7V16h-12z" {...SUAVE} />
+      <path d="M14.5 9h3.3c.5 0 .97.24 1.27.64l2 2.7c.2.27.33.6.33.95V16h-7.3" />
+      <path d="M16.7 9v3.5h4.4" />
+      <circle cx="6.8" cy="17.3" r="2.2" fill="currentColor" stroke="none" />
+      <circle cx="17.3" cy="17.3" r="2.2" fill="currentColor" stroke="none" />
+    </>
+  ),
+  meses: (
+    <>
+      <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5V10H3z" {...SUAVE} stroke="none" />
+      <rect x="3" y="5" width="18" height="16" rx="2.5" />
+      <path d="M3 10h18M8 3v4M16 3v4" />
+      <text x="12" y="18.7" textAnchor="middle" fontSize="8.5" fontWeight="800" fill="currentColor" stroke="none">
+        6
+      </text>
+    </>
+  ),
+  garantia: (
+    <>
+      <path d="M12 2.8l7.5 3v5.6c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.8z" {...SUAVE} />
+      <path d="M8.3 12.2l2.6 2.6 4.9-5.2" strokeWidth="2.4" />
+    </>
+  ),
+  pago: (
+    <>
+      <rect x="4.5" y="10.5" width="15" height="10.5" rx="2.2" {...SUAVE} />
+      <path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7M12 15.2v2.3" />
+      <circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none" />
+    </>
+  ),
+  reloj: (
+    <>
+      <circle cx="12" cy="12" r="9" {...SUAVE} />
+      <path d="M12 7v5l3.2 2" strokeWidth="2.3" />
+    </>
+  ),
+  agua: (
+    <>
+      <path d="M3.5 11L12 4l8.5 7M5.5 9.5V20h13V9.5M10 20v-5h4v5" />
+      <path d={`${OLA}V21H2z`} {...SUAVE} fillOpacity={0.4} stroke="none" />
+      <path d={OLA} />
+    </>
+  ),
+  gota: (
+    <>
+      <path d="M7.5 19V4.6c0-.6.5-1.1 1.1-1.1h7.8c.6 0 1.1.5 1.1 1.1V19M2.5 19h19" />
+      <circle cx="14.5" cy="11.5" r="1" fill="currentColor" stroke="none" />
+      <ellipse cx="12" cy="20.6" rx="6.5" ry="1.5" {...SUAVE} fillOpacity={0.45} stroke="none" />
+      <path d="M4 8s2.2 2.4 2.2 3.8a2.2 2.2 0 0 1-4.4 0C1.8 10.4 4 8 4 8z" {...SUAVE} strokeWidth="1.6" />
+    </>
+  ),
+  coladera: (
+    <>
+      <ellipse cx="12" cy="17.5" rx="8.5" ry="3.5" {...SUAVE} />
+      <path d="M8 16.3h8M6.6 17.6h10.8M8 18.9h8" strokeWidth="1.4" />
+      <path d="M12 12.5V3.8M8.8 7l3.2-3.2L15.2 7" strokeWidth="2.2" />
+      <path d="M5.5 9.5s1.5 1.6 1.5 2.6a1.5 1.5 0 0 1-3 0c0-1 1.5-2.6 1.5-2.6zM18.5 9.5s1.5 1.6 1.5 2.6a1.5 1.5 0 0 1-3 0c0-1 1.5-2.6 1.5-2.6z" {...SUAVE} strokeWidth="1.5" />
+    </>
+  ),
+};
+
+/** Ícono de D por su nombre: los dibujados de dos tonos (envio, meses, garantia, pago, reloj, agua, gota, coladera) o
+ *  los de línea (ancho, herramienta, casa, medida, devolucion, factura, banco o palomita). */
 export function IconoD({ nombre, className = "size-6" }: { nombre: string; className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={`${className} shrink-0`} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-      <path d={TRAZOS[nombre] ?? TRAZOS.palomita} />
+      {DIBUJOS[nombre] ?? <path d={TRAZOS[nombre] ?? TRAZOS.palomita} />}
     </svg>
   );
 }

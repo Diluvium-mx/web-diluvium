@@ -5066,8 +5066,6 @@ export interface Plantilla {
             subheading?: string | null;
             heading?: string | null;
             text?: string | null;
-            open_all?: string | null;
-            close_all?: string | null;
             other_question?: string | null;
             other_text?: string | null;
             whatsapp_link?: string | null;
@@ -5507,6 +5505,8 @@ export interface Plantilla {
               | boolean
               | null;
             badge?: string | null;
+            badge_link?: string | null;
+            badge_logo?: (number | null) | Medio;
             heading?: string | null;
             rating_text?: string | null;
             text?: string | null;
@@ -5659,14 +5659,9 @@ export interface Plantilla {
             heading?: string | null;
             text?: string | null;
             total_text?: string | null;
-            five_text?: string | null;
-            filter_all?: string | null;
-            filter_photo?: string | null;
-            filter_five?: string | null;
             prev_button?: string | null;
             next_button?: string | null;
             page_text?: string | null;
-            read_more_text?: string | null;
             close_text?: string | null;
             product_filter?: string | null;
             id?: string | null;
@@ -9309,8 +9304,6 @@ export interface PlantillasSelect<T extends boolean = true> {
               subheading?: T;
               heading?: T;
               text?: T;
-              open_all?: T;
-              close_all?: T;
               other_question?: T;
               other_text?: T;
               whatsapp_link?: T;
@@ -9610,6 +9603,8 @@ export interface PlantillasSelect<T extends boolean = true> {
               idTema?: T;
               claves?: T;
               badge?: T;
+              badge_link?: T;
+              badge_logo?: T;
               heading?: T;
               rating_text?: T;
               text?: T;
@@ -9717,14 +9712,9 @@ export interface PlantillasSelect<T extends boolean = true> {
               heading?: T;
               text?: T;
               total_text?: T;
-              five_text?: T;
-              filter_all?: T;
-              filter_photo?: T;
-              filter_five?: T;
               prev_button?: T;
               next_button?: T;
               page_text?: T;
-              read_more_text?: T;
               close_text?: T;
               product_filter?: T;
               id?: T;

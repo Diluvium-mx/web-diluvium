@@ -6868,7 +6868,7 @@
     },
     {
      "clave": "whatsapp_message",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
      "diseno": false
     },
@@ -6898,7 +6898,7 @@
     },
     {
      "clave": "wider_message",
-     "tipo": "textoLargo",
+     "tipo": "texto",
      "etiqueta": "Mensaje de WhatsApp si la entrada es más ancha",
      "diseno": false
     },
@@ -7256,7 +7256,7 @@
     },
     {
      "clave": "whatsapp_message",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
      "diseno": false
     },
@@ -8350,7 +8350,7 @@
       },
       {
        "clave": "text",
-       "tipo": "texto",
+       "tipo": "textoLargo",
        "etiqueta": "Texto",
        "diseno": false
       }
@@ -9256,18 +9256,6 @@
      "diseno": false
     },
     {
-     "clave": "open_all",
-     "tipo": "texto",
-     "etiqueta": "Botón «Abrir todas»",
-     "diseno": false
-    },
-    {
-     "clave": "close_all",
-     "tipo": "texto",
-     "etiqueta": "Botón «Cerrar todas»",
-     "diseno": false
-    },
-    {
      "clave": "other_question",
      "tipo": "texto",
      "etiqueta": "¿No está tu duda?: título",
@@ -9287,7 +9275,7 @@
     },
     {
      "clave": "whatsapp_message",
-     "tipo": "texto",
+     "tipo": "textoLargo",
      "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
      "diseno": false
     },
@@ -10046,6 +10034,18 @@
      "diseno": false
     },
     {
+     "clave": "badge_link",
+     "tipo": "texto",
+     "etiqueta": "Etiqueta: enlace (a dónde lleva al tocarla)",
+     "diseno": false
+    },
+    {
+     "clave": "badge_logo",
+     "tipo": "imagen",
+     "etiqueta": "Etiqueta: logo a un lado",
+     "diseno": false
+    },
+    {
      "clave": "heading",
      "tipo": "texto",
      "etiqueta": "Título",
@@ -10297,7 +10297,7 @@
       },
       {
        "clave": "text",
-       "tipo": "texto",
+       "tipo": "textoLargo",
        "etiqueta": "Texto",
        "diseno": false
       }
@@ -10342,30 +10342,6 @@
      "diseno": false
     },
     {
-     "clave": "five_text",
-     "tipo": "texto",
-     "etiqueta": "Reseñas: cuántas de 5 estrellas ({n})",
-     "diseno": false
-    },
-    {
-     "clave": "filter_all",
-     "tipo": "texto",
-     "etiqueta": "Reseñas: filtro «Todas»",
-     "diseno": false
-    },
-    {
-     "clave": "filter_photo",
-     "tipo": "texto",
-     "etiqueta": "Reseñas: filtro «Con foto»",
-     "diseno": false
-    },
-    {
-     "clave": "filter_five",
-     "tipo": "texto",
-     "etiqueta": "Reseñas: filtro «5 estrellas»",
-     "diseno": false
-    },
-    {
      "clave": "prev_button",
      "tipo": "texto",
      "etiqueta": "Reseña en grande: anterior",
@@ -10380,13 +10356,7 @@
     {
      "clave": "page_text",
      "tipo": "texto",
-     "etiqueta": "Reseñas: «{n} de {total}»",
-     "diseno": false
-    },
-    {
-     "clave": "read_more_text",
-     "tipo": "texto",
-     "etiqueta": "Texto para leer la reseña completa",
+     "etiqueta": "Reseñas: «Página {n} de {total}»",
      "diseno": false
     },
     {

@@ -79,7 +79,7 @@ export function MetaProducto({ producto }: { producto: Producto }) {
 // teléfono, correo, dirección (los de la página Contacto) y LinkedIn (del pie). Plan de SEO, 25-nov-2026
 // (docs/seo-y-chats-ia.md, fuera de git).
 const ORGANIZACION_EXTRA = {
-  description: "Fabricantes mexicanos de compuertas anti-inundaciones para puertas de casas y negocios: detienen hasta 50 cm de agua, se ponen en 10 minutos sin obras y se envían gratis a todo México.",
+  description: "Fabricantes mexicanos de compuertas anti-inundaciones para puertas de casas y negocios: detienen hasta 50 cm de agua, se ajustan a presión en 10 minutos y se envían gratis a todo México.",
   telephone: "+52 668 241 9579",
   email: "contacto@diluvium.com.mx",
   address: { "@type": "PostalAddress", streetAddress: "Calle Morelos #254", addressLocality: "Los Mochis", addressRegion: "Sinaloa", addressCountry: "MX" },

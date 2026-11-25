@@ -1,6 +1,8 @@
 // Sección «d-dudas»: «Las 12 dudas más comunes» (como en cada ficha de Andafacil). Preguntas numeradas en renglones
-// grandes que se abren al tocarlas, el botón «Abrir todas» y, al final, preguntar por WhatsApp. Piezas «question»:
-// pregunta y respuesta.
+// grandes que se abren al tocarlas y, al final, preguntar por WhatsApp. Piezas «question»: pregunta y respuesta.
+// Sin botón «Abrir todas» (dueño, 25-nov-2026: cada quien abre la que le interesa); en su lugar, la flecha de la
+// primera pregunta se mueve hacia abajo (donde sale la respuesta) hasta que la persona abre alguna (.dudas-d en
+// versiones.css).
 
 import type { PropsSeccion } from "../registro";
 import { texto } from "@/lib/contenido";
@@ -9,7 +11,6 @@ import { conMensaje, rellenar, textoVersion, tx } from "../landing/datos";
 import { formato } from "../landing/formato";
 import { IconoWhatsapp } from "../landing/piezas";
 import { BOTON_D_WHATSAPP, claseFondoD, EtiquetaD, TituloD } from "./comun";
-import { AbrirTodasD } from "./AbrirTodasD";
 
 export function DudasD({ seccion }: PropsSeccion) {
   const a = seccion.ajustes;
@@ -21,19 +22,18 @@ export function DudasD({ seccion }: PropsSeccion) {
       <div className="marco-version max-w-[900px]">
         <EtiquetaD>{formato(textoVersion(a, "subheading"))}</EtiquetaD>
         <TituloD id={`titulo-${seccion.id}`}>{formato(textoVersion(a, "heading").replace("{n}", String(preguntas.length)))}</TituloD>
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-          {texto(a, "text") && <p className="m-0 text-[18px] leading-[1.5]">{formato(textoVersion(a, "text"))}</p>}
-          <AbrirTodasD lista={lista} abrir={tx(a, "open_all", "Abrir todas")} cerrar={tx(a, "close_all", "Cerrar todas")} />
-        </div>
-        <div id={lista} className="mt-5 overflow-hidden rounded-xl border border-[#dde2e8] bg-white">
+        {texto(a, "text") && <p className="m-0 mt-6 text-[18px] leading-[1.5]">{formato(textoVersion(a, "text"))}</p>}
+        <div id={lista} className="dudas-d mt-5 overflow-hidden rounded-xl border border-[#dde2e8] bg-white">
           {preguntas.map((p, i) => (
             <details key={p.id} data-pieza={p.id} name={lista} className="group border-b border-[#dde2e8] last:border-b-0">
               <summary className="flex min-h-[72px] cursor-pointer list-none items-center gap-4 px-4 py-4 text-[#0b2545] hover:bg-[#f9fafb] md:px-6">
                 <span className="flex size-9 shrink-0 items-center justify-center rounded-md bg-[#0b2545] font-titulo text-[17px] font-bold text-[#ffc83d]">{i + 1}</span>
                 <span className="flex-1 font-titulo text-[19px] leading-snug font-semibold">{formato(textoVersion(p.ajustes, "heading"))}</span>
-                <svg viewBox="0 0 24 24" className="size-7 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
+                <span className={`flex size-10 shrink-0 items-center justify-center rounded-full bg-[#fff4d1] text-[#0b2545] group-open:bg-[#0b2545] group-open:text-[#ffc83d] ${i === 0 ? "flecha-duda" : ""}`}>
+                  <svg viewBox="0 0 24 24" className="size-6 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
               </summary>
               <TextoRico html={rellenar(texto(p.ajustes, "description"))} className="px-4 pb-5 pl-[68px] text-[18px] leading-[1.6] text-[#1f2a37] md:px-6 md:pl-[76px]" />
             </details>
