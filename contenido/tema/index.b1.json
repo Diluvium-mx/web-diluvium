@@ -58,7 +58,7 @@
     "color_scheme": "claro",
     "rating_text": "más de 200 reseñas",
     "heading": "La solución definitiva contra inundaciones en México",
-    "subheading": "Evita costosas reparaciones y protege lo que más valoras en las temporadas de lluvias",
+    "subheading": "Evita costosas reparaciones y protege lo que más valoras en temporadas de lluvias",
     "producto": "compuerta-anti-inundaciones",
     "price_note": "Cualquier tamaño de {desde} a {hasta} cm",
     "button_text": "Proteger mi casa",
@@ -208,16 +208,16 @@
    "ajustes": {
     "fondo": "cielo",
     "ola": "capas",
-    "heading": "Lo de siempre contra Diluvium",
+    "heading": "La solución definitiva\nContra inundaciones",
     "heading_before": "Lo de siempre",
     "image_before": "/media/files/Antes_1.jpg",
     "alt_before": "Entrada tapada con costales de arena y una tabla",
     "heading_after": "Con Diluvium",
     "image_after": "/media/files/Despues_1.jpg",
     "alt_after": "La misma entrada protegida con la compuerta Diluvium",
-    "focal_before": "50% 50%",
+    "focal_before": "50% 100%",
     "zoom_before": 1,
-    "focal_after": "50% 50%",
+    "focal_after": "50% 100%",
     "zoom_after": 1
    },
    "bloques": [
@@ -320,8 +320,8 @@
       "alt": "Partes de la compuerta: funda de neopreno, gato mecánico, marco de acero y tornillos para sellar",
       "heading": "Acero que aguanta olas y golpes",
       "text": "Marco de acero de alta resistencia, hecho para la presión del agua y los movimientos bruscos.",
-      "focal": "50% 50%",
-      "zoom": 1
+      "focal": "50% 64%",
+      "zoom": 0.55
      }
     },
     {
@@ -332,7 +332,7 @@
       "alt": "Compuerta Diluvium puesta en una puerta de herrería",
       "heading": "Úsala cada temporada",
       "text": "La quitas cuando quieras, la guardas y vuelve a servir. Vida útil de 5 a 7 años.",
-      "focal": "50% 50%",
+      "focal": "50% 100%",
       "zoom": 1
      }
     },
@@ -344,7 +344,7 @@
       "alt": "Compuerta Diluvium en una entrada de puerta doble",
       "heading": "Para tu medida exacta",
       "text": "{tamanos} tamaños de {desde} a {hasta} cm, y hecha a la medida hasta 2.5 m de ancho.",
-      "focal": "50% 50%",
+      "focal": "50% 100%",
       "zoom": 1
      }
     },
@@ -356,7 +356,7 @@
       "alt": "Calle inundada y la compuerta frenando el agua en la entrada",
       "heading": "Duerme tranquilo, aunque llueva fuerte",
       "text": "Las tormentas suelen llegar de noche. La compuerta mantiene el agua afuera y a tu familia a salvo.",
-      "focal": "50% 50%",
+      "focal": "50% 100%",
       "zoom": 1
      }
     }

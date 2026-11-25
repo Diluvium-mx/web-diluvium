@@ -13,8 +13,8 @@
     "button_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium.",
     "image": "/media/files/oficina.jpg",
     "alt": "El equipo de Diluvium en su oficina de Los Mochis",
-    "focal": "50% 60%",
-    "zoom": 1
+    "focal": "35% 100%",
+    "zoom": 1.1
    },
    "bloques": []
   },

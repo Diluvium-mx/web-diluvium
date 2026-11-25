@@ -119,26 +119,6 @@
      }
     },
     {
-     "id": "foto_2",
-     "tipo": "image",
-     "ajustes": {
-      "image": "/media/files/8.jpg",
-      "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
-     }
-    },
-    {
-     "id": "foto_3",
-     "tipo": "image",
-     "ajustes": {
-      "image": "/media/files/5_07b7910a-8a08-4b54-a1f6-d81b2757cd81.jpg",
-      "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
-     }
-    },
-    {
      "id": "video_4",
      "tipo": "video",
      "ajustes": {
@@ -153,40 +133,20 @@
      "id": "foto_5",
      "tipo": "image",
      "ajustes": {
-      "image": "/media/files/6.jpg",
+      "image": "/media/editor/2026-11-23-img-6626-ihxe.jpg",
       "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
+      "focal": "50% 92%",
       "zoom": 1
      }
     },
     {
-     "id": "foto_6",
+     "id": "image_mwtnii15",
      "tipo": "image",
      "ajustes": {
-      "image": "/media/files/Imagenpasosbuena.jpg",
+      "image": "/media/editor/2026-11-23-whatsapp-image-2025-09-25-at-11-13-16-a-m-7cyk.jpg",
       "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
-     }
-    },
-    {
-     "id": "foto_7",
-     "tipo": "image",
-     "ajustes": {
-      "image": "/media/files/21.jpg",
-      "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
-     }
-    },
-    {
-     "id": "foto_8",
-     "tipo": "image",
-     "ajustes": {
-      "image": "/media/files/3_09d648f8-73a2-461f-91b2-63b4af47c660.jpg",
-      "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
+      "focal": "27% 74%",
+      "zoom": 1.3
      }
     },
     {
@@ -194,16 +154,6 @@
      "tipo": "image",
      "ajustes": {
       "image": "/media/files/6_61bbe95a-a71d-493a-9e88-6d6ad41c5b39.jpg",
-      "alt": "Compuerta Anti-Inundaciones",
-      "focal": "50% 50%",
-      "zoom": 1
-     }
-    },
-    {
-     "id": "foto_10",
-     "tipo": "image",
-     "ajustes": {
-      "image": "/media/products/9.Queincluyeelpaquete.png",
       "alt": "Compuerta Anti-Inundaciones",
       "focal": "50% 50%",
       "zoom": 1
@@ -499,7 +449,7 @@
    "ajustes": {
     "fondo": "blanco",
     "ola": "larga",
-    "heading": "Antes de comprar, responde tus dudas 👇🏻",
+    "heading": "Antes de comprar, \nresponde tus dudas 👇🏻",
     "text": "",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20pregunta%20antes%20de%20comprar%20mi%20compuerta.",
     "search_heading": "¿No está tu pregunta? Escríbela aquí",
