@@ -222,3 +222,12 @@ escritos a mano en el código. Ahora están en `contenido/productos.json` y se e
    agrega cuando Payload traiga la versión sin fallas.
 3. **Vista previa** de la página mientras se edita.
 4. Pedidos, clientes y correos: paso 3.
+
+## Versión C1 (24-nov-2026)
+Portada y producto completamente nuevos (no se parecen a la tienda de hoy ni a B1): `/v/c1` y
+`/v/c1/products/compuerta-anti-inundaciones`. Plantillas `contenido/tema/index.c1.json` y `product.c1.json`; partes
+en `src/components/secciones/c/` (tipos `c-…`: encabezado, primera pantalla con cifras, «así funciona» como historias,
+cifras que cuentan, regla de tamaños para elegir y comprar, reseñas una a la vez, preguntas como chat, cierre con
+sello y pie). Marco: `src/app/(versiones)/MarcoVersionC.tsx`. En el editor local son las pestañas «C · Portada» y
+«C · Producto». Los demás productos dentro de C usan la misma ficha con sus fotos del catálogo. Las propuestas
+extra para C (quiz, simulador, piezas, mapa, costo, temporada) están en `/editor/propuestas-c` y no se han puesto.

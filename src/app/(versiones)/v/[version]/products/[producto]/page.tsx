@@ -11,6 +11,7 @@ import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../../../PastillaVersion";
 import { MarcoVersionB } from "../../../../MarcoVersionB";
+import { MarcoVersionC } from "../../../../MarcoVersionC";
 
 // La ficha del producto dentro de una versión: /v/a/products/<producto> es la ficha de hoy con el marco de la tienda;
 // /v/b1/products/<producto>… es la ficha nueva de cada versión (contenido/tema/product.<versión>.json), que nace del
@@ -25,6 +26,7 @@ const ARCHIVO_FICHA: Partial<Record<string, string>> = {
   "producto.b1.funda": "product.b1.funda",
   "producto.b1.tira": "product.b1.tira",
   "producto.b1.plastilina": "product.b1.plastilina",
+  "producto.c1": "product.c1",
 };
 
 export function generateStaticParams() {
@@ -67,5 +69,9 @@ export default async function FichaVersion({ params }: { params: Promise<{ versi
 
   const ficha = fichaDe(v, producto);
   if (!ficha) notFound();
+  if (v.clave.startsWith("c")) {
+    // En C todos los productos usan la misma ficha; el mapa y el editor solo son de la compuerta.
+    return <MarcoVersionC v={v} secciones={plantilla(ficha).secciones} producto={p} archivoMapa={producto === "compuerta-anti-inundaciones" ? ARCHIVO_FICHA[ficha] : undefined} />;
+  }
   return <MarcoVersionB v={v} secciones={plantilla(ficha).secciones} producto={p} archivoMapa={ARCHIVO_FICHA[ficha]} />;
 }

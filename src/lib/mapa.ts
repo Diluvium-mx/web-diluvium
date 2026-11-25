@@ -39,6 +39,9 @@ export const PAGINAS_MAPA = {
   "page.nosotros.b1": { version: "B1", letra: "N", nombre: "Nosotros", ruta: "/v/b1/pages/nosotros" },
   "blog.b1": { version: "B1", letra: "B", nombre: "Blog", ruta: "/v/b1/blogs/blog" },
   "article.b1": { version: "B1", letra: "A", nombre: "Artículo", ruta: "/v/b1/blogs/blog/por-que-aumentan-las-inundaciones-en-nuestras-ciudades" },
+  // Versión C (24-nov-2026).
+  "index.c1": { version: "C1", letra: "I", nombre: "C · Portada", ruta: "/v/c1" },
+  "product.c1": { version: "C1", letra: "P", nombre: "C · Producto", ruta: "/v/c1/products/compuerta-anti-inundaciones" },
 } as const;
 export type ArchivoMapa = keyof typeof PAGINAS_MAPA;
 

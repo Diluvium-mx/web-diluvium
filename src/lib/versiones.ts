@@ -90,6 +90,19 @@ export const VERSIONES: Version[] = [
   },
 ];
 
+VERSIONES.push({
+  clave: "c1",
+  etiqueta: "C1",
+  nombre: "Noche de tormenta",
+  plantilla: "portada.c1",
+  ficha: "producto.c1",
+  cambiaFicha: "Ficha nueva: galería que se desliza, la fecha en que llegaría y una regla para elegir el tamaño arrastrando.",
+  cambia: "Todo nuevo (24-nov-2026): fondo de noche con lluvia, cifras grandes, «Así funciona» como historias, la regla de tamaños, reseñas una a la vez y preguntas como chat.",
+  prueba: "Que una página que se siente distinta y se usa con el dedo convenza más que la de hoy y que B1.",
+  aFavor: "Se compra desde la portada (regla de tamaños) y casi todo se toca o se mueve.",
+  enContra: "Es la más distinta a lo que conocen los clientes de hoy; está en revisión.",
+});
+
 export function version(clave: string): Version | undefined {
   return VERSIONES.find((v) => v.clave === clave);
 }

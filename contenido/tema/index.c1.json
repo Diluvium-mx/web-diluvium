@@ -1,0 +1,323 @@
+{
+ "fuente": "Versión C1 (24-nov-2026): portada completamente nueva, distinta de la tienda de hoy (A) y de B1.",
+ "secciones": [
+  {
+   "id": "c_encabezado_portada",
+   "tipo": "c-encabezado",
+   "ajustes": {
+    "logo": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+    "button_text": "Comprar",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20compuerta.",
+    "menu_text": "Menú"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_portada",
+   "tipo": "c-portada",
+   "ajustes": {
+    "subheading": "Compuerta anti-inundaciones",
+    "heading": "Que el agua se quede afuera.",
+    "text": "Se pone en tu puerta en 10 minutos, sin obras, y detiene hasta 50 cm de agua. Cuando pasa la lluvia, la quitas y la guardas.",
+    "rating_text": "más de 200 reseñas",
+    "image": "/media/files/1.Compuertarecta.jpg",
+    "alt": "Compuerta Diluvium con su funda y su marco de acero",
+    "price_prefix": "Desde",
+    "button_text": "Elegir mi tamaño",
+    "button_link": "#tamanos",
+    "button2_text": "Ver cómo funciona",
+    "button2_link": "#historias"
+   },
+   "bloques": [
+    {
+     "id": "stat_1",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "50 cm",
+      "label": "de agua detenida"
+     }
+    },
+    {
+     "id": "stat_2",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "10 min",
+      "label": "para ponerla"
+     }
+    },
+    {
+     "id": "stat_3",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "0",
+      "label": "obras ni taladro"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_historias_portada",
+   "tipo": "c-historias",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Así funciona",
+    "heading": "De la tormenta a la casa seca, en 4 momentos",
+    "text": "Toca la foto para avanzar o deja el dedo encima para detenerla."
+   },
+   "bloques": [
+    {
+     "id": "slide_1",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/Frame_643.jpg",
+      "alt": "Lluvia fuerte afuera de una casa",
+      "heading": "Avisan tormenta",
+      "text": "Sacas la compuerta y la llevas a tu puerta: no necesitas herramientas."
+     }
+    },
+    {
+     "id": "slide_2",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/IMG_1499.jpg",
+      "alt": "Un hombre coloca la compuerta en una puerta",
+      "heading": "La colocas en 10 minutos",
+      "text": "Giras el gato y se ajusta a presión contra tu marco. Sin taladro ni obras."
+     }
+    },
+    {
+     "id": "slide_3",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/IMG_2103.jpg",
+      "alt": "La compuerta detiene el agua en la entrada",
+      "heading": "El agua se queda afuera",
+      "text": "La funda de neopreno y la tira de hule sellan todo el contorno, hasta 50 cm de agua."
+     }
+    },
+    {
+     "id": "slide_4",
+     "tipo": "slide",
+     "ajustes": {
+      "image": "/media/files/Frame_629.jpg",
+      "alt": "La compuerta guardada para la siguiente temporada",
+      "heading": "Pasa la lluvia y la guardas",
+      "text": "La quitas en un minuto y la guardas para la próxima. Dura de 5 a 7 años."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cifras_portada",
+   "tipo": "c-cifras",
+   "ajustes": {
+    "heading": "Diluvium en números"
+   },
+   "bloques": [
+    {
+     "id": "stat_1",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "+2,000",
+      "label": "compuertas vendidas en México"
+     }
+    },
+    {
+     "id": "stat_2",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "{calificacion}★",
+      "label": "de calificación en más de 200 reseñas"
+     }
+    },
+    {
+     "id": "stat_3",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "1 año",
+      "label": "de garantía por defectos de fábrica"
+     }
+    },
+    {
+     "id": "stat_4",
+     "tipo": "stat",
+     "ajustes": {
+      "number": "3–5 días",
+      "label": "para que llegue, con envío gratis"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_tamanos",
+   "tipo": "c-tamanos",
+   "ajustes": {
+    "fondo": "noche",
+    "subheading": "Encuentra tu tamaño",
+    "heading": "Mide tu entrada y elige aquí mismo",
+    "text": "Mide de marco a marco. Todos los tamaños cuestan {precio}, con envío gratis.",
+    "image": "/media/files/Frame_734.jpg",
+    "alt": "Compuerta Diluvium puesta en una entrada",
+    "ruler_label": "Arrastra hasta el ancho de tu entrada",
+    "ruler_result": "Te queda la",
+    "add_button": "Añadir al carrito",
+    "sold_out": "Agotado por ahora",
+    "wider_text": "¿Mide más de 120 cm?",
+    "wider_link_text": "Ve la XXL a tu medida",
+    "wider_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_resenas_portada",
+   "tipo": "c-resenas",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Reseñas reales",
+    "heading": "Lo que dicen quienes ya la usan",
+    "rating_text": "de 5, con más de 200 reseñas publicadas",
+    "prev_button": "Anterior",
+    "next_button": "Siguiente",
+    "count_text": "{n} de {total}"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_preguntas_portada",
+   "tipo": "c-preguntas",
+   "ajustes": {
+    "fondo": "blanco",
+    "subheading": "Preguntas",
+    "heading": "Pregúntanos lo que quieras",
+    "brand_name": "Diluvium",
+    "choose_text": "Toca una pregunta:",
+    "other_question": "¿Otra pregunta? Escríbenos por WhatsApp",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta: "
+   },
+   "bloques": [
+    {
+     "id": "question_1",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me va a quedar en mi puerta?",
+      "description": "<p>Mide el ancho de tu entrada de marco a marco o de pared a pared. Si mide de {desde} a {hasta} cm hay un tamaño estándar; si es más ancha, la hacemos a la medida (hasta 2.5 m). Necesitas un marco firme de 4 cm donde la compuerta haga presión.</p>"
+     }
+    },
+    {
+     "id": "question_2",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Hay que perforar o modificar mi entrada?",
+      "description": "<p>No. La entrada se queda tal como está: la compuerta se ajusta a presión con su gato mecánico. Se coloca en unos 10 minutos y la puedes quitar cuando quieras o dejarla puesta por meses.</p>"
+     }
+    },
+    {
+     "id": "question_3",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿De verdad no pasa el agua? ¿Hasta qué altura?",
+      "description": "<p>Soporta hasta 50 cm de agua. Lleva una funda de neopreno impermeable y una tira de hule en todo el contorno, y trae plastilina de secado rápido para sellar cualquier filtración en las esquinas.</p>"
+     }
+    },
+    {
+     "id": "question_4",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Y si mi piso o mi marco están chuecos?",
+      "description": "<p>La tira de hule absorbe imperfecciones como pequeñas grietas y ligeros desniveles. Si el marco es muy irregular, habría que arreglarlo antes de colocar la compuerta.</p>"
+     }
+    },
+    {
+     "id": "question_5",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué garantía tiene?",
+      "description": "<p>1 año de garantía: si quieres cambiar de tamaño o pedir un reembolso, te ayudamos. Su vida útil es de 5 a 7 años.</p>"
+     }
+    },
+    {
+     "id": "question_envio",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cuándo llega y si no me convence?",
+      "description": "<p>Llega en 3 a 5 días hábiles a cualquier parte de México (puede variar en zona extendida) y el envío es gratis. Si no estás satisfecho, tienes 1 año para devolverla en su estado original y sin daños: escríbenos y te decimos cómo.</p>"
+     }
+    },
+    {
+     "id": "question_factura",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Me dan factura?",
+      "description": "<p>Sí. Mándanos tus datos fiscales y tu constancia de situación fiscal por WhatsApp o a contacto@diluvium.com.mx y te enviamos tu factura.</p>"
+     }
+    },
+    {
+     "id": "question_6",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Cómo pago?",
+      "description": "<p>Con tarjeta de crédito o débito (hasta 6 meses sin intereses con tarjeta de crédito) o con PayPal. Si prefieres transferencia o depósito, escríbenos por WhatsApp.</p>"
+     }
+    },
+    {
+     "id": "question_7",
+     "tipo": "question",
+     "ajustes": {
+      "heading": "¿Qué incluye?",
+      "description": "<p>La compuerta de acero expandible, su funda hecha a la medida, la tira de hule para el contorno, una llave para girar los tornillos de abajo y plastilina de secado rápido.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_cierre_portada",
+   "tipo": "c-cierre",
+   "ajustes": {
+    "heading": "La próxima tormenta ya no es tu problema.",
+    "text": "Envío gratis a todo México, pago seguro y 1 año de garantía.",
+    "button_text": "Proteger mi casa",
+    "button_link": "/products/compuerta-anti-inundaciones",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20tengo%20una%20duda%20antes%20de%20comprar%20la%20compuerta.",
+    "whatsapp_text": "Pregúntanos por WhatsApp",
+    "seal_text": "1 AÑO DE GARANTÍA • ENVÍO GRATIS • PAGO SEGURO • "
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_pie_portada",
+   "tipo": "c-pie",
+   "ajustes": {
+    "logo": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
+    "text": "Compuertas contra inundaciones hechas en Los Mochis, Sinaloa. Envíos a todo México."
+   },
+   "bloques": [
+    {
+     "id": "contact_whatsapp",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "WhatsApp (668) 241 9579",
+      "link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20quiero%20hablar%20con%20alguien%20de%20Diluvium."
+     }
+    },
+    {
+     "id": "contact_telefono",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "Llamar",
+      "link": "tel:+526682419579"
+     }
+    },
+    {
+     "id": "contact_correo",
+     "tipo": "contact",
+     "ajustes": {
+      "text": "contacto@diluvium.com.mx",
+      "link": "mailto:contacto@diluvium.com.mx"
+     }
+    }
+   ]
+  }
+ ]
+}

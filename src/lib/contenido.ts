@@ -9,6 +9,8 @@ import portada from "@contenido/tema/index.json";
 import portadaB1 from "@contenido/tema/index.b1.json";
 // Ficha nueva de la compuerta en cada versión (/v/<versión>/products/<producto>; mapa de calor del 11-nov-2026).
 import productoB1 from "@contenido/tema/product.b1.json";
+import portadaC1 from "@contenido/tema/index.c1.json";
+import productoC1 from "@contenido/tema/product.c1.json";
 // Las demás páginas de B1 (23-nov-2026): Contacto, Nosotros, Blog, artículo, Productos y las fichas de los demás productos.
 import contactoB1 from "@contenido/tema/page.contact.b1.json";
 import nosotrosB1 from "@contenido/tema/page.nosotros.b1.json";
@@ -48,6 +50,8 @@ const PLANTILLAS = {
   portada: portada as Plantilla,
   "portada.b1": portadaB1 as Plantilla,
   "producto.b1": productoB1 as Plantilla,
+  "portada.c1": portadaC1 as Plantilla,
+  "producto.c1": productoC1 as Plantilla,
   "contacto.b1": contactoB1 as Plantilla,
   "nosotros.b1": nosotrosB1 as Plantilla,
   "blog.b1": blogB1 as Plantilla,

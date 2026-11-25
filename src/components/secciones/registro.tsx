@@ -36,6 +36,16 @@ import { Busqueda } from "./Busqueda";
 import { NoEncontrada } from "./NoEncontrada";
 // Secciones propias de las versiones de la portada para pruebas (/v/<versión>).
 import { EncabezadoVersion } from "./landing/Encabezado";
+import { EncabezadoC } from "./c/EncabezadoC";
+import { PortadaC } from "./c/PortadaC";
+import { HistoriasC } from "./c/HistoriasC";
+import { CifrasC } from "./c/CifrasC";
+import { TamanosC } from "./c/TamanosC";
+import { ResenasC } from "./c/ResenasC";
+import { PreguntasC } from "./c/PreguntasC";
+import { CierreC } from "./c/CierreC";
+import { PieC } from "./c/PieC";
+import { FichaC } from "./c/FichaC";
 import { PortadaVersion } from "./landing/Portada";
 import { ResenasVersion } from "./landing/Resenas";
 import { ComparacionVersion } from "./landing/Comparacion";
@@ -110,6 +120,17 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "landing-cita": CitaVersion,
   "landing-blog": BlogVersion,
   "landing-articulo": ArticuloVersion,
+  // Versión C (24-nov-2026): partes completamente nuevas (src/components/secciones/c).
+  "c-encabezado": EncabezadoC,
+  "c-portada": PortadaC,
+  "c-historias": HistoriasC,
+  "c-cifras": CifrasC,
+  "c-tamanos": TamanosC,
+  "c-resenas": ResenasC,
+  "c-preguntas": PreguntasC,
+  "c-cierre": CierreC,
+  "c-pie": PieC,
+  "c-ficha": FichaC,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

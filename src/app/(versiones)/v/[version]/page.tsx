@@ -8,6 +8,7 @@ import { Medicion } from "@/components/secciones/landing/Medicion";
 import { EnlacesVersion } from "@/components/secciones/landing/EnlacesVersion";
 import { PastillaVersion } from "../../PastillaVersion";
 import { MarcoVersionB } from "../../MarcoVersionB";
+import { MarcoVersionC } from "../../MarcoVersionC";
 
 // Una versión de la portada: /v/a es la portada de hoy con el marco de la tienda; /v/b1… son las versiones B, cada
 // una con su contenido (contenido/tema/index.<versión>.json) y su propio encabezado. Todas llevan la medición.
@@ -41,5 +42,6 @@ export default async function PaginaVersion({ params }: { params: Promise<{ vers
     );
   }
 
+  if (v.clave.startsWith("c")) return <MarcoVersionC v={v} secciones={secciones} archivoMapa={`index.${v.clave}`} />;
   return <MarcoVersionB v={v} secciones={secciones} archivoMapa={`index.${v.clave}`} />;
 }

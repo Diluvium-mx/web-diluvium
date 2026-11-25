@@ -11,6 +11,8 @@ import { mapaPlantilla, PAGINAS_MAPA, type ArchivoMapa, type CampoMapa, type Esq
 const CARGAR: Record<ArchivoMapa, () => Promise<{ default: unknown }>> = {
   "index.b1": () => import("@contenido/tema/index.b1.json"),
   "product.b1": () => import("@contenido/tema/product.b1.json"),
+  "index.c1": () => import("@contenido/tema/index.c1.json"),
+  "product.c1": () => import("@contenido/tema/product.c1.json"),
   "collection.b1": () => import("@contenido/tema/collection.b1.json"),
   "product.b1.mini-compuerta": () => import("@contenido/tema/product.b1.mini-compuerta.json"),
   "product.b1.medida-especial": () => import("@contenido/tema/product.b1.medida-especial.json"),

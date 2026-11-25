@@ -103,6 +103,11 @@ SECCIONES = {
     "landing-contacto": "Versión: formas de contacto y formulario", "landing-historia": "Versión: historia por capítulos",
     "landing-premios": "Versión: reconocimientos y premios", "landing-cita": "Versión: mensaje con firma",
     "landing-blog": "Versión: artículos del blog", "landing-articulo": "Versión: artículo del blog",
+    # Versión C (24-nov-2026).
+    "c-encabezado": "C: encabezado", "c-portada": "C: primera pantalla", "c-historias": "C: así funciona (historias)",
+    "c-cifras": "C: cifras", "c-tamanos": "C: regla de tamaños", "c-resenas": "C: reseñas una a la vez",
+    "c-preguntas": "C: preguntas como chat", "c-cierre": "C: cierre con sello", "c-pie": "C: pie de página",
+    "c-ficha": "C: ficha del producto",
 }
 
 BLOQUES = {
@@ -121,6 +126,7 @@ BLOQUES = {
     "marketplace": "Otra tienda (Mercado Libre, Amazon)",
     "product": "Producto", "channel": "Forma de contacto (ícono: whatsapp, telefono, correo, ubicacion u horario)",
     "chapter": "Capítulo", "award": "Premio",
+    "stat": "Cifra", "slide": "Historia (foto y texto)", "contact": "Botón de contacto",
     "article_card": "Foto de la tarjeta de un artículo", "article_photos": "Fotos de un artículo",
 }
 

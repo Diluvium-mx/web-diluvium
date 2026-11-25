@@ -3,6 +3,7 @@
 //
 // Uso: node herramientas/capturar-versiones.mjs [dirección base]
 //      node herramientas/capturar-versiones.mjs http://localhost:3100
+//      node herramientas/capturar-versiones.mjs http://localhost:3100 c1     (solo esas versiones)
 // Salida: public/media/versiones/portada-<versión>.webp
 
 import { mkdirSync, writeFileSync } from "node:fs";
@@ -11,7 +12,7 @@ import { abrirChrome, BLOQUEAR_ANALITICA } from "./cdp.mjs";
 
 const BASE = (process.argv[2] ?? "https://diluvium-prueba.web-diluvium.workers.dev").replace(/\/$/, "");
 const SALIDA = "public/media/versiones";
-const VERSIONES = ["a", "b1"];
+const VERSIONES = process.argv[3]?.split(",") ?? ["a", "b1", "c1"];
 mkdirSync(SALIDA, { recursive: true });
 
 const chrome = await abrirChrome();

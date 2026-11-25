@@ -70,6 +70,9 @@ export const PLANTILLAS: Record<string, string> = {
   "product.b1.funda": "Funda de repuesto · versión B1 (prueba)",
   "product.b1.tira": "Tira de hule · versión B1 (prueba)",
   "product.b1.plastilina": "Plastilina de secado rápido · versión B1 (prueba)",
+  // Versión C (24-nov-2026).
+  "index.c1": "Portada · versión C1 (prueba)",
+  "product.c1": "Producto · versión C1 (prueba)",
 };
 
 const POR_TIPO = new Map(ESQUEMA.secciones.map((s) => [s.tipo, s]));
