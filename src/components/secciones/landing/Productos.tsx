@@ -32,7 +32,7 @@ export function ProductosVersion({ seccion }: PropsSeccion) {
         )}
         {texto(a, "text") && <p className="m-0 mt-3 max-w-[40rem] text-[17px] leading-[1.55] text-tinta">{formato(textoVersion(a, "text"))}</p>}
         <ul className={`m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${titulo ? "mt-8 md:mt-10" : ""}`}>
-          {tarjetas.map(({ b, p }) => {
+          {tarjetas.map(({ b, p }, i) => {
             const ba = b.ajustes;
             const foto = texto(ba, "image") || p.imagenes[0]?.src || "";
             const precio = resumenPrecio(p);
@@ -51,6 +51,9 @@ export function ProductosVersion({ seccion }: PropsSeccion) {
                         alt={texto(ba, "alt") || p.titulo}
                         fill
                         sizes="(min-width: 1200px) 397px, (min-width: 1024px) 31vw, (min-width: 640px) 46vw, 38vw"
+                        // Las primeras se ven al abrir (en computadora, el primer renglón): cargan de una vez.
+                        preload={i === 0}
+                        loading={i < 4 ? "eager" : "lazy"}
                         style={estiloFoto(ba)}
                         {...marcaEditar(seccion.id, b.id, "image")}
                         className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"

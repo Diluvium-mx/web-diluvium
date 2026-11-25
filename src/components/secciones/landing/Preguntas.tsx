@@ -35,19 +35,19 @@ const plano = (html: string) =>
 /** Título con la mano 👇 (las preguntas van abajo): en computadora las preguntas van a la derecha y la mano apunta
  *  hacia ellas 👉 (24-nov-2026). Es adorno: los lectores de pantalla no la leen. */
 function conMano(titulo: string) {
-  const partes = titulo.split("👇");
+  // Con o sin tono de piel («👇🏻»): el tono se queda pegado a su mano (suelto se vería como un cuadrito de color).
+  const partes = titulo.split(/(👇[\u{1F3FB}-\u{1F3FF}]?)/u);
   if (partes.length === 1) return formato(titulo);
-  return partes.map((p, i) => (
-    <Fragment key={i}>
-      {i > 0 && (
-        <span aria-hidden="true">
-          <span className="lg:hidden">👇</span>
-          <span className="hidden lg:inline">👉</span>
-        </span>
-      )}
-      {formato(p)}
-    </Fragment>
-  ));
+  return partes.map((p, i) =>
+    i % 2 === 1 ? (
+      <span key={i} aria-hidden="true">
+        <span className="lg:hidden">{p}</span>
+        <span className="hidden lg:inline">{p.replace("👇", "👉")}</span>
+      </span>
+    ) : (
+      <Fragment key={i}>{formato(p)}</Fragment>
+    ),
+  );
 }
 
 /** Las preguntas de la sección (con su respuesta en texto plano) más las del banco, con los precios del catálogo. */

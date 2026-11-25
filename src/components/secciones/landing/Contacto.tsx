@@ -86,7 +86,7 @@ export function ContactoVersion({ seccion }: PropsSeccion) {
         <div className="rounded-3xl bg-white p-6 text-marino shadow-[0_24px_60px_-34px_rgba(12,30,51,0.55)] ring-1 ring-linea md:p-8">
           <h3 className="m-0 font-titulo text-[24px] leading-tight font-medium">{formato(tx(a, "form_heading", "Contáctanos"))}</h3>
           {texto(a, "form_text") && <p className="m-0 mt-2 mb-6 text-[16px] leading-[1.5] text-texto-suave">{formato(textoVersion(a, "form_text"))}</p>}
-          <FormularioVersion
+          <FormularioVersion prueba={process.env.SITIO_PRUEBA === "1"}
             textos={{
               nombre: tx(a, "name_label", "Tu nombre"),
               correo: tx(a, "email_label", "Tu correo"),

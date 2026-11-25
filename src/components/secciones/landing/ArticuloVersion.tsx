@@ -60,6 +60,25 @@ function fotosDelCuerpo(html: string, seccionId: string, pieza: Bloque | undefin
   });
 }
 
+/** Enlaces escritos sin «https://» en el artículo («www.diluvium.com.mx»): el navegador los toma como una página dentro
+ *  del blog que no existe (404). Los de Diluvium van al inicio; los de otros sitios, con https://. */
+function enlacesSinProtocolo(html: string): string {
+  return html.replace(/href="(www\.[^"]+)"/g, (_todo, dir: string) =>
+    /^www\.diluvium\.com\.mx(\/|$)/.test(dir) ? `href="${dir.replace(/^www\.diluvium\.com\.mx/, "") || "/"}"` : `href="https://${dir}"`,
+  );
+}
+
+/** Enlaces del texto que solo traen una foto sin descripción (los botones dibujados del artículo): se nombran por a
+ *  dónde llevan, para los lectores de pantalla. Si ya tienen título, ese les da el nombre. */
+function nombrarEnlacesDeFoto(html: string): string {
+  return html.replace(/<a ([^>]*)>(\s*<picture[^>]*>\s*<img[^>]*alt=""[^>]*>\s*<\/picture>\s*)<\/a>/g, (todo, attrs: string, dentro: string) => {
+    if (/\b(title|aria-label)=/.test(attrs)) return todo;
+    const href = /href="([^"]*)"/.exec(attrs)?.[1] ?? "";
+    const nombre = href === "/" ? "Ir al inicio" : href.startsWith("/products/") ? "Ver el producto" : "Abrir enlace";
+    return `<a ${attrs} aria-label="${nombre}">${dentro}</a>`;
+  });
+}
+
 /** La foto de arriba de un artículo: la de su pieza o, si no tiene, la del artículo. */
 function fotoDe(art: ArticuloBlog, piezas: Bloque[]): { src: string; ancho: number; alto: number; pieza?: Bloque } | null {
   const pieza = piezas.find((b) => b.tipo === "article_photos" && b.id === art.slug);
@@ -117,7 +136,7 @@ export function ArticuloVersion({ seccion, slugArticulo }: PropsSeccion) {
         </div>
       )}
       <div className="marco-version mt-8 max-w-[50rem] md:mt-12">
-        <div className="articulo-version text-tinta" dangerouslySetInnerHTML={{ __html: fotosDelCuerpo(sinVaciosArriba(limpiarCuerpo(art.cuerpo)), seccion.id, piezaArticulo) }} />
+        <div className="articulo-version text-tinta" dangerouslySetInnerHTML={{ __html: nombrarEnlacesDeFoto(enlacesSinProtocolo(fotosDelCuerpo(sinVaciosArriba(limpiarCuerpo(art.cuerpo)), seccion.id, piezaArticulo))) }} />
       </div>
       {otros.length > 0 && (
         <nav aria-labelledby="titulo-otros" className="marco-version mt-14 max-w-[62rem] border-t border-linea pt-10 md:mt-20">

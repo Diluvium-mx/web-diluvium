@@ -34,7 +34,7 @@ function Campo({ id, texto, children }: { id: string; texto: string; children: R
   );
 }
 
-export function FormularioVersion({ textos }: { textos: TextosFormulario }) {
+export function FormularioVersion({ textos, prueba = false }: { textos: TextosFormulario; prueba?: boolean }) {
   const [estado, setEstado] = useState<"" | "ok" | "error">("");
   const [mensajeError, setMensajeError] = useState("");
   const [enviando, iniciar] = useTransition();
@@ -44,8 +44,16 @@ export function FormularioVersion({ textos }: { textos: TextosFormulario }) {
     e.preventDefault();
     const forma = e.currentTarget;
     const f = new FormData(forma);
+    // En la copia de prueba las páginas de B son archivos fijos: el mensaje no tiene a dónde ir (docs/despliegue.md).
+    if (prueba) {
+      setEstado("error");
+      setMensajeError("Esta es la copia de prueba de la página: aquí los mensajes no se envían. Escríbenos por WhatsApp.");
+      return;
+    }
     iniciar(async () => {
-      const r = await enviarMensaje(
+      let r: Awaited<ReturnType<typeof enviarMensaje>>;
+      try {
+        r = await enviarMensaje(
         "contacto",
         {
           nombre: String(f.get("nombre") ?? ""),
@@ -55,6 +63,11 @@ export function FormularioVersion({ textos }: { textos: TextosFormulario }) {
         },
         datos(),
       );
+      } catch {
+        setEstado("error");
+        setMensajeError("No se pudo enviar tu mensaje. Revisa tu conexión e inténtalo de nuevo.");
+        return;
+      }
       setEstado(r.ok ? "ok" : "error");
       // El aviso de campos obligatorios es el de la plantilla; los del correo («no es válido»…) son los de Shopify.
       setMensajeError(r.ok ? "" : r.campo === "nombre" || r.campo === "mensaje" ? textos.faltan : r.error);
