@@ -93,14 +93,14 @@ export const VERSIONES: Version[] = [
 VERSIONES.push({
   clave: "c1",
   etiqueta: "C1",
-  nombre: "Noche de tormenta",
+  nombre: "Clara y con ayuda",
   plantilla: "portada.c1",
   ficha: "producto.c1",
-  cambiaFicha: "Ficha nueva: galería que se desliza, la fecha en que llegaría y una regla para elegir el tamaño arrastrando.",
-  cambia: "Todo nuevo (24-nov-2026): fondo de noche con lluvia, cifras grandes, «Así funciona» como historias, la regla de tamaños, reseñas una a la vez y preguntas como chat.",
-  prueba: "Que una página que se siente distinta y se usa con el dedo convenza más que la de hoy y que B1.",
-  aFavor: "Se compra desde la portada (regla de tamaños) y casi todo se toca o se mueve.",
-  enContra: "Es la más distinta a lo que conocen los clientes de hoy; está en revisión.",
+  cambiaFicha: "Ficha para 40-60 años: fotos grandes con flechas, escribir la medida y elegir el tamaño de una lista grande, la fecha en que llegaría y WhatsApp o llamar siempre a la mano.",
+  cambia: "Pensada para el cliente ideal (40 a 60 años, en el celular): fondo claro, letra y botones grandes, nada que se mueva solo, «Te atiende una persona», confianza (Shark Tank, Mercado Libre, Amazon) y barra fija de WhatsApp y teléfono.",
+  prueba: "Que una página fácil de leer y con ayuda humana a la mano convenza más a quien de verdad compra.",
+  aFavor: "Se lee sin lentes, se compra desde la portada y siempre hay a quién preguntar.",
+  enContra: "Es más larga; está en revisión.",
 });
 
 export function version(clave: string): Version | undefined {

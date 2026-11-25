@@ -104,10 +104,11 @@ SECCIONES = {
     "landing-premios": "Versión: reconocimientos y premios", "landing-cita": "Versión: mensaje con firma",
     "landing-blog": "Versión: artículos del blog", "landing-articulo": "Versión: artículo del blog",
     # Versión C (24-nov-2026).
-    "c-encabezado": "C: encabezado", "c-portada": "C: primera pantalla", "c-historias": "C: así funciona (historias)",
-    "c-cifras": "C: cifras", "c-tamanos": "C: regla de tamaños", "c-resenas": "C: reseñas una a la vez",
-    "c-preguntas": "C: preguntas como chat", "c-cierre": "C: cierre con sello", "c-pie": "C: pie de página",
-    "c-ficha": "C: ficha del producto",
+    "c-encabezado": "C: encabezado", "c-portada": "C: primera pantalla", "c-historias": "C: así funciona (paso a paso)",
+    "c-cifras": "C: cifras", "c-tamanos": "C: elegir tamaño", "c-resenas": "C: reseñas",
+    "c-preguntas": "C: preguntas frecuentes", "c-cierre": "C: cierre con sello", "c-pie": "C: pie de página",
+    "c-ficha": "C: ficha del producto", "c-ayuda": "C: te atiende una persona", "c-confianza": "C: compra con confianza",
+    "c-pagos": "C: formas de pago", "c-barra": "C: barra de WhatsApp y teléfono (celular)",
 }
 
 BLOQUES = {
@@ -126,7 +127,7 @@ BLOQUES = {
     "marketplace": "Otra tienda (Mercado Libre, Amazon)",
     "product": "Producto", "channel": "Forma de contacto (ícono: whatsapp, telefono, correo, ubicacion u horario)",
     "chapter": "Capítulo", "award": "Premio",
-    "stat": "Cifra", "slide": "Historia (foto y texto)", "contact": "Botón de contacto",
+    "stat": "Cifra", "slide": "Paso (foto y texto)", "contact": "Botón de contacto", "reason": "Razón para confiar", "method": "Forma de pago",
     "article_card": "Foto de la tarjeta de un artículo", "article_photos": "Fotos de un artículo",
 }
 

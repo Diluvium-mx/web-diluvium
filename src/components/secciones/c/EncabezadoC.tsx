@@ -1,5 +1,4 @@
-// Sección «c-encabezado»: barra oscura y delgada con el logo blanco, el carrito y «Comprar». El menú abre un panel a
-// pantalla completa con las páginas en letra grande (nada parecido al encabezado blanco de B ni al de la tienda).
+// Sección «c-encabezado»: encabezado blanco de C con logo a color, carrito y «Menú» escrito (EncabezadoCCliente).
 
 import menus from "@contenido/menus.json";
 import type { PropsSeccion } from "../registro";
@@ -14,9 +13,9 @@ export function EncabezadoC({ seccion }: PropsSeccion) {
     <EncabezadoCCliente
       logo={texto(a, "logo")}
       logoMarca={marcaEditar(seccion.id, "", "logo")}
-      boton={tx(a, "button_text", "Comprar")}
-      enlaceBoton={tx(a, "button_link", "/products/compuerta-anti-inundaciones")}
       whatsapp={texto(a, "whatsapp_link")}
+      telefono={texto(a, "phone_link")}
+      textoTelefono={tx(a, "phone_text", "Llámanos al (668) 241 9579")}
       textoMenu={tx(a, "menu_text", "Menú")}
       paginas={menus.principal.enlaces.map((e) => ({ texto: e.texto, url: e.url }))}
     />

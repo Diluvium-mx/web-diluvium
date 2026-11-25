@@ -6702,42 +6702,6 @@
    "bloques": []
   },
   {
-   "tipo": "c-cifras",
-   "slug": "c-cifras",
-   "dbName": "s58",
-   "etiqueta": "C: cifras",
-   "campos": [
-    {
-     "clave": "heading",
-     "tipo": "texto",
-     "etiqueta": "Título",
-     "diseno": false
-    }
-   ],
-   "bloques": [
-    {
-     "tipo": "stat",
-     "slug": "s58-b00",
-     "dbName": "s58b00",
-     "etiqueta": "Cifra",
-     "campos": [
-      {
-       "clave": "number",
-       "tipo": "texto",
-       "etiqueta": "Número",
-       "diseno": false
-      },
-      {
-       "clave": "label",
-       "tipo": "texto",
-       "etiqueta": "Texto",
-       "diseno": false
-      }
-     ]
-    }
-   ]
-  },
-  {
    "tipo": "c-encabezado",
    "slug": "c-encabezado",
    "dbName": "s59",
@@ -6750,21 +6714,21 @@
      "diseno": false
     },
     {
-     "clave": "button_text",
-     "tipo": "texto",
-     "etiqueta": "Texto del botón",
-     "diseno": false
-    },
-    {
-     "clave": "button_link",
-     "tipo": "texto",
-     "etiqueta": "Enlace del botón",
-     "diseno": false
-    },
-    {
      "clave": "whatsapp_link",
      "tipo": "textoLargo",
      "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "phone_link",
+     "tipo": "texto",
+     "etiqueta": "Teléfono enlace",
+     "diseno": false
+    },
+    {
+     "clave": "phone_text",
+     "tipo": "texto",
+     "etiqueta": "Teléfono texto",
      "diseno": false
     },
     {
@@ -6807,9 +6771,9 @@
      "diseno": false
     },
     {
-     "clave": "sold_text",
+     "clave": "price_note",
      "tipo": "texto",
-     "etiqueta": "Vendidas (junto a las estrellas)",
+     "etiqueta": "Nota del precio",
      "diseno": false
     },
     {
@@ -6825,22 +6789,28 @@
      "diseno": false
     },
     {
-     "clave": "sizes_heading",
+     "clave": "size_question",
      "tipo": "texto",
-     "etiqueta": "Sizes título",
+     "etiqueta": "Tamaño question",
      "diseno": true
     },
     {
-     "clave": "ruler_label",
+     "clave": "size_help",
      "tipo": "texto",
-     "etiqueta": "Ruler texto",
-     "diseno": false
+     "etiqueta": "Tamaño help",
+     "diseno": true
     },
     {
-     "clave": "ruler_result",
+     "clave": "size_result",
      "tipo": "texto",
-     "etiqueta": "Ruler resultado",
-     "diseno": false
+     "etiqueta": "Tamaño resultado",
+     "diseno": true
+    },
+    {
+     "clave": "size_list",
+     "tipo": "texto",
+     "etiqueta": "Tamaño lista",
+     "diseno": true
     },
     {
      "clave": "add_button",
@@ -6870,6 +6840,24 @@
      "clave": "wider_link",
      "tipo": "texto",
      "etiqueta": "Wider enlace",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_text",
+     "tipo": "texto",
+     "etiqueta": "Si la entrada es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_link_text",
+     "tipo": "texto",
+     "etiqueta": "Enlace si es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_message",
+     "tipo": "texto",
+     "etiqueta": "Narrower mensaje",
      "diseno": false
     },
     {
@@ -6952,7 +6940,7 @@
    "tipo": "c-historias",
    "slug": "c-historias",
    "dbName": "s61",
-   "etiqueta": "C: así funciona (historias)",
+   "etiqueta": "C: así funciona (paso a paso)",
    "campos": [
     {
      "clave": "fondo",
@@ -6984,7 +6972,7 @@
      "tipo": "slide",
      "slug": "s61-b00",
      "dbName": "s61b00",
-     "etiqueta": "Historia (foto y texto)",
+     "etiqueta": "Paso (foto y texto)",
      "campos": [
       {
        "clave": "image",
@@ -7075,15 +7063,15 @@
      "diseno": false
     },
     {
-     "clave": "text",
-     "tipo": "textoLargo",
-     "etiqueta": "Texto",
-     "diseno": false
-    },
-    {
      "clave": "rating_text",
      "tipo": "texto",
      "etiqueta": "Calificación ({calificacion} = 4.9)",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "textoLargo",
+     "etiqueta": "Texto",
      "diseno": false
     },
     {
@@ -7105,6 +7093,12 @@
      "diseno": false
     },
     {
+     "clave": "price_note",
+     "tipo": "texto",
+     "etiqueta": "Nota del precio",
+     "diseno": false
+    },
+    {
      "clave": "button_text",
      "tipo": "texto",
      "etiqueta": "Texto del botón",
@@ -7117,33 +7111,33 @@
      "diseno": false
     },
     {
-     "clave": "button2_text",
+     "clave": "whatsapp_link",
      "tipo": "texto",
-     "etiqueta": "Button2 texto",
+     "etiqueta": "Enlace de WhatsApp",
      "diseno": false
     },
     {
-     "clave": "button2_link",
+     "clave": "whatsapp_message",
      "tipo": "texto",
-     "etiqueta": "Button2 enlace",
+     "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
      "diseno": false
     }
    ],
    "bloques": [
     {
-     "tipo": "stat",
-     "slug": "s63-b00",
-     "dbName": "s63b00",
-     "etiqueta": "Cifra",
+     "tipo": "point",
+     "slug": "s63-b01",
+     "dbName": "s63b01",
+     "etiqueta": "Viñeta",
      "campos": [
       {
-       "clave": "number",
-       "tipo": "texto",
-       "etiqueta": "Número",
-       "diseno": false
-      },
-      {
-       "clave": "label",
+       "clave": "text",
        "tipo": "texto",
        "etiqueta": "Texto",
        "diseno": false
@@ -7156,7 +7150,7 @@
    "tipo": "c-preguntas",
    "slug": "c-preguntas",
    "dbName": "s64",
-   "etiqueta": "C: preguntas como chat",
+   "etiqueta": "C: preguntas frecuentes",
    "campos": [
     {
      "clave": "fondo",
@@ -7177,21 +7171,15 @@
      "diseno": false
     },
     {
-     "clave": "brand_name",
-     "tipo": "texto",
-     "etiqueta": "Brand name",
-     "diseno": false
-    },
-    {
-     "clave": "choose_text",
-     "tipo": "texto",
-     "etiqueta": "Choose texto",
-     "diseno": false
-    },
-    {
      "clave": "other_question",
      "tipo": "texto",
      "etiqueta": "Other question",
+     "diseno": false
+    },
+    {
+     "clave": "other_text",
+     "tipo": "texto",
+     "etiqueta": "Other texto",
      "diseno": false
     },
     {
@@ -7204,6 +7192,12 @@
      "clave": "whatsapp_message",
      "tipo": "texto",
      "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
      "diseno": false
     }
    ],
@@ -7234,7 +7228,7 @@
    "tipo": "c-resenas",
    "slug": "c-resenas",
    "dbName": "s65",
-   "etiqueta": "C: reseñas una a la vez",
+   "etiqueta": "C: reseñas",
    "campos": [
     {
      "clave": "fondo",
@@ -7261,21 +7255,15 @@
      "diseno": false
     },
     {
-     "clave": "prev_button",
+     "clave": "more_button",
      "tipo": "texto",
-     "etiqueta": "Reseña en grande: anterior",
+     "etiqueta": "Botón «Ver más»",
      "diseno": false
     },
     {
-     "clave": "next_button",
+     "clave": "read_more_text",
      "tipo": "texto",
-     "etiqueta": "Reseña en grande: siguiente",
-     "diseno": false
-    },
-    {
-     "clave": "count_text",
-     "tipo": "texto",
-     "etiqueta": "Cuántas se ven ({n} de {total})",
+     "etiqueta": "Texto para leer la reseña completa",
      "diseno": false
     }
    ],
@@ -7285,7 +7273,7 @@
    "tipo": "c-tamanos",
    "slug": "c-tamanos",
    "dbName": "s66",
-   "etiqueta": "C: regla de tamaños",
+   "etiqueta": "C: elegir tamaño",
    "campos": [
     {
      "clave": "fondo",
@@ -7324,16 +7312,28 @@
      "diseno": false
     },
     {
-     "clave": "ruler_label",
+     "clave": "size_question",
      "tipo": "texto",
-     "etiqueta": "Ruler texto",
-     "diseno": false
+     "etiqueta": "Tamaño question",
+     "diseno": true
     },
     {
-     "clave": "ruler_result",
+     "clave": "size_help",
      "tipo": "texto",
-     "etiqueta": "Ruler resultado",
-     "diseno": false
+     "etiqueta": "Tamaño help",
+     "diseno": true
+    },
+    {
+     "clave": "size_result",
+     "tipo": "texto",
+     "etiqueta": "Tamaño resultado",
+     "diseno": true
+    },
+    {
+     "clave": "size_list",
+     "tipo": "texto",
+     "etiqueta": "Tamaño lista",
+     "diseno": true
     },
     {
      "clave": "add_button",
@@ -7364,9 +7364,291 @@
      "tipo": "texto",
      "etiqueta": "Wider enlace",
      "diseno": false
+    },
+    {
+     "clave": "narrower_text",
+     "tipo": "texto",
+     "etiqueta": "Si la entrada es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_link_text",
+     "tipo": "texto",
+     "etiqueta": "Enlace si es más angosta",
+     "diseno": false
+    },
+    {
+     "clave": "narrower_message",
+     "tipo": "texto",
+     "etiqueta": "Narrower mensaje",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "measure_message",
+     "tipo": "texto",
+     "etiqueta": "Measure mensaje",
+     "diseno": false
+    },
+    {
+     "clave": "measure_text",
+     "tipo": "texto",
+     "etiqueta": "Texto de «¿Cómo medir?»",
+     "diseno": false
     }
    ],
    "bloques": []
+  },
+  {
+   "tipo": "c-ayuda",
+   "slug": "c-ayuda",
+   "dbName": "s67",
+   "etiqueta": "C: te atiende una persona",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "image",
+     "tipo": "imagen",
+     "etiqueta": "Imagen",
+     "diseno": false
+    },
+    {
+     "clave": "alt",
+     "tipo": "texto",
+     "etiqueta": "Texto alternativo (para quien no ve la foto)",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "text",
+     "tipo": "textoLargo",
+     "etiqueta": "Texto",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "phone_link",
+     "tipo": "texto",
+     "etiqueta": "Teléfono enlace",
+     "diseno": false
+    },
+    {
+     "clave": "phone_text",
+     "tipo": "texto",
+     "etiqueta": "Teléfono texto",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "c-barra",
+   "slug": "c-barra",
+   "dbName": "s68",
+   "etiqueta": "C: barra de WhatsApp y teléfono (celular)",
+   "campos": [
+    {
+     "clave": "whatsapp_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "phone_link",
+     "tipo": "texto",
+     "etiqueta": "Teléfono enlace",
+     "diseno": false
+    },
+    {
+     "clave": "phone_text",
+     "tipo": "texto",
+     "etiqueta": "Teléfono texto",
+     "diseno": false
+    }
+   ],
+   "bloques": []
+  },
+  {
+   "tipo": "c-confianza",
+   "slug": "c-confianza",
+   "dbName": "s69",
+   "etiqueta": "C: compra con confianza",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "reason",
+     "slug": "s69-b00",
+     "dbName": "s69b00",
+     "etiqueta": "Razón para confiar",
+     "campos": [
+      {
+       "clave": "image",
+       "tipo": "imagen",
+       "etiqueta": "Imagen",
+       "diseno": false
+      },
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      },
+      {
+       "clave": "link",
+       "tipo": "textoLargo",
+       "etiqueta": "Enlace",
+       "diseno": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "c-pagos",
+   "slug": "c-pagos",
+   "dbName": "s70",
+   "etiqueta": "C: formas de pago",
+   "campos": [
+    {
+     "clave": "fondo",
+     "tipo": "texto",
+     "etiqueta": "Fondo (blanco, niebla, cielo o marino)",
+     "diseno": false
+    },
+    {
+     "clave": "subheading",
+     "tipo": "texto",
+     "etiqueta": "Subtítulo",
+     "diseno": false
+    },
+    {
+     "clave": "heading",
+     "tipo": "texto",
+     "etiqueta": "Título",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_link",
+     "tipo": "texto",
+     "etiqueta": "Enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_message",
+     "tipo": "texto",
+     "etiqueta": "Mensaje de WhatsApp debajo de la respuesta (vacío: sin enlace)",
+     "diseno": false
+    },
+    {
+     "clave": "whatsapp_text",
+     "tipo": "texto",
+     "etiqueta": "Texto del enlace de WhatsApp",
+     "diseno": false
+    },
+    {
+     "clave": "invoice_text",
+     "tipo": "texto",
+     "etiqueta": "Invoice texto",
+     "diseno": false
+    }
+   ],
+   "bloques": [
+    {
+     "tipo": "method",
+     "slug": "s70-b00",
+     "dbName": "s70b00",
+     "etiqueta": "Forma de pago",
+     "campos": [
+      {
+       "clave": "heading",
+       "tipo": "texto",
+       "etiqueta": "Título",
+       "diseno": false
+      },
+      {
+       "clave": "text",
+       "tipo": "texto",
+       "etiqueta": "Texto",
+       "diseno": false
+      }
+     ]
+    }
+   ]
   }
  ],
  "ajustesTema": [

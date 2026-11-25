@@ -29,7 +29,7 @@ export function EntregaC({ prefijo, y }: { prefijo: string; y: string }) {
   );
   if (!texto) return <p className="m-0 mt-4 h-11" aria-hidden="true" />;
   return (
-    <p className="m-0 mt-4 flex min-h-11 items-center gap-2.5 rounded-2xl bg-[#e3f5e8] px-4 py-2 text-[15px] text-[#14532d]">
+    <p className="m-0 mt-4 flex min-h-11 items-center gap-2.5 rounded-2xl bg-[#e3f5e8] px-4 py-2.5 text-[17px] text-[#14532d]">
       <svg viewBox="0 0 24 24" className="size-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
         <path d="M3 6h11v9H3zM14 9h4l3 3v3h-7zM6.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17.5 18.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
       </svg>

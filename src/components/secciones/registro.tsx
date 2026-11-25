@@ -46,6 +46,10 @@ import { PreguntasC } from "./c/PreguntasC";
 import { CierreC } from "./c/CierreC";
 import { PieC } from "./c/PieC";
 import { FichaC } from "./c/FichaC";
+import { AyudaC } from "./c/AyudaC";
+import { ConfianzaC } from "./c/ConfianzaC";
+import { PagosC } from "./c/PagosC";
+import { BarraAyudaC } from "./c/BarraAyudaC";
 import { PortadaVersion } from "./landing/Portada";
 import { ResenasVersion } from "./landing/Resenas";
 import { ComparacionVersion } from "./landing/Comparacion";
@@ -131,6 +135,10 @@ const PIEZAS: Record<string, PiezaSeccion> = {
   "c-cierre": CierreC,
   "c-pie": PieC,
   "c-ficha": FichaC,
+  "c-ayuda": AyudaC,
+  "c-confianza": ConfianzaC,
+  "c-pagos": PagosC,
+  "c-barra": BarraAyudaC,
 };
 
 function Pendiente({ seccion }: { seccion: Seccion }) {

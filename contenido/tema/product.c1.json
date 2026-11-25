@@ -1,14 +1,14 @@
 {
- "fuente": "Versión C1 (24-nov-2026): ficha del producto completamente nueva, distinta de la tienda de hoy (A) y de B1.",
+ "fuente": "Versión C1 (25-nov-2026): ficha del producto para el cliente ideal de Diluvium (40 a 60 años, en el celular).",
  "secciones": [
   {
    "id": "c_encabezado_producto",
    "tipo": "c-encabezado",
    "ajustes": {
-    "logo": "/media/files/Logo_HD_bueno_2aa64086-2790-4e59-a134-df7f5be55eaa.png",
-    "button_text": "Comprar",
-    "button_link": "/products/compuerta-anti-inundaciones",
+    "logo": "/media/files/Logo_Diluvium_horizontal_sin_fondo.png",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579&text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20compuerta.",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579",
     "menu_text": "Menú"
    },
    "bloques": []
@@ -20,18 +20,22 @@
     "producto": "compuerta-anti-inundaciones",
     "heading": "",
     "text": "Detiene hasta 50 cm de agua y la pones en 10 minutos, sin obras.",
-    "rating_text": "+200 reseñas",
-    "sold_text": "+2,000 vendidas",
+    "rating_text": "más de 200 reseñas",
+    "price_note": "Envío gratis a todo México · hasta 6 meses sin intereses",
     "delivery_text": "Si la pides hoy, llega entre el",
     "delivery_and": "y el",
-    "sizes_heading": "Elige tu tamaño",
-    "ruler_label": "Arrastra hasta el ancho de tu entrada",
-    "ruler_result": "Te queda la",
+    "size_question": "¿Cuánto mide tu entrada?",
+    "size_help": "Mide el ancho de marco a marco, en centímetros.",
+    "size_result": "Te queda la",
+    "size_list": "Elige tu tamaño",
     "add_button": "Añadir al carrito",
-    "sold_out": "Agotado por ahora",
-    "wider_text": "¿Mide más de 120 cm?",
-    "wider_link_text": "Ve la XXL a tu medida",
+    "sold_out": "Agotado",
+    "wider_text": "Tu entrada mide más de 120 cm.",
+    "wider_link_text": "Mira la compuerta XXL a tu medida",
     "wider_link": "/products/compuerta-anti-inundaciones-hecha-a-la-medida",
+    "narrower_text": "Tu entrada es más angosta que el tamaño más chico.",
+    "narrower_link_text": "Escríbenos y te decimos qué hacer",
+    "narrower_message": "Hola, mi entrada es más angosta que el tamaño más chico. ¿Qué opción tengo?",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
     "whatsapp_message": "Hola, estoy viendo la {producto} en su página y tengo una pregunta.",
     "whatsapp_text": "Pregúntanos por WhatsApp"
@@ -97,7 +101,7 @@
      "id": "trust_meses",
      "tipo": "trust",
      "ajustes": {
-      "text": "Hasta 6 MSI",
+      "text": "Hasta 6 meses sin intereses",
       "subtext": "Con tarjeta de crédito"
      }
     },
@@ -106,7 +110,7 @@
      "tipo": "trust",
      "ajustes": {
       "text": "Pago seguro",
-      "subtext": "Mercado Pago o PayPal"
+      "subtext": "Tarjeta con Mercado Pago o PayPal"
      }
     },
     {
@@ -136,10 +140,10 @@
    "id": "c_historias_producto",
    "tipo": "c-historias",
    "ajustes": {
-    "fondo": "noche",
+    "fondo": "claro",
     "subheading": "Así funciona",
-    "heading": "De la tormenta a la casa seca, en 4 momentos",
-    "text": "Toca la foto para avanzar o deja el dedo encima para detenerla."
+    "heading": "Protege tu casa en 4 pasos sencillos",
+    "text": "No necesitas herramientas ni a un albañil."
    },
    "bloques": [
     {
@@ -147,9 +151,9 @@
      "tipo": "slide",
      "ajustes": {
       "image": "/media/files/Frame_643.jpg",
-      "alt": "Lluvia fuerte afuera de una casa",
+      "alt": "Un hombre lleva la compuerta a su puerta",
       "heading": "Avisan tormenta",
-      "text": "Sacas la compuerta y la llevas a tu puerta: no necesitas herramientas."
+      "text": "Sacas la compuerta y la llevas a tu puerta."
      }
     },
     {
@@ -158,7 +162,7 @@
      "ajustes": {
       "image": "/media/files/IMG_1499.jpg",
       "alt": "Un hombre coloca la compuerta en una puerta",
-      "heading": "La colocas en 10 minutos",
+      "heading": "La pones en 10 minutos",
       "text": "Giras el gato y se ajusta a presión contra tu marco. Sin taladro ni obras."
      }
     },
@@ -169,7 +173,7 @@
       "image": "/media/files/IMG_2103.jpg",
       "alt": "La compuerta detiene el agua en la entrada",
       "heading": "El agua se queda afuera",
-      "text": "La funda de neopreno y la tira de hule sellan todo el contorno, hasta 50 cm de agua."
+      "text": "La funda y la tira de hule sellan todo el contorno, hasta 50 cm de agua."
      }
     },
     {
@@ -177,7 +181,7 @@
      "tipo": "slide",
      "ajustes": {
       "image": "/media/files/Frame_629.jpg",
-      "alt": "La compuerta guardada para la siguiente temporada",
+      "alt": "La compuerta lista para guardarse",
       "heading": "Pasa la lluvia y la guardas",
       "text": "La quitas en un minuto y la guardas para la próxima. Dura de 5 a 7 años."
      }
@@ -188,53 +192,116 @@
    "id": "c_resenas_producto",
    "tipo": "c-resenas",
    "ajustes": {
-    "fondo": "claro",
-    "subheading": "Reseñas reales",
+    "fondo": "blanco",
+    "subheading": "Reseñas de clientes",
     "heading": "Lo que dicen quienes ya la usan",
     "rating_text": "de 5, con más de 200 reseñas publicadas",
-    "prev_button": "Anterior",
-    "next_button": "Siguiente",
-    "count_text": "{n} de {total}"
+    "more_button": "Ver 3 reseñas más",
+    "read_more_text": "Leer completa"
    },
    "bloques": []
   },
   {
-   "id": "c_cifras_producto",
-   "tipo": "c-cifras",
+   "id": "c_confianza_producto",
+   "tipo": "c-confianza",
    "ajustes": {
-    "heading": "Diluvium en números"
+    "fondo": "claro",
+    "subheading": "Compra con confianza",
+    "heading": "Más de 2,000 familias ya la tienen"
    },
    "bloques": [
     {
-     "id": "stat_1",
-     "tipo": "stat",
+     "id": "reason_shark",
+     "tipo": "reason",
      "ajustes": {
-      "number": "+2,000",
-      "label": "compuertas vendidas en México"
+      "image": "/media/files/SHARK_TANK_LOGO.png",
+      "heading": "Salimos en Shark Tank México",
+      "text": "Presentamos nuestra compuerta en el programa."
      }
     },
     {
-     "id": "stat_2",
-     "tipo": "stat",
+     "id": "reason_meli",
+     "tipo": "reason",
      "ajustes": {
-      "number": "{calificacion}★",
-      "label": "de calificación en más de 200 reseñas"
+      "image": "/media/files/idS7VeI30G_1772158270429.jpg",
+      "heading": "También estamos en Mercado Libre",
+      "text": "Con reseñas de compradores reales.",
+      "link": "https://articulo.mercadolibre.com.mx/MLM-1966051269-compuerta-anti-inundaciones-defensa-proteccion-contra-agua-_JM"
      }
     },
     {
-     "id": "stat_3",
-     "tipo": "stat",
+     "id": "reason_amazon",
+     "tipo": "reason",
      "ajustes": {
-      "number": "1 año",
-      "label": "de garantía por defectos de fábrica"
+      "image": "/media/files/Amazon_icon-icons.com_66787.svg",
+      "heading": "Y en Amazon",
+      "text": "Si prefieres comprar ahí, también nos encuentras.",
+      "link": "https://a.co/d/02c3Uywk"
      }
     },
     {
-     "id": "stat_4",
-     "tipo": "stat",
+     "id": "reason_garantia",
+     "tipo": "reason",
      "ajustes": {
-      "number": "3–5 días",
-      "label": "para que llegue, con envío gratis"
+      "heading": "1 año de garantía",
+      "text": "Por defectos de fábrica. Si algo falla, te ayudamos."
+     }
+    }
+   ]
+  },
+  {
+   "id": "c_ayuda_producto",
+   "tipo": "c-ayuda",
+   "ajustes": {
+    "fondo": "blanco",
+    "image": "/media/files/oficina.jpg",
+    "alt": "El equipo de Diluvium en su oficina de Los Mochis",
+    "subheading": "Estamos para ayudarte",
+    "heading": "Te atiende una persona, no un robot",
+    "text": "Somos el equipo de Diluvium en Los Mochis, Sinaloa. Escríbenos o llámanos y te ayudamos a medir tu entrada, elegir tu tamaño y hacer tu pedido.",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero hablar con alguien de Diluvium.",
+    "whatsapp_text": "Escríbenos por WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llámanos al (668) 241 9579"
+   },
+   "bloques": []
+  },
+  {
+   "id": "c_pagos_producto",
+   "tipo": "c-pagos",
+   "ajustes": {
+    "fondo": "claro",
+    "subheading": "Formas de pago",
+    "heading": "Paga como prefieras",
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, quiero pagar mi compuerta por transferencia o depósito.",
+    "whatsapp_text": "Pagar por transferencia o depósito",
+    "invoice_text": "¿Necesitas factura? Mándanos tu constancia de situación fiscal y te la enviamos."
+   },
+   "bloques": [
+    {
+     "id": "method_tarjeta",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Tarjeta de crédito o débito",
+      "text": "Con Mercado Pago. Hasta 6 meses sin intereses con tarjeta de crédito."
+     }
+    },
+    {
+     "id": "method_paypal",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "PayPal",
+      "text": "Paga con tu cuenta de PayPal."
+     }
+    },
+    {
+     "id": "method_transferencia",
+     "tipo": "method",
+     "ajustes": {
+      "heading": "Transferencia o depósito",
+      "text": "Escríbenos por WhatsApp y te mandamos los datos para pagar."
      }
     }
    ]
@@ -244,13 +311,13 @@
    "tipo": "c-preguntas",
    "ajustes": {
     "fondo": "blanco",
-    "subheading": "Preguntas",
-    "heading": "Pregúntanos lo que quieras",
-    "brand_name": "Diluvium",
-    "choose_text": "Toca una pregunta:",
-    "other_question": "¿Otra pregunta? Escríbenos por WhatsApp",
+    "subheading": "Preguntas frecuentes",
+    "heading": "Lo que más nos preguntan",
+    "other_question": "¿Tienes otra pregunta?",
+    "other_text": "Escríbenos: te contesta una persona del equipo.",
     "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
-    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta: "
+    "whatsapp_message": "Hola, tengo una pregunta sobre la compuerta: ",
+    "whatsapp_text": "Preguntar por WhatsApp"
    },
    "bloques": [
     {
@@ -331,7 +398,7 @@
    "id": "c_cierre_producto",
    "tipo": "c-cierre",
    "ajustes": {
-    "heading": "La próxima tormenta ya no es tu problema.",
+    "heading": "Que la próxima lluvia no te tome por sorpresa",
     "text": "Envío gratis a todo México, pago seguro y 1 año de garantía.",
     "button_text": "Proteger mi casa",
     "button_link": "/products/compuerta-anti-inundaciones",
@@ -374,6 +441,18 @@
      }
     }
    ]
+  },
+  {
+   "id": "c_barra_producto",
+   "tipo": "c-barra",
+   "ajustes": {
+    "whatsapp_link": "https://api.whatsapp.com/send?phone=526682419579",
+    "whatsapp_message": "Hola, vi su página y quiero información sobre la compuerta.",
+    "whatsapp_text": "WhatsApp",
+    "phone_link": "tel:+526682419579",
+    "phone_text": "Llamar"
+   },
+   "bloques": []
   }
  ]
 }
